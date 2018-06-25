@@ -1,0 +1,91 @@
+/*
+Title: SlashCSS
+Version: 0.1.0
+Updated: 2018-05-28
+Author: Jin Su Park
+Site: slashcss.com
+*/
+
+/************************************************************
+1. DEFAULT VARIABLES
+************************************************************/
+
+@import "default.variables";
+
+/************************************************************
+2. COMPONENTS
+************************************************************/
+
+@import "components/import.components";
+
+/************************************************************
+2. OVERRIDE VARIABLES
+************************************************************/
+
+
+/************************************************************
+3. THIRD PARTY
+************************************************************/
+
+// @import "../vendors/iziModal/css/iziModal.min.scss";
+@import "../vendors/prism/prism.scss";
+
+/************************************************************
+4. EXTENSIONS
+************************************************************/
+
+.grid {
+  &\:docs {
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: 35% auto;
+    min-height: 100vh;
+    .grid\/aside {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid\/header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background-color: #191E37;
+      height: 65px;
+      .grid\/content {
+        width: 300px;
+        padding-left: var(--u3);
+      }
+    }
+    .grid\/nav {
+      display: flex;
+      justify-content: flex-end;
+
+      .grid\/content {
+        width: 300px;
+        padding: var(--u3);
+      }
+    }
+    .grid\/main {
+      background: var(--background);
+    }
+    .grid\/article {
+      padding: var(--u5);
+    }
+  }
+}
+
+.form {
+  &\:docs-search {
+    position: relative;
+    height: 65px;
+    input:not([type=submit]) {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 0;
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+      padding-left: var(--u3);
+    }
+  }
+}
