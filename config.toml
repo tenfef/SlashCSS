@@ -2,7 +2,7 @@
 baseURL= ""
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "slashGo"
+theme = "SlashGo"
 
 # pygmentsCodeFences = true
 # pygmentsUseClasses = true
