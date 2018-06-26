@@ -2,31 +2,8 @@
 title: "Button"
 date: 2018-04-11T09:16:45+12:00
 draft: false
-
-layout: "docs"
-
 description: "Colorful and juicy button component in all shapes and sizes."
 
-includeLabel: true
-labelText: "SINGLE"
-labelColor: "orange"
-lastUpdated: "10/04/18"
-parent: "Single"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
 ---
 
 ##### Basic Button
@@ -47,36 +24,20 @@ A standard button
 
 Buttons comes in various sizes, use standard size modifiers to transform its size.
 
-<div class="u-spread-y-1 margin-bottom:2">
-  <div>
-    <button class="button button-size:1">Button</button>
-  </div>
-	<div>
-    <button class="button button-size:2 fill:secondary">Button</button>
-  </div>
-	<div>
-    <button class="button button-size:3 fill:secondary-tint">Button</button>
-  </div>
-	<div>
-    <button class="button button-size:4 fill:secondary-shade">Button</button>
-  </div>
-  <div>
-    <button class="button button-size:5">Button</button>
-  </div>
-
+<div class="margin-bottom:2">
   <button class="button button-size:1">Button</button>
-  <button class="button button-size:2 fill:secondary">Button</button>
-  <button class="button button-size:3 fill:secondary-tint">Button</button>
-  <button class="button button-size:4 fill:secondary-shade">Button</button>
+  <button class="button button-size:2">Button</button>
+  <button class="button button-size:3">Button</button>
+  <button class="button button-size:4">Button</button>
   <button class="button button-size:5">Button</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button button-size:1">Button</button>
-<button class="button button-size:2 fill:secondary">Button</button>
-<button class="button button-size:3 fill:secondary-tint">Button</button>
-<button class="button button-size:4 fill:secondary-shade">Button</button>
+<button class="button button-size:2">Button</button>
+<button class="button button-size:3">Button</button>
+<button class="button button-size:4">Button</button>
 <button class="button button-size:5">Button</button>
 ```
 {{% /codeblock %}}
@@ -85,28 +46,14 @@ Buttons comes in various sizes, use standard size modifiers to transform its siz
 
 Buttons can vary in width.
 
-<div class="u-spread-y-1 margin-bottom:2">
-	<div>
-    <button class="button">Default</button>
-  </div>
-  <div>
-    <button class="button button-grow:1">Grow 1</button>
-  </div>
-  <div>
-    <button class="button button-grow:2">Grow 2</button>
-  </div>
-  <div>
-    <button class="button button-grow:3">Grow 3</button>
-  </div>
-  <div>
-    <button class="button button-grow:4">Grow 4</button>
-  </div>
-  <div>
-    <button class="button button-grow:5">Grow 5</button>
-  </div>
-  <div>
-    <button class="button button-fluid:true">Fluid</button>
-  </div>
+<div class="distribute-y:1 margin-bottom:2">
+  <button class="button">Default</button><br>
+  <button class="button button-grow:1">Grow 1</button><br>
+  <button class="button button-grow:2">Grow 2</button><br>
+  <button class="button button-grow:3">Grow 3</button><br>
+  <button class="button button-grow:4">Grow 4</button><br>
+  <button class="button button-grow:5">Grow 5</button><br>
+  <button class="button button:fluid">Fluid</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
@@ -117,68 +64,68 @@ Buttons can vary in width.
 <button class="button button-grow:3">Grow 3</button>
 <button class="button button-grow:4">Grow 4</button>
 <button class="button button-grow:5">Grow 5</button>
-<button class="button -fluid">Fluid</button>
+<button class="button button:fluid">Fluid</button>
 ```
 {{% /codeblock %}}
 
 ##### Shapes
 
-You can apply differently shaped corners to buttons with the `-sharp`, `-round` modifiers.
+You can apply differently shaped corners with the border utility.
 
 <div class="margin-bottom:2">
   <button class="button">Default</button>
-  <button class="button button-border:sharp">Sharp</button>
-  <button class="button button-border:round">Round</button>
+  <button class="button border:sharp">Sharp</button>
+  <button class="button border:round">Round</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button">Default</button>
-<button class="button -sharp">Sharp</button>
-<button class="button -round">Round</button>
+<button class="button border:sharp">Sharp</button>
+<button class="button border:round">Round</button>
 ```
 {{% /codeblock %}}
 
 ##### Styles
 
-There are 2 different styles of buttons, standard and elevated.
+There are 3 different styles of buttons, standard, outline and elevated.
 
-<div class="u-spread-x-1 margin-bottom:2">
-  <div>
-    <button class="button -purple">Default</button>
-    <button class="button -purple button-elevate:true">Elevated</button>
-  </div>
+<div class="margin-bottom:2">
+  <button class="button button-grow:2">Default</button>
+  <button class="button button-grow:2 button-style:outline">Outline</button>
+  <button class="button button-grow:2 button-style:elevate">Elevated</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button -purple">Default</button>
-<button class="button -purple -elevate">Elevated</button>
+<button class="button button-grow:2">Default</button>
+<button class="button button-grow:2 button-style:outline">Outline</button>
+<button class="button button-grow:2 button-style:elevate">Elevated</button>
 ```
 {{% /codeblock %}}
 
 ##### Button Weights
 
-Buttons can have different font weights based on standard weights.
+Buttons can have different font weights with the font component.
 
 <div class="u-spread-x-1 margin-bottom:2">
-  <button class="button">Regular</button>
-  <button class="button button-weight:medium">Medium</button>
-  <button class="button button-weight:bold">Bold</button>
+  <button class="button font-weight:regular">Regular</button>
+  <button class="button font-weight:medium">Medium</button>
+  <button class="button font-weight:bold">Bold</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button">Regular</button>
-<button class="button -medium">Medium</button>
-<button class="button -bold">Bold</button>
+<button class="button font-weight:regular">Regular</button>
+<button class="button font-weight:medium">Medium</button>
+<button class="button font-weight:bold">Bold</button>
 ```
 {{% /codeblock %}}
 
 
 ##### Button Groups
 
-Buttons can be joined to form a buttons. Groups can be vertical with the `-vertical` modifier or standard responsive modifiers for device specific verticality.
+Buttons can be joined to form several buttons. Buttons can be vertical `button-direction`.
 
 <div class="margin-bottom:2">
   <div class="buttons">
@@ -189,7 +136,7 @@ Buttons can be joined to form a buttons. Groups can be vertical with the `-verti
 </div>
 
 <div class="margin-bottom:2">
-  <div class="buttons -round -vertical-tb">
+  <div class="buttons buttons-style:round buttons-direction:vertical">
     <button class="button">1</button>
     <button class="button">2</button>
     <button class="button">3</button>
