@@ -37,11 +37,17 @@ Site: slashcss.com
   &\:docs {
     background-color: var(--black);
     display: grid;
-    grid-template-columns: 35% auto;
+    grid-template-columns: 100% auto;
     min-height: 100vh;
+    @media (min-width: $sm) {
+      grid-template-columns: 35% auto;
+    }
     .grid\/aside {
-      display: flex;
+      display: none;
       flex-direction: column;
+      @media (min-width: $sm) {
+        display: flex;
+      }
     }
 
     .grid\/header {
@@ -68,7 +74,10 @@ Site: slashcss.com
       background: var(--background);
     }
     .grid\/article {
-      padding: var(--u5);
+      padding: var(--u2);
+      @media (min-width: $sm) {
+        padding: var(--u8);
+      }
     }
   }
 }

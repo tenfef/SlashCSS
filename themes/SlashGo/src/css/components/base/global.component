@@ -18,13 +18,19 @@ body {
 	box-sizing: border-box;
 	background: var(--background);
 	font-family: var(--font-family);
-	font-size: var(--font-size);
+	font-size: 14px;
 	font-weight: var(--regular);
 	line-height: var(--line-height);
 	color: var(--default-color);
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	@media (min-width : $sm) {
+		font-size: 15px;
+	}
+	@media (min-width : $lg) {
+		font-size: var(--font-size);
+	}
 }
 *, *:before, *:after {
 	box-sizing: inherit;
