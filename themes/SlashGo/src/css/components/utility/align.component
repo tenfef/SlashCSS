@@ -4,6 +4,15 @@ ALIGN
 
 .align {
 
+  &\:top {
+    vertical-align: top !important;
+  }
+  &\:middle {
+    vertical-align: middle !important;
+  }
+  &\:bottom {
+    vertical-align: bottom !important;
+  }
   &\:left {
     text-align: left !important;
   }
@@ -16,6 +25,15 @@ ALIGN
   @each $key, $value in $screens {
     &-#{$key} {
       @media (min-width : #{$value}) {
+        &\:top {
+          vertical-align: top !important;
+        }
+        &\:middle {
+          vertical-align: middle !important;
+        }
+        &\:bottom {
+          vertical-align: bottom !important;
+        }
         &\:left {
           text-align: left !important;
         }

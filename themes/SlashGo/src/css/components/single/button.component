@@ -236,13 +236,13 @@ BUTTON(S)
   }
 
   /******************************
-  FLUID
+  FLEXIBILITY
   ******************************/
 
   &\:fluid {
     width: 100%;
   }
-  &\:default {
+  &\:auto {
     width: auto;
   }
   @each $key, $value in $screens {
@@ -251,7 +251,7 @@ BUTTON(S)
         &\:fluid {
           width: 100%;
         }
-        &\:default {
+        &\:auto {
           width: auto;
         }
       }

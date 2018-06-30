@@ -5,15 +5,15 @@ MAX
 .max {
 
   &-width {
-    @for $i from 10 through 100 {
-      &\:#{$i} {
+    @for $i from 1 through 10 {
+      &\:#{$i}0 {
         max-width: $i * 1rem !important;
       }
     }
   }
   &-height {
-    @for $i from 10 through 100 {
-      &\:#{$i} {
+    @for $i from 1 through 10 {
+      &\:#{$i}0 {
         max-height: $i * 1rem !important;
       }
     }
@@ -23,8 +23,8 @@ MAX
     &-width {
       &-#{$key} {
         @media (min-width: $value) {
-          @for $i from 10 through 100 {
-            &\:#{$i} {
+          @for $i from 1 through 10 {
+            &\:#{$i}0 {
               max-width: $i * 1rem !important;
             }
           }
@@ -34,8 +34,8 @@ MAX
     &-height {
       &-#{$key} {
         @media (min-width: $value) {
-          @for $i from 10 through 100 {
-            &\:#{$i} {
+          @for $i from 1 through 10 {
+            &\:#{$i}0 {
               max-height: $i * 1rem !important;
             }
           }

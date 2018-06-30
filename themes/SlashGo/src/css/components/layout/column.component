@@ -15,11 +15,6 @@ COLUMN
 		}
 		$columns: $columns - 1;
 	}
-	@for $i from 1 through 3 {
-		&\:#{$i}\/3 {
-		  width: 100% / 3 * $i;
-		}
-  }
 	@for $i from 1 through 5 {
 		&\:#{$i}\/5 {
 		  width: 100% / 5 * $i;
@@ -39,11 +34,6 @@ COLUMN
 					}
 					$columns: $columns - 1;
 				}
-				@for $i from 1 through 3 {
-					&\:#{$i}\/3 {
-					  width: 100% / 3 * $i;
-					}
-			  }
 				@for $i from 1 through 5 {
 					&\:#{$i}\/5 {
 					  width: 100% / 5 * $i;
