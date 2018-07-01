@@ -110,7 +110,7 @@ BUTTON
   &\:fluid {
     width: 100%;
   }
-  &\:default {
+  &\:auto {
     width: auto;
   }
   @each $key, $value in $screens {
@@ -119,7 +119,7 @@ BUTTON
         &\:fluid {
           width: 100%;
         }
-        &\:default {
+        &\:auto {
           width: auto;
         }
       }

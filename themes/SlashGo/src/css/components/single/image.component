@@ -5,10 +5,10 @@ IMAGE
 :root {
   --image-radius: var(--radius);
   --image-size-1: var(--u3);
-  --image-size-2: var(--u4);
-  --image-size-3: var(--u5);
-  --image-size-4: var(--u6);
-  --image-size-5: var(--u7);
+  --image-size-2: var(--u5);
+  --image-size-3: var(--u7);
+  --image-size-4: var(--u9);
+  --image-size-5: var(--u12);
 }
 
 .image {
@@ -40,6 +40,19 @@ IMAGE
           }
           $levels: $levels - 1;
         }
+        @each $screen, $size in $screens {
+          &-#{$screen} {
+            @media (min-width : #{$size}) {
+              @while $levels > 0 {
+                &\:#{$levels} {
+                  width: var(--image-size-#{$levels});
+                  height: var(--image-size-#{$levels});
+                }
+                $levels: $levels - 1;
+              }
+            }
+          }
+        }
       }
     }
     &\:round {
@@ -52,6 +65,19 @@ IMAGE
             height: var(--image-size-#{$levels});
           }
           $levels: $levels - 1;
+        }
+        @each $screen, $size in $screens {
+          &-#{$screen} {
+            @media (min-width : #{$size}) {
+              @while $levels > 0 {
+                &\:#{$levels} {
+                  width: var(--image-size-#{$levels});
+                  height: var(--image-size-#{$levels});
+                }
+                $levels: $levels - 1;
+              }
+            }
+          }
         }
       }
     }

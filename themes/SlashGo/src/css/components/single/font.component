@@ -59,6 +59,17 @@ FONT
         font-weight: var(--#{$key}) !important;
       }
     }
+    @each $screen, $size in $screens {
+      &-#{$screen} {
+        @media (min-width : #{$size}) {
+          @each $key, $value in $font-weights {
+            &\:#{$key} {
+              font-weight: var(--#{$key}) !important;
+            }
+          }
+        }
+      }
+    }
   }
 
   /******************************
@@ -80,6 +91,18 @@ FONT
         line-height: $levels / 5 + 1;
       }
       $levels: $levels - 1;
+    }
+    @each $screen, $size in $screens {
+      &-#{$screen} {
+        @media (min-width : #{$size}) {
+          @while $levels >= 0 {
+            &\:#{$levels} {
+              line-height: $levels / 5 + 1;
+            }
+            $levels: $levels - 1;
+          }
+        }
+      }
     }
 	}
 

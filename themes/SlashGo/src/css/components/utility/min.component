@@ -7,14 +7,14 @@ MIN
   &-width {
     @for $i from 1 through 10 {
       &\:#{$i}0 {
-        min-width: $i * 10rem  !important;
+        min-width: $i * 10rem !important;
       }
     }
   }
   &-height {
     @for $i from 1 through 10 {
       &\:#{$i}0 {
-        min-height: $i * 10rem  !important;
+        min-height: $i * 10rem !important;
       }
     }
   }
@@ -25,7 +25,7 @@ MIN
         @media (min-width: $value) {
           @for $i from 1 through 10 {
             &\:#{$i}0 {
-              min-width: $i * 10rem  !important;
+              min-width: $i * 10rem !important;
             }
           }
         }
@@ -36,7 +36,7 @@ MIN
         @media (min-width: $value) {
           @for $i from 1 through 10 {
             &\:#{$i}0 {
-              min-height: $i * 10rem  !important;
+              min-height: $i * 10rem !important;
             }
           }
         }

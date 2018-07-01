@@ -4,7 +4,7 @@ FILL
 
 .fill {
 
-  &\:none {
+  &\:transparent {
     background-color: transparent !important;
   }
   @each $key, $value in $colors {
