@@ -225,7 +225,7 @@ You can override styling using the following local root variables.
 
 The following settings are available.
 
-<table class="table table:fluid table:pile">
+<table class="table table:fluid table:pile table:elevate">
   <thead>
     <tr>
       <th>

@@ -2,29 +2,37 @@
 TABLE
 ************************************************************/
 
+:root {
+  --table-border: var(--border);
+}
+
+
 .table {
   border-collapse: separate;
   text-align: left;
   border: 0;
   background-color: var(--white);
-  border: var(--border);
+  border: var(--table-border);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
 
   /******************************
   CHILD ELEMENTS
   ******************************/
 
   tr {
-    &:last-child {
-      td {
+    &:last-child:not(:first-child) {
+      th, td {
         border-bottom: 0;
       }
     }
   }
   th, td {
     padding: var(--u1) var(--u2);
-    border-bottom: var(--border);
+    border-right: var(--table-border);
+    border-bottom: var(--table-border);
+    &:last-child {
+      border-right: 0;
+    }
   }
 
   th {
@@ -41,6 +49,14 @@ TABLE
   }
 
   /******************************
+  ELEVATE
+  ******************************/
+
+  &\:elevate {
+    box-shadow: var(--shadow);
+  }
+
+  /******************************
   RESPONSIVE
   ******************************/
 
@@ -52,9 +68,8 @@ TABLE
 
     @media (min-width: $sm) {
       background-color: var(--white);
-      border: var(--border);
+      border: var(--table-border);
       border-radius: var(--radius);
-      box-shadow: var(--shadow);
     }
 
     thead {
@@ -73,11 +88,11 @@ TABLE
       display: block;
       margin-bottom: var(--u2);
       background-color: var(--white);
-    	border: var(--border);
+    	border: var(--table-border);
     	border-radius: var(--radius);
     	box-shadow: var(--shadow);
       &:last-child td {
-        border-bottom: var(--border);
+        border-bottom: var(--table-border);
       }
       @media (min-width: $sm) {
         display: table-row;
@@ -92,16 +107,16 @@ TABLE
     td {
       display: flex;
       padding: var(--u1) var(--u2);
-      border-bottom: var(--border);
+      border-bottom: var(--table-border);
 
       @media (min-width: $sm) {
         display: table-cell;
-        border-bottom: var(--border);
+        border-bottom: var(--table-border);
       }
       &:last-child {
         border-bottom: 0;
         @media (min-width: $sm) {
-          border-bottom: var(--border);
+          border-bottom: var(--table-border);
         }
       }
 
@@ -130,7 +145,7 @@ TABLE
 
         @media (min-width: $value) {
           background-color: var(--white);
-          border: var(--border);
+          border: var(--table-border);
           border-radius: var(--radius);
           box-shadow: var(--shadow);
         }
@@ -151,11 +166,11 @@ TABLE
           display: block;
           margin-bottom: var(--u2);
           background-color: var(--white);
-        	border: var(--border);
+        	border: var(--table-border);
         	border-radius: var(--radius);
         	box-shadow: var(--shadow);
           &:last-child td {
-            border-bottom: var(--border);
+            border-bottom: var(--table-border);
           }
           @media (min-width: $value) {
             display: table-row;
@@ -170,16 +185,16 @@ TABLE
         td {
           display: flex;
           padding: var(--u1) var(--u2);
-          border-bottom: var(--border);
+          border-bottom: var(--table-border);
 
           @media (min-width: $value) {
             display: table-cell;
-            border-bottom: var(--border);
+            border-bottom: var(--table-border);
           }
           &:last-child {
             border-bottom: 0;
             @media (min-width: $value) {
-              border-bottom: var(--border);
+              border-bottom: var(--table-border);
             }
           }
 
