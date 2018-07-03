@@ -3,7 +3,7 @@ GRID
 ************************************************************/
 
 .row {
-	
+
 	clear: both;
 	display: flex;
 	flex-direction: row;
@@ -18,6 +18,7 @@ GRID
 		& > [class^=column] {
 			flex-grow: 0;
 		  flex-basis: auto;
+			width: auto;
 		}
 	}
 

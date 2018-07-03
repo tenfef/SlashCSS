@@ -25,25 +25,23 @@ DISPLAY
   &\:inline-grid {
     display: inline-grid !important;
   }
-  &-direction {
-    &\:horizontal {
-  		flex-direction: row;
-  	}
-    &\:vertical {
-  		flex-direction: column;
-  	}
-  	@each $key, $value in $screens {
-  		&-#{$key} {
-  			@media (min-width : #{$value}) {
-  				&\:horizontal {
-  					flex-direction: row;
-  				}
-  				&\:vertical {
-  					flex-direction: column;
-  				}
-  			}
-  		}
-  	}
+  &\:horizontal {
+    flex-direction: row;
+  }
+  &\:vertical {
+    flex-direction: column;
+  }
+  @each $key, $value in $screens {
+    &-#{$key} {
+      @media (min-width : #{$value}) {
+        &\:horizontal {
+          flex-direction: row;
+        }
+        &\:vertical {
+          flex-direction: column;
+        }
+      }
+    }
   }
   @each $key, $value in $screens {
     &-#{$key} {
@@ -70,25 +68,23 @@ DISPLAY
         &\:inline-grid {
           display: inline-grid !important;
         }
-        &-direction {
-          &\:horizontal {
-        		flex-direction: row;
-        	}
-          &\:vertical {
-        		flex-direction: column;
-        	}
-        	@each $key, $value in $screens {
-        		&-#{$key} {
-        			@media (min-width : #{$value}) {
-        				&\:horizontal {
-        					flex-direction: row;
-        				}
-        				&\:vertical {
-        					flex-direction: column;
-        				}
-        			}
-        		}
-        	}
+        &\:horizontal {
+          flex-direction: row;
+        }
+        &\:vertical {
+          flex-direction: column;
+        }
+        @each $key, $value in $screens {
+          &-#{$key} {
+            @media (min-width : #{$value}) {
+              &\:horizontal {
+                flex-direction: row;
+              }
+              &\:vertical {
+                flex-direction: column;
+              }
+            }
+          }
         }
       }
     }

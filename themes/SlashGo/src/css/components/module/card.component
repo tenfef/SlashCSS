@@ -17,8 +17,8 @@ CARD
 	position: relative;
 	display: block;
 	background-color: var(--card-bg);
+	border: var(--border);
 	border-radius: var(--card-radius);
-	box-shadow: var(--card-shadow);
 	transition: var(--transition);
 
 	/******************************
@@ -36,6 +36,7 @@ CARD
   ******************************/
 
 	&\:elevate {
+		box-shadow: var(--card-shadow);
 		&:hover {
 			box-shadow: var(--card-hover-shadow);
 			transform: translateY(-1px);
