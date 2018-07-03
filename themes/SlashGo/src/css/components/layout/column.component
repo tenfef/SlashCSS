@@ -4,9 +4,9 @@ COLUMN
 
 .column {
 	flex-grow: 1;
-	flex-basis: 0;
-	width: 100%;
+	flex-basis: 100%;
 	max-width: 100%;
+	width: 100%;
 
 	/******************************
   COLUMNS
