@@ -32,51 +32,34 @@ IMAGE
     &\:square {
       border-radius: 0;
       overflow: hidden;
-      &.image-size {
-        @while $levels > 0 {
-          &\:#{$levels} {
-            width: var(--image-size-#{$levels});
-            height: var(--image-size-#{$levels});
-          }
-          $levels: $levels - 1;
-        }
-        @each $screen, $size in $screens {
-          &-#{$screen} {
-            @media (min-width : #{$size}) {
-              @while $levels > 0 {
-                &\:#{$levels} {
-                  width: var(--image-size-#{$levels});
-                  height: var(--image-size-#{$levels});
-                }
-                $levels: $levels - 1;
-              }
-            }
-          }
-        }
-      }
     }
     &\:round {
       border-radius: 500px;
       overflow: hidden;
-      &.image-size {
-        @while $levels > 0 {
-          &\:#{$levels} {
-            width: var(--image-size-#{$levels});
-            height: var(--image-size-#{$levels});
-          }
-          $levels: $levels - 1;
-        }
-        @each $screen, $size in $screens {
-          &-#{$screen} {
-            @media (min-width : #{$size}) {
-              @while $levels > 0 {
-                &\:#{$levels} {
-                  width: var(--image-size-#{$levels});
-                  height: var(--image-size-#{$levels});
-                }
-                $levels: $levels - 1;
-              }
+    }
+  }
+
+  /******************************
+  SIZE
+  ******************************/
+
+  &-size {
+    @while $levels > 0 {
+      &\:#{$levels} {
+        width: var(--image-size-#{$levels});
+        height: var(--image-size-#{$levels});
+      }
+      $levels: $levels - 1;
+    }
+    @each $screen, $size in $screens {
+      &-#{$screen} {
+        @media (min-width : #{$size}) {
+          @while $levels > 0 {
+            &\:#{$levels} {
+              width: var(--image-size-#{$levels});
+              height: var(--image-size-#{$levels});
             }
+            $levels: $levels - 1;
           }
         }
       }

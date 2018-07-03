@@ -2,31 +2,10 @@
 FONT
 ************************************************************/
 
-:root {
-  --font-condense: -1px;
-  --font-expand: 1px;
-}
-
 .font {
+
   margin: 0;
   padding: 0;
-
-  /******************************
-  RESET
-  ******************************/
-
-  &\:reset {
-    font-family: inherit;
-    font-weight: normal;
-    color: inherit;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: normal;
-    &:hover {
-      color: inherit;
-      text-decoration: none;
-    }
-  }
 
   /******************************
   FONT SIZES
@@ -56,7 +35,7 @@ FONT
   &-weight {
     @each $key, $value in $font-weights {
       &\:#{$key} {
-        font-weight: var(--#{$key}) !important;
+        font-weight: var(--#{$key});
       }
     }
     @each $screen, $size in $screens {
@@ -64,7 +43,7 @@ FONT
         @media (min-width : #{$size}) {
           @each $key, $value in $font-weights {
             &\:#{$key} {
-              font-weight: var(--#{$key}) !important;
+              font-weight: var(--#{$key});
             }
           }
         }
@@ -110,16 +89,14 @@ FONT
   TRANSFORM
   ******************************/
 
-  &-transform {
-    &\:none {
-      text-transform: none;
-    }
-    &\:upper {
-      text-transform: uppercase;
-    }
-    &\:lower {
-      text-transform: lowercase;
-    }
+  &\:none {
+    text-transform: none;
+  }
+  &\:upper {
+    text-transform: uppercase;
+  }
+  &\:lower {
+    text-transform: lowercase;
   }
 
   /******************************

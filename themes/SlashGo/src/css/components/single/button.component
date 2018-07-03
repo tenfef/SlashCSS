@@ -104,23 +104,25 @@ BUTTON
   }
 
   /******************************
-  FLUID
+  WIDTH
   ******************************/
 
-  &\:fluid {
-    width: 100%;
-  }
-  &\:auto {
-    width: auto;
-  }
-  @each $key, $value in $screens {
-    &-#{$key} {
-      @media (min-width: $value) {
-        &\:fluid {
-          width: 100%;
-        }
-        &\:auto {
-          width: auto;
+  &-width {
+    &\:fluid {
+      width: 100%;
+    }
+    &\:auto {
+      width: auto;
+    }
+    @each $key, $value in $screens {
+      &-#{$key} {
+        @media (min-width: $value) {
+          &\:fluid {
+            width: 100%;
+          }
+          &\:auto {
+            width: auto;
+          }
         }
       }
     }
