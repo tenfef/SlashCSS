@@ -98,17 +98,4 @@ FONT
   &\:lower {
     text-transform: lowercase;
   }
-
-  /******************************
-  LINK
-  ******************************/
-
-  &\:link {
-    cursor: pointer;
-    transition: var(--transition);
-    color: var(--primary);
-    &:hover {
-      color: var(--black);
-    }
-  }
 }

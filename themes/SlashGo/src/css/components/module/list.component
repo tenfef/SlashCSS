@@ -23,7 +23,7 @@ LIST
   ******************************/
 
   &-gutter {
-    @while $levels >= 0 {
+    @while $levels > 0 {
       &\:#{$levels} {
         .list\/item {
           margin-bottom: var(--u#{$levels});
@@ -40,13 +40,13 @@ LIST
   DIRECTION
   ******************************/
 
-  &\:inline {
+  &\:horizontal {
     display: flex;
     .list\/item {
       margin-bottom: 0;
     }
     &.list-gutter {
-      @while $levels >= 0 {
+      @while $levels > 0 {
         &\:#{$levels} {
           .list\/item {
             margin-right: var(--u#{$levels});

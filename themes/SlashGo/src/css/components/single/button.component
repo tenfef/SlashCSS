@@ -234,7 +234,7 @@ BUTTON(S)
   }
 
   /******************************
-  FLEXIBILITY
+  WIDTHS
   ******************************/
 
   &\:fluid {
@@ -260,34 +260,32 @@ BUTTON(S)
   DIRECTION
   ******************************/
 
-  &-direction {
-    &\:vertical {
-      flex-direction: column;
-      & > .button {
-        &.button-style\:outline {
-          &:first-child {
-            border-radius: 0;
-            border-top-left-radius: var(--button-radius);
-            border-top-right-radius: var(--button-radius);
-          }
-          &:last-child {
-            border-radius: 0;
-            border-bottom-left-radius: var(--button-radius);
-            border-bottom-right-radius: var(--button-radius);
-          }
-          &:not(:first-child) {
-            margin: 0;
-            margin-top: calc(-1 * var(--button-outline-weight));
-          }
+  &\:vertical {
+    flex-direction: column;
+    & > .button {
+      &.button-style\:outline {
+        &:first-child {
+          border-radius: 0;
+          border-top-left-radius: var(--button-radius);
+          border-top-right-radius: var(--button-radius);
+        }
+        &:last-child {
+          border-radius: 0;
+          border-bottom-left-radius: var(--button-radius);
+          border-bottom-right-radius: var(--button-radius);
+        }
+        &:not(:first-child) {
+          margin: 0;
+          margin-top: calc(-1 * var(--button-outline-weight));
         }
       }
     }
-    @each $key, $value in $screens {
-      &-#{$key} {
-        @media (min-width: $value) {
-          &\:vertical {
-            flex-direction: column;
-          }
+  }
+  @each $key, $value in $screens {
+    &-#{$key} {
+      @media (min-width: $value) {
+        &\:vertical {
+          flex-direction: column;
         }
       }
     }

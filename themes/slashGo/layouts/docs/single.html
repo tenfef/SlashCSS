@@ -1,4 +1,5 @@
 {{ partial "head" . }}
+
 <main class="grid grid:docs">
 	<aside class="grid/aside">
 		<header class="grid/header grid/header:logo">
@@ -9,96 +10,13 @@
 		<nav class="grid/nav">
 			<div class="grid/content">
 				<ul class="list list-gutter:0 font-size:tiny">
-					<li class="list/item">
-						<a href="#" class="color:primary">
-							Type Scale
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Measure
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Line Height / Leading
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Tracking
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Font Weights
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Grid
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Line Height / Leading
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Tracking
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Font Weights
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Grid
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Line Height / Leading
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Tracking
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Font Weights
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Grid
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Line Height / Leading
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Tracking
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Font Weights
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:primary">
-							Grid
-						</a>
-					</li>
+					{{ range .Site.Menus.docs }}
+						<li class="list/item">
+							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
+								{{ .Name }}
+							</a>
+						</li>
+			    {{ end }}
 				</ul>
 			</div>
 
@@ -114,15 +32,12 @@
 		</nav>
 
 		<header class="fill:background padding:8 padding-y:5vh">
-			<div class="wrap wrap:docs-content">
-				<h1 class="font font-weight:light font-size:h2 margin-bottom:1 color:primary">
-					{{ .Title }}
-				</h1>
-				<h2 class="font font-weight:regular font-size:h6 margin-bottom:2">
-					{{ .Description }}
-				</h2>
-
-			</div>
+			<h1 class="font font-weight:light font-size:h2 margin-bottom:1 color:primary">
+				{{ .Title }}
+			</h1>
+			<h2 class="font font-weight:regular font-size:h6 margin-bottom:2">
+				{{ .Description }}
+			</h2>
 		</header>
 
 		<article class="grid/article fill:white">
@@ -133,38 +48,4 @@
 	</section>
 </main>
 
-
-
-<!--
-
-{{ partial "blocks/menus/menu-slide" . }}
-<div class="fill:white js-header">
-  {{ partial "blocks/header" . }}
-</div>
-
-<section class="fill:primary">
-
-  <div class="wrap wrap:padding-x padding-y:10vh align:center">
-    <h1 class="font font-size:h3 font-size-md:h2 font-size-lg:h1 margin-bottom:2 font-leading:0 align:center color:white">
-      {{ .Title }}
-    </h1>
-  </div>
-</section>
-
-
-<section class="padding-y:10vh">
-
-  <div class="wrap wrap:padding-x">
-    <div class="row align-content:center">
-      <div class="column:12 column-md:8">
-        <article class="card">
-          <div class="card/content">
-            {{.Content}}
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-
-</section> -->
 {{ partial "foot" . }}

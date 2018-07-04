@@ -2,29 +2,37 @@
 TABLE
 ************************************************************/
 
+:root {
+  --table-border: var(--border);
+}
+
+
 .table {
   border-collapse: separate;
   text-align: left;
   border: 0;
   background-color: var(--white);
-  border: var(--border);
+  border: var(--table-border);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
 
   /******************************
   CHILD ELEMENTS
   ******************************/
 
   tr {
-    &:last-child {
-      td {
+    &:last-child:not(:first-child) {
+      th, td {
         border-bottom: 0;
       }
     }
   }
   th, td {
     padding: var(--u1) var(--u2);
-    border-bottom: var(--border);
+    border-right: var(--table-border);
+    border-bottom: var(--table-border);
+    &:last-child {
+      border-right: 0;
+    }
   }
 
   th {
@@ -33,7 +41,7 @@ TABLE
   }
 
   /******************************
-  WIDTH
+  WIDTHS
   ******************************/
 
   &\:fluid {
@@ -56,6 +64,14 @@ TABLE
   }
 
   /******************************
+  ELEVATE
+  ******************************/
+
+  &\:elevate {
+    box-shadow: var(--shadow);
+  }
+
+  /******************************
   RESPONSIVE
   ******************************/
 
@@ -63,13 +79,11 @@ TABLE
     background-color: transparent;
   	border: 0;
   	border-radius: 0;
-  	box-shadow: none;
 
     @media (min-width: $sm) {
       background-color: var(--white);
-      border: var(--border);
+      border: var(--table-border);
       border-radius: var(--radius);
-      box-shadow: var(--shadow);
     }
 
     thead {
@@ -88,35 +102,40 @@ TABLE
       display: block;
       margin-bottom: var(--u2);
       background-color: var(--white);
-    	border: var(--border);
+    	border: var(--table-border);
     	border-radius: var(--radius);
-    	box-shadow: var(--shadow);
-      &:last-child td {
-        border-bottom: var(--border);
+      &:last-child:not(:first-child) {
+        th, td {
+          border-bottom: var(--table-border);
+        }
       }
       @media (min-width: $sm) {
         display: table-row;
         background: transparent;
         border: 0;
-        box-shadow: none;
-        &:last-child td {
-          border-bottom: 0;
+        border-right: var(--table-border);
+        &:last-child:not(:first-child) {
+          th, td {
+            border-bottom: 0;
+          }
         }
       }
     }
     td {
       display: flex;
       padding: var(--u1) var(--u2);
-      border-bottom: var(--border);
-
+      border-bottom: var(--table-border);
+      border-right: 0;
       @media (min-width: $sm) {
         display: table-cell;
-        border-bottom: var(--border);
+        border-bottom: var(--table-border);
+        border-right: var(--table-border);
       }
       &:last-child {
         border-bottom: 0;
         @media (min-width: $sm) {
-          border-bottom: var(--border);
+          border-bottom: var(--table-border);
+          border-right: 0;
         }
       }
 
@@ -132,6 +151,18 @@ TABLE
         }
       }
     }
+    &.table\:elevate {
+      box-shadow: none;
+      @media (min-width: $sm) {
+        box-shadow: var(--shadow);
+      }
+      tr {
+        box-shadow: var(--shadow);
+        @media (min-width: $sm) {
+          box-shadow: none;
+        }
+      }
+    }
   }
 
   @each $key, $value in $screens {
@@ -141,24 +172,22 @@ TABLE
         background-color: transparent;
       	border: 0;
       	border-radius: 0;
-      	box-shadow: none;
 
-        @media (min-width: $value) {
+        @media (min-width: $sm) {
           background-color: var(--white);
-          border: var(--border);
+          border: var(--table-border);
           border-radius: var(--radius);
-          box-shadow: var(--shadow);
         }
 
         thead {
           display: none;
-          @media (min-width: $value) {
+          @media (min-width: $sm) {
             display: table-header-group;
           }
         }
         tbody {
           display: block;
-          @media (min-width: $value) {
+          @media (min-width: $sm) {
             display: table-row-group;
           }
         }
@@ -166,35 +195,40 @@ TABLE
           display: block;
           margin-bottom: var(--u2);
           background-color: var(--white);
-        	border: var(--border);
+        	border: var(--table-border);
         	border-radius: var(--radius);
-        	box-shadow: var(--shadow);
-          &:last-child td {
-            border-bottom: var(--border);
+          &:last-child:not(:first-child) {
+            th, td {
+              border-bottom: var(--table-border);
+            }
           }
-          @media (min-width: $value) {
+          @media (min-width: $sm) {
             display: table-row;
             background: transparent;
             border: 0;
-            box-shadow: none;
-            &:last-child td {
-              border-bottom: 0;
+            border-right: var(--table-border);
+            &:last-child:not(:first-child) {
+              th, td {
+                border-bottom: 0;
+              }
             }
           }
         }
         td {
           display: flex;
           padding: var(--u1) var(--u2);
-          border-bottom: var(--border);
-
-          @media (min-width: $value) {
+          border-bottom: var(--table-border);
+          border-right: 0;
+          @media (min-width: $sm) {
             display: table-cell;
-            border-bottom: var(--border);
+            border-bottom: var(--table-border);
+            border-right: var(--table-border);
           }
           &:last-child {
             border-bottom: 0;
-            @media (min-width: $value) {
-              border-bottom: var(--border);
+            @media (min-width: $sm) {
+              border-bottom: var(--table-border);
+              border-right: 0;
             }
           }
 
@@ -205,8 +239,20 @@ TABLE
             padding-right: var(--u3);
             font-weight: var(--medium);
             color: var(--black);
-            @media (min-width: $value) {
+            @media (min-width: $sm) {
               display: none;
+            }
+          }
+        }
+        &.table\:elevate {
+          box-shadow: none;
+          @media (min-width: $sm) {
+            box-shadow: var(--shadow);
+          }
+          tr {
+            box-shadow: var(--shadow);
+            @media (min-width: $sm) {
+              box-shadow: none;
             }
           }
         }

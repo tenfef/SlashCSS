@@ -1,23 +1,31 @@
-# baseURL= "/en"
-baseURL= ""
+baseURL= "/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "SlashGo"
 
-# pygmentsCodeFences = true
-# pygmentsUseClasses = true
-
 [menu]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "about hugo"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/about/"
-    weight = -110
+  [[menu.docs]]
+    name = "Button"
+    url = "/button/"
+    weight = -100
 
-  [[menu.main]]
-    name = "getting started"
-    pre = "<i class='fa fa-road'></i>"
-    url = "/getting-started/"
+  [[menu.docs]]
+    name = "Table"
+    url = "/table/"
+    weight = -100
+
+  [[menu.docs]]
+    name = "Crumb"
+    url = "/crumb/"
+    weight = -100
+
+  [[menu.docs]]
+    name = "List"
+    url = "/list/"
+    weight = -100
+
+  [[menu.docs]]
+    name = "Icon"
+    url = "/icon/"
     weight = -100

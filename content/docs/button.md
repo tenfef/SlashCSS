@@ -1,10 +1,9 @@
----
-title: "Button"
-date: 2018-04-11T09:16:45+12:00
-draft: false
-description: "Colorful and juicy button component in all shapes and sizes."
-
----
++++
+title = "Button"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "Colorful and juicy button component in all shapes and sizes."
++++
 
 ##### Basic Button
 
@@ -92,15 +91,15 @@ There are 3 different styles of buttons, default, outline and elevated.
 
 <div class="margin-bottom:2">
   <button class="button button-grow:2">Default</button>
-  <button class="button button-grow:2 button-style:outline">Outline</button>
-  <button class="button button-grow:2 button-style:elevate">Elevated</button>
+  <button class="button button-grow:2 button:outline">Outline</button>
+  <button class="button button-grow:2 button:elevate">Elevated</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button button-grow:2">Default</button>
-<button class="button button-grow:2 button-style:outline">Outline</button>
-<button class="button button-grow:2 button-style:elevate">Elevated</button>
+<button class="button button-grow:2 button:outline">Outline</button>
+<button class="button button-grow:2 button:elevate">Elevated</button>
 ```
 {{% /codeblock %}}
 
@@ -177,31 +176,31 @@ Buttons can be joined to form several buttons. Buttons can be vertical with `but
 
 Use the `fill` component to apply different color your buttons.
 
-<button class="button button-style:elevate fill:primary margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:secondary margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:red margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:orange margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:yellow margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:green margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:blue margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:purple margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:black margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:grey margin-bottom:2">Button</button>
-<button class="button button-style:elevate fill:white color:black margin-bottom:2">Button</button>
+<button class="button button:elevate fill:primary margin-bottom:2">Button</button>
+<button class="button button:elevate fill:secondary margin-bottom:2">Button</button>
+<button class="button button:elevate fill:red margin-bottom:2">Button</button>
+<button class="button button:elevate fill:orange margin-bottom:2">Button</button>
+<button class="button button:elevate fill:yellow margin-bottom:2">Button</button>
+<button class="button button:elevate fill:green margin-bottom:2">Button</button>
+<button class="button button:elevate fill:blue margin-bottom:2">Button</button>
+<button class="button button:elevate fill:purple margin-bottom:2">Button</button>
+<button class="button button:elevate fill:black margin-bottom:2">Button</button>
+<button class="button button:elevate fill:grey margin-bottom:2">Button</button>
+<button class="button button:elevate fill:white color:black margin-bottom:2">Button</button>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button button-style:elevate fill:primary">Button</button>
-<button class="button button-style:elevate fill:secondary">Button</button>
-<button class="button button-style:elevate fill:red">Button</button>
-<button class="button button-style:elevate fill:orange">Button</button>
-<button class="button button-style:elevate fill:yellow">Button</button>
-<button class="button button-style:elevate fill:green">Button</button>
-<button class="button button-style:elevate fill:blue">Button</button>
-<button class="button button-style:elevate fill:purple">Button</button>
-<button class="button button-style:elevate fill:black">Button</button>
-<button class="button button-style:elevate fill:grey">Button</button>
-<button class="button button-style:elevate fill:white color:black">Button</button>
+<button class="button button:elevate fill:primary">Button</button>
+<button class="button button:elevate fill:secondary">Button</button>
+<button class="button button:elevate fill:red">Button</button>
+<button class="button button:elevate fill:orange">Button</button>
+<button class="button button:elevate fill:yellow">Button</button>
+<button class="button button:elevate fill:green">Button</button>
+<button class="button button:elevate fill:blue">Button</button>
+<button class="button button:elevate fill:purple">Button</button>
+<button class="button button:elevate fill:black">Button</button>
+<button class="button button:elevate fill:grey">Button</button>
+<button class="button button:elevate fill:white color:black">Button</button>
 ```
 {{% /codeblock %}}
 
@@ -225,7 +224,7 @@ You can override styling using the following local root variables.
 
 The following settings are available.
 
-<table class="table table:fluid table:pile table:elevate">
+<table class="table table:fluid table:pile">
   <thead>
     <tr>
       <th>
@@ -260,6 +259,21 @@ The following settings are available.
   </tr>
   <tr>
     <td data-label="Properties">
+
+    </td>
+    <td data-label="Attributes">
+      <code>:elevate</code>
+      <code>:outline</code>
+    </td>
+    <td data-label="Responsive">
+      No
+    </td>
+    <td class="row:reverse">
+      Set style of buttons
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
       <code>button-size</code>
     </td>
     <td data-label="Attributes">
@@ -288,21 +302,6 @@ The following settings are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>button-style</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:elevate</code>
-      <code>:outline</code>
-    </td>
-    <td data-label="Responsive">
-      Yes
-    </td>
-    <td class="row:reverse">
-      Set style of buttons
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
       <code>buttons</code>
     </td>
     <td data-label="Attributes">
@@ -318,7 +317,7 @@ The following settings are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>buttons-direction</code>
+
     </td>
     <td data-label="Attributes">
       <code>:vertical</code>

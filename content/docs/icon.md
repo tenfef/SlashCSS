@@ -1,41 +1,13 @@
----
-title: "Icon"
-date: 2018-04-11T09:16:45+12:00
-draft: false
-
-layout: "docs"
-
-description: "The icon component for to help you achieve consistent sizing and layout options across all icon fonts."
-
-includeLabel: true
-labelText: "SINGLE"
-labelColor: "orange"
-lastUpdated: "10/04/18"
-parent: "Single"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
++++
+title = "Icon"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "The icon component for to help you achieve consistent sizing and layout options across all icon fonts."
++++
 
 ##### Basic Usage
 
 The icon single is defined by the class `icon` this can be used in conjunction with any icon vendor syntax.
-
-<a class="button fill:primary">
-  <i class="fas fa-star icon"></i>Test Button
-</a>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
