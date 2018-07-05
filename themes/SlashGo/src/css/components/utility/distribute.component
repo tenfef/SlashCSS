@@ -4,7 +4,7 @@ DISTRIBUTE
 
 .distribute {
 
-  &-x {
+  &-right {
     @while $levels > 0 {
       &\:#{$levels} > * + * {
         margin-left: $levels * 1rem !important;
@@ -24,7 +24,7 @@ DISTRIBUTE
       }
     }
   }
-  &-y {
+  &-down {
     @while $levels > 0 {
       &\:#{$levels} > * + * {
         margin-top: $levels * 1rem !important;

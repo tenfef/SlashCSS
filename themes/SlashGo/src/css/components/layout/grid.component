@@ -37,7 +37,7 @@ GRID
   ******************************/
 
   &-gutter {
-    @while $levels > 0 {
+    @while $levels >= 0 {
       &\:#{$levels} {
         grid-column-gap: var(--u#{$levels});
         grid-row-gap: var(--u#{$levels});
@@ -45,7 +45,7 @@ GRID
       $levels: $levels - 1;
     }
     &-row {
-      @while $levels > 0 {
+      @while $levels >= 0 {
         &\:#{$levels} {
           grid-row-gap: var(--u#{$levels});
         }
@@ -65,7 +65,7 @@ GRID
       }
     }
     &-column {
-      @while $levels > 0 {
+      @while $levels >= 0 {
         &\:#{$levels} {
           grid-column-gap: var(--u#{$levels});
         }
@@ -87,7 +87,7 @@ GRID
     @each $key, $value in $screens {
       &-#{$key} {
         @media (min-width : #{$value}) {
-          @while $levels > 0 {
+          @while $levels >= 0 {
             &\:#{$levels} {
               grid-column-gap: var(--u#{$levels});
               grid-row-gap: var(--u#{$levels});

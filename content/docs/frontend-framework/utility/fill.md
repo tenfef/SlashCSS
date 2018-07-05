@@ -1,33 +1,9 @@
----
-title: "Fill"
-date: 2018-04-11T09:16:45+12:00
-draft: false
-
-layout: "docs"
-
-description: "The fill component manipulates the background-color property of a given element."
-
-includeLabel: true
-labelText: "UTILITY"
-labelColor: "brand"
-lastUpdated: "10/04/18"
-parent: "Utility"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
++++
+title = "Fill"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "The fill component manipulates the background-color property of a given element."
++++
 
 ##### Basic Usage
 

@@ -28,7 +28,6 @@ IMAGE
   ******************************/
 
   &-shape {
-
     &\:square {
       border-radius: 0;
       overflow: hidden;

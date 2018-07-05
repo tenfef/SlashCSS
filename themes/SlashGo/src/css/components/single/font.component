@@ -64,7 +64,7 @@ FONT
   LINE HEIGHT
   ******************************/
 
-  &-leading {
+  &-height {
 		@while $levels >= 0 {
       &\:#{$levels} {
         line-height: $levels / 5 + 1;

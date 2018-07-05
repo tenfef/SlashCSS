@@ -52,11 +52,6 @@ MENU
     transition: all .2s ease;
     color: var(--black);
     text-decoration: none;
-    &\:hover {
-      &:hover {
-        background-color: var(--background-focus);
-      }
-    }
     &.is-active {
       box-shadow: inset 0px -2px 0px 0px var(--primary);
     }

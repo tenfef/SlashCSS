@@ -27,14 +27,6 @@ COLUMN
 		  width: 100% / 5 * $i;
 		}
   }
-	@for $i from 1 through 7 {
-		&\:#{$i}\/7 {
-			flex-grow: 1;
-			flex-basis: 100% / 7 * $i;
-			max-width: 100% / 7 * $i;
-		  width: 100% / 7 * $i;
-		}
-  }
 	@each $key, $value in $screens {
 		&-#{$key} {
 			@media (min-width : #{$value}) {
@@ -53,14 +45,6 @@ COLUMN
 						flex-basis: 100% / 5 * $i;
 						max-width: 100% / 5 * $i;
 					  width: 100% / 5 * $i;
-					}
-			  }
-				@for $i from 1 through 7 {
-					&\:#{$i}\/7 {
-						flex-grow: 1;
-						flex-basis: 100% / 7 * $i;
-						max-width: 100% / 7 * $i;
-					  width: 100% / 7 * $i;
 					}
 			  }
 			}

@@ -26,37 +26,6 @@ NOTICE
   }
 
   /******************************
-  ALIGNMENT
-  ******************************/
-
-  &.align {
-    &\:left {
-      justify-content: flex-start;
-    }
-    &\:center{
-      justify-content: center;
-    }
-    &\:right {
-      justify-content: flex-end;
-    }
-    @each $key, $value in $screens {
-      &-#{$key} {
-        @media (min-width : #{$value}) {
-          &\:left {
-            justify-content: flex-start;
-          }
-          &\:center{
-            justify-content: center;
-          }
-          &\:right {
-            justify-content: flex-end;
-          }
-        }
-      }
-    }
-  }
-
-  /******************************
   CHILD ELEMENTS
   ******************************/
 
