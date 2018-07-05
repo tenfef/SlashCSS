@@ -41,34 +41,13 @@ TABLE
   }
 
   /******************************
-  WIDTHS
-  ******************************/
-
-  &\:fluid {
-    width: 100%;
-  }
-  &\:auto {
-    width: auto;
-  }
-  @each $key, $value in $screens {
-    &-#{$key} {
-      @media (min-width: $value) {
-        &\:fluid {
-          width: 100%;
-        }
-        &\:auto {
-          width: auto;
-        }
-      }
-    }
-  }
-
-  /******************************
   ELEVATE
   ******************************/
 
-  &\:elevate {
-    box-shadow: var(--shadow);
+  &-style {
+    &\:elevate {
+      box-shadow: var(--shadow);
+    }
   }
 
   /******************************

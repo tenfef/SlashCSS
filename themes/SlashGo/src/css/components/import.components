@@ -52,6 +52,7 @@ UTILITY
 ******************************/
 
 @import "utility/display.component";
+@import "utility/flex.component";
 @import "utility/position.component";
 @import "utility/color.component";
 @import "utility/fill.component";
@@ -67,3 +68,5 @@ UTILITY
 @import "utility/max.component";
 @import "utility/min.component";
 @import "utility/overflow.component";
+@import "utility/width.component";
+@import "utility/height.component";

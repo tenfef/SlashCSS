@@ -5,6 +5,9 @@ MIN
 .min {
 
   &-width {
+    &\:fluid {
+      min-width: 100%;
+    }
     @for $i from 1 through 10 {
       &\:#{$i}0 {
         min-width: $i * 10rem !important;
@@ -12,6 +15,9 @@ MIN
     }
   }
   &-height {
+    &\:fluid {
+      min-height: 100%;
+    }
     @for $i from 1 through 10 {
       &\:#{$i}0 {
         min-height: $i * 10rem !important;
@@ -23,6 +29,9 @@ MIN
     &-width {
       &-#{$key} {
         @media (min-width: $value) {
+          &\:fluid {
+            min-width: 100%;
+          }
           @for $i from 1 through 10 {
             &\:#{$i}0 {
               min-width: $i * 10rem !important;
@@ -34,6 +43,9 @@ MIN
     &-height {
       &-#{$key} {
         @media (min-width: $value) {
+          &\:fluid {
+            min-height: 100%;
+          }
           @for $i from 1 through 10 {
             &\:#{$i}0 {
               min-height: $i * 10rem !important;

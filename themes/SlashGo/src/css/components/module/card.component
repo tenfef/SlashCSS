@@ -13,8 +13,8 @@ CARD
 }
 
 .card {
-	position: relative;
 	display: block;
+	position: relative;
 	background-color: var(--card-bg);
 	border: var(--border);
 	border-radius: var(--card-radius);
@@ -34,9 +34,11 @@ CARD
   ELEVATE
   ******************************/
 
-	&\:elevate {
-		box-shadow: var(--card-shadow);
-	}
+	&-style {
+    &\:elevate {
+      box-shadow: var(--shadow);
+    }
+  }
 
 	/******************************
   CHILD ELEMENTS

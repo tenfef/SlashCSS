@@ -89,13 +89,15 @@ FONT
   TRANSFORM
   ******************************/
 
-  &\:none {
-    text-transform: none;
-  }
-  &\:upper {
-    text-transform: uppercase;
-  }
-  &\:lower {
-    text-transform: lowercase;
+  &-transform {
+    &\:none {
+      text-transform: none;
+    }
+    &\:upper {
+      text-transform: uppercase;
+    }
+    &\:lower {
+      text-transform: lowercase;
+    }
   }
 }

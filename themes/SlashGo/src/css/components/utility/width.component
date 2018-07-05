@@ -1,0 +1,22 @@
+/******************************
+WIDTH
+******************************/
+
+&\:fluid {
+  width: 100% !important;
+}
+&\:auto {
+  width: auto !important;
+}
+@each $key, $value in $screens {
+  &-#{$key} {
+    @media (min-width: $value) {
+      &\:fluid {
+        width: 100% !important;
+      }
+      &\:auto {
+        width: auto !important;
+      }
+    }
+  }
+}

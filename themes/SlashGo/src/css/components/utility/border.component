@@ -14,11 +14,11 @@ BORDER
   CORNERS
   ******************************/
 
-  &\:sharp {
-    border-radius: 0 !important;
-  }
   &\:radius {
     border-radius: var(--radius) !important;
+  }
+  &\:sharp {
+    border-radius: 0 !important;
   }
   &\:round {
     border-radius: 500px !important;
@@ -41,6 +41,14 @@ BORDER
       border-top-left-radius: var(--radius) !important;
       border-top-right-radius: var(--radius) !important;
     }
+    &\:sharp {
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+    }
+    &\:round {
+      border-top-left-radius: 500px !important;
+      border-top-right-radius: 500px !important;
+    }
     @each $key, $value in $screens {
       &-#{$key} {
         @media (min-width : #{$value}) {
@@ -51,6 +59,14 @@ BORDER
           &\:radius {
             border-top-left-radius: var(--radius) !important;
             border-top-right-radius: var(--radius) !important;
+          }
+          &\:sharp {
+            border-top-left-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+          }
+          &\:round {
+            border-top-left-radius: 500px !important;
+            border-top-right-radius: 500px !important;
           }
         }
       }
@@ -65,6 +81,14 @@ BORDER
       border-top-right-radius: var(--radius) !important;
       border-bottom-right-radius: var(--radius) !important;
     }
+    &\:sharp {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+    &\:round {
+      border-top-right-radius: 500px !important;
+      border-bottom-right-radius: 500px !important;
+    }
     @each $key, $value in $screens {
       &-#{$key} {
         @media (min-width : #{$value}) {
@@ -75,6 +99,14 @@ BORDER
           &\:radius {
             border-top-right-radius: var(--radius) !important;
             border-bottom-right-radius: var(--radius) !important;
+          }
+          &\:sharp {
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+          }
+          &\:round {
+            border-top-right-radius: 500px !important;
+            border-bottom-right-radius: 500px !important;
           }
         }
       }
@@ -89,6 +121,14 @@ BORDER
       border-bottom-left-radius: var(--radius) !important;
       border-bottom-right-radius: var(--radius) !important;
     }
+    &\:sharp {
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+    &\:round {
+      border-bottom-left-radius: 500px !important;
+      border-bottom-right-radius: 500px !important;
+    }
     @each $key, $value in $screens {
       &-#{$key} {
         @media (min-width : #{$value}) {
@@ -99,6 +139,14 @@ BORDER
           &\:radius {
             border-bottom-left-radius: var(--radius) !important;
             border-bottom-right-radius: var(--radius) !important;
+          }
+          &\:sharp {
+            border-bottom-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+          }
+          &\:round {
+            border-bottom-left-radius: 500px !important;
+            border-bottom-right-radius: 500px !important;
           }
         }
       }
@@ -113,6 +161,14 @@ BORDER
       border-top-left-radius: var(--radius) !important;
       border-bottom-left-radius: var(--radius) !important;
     }
+    &\:sharp {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+    &\:round {
+      border-top-left-radius: 500px !important;
+      border-bottom-left-radius: 500px !important;
+    }
     @each $key, $value in $screens {
       &-#{$key} {
         @media (min-width : #{$value}) {
@@ -123,6 +179,14 @@ BORDER
           &\:radius {
             border-top-left-radius: var(--radius) !important;
             border-bottom-left-radius: var(--radius) !important;
+          }
+          &\:sharp {
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+          }
+          &\:round {
+            border-top-left-radius: 500px !important;
+            border-bottom-left-radius: 500px !important;
           }
         }
       }

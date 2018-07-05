@@ -25,24 +25,6 @@ DISPLAY
   &\:inline-grid {
     display: inline-grid !important;
   }
-  &\:horizontal {
-    flex-direction: row;
-  }
-  &\:vertical {
-    flex-direction: column;
-  }
-  @each $key, $value in $screens {
-    &-#{$key} {
-      @media (min-width : #{$value}) {
-        &\:horizontal {
-          flex-direction: row;
-        }
-        &\:vertical {
-          flex-direction: column;
-        }
-      }
-    }
-  }
   @each $key, $value in $screens {
     &-#{$key} {
       @media (min-width : #{$value}) {
@@ -67,24 +49,6 @@ DISPLAY
         }
         &\:inline-grid {
           display: inline-grid !important;
-        }
-        &\:horizontal {
-          flex-direction: row;
-        }
-        &\:vertical {
-          flex-direction: column;
-        }
-        @each $key, $value in $screens {
-          &-#{$key} {
-            @media (min-width : #{$value}) {
-              &\:horizontal {
-                flex-direction: row;
-              }
-              &\:vertical {
-                flex-direction: column;
-              }
-            }
-          }
         }
       }
     }

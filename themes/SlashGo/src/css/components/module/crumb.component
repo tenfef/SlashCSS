@@ -21,7 +21,7 @@ CRUMB
   DIRECTION
   ******************************/
 
-  &\/trail{
+  &\/trail {
     margin-left: var(--crumb-trail-gap);
     margin-right: var(--crumb-trail-gap);
     color: var(--crumb-trail-color);

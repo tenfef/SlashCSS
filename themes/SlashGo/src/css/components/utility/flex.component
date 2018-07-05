@@ -1,0 +1,32 @@
+/************************************************************
+FLEX
+************************************************************/
+
+.flex {
+  &\:1 {
+    flex: 1;
+  }
+  &\:none {
+    flex: none;
+  }
+  &-direction {
+    &\:horizontal {
+      flex-direction: row;
+    }
+    &\:vertical {
+      flex-direction: column;
+    }
+    @each $key, $value in $screens {
+      &-#{$key} {
+        @media (min-width : #{$value}) {
+          &\:horizontal {
+            flex-direction: row;
+          }
+          &\:vertical {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

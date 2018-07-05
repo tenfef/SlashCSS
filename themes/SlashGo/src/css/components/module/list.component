@@ -40,22 +40,24 @@ LIST
   DIRECTION
   ******************************/
 
-  &\:horizontal {
-    display: flex;
-    .list\/item {
-      margin-bottom: 0;
-    }
-    &.list-gutter {
-      @while $levels > 0 {
-        &\:#{$levels} {
-          .list\/item {
-            margin-right: var(--u#{$levels});
-            &:last-child {
-              margin-right: 0;
+  &-direction {
+    &\:right {
+      display: flex;
+      .list\/item {
+        margin-bottom: 0;
+      }
+      &.list-gutter {
+        @while $levels > 0 {
+          &\:#{$levels} {
+            .list\/item {
+              margin-right: var(--u#{$levels});
+              &:last-child {
+                margin-right: 0;
+              }
             }
           }
+          $levels: $levels - 1;
         }
-        $levels: $levels - 1;
       }
     }
   }

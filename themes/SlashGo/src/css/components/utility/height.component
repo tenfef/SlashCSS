@@ -1,0 +1,22 @@
+/******************************
+HEIGHT
+******************************/
+
+&\:fluid {
+  height: 100% !important;
+}
+&\:auto {
+  height: auto !important;
+}
+@each $key, $value in $screens {
+  &-#{$key} {
+    @media (min-width: $value) {
+      &\:fluid {
+        height: 100% !important;
+      }
+      &\:auto {
+        height: auto !important;
+      }
+    }
+  }
+}
