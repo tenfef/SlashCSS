@@ -19,10 +19,6 @@ IMAGE
   background-position: center center;
   background-repeat: no-repeat;
 
-  &\:fluid {
-    width: 100%;
-  }
-
   /******************************
   SHAPE
   ******************************/

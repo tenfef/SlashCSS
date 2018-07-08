@@ -1,33 +1,9 @@
----
-title: "Flex"
-date: 2018-04-11T09:16:45+12:00
-draft: false
-
-layout: "docs"
-
-description: "The flex component takes advantage of flexbox properties providing you content alignment across the horizontal or vertical axis. The flex definition replaces the old flag module which is now deprecated."
-
-includeLabel: true
-labelText: "LAYOUT"
-labelColor: "green"
-lastUpdated: "10/04/18"
-parent: "Layout"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
++++
+title = "Flex"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "The flex component takes advantage of flexbox properties providing you content alignment across the horizontal or vertical axis. The flex definition replaces the old flag module which is now deprecated."
++++
 
 ##### Basic Usage
 

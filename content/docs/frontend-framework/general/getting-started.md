@@ -1,33 +1,10 @@
----
-title: "Getting Started"
-date: 2018-04-11T09:16:45+12:00
-draft: false
++++
+title = "Getting Started"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "Geting started is easy, here's a quick start guide to help kickstart your project."
++++
 
-layout: "docs"
-
-description: "Geting started is easy, here's a quick start guide to help kickstart your project."
-
-includeLabel: true
-labelText: "GENERAL"
-labelColor: "blue"
-lastUpdated: "10/04/18"
-parent: "General"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
 
 ##### The Quick Way
 

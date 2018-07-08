@@ -1,33 +1,9 @@
----
-title: "Mobile First"
-date: 2018-04-11T09:16:45+12:00
-draft: false
-
-layout: "docs"
-
-description: "An indepth guide how component responsiveness are handled."
-
-includeLabel: true
-labelText: "GENERAL"
-labelColor: "blue"
-lastUpdated: "10/04/18"
-parent: "General"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
++++
+title = "Mobile First"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "An indepth guide how component responsiveness are handled."
++++
 
 ##### Mobile First Design
 

@@ -1,35 +1,9 @@
----
-title: "Accordion"
-date: 2018-04-11T09:16:45+12:00
-draft: false
-
-layout: "docs"
-
-description: "Accordions are useful when you want to hide and show large content."
-
-includeLabel: true
-labelText: "MODULE"
-labelColor: "yellow"
-
-includeMetaCard: false
-lastUpdated: "10/04/18"
-parent: "Module"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
++++
+title = "Accordion"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "Accordions are useful when you want to hide and show large content."
++++
 
 ##### Basic Usage
 
@@ -103,41 +77,9 @@ Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow`
   </div>
 </div>
 ```
-
-  {{% codeblock key="initializing" definition="javascript" margin="top-tight" %}}
-  ```javascript
-  var zapAccordion = new ZapAccordion();
-  ```
-  {{% /codeblock %}}
 {{% /codeblock %}}
-
-##### Options
-
-<table class="m-table -fluid -stack">
-  <thead>
-    <tr>
-      <th>
-        <strong>Setting</strong>
-      </th>
-      <th>
-        <strong>Default</strong>
-      </th>
-      <th>
-        <strong>Description</strong>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="Setting">
-        element
-      </td>
-      <td data-label="Default">
-        .accordion
-      </td>
-      <td data-label="Description">
-        Define the element class name to initialize.
-      </td>
-    </tr>
-  </tbody>
-</table>
+{{% codeblock key="initializing" definition="javascript" margin="top-tight" %}}
+```javascript
+var zapAccordion = new ZapAccordion();
+```
+{{% /codeblock %}}

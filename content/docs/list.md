@@ -21,79 +21,79 @@ The list module `list` is useful for any type of list content that runs horizont
 
 ##### Gutter Spacing
 
-You can use the standard spacing modifiers to control the spread between list items. You can make your list run horizontally with the `list:horizontal` modifier.
+You can use the standard spacing modifiers to control the spread between list items. You can make your list run horizontally with the `list-direction:right` modifier.
 
-<ul class="list list-gutter:1 list:horizontal margin-bottom:2" style="margin-left: 0">
+<ul class="list list-gutter:1 list-direction:right margin-bottom:2">
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
 </ul>
 
-<ul class="list list-gutter:2 list:horizontal margin-bottom:2" style="margin-left: 0">
+<ul class="list list-gutter:2 list-direction:right margin-bottom:2">
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
-    </div>
-  </li>
-</ul>
-
-<ul class="list list-gutter:3 list:horizontal margin-bottom:2" style="margin-left: 0">
-  <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
 </ul>
 
-<ul class="list list-gutter:4 list:horizontal margin-bottom:2" style="margin-left: 0">
+<ul class="list list-gutter:3 list-direction:right margin-bottom:2">
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
 </ul>
 
-<ul class="list list-gutter:5 list:horizontal margin-bottom:2" style="margin-left: 0">
+<ul class="list list-gutter:4 list-direction:right margin-bottom:2">
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
   <li class="list/item">
-    <div class="image border:sharp image-shape:square image-size:2 fill:primary">
+    <div class="padding:2 border-style:radius fill:primary">
+    </div>
+  </li>
+</ul>
+
+<ul class="list list-gutter:5 list-direction:right margin-bottom:2">
+  <li class="list/item">
+    <div class="padding:2 border-style:radius fill:primary">
+    </div>
+  </li>
+  <li class="list/item">
+    <div class="padding:2 border-style:radius fill:primary">
+    </div>
+  </li>
+  <li class="list/item">
+    <div class="padding:2 border-style:radius fill:primary">
     </div>
   </li>
 </ul>
@@ -158,10 +158,10 @@ The following settings are available.
 
   <tr>
     <td data-label="Properties">
-      <code>list</code>
+      <code>list-direction</code>
     </td>
     <td data-label="Attributes">
-      <code>:horizontal</code>
+      <code>:right</code>
     </td>
     <td data-label="Responsive">
       No

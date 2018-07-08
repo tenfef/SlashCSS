@@ -41,7 +41,6 @@ SINGLE
 
 @import "single/button.component";
 @import "single/font.component";
-@import "single/icon.component";
 @import "single/image.component";
 @import "single/label.component";
 @import "single/line.component";
@@ -70,3 +69,4 @@ UTILITY
 @import "utility/overflow.component";
 @import "utility/width.component";
 @import "utility/height.component";
+@import "utility/elevate.component";

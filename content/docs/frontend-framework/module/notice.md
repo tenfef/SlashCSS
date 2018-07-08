@@ -1,35 +1,9 @@
----
-title: "Notice"
-date: 2018-04-11T09:16:45+12:00
-draft: false
-
-layout: "docs"
-
-description: "The notice component is useful for visually displaying temporary content or information."
-
-includeLabel: true
-labelText: "MODULE"
-labelColor: "yellow"
-
-includeMetaCard: false
-lastUpdated: "10/04/18"
-parent: "Module"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
++++
+title = "Notice"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "The notice component is useful for visually displaying temporary content or information."
++++
 
 ##### Basic Usage
 

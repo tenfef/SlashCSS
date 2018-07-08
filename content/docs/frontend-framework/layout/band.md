@@ -1,33 +1,10 @@
----
-title: "Band"
-date: 2018-04-11T09:16:45+12:00
-draft: false
++++
+title = "Band"
+date = "2018-04-11T09:16:45+12:00"
+draft = false
+description = "The band component is useful when you require a row based seperating container that spans the full width of the browser window. Often you will see sites with alternating white and shaded rows, this is a perfect example of how the band layout can used."
++++
 
-layout: "docs"
-
-description: "The band component is useful when you require a row based seperating container that spans the full width of the browser window. Often you will see sites with alternating white and shaded rows, this is a perfect example of how the band layout can used."
-
-includeLabel: true
-labelText: "LAYOUT"
-labelColor: "green"
-lastUpdated: "10/04/18"
-parent: "Layout"
-family: "Frontend Framework"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
 
 ##### Basic Usage
 

@@ -7,9 +7,9 @@ description = "The table module is useful for displaying grid based data and con
 
 ##### Basic Usage
 
-The table module is defined with the `table` class. By default the table width will only be as wide to fit the content. To make the table span the full width assign the `table:fluid` modifier. Table rows or table cells can have hover states using the `hover` component.
+The table module is defined with the `table` class. By default the table width will only be as wide to fit the content. To make the table span the full width assign the `width:fluid` modifier. Table rows or table cells can have hover states using the `hover` component.
 
-<table class="table table:fluid margin-bottom:2">
+<table class="table width:fluid margin-bottom:2">
   <thead>
     <tr>
       <th>Head</th>
@@ -39,7 +39,7 @@ The table module is defined with the `table` class. By default the table width w
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<table class="table table:fluid margin-bottom:2">
+<table class="table width:fluid margin-bottom:2">
   <thead>
     <tr>
       <th>Head</th>
@@ -72,7 +72,7 @@ The table module is defined with the `table` class. By default the table width w
 
 Tables can be responsive with the `table:pile` modifier. Header labels can be applied by adding the attribute `data-label` to the `<td>` cell.
 
-<table class="table table:fluid table:elevate table:pile margin-bottom:2">
+<table class="table width:fluid elevate table:pile margin-bottom:2">
   <thead>
     <tr>
       <th>Head 1</th>
@@ -99,7 +99,7 @@ Tables can be responsive with the `table:pile` modifier. Header labels can be ap
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<table class="table table:fluid table:elevate table:pile margin-bottom:2">
+<table class="table width:fluid elevate table:pile margin-bottom:2">
   <thead>
     <tr>
       <th>Head 1</th>
@@ -142,7 +142,7 @@ You can override styling using the following local root variables.
 
 The following settings are available.
 
-<table class="table table:fluid table:pile">
+<table class="table width:fluid table:pile">
   <thead>
     <tr>
       <th>
@@ -159,39 +159,9 @@ The following settings are available.
       </th>
     </tr>
   </thead>
-
   <tr>
     <td data-label="Properties">
       <code>table</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:fluid</code>
-      <code>:default</code>
-    </td>
-    <td data-label="Responsive">
-      Yes
-    </td>
-    <td class="row:reverse">
-      Set button width to 100% or auto
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-
-    </td>
-    <td data-label="Attributes">
-      <code>:elevate</code>
-    </td>
-    <td data-label="Responsive">
-      No
-    </td>
-    <td class="row:reverse">
-      Elevate table
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-
     </td>
     <td data-label="Attributes">
       <code>:pile</code>

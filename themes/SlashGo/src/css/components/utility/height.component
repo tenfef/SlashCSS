@@ -9,6 +9,11 @@ HEIGHT
   &\:auto {
     height: auto !important;
   }
+  @for $i from 1 through 10 {
+    &\:#{$i} {
+      min-width: $i * 10rem !important;
+    }
+  }
   @each $key, $value in $screens {
     &-#{$key} {
       @media (min-width: $value) {

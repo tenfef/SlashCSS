@@ -45,14 +45,14 @@ Buttons comes in various sizes, use standard size modifiers to transform its siz
 
 Buttons can vary in width.
 
-<div class="distribute-y:1 margin-bottom:2">
+<div class="distribute-down:1 margin-bottom:2">
   <button class="button">Default</button><br>
   <button class="button button-grow:1">Grow 1</button><br>
   <button class="button button-grow:2">Grow 2</button><br>
   <button class="button button-grow:3">Grow 3</button><br>
   <button class="button button-grow:4">Grow 4</button><br>
   <button class="button button-grow:5">Grow 5</button><br>
-  <button class="button button:fluid">Fluid</button>
+  <button class="button width:fluid">Fluid</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
@@ -63,7 +63,7 @@ Buttons can vary in width.
 <button class="button button-grow:3">Grow 3</button>
 <button class="button button-grow:4">Grow 4</button>
 <button class="button button-grow:5">Grow 5</button>
-<button class="button button:fluid">Fluid</button>
+<button class="button width:fluid">Fluid</button>
 ```
 {{% /codeblock %}}
 
@@ -73,33 +73,33 @@ You can apply different corners with the `border` component.
 
 <div class="margin-bottom:2">
   <button class="button">Default</button>
-  <button class="button border:sharp">Sharp</button>
-  <button class="button border:round">Round</button>
+  <button class="button border-style:sharp">Sharp</button>
+  <button class="button border-style:round">Round</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button">Default</button>
-<button class="button border:sharp">Sharp</button>
-<button class="button border:round">Round</button>
+<button class="button border-style:sharp">Sharp</button>
+<button class="button border-style:round">Round</button>
 ```
 {{% /codeblock %}}
 
 ##### Styles
 
-There are 3 different styles of buttons, default, outline and elevated.
+There are 3 different styles of buttons, default, outline and button-style:physicald.
 
 <div class="margin-bottom:2">
   <button class="button button-grow:2">Default</button>
-  <button class="button button-grow:2 button:outline">Outline</button>
-  <button class="button button-grow:2 button:elevate">Elevated</button>
+  <button class="button button-grow:2 button-style:outline">Outline</button>
+  <button class="button button-grow:2 button-style:physical">Elevated</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button button-grow:2">Default</button>
-<button class="button button-grow:2 button:outline">Outline</button>
-<button class="button button-grow:2 button:elevate">Elevated</button>
+<button class="button button-grow:2 button-style:outline">Outline</button>
+<button class="button button-grow:2 button-style:physical">Elevated</button>
 ```
 {{% /codeblock %}}
 
@@ -107,7 +107,7 @@ There are 3 different styles of buttons, default, outline and elevated.
 
 Buttons can have different font weights with the font component.
 
-<div class="u-spread-x-1 margin-bottom:2">
+<div class="margin-bottom:2">
   <button class="button font-weight:regular">Regular</button>
   <button class="button font-weight:medium">Medium</button>
   <button class="button font-weight:bold">Bold</button>
@@ -124,7 +124,7 @@ Buttons can have different font weights with the font component.
 
 ##### Button Groups
 
-Buttons can be joined to form several buttons. Buttons can be vertical with `button-direction`.
+Buttons can be joined to form several buttons. Buttons can be down with `button-direction`.
 
 <div class="margin-bottom:2">
   <div class="buttons">
@@ -135,7 +135,7 @@ Buttons can be joined to form several buttons. Buttons can be vertical with `but
 </div>
 
 <div class="margin-bottom:2">
-  <div class="buttons border:round buttons-direction:vertical">
+  <div class="buttons border-style:round buttons-direction:down">
     <button class="button">1</button>
     <button class="button">2</button>
     <button class="button">3</button>
@@ -143,7 +143,7 @@ Buttons can be joined to form several buttons. Buttons can be vertical with `but
 </div>
 
 <div class="margin-bottom:2">
-  <div class="buttons border:sharp buttons-direction-md:vertical">
+  <div class="buttons border-style:sharp buttons-direction-md:down">
     <button class="button">1</button>
     <button class="button">2</button>
     <button class="button">3</button>
@@ -158,13 +158,13 @@ Buttons can be joined to form several buttons. Buttons can be vertical with `but
   <button class="button button-size:2">3</button>
 </div>
 
-<div class="buttons border:round buttons-direction:vertical">
+<div class="buttons border-style:round buttons-direction:down">
   <button class="button">1</button>
   <button class="button">2</button>
   <button class="button">3</button>
 </div>
 
-<div class="buttons border:sharp buttons-direction-md:vertical">
+<div class="buttons border-style:sharp buttons-direction-md:down">
   <button class="button">1</button>
   <button class="button">2</button>
   <button class="button">3</button>
@@ -176,31 +176,31 @@ Buttons can be joined to form several buttons. Buttons can be vertical with `but
 
 Use the `fill` component to apply different color your buttons.
 
-<button class="button button:elevate fill:primary margin-bottom:2">Button</button>
-<button class="button button:elevate fill:secondary margin-bottom:2">Button</button>
-<button class="button button:elevate fill:red margin-bottom:2">Button</button>
-<button class="button button:elevate fill:orange margin-bottom:2">Button</button>
-<button class="button button:elevate fill:yellow margin-bottom:2">Button</button>
-<button class="button button:elevate fill:green margin-bottom:2">Button</button>
-<button class="button button:elevate fill:blue margin-bottom:2">Button</button>
-<button class="button button:elevate fill:purple margin-bottom:2">Button</button>
-<button class="button button:elevate fill:black margin-bottom:2">Button</button>
-<button class="button button:elevate fill:grey margin-bottom:2">Button</button>
-<button class="button button:elevate fill:white color:black margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:primary margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:secondary margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:red margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:orange margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:yellow margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:green margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:blue margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:purple margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:black margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:grey margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:white color:black margin-bottom:2">Button</button>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button button:elevate fill:primary">Button</button>
-<button class="button button:elevate fill:secondary">Button</button>
-<button class="button button:elevate fill:red">Button</button>
-<button class="button button:elevate fill:orange">Button</button>
-<button class="button button:elevate fill:yellow">Button</button>
-<button class="button button:elevate fill:green">Button</button>
-<button class="button button:elevate fill:blue">Button</button>
-<button class="button button:elevate fill:purple">Button</button>
-<button class="button button:elevate fill:black">Button</button>
-<button class="button button:elevate fill:grey">Button</button>
-<button class="button button:elevate fill:white color:black">Button</button>
+<button class="button button-style:physical fill:primary">Button</button>
+<button class="button button-style:physical fill:secondary">Button</button>
+<button class="button button-style:physical fill:red">Button</button>
+<button class="button button-style:physical fill:orange">Button</button>
+<button class="button button-style:physical fill:yellow">Button</button>
+<button class="button button-style:physical fill:green">Button</button>
+<button class="button button-style:physical fill:blue">Button</button>
+<button class="button button-style:physical fill:purple">Button</button>
+<button class="button button-style:physical fill:black">Button</button>
+<button class="button button-style:physical fill:grey">Button</button>
+<button class="button button-style:physical fill:white color:black">Button</button>
 ```
 {{% /codeblock %}}
 
@@ -224,7 +224,7 @@ You can override styling using the following local root variables.
 
 The following settings are available.
 
-<table class="table table:fluid table:pile">
+<table class="table width:fluid table:pile">
   <thead>
     <tr>
       <th>
@@ -241,35 +241,18 @@ The following settings are available.
       </th>
     </tr>
   </thead>
-
   <tr>
     <td data-label="Properties">
-      <code>button</code>
+      <code>button-style</code>
     </td>
     <td data-label="Attributes">
-      <code>:fluid</code>
-      <code>:default</code>
-    </td>
-    <td data-label="Responsive">
-      Yes
-    </td>
-    <td class="row:reverse">
-      Set button width to 100% or auto
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-
-    </td>
-    <td data-label="Attributes">
-      <code>:elevate</code>
       <code>:outline</code>
     </td>
     <td data-label="Responsive">
       No
     </td>
     <td class="row:reverse">
-      Set style of buttons
+      Outline button style
     </td>
   </tr>
   <tr>
@@ -302,31 +285,16 @@ The following settings are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>buttons</code>
+      <code>button-direction</code>
     </td>
     <td data-label="Attributes">
-      <code>:fluid</code>
-      <code>:default</code>
+      <code>:down</code>
     </td>
     <td data-label="Responsive">
       Yes
     </td>
     <td class="row:reverse">
-      Set button width to 100% or auto
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-
-    </td>
-    <td data-label="Attributes">
-      <code>:vertical</code>
-    </td>
-    <td data-label="Responsive">
-      Yes
-    </td>
-    <td class="row:reverse">
-      Enable vertical buttons
+      Enable down buttons
     </td>
   </tr>
 </table>

@@ -41,16 +41,6 @@ TABLE
   }
 
   /******************************
-  ELEVATE
-  ******************************/
-
-  &-style {
-    &\:elevate {
-      box-shadow: var(--shadow);
-    }
-  }
-
-  /******************************
   RESPONSIVE
   ******************************/
 
@@ -130,7 +120,7 @@ TABLE
         }
       }
     }
-    &.table\:elevate {
+    &.elevate {
       box-shadow: none;
       @media (min-width: $sm) {
         box-shadow: var(--shadow);
@@ -223,7 +213,7 @@ TABLE
             }
           }
         }
-        &.table\:elevate {
+        &.elevate {
           box-shadow: none;
           @media (min-width: $sm) {
             box-shadow: var(--shadow);

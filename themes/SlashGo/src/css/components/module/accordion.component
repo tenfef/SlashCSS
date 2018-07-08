@@ -5,7 +5,6 @@ ACCORDION
 :root {
   --accordion-fill: var(--white);
   --accordion-header-padding: var(--u1) var(--u2);
-  --accordion-content-fill: var(--background-focus);
   --accordion-body-padding: var(--u2);
   --accordion-transition: var(--transition);
   --accordion-arrow-fill: var(--black);
@@ -63,7 +62,6 @@ ACCORDION
   &\/content {
     max-height: 0;
     margin: 0;
-    background-color: var(--accordion-content-fill);
     overflow: hidden;
     transition: var(--accordion-transition);
   }

@@ -14,14 +14,16 @@ BORDER
   CORNERS
   ******************************/
 
-  &\:radius {
-    border-radius: var(--radius) !important;
-  }
-  &\:sharp {
-    border-radius: 0 !important;
-  }
-  &\:round {
-    border-radius: 500px !important;
+  &-style {
+    &\:radius {
+      border-radius: var(--radius) !important;
+    }
+    &\:sharp {
+      border-radius: 0 !important;
+    }
+    &\:round {
+      border-radius: 500px !important;
+    }
   }
 
   /******************************
