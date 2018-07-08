@@ -4,11 +4,6 @@ IMAGE
 
 :root {
   --image-radius: var(--radius);
-  --image-size-1: var(--u3);
-  --image-size-2: var(--u5);
-  --image-size-3: var(--u7);
-  --image-size-4: var(--u9);
-  --image-size-5: var(--u12);
 }
 
 .image {
@@ -41,8 +36,8 @@ IMAGE
   &-size {
     @while $levels > 0 {
       &\:#{$levels} {
-        width: var(--image-size-#{$levels});
-        height: var(--image-size-#{$levels});
+        width: var(--u#{$levels});
+        height: var(--u#{$levels});
       }
       $levels: $levels - 1;
     }
@@ -51,8 +46,8 @@ IMAGE
         @media (min-width : #{$size}) {
           @while $levels > 0 {
             &\:#{$levels} {
-              width: var(--image-size-#{$levels});
-              height: var(--image-size-#{$levels});
+              width: var(--u#{$levels});
+              height: var(--u#{$levels});
             }
             $levels: $levels - 1;
           }

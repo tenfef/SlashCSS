@@ -53,7 +53,7 @@ MENU
     color: var(--black);
     text-decoration: none;
     &.is-active {
-      box-shadow: inset 0px -2px 0px 0px var(--primary);
+      box-shadow: inset 0px -2px 0px 0px var(--primary-color);
     }
   }
 }

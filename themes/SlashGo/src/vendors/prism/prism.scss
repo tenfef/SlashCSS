@@ -146,7 +146,7 @@ code:not([class*="language-"]) {
 	font-size: var(--micro);
 	background: #F0F3F7;
 	border-radius: var(--radius);
-	color: var(--primary);
+	color: var(--primary-color);
 	&:last-child {
 		margin: 0;
 	}

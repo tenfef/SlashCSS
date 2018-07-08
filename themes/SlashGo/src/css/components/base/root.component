@@ -11,7 +11,7 @@ ROOT
   --max-width: #{$max-width};
   --radius: #{$radius};
   --columns: #{$columns};
-  --border-color: red;
+  --border-color: var(--grey-light-4);
   --border: #{$border};
   --transition: #{$transition};
   --shadow: #{$shadow};

@@ -60,10 +60,10 @@ FORM
     input:not([type=submit]) {
       &:focus {
         & ~ .form\/icon {
-          color: var(--primary);
+          color: var(--primary-color);
         }
         & ~ .form\/text {
-          color: var(--primary);
+          color: var(--primary-color);
         }
       }
     }
@@ -144,7 +144,7 @@ FORM
     input:not([type="submit"]) {
       display: none;
       &:checked ~ .form\/checkbox-indicator {
-        background: var(--primary);
+        background: var(--primary-color);
         &:after {
           display: block;
         }
@@ -197,7 +197,7 @@ FORM
       &:checked ~ .form\/radio-indicator {
         &:after {
           display: block;
-          background: var(--primary);
+          background: var(--primary-color);
         }
       }
       &:disabled {
@@ -303,7 +303,7 @@ input {
 
     &:focus {
       background: var(--form-field-focus-fill);
-      border-color: var(--primary);
+      border-color: var(--primary-color);
     }
     &:disabled {
       background: var(--form-disabled-fill);

@@ -18,7 +18,7 @@ BUTTON
   height: calc(3 * var(--u1) + var(--u2));
   margin-right: var(--u1);
   padding: 0 1em;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   outline: none;
   border: none;
   border-radius: var(--button-radius);
@@ -134,15 +134,15 @@ BUTTON
     }
 
     &\:outline {
-      box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--primary);
+      box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--primary-color);
       background: transparent;
-      color: var(--primary);
+      color: var(--primary-color);
       &:hover {
-        background-color: var(--primary);
+        background-color: var(--primary-color);
         color: white;
       }
       &:active {
-        background-color: var(--primary);
+        background-color: var(--primary-color);
         color: white;
       }
 

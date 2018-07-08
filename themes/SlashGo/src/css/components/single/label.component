@@ -15,7 +15,7 @@ LABEL
   margin-right: .25rem;
   padding: var(--label-padding);
   border-radius: var(--label-radius);
-  background: var(--primary);
+  background: var(--primary-color);
   vertical-align: middle;
   font-family: var(--font-family);
   font-size: 9px;

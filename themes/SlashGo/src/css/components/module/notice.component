@@ -14,7 +14,7 @@ NOTICE
   position: relative;
   width: 100%;
   align-items: center;
-  background: var(--primary);
+  background: var(--primary-color);
   border-radius: var(--radius);
   color: white;
   opacity: 1;
