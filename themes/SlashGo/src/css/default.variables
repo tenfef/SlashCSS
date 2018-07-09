@@ -80,37 +80,42 @@ $colors: (
   green: #00B26B,
   lime: #6EDF00,
   yellow: #FFCE00,
-  orange: #DF7900,
+  orange: #ff8a00,
   brown: #A83C00,
   grey: #8695A8
 ) !default;
 
+$tonal-colors: (
+
+) !default;
+
 $mono-colors: (
-  white: #fff,
-  black: #000
+  white: #ffffff,
+  black: #000000
 );
 
-@function generate-color-map ($key, $value) {
+@function generate-color-tones ($key, $value) {
   $map: (
-    $key: $value,
-    #{$key}-light-1: mix(white, $value, 16%),
-    #{$key}-light-2: mix(white, $value, 36%),
-    #{$key}-light-3: mix(white, $value, 52%),
-    #{$key}-light-4: mix(white, $value, 68%),
-    #{$key}-light-5: mix(white, $value, 80%),
-    #{$key}-dark-1: mix(black, $value, 16%),
-    #{$key}-dark-2: mix(black, $value, 36%),
-    #{$key}-dark-3: mix(black, $value, 52%),
-    #{$key}-dark-4: mix(black, $value, 68%),
-    #{$key}-dark-5: mix(black, $value, 80%)
+    $key: (
+      #{$key}-light-1: mix(white, $value, 16%),
+      #{$key}-light-2: mix(white, $value, 36%),
+      #{$key}-light-3: mix(white, $value, 52%),
+      #{$key}-light-4: mix(white, $value, 68%),
+      #{$key}-light-5: mix(white, $value, 80%),
+      #{$key}-dark-1: mix(black, $value, 16%),
+      #{$key}-dark-2: mix(black, $value, 36%),
+      #{$key}-dark-3: mix(black, $value, 52%),
+      #{$key}-dark-4: mix(black, $value, 68%),
+      #{$key}-dark-5: mix(black, $value, 80%)
+    )
   );
   @return $map;
 }
 
 @each $key, $value in $colors {
   $map: ();
-  $map: map-merge( $map, generate-color-map($key, $value) );
-  $colors: map-merge($colors, $map);
+  $map: map-merge( $map, generate-color-tones($key, $value) );
+  $tonal-colors: map-merge($tonal-colors, $map);
 }
 
 $colors: map-merge($colors, $mono-colors);

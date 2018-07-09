@@ -4,7 +4,9 @@ GLOBAL
 
 :root {
   --primary-color: var(--red);
+  --primary-hover-color: var(--red-light-1);
 	--secondary-color: var(--blue);
+  --secondary-hover-color: var(--blue-light-1);
 	--background: var(--grey-light-5);
 	--background-focus: var(--grey-light-4);
 	--background-active: var(--grey-light-3);

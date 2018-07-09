@@ -39,6 +39,11 @@ ROOT
   @each $key, $value in $colors {
     --#{$key}: #{$value};
   }
+  @each $key, $value in $tonal-colors {
+    @each $tone, $hex in $value {
+      --#{$tone}: #{$hex};
+    }
+  }
 
   /******************************
   UNITS
@@ -49,4 +54,5 @@ ROOT
   @each $key, $value in $units {
     --#{$key}: #{$value};
   }
+
 }
