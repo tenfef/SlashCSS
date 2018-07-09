@@ -8,9 +8,7 @@ ROOT
   DEFAULT
   ******************************/
 
-  --max-width: #{$max-width};
   --radius: #{$radius};
-  --columns: #{$columns};
   --border-color: var(--grey-light-4);
   --border: #{$border};
   --transition: #{$transition};
@@ -49,10 +47,7 @@ ROOT
   UNITS
   ******************************/
 
-  --unit: #{$unit};
-
-  @each $key, $value in $units {
-    --#{$key}: #{$value};
+  @for $i from 0 through 100{
+    --u#{$i}: calc(#{$unit} * #{$i});
   }
-
 }

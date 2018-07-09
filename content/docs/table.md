@@ -7,9 +7,9 @@ description = "The table module is useful for displaying grid based data and con
 
 ##### Basic Usage
 
-The table module is defined with the `table` class. By default the table width will only be as wide to fit the content. To make the table span the full width assign the `width:fluid` modifier. Table rows or table cells can have hover states using the `hover` component.
+The table module is defined with the `table` class. By default the table width will only be as wide to fit the content. To make the table span the full width assign the `width:100%` modifier. Table rows or table cells can have hover states using the `hover` component.
 
-<table class="table width:fluid margin-bottom:2">
+<table class="table width:100% margin-bottom:2">
   <thead>
     <tr>
       <th>Head</th>
@@ -39,7 +39,7 @@ The table module is defined with the `table` class. By default the table width w
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<table class="table width:fluid margin-bottom:2">
+<table class="table width:100% margin-bottom:2">
   <thead>
     <tr>
       <th>Head</th>
@@ -72,7 +72,7 @@ The table module is defined with the `table` class. By default the table width w
 
 Tables can be responsive with the `table:pile` modifier. Header labels can be applied by adding the attribute `data-label` to the `<td>` cell.
 
-<table class="table width:fluid elevate table:pile margin-bottom:2">
+<table class="table width:100% elevate table:pile margin-bottom:2">
   <thead>
     <tr>
       <th>Head 1</th>
@@ -99,7 +99,7 @@ Tables can be responsive with the `table:pile` modifier. Header labels can be ap
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<table class="table width:fluid elevate table:pile margin-bottom:2">
+<table class="table width:100% elevate table:pile margin-bottom:2">
   <thead>
     <tr>
       <th>Head 1</th>
@@ -142,7 +142,7 @@ You can override styling using the following local root variables.
 
 The following settings are available.
 
-<table class="table width:fluid table:pile">
+<table class="table width:100% table:pile">
   <thead>
     <tr>
       <th>

@@ -2,6 +2,8 @@
 IMAGE
 ************************************************************/
 
+$image-levels: 5 !default;
+
 :root {
   --image-radius: var(--radius);
 }
@@ -34,22 +36,22 @@ IMAGE
   ******************************/
 
   &-size {
-    @while $levels > 0 {
-      &\:#{$levels} {
-        width: var(--u#{$levels});
-        height: var(--u#{$levels});
+    @while $image-levels > 0 {
+      &\:#{$image-levels} {
+        width: var(--u#{$image-levels});
+        height: var(--u#{$image-levels});
       }
-      $levels: $levels - 1;
+      $image-levels: $image-levels - 1;
     }
     @each $screen, $size in $screens {
       &-#{$screen} {
         @media (min-width : #{$size}) {
-          @while $levels > 0 {
-            &\:#{$levels} {
-              width: var(--u#{$levels});
-              height: var(--u#{$levels});
+          @while $image-levels > 0 {
+            &\:#{$image-levels} {
+              width: var(--u#{$image-levels});
+              height: var(--u#{$image-levels});
             }
-            $levels: $levels - 1;
+            $image-levels: $image-levels - 1;
           }
         }
       }

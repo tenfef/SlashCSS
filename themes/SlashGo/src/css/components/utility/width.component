@@ -2,24 +2,49 @@
 WIDTH
 ******************************/
 
+$widths: 10 !default;
+
 .width {
-  &\:fluid {
+  &\:100\% {
     width: 100% !important;
   }
   &\:auto {
     width: auto !important;
   }
+  @while $widths > 0 {
+    &\:#{$widths}0 {
+      width: var(--u#{$widths}0) !important;
+    }
+    $widths: $widths - 1;
+  }
+  @while $widths > 0 {
+    &\:#{$widths}0\% {
+      width: calc(#{$widths} * 10%) !important;
+    }
+    $widths: $widths - 1;
+  }
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width: $value) {
-        &\:fluid {
+        &\:100\%  {
           width: 100% !important;
         }
         &\:auto {
           width: auto !important;
         }
+        @while $widths > 0 {
+          &\:#{$widths}0 {
+            width: var(--u#{$widths}0) !important;
+          }
+          $widths: $widths - 1;
+        }
+        @while $widths > 0 {
+          &\:#{$widths}0\% {
+            width: calc(#{$widths} * 10%) !important;
+          }
+          $widths: $widths - 1;
+        }
       }
     }
   }
-
 }

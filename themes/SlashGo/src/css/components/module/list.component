@@ -2,6 +2,8 @@
 LIST
 ************************************************************/
 
+$list-gutters: 5 !default;
+
 .list {
   list-style: none;
   margin: 0;
@@ -23,16 +25,16 @@ LIST
   ******************************/
 
   &-gutter {
-    @while $levels >= 0 {
-      &\:#{$levels} {
+    @while $list-gutters >= 0 {
+      &\:#{$list-gutters} {
         .list\/item {
-          margin-bottom: var(--u#{$levels});
+          margin-bottom: var(--u#{$list-gutters});
           &:last-child {
             margin-bottom: 0;
           }
         }
       }
-      $levels: $levels - 1;
+      $list-gutters: $list-gutters - 1;
     }
   }
 
@@ -47,16 +49,16 @@ LIST
         margin-bottom: 0;
       }
       &.list-gutter {
-        @while $levels >= 0 {
-          &\:#{$levels} {
+        @while $list-gutters >= 0 {
+          &\:#{$list-gutters} {
             .list\/item {
-              margin-right: var(--u#{$levels});
+              margin-right: var(--u#{$list-gutters});
               &:last-child {
                 margin-right: 0;
               }
             }
           }
-          $levels: $levels - 1;
+          $list-gutters: $list-gutters - 1;
         }
       }
     }

@@ -2,6 +2,12 @@
 WRAP
 ************************************************************/
 
+$max-width: 1600px !default;
+
+:root {
+  --max-width: #{$max-width};
+}
+
 .wrap {
 
   position: relative;

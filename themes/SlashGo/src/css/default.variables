@@ -6,13 +6,11 @@ DEFAULT VARIABLES
 DEFAULT
 ******************************/
 
-$levels: 20 !default;
-$columns: 12 !default;
-$max-width: 1600px !default;
 $radius: 5px !default;
 $border: 1px solid var(--border-color) !default;
 $transition: all .2s !default;
 $shadow: 0 3px 6px 2px rgba(0,60,200,0.10);
+$unit: 1rem !default;
 
 /******************************
 BREAKPOINTS
@@ -119,33 +117,3 @@ $mono-colors: (
 }
 
 $colors: map-merge($colors, $mono-colors);
-
-/******************************
-GRID RHYTHM
-******************************/
-
-$unit: 1rem !default;
-
-$units: (
-  u0: calc(var(--unit) / 2),
-  u1: calc(var(--unit) * 1),
-  u2: calc(var(--unit) * 2),
-  u3: calc(var(--unit) * 3),
-  u4: calc(var(--unit) * 4),
-  u5: calc(var(--unit) * 5),
-  u6: calc(var(--unit) * 6),
-  u7: calc(var(--unit) * 7),
-  u8: calc(var(--unit) * 8),
-  u9: calc(var(--unit) * 9),
-  u10: calc(var(--unit) * 10),
-  u11: calc(var(--unit) * 11),
-  u12: calc(var(--unit) * 12),
-  u13: calc(var(--unit) * 13),
-  u14: calc(var(--unit) * 14),
-  u15: calc(var(--unit) * 15),
-  u16: calc(var(--unit) * 16),
-  u17: calc(var(--unit) * 17),
-  u18: calc(var(--unit) * 18),
-  u19: calc(var(--unit) * 19),
-  u20: calc(var(--unit) * 20)
-) !default;

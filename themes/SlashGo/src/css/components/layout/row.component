@@ -2,6 +2,8 @@
 GRID
 ************************************************************/
 
+$row-gutters: 5 !default;
+
 .row {
 
 	clear: both;
@@ -30,38 +32,38 @@ GRID
 		&\:down {
 			flex-direction: column;
 			&.row-gutter {
-				@while $levels > 0 {
-					&\:#{$levels} {
+				@while $row-gutters > 0 {
+					&\:#{$row-gutters} {
 						margin-left: 0;
 						margin-right: 0;
 						& > [class^=column] {
 							padding-left: 0;
 							padding-right: 0;
-							margin-bottom: calc(var(--u#{$levels}) * 1);
+							margin-bottom: calc(var(--u#{$row-gutters}) * 1);
 							&:last-child {
 								margin-bottom: 0;
 							}
 						}
 					}
-					$levels: $levels - 1;
+					$row-gutters: $row-gutters - 1;
 				}
 				@each $key, $value in $screens {
 					&\@#{$key} {
 						@media (min-width : #{$value}) {
-							@while $levels > 0 {
-								&\:#{$levels} {
+							@while $row-gutters > 0 {
+								&\:#{$row-gutters} {
 									margin-left: 0;
 									margin-right: 0;
 									& > [class^=column] {
 										padding-left: 0;
 										padding-right: 0;
-										margin-bottom: calc(var(--u#{$levels}) * 1);
+										margin-bottom: calc(var(--u#{$row-gutters}) * 1);
 										&:last-child {
 											margin-bottom: 0;
 										}
 									}
 								}
-								$levels: $levels - 1;
+								$row-gutters: $row-gutters - 1;
 							}
 						}
 					}
@@ -96,30 +98,30 @@ GRID
   ******************************/
 
 	&-gutter {
-		@while $levels >= 0 {
-			&\:#{$levels} {
-				margin-left: calc(-1 * var(--u#{$levels}));
-				margin-right: calc(-1 * var(--u#{$levels}));
+		@while $row-gutters >= 0 {
+			&\:#{$row-gutters} {
+				margin-left: calc(-1 * var(--u#{$row-gutters}));
+				margin-right: calc(-1 * var(--u#{$row-gutters}));
 				& > [class^=column] {
-					padding-left: calc(var(--u#{$levels}) * 1);
-					padding-right: calc(var(--u#{$levels}) * 1);
+					padding-left: calc(var(--u#{$row-gutters}) * 1);
+					padding-right: calc(var(--u#{$row-gutters}) * 1);
 				}
 			}
-			$levels: $levels - 1;
+			$row-gutters: $row-gutters - 1;
 		}
 		@each $key, $value in $screens {
 			&\@#{$key} {
 				@media (min-width : #{$value}) {
-					@while $levels >= 0 {
-						&\:#{$levels} {
-							margin-left: calc(-1 * var(--u#{$levels}));
-							margin-right: calc(-1 * var(--u#{$levels}));
+					@while $row-gutters >= 0 {
+						&\:#{$row-gutters} {
+							margin-left: calc(-1 * var(--u#{$row-gutters}));
+							margin-right: calc(-1 * var(--u#{$row-gutters}));
 							& > [class^=column] {
-								padding-left: calc(var(--u#{$levels}) * 1);
-								padding-right: calc(var(--u#{$levels}) * 1);
+								padding-left: calc(var(--u#{$row-gutters}) * 1);
+								padding-right: calc(var(--u#{$row-gutters}) * 1);
 							}
 						}
-						$levels: $levels - 1;
+						$row-gutters: $row-gutters - 1;
 					}
 				}
 			}

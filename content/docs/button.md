@@ -52,7 +52,7 @@ Buttons can vary in width.
   <button class="button button-grow:3">Grow 3</button><br>
   <button class="button button-grow:4">Grow 4</button><br>
   <button class="button button-grow:5">Grow 5</button><br>
-  <button class="button width:fluid">Fluid</button>
+  <button class="button width:100%">Fluid</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
@@ -63,7 +63,7 @@ Buttons can vary in width.
 <button class="button button-grow:3">Grow 3</button>
 <button class="button button-grow:4">Grow 4</button>
 <button class="button button-grow:5">Grow 5</button>
-<button class="button width:fluid">Fluid</button>
+<button class="button width:100%">Fluid</button>
 ```
 {{% /codeblock %}}
 
@@ -128,41 +128,10 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 
 <div class="margin-bottom:2">
   <div class="buttons">
-    <button class="button fill:red button-style:outline">Button</button>
     <button class="button fill:pink button-style:outline">Button</button>
     <button class="button fill:violet button-style:outline">Button</button>
     <button class="button fill:purple button-style:outline">Button</button>
     <button class="button fill:navy button-style:outline">Button</button>
-    <button class="button fill:blue button-style:outline">Button</button>
-    <button class="button fill:turqoise button-style:outline">Button</button>
-    <button class="button fill:green button-style:outline">Button</button>
-    <button class="button fill:lime button-style:outline">Button</button>
-    <button class="button fill:yellow button-style:outline">Button</button>
-    <button class="button fill:orange button-style:outline">Button</button>
-    <button class="button fill:brown button-style:outline">Button</button>
-    <button class="button fill:grey button-style:outline">Button</button>
-    <button class="button fill:white button-style:outline">Button</button>
-    <button class="button fill:black button-style:outline">Button</button>
-  </div>
-</div>
-
-<div class="margin-bottom:2">
-  <div class="buttons">
-    <button class="button fill:red">Button</button>
-    <button class="button fill:pink">Button</button>
-    <button class="button fill:violet">Button</button>
-    <button class="button fill:purple">Button</button>
-    <button class="button fill:navy">Button</button>
-    <button class="button fill:blue">Button</button>
-    <button class="button fill:turqoise">Button</button>
-    <button class="button fill:green">Button</button>
-    <button class="button fill:lime">Button</button>
-    <button class="button fill:yellow">Button</button>
-    <button class="button fill:orange">Button</button>
-    <button class="button fill:brown">Button</button>
-    <button class="button fill:grey">Button</button>
-    <button class="button fill:white">Button</button>
-    <button class="button fill:black">Button</button>
   </div>
 </div>
 
@@ -208,47 +177,53 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 
 Use the `fill` component to apply different color your buttons.
 
-<button class="button button-style:physical fill:red margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:pink margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:violet margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:purple margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:navy margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:blue margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:turqoise margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:green margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:lime margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:yellow margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:orange margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:brown margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:grey margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:white margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:black margin-bottom:2">Button</button>
+<button class="button fill:red margin-bottom:2">Button</button>
+<button class="button fill:pink margin-bottom:2">Button</button>
+<button class="button fill:violet margin-bottom:2">Button</button>
+<button class="button fill:purple margin-bottom:2">Button</button>
+<button class="button fill:navy margin-bottom:2">Button</button>
+<button class="button fill:blue margin-bottom:2">Button</button>
+<button class="button fill:turqoise margin-bottom:2">Button</button>
+<button class="button fill:green margin-bottom:2">Button</button>
+<button class="button fill:lime margin-bottom:2">Button</button>
+<button class="button fill:yellow margin-bottom:2">Button</button>
+<button class="button fill:orange margin-bottom:2">Button</button>
+<button class="button fill:brown margin-bottom:2">Button</button>
+<button class="button fill:grey margin-bottom:2">Button</button>
+<button class="button fill:white margin-bottom:2">Button</button>
+<button class="button fill:black margin-bottom:2">Button</button>
 
-<button class="button button-style:physical fill:white button-grow:5 border-style:round color:grey-dark-1 margin-bottom:2">Button</button>
-<button class="button button-style:physical fill:blue-light-1 button-grow:5 border-style:round margin-bottom:2">Button</button>
+<button class="button fill:white button-grow:5 border-style:round color:grey-dark-1 margin-bottom:2">Button</button>
+<button class="button fill:blue-light-1 button-grow:5 border-style:round margin-bottom:2">Button</button>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button button-style:physical fill:primary">Button</button>
-<button class="button button-style:physical fill:secondary">Button</button>
-<button class="button button-style:physical fill:red">Button</button>
-<button class="button button-style:physical fill:orange">Button</button>
-<button class="button button-style:physical fill:yellow">Button</button>
-<button class="button button-style:physical fill:green">Button</button>
-<button class="button button-style:physical fill:blue">Button</button>
-<button class="button button-style:physical fill:purple">Button</button>
-<button class="button button-style:physical fill:black">Button</button>
-<button class="button button-style:physical fill:grey">Button</button>
-<button class="button button-style:physical fill:white color:black">Button</button>
+<button class="button fill:red">Button</button>
+<button class="button fill:pink">Button</button>
+<button class="button fill:violet">Button</button>
+<button class="button fill:purple">Button</button>
+<button class="button fill:navy">Button</button>
+<button class="button fill:blue">Button</button>
+<button class="button fill:turqoise">Button</button>
+<button class="button fill:green">Button</button>
+<button class="button fill:lime">Button</button>
+<button class="button fill:yellow">Button</button>
+<button class="button fill:orange">Button</button>
+<button class="button fill:brown">Button</button>
+<button class="button fill:grey">Button</button>
+<button class="button fill:white">Button</button>
+<button class="button fill:black">Button</button>
 ```
 {{% /codeblock %}}
 
-##### Local Root Variables
+##### Local Variables
 
-You can override styling using the following local root variables.
+You can override styling using the following local variables.
 
 {{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
+$button-sizes: 5 !default;
+
 :root {
   --button-outline-weight: 2px;
   --button-radius: var(--radius);
@@ -263,14 +238,14 @@ You can override styling using the following local root variables.
 
 The following settings are available.
 
-<table class="table width:fluid table:pile">
+<table class="table width:100% table:pile">
   <thead>
     <tr>
       <th>
-        Properties
+        Property
       </th>
       <th>
-        Attributes
+        Modifier
       </th>
       <th>
         Responsive
@@ -285,13 +260,13 @@ The following settings are available.
       <code>button-style</code>
     </td>
     <td data-label="Attributes">
-      <code>:outline</code>
+      <code>:outline</code><code>:flat</code>
     </td>
     <td data-label="Responsive">
       No
     </td>
     <td class="row:reverse">
-      Outline button style
+      Outline or flat style buttons
     </td>
   </tr>
   <tr>

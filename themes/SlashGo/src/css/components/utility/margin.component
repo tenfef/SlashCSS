@@ -2,6 +2,8 @@
 MARGIN
 ************************************************************/
 
+$margins: 10 !default;
+
 .margin {
 
   &\:none {
@@ -11,17 +13,12 @@ MARGIN
     margin: auto !important;
   }
 
-  @for $i from 0 through 10 {
-    &\:#{$i} {
-      margin: var(--u#{$i}) !important;
+  @while $margins >= 0 {
+    &\:#{$margins} {
+      margin: var(--u#{$margins}) !important;
     }
+    $margins: $margins - 1;
   }
-  @for $i from 5 through 10 {
-    &\:#{$i}vh {
-      margin: #{$i}vh !important;
-    }
-  }
-
   @each $key, $value in $screens {
     &\@#{$key} {
       @media (min-width: $value) {
@@ -31,15 +28,11 @@ MARGIN
         &\:auto {
           margin: auto !important;
         }
-        @for $i from 0 through 10 {
-          &\:#{$i} {
-            margin: var(--u#{$i}) !important;
+        @while $margins >= 0 {
+          &\:#{$margins} {
+            margin: var(--u#{$margins}) !important;
           }
-        }
-        @for $i from 5 through 10 {
-          &\:#{$i}vh {
-            margin: #{$i}vh !important;
-          }
+          $margins: $margins - 1;
         }
       }
     }
@@ -52,15 +45,17 @@ MARGIN
     &\:auto {
       margin-top: auto !important;
     }
-    @for $i from 0 through 10 {
-      &\:#{$i} {
-        margin-top: var(--u#{$i}) !important;
+    @while $margins >= 0 {
+      &\:#{$margins} {
+        margin-top: var(--u#{$margins}) !important;
       }
+      $margins: $margins - 1;
     }
-    @for $i from 5 through 10 {
-      &\:#{$i}vh {
-        margin-top: #{$i}vh !important;
+    @while $margins >= 5 {
+      &\:#{$margins} {
+        margin-top: #{$margins}vh !important;
       }
+      $margins: $margins - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -71,15 +66,17 @@ MARGIN
           &\:auto {
             margin-top: auto !important;
           }
-          @for $i from 0 through 10 {
-            &\:#{$i} {
-              margin-top: var(--u#{$i}) !important;
+          @while $margins >= 0 {
+            &\:#{$margins} {
+              margin-top: var(--u#{$margins}) !important;
             }
+            $margins: $margins - 1;
           }
-          @for $i from 5 through 10 {
-            &\:#{$i}vh {
-              margin-top: #{$i}vh !important;
+          @while $margins >= 5 {
+            &\:#{$margins} {
+              margin-top: #{$margins}vh !important;
             }
+            $margins: $margins - 1;
           }
         }
       }
@@ -93,15 +90,11 @@ MARGIN
     &\:auto {
       margin-right: auto !important;
     }
-    @for $i from 0 through 10 {
-      &\:#{$i} {
-        margin-right: var(--u#{$i}) !important;
+    @while $margins >= 0 {
+      &\:#{$margins} {
+        margin-right: var(--u#{$margins}) !important;
       }
-    }
-    @for $i from 5 through 10 {
-      &\:#{$i}vw {
-        margin-right: #{$i}vw !important;
-      }
+      $margins: $margins - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -112,15 +105,11 @@ MARGIN
           &\:auto {
             margin-right: auto !important;
           }
-          @for $i from 0 through 10 {
-            &\:#{$i} {
-              margin-right: var(--u#{$i}) !important;
+          @while $margins >= 0 {
+            &\:#{$margins} {
+              margin-right: var(--u#{$margins}) !important;
             }
-          }
-          @for $i from 5 through 10 {
-            &\:#{$i}vw {
-              margin-right: #{$i}vw !important;
-            }
+            $margins: $margins - 1;
           }
         }
       }
@@ -134,15 +123,17 @@ MARGIN
     &\:auto {
       margin-bottom: auto !important;
     }
-    @for $i from 0 through 10 {
-      &\:#{$i} {
-        margin-bottom: var(--u#{$i}) !important;
+    @while $margins >= 0 {
+      &\:#{$margins} {
+        margin-bottom: var(--u#{$margins}) !important;
       }
+      $margins: $margins - 1;
     }
-    @for $i from 5 through 10 {
-      &\:#{$i}vh {
-        margin-bottom: #{$i}vh !important;
+    @while $margins >= 5 {
+      &\:#{$margins} {
+        margin-bottom: #{$margins}vh !important;
       }
+      $margins: $margins - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -153,15 +144,17 @@ MARGIN
           &\:auto {
             margin-bottom: auto !important;
           }
-          @for $i from 0 through 10 {
-            &\:#{$i} {
-              margin-bottom: var(--u#{$i}) !important;
+          @while $margins >= 0 {
+            &\:#{$margins} {
+              margin-bottom: var(--u#{$margins}) !important;
             }
+            $margins: $margins - 1;
           }
-          @for $i from 5 through 10 {
-            &\:#{$i}vh {
-              margin-bottom: #{$i}vh !important;
+          @while $margins >= 5 {
+            &\:#{$margins} {
+              margin-bottom: #{$margins}vh !important;
             }
+            $margins: $margins - 1;
           }
         }
       }
@@ -175,15 +168,11 @@ MARGIN
     &\:auto {
       margin-left: auto !important;
     }
-    @for $i from 0 through 10 {
-      &\:#{$i} {
-        margin-left: var(--u#{$i}) !important;
+    @while $margins >= 0 {
+      &\:#{$margins} {
+        margin-left: var(--u#{$margins}) !important;
       }
-    }
-    @for $i from 5 through 10 {
-      &\:#{$i}vw {
-        margin-left: #{$i}vw !important;
-      }
+      $margins: $margins - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -194,15 +183,11 @@ MARGIN
           &\:auto {
             margin-left: auto !important;
           }
-          @for $i from 0 through 10 {
-            &\:#{$i} {
-              margin-left: var(--u#{$i}) !important;
+          @while $margins >= 0 {
+            &\:#{$margins} {
+              margin-left: var(--u#{$margins}) !important;
             }
-          }
-          @for $i from 5 through 10 {
-            &\:#{$i}vw {
-              margin-left: #{$i}vw !important;
-            }
+            $margins: $margins - 1;
           }
         }
       }
@@ -218,17 +203,12 @@ MARGIN
       margin-left: auto !important;
       margin-right: auto !important;
     }
-    @for $i from 0 through 10 {
-      &\:#{$i} {
-        margin-left: var(--u#{$i}) !important;
-        margin-right: var(--u#{$i}) !important;
+    @while $margins >= 0 {
+      &\:#{$margins} {
+        margin-left: var(--u#{$margins}) !important;
+        margin-right: var(--u#{$margins}) !important;
       }
-    }
-    @for $i from 5 through 10 {
-      &\:#{$i}vw {
-        margin-left: #{$i}vw !important;
-        margin-right: #{$i}vw !important;
-      }
+      $margins: $margins - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -241,17 +221,12 @@ MARGIN
             margin-left: auto !important;
             margin-right: auto !important;
           }
-          @for $i from 0 through 10 {
-            &\:#{$i} {
-              margin-left: var(--u#{$i}) !important;
-              margin-right: var(--u#{$i}) !important;
+          @while $margins >= 0 {
+            &\:#{$margins} {
+              margin-left: var(--u#{$margins}) !important;
+              margin-right: var(--u#{$margins}) !important;
             }
-          }
-          @for $i from 5 through 10 {
-            &\:#{$i}vw {
-              margin-left: #{$i}vw !important;
-              margin-right: #{$i}vw !important;
-            }
+            $margins: $margins - 1;
           }
         }
       }
@@ -267,17 +242,12 @@ MARGIN
       margin-top: auto !important;
       margin-bottom: auto !important;
     }
-    @for $i from 0 through 10 {
-      &\:#{$i} {
-        margin-top: var(--u#{$i}) !important;
-        margin-bottom: var(--u#{$i}) !important;
+    @while $margins >= 0 {
+      &\:#{$margins} {
+        margin-top: var(--u#{$margins}) !important;
+        margin-bottom: var(--u#{$margins}) !important;
       }
-    }
-    @for $i from 5 through 10 {
-      &\:#{$i}vh {
-        margin-top: #{$i}vh !important;
-        margin-bottom: #{$i}vh !important;
-      }
+      $margins: $margins - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -290,17 +260,12 @@ MARGIN
             margin-top: auto !important;
             margin-bottom: auto !important;
           }
-          @for $i from 0 through 10 {
-            &\:#{$i} {
-              margin-top: var(--u#{$i}) !important;
-              margin-bottom: var(--u#{$i}) !important;
+          @while $margins >= 0 {
+            &\:#{$margins} {
+              margin-top: var(--u#{$margins}) !important;
+              margin-bottom: var(--u#{$margins}) !important;
             }
-          }
-          @for $i from 5 through 10 {
-            &\:#{$i}vh {
-              margin-top: #{$i}vh !important;
-              margin-bottom: #{$i}vh !important;
-            }
+            $margins: $margins - 1;
           }
         }
       }

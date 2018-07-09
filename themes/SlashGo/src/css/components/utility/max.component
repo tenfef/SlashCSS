@@ -2,20 +2,23 @@
 MAX
 ************************************************************/
 
+$max-levels: 10 !default;
+
 .max {
 
   &-width {
-    &\:fluid {
+    &\:100\% {
       max-width: 100%;
     }
-    @for $i from 1 through 10 {
-      &\:#{$i}0 {
-        max-width: $i * 10rem !important;
+    @while $max-levels > 0 {
+      &\:#{$max-levels}0 {
+        max-width: var(--u#{$max-levels}0) !important;
       }
+      $max-levels: $max-levels - 1;
     }
   }
   &-height {
-    &\:fluid {
+    &\:100\% {
       max-height: 100%;
     }
     @for $i from 1 through 10 {
@@ -23,19 +26,26 @@ MAX
         max-height: $i * 10rem !important;
       }
     }
+    @while $max-levels > 0 {
+      &\:#{$max-levels}0 {
+        max-height: var(--u#{$max-levels}0) !important;
+      }
+      $max-levels: $max-levels - 1;
+    }
   }
 
   @each $key, $value in $screens {
     &-width {
       &-#{$key} {
         @media (min-width: $value) {
-          &\:fluid {
+          &\:100\% {
             max-width: 100%;
           }
-          @for $i from 1 through 10 {
-            &\:#{$i}0 {
-              max-width: $i * 10rem !important;
+          @while $max-levels > 0 {
+            &\:#{$max-levels}0 {
+              max-width: var(--u#{$max-levels}0) !important;
             }
+            $max-levels: $max-levels - 1;
           }
         }
       }
@@ -43,13 +53,14 @@ MAX
     &-height {
       &-#{$key} {
         @media (min-width: $value) {
-          &\:fluid {
+          &\:100\% {
             max-height: 100%;
           }
-          @for $i from 1 through 10 {
-            &\:#{$i}0 {
-              max-height: $i * 10rem !important;
+          @while $max-levels > 0 {
+            &\:#{$max-levels}0 {
+              max-height: var(--u#{$max-levels}0) !important;
             }
+            $max-levels: $max-levels - 1;
           }
         }
       }

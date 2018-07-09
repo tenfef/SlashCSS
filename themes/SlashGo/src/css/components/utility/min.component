@@ -2,20 +2,23 @@
 MIN
 ************************************************************/
 
+$min-levels: 10 !default;
+
 .min {
 
   &-width {
-    &\:fluid {
+    &\:100\% {
       min-width: 100%;
     }
-    @for $i from 1 through 10 {
-      &\:#{$i}0 {
-        min-width: $i * 10rem !important;
+    @while $min-levels > 0 {
+      &\:#{$min-levels}0 {
+        min-width: var(--u#{$min-levels}0) !important;
       }
+      $min-levels: $min-levels - 1;
     }
   }
   &-height {
-    &\:fluid {
+    &\:100\% {
       min-height: 100%;
     }
     @for $i from 1 through 10 {
@@ -23,19 +26,26 @@ MIN
         min-height: $i * 10rem !important;
       }
     }
+    @while $min-levels > 0 {
+      &\:#{$min-levels}0 {
+        min-height: var(--u#{$min-levels}0) !important;
+      }
+      $min-levels: $min-levels - 1;
+    }
   }
 
   @each $key, $value in $screens {
     &-width {
       &-#{$key} {
         @media (min-width: $value) {
-          &\:fluid {
+          &\:100\% {
             min-width: 100%;
           }
-          @for $i from 1 through 10 {
-            &\:#{$i}0 {
-              min-width: $i * 10rem !important;
+          @while $min-levels > 0 {
+            &\:#{$min-levels}0 {
+              min-width: var(--u#{$min-levels}0) !important;
             }
+            $min-levels: $min-levels - 1;
           }
         }
       }
@@ -43,13 +53,14 @@ MIN
     &-height {
       &-#{$key} {
         @media (min-width: $value) {
-          &\:fluid {
+          &\:100\% {
             min-height: 100%;
           }
-          @for $i from 1 through 10 {
-            &\:#{$i}0 {
-              min-height: $i * 10rem !important;
+          @while $min-levels > 0 {
+            &\:#{$min-levels}0 {
+              min-height: var(--u#{$min-levels}0) !important;
             }
+            $min-levels: $min-levels - 1;
           }
         }
       }

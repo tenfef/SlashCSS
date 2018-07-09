@@ -2,6 +2,8 @@
 BORDER
 ************************************************************/
 
+$border-widths: 5 !default;
+
 :root {
   --border-border: var(--border);
 }
@@ -241,14 +243,21 @@ BORDER
         border-color: var(--#{$key}) !important;
       }
     }
+    @each $key, $value in $tonal-colors {
+      @each $tone, $hex in $value {
+        &\:#{$tone} {
+          border-color: var(--#{$tone}) !important;
+        }
+      }
+    }
   }
 
   &-width {
-    @while $levels > 0 {
-      &\:#{$levels} {
-        border-width: $levels * 1rem  !important;
+    @while $border-widths > 0 {
+      &\:#{$border-widths} {
+        border-width: $border-widths * 1rem  !important;
       }
-      $levels: $levels - 1;
+      $border-widths: $border-widths - 1;
     }
   }
 }

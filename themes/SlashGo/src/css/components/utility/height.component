@@ -2,29 +2,55 @@
 HEIGHT
 ******************************/
 
+$heights: 10 !default;
+
 .height {
-  &\:fluid {
+  &\:100\% {
     height: 100% !important;
+  }
+  &\:100vh {
+    height: 100vh !important;
   }
   &\:auto {
     height: auto !important;
   }
-  @for $i from 1 through 10 {
-    &\:#{$i} {
-      min-width: $i * 10rem !important;
+  @while $heights > 0 {
+    &\:#{$heights}0 {
+      height: var(--u#{$heights}0) !important;
     }
+    $heights: $heights - 1;
+  }
+  @while $heights > 0 {
+    &\:#{$heights}0\% {
+      height: calc(#{$heights} * 10%) !important;
+    }
+    $heights: $heights - 1;
   }
   @each $key, $value in $screens {
     &\@#{$key} {
-      @media (min-width: $value) {
-        &\:fluid {
+      @media (min-height: $value) {
+        &\:100\%  {
           height: 100% !important;
+        }
+        &\:100vh {
+          height: 100vh !important;
         }
         &\:auto {
           height: auto !important;
         }
+        @while $heights > 0 {
+          &\:#{$heights}0 {
+            height: var(--u#{$heights}0) !important;
+          }
+          $heights: $heights - 1;
+        }
+        @while $heights > 0 {
+          &\:#{$heights}0\% {
+            height: calc(#{$heights} * 10%) !important;
+          }
+          $heights: $heights - 1;
+        }
       }
     }
   }
-
 }

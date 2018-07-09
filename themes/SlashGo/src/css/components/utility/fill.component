@@ -12,6 +12,14 @@ FILL
       background-color: var(--#{$key}) !important;
     }
   }
+  @each $key, $value in $tonal-colors {
+    @each $tone, $hex in $value {
+      &\:#{$tone} {
+        background-color: var(--#{$tone}) !important;
+      }
+    }
+  }
+
   &-size {
     &\:cover {
       background-size: cover !important;

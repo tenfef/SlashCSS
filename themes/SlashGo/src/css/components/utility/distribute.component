@@ -2,43 +2,45 @@
 DISTRIBUTE
 ************************************************************/
 
+$distribute-gutters: 5 !default;
+
 .distribute {
 
   &-right {
-    @while $levels > 0 {
-      &\:#{$levels} > * + * {
-        margin-left: $levels * 1rem !important;
+    @while $distribute-gutters > 0 {
+      &\:#{$distribute-gutters} > * + * {
+        margin-left: $distribute-gutters * 1rem !important;
       }
-      $levels: $levels - 1;
+      $distribute-gutters: $distribute-gutters - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {
-          @while $levels > 0 {
-            &\:#{$levels} > * + * {
-              margin-left: $levels * 1rem !important;
+          @while $distribute-gutters > 0 {
+            &\:#{$distribute-gutters} > * + * {
+              margin-left: $distribute-gutters * 1rem !important;
             }
-            $levels: $levels - 1;
+            $distribute-gutters: $distribute-gutters - 1;
           }
         }
       }
     }
   }
   &-down {
-    @while $levels > 0 {
-      &\:#{$levels} > * + * {
-        margin-top: $levels * 1rem !important;
+    @while $distribute-gutters > 0 {
+      &\:#{$distribute-gutters} > * + * {
+        margin-top: $distribute-gutters * 1rem !important;
       }
-      $levels: $levels - 1;
+      $distribute-gutters: $distribute-gutters - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {
-          @while $levels > 0 {
-            &\:#{$levels} > * + * {
-              margin-top: $levels * 1rem !important;
+          @while $distribute-gutters > 0 {
+            &\:#{$distribute-gutters} > * + * {
+              margin-top: $distribute-gutters * 1rem !important;
             }
-            $levels: $levels - 1;
+            $distribute-gutters: $distribute-gutters - 1;
           }
         }
       }

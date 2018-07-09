@@ -9,4 +9,11 @@ COLOR
       color: var(--#{$key}) !important;
     }
   }
+  @each $key, $value in $tonal-colors {
+    @each $tone, $hex in $value {
+      &\:#{$tone} {
+        color: var(--#{$tone}) !important;
+      }
+    }
+  }
 }
