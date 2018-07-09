@@ -143,7 +143,7 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 </div>
 
 <div class="margin-bottom:2">
-  <div class="buttons border-style:sharp buttons-direction-md:down">
+  <div class="buttons border-style:sharp buttons-direction@md:down">
     <button class="button">1</button>
     <button class="button">2</button>
     <button class="button">3</button>
@@ -164,7 +164,7 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
   <button class="button">3</button>
 </div>
 
-<div class="buttons border-style:sharp buttons-direction-md:down">
+<div class="buttons border-style:sharp buttons-direction@md:down">
   <button class="button">1</button>
   <button class="button">2</button>
   <button class="button">3</button>
@@ -176,6 +176,7 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 
 Use the `fill` component to apply different color your buttons.
 
+<button class="button button-style:physical margin-bottom:2">Button</button>
 <button class="button button-style:physical fill:primary margin-bottom:2">Button</button>
 <button class="button button-style:physical fill:secondary margin-bottom:2">Button</button>
 <button class="button button-style:physical fill:red margin-bottom:2">Button</button>
@@ -187,6 +188,9 @@ Use the `fill` component to apply different color your buttons.
 <button class="button button-style:physical fill:black margin-bottom:2">Button</button>
 <button class="button button-style:physical fill:grey margin-bottom:2">Button</button>
 <button class="button button-style:physical fill:white color:black margin-bottom:2">Button</button>
+
+<button class="button button-style:physical fill:white button-grow:5 border-style:round color:black margin-bottom:2">Button</button>
+<button class="button button-style:physical fill:blue-light-1 button-grow:5 border-style:round margin-bottom:2">Button</button>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html

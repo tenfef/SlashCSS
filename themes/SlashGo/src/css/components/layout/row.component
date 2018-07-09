@@ -46,7 +46,7 @@ GRID
 					$levels: $levels - 1;
 				}
 				@each $key, $value in $screens {
-					&-#{$key} {
+					&\@#{$key} {
 						@media (min-width : #{$value}) {
 							@while $levels > 0 {
 								&\:#{$levels} {
@@ -75,7 +75,7 @@ GRID
 			flex-direction: row-reverse;
 		}
 		@each $key, $value in $screens {
-			&-#{$key} {
+			&\@#{$key} {
 				@media (min-width : #{$value}) {
 					&\:right {
 						flex-direction: row;
@@ -108,7 +108,7 @@ GRID
 			$levels: $levels - 1;
 		}
 		@each $key, $value in $screens {
-			&-#{$key} {
+			&\@#{$key} {
 				@media (min-width : #{$value}) {
 					@while $levels >= 0 {
 						&\:#{$levels} {

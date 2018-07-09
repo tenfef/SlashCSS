@@ -23,7 +23,7 @@ ALIGN
     text-align: center !important;
   }
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width : #{$value}) {
         &\:top {
           vertical-align: top !important;
@@ -80,7 +80,7 @@ ALIGN
       justify-content: center !important;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           &\:top {
             align-content: start !important;
@@ -138,7 +138,7 @@ ALIGN
       justify-items: center !important;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           &\:top {
             align-items: flex-start !important;

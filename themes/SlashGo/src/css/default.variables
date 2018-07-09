@@ -6,7 +6,7 @@ DEFAULT VARIABLES
 DEFAULT
 ******************************/
 
-$levels: 10 !default;
+$levels: 20 !default;
 $columns: 12 !default;
 $max-width: 1600px !default;
 $radius: 5px !default;

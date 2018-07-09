@@ -23,7 +23,7 @@ MARGIN
   }
 
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width: $value) {
         &\:none {
           margin: 0 !important;
@@ -63,7 +63,7 @@ MARGIN
       }
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width: $value) {
           &\:none {
             margin-top: 0 !important;
@@ -104,7 +104,7 @@ MARGIN
       }
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width: $value) {
           &\:none {
             margin-right: 0 !important;
@@ -145,7 +145,7 @@ MARGIN
       }
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width: $value) {
           &\:none {
             margin-bottom: 0 !important;
@@ -186,7 +186,7 @@ MARGIN
       }
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width: $value) {
           &\:none {
             margin-left: 0 !important;
@@ -231,7 +231,7 @@ MARGIN
       }
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width: $value) {
           &\:none {
             margin-left: 0 !important;
@@ -280,7 +280,7 @@ MARGIN
       }
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width: $value) {
           &\:none {
             margin-top: 0 !important;

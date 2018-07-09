@@ -28,7 +28,7 @@ COLUMN
 		}
   }
 	@each $key, $value in $screens {
-		&-#{$key} {
+		&\@#{$key} {
 			@media (min-width : #{$value}) {
 				@while $columns > 0 {
 					&\:#{$columns} {
@@ -63,7 +63,7 @@ COLUMN
 			$columns: $columns - 1;
 		}
 		@each $key, $value in $screens {
-			&-#{$key} {
+			&\@#{$key} {
 				@media (min-width : #{$value}) {
 					@while $columns > 0 {
 						&\:#{$columns} {
@@ -88,7 +88,7 @@ COLUMN
 			$columns: $columns - 1;
 		}
 		@each $key, $value in $screens {
-			&-#{$key} {
+			&\@#{$key} {
 				@media (min-width : #{$value}) {
 					@while $columns > 0 {
 						&\:#{$columns} {
@@ -113,7 +113,7 @@ COLUMN
 			$columns: $columns - 1;
 		}
 		@each $key, $value in $screens {
-			&-#{$key} {
+			&\@#{$key} {
 				@media (min-width : #{$value}) {
 					@while $columns > 0 {
 						&\:#{$columns} {

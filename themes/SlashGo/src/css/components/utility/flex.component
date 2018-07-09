@@ -17,7 +17,7 @@ FLEX
       flex-direction: column;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           &\:horizontal {
             flex-direction: row;

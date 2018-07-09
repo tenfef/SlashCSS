@@ -31,7 +31,7 @@ WRAP
     padding: 0;
   }
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width: $value) {
         &\:flush {
           padding: 0;

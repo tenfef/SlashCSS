@@ -14,7 +14,7 @@ FLOAT
 		float: right !important;
 	}
 	@each $key, $value in $screens {
-		&-#{$key} {
+		&\@#{$key} {
 			@media (min-width : #{$value}) {
 				&\:none {
 					float: none !important;

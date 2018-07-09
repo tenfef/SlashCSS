@@ -19,7 +19,7 @@ GRID
 		$columns: $columns - 1;
 	}
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width : #{$value}) {
         @while $columns > 0 {
       		&\:#{$columns} {
@@ -52,7 +52,7 @@ GRID
         $levels: $levels - 1;
       }
       @each $key, $value in $screens {
-        &-#{$key} {
+        &\@#{$key} {
           @media (min-width : #{$value}) {
             @while $levels > 0 {
               &\:#{$levels} {
@@ -72,7 +72,7 @@ GRID
         $levels: $levels - 1;
       }
       @each $key, $value in $screens {
-        &-#{$key} {
+        &\@#{$key} {
           @media (min-width : #{$value}) {
             @while $levels > 0 {
               &\:#{$levels} {
@@ -85,7 +85,7 @@ GRID
       }
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           @while $levels >= 0 {
             &\:#{$levels} {

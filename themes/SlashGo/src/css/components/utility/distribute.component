@@ -12,7 +12,7 @@ DISTRIBUTE
       $levels: $levels - 1;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width: $value) {
           @while $levels > 0 {
             &\:#{$levels} > * + * {
@@ -32,7 +32,7 @@ DISTRIBUTE
       $levels: $levels - 1;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width: $value) {
           @while $levels > 0 {
             &\:#{$levels} > * + * {

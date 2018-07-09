@@ -15,7 +15,7 @@ HEIGHT
     }
   }
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width: $value) {
         &\:fluid {
           height: 100% !important;

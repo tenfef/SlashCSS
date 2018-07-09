@@ -26,7 +26,7 @@ DISPLAY
     display: inline-grid !important;
   }
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width : #{$value}) {
         display: block !important;
         &\:none {

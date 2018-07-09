@@ -135,7 +135,7 @@ TABLE
   }
 
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
 
       &\:pile {
         background-color: transparent;

@@ -52,7 +52,7 @@ BORDER
       border-top-right-radius: 500px !important;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           border-top: var(--border-border) !important;
           &\:none {
@@ -92,7 +92,7 @@ BORDER
       border-bottom-right-radius: 500px !important;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           border-right: var(--border-border) !important;
           &\:none {
@@ -132,7 +132,7 @@ BORDER
       border-bottom-right-radius: 500px !important;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           border-bottom: var(--border-border) !important;
           &\:none {
@@ -172,7 +172,7 @@ BORDER
       border-bottom-left-radius: 500px !important;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           border-left: var(--border-border) !important;
           &\:none {
@@ -202,7 +202,7 @@ BORDER
       border-right: 0 !important;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           border-left: var(--border-border) !important;
           border-right: var(--border-border) !important;
@@ -222,7 +222,7 @@ BORDER
       border-bottom: 0 !important;
     }
     @each $key, $value in $screens {
-      &-#{$key} {
+      &\@#{$key} {
         @media (min-width : #{$value}) {
           border-top: var(--border-border) !important;
           border-bottom: var(--border-border) !important;
