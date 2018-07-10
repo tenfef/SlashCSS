@@ -12,28 +12,17 @@ $border-widths: 5 !default;
 
   border: var(--border-border) !important;
 
-  /******************************
-  CORNERS
-  ******************************/
-
-  &-style {
-    &\:radius {
-      border-radius: var(--radius) !important;
-    }
-    &\:sharp {
-      border-radius: 0 !important;
-    }
-    &\:round {
-      border-radius: 500px !important;
-    }
-  }
-
-  /******************************
-  BORDERS
-  ******************************/
-
   &\:none {
     border: 0 !important;
+  }
+  @each $key, $value in $screens {
+    &\@#{$key} {
+      @media (min-width : #{$value}) {
+        &\:none {
+          border: 0 !important;
+        }
+      }
+    }
   }
 
   &-top {
@@ -41,36 +30,12 @@ $border-widths: 5 !default;
     &\:none {
       border-top: 0 !important;
     }
-    &\:radius {
-      border-top-left-radius: var(--radius) !important;
-      border-top-right-radius: var(--radius) !important;
-    }
-    &\:sharp {
-      border-top-left-radius: 0 !important;
-      border-top-right-radius: 0 !important;
-    }
-    &\:round {
-      border-top-left-radius: 500px !important;
-      border-top-right-radius: 500px !important;
-    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
           border-top: var(--border-border) !important;
           &\:none {
             border-top: 0 !important;
-          }
-          &\:radius {
-            border-top-left-radius: var(--radius) !important;
-            border-top-right-radius: var(--radius) !important;
-          }
-          &\:sharp {
-            border-top-left-radius: 0 !important;
-            border-top-right-radius: 0 !important;
-          }
-          &\:round {
-            border-top-left-radius: 500px !important;
-            border-top-right-radius: 500px !important;
           }
         }
       }
@@ -81,36 +46,12 @@ $border-widths: 5 !default;
     &\:none {
       border-right: 0 !important;
     }
-    &\:radius {
-      border-top-right-radius: var(--radius) !important;
-      border-bottom-right-radius: var(--radius) !important;
-    }
-    &\:sharp {
-      border-top-right-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
-    }
-    &\:round {
-      border-top-right-radius: 500px !important;
-      border-bottom-right-radius: 500px !important;
-    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
           border-right: var(--border-border) !important;
           &\:none {
             border-right: 0 !important;
-          }
-          &\:radius {
-            border-top-right-radius: var(--radius) !important;
-            border-bottom-right-radius: var(--radius) !important;
-          }
-          &\:sharp {
-            border-top-right-radius: 0 !important;
-            border-bottom-right-radius: 0 !important;
-          }
-          &\:round {
-            border-top-right-radius: 500px !important;
-            border-bottom-right-radius: 500px !important;
           }
         }
       }
@@ -121,36 +62,12 @@ $border-widths: 5 !default;
     &\:none {
       border-bottom: 0 !important;
     }
-    &\:radius {
-      border-bottom-left-radius: var(--radius) !important;
-      border-bottom-right-radius: var(--radius) !important;
-    }
-    &\:sharp {
-      border-bottom-left-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
-    }
-    &\:round {
-      border-bottom-left-radius: 500px !important;
-      border-bottom-right-radius: 500px !important;
-    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
           border-bottom: var(--border-border) !important;
           &\:none {
             border-bottom: 0 !important;
-          }
-          &\:radius {
-            border-bottom-left-radius: var(--radius) !important;
-            border-bottom-right-radius: var(--radius) !important;
-          }
-          &\:sharp {
-            border-bottom-left-radius: 0 !important;
-            border-bottom-right-radius: 0 !important;
-          }
-          &\:round {
-            border-bottom-left-radius: 500px !important;
-            border-bottom-right-radius: 500px !important;
           }
         }
       }
@@ -161,36 +78,12 @@ $border-widths: 5 !default;
     &\:none {
       border-left: 0 !important;
     }
-    &\:radius {
-      border-top-left-radius: var(--radius) !important;
-      border-bottom-left-radius: var(--radius) !important;
-    }
-    &\:sharp {
-      border-top-left-radius: 0 !important;
-      border-bottom-left-radius: 0 !important;
-    }
-    &\:round {
-      border-top-left-radius: 500px !important;
-      border-bottom-left-radius: 500px !important;
-    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
           border-left: var(--border-border) !important;
           &\:none {
             border-left: 0 !important;
-          }
-          &\:radius {
-            border-top-left-radius: var(--radius) !important;
-            border-bottom-left-radius: var(--radius) !important;
-          }
-          &\:sharp {
-            border-top-left-radius: 0 !important;
-            border-bottom-left-radius: 0 !important;
-          }
-          &\:round {
-            border-top-left-radius: 500px !important;
-            border-bottom-left-radius: 500px !important;
           }
         }
       }
@@ -237,6 +130,138 @@ $border-widths: 5 !default;
     }
   }
 
+  /******************************
+  CORNERS
+  ******************************/
+
+  &-radius {
+    border-radius: var(--radius) !important;
+    &\:sharp {
+      border-radius: 0 !important;
+    }
+    &\:round {
+      border-radius: 500px !important;
+    }
+    &-top {
+      border-top-left-radius: var(--radius) !important;
+      border-top-right-radius: var(--radius) !important;
+      &\:sharp {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+      }
+      &\:round {
+        border-top-left-radius: 500px !important;
+        border-top-right-radius: 500px !important;
+      }
+      @each $key, $value in $screens {
+        &\@#{$key} {
+          @media (min-width : #{$value}) {
+            border-top-left-radius: var(--radius) !important;
+            border-top-right-radius: var(--radius) !important;
+            &\:sharp {
+              border-top-left-radius: 0 !important;
+              border-top-right-radius: 0 !important;
+            }
+            &\:round {
+              border-top-left-radius: 500px !important;
+              border-top-right-radius: 500px !important;
+            }
+          }
+        }
+      }
+    }
+    &-right {
+      &\:radius {
+        border-top-right-radius: var(--radius) !important;
+        border-bottom-right-radius: var(--radius) !important;
+      }
+      &\:sharp {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+      &\:round {
+        border-top-right-radius: 500px !important;
+        border-bottom-right-radius: 500px !important;
+      }
+      @each $key, $value in $screens {
+        &\@#{$key} {
+          @media (min-width : #{$value}) {
+            border-top-right-radius: var(--radius) !important;
+            border-bottom-right-radius: var(--radius) !important;
+            &\:sharp {
+              border-top-right-radius: 0 !important;
+              border-bottom-right-radius: 0 !important;
+            }
+            &\:round {
+              border-top-right-radius: 500px !important;
+              border-bottom-right-radius: 500px !important;
+            }
+          }
+        }
+      }
+    }
+    &-bottom {
+      border-bottom-left-radius: var(--radius) !important;
+      border-bottom-right-radius: var(--radius) !important;
+      &\:sharp {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+      &\:round {
+        border-bottom-left-radius: 500px !important;
+        border-bottom-right-radius: 500px !important;
+      }
+      @each $key, $value in $screens {
+        &\@#{$key} {
+          @media (min-width : #{$value}) {
+            border-bottom-left-radius: var(--radius) !important;
+            border-bottom-right-radius: var(--radius) !important;
+            &\:sharp {
+              border-bottom-left-radius: 0 !important;
+              border-bottom-right-radius: 0 !important;
+            }
+            &\:round {
+              border-bottom-left-radius: 500px !important;
+              border-bottom-right-radius: 500px !important;
+            }
+          }
+        }
+      }
+    }
+    &-left {
+      border-top-left-radius: var(--radius) !important;
+      border-bottom-left-radius: var(--radius) !important;
+      &\:sharp {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+      }
+      &\:round {
+        border-top-left-radius: 500px !important;
+        border-bottom-left-radius: 500px !important;
+      }
+      @each $key, $value in $screens {
+        &\@#{$key} {
+          @media (min-width : #{$value}) {
+            border-top-left-radius: var(--radius) !important;
+            border-bottom-left-radius: var(--radius) !important;
+            &\:sharp {
+              border-top-left-radius: 0 !important;
+              border-bottom-left-radius: 0 !important;
+            }
+            &\:round {
+              border-top-left-radius: 500px !important;
+              border-bottom-left-radius: 500px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /******************************
+  COLORS
+  ******************************/
+
   &-color {
     @each $key, $value in $colors {
       &\:#{$key} {
@@ -251,6 +276,10 @@ $border-widths: 5 !default;
       }
     }
   }
+
+  /******************************
+  WIDTHS
+  ******************************/
 
   &-width {
     @while $border-widths > 0 {

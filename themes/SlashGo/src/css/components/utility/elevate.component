@@ -3,5 +3,5 @@ ELEVATE
 ******************************/
 
 .elevate {
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow) !important;
 }
