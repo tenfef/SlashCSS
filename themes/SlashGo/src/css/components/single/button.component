@@ -264,6 +264,13 @@ BUTTON(S)
       box-shadow: none;
       background: var(--grey-dark-2);
     }
+
+    &.border-radius {
+      &\:round {
+
+      }
+    }
+
     &.fill {
       @each $key, $value in $colors {
         &\:#{$key} {
@@ -361,7 +368,7 @@ BUTTON(S)
     &\:down {
       flex-direction: column;
       & > .button {
-        &.button-style\:outline {
+        &.border-radius\:outline {
           &:first-child {
             border-radius: 0;
             border-top-left-radius: var(--button-radius);

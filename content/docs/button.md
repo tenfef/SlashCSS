@@ -127,11 +127,11 @@ Buttons can have different font weights with the font component.
 Buttons can be joined to form several buttons. Buttons can be down with `button-direction`.
 
 <div class="margin-bottom:2">
-  <div class="buttons border-radius:round">
-    <button class="button border-radius:round-left fill:pink button-style:outline">Button</button>
+  <div class="buttons">
+    <button class="button border-radius-left:round fill:pink button-style:outline">Button</button>
     <button class="button fill:violet button-style:outline">Button</button>
     <button class="button fill:purple button-style:outline">Button</button>
-    <button class="button fill:navy button-style:outline">Button</button>
+    <button class="button border-radius-right:round fill:navy button-style:outline">Button</button>
   </div>
 </div>
 
