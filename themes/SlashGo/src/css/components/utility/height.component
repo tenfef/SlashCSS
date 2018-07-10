@@ -15,12 +15,12 @@ $heights: 10 !default;
     height: auto !important;
   }
   @while $heights > 0 {
+    &\:#{$heights} {
+      height: var(--u#{$heights}) !important;
+    }
     &\:#{$heights}0 {
       height: var(--u#{$heights}0) !important;
     }
-    $heights: $heights - 1;
-  }
-  @while $heights > 0 {
     &\:#{$heights}0\% {
       height: calc(#{$heights} * 10%) !important;
     }
@@ -39,12 +39,12 @@ $heights: 10 !default;
           height: auto !important;
         }
         @while $heights > 0 {
+          &\:#{$heights} {
+            height: var(--u#{$heights}) !important;
+          }
           &\:#{$heights}0 {
             height: var(--u#{$heights}0) !important;
           }
-          $heights: $heights - 1;
-        }
-        @while $heights > 0 {
           &\:#{$heights}0\% {
             height: calc(#{$heights} * 10%) !important;
           }

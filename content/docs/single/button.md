@@ -127,11 +127,20 @@ Buttons can have different font weights with the font component.
 Buttons can be joined to form several buttons. Buttons can be down with `button-direction`.
 
 <div class="margin-bottom:2">
-  <div class="buttons">
-    <button class="button border-radius-left:round fill:pink button-style:outline">Button</button>
-    <button class="button fill:violet button-style:outline">Button</button>
-    <button class="button fill:purple button-style:outline">Button</button>
-    <button class="button border-radius-right:round fill:navy button-style:outline">Button</button>
+  <div class="buttons border-radius:round">
+    <button class="button button-size:2 fill:pink button-style:outline">1</button>
+    <button class="button button-size:2 fill:violet button-style:outline">2</button>
+    <button class="button button-size:2 fill:purple button-style:outline">3</button>
+    <button class="button button-size:2 fill:navy button-style:outline">4</button>
+  </div>
+</div>
+
+<div class="margin-bottom:2">
+  <div class="buttons border-radius:round buttons-direction:down">
+    <button class="button fill:pink button-style:outline">1</button>
+    <button class="button fill:violet button-style:outline">2</button>
+    <button class="button fill:purple button-style:outline">3</button>
+    <button class="button fill:navy button-style:outline">4</button>
   </div>
 </div>
 
@@ -144,7 +153,7 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 </div>
 
 <div class="margin-bottom:2">
-  <div class="buttons border-radius:sharp buttons-direction@md:down">
+  <div class="buttons buttons-direction@md:down">
     <button class="button">1</button>
     <button class="button">2</button>
     <button class="button">3</button>
@@ -153,10 +162,18 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="buttons">
-  <button class="button button-size:2">1</button>
-  <button class="button button-size:2">2</button>
-  <button class="button button-size:2">3</button>
+<div class="buttons border-radius:round">
+  <button class="button button-size:2 fill:pink button-style:outline">1</button>
+  <button class="button button-size:2 fill:violet button-style:outline">2</button>
+  <button class="button button-size:2 fill:purple button-style:outline">3</button>
+  <button class="button button-size:2 fill:navy button-style:outline">4</button>
+</div>
+
+<div class="buttons border-radius:round buttons-direction:down">
+  <button class="button fill:pink button-style:outline">1</button>
+  <button class="button fill:violet button-style:outline">2</button>
+  <button class="button fill:purple button-style:outline">3</button>
+  <button class="button fill:navy button-style:outline">4</button>
 </div>
 
 <div class="buttons border-radius:round buttons-direction:down">
@@ -165,7 +182,7 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
   <button class="button">3</button>
 </div>
 
-<div class="buttons border-radius:sharp buttons-direction@md:down">
+<div class="buttons buttons-direction@md:down">
   <button class="button">1</button>
   <button class="button">2</button>
   <button class="button">3</button>
@@ -183,7 +200,7 @@ Use the `fill` component to apply different color your buttons.
 <button class="button button-style:outline fill:purple margin-bottom:2">Button</button>
 <button class="button button-style:outline fill:navy margin-bottom:2">Button</button>
 <button class="button button-style:outline fill:blue margin-bottom:2">Button</button>
-<button class="button button-style:outline fill:turqoise margin-bottom:2">Button</button>
+<button class="button button-style:outline fill:teal margin-bottom:2">Button</button>
 <button class="button button-style:outline fill:green margin-bottom:2">Button</button>
 <button class="button button-style:outline fill:lime margin-bottom:2">Button</button>
 <button class="button button-style:outline fill:yellow margin-bottom:2">Button</button>
@@ -199,7 +216,7 @@ Use the `fill` component to apply different color your buttons.
 <button class="button button-style:flat fill:purple margin-bottom:2">Button</button>
 <button class="button button-style:flat fill:navy margin-bottom:2">Button</button>
 <button class="button button-style:flat fill:blue margin-bottom:2">Button</button>
-<button class="button button-style:flat fill:turqoise margin-bottom:2">Button</button>
+<button class="button button-style:flat fill:teal margin-bottom:2">Button</button>
 <button class="button button-style:flat fill:green margin-bottom:2">Button</button>
 <button class="button button-style:flat fill:lime margin-bottom:2">Button</button>
 <button class="button button-style:flat fill:yellow margin-bottom:2">Button</button>
@@ -215,7 +232,7 @@ Use the `fill` component to apply different color your buttons.
 <button class="button fill:purple margin-bottom:2">Button</button>
 <button class="button fill:navy margin-bottom:2">Button</button>
 <button class="button fill:blue margin-bottom:2">Button</button>
-<button class="button fill:turqoise margin-bottom:2">Button</button>
+<button class="button fill:teal margin-bottom:2">Button</button>
 <button class="button fill:green margin-bottom:2">Button</button>
 <button class="button fill:lime margin-bottom:2">Button</button>
 <button class="button fill:yellow margin-bottom:2">Button</button>
@@ -231,7 +248,7 @@ Use the `fill` component to apply different color your buttons.
 <button class="button elevate fill:purple margin-bottom:2">Button</button>
 <button class="button elevate fill:navy margin-bottom:2">Button</button>
 <button class="button elevate fill:blue margin-bottom:2">Button</button>
-<button class="button elevate fill:turqoise margin-bottom:2">Button</button>
+<button class="button elevate fill:teal margin-bottom:2">Button</button>
 <button class="button elevate fill:green margin-bottom:2">Button</button>
 <button class="button elevate fill:lime margin-bottom:2">Button</button>
 <button class="button elevate fill:yellow margin-bottom:2">Button</button>
@@ -252,7 +269,7 @@ Use the `fill` component to apply different color your buttons.
 <button class="button fill:purple">Button</button>
 <button class="button fill:navy">Button</button>
 <button class="button fill:blue">Button</button>
-<button class="button fill:turqoise">Button</button>
+<button class="button fill:teal">Button</button>
 <button class="button fill:green">Button</button>
 <button class="button fill:lime">Button</button>
 <button class="button fill:yellow">Button</button>
@@ -282,9 +299,9 @@ $button-sizes: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Settings
+##### Modifiers
 
-The following settings are available.
+The following modifiers are available.
 
 <table class="table width:100% table:pile">
   <thead>
@@ -356,7 +373,7 @@ The following settings are available.
       Yes
     </td>
     <td class="row:reverse">
-      Enable down buttons
+      Downward buttons
     </td>
   </tr>
 </table>

@@ -1,5 +1,5 @@
 +++
-title = "Grid"
+title = "Column"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The grid component takes advantage of the latest css grid layout property providing you with varying column containers and layout area styling. Note, old row and col definitions are now deprecated."

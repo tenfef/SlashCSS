@@ -3,7 +3,6 @@ HOVER
 ************************************************************/
 
 .hover {
-  cursor: pointer;
 
   &\:underline {
     transition: var(--transition) !important;
@@ -32,6 +31,15 @@ HOVER
         }
       }
     }
+    @each $key, $value in $tonal-colors {
+      @each $tone, $hex in $value {
+        &\:#{$tone} {
+          &:hover {
+            background-color: var(--#{$tone}) !important;
+          }
+        }
+      }
+    }
   }
   &-color {
     &\:none {
@@ -45,6 +53,15 @@ HOVER
         transition: var(--transition) !important;
         &:hover {
           color: var(--#{$key}) !important;
+        }
+      }
+    }
+    @each $key, $value in $tonal-colors {
+      @each $tone, $hex in $value {
+        &\:#{$tone} {
+          &:hover {
+            color: var(--#{$tone}) !important;
+          }
         }
       }
     }

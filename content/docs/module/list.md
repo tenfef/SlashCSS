@@ -134,6 +134,16 @@ You can use the standard spacing modifiers to control the spread between list it
 ```
 {{% /codeblock %}}
 
+##### Local Variables
+
+You can override styling using the following local variables.
+
+{{% codeblock key="language" definition="css" margin="bottom" %}}
+```css
+$list-gutters: 5 !default;
+```
+{{% /codeblock %}}
+
 ##### Settings
 
 The following settings are available.

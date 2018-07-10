@@ -12,12 +12,12 @@ $widths: 10 !default;
     width: auto !important;
   }
   @while $widths > 0 {
+    &\:#{$widths} {
+      width: var(--u#{$widths}) !important;
+    }
     &\:#{$widths}0 {
       width: var(--u#{$widths}0) !important;
     }
-    $widths: $widths - 1;
-  }
-  @while $widths > 0 {
     &\:#{$widths}0\% {
       width: calc(#{$widths} * 10%) !important;
     }
@@ -33,12 +33,12 @@ $widths: 10 !default;
           width: auto !important;
         }
         @while $widths > 0 {
+          &\:#{$widths} {
+            width: var(--u#{$widths}) !important;
+          }
           &\:#{$widths}0 {
             width: var(--u#{$widths}0) !important;
           }
-          $widths: $widths - 1;
-        }
-        @while $widths > 0 {
           &\:#{$widths}0\% {
             width: calc(#{$widths} * 10%) !important;
           }

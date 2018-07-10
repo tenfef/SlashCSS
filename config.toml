@@ -5,27 +5,212 @@ theme = "SlashGo"
 
 [menu]
 
-  [[menu.docs]]
-    name = "Button"
-    url = "/button/"
+  [[menu.layout]]
+    name = "Wrap"
+    url = "/layout/wrap/"
     weight = -100
 
-  [[menu.docs]]
-    name = "Table"
-    url = "/table/"
+  [[menu.layout]]
+    name = "Grid"
+    url = "/layout/grid/"
     weight = -100
 
-  [[menu.docs]]
+  [[menu.layout]]
+    name = "Row"
+    url = "/layout/row/"
+    weight = -100
+
+  [[menu.layout]]
+    name = "Column"
+    url = "/layout/column/"
+    weight = -100
+
+
+
+  [[menu.module]]
+    name = "Accordion"
+    url = "/module/accordion/"
+    weight = -100
+
+  [[menu.module]]
+    name = "Card"
+    url = "/module/card/"
+    weight = -100
+
+  [[menu.module]]
     name = "Crumb"
-    url = "/crumb/"
+    url = "/module/crumb/"
     weight = -100
 
-  [[menu.docs]]
+  [[menu.module]]
+    name = "Dropdown"
+    url = "/module/dropdown/"
+    weight = -100
+
+  [[menu.module]]
+    name = "Form"
+    url = "/module/form/"
+    weight = -100
+
+  [[menu.module]]
     name = "List"
-    url = "/list/"
+    url = "/module/list/"
     weight = -100
 
-  [[menu.docs]]
-    name = "Icon"
-    url = "/icon/"
+  [[menu.module]]
+    name = "Menu"
+    url = "/module/menu/"
+    weight = -100
+
+  [[menu.module]]
+    name = "Notice"
+    url = "/module/notice/"
+    weight = -100
+
+  [[menu.module]]
+    name = "Slidemenu"
+    url = "/module/slidemenu/"
+    weight = -100
+
+  [[menu.module]]
+    name = "Tab"
+    url = "/module/tab/"
+    weight = -100
+
+  [[menu.module]]
+    name = "Table"
+    url = "/module/table/"
+    weight = -100
+
+
+
+  [[menu.single]]
+    name = "Button"
+    url = "/single/button/"
+    weight = -100
+
+  [[menu.single]]
+    name = "Font"
+    url = "/single/font/"
+    weight = -100
+
+  [[menu.single]]
+    name = "Image"
+    url = "/single/image/"
+    weight = -100
+
+  [[menu.single]]
+    name = "Label"
+    url = "/single/label/"
+    weight = -100
+
+  [[menu.single]]
+    name = "Line"
+    url = "/single/line/"
+    weight = -100
+
+  [[menu.single]]
+    name = "Tip"
+    url = "/single/tip/"
+    weight = -100
+
+
+  [[menu.utility]]
+    name = "Align"
+    url = "/utility/align/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Border"
+    url = "/utility/border/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Clear"
+    url = "/utility/clear/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Color"
+    url = "/utility/color/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Display"
+    url = "/utility/display/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Distribute"
+    url = "/utility/distribute/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Elevate"
+    url = "/utility/elevate/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Fill"
+    url = "/utility/fill/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Flex"
+    url = "/utility/flex/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Float"
+    url = "/utility/float/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Height"
+    url = "/utility/height/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Hover"
+    url = "/utility/hover/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Margin"
+    url = "/utility/margin/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Max"
+    url = "/utility/max/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Min"
+    url = "/utility/min/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Opacity"
+    url = "/utility/opacity/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Overflow"
+    url = "/utility/overflow/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Padding"
+    url = "/utility/padding/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Position"
+    url = "/utility/position/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Width"
+    url = "/utility/width/"
     weight = -100

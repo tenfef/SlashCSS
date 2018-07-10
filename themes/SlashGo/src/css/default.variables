@@ -74,7 +74,7 @@ $colors: (
   purple: #8D27FF,
   navy: #4A27FF,
   blue: #278AFF,
-  turqoise: #00DEB1,
+  teal: #00DEB1,
   green: #00B26B,
   lime: #6EDF00,
   yellow: #FFCE00,

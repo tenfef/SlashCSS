@@ -18,8 +18,10 @@ $row-gutters: 5 !default;
 	&\:media {
 		display: inline-flex;
 		& > [class^=column] {
+			display: flex;
 			flex-grow: 0;
 		  flex-basis: auto;
+			align-items: center;
 			width: auto;
 		}
 	}

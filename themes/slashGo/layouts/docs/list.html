@@ -8,97 +8,44 @@
 		</header>
 		<nav class="grid/nav">
 			<div class="grid/content">
-				<ul class="list list-gutter:0 font-size:tiny">
-					<li class="list/item">
-						<a href="#" class="color:secondary">
-							Type Scale
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Measure
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Line Height / Leading
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Tracking
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Font Weights
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Grid
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Line Height / Leading
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Tracking
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Font Weights
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Grid
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Line Height / Leading
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Tracking
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Font Weights
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Grid
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Line Height / Leading
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Tracking
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Font Weights
-						</a>
-					</li>
-					<li class="list/item">
-						<a href="#" class="color:default-color hover-color:secondary">
-							Grid
-						</a>
-					</li>
+				<ul class="list list-gutter:0 font-size:tiny margin-bottom:3">
+					{{ range .Site.Menus.layout }}
+						<li class="list/item">
+							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
+								{{ .Name }}
+							</a>
+						</li>
+			    {{ end }}
+				</ul>
+
+				<ul class="list list-gutter:0 font-size:tiny margin-bottom:3">
+					{{ range .Site.Menus.module }}
+						<li class="list/item">
+							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
+								{{ .Name }}
+							</a>
+						</li>
+			    {{ end }}
+				</ul>
+
+				<ul class="list list-gutter:0 font-size:tiny margin-bottom:3">
+					{{ range .Site.Menus.single }}
+						<li class="list/item">
+							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
+								{{ .Name }}
+							</a>
+						</li>
+			    {{ end }}
+				</ul>
+
+				<ul class="list list-gutter:0 font-size:tiny margin-bottom:3">
+					{{ range .Site.Menus.utility }}
+						<li class="list/item">
+							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
+								{{ .Name }}
+							</a>
+						</li>
+			    {{ end }}
 				</ul>
 			</div>
 
