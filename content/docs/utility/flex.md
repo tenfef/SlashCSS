@@ -33,6 +33,97 @@ You can initialize your flex component with `l-flex` flex requires child items a
 ```
 {{% /codeblock %}}
 
+##### Row Direction
+
+The `row-direction` property can be applied to control the direction of your columns. Standard media query suffixes can be applied.
+
+<div class="row row-direction:down row-gutter:1 margin-bottom:2 align:center color:white">
+  <div class="column">
+    <div class="padding:1 fill:blue-light-2">
+      1
+    </div>
+  </div>
+  <div class="column">
+    <div class="padding:1 fill:blue">
+      2
+    </div>
+  </div>
+</div>
+
+<div class="row row-direction:down row-direction@sm:right row-gutter:2 margin-bottom:2 align:center color:white">
+  <div class="column">
+    <div class="padding:1 fill:blue-light-2">
+      1
+    </div>
+  </div>
+  <div class="column">
+    <div class="padding:1 fill:blue">
+      2
+    </div>
+  </div>
+  <div class="column">
+    <div class="padding:1 fill:blue">
+      3
+    </div>
+  </div>
+</div>
+
+<div class="row row-direction:down row-direction@sm:reverse row-gutter:2 margin-bottom:2 align:center color:white">
+  <div class="column">
+    <div class="padding:1 fill:blue-light-2">
+      1
+    </div>
+  </div>
+  <div class="column">
+    <div class="padding:1 fill:blue">
+      2
+    </div>
+  </div>
+  <div class="column">
+    <div class="padding:1 fill:blue">
+      3
+    </div>
+  </div>
+</div>
+
+
+{{% codeblock key="language" definition="html" margin="bottom" %}}
+```html
+<div class="row row-direction:down">
+  <div class="column">
+    ...
+  </div>
+  <div class="column">
+    ...
+  </div>
+</div>
+
+<div class="row row-direction:down row-direction@sm:right">
+  <div class="column">
+    ...
+  </div>
+  <div class="column">
+    ...
+  </div>
+  <div class="column">
+    ...
+  </div>
+</div>
+
+<div class="row row-direction:down row-direction@sm:reverse">
+  <div class="column">
+    ...
+  </div>
+  <div class="column">
+    ...
+  </div>
+  <div class="column">
+    ...
+  </div>
+</div>
+
+```
+
 ##### Spacing
 
 You can assign gutters using standard spacing modifiers, these can also be paired with device modifiers for device specificity.

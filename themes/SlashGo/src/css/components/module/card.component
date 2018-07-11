@@ -5,8 +5,6 @@ CARD
 :root {
 	--card-bg: var(--white);
 	--card-radius: var(--radius);
-	--card-shadow: var(--shadow);
-	--card-flat-bg: var(--background-focus);
 	--card-header-padding: var(--u2);
 	--card-content-padding: var(--u2);
 	--card-footer-padding: var(--u1);

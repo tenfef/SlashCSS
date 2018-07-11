@@ -16,6 +16,9 @@ FLEX
     &\:vertical {
       flex-direction: column;
     }
+    &\:reverse {
+			flex-direction: row-reverse;
+		}
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
@@ -25,8 +28,36 @@ FLEX
           &\:vertical {
             flex-direction: column;
           }
+          &\:reverse {
+      			flex-direction: row-reverse;
+      		}
         }
       }
     }
   }
+
+  /******************************
+  ORDER
+  ******************************/
+
+	&-order {
+		@while $columns > 0 {
+			&\:#{$columns} {
+				order: $columns;
+			}
+			$columns: $columns - 1;
+		}
+		@each $key, $value in $screens {
+			&\@#{$key} {
+				@media (min-width : #{$value}) {
+					@while $columns > 0 {
+						&\:#{$columns} {
+							order: $columns;
+						}
+						$columns: $columns - 1;
+					}
+				}
+			}
+		}
+	}
 }

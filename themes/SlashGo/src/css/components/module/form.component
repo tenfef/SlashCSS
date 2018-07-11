@@ -60,7 +60,7 @@ FORM
             margin: 0;
             padding: 0;
             font-size: 12px;
-            color: var(--dark-grey-1);
+            color: var(--grey-dark-1);
             z-index: 1;
           }
         }
@@ -126,7 +126,6 @@ FORM
     height: 100%;
     align-items: center;
     justify-content: center;
-    color: var(--background-active);
     transition: var(--transition);
   }
 
@@ -138,7 +137,6 @@ FORM
     right: var(--u2);
     height: 100%;
     align-items: center;
-    color: var(--background-active);
     font-weight: var(--regular);
     transition: var(--transition);
   }

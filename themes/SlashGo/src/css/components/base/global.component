@@ -5,7 +5,7 @@ GLOBAL
 :root {
   --primary-color: var(--navy-light-1);
 	--secondary-color: var(--orange);
-	--background: var(--grey-light-5);
+	--background-color: var(--grey-light-5);
 	--default-color: var(--grey);
   --border-color: var(--grey-light-4);
   --label-radius: 3px;
@@ -25,7 +25,7 @@ body {
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	background: var(--background);
+	background: var(--background-color);
 	font-family: var(--font-family);
 	font-size: 14px;
 	font-weight: var(--regular);
@@ -141,7 +141,7 @@ blockquote {
 	margin-top: var(--u5);
 	margin-bottom: var(--u5);
 	padding: var(--u4) var(--u5);
-	background: var(--background-focus);
+	background: var(--blue-light-4);
 	box-shadow: inset 4px 0px 0px 0px var(--primary-color);
 	p {
 		margin: 0;

@@ -27,86 +27,17 @@ $row-gutters: 5 !default;
 	}
 
 	/******************************
-  DIRECTION
-  ******************************/
-
-	&-direction {
-		&\:down {
-			flex-direction: column;
-			&.row-gutter {
-				@while $row-gutters > 0 {
-					&\:#{$row-gutters} {
-						margin-left: 0;
-						margin-right: 0;
-						& > [class^=column] {
-							padding-left: 0;
-							padding-right: 0;
-							margin-bottom: calc(var(--u#{$row-gutters}) * 1);
-							&:last-child {
-								margin-bottom: 0;
-							}
-						}
-					}
-					$row-gutters: $row-gutters - 1;
-				}
-				@each $key, $value in $screens {
-					&\@#{$key} {
-						@media (min-width : #{$value}) {
-							@while $row-gutters > 0 {
-								&\:#{$row-gutters} {
-									margin-left: 0;
-									margin-right: 0;
-									& > [class^=column] {
-										padding-left: 0;
-										padding-right: 0;
-										margin-bottom: calc(var(--u#{$row-gutters}) * 1);
-										&:last-child {
-											margin-bottom: 0;
-										}
-									}
-								}
-								$row-gutters: $row-gutters - 1;
-							}
-						}
-					}
-				}
-			}
-		}
-		&\:right {
-			flex-direction: row;
-		}
-		&\:reverse {
-			flex-direction: row-reverse;
-		}
-		@each $key, $value in $screens {
-			&\@#{$key} {
-				@media (min-width : #{$value}) {
-					&\:right {
-						flex-direction: row;
-					}
-					&\:down {
-						flex-direction: column;
-					}
-					&\:reverse {
-						flex-direction: row-reverse;
-					}
-				}
-			}
-		}
-	}
-
-	/******************************
   GUTTER
   ******************************/
 
 	&-gutter {
-		@while $row-gutters >= 0 {
+		@while $row-gutters > 0 {
 			&\:#{$row-gutters} {
-				margin-left: calc(-1 * var(--u#{$row-gutters}));
-				margin-right: calc(-1 * var(--u#{$row-gutters}));
+				margin-left: calc(var(--u#{$row-gutters}) * -1 / 2);
+				margin-right: calc(var(--u#{$row-gutters}) * -1 / 2);
 				& > [class^=column] {
-					padding-left: calc(var(--u#{$row-gutters}) * 1);
-					padding-right: calc(var(--u#{$row-gutters}) * 1);
+					padding-left: calc(var(--u#{$row-gutters}) * 1 / 2);
+					padding-right: calc(var(--u#{$row-gutters}) * 1 / 2);
 				}
 			}
 			$row-gutters: $row-gutters - 1;
@@ -114,13 +45,13 @@ $row-gutters: 5 !default;
 		@each $key, $value in $screens {
 			&\@#{$key} {
 				@media (min-width : #{$value}) {
-					@while $row-gutters >= 0 {
+					@while $row-gutters > 0 {
 						&\:#{$row-gutters} {
-							margin-left: calc(-1 * var(--u#{$row-gutters}));
-							margin-right: calc(-1 * var(--u#{$row-gutters}));
+							margin-left: calc(var(--u#{$row-gutters}) * -1 / 2);
+							margin-right: calc(var(--u#{$row-gutters}) * -1 / 2);
 							& > [class^=column] {
-								padding-left: calc(var(--u#{$row-gutters}) * 1);
-								padding-right: calc(var(--u#{$row-gutters}) * 1);
+								padding-left: calc(var(--u#{$row-gutters}) * 1 / 2);
+								padding-right: calc(var(--u#{$row-gutters}) * 1 / 2);
 							}
 						}
 						$row-gutters: $row-gutters - 1;

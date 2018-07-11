@@ -9,8 +9,8 @@ DROPDOWN
 
   --dropdown-item-padding: var(--u0) var(--u1);
   --dropdown-item-color: var(--black);
-  --dropdown-item-hover-fill: var(--background-focus);
-  --dropdown-item-active-fill: var(--background-focus);
+  --dropdown-item-hover-fill: var(--grey-light-4);
+  --dropdown-item-active-fill: var(--grey-light-4);
   --dropdown-item-hover-color: var(--black);
 }
 
