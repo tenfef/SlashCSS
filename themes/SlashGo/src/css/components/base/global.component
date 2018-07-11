@@ -3,14 +3,11 @@ GLOBAL
 ************************************************************/
 
 :root {
-  --primary-color: var(--red);
-  --primary-hover-color: var(--red-light-1);
-	--secondary-color: var(--blue);
-  --secondary-hover-color: var(--blue-light-1);
+  --primary-color: var(--navy-light-1);
+	--secondary-color: var(--orange);
 	--background: var(--grey-light-5);
-	--background-focus: var(--grey-light-4);
-	--background-active: var(--grey-light-3);
 	--default-color: var(--grey);
+  --border-color: var(--grey-light-4);
   --label-radius: 3px;
 }
 

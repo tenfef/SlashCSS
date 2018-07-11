@@ -83,6 +83,28 @@ You can apply different corners with the `border` component.
 ```
 {{% /codeblock %}}
 
+##### Icon Buttons
+
+Buttons can contain icons.
+
+<div class="margin-bottom:2">
+  <button class="button button-grow:1 button-style:outline font-size:body font-transform:none">
+    <i class="fas fa-cloud-upload-alt margin-right:1"></i>
+    Upload File
+  </button>
+</div>
+
+{{% codeblock key="language" definition="html" margin="bottom" %}}
+```html
+<button class="button button-grow:1 button-style:outline font-size:body font-transform:none">
+  <div class="button/icon">
+    <i class="fas fa-cloud-upload-alt margin-right:1"></i>
+  </div>
+  Upload File
+</button>
+```
+{{% /codeblock %}}
+
 ##### Styles
 
 There are 4 different styles of buttons, default, outline and button-style:physicald.

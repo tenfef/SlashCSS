@@ -9,7 +9,6 @@ ROOT
   ******************************/
 
   --radius: #{$radius};
-  --border-color: var(--grey-light-4);
   --border: #{$border};
   --transition: #{$transition};
   --shadow: #{$shadow};

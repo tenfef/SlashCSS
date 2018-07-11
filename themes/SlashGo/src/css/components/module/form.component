@@ -9,13 +9,14 @@ FORM
   --form-field-height: var(--u5);
   --form-field-border: var(--border);
   --form-field-fill: var(--white);
+  --form-field-checkbox-fill: var(--blue);
   --form-field-color: var(--black);
-  --form-field-radius: var(--radius);
-  --form-field-padding: var(--u2);
-  --form-field-focus-fill: var(--background-focus);
+  --form-field-radius: 4px;
+  --form-field-padding: 1.5rem;
 
-  --form-disabled-fill: var(--background-focus);
-  --form-disabled-opacity: 0.5;
+  --form-disabled-fill: var(--grey-light-5);
+  --form-disabled-color: var(--grey-dark-1);
+  --form-disabled-opacity: 1;
 
   --form-success-border-color: var(--green);
   --form-alert-border-color: var(--orange);
@@ -37,8 +38,33 @@ FORM
     }
     &:after {
       content: "";
-      display: table;
-      clear: both;
+      display: table !important;
+      clear: both !important;
+    }
+    &-style {
+      &\:slide {
+        position: relative;
+        input:not([type=submit]) {
+          min-height: 6.5rem;
+          padding: 2.5rem 0 1rem 2rem;
+
+          &:placeholder-shown + label {
+            top: 2.5rem;
+            left: var(--u2);
+            font-size: var(--body);
+          }
+          & + label, &:focus + label {
+            position: absolute;
+            top: 1rem;
+            left: var(--u1);
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: var(--dark-grey-1);
+            z-index: 1;
+          }
+        }
+      }
     }
   }
 
@@ -55,19 +81,19 @@ FORM
     }
   }
 
-  &\/content {
+  &\/special {
     position: relative;
     input:not([type=submit]) {
       &:focus {
         & ~ .form\/icon {
-          color: var(--primary-color);
+          color: var(--form-field-checkbox-fill);
         }
         & ~ .form\/text {
-          color: var(--primary-color);
+          color: var(--form-field-checkbox-fill);
         }
       }
     }
-    &-icon {
+    &-content {
       &\:left {
         input:not([type=submit]) {
           padding-left: var(--form-field-height);
@@ -78,14 +104,14 @@ FORM
             right: 0;
           }
         }
+        .form\/text {
+          right: auto;
+          left: var(--u2);
+        }
       }
       &\:right {
         input:not([type=submit]) {
           padding-right: var(--form-field-height);
-        }
-        .form\/text {
-          left: auto;
-          right: var(--u1);
         }
       }
     }
@@ -97,7 +123,7 @@ FORM
     top: 0;
     left: 0;
     width: var(--form-field-height);
-    height: var(--form-field-height);
+    height: 100%;
     align-items: center;
     justify-content: center;
     color: var(--background-active);
@@ -108,8 +134,9 @@ FORM
     display: flex;
     position: absolute;
     top: 0;
-    left: 0;
-    height: var(--form-field-height);
+    left: auto;
+    right: var(--u2);
+    height: 100%;
     align-items: center;
     color: var(--background-active);
     font-weight: var(--regular);
@@ -144,7 +171,8 @@ FORM
     input:not([type="submit"]) {
       display: none;
       &:checked ~ .form\/checkbox-indicator {
-        background: var(--primary-color);
+        background: var(--form-field-checkbox-fill);
+        border-color: var(--form-field-checkbox-fill);
         &:after {
           display: block;
         }
@@ -152,8 +180,12 @@ FORM
       &:disabled {
         & ~ .form\/checkbox-indicator {
           background: var(--form-disabled-fill);
+          border-color: var(--border-color);
           opacity: var(--form-disabled-opacity);
           pointer-events: none;
+          &:after {
+            border-color: var(--black);
+          }
         }
       }
     }
@@ -197,7 +229,7 @@ FORM
       &:checked ~ .form\/radio-indicator {
         &:after {
           display: block;
-          background: var(--primary-color);
+          background: var(--form-field-checkbox-fill);
         }
       }
       &:disabled {
@@ -205,6 +237,9 @@ FORM
           background: var(--form-disabled-fill);
           opacity: var(--form-disabled-opacity);
           pointer-events: none;
+          &:after {
+            background: black;
+          }
         }
       }
     }
@@ -252,11 +287,10 @@ FORM
       color: var(--black);
       pointer-events: none;
     }
+  }
 
-    &\:fluid {
-      max-width: 100%;
-    }
-
+  &\/file {
+    cursor: pointer;
   }
 }
 
@@ -267,13 +301,12 @@ LABEL
 label {
   display: block;
   position: relative;
-  clear: both;
-  float: left;
-  padding-bottom: var(--u0);
+  padding-bottom: var(--u1);
   font-size: var(--form-label-size);
   font-weight: var(--form-label-weight);
   color: var(--black);
   line-height: 1;
+  transition: var(--transition);
 }
 
 /******************************
@@ -283,8 +316,6 @@ FIELD
 input {
   display: block;
   position: relative;
-  clear: both;
-  float: left;
 
   &:not([type="submit"]) {
     width: 100%;
@@ -302,11 +333,11 @@ input {
     transition: var(--transition);
 
     &:focus {
-      background: var(--form-field-focus-fill);
-      border-color: var(--primary-color);
+      border-color: var(--grey-light-2);
     }
     &:disabled {
       background: var(--form-disabled-fill);
+      color: var(--form-disabled-color);
       opacity: var(--form-disabled-opacity);
       pointer-events: none;
     }
@@ -322,10 +353,11 @@ input {
       border-color: var(--form-warning-border-color);
     }
   }
-  &.form\/input {
-    &\:fluid {
-      max-width: 100%;
-    }
+  &[type="password"] {
+    font-size: var(--h4);
+  }
+  &[type="file"] {
+    display: none;
   }
 }
 
@@ -359,17 +391,12 @@ textarea {
   transition: var(--transition);
 
   &:focus {
-    background: var(--form-field-focus-fill);
+    border-color: var(--grey-light-2);
   }
   &:disabled {
     background: var(--form-disabled-fill);
     opacity: var(--form-disabled-opacity);
     pointer-events: none;
-  }
-  &.form\/textarea {
-    &\:fluid {
-      max-width: 100%;
-    }
   }
 }
 
