@@ -7,11 +7,11 @@ DROPDOWN
   --dropdown-body-radius: var(--radius);
   --dropdown-body-shadow: 0px 0px 0px 1px var(--border-color);
 
-  --dropdown-item-padding: var(--u0) var(--u1);
-  --dropdown-item-color: var(--black);
-  --dropdown-item-hover-fill: var(--grey-light-4);
+  --dropdown-item-padding: var(--u1) var(--u1);
+  --dropdown-item-color: var(--grey-dark-1);
+  --dropdown-item-hover-color: var(--grey-dark-2);
+  --dropdown-item-hover-fill: var(--grey-light-5);
   --dropdown-item-active-fill: var(--grey-light-4);
-  --dropdown-item-hover-color: var(--black);
 }
 
 .dropdown {
@@ -25,7 +25,7 @@ DROPDOWN
       margin-top: 10px;
     }
     &.dropdown-direction {
-      &\:top, &\:top-right, &\:top-center {
+      &\:top, &\:top-left, &\:top-center {
         .dropdown\/content {
           margin-top: auto;
           margin-bottom: 10px;
@@ -43,6 +43,11 @@ DROPDOWN
       .dropdown\/content {
         left: 50%;
         transform: translateX(-50%);
+      }
+    }
+    &\:left {
+      .dropdown\/content {
+        right: 0;
       }
     }
     &\:top {
@@ -74,7 +79,7 @@ DROPDOWN
           }
         }
       }
-      &-right {
+      &-left {
         .dropdown\/content {
           top: auto;
           right: 0;
@@ -140,11 +145,11 @@ DROPDOWN
   &\/item {
     display: block;
     padding: var(--dropdown-item-padding);
-    color: inherit;
+    color: var(--dropdown-item-color);
     transition: var(--transition);
     &:hover {
       background: var(--dropdown-item-hover-fill);
-      color: inherit;
+      color: var(--dropdown-item-hover-color);
       text-decoration: none;
     }
     &:active {

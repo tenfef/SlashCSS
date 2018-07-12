@@ -19,16 +19,6 @@ CARD
 	overflow: hidden;
 
 	/******************************
-  CLEARFIX
-  ******************************/
-
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-	/******************************
   CHILD ELEMENTS
   ******************************/
 
@@ -47,9 +37,6 @@ CARD
 	    display: table;
 	    clear: both;
 	  }
-		&.-flush {
-			padding: 0;
-		}
 	}
 	&\/footer {
 		display: block;

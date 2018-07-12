@@ -1,17 +1,16 @@
 +++
-title = "Card"
+title = "Card DONE"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The card component is a simple card based container that holds various types of information."
 +++
 
-
 ##### Basic Usage
 
-The card module contains header, content and footer child elements. You can apply `elevate` or `border` components to modify the look.
+The card module contains header, content and footer child elements. You can also apply `elevate` component to modify the look.
 
 <div class="row row-gutter:2 margin-bottom:2 margin-top:4">
-  <div class="column:6">
+  <div class="column:12 column@sm:6">
     <div class="card elevate border:none margin-bottom:2">
       <div class="card/header padding:none">
         <img src="https://i.imgur.com/Ig4qpjc.jpg" class="image">
@@ -41,7 +40,7 @@ The card module contains header, content and footer child elements. You can appl
       </div>
     </div>
   </div>
-  <div class="column:6">
+  <div class="column:12 column@sm:6">
     <div class="card border-style:radius margin-bottom:2">
       <div class="card/content">
         <h6 class="font font-weight:medium margin-bottom:2">Step 1 of 2</h6>
@@ -89,8 +88,6 @@ You can override styling using the following local variables.
 :root {
 	--card-bg: var(--white);
 	--card-radius: var(--radius);
-	--card-shadow: var(--shadow);
-	--card-flat-bg: var(--background-focus);
 	--card-header-padding: var(--u2);
 	--card-content-padding: var(--u2);
 	--card-footer-padding: var(--u1);

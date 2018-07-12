@@ -80,7 +80,7 @@ $colors: (
   yellow: #FFCE00,
   orange: #ff8a00,
   brown: #A83C00,
-  grey: #8695A8
+  grey: #7a8fa9
 ) !default;
 
 $tonal-colors: (
@@ -98,7 +98,7 @@ $mono-colors: (
       #{$key}-light-1: mix(white, $value, 20%),
       #{$key}-light-2: mix(white, $value, 40%),
       #{$key}-light-3: mix(white, $value, 60%),
-      #{$key}-light-4: mix(white, $value, 80%),
+      #{$key}-light-4: mix(white, $value, 85%),
       #{$key}-light-5: mix(white, $value, 95%),
       #{$key}-dark-1: mix(black, $value, 20%),
       #{$key}-dark-2: mix(black, $value, 35%),

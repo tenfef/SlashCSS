@@ -1,5 +1,5 @@
 +++
-title = "Crumb"
+title = "Crumb DONE"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The crumb component provides visual information of the current page location in context to the overall parent hierarchy."
@@ -8,21 +8,21 @@ description = "The crumb component provides visual information of the current pa
 ##### Basic Usage
 
 <div class="crumb margin-bottom:2">
-  <a href="#" class="crumb/item color:primary">Breadcrumb</a>
+  <a href="#" class="crumb/item">Breadcrumb</a>
   <span class="crumb/trail">/</span>
-  <a href="#" class="crumb/item color:primary">Breadcrumb</a>
+  <a href="#" class="crumb/item">Breadcrumb</a>
   <span class="crumb/trail">/</span>
-  <span class="crumb/item color:black is-active">Current Page</span>
+  <span class="crumb/item is-active">Current Page</span>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="crumb margin-bottom:2">
-  <a href="#" class="crumb/item color:primary">Breadcrumb</a>
+<div class="crumb">
+  <a href="#" class="crumb/item">Breadcrumb</a>
   <span class="crumb/trail">/</span>
-  <a href="#" class="crumb/item color:primary">Breadcrumb</a>
+  <a href="#" class="crumb/item">Breadcrumb</a>
   <span class="crumb/trail">/</span>
-  <span class="crumb/item color:black is-active">Current Page</span>
+  <span class="crumb/item is-active">Current Page</span>
 </div>
 ```
 {{% /codeblock %}}

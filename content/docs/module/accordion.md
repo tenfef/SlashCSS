@@ -1,5 +1,5 @@
 +++
-title = "Accordion"
+title = "Accordion DONE"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "Accordions are useful when you want to hide and show large content."
@@ -7,7 +7,7 @@ description = "Accordions are useful when you want to hide and show large conten
 
 ##### Basic Usage
 
-Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow` container. Styling is minimum to allow for easier style overrides.
+Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow` child element. Styling is minimum to allow for easier style overrides.
 
 <div class="accordion margin-bottom:2">
   <div class="accordion/item">
@@ -54,7 +54,7 @@ Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow`
       <span class="accordion/arrow"></span>
     </a>
     <div class="accordion/content">
-    ...
+      ...
     </div>
   </div>
   <div class="accordion/item">
@@ -63,7 +63,7 @@ Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow`
       <span class="accordion/arrow"></span>
     </a>
     <div class="accordion/content">
-    ...
+      ...
     </div>
   </div>
   <div class="accordion/item">
@@ -72,7 +72,7 @@ Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow`
       <span class="accordion/arrow"></span>
     </a>
     <div class="accordion/content">
-    ...
+      ...
     </div>
   </div>
 </div>
@@ -81,5 +81,21 @@ Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow`
 {{% codeblock key="initializing" definition="javascript" margin="top-tight" %}}
 ```javascript
 var zapAccordion = new ZapAccordion();
+```
+{{% /codeblock %}}
+
+##### Local Variables
+
+You can override styling using the following local variables.
+
+{{% codeblock key="language" definition="css" margin="bottom" %}}
+```css
+:root {
+  --accordion-fill: var(--white);
+  --accordion-header-padding: var(--u1) var(--u2);
+  --accordion-body-padding: var(--u2);
+  --accordion-transition: var(--transition);
+  --accordion-arrow-fill: var(--black);
+}
 ```
 {{% /codeblock %}}

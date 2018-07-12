@@ -7,7 +7,7 @@ ACCORDION
   --accordion-header-padding: var(--u1) var(--u2);
   --accordion-body-padding: var(--u2);
   --accordion-transition: var(--transition);
-  --accordion-arrow-fill: var(--black);
+  --accordion-arrow-fill: var(--grey-dark-1);
 }
 
 .accordion {
@@ -80,14 +80,14 @@ ACCORDION
     &:before {
       display: block;
       position: relative;
-      top: 4px;
+      top: 2px;
       content: '';
       height: 0;
     	width: 0;
     	border: solid transparent;
     	border-color: transparent;
     	border-top-color: var(--accordion-arrow-fill);
-    	border-width: 6px;
+    	border-width: 5px;
     }
   }
 

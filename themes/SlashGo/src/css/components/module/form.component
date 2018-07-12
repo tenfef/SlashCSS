@@ -412,7 +412,6 @@ select {
   font-size: var(--font-size);
   cursor: pointer;
 
-
   &:hover, &:focus {
     color: #000;
   }

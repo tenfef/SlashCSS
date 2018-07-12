@@ -144,11 +144,11 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
 
 The row can also act as a media object component with the `:media` modifier.
 
-<div class="row:media row-gutter:1 margin-bottom:2">
+<div class="row:media row-gutter:1 align-item:middle margin-bottom:2">
   <div class="column">
     <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="image image-shape:round image-size:5 fill:primary">
   </div>
-  <div class="column display:flex align-item:middle">
+  <div class="column">
     <div>
       <p class="font font-weight:medium color:black font-height:0">Jin Park</p>
       <span class="font-size:tiny font-height:0">@zapcss</span>
