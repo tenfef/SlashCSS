@@ -1,5 +1,5 @@
 +++
-title = "List"
+title = "List DONE"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The list module is used to present any list of content horizontally or vertically."
@@ -19,81 +19,81 @@ The list module `list` is useful for any type of list content that runs horizont
 ```
 {{% /codeblock %}}
 
-##### Gutter Spacing
+##### List Gutters
 
-You can use the standard spacing modifiers to control the spread between list items. You can make your list run horizontally with the `list-direction:right` modifier.
+You can use the `list-gutter` property to control the gutter between list items. You can make your list run horizontally with the `list-direction:right` modifier.
 
-<ul class="list list-gutter:1 list-direction:right margin-bottom:2">
+<ul class="list list-gutter:1 margin-bottom:2">
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:red">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:red">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:red">
     </div>
   </li>
 </ul>
 
 <ul class="list list-gutter:2 list-direction:right margin-bottom:2">
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
 </ul>
 
 <ul class="list list-gutter:3 list-direction:right margin-bottom:2">
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
 </ul>
 
 <ul class="list list-gutter:4 list-direction:right margin-bottom:2">
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
 </ul>
 
 <ul class="list list-gutter:5 list-direction:right margin-bottom:2">
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
   <li class="list/item">
-    <div class="padding:2 border-style:radius fill:primary">
+    <div class="padding:2 border-style:radius fill:blue">
     </div>
   </li>
 </ul>
@@ -107,25 +107,25 @@ You can use the standard spacing modifiers to control the spread between list it
   <li class="list/item">...</li>
   <li class="list/item">...</li>
 </ul>
-<ul class="list list-gutter:2">
+<ul class="list list-direction:right list-gutter:2">
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
 </ul>
-<ul class="list list-gutter:3">
+<ul class="list list-direction:right list-gutter:3">
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
 </ul>
-<ul class="list list-gutter:4">
+<ul class="list list-direction:right list-gutter:4">
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
 </ul>
-<ul class="list list-gutter:5">
+<ul class="list list-direction:right list-gutter:5">
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
@@ -144,18 +144,18 @@ $list-gutters: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Settings
+##### Options
 
-The following settings are available.
+The following modifiers are available.
 
-<table class="table table:fluid table:pile">
+<table class="table width:100% table:pile">
   <thead>
     <tr>
       <th>
-        Properties
+        Property
       </th>
       <th>
-        Attributes
+        Modifier
       </th>
       <th>
         Responsive
@@ -165,33 +165,18 @@ The following settings are available.
       </th>
     </tr>
   </thead>
-
-  <tr>
-    <td data-label="Properties">
-      <code>list-direction</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:right</code>
-    </td>
-    <td data-label="Responsive">
-      No
-    </td>
-    <td class="row:reverse">
-      Enable horizontal direction
-    </td>
-  </tr>
   <tr>
     <td data-label="Properties">
       <code>list-gutter</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code>...<code>:5</code>
+      <code>:1</code> ... <code>:5</code>
     </td>
     <td data-label="Responsive">
       No
     </td>
     <td class="row:reverse">
-      Gutter width between list items
+      Set gutter width
     </td>
   </tr>
 </table>

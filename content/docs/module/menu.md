@@ -1,5 +1,5 @@
 +++
-title = "Menu"
+title = "Menu DONE"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The nav component provides you with a standard responsive navigation bar."
@@ -7,36 +7,19 @@ description = "The nav component provides you with a standard responsive navigat
 
 ##### Basic Navigation
 
-The nav component is built using flex and comes groups container `nav/content` and child elements `nav/item`. To push content right assign the `-right` modifier.
+The `menu` component is built using flex and is useful for building menu bars.
 
-<div class="fill:primary-tint-2 padding:2 margin-bottom:2">
-  <nav class="menu" role="menuigation">
+<div class="fill:blue padding:2 margin-bottom:2">
+  <nav class="menu" role="menu">
     <div class="menu/content">
-      <a href="#" class="menu/item nav/columnhover is-active">
+      <a href="#" class="menu/item is-active">
         A
       </a>
-      <a href="#" class="menu/item nav/columnhover">
+      <a href="#" class="menu/item">
         B
       </a>
-      <a href="#" class="menu/item nav/columnhover">
-        C
-      </a>
-      <a href="#" class="menu/item nav/columnhover">
-        C
-      </a>
-      <a href="#" class="menu/item nav/columnhover">
-        C
-      </a>
-      <a href="#" class="menu/item nav/columnhover">
-        C
-      </a>
-    </div>
-    <div class="menu/content">
       <a href="#" class="menu/item">
-        D
-      </a>
-      <a href="#" class="menu/item">
-        E
+        C
       </a>
     </div>
     <div class="menu/content">
@@ -52,9 +35,9 @@ The nav component is built using flex and comes groups container `nav/content` a
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<nav class="menu" role="menuigation">
-  <div class="menu/content align:left">
-    <a href="#" class="menu/item u-hide-m u-hide-t is-active">
+<nav class="menu" role="menu">
+  <div class="menu/content">
+    <a href="#" class="menu/item is-active">
       A
     </a>
     <a href="#" class="menu/item">
@@ -64,7 +47,7 @@ The nav component is built using flex and comes groups container `nav/content` a
       C
     </a>
   </div>
-  <div class="menu/content align:right">
+  <div class="menu/content">
     <a href="#" class="menu/item">
       D
     </a>
@@ -76,56 +59,20 @@ The nav component is built using flex and comes groups container `nav/content` a
 ```
 {{% /codeblock %}}
 
-##### Hover & Padding
+##### Local Variables
 
-To remove hover effect and padding apply the following:
+You can override styling using the following local variables.
 
-<div class="u-fill-shade-2 u-pad-2 margin-bottom:2">
-  <nav class="menu" role="menuigation">
-    <div class="menu/content align:left">
-      <a href="#" class="menu/item u-hide-m u-hide-t is-active">
-        A
-      </a>
-      <a href="#" class="menu/item">
-        B
-      </a>
-      <a href="#" class="menu/item">
-        C
-      </a>
-    </div>
-    <div class="menu/content align:right">
-      <a href="#" class="menu/item">
-        D
-      </a>
-      <a href="#" class="menu/item">
-        E
-      </a>
-    </div>
-  </nav>
-</div>
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<nav class="menu" role="menuigation">
-  <div class="menu/content">
-    <a href="#" class="menu/item u-hide-m u-hide-t is-active">
-      A
-    </a>
-    <a href="#" class="menu/item">
-      B
-    </a>
-    <a href="#" class="menu/item">
-      C
-    </a>
-  </div>
-  <div class="menu/content align:right">
-    <a href="#" class="menu/item">
-      D
-    </a>
-    <a href="#" class="menu/item">
-      E
-    </a>
-  </div>
-</nav>
+{{% codeblock key="language" definition="css" margin="bottom" %}}
+```css
+:root {
+  --menu-height: var(--u6);
+  --menu-border: var(--border);
+  --menu-color: var(--grey-dark-2);
+  --menu-mobile-radius: var(--radius);
+  --menu-mobile-shadow: 0px 5px 5px 0px rgba(0,60,200,0.1);;
+  --menu-item-hover-fill: var(--grey-light-5);
+  --menu-item-active-fill: var(--grey-light-4);
+}
 ```
 {{% /codeblock %}}

@@ -1,5 +1,5 @@
 +++
-title = "Slidemenu"
+title = "Slidemenu DONE"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "Slide panel navigation for mobile."
@@ -7,50 +7,49 @@ description = "Slide panel navigation for mobile."
 
 ##### Basic Usage
 
-Defined with `m-slidemenu` and initialized with javascript. Slidemenu is a fixed element and must belong outside of all containers.
+Defined with `slidemenu` and initialized with javascript. Slidemenu is a fixed element and must belong outside of all containers.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
   ```html
-  <aside class="m-slidemenu js-slidemenu">
-    <div class="m-slidemenu__overlay">
+  <aside class="slidemenu">
+    <div class="slidemenu/overlay">
 
     </div>
-    <div class="m-slidemenu__content">
-      <div class="m-slidemenu__close">
+    <div class="slidemenu/content">
+      <div class="slidemenu/close">
 
       </div>
       ...
     </div>
   </aside>
   ```
-
   {{% codeblock key="initializing" definition="javascript" margin="top" %}}
   ```javascript
-    var zapSlidemenu = new ZapSlidemenu();
+    var slidemenu = new Slidemenu();
   ```
   {{% /codeblock %}}
 {{% /codeblock %}}
 
 ##### Slide Direction
 
-To change slide direction apply the direction modifier.
+You can change the direction of the slide with the `slide-direction` property.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
   ```html
-  <aside class="m-slidemenu -right js-slidemenu">
-    <div class="m-slidemenu__overlay">
+  <aside class="slidemenu slide-direction:right js-slidemenu">
+    <div class="slidemenu/overlay">
 
     </div>
-    <div class="m-slidemenu__content">
+    <div class="slidemenu/content">
       ...
     </div>
   </aside>
   ```
 {{% /codeblock %}}
 
-##### Options
+##### JS Settings
 
-<table class="m-table -stack -fluid">
+<table class="table width:100% ">
   <thead>
     <tr>
       <th>
@@ -67,10 +66,10 @@ To change slide direction apply the direction modifier.
   <tbody>
     <tr>
       <td data-label="Setting">
-        element
+        <code>element</code>
       </td>
       <td data-label="Default">
-        .m-slidemenu
+        <code>.slidemenu</code>
       </td>
       <td data-label="Description">
         Define the element class name to initialize.
@@ -78,10 +77,10 @@ To change slide direction apply the direction modifier.
     </tr>
     <tr>
       <td data-label="Setting">
-        toggleClass
+        <code>toggleClass</code>
       </td>
       <td data-label="Default">
-        .js-hamburger
+        <code>.js-hamburger</code>
       </td>
       <td data-label="Description">
         Define the element class name to toggle
@@ -89,10 +88,10 @@ To change slide direction apply the direction modifier.
     </tr>
     <tr>
       <td data-label="Setting">
-        closeClass
+        <code>closeClass</code>
       </td>
       <td data-label="Default">
-        .m-slidemenu__close
+        <code>.slidemenu/close</code>
       </td>
       <td data-label="Description">
         Define the element class name to close

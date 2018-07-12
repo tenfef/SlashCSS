@@ -31,7 +31,7 @@ SLIDEMENU
   ******************************/
 
   &-direction {
-    &\:left {
+    &\:right {
       .slidemenu\/content {
         left: auto;
         right: -100%;

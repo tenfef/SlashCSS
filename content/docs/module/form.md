@@ -487,7 +487,7 @@ You can override styling using the following local variables.
 ```
 {{% /codeblock %}}
 
-##### Modifiers
+##### Options
 
 The following modifiers are available.
 

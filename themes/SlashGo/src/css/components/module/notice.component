@@ -3,10 +3,7 @@ NOTICE
 ************************************************************/
 
 :root {
-  --label__padding: 4px 5px 3px 5px;
-  --label__radius: 3px;
-  --label__font-weight: var(--heavy);
-  --label__margin: var(--u1);
+  --notice-fill: var(--primary-color);
 }
 
 .notice {
@@ -14,7 +11,7 @@ NOTICE
   position: relative;
   width: 100%;
   align-items: center;
-  background: var(--primary-color);
+  background: var(--notice-fill);
   border-radius: var(--radius);
   color: white;
   opacity: 1;

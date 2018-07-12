@@ -321,7 +321,7 @@ $button-sizes: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Modifiers
+##### Options
 
 The following modifiers are available.
 

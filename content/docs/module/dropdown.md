@@ -58,7 +58,7 @@ The dropdown component is defined with the `dropdown` class and is initialized w
 
 {{% codeblock key="initializing" definition="javascript" margin="top" %}}
 ```javascript
-var zapDropdown = new ZapDropdown();
+var dropdown = new Dropdown();
 ```
 {{% /codeblock %}}
 
@@ -225,7 +225,7 @@ You can override styling using the following local variables.
 ```
 {{% /codeblock %}}
 
-##### Modifiers
+##### Options
 
 The following modifiers are available.
 
@@ -275,4 +275,35 @@ The following modifiers are available.
       Define dropdown position and fade in direction
     </td>
   </tr>
+</table>
+
+##### JS Settings
+
+<table class="table width:100% ">
+  <thead>
+    <tr>
+      <th>
+        <strong>Setting</strong>
+      </th>
+      <th>
+        <strong>Default</strong>
+      </th>
+      <th>
+        <strong>Description</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Setting">
+        <code>element</code>
+      </td>
+      <td data-label="Default">
+        <code>.dropdown</code>
+      </td>
+      <td data-label="Description">
+        Define the element class name to initialize.
+      </td>
+    </tr>
+  </tbody>
 </table>

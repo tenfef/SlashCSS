@@ -80,7 +80,7 @@ Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow`
 {{% /codeblock %}}
 {{% codeblock key="initializing" definition="javascript" margin="top-tight" %}}
 ```javascript
-var zapAccordion = new ZapAccordion();
+var accordion = new Accordion();
 ```
 {{% /codeblock %}}
 
@@ -99,3 +99,34 @@ You can override styling using the following local variables.
 }
 ```
 {{% /codeblock %}}
+
+##### JS Settings
+
+<table class="table width:100% ">
+  <thead>
+    <tr>
+      <th>
+        <strong>Setting</strong>
+      </th>
+      <th>
+        <strong>Default</strong>
+      </th>
+      <th>
+        <strong>Description</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Setting">
+        <code>element</code>
+      </td>
+      <td data-label="Default">
+        <code>.accordion</code>
+      </td>
+      <td data-label="Description">
+        Define the element class name to initialize.
+      </td>
+    </tr>
+  </tbody>
+</table>

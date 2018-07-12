@@ -31,7 +31,7 @@ $max-width: 1600px !default;
 ```
 {{% /codeblock %}}
 
-##### Modifiers
+##### Options
 
 The following modifiers are available.
 

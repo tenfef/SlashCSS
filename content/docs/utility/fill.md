@@ -489,7 +489,7 @@ Defined with `fill` and color modifier. All standard and tonal color are availab
 ```
 {{% /codeblock %}}
 
-##### Modifiers
+##### Options
 
 The following modifiers are available.
 
