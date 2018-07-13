@@ -15,12 +15,12 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
       <div class="card/content">
         <h5 class="font font-weight:medium margin-bottom:3 align:center">Basic Form</h5>
         <div class="form/item">
-          <label for="email" class="form/label:required">Email</label>
-          <input id="email" type="email" placeholder=" " class="max-width:100%">
+          <label class="form/label:required">Email</label>
+          <input placeholder=" " class="max-width:100%">
         </div>
         <div class="form/item">
-          <label for="password">Password</label>
-          <input id="password" type="password" placeholder=" " class="max-width:100%">
+          <label>Password</label>
+          <input type="password" placeholder=" " class="max-width:100%">
         </div>
         <div class="form/item">
           <label class="form/checkbox">
@@ -47,12 +47,12 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
     <div class="card/content">
       <h5 class="font font-weight:medium margin-bottom:3 align:center">Basic Form</h5>
       <div class="form/item">
-        <label for="email" class="form/label:required">Email</label>
-        <input id="email" type="email" placeholder=" " class="max-width:100%">
+        <label class="form/label:required">Email</label>
+        <input placeholder=" " class="max-width:100%">
       </div>
       <div class="form/item">
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder=" " class="max-width:100%">
+        <label>Password</label>
+        <input type="password" placeholder=" " class="max-width:100%">
       </div>
       <div class="form/item">
         <label class="form/checkbox">
@@ -82,12 +82,12 @@ Form items can be modified to enable sliding labels with `form/item-style:slide`
       <div class="card/content">
         <h5 class="font font-weight:medium margin-bottom:3 align:center">Sliding Label</h5>
         <div class="form/item form/item-style:slide">
-          <input id="email" type="email" placeholder=" " class="max-width:100%">
-          <label for="email">Email</label>
+          <input placeholder=" " class="max-width:100%">
+          <label>Email</label>
         </div>
         <div class="form/item form/item-style:slide">
-          <input id="password" type="password" placeholder=" " class="max-width:100%">
-          <label for="password">Password</label>
+          <input type="password" placeholder=" " class="max-width:100%">
+          <label>Password</label>
         </div>
         <div class="form/item">
           <label class="form/checkbox">
@@ -113,12 +113,12 @@ Form items can be modified to enable sliding labels with `form/item-style:slide`
     <div class="card/content">
       <h5 class="font font-weight:medium margin-bottom:3 align:center">Sliding Label</h5>
       <div class="form/item form/item-style:slide">
-        <input id="email" type="email" placeholder=" " class="max-width:100%">
-        <label for="email">Email</label>
+        <input placeholder=" " class="max-width:100%">
+        <label>Email</label>
       </div>
       <div class="form/item form/item-style:slide">
-        <input id="password" type="password" placeholder=" " class="max-width:100%">
-        <label for="password">Password</label>
+        <input type="password" placeholder=" " class="max-width:100%">
+        <label>Password</label>
       </div>
       <div class="form/item">
         <label class="form/checkbox">
@@ -147,12 +147,12 @@ The disabled attribute disables clickable state.
     <div class="card/content">
       <form class="form">
         <div class="form/item">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="Email" value="jin@litmos.com" disabled="disabled" class="max-width:100%">
+          <label>Email</label>
+          <input placeholder="Email" value="jin@litmos.com" disabled="disabled" class="max-width:100%">
         </div>
         <div class="form/item">
-          <label for="password">Username</label>
-          <input id="email" type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
+          <label>Username</label>
+          <input type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
         </div>
         <div class="form/item">
           <label class="form/checkbox -checkbox">Disabled
@@ -187,12 +187,12 @@ The disabled attribute disables clickable state.
   <div class="card/content">
     <form class="form">
       <div class="form/item">
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Email" value="jin@litmos.com" disabled="disabled" class="max-width:100%">
+        <label>Email</label>
+        <input placeholder="Email" value="jin@litmos.com" disabled="disabled" class="max-width:100%">
       </div>
       <div class="form/item">
-        <label for="password">Username</label>
-        <input id="email" type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
+        <label>Username</label>
+        <input type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
       </div>
       <div class="form/item">
         <label class="form/checkbox -checkbox">Disabled
@@ -237,31 +237,31 @@ Here is an example of a Company Information form in multi-column format. For mul
         <div class="form/item">
           <div class="row row-gutter:1 margin-bottom:3">
             <div class="column:12 column@sm:6">
-              <label for="firstname" class="form/label:fluid">Company</label>
-              <input id="firstname" type="text" placeholder="Company" class="max-width:100%">
+              <label class="form/label:fluid">Company</label>
+              <input type="text" placeholder="Company" class="max-width:100%">
             </div>
             <div class="column:12 column@sm:6">
-              <label for="lastname" class="">Title</label>
-              <input id="lastname" type="text" placeholder="Digital Designer" value="Digital Designer" disabled="disabled" class="max-width:100%">
+              <label class="">Title</label>
+              <input type="text" placeholder="Digital Designer" value="Digital Designer" disabled="disabled" class="max-width:100%">
             </div>
           </div>
         </div>
         <div class="form/item margin-bottom:4">
-          <label for="username" class="form/label:fluid">Address</label>
-          <input id="username" type="text" placeholder="Level 5, Graham St" class="max-width:100% margin-bottom:1">
-          <input id="username" type="text" placeholder="Central" class="max-width:100%">
+          <label class="form/label:fluid">Address</label>
+          <input type="text" placeholder="Level 5, Graham St" class="max-width:100% margin-bottom:1">
+          <input type="text" placeholder="Central" class="max-width:100%">
           <span class="form/help">Help message example</span>
         </div>
         <div class="row row-gutter:1 margin-bottom:2">
           <div class="column:12 column@sm:6">
             <div class="form/item">
-              <label for="email">City</label>
-              <input id="email" type="email" placeholder="City" class="max-width:100%">
+              <label>City</label>
+              <input placeholder="City" class="max-width:100%">
             </div>
           </div>
           <div class="column:12 column@sm:6">
             <div class="form/item">
-              <label for="email">State</label>
+              <label>State</label>
               <input id="website" type="Website" placeholder="State" class="max-width:100%">
             </div>
           </div>
@@ -269,8 +269,8 @@ Here is an example of a Company Information form in multi-column format. For mul
         <div class="row row-gutter:1 margin-bottom:4">
           <div class="column:12 column@sm:6">
             <div class="form/item">
-              <label for="email">Zip</label>
-              <input id="email" type="email" placeholder="City" class="max-width:100%">
+              <label>Zip</label>
+              <input placeholder="City" class="max-width:100%">
             </div>
           </div>
           <div class="column:12 column@sm:6">

@@ -99,24 +99,6 @@ DROPDOWN
   &\/toggle {
     cursor: pointer;
   }
-  &\/arrow {
-    position: relative;
-    margin: auto;
-    height: 18px;
-    overflow: hidden;
-    z-index: 2;
-    &:before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 20px;
-      margin: auto;
-      border-radius: 3px;
-      background: white;
-      transform: translateY(9px) rotate(45deg);
-      border: var(--border);
-    }
-	}
   &\/content {
     visibility: hidden;
     position: absolute;
