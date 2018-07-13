@@ -11,7 +11,7 @@ FORM
   --form-field-fill: var(--white);
   --form-field-checkbox-fill: var(--blue);
   --form-field-color: var(--black);
-  --form-field-radius: 4px;
+  --form-field-radius: .4rem;
   --form-field-padding: 1.5rem;
 
   --form-disabled-fill: var(--grey-light-5);
@@ -59,7 +59,7 @@ FORM
             left: var(--u1);
             margin: 0;
             padding: 0;
-            font-size: 12px;
+            font-size: 1.2rem;
             color: var(--grey-dark-1);
             z-index: 1;
           }
@@ -74,8 +74,8 @@ FORM
         content: '*';
         position: relative;
         display: inline-block;
-        top: -3px;
-        left: 2px;
+        top: -.3rem;
+        left: .2rem;
         color: var(--red);
       }
     }
@@ -201,10 +201,10 @@ FORM
         content: '';
         display: none;
         position: absolute;
-        left: 6px;
-        top: 2px;
-        width: 6px;
-        height: 10px;
+        left: .6rem;
+        top: .2rem;
+        width: .6rem;
+        height: 1rem;
         border: solid white;
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
@@ -254,8 +254,8 @@ FORM
       &:after {
         content: '';
         display: none;
-        width: 10px;
-        height: 10px;
+        width: 1rem;
+        height: 1rem;
         border-radius: 100px;
       }
     }

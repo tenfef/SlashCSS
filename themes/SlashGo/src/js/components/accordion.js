@@ -17,14 +17,12 @@
 			this.options = defaults
 		}
 
-
 		let accordionClass = this.options.element
     let allAccordion = document.querySelectorAll(accordionClass)
 		let itemClass = 'accordion\\/item'
 		let headerClass = 'accordion\\/header'
 		let contentClass = 'accordion\\/content'
 		let activeClass = 'is-active'
-
 
 		/* Initialize each component */
     for (let i = 0; i < allAccordion.length; i++) {
@@ -49,7 +47,6 @@
 				})
 			}
 		}
-
 
 		/* Activates the chosen accordion and deactivates the rest */
 		function activateContent(targetParent, targetItem) {

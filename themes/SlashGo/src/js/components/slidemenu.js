@@ -24,33 +24,46 @@
 		let closeClass = this.options.closeClass
 		let overlayClass = '.slidemenu\\/overlay'
 
-    let slidemenu = document.querySelector(slidemenuClass)
-		let allToggle = document.querySelectorAll(toggleClass)
-		let close = slidemenu.querySelector(closeClass)
-		let overlay = slidemenu.querySelector(overlayClass)
+    let allSlidemenu = document.querySelectorAll(slidemenuClass)
 		let activeClass = 'is-active'
 
 		/* Initialize each component */
-    for (let i = 0; i < allToggle.length; i++) {
-			let toggle = allToggle[i]
+		for (let i = 0; i < allSlidemenu.length; i++) {
+			let slidemenu = allSlidemenu[i]
+			let allToggle = document.querySelectorAll(toggleClass)
+			let allClose = slidemenu.querySelectorAll(closeClass)
+			let allOverlay = slidemenu.querySelectorAll(overlayClass)
 
-			/* add click event */
-			toggle.addEventListener('click', function(e) {
-				e.preventDefault()
-				activate(slidemenu)
-			})
+			for (let i = 0; i < allToggle.length; i++) {
+				let toggle = allToggle[i]
+
+				/* add click event */
+				toggle.addEventListener('click', function(e) {
+					e.preventDefault()
+					activate(slidemenu)
+				})
+			}
+
+			for (let i = 0; i < allToggle.length; i++) {
+				let close = allClose[i]
+
+				/* add click event */
+				close.addEventListener('click', function(e) {
+					e.preventDefault()
+					activate(slidemenu)
+				})
+			}
+
+			for (let i = 0; i < allOverlay.length; i++) {
+				let overlay = allOverlay[i]
+
+				/* add click event */
+				overlay.addEventListener('click', function(e) {
+					e.preventDefault()
+					activate(slidemenu)
+				})
+			}
 		}
-
-		close.addEventListener('click', function(e) {
-			e.preventDefault()
-			activate(slidemenu)
-		})
-
-		overlay.addEventListener('click', function(e) {
-			e.preventDefault()
-			activate(slidemenu)
-		})
-
 
 		/* Activates the chosen accordion and deactivates the rest */
 		function activate(slidemenu) {

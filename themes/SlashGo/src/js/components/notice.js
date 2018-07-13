@@ -17,13 +17,11 @@
 			this.options = defaults
 		}
 
-
 		let noticeClass = this.options.element
 		let toggleClass = 'notice\\/close'
     let allNotice = document.querySelectorAll(noticeClass)
 		let allToggle = document.querySelectorAll('.' + toggleClass)
 		let activeClass = 'is-active'
-
 
 		/* Initialize each component */
     for (let i = 0; i < allNotice.length; i++) {
@@ -37,7 +35,6 @@
 				})
 			}
 		}
-
 
 		/* Activates the chosen accordion and deactivates the rest */
 		function hide(targetParent) {

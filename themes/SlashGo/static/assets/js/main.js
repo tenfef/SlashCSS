@@ -168,14 +168,12 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 			this.options = defaults
 		}
 
-
 		let accordionClass = this.options.element
     let allAccordion = document.querySelectorAll(accordionClass)
 		let itemClass = 'accordion\\/item'
 		let headerClass = 'accordion\\/header'
 		let contentClass = 'accordion\\/content'
 		let activeClass = 'is-active'
-
 
 		/* Initialize each component */
     for (let i = 0; i < allAccordion.length; i++) {
@@ -200,7 +198,6 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 				})
 			}
 		}
-
 
 		/* Activates the chosen accordion and deactivates the rest */
 		function activateContent(targetParent, targetItem) {
@@ -393,33 +390,46 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 		let closeClass = this.options.closeClass
 		let overlayClass = '.slidemenu\\/overlay'
 
-    let slidemenu = document.querySelector(slidemenuClass)
-		let allToggle = document.querySelectorAll(toggleClass)
-		let close = slidemenu.querySelector(closeClass)
-		let overlay = slidemenu.querySelector(overlayClass)
+    let allSlidemenu = document.querySelectorAll(slidemenuClass)
 		let activeClass = 'is-active'
 
 		/* Initialize each component */
-    for (let i = 0; i < allToggle.length; i++) {
-			let toggle = allToggle[i]
+		for (let i = 0; i < allSlidemenu.length; i++) {
+			let slidemenu = allSlidemenu[i]
+			let allToggle = document.querySelectorAll(toggleClass)
+			let allClose = slidemenu.querySelectorAll(closeClass)
+			let allOverlay = slidemenu.querySelectorAll(overlayClass)
 
-			/* add click event */
-			toggle.addEventListener('click', function(e) {
-				e.preventDefault()
-				activate(slidemenu)
-			})
+			for (let i = 0; i < allToggle.length; i++) {
+				let toggle = allToggle[i]
+
+				/* add click event */
+				toggle.addEventListener('click', function(e) {
+					e.preventDefault()
+					activate(slidemenu)
+				})
+			}
+
+			for (let i = 0; i < allToggle.length; i++) {
+				let close = allClose[i]
+
+				/* add click event */
+				close.addEventListener('click', function(e) {
+					e.preventDefault()
+					activate(slidemenu)
+				})
+			}
+
+			for (let i = 0; i < allOverlay.length; i++) {
+				let overlay = allOverlay[i]
+
+				/* add click event */
+				overlay.addEventListener('click', function(e) {
+					e.preventDefault()
+					activate(slidemenu)
+				})
+			}
 		}
-
-		close.addEventListener('click', function(e) {
-			e.preventDefault()
-			activate(slidemenu)
-		})
-
-		overlay.addEventListener('click', function(e) {
-			e.preventDefault()
-			activate(slidemenu)
-		})
-
 
 		/* Activates the chosen accordion and deactivates the rest */
 		function activate(slidemenu) {
@@ -463,13 +473,11 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 			this.options = defaults
 		}
 
-
 		let noticeClass = this.options.element
 		let toggleClass = 'notice\\/close'
     let allNotice = document.querySelectorAll(noticeClass)
 		let allToggle = document.querySelectorAll('.' + toggleClass)
 		let activeClass = 'is-active'
-
 
 		/* Initialize each component */
     for (let i = 0; i < allNotice.length; i++) {
@@ -483,7 +491,6 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 				})
 			}
 		}
-
 
 		/* Activates the chosen accordion and deactivates the rest */
 		function hide(targetParent) {
@@ -571,28 +578,6 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
     'right-trim': true
   });
 
-
-  // Headroom
-  var headroom = new Headroom(document.querySelector(".js-header"), {
-    offset: 20,
-    classes : {
-      // when element is initialised
-      initial : "is-active",
-      // when scrolling up
-      pinned : "is-pinned",
-      // when scrolling down
-      unpinned : "is-unpinned",
-      // when above offset
-      top : "is-top",
-      // when below offset
-      notTop : "is-not-top",
-      // when at bottom of scoll area
-      bottom : "is-bottom",
-      // when not at bottom of scroll area
-      notBottom : "is-not-bottom"
-    }
-  });
-  headroom.init();
 
 })();
 
