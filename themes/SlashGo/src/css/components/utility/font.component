@@ -6,9 +6,6 @@ $font-heights: 5 !default;
 
 .font {
 
-  margin: 0;
-  padding: 0;
-
   /******************************
   FONT SIZES
   ******************************/
@@ -16,13 +13,13 @@ $font-heights: 5 !default;
   &-size {
     @each $font-size, $value in $font-sizes {
       &\:#{$font-size} {
-        font-size: var(--#{$font-size});
+        font-size: var(--#{$font-size}) !important;
       }
       @each $screen, $size in $screens {
         &-#{$screen} {
           @media (min-width : #{$size}) {
             &\:#{$font-size} {
-              font-size: var(--#{$font-size});
+              font-size: var(--#{$font-size}) !important;
             }
           }
         }
@@ -37,7 +34,7 @@ $font-heights: 5 !default;
   &-weight {
     @each $key, $value in $font-weights {
       &\:#{$key} {
-        font-weight: var(--#{$key});
+        font-weight: var(--#{$key}) !important;
       }
     }
     @each $screen, $size in $screens {
@@ -45,7 +42,7 @@ $font-heights: 5 !default;
         @media (min-width : #{$size}) {
           @each $key, $value in $font-weights {
             &\:#{$key} {
-              font-weight: var(--#{$key});
+              font-weight: var(--#{$key}) !important;
             }
           }
         }
@@ -60,7 +57,7 @@ $font-heights: 5 !default;
   &-height {
 		@while $font-heights >= 0 {
       &\:#{$font-heights} {
-        line-height: $font-heights / 5 + 1;
+        line-height: $font-heights / 5 + 1 !important;
       }
       $font-heights: $font-heights - 1;
     }
@@ -69,7 +66,7 @@ $font-heights: 5 !default;
         @media (min-width : #{$size}) {
           @while $font-heights >= 0 {
             &\:#{$font-heights} {
-              line-height: $font-heights / 5 + 1;
+              line-height: $font-heights / 5 + 1 !important;
             }
             $font-heights: $font-heights - 1;
           }
@@ -84,13 +81,13 @@ $font-heights: 5 !default;
 
   &-transform {
     &\:none {
-      text-transform: none;
+      text-transform: none !important;
     }
     &\:upper {
-      text-transform: uppercase;
+      text-transform: uppercase !important;
     }
     &\:lower {
-      text-transform: lowercase;
+      text-transform: lowercase !important;
     }
   }
 }

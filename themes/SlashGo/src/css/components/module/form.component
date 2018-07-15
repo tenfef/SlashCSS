@@ -206,7 +206,7 @@ FORM
         width: .6rem;
         height: 1rem;
         border: solid white;
-        border-width: 0 2px 2px 0;
+        border-width: 0 .2rem .2rem 0;
         transform: rotate(45deg);
       }
     }

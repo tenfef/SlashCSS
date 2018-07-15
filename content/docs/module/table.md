@@ -1,5 +1,5 @@
 +++
-title = "Table"
+title = "Table DONE"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The table module is useful for displaying grid based data and content."
@@ -7,7 +7,7 @@ description = "The table module is useful for displaying grid based data and con
 
 ##### Basic Usage
 
-The table module is defined with the `table` class. By default the table width will only be as wide to fit the content. To make the table span the full width assign the `width:100%` modifier. Table rows or table cells can have hover states using the `hover` component.
+The table component is defined with the `table` class. By default the table width will only be as wide to fit the content. To make the table span the full width assign the `width:100%` component. Table rows or table cells can have hover states using the `hover` component.
 
 <table class="table width:100% margin-bottom:2">
   <thead>
@@ -19,8 +19,8 @@ The table module is defined with the `table` class. By default the table width w
   </thead>
   <tbody>
     <tr>
-      <td class="hover-fill:background-focus">Cell</td>
-      <td class="hover hover-color:red">Cell</td>
+      <td class="hover hover-fill:grey-light-4 hover-color:grey-dark-2">Hover me</td>
+      <td class="hover hover hover-color:red">Hover me</td>
       <td>Cell</td>
     </tr>
     <tr>
@@ -39,7 +39,7 @@ The table module is defined with the `table` class. By default the table width w
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<table class="table width:100% margin-bottom:2">
+<table class="table width:100%">
   <thead>
     <tr>
       <th>Head</th>
@@ -49,8 +49,8 @@ The table module is defined with the `table` class. By default the table width w
   </thead>
   <tbody>
     <tr>
-      <td class="hover-fill:background-focus">Cell</td>
-      <td class="hover hover-color:red">Cell</td>
+      <td class="hover hover-fill:grey-light-4 hover-color:grey-dark-2">Hover me</td>
+      <td class="hover hover hover-color:red">Hover me</td>
       <td>Cell</td>
     </tr>
     <tr>
@@ -70,9 +70,9 @@ The table module is defined with the `table` class. By default the table width w
 
 ##### Responsive Tables
 
-Tables can be responsive with the `table:pile` modifier. Header labels can be applied by adding the attribute `data-label` to the `<td>` cell.
+Tables can be responsive with the `table:pile` modifier. Header labels can be applied by adding the attribute `data-label` to the `<td>` cell. Additionally, you can apply the `elevate` component to change the style of your table.
 
-<table class="table width:100% elevate table:pile margin-bottom:2">
+<table class="table width:100% elevate table:pile table@sm:unpile margin-bottom:2">
   <thead>
     <tr>
       <th>Head 1</th>
@@ -99,7 +99,7 @@ Tables can be responsive with the `table:pile` modifier. Header labels can be ap
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<table class="table width:100% elevate table:pile margin-bottom:2">
+<table class="table width:100% elevate table:pile">
   <thead>
     <tr>
       <th>Head 1</th>
@@ -142,7 +142,7 @@ You can override styling using the following local root variables.
 
 The following settings are available.
 
-<table class="table width:100% table:pile">
+<table class="table width:100%">
   <thead>
     <tr>
       <th>
@@ -164,13 +164,13 @@ The following settings are available.
       <code>table</code>
     </td>
     <td data-label="Attributes">
-      <code>:pile</code>
+      <code>:pile</code> <code>:unpile</code>
     </td>
     <td data-label="Responsive">
       Yes
     </td>
     <td class="row:reverse">
-      Enable responsiveness
+      Enable/disable responsiveness
     </td>
   </tr>
 </table>

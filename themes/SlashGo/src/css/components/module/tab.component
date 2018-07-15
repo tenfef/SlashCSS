@@ -18,7 +18,7 @@ TAB
     display: flex;
     position: relative;
     margin: 0;
-    .tab\/header-item {
+    .tab\/item {
       position: relative;
       padding: var(--tab-item-padding);
       border-top-left-radius: var(--tab-radius);
@@ -52,11 +52,11 @@ TAB
     padding: var(--u2);
     background: var(--tab-bg);
     box-shadow: inset 0px 0px 0px 1px var(--border-color);
-    .tab\/content-item {
+    .tab\/item {
       height: 0;
       overflow: hidden;
       opacity: 0;
-      transition: opacity .3s .1s;
+      transition: opacity .5s .1s;
 
       &.is-active {
         height: auto;
@@ -64,12 +64,13 @@ TAB
       }
     }
   }
-  &-direction {
+  &-position {
     &\:left {
       display: flex;
       .tab\/header {
         flex-direction: column;
-        .tab\/header-item {
+        flex: none;
+        .tab\/item {
           border-radius: 0;
           border-top-left-radius: var(--tab-radius);
           border-bottom-left-radius: var(--tab-radius);
@@ -91,7 +92,8 @@ TAB
       flex-direction: row-reverse;
       .tab\/header {
         flex-direction: column;
-        .tab\/header-item {
+        flex: none;
+        .tab\/item {
           border-radius: 0;
           border-top-right-radius: var(--tab-radius);
           border-bottom-right-radius: var(--tab-radius);
@@ -112,7 +114,7 @@ TAB
       display: flex;
       flex-direction: column-reverse;
       .tab\/header {
-        .tab\/header-item {
+        .tab\/item {
           border-radius: 0;
           border-bottom-left-radius: var(--tab-radius);
           border-bottom-right-radius: var(--tab-radius);
@@ -133,7 +135,7 @@ TAB
 
   &\:reset {
     .tab\/header {
-      .tab\/header-item {
+      .tab\/item {
         padding: 0;
         border-radius: 0;
         &.is-active {
@@ -143,7 +145,8 @@ TAB
     }
     .tab\/content {
       box-shadow: none;
-      .tab\/content-item {
+      padding: 0;
+      .tab\/item {
         padding: 0;
       }
     }

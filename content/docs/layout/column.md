@@ -561,7 +561,7 @@ $columns: 12 !default;
 ```
 {{% /codeblock %}}
 
-<table class="table width:100% table:pile">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>

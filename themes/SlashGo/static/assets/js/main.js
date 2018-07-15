@@ -92,8 +92,8 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 
 		let tabClass = this.options.element
     let allTab = document.querySelectorAll(tabClass)
-		let headerClass = '.tab\\/header-item'
-    let contentClass = '.tab\\/content-item'
+		let headerClass = '.tab\\/header .tab\\/item'
+    let contentClass = '.tab\\/content .tab\\/item'
 		let activeClass = 'is-active'
 
 

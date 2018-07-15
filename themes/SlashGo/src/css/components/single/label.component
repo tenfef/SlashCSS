@@ -3,17 +3,20 @@ LABEL
 ************************************************************/
 
 :root {
-  --label-padding: 5px 5px 4px 5px;
   --label-radius: 3px;
 }
 
 .label {
   position: relative;
   display: inline-flex;
-  bottom: 1px;
+  align-items: center;
+  vertical-align: middle;
   margin-left: .25rem;
   margin-right: .25rem;
-  padding: var(--label-padding);
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-top: .1rem;
+  height: 1.8rem;
   border-radius: var(--label-radius);
   background: var(--primary-color);
   vertical-align: middle;
@@ -29,12 +32,14 @@ LABEL
 .labels {
   position: relative;
   display: inline-flex;
-  bottom: 1px;
+  vertical-align: middle;
+  margin-left: .25rem;
+  margin-right: .25rem;
   border-radius: var(--label-radius);
   overflow: hidden;
   .label {
-    bottom: 0;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
     border-radius: 0;
   }
 }

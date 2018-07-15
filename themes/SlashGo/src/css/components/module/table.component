@@ -46,47 +46,24 @@ TABLE
 
   &\:pile {
     background-color: transparent;
-  	border: 0;
-  	border-radius: 0;
-
-    @media (min-width: $sm) {
-      background-color: var(--white);
-      border: var(--table-border);
-      border-radius: var(--radius);
-    }
+    border: 0;
+    border-radius: 0;
 
     thead {
       display: none;
-      @media (min-width: $sm) {
-        display: table-header-group;
-      }
     }
     tbody {
       display: block;
-      @media (min-width: $sm) {
-        display: table-row-group;
-      }
     }
     tr {
       display: block;
       margin-bottom: var(--u2);
       background-color: var(--white);
-    	border: var(--table-border);
-    	border-radius: var(--radius);
+      border: var(--table-border);
+      border-radius: var(--radius);
       &:last-child:not(:first-child) {
         th, td {
           border-bottom: var(--table-border);
-        }
-      }
-      @media (min-width: $sm) {
-        display: table-row;
-        background: transparent;
-        border: 0;
-        border-right: var(--table-border);
-        &:last-child:not(:first-child) {
-          th, td {
-            border-bottom: 0;
-          }
         }
       }
     }
@@ -95,17 +72,8 @@ TABLE
       padding: var(--u1) var(--u2);
       border-bottom: var(--table-border);
       border-right: 0;
-      @media (min-width: $sm) {
-        display: table-cell;
-        border-bottom: var(--table-border);
-        border-right: var(--table-border);
-      }
       &:last-child {
         border-bottom: 0;
-        @media (min-width: $sm) {
-          border-bottom: var(--table-border);
-          border-right: 0;
-        }
       }
 
       // data label pseudo for responsive table
@@ -115,63 +83,81 @@ TABLE
         padding-right: var(--u3);
         font-weight: var(--medium);
         color: var(--black);
-        @media (min-width: $sm) {
-          display: none;
-        }
       }
     }
     &.elevate {
-      box-shadow: none;
-      @media (min-width: $sm) {
-        box-shadow: var(--shadow);
-      }
+      box-shadow: none !important;
       tr {
         box-shadow: var(--shadow);
-        @media (min-width: $sm) {
-          box-shadow: none;
-        }
       }
     }
   }
 
   @each $key, $value in $screens {
     &\@#{$key} {
-
       &\:pile {
-        background-color: transparent;
-      	border: 0;
-      	border-radius: 0;
+        @media (min-width : #{$value}) {
+          background-color: transparent;
+        	border: 0;
+        	border-radius: 0;
 
-        @media (min-width: $sm) {
-          background-color: var(--white);
-          border: var(--table-border);
-          border-radius: var(--radius);
-        }
-
-        thead {
-          display: none;
-          @media (min-width: $sm) {
-            display: table-header-group;
+          thead {
+            display: none;
           }
-        }
-        tbody {
-          display: block;
-          @media (min-width: $sm) {
-            display: table-row-group;
+          tbody {
+            display: block;
           }
-        }
-        tr {
-          display: block;
-          margin-bottom: var(--u2);
-          background-color: var(--white);
-        	border: var(--table-border);
-        	border-radius: var(--radius);
-          &:last-child:not(:first-child) {
-            th, td {
-              border-bottom: var(--table-border);
+          tr {
+            display: block;
+            margin-bottom: var(--u2);
+            background-color: var(--white);
+          	border: var(--table-border);
+          	border-radius: var(--radius);
+            &:last-child:not(:first-child) {
+              th, td {
+                border-bottom: var(--table-border);
+              }
             }
           }
-          @media (min-width: $sm) {
+          td {
+            display: flex;
+            padding: var(--u1) var(--u2);
+            border-bottom: var(--table-border);
+            border-right: 0;
+            &:last-child {
+              border-bottom: 0;
+            }
+
+            // data label pseudo for responsive table
+            &:before {
+              content: attr(data-label);
+              flex: 1;
+              padding-right: var(--u3);
+              font-weight: var(--medium);
+              color: var(--black);
+            }
+          }
+          &.elevate {
+            box-shadow: none !important;
+            tr {
+              box-shadow: var(--shadow);
+            }
+          }
+        }
+      }
+      &\:unpile {
+        @media (min-width : #{$value}) {
+          background-color: transparent;
+        	border: var(--table-border);
+          border-radius: var(--radius);
+          
+          thead {
+            display: table-header-group;
+          }
+          tbody {
+            display: table-row-group;
+          }
+          tr {
             display: table-row;
             background: transparent;
             border: 0;
@@ -182,51 +168,28 @@ TABLE
               }
             }
           }
-        }
-        td {
-          display: flex;
-          padding: var(--u1) var(--u2);
-          border-bottom: var(--table-border);
-          border-right: 0;
-          @media (min-width: $sm) {
+          td {
             display: table-cell;
             border-bottom: var(--table-border);
             border-right: var(--table-border);
-          }
-          &:last-child {
-            border-bottom: 0;
-            @media (min-width: $sm) {
+            &:last-child {
               border-bottom: var(--table-border);
               border-right: 0;
             }
-          }
 
-          // data label pseudo for responsive table
-          &:before {
-            content: attr(data-label);
-            flex: 1;
-            padding-right: var(--u3);
-            font-weight: var(--medium);
-            color: var(--black);
-            @media (min-width: $sm) {
+            // data label pseudo for responsive table
+            &:before {
               display: none;
             }
           }
-        }
-        &.elevate {
-          box-shadow: none;
-          @media (min-width: $sm) {
-            box-shadow: var(--shadow);
-          }
-          tr {
-            box-shadow: var(--shadow);
-            @media (min-width: $sm) {
+          &.elevate {
+            box-shadow: var(--shadow) !important;
+            tr {
               box-shadow: none;
             }
           }
-        }
+				}
       }
-
     }
   }
 }

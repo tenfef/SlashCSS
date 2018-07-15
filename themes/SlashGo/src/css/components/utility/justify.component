@@ -68,6 +68,9 @@ ALIGN
       &\:around {
         justify-content: space-around !important;
       }
+      &\:even {
+        justify-content: space-evenly !important;
+      }
     }
     &-y {
       &\:between {
@@ -75,6 +78,9 @@ ALIGN
       }
       &\:around {
         align-content: space-around !important;
+      }
+      &\:even {
+        align-content: space-evenly !important;
       }
     }
     &\:left {
@@ -90,29 +96,22 @@ ALIGN
       &\@#{$key} {
         @media (min-width : #{$value}) {
           &\:top {
-            align-content: flex-start !important;
+            align-content: start !important;
           }
           &\:middle {
             align-content: center !important;
           }
           &\:bottom {
-            align-content: flex-end !important;
+            align-content: end !important;
           }
-          &-x {
-            &\:between {
-              justify-content: space-between !important;
-            }
-            &\:around {
-              justify-content: space-around !important;
-            }
+          &\:between {
+            justify-content: space-between !important;
           }
-          &-y {
-            &\:between {
-              align-content: space-between !important;
-            }
-            &\:around {
-              align-content: space-around !important;
-            }
+          &\:around {
+            justify-content: space-around !important;
+          }
+          &\:even {
+            justify-content: space-evenly !important;
           }
           &\:left {
             justify-content: flex-start !important;
@@ -151,12 +150,6 @@ ALIGN
     &\:center {
       justify-items: center !important;
     }
-    &\:stretch {
-      align-items: stretch !important;
-    }
-    &\:baseline {
-      align-items: baseline !important;
-    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
@@ -177,12 +170,6 @@ ALIGN
           }
           &\:center {
             justify-items: center !important;
-          }
-          &\:stretch {
-            align-items: stretch !important;
-          }
-          &\:baseline {
-            align-items: baseline !important;
           }
         }
       }

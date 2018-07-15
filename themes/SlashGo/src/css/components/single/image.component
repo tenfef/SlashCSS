@@ -2,11 +2,7 @@
 IMAGE
 ************************************************************/
 
-$image-levels: 5 !default;
-
-:root {
-  --image-radius: var(--radius);
-}
+$image-levels: 11 !default;
 
 .image {
   display: block;
@@ -17,26 +13,11 @@ $image-levels: 5 !default;
   background-repeat: no-repeat;
 
   /******************************
-  SHAPE
-  ******************************/
-
-  &-shape {
-    &\:square {
-      border-radius: 0;
-      overflow: hidden;
-    }
-    &\:round {
-      border-radius: 500px;
-      overflow: hidden;
-    }
-  }
-
-  /******************************
   SIZE
   ******************************/
 
   &-size {
-    @while $image-levels > 0 {
+    @while $image-levels > 1 {
       &\:#{$image-levels} {
         width: var(--u#{$image-levels});
         height: var(--u#{$image-levels});
@@ -46,7 +27,7 @@ $image-levels: 5 !default;
     @each $screen, $size in $screens {
       &-#{$screen} {
         @media (min-width : #{$size}) {
-          @while $image-levels > 0 {
+          @while $image-levels > 1 {
             &\:#{$image-levels} {
               width: var(--u#{$image-levels});
               height: var(--u#{$image-levels});

@@ -150,7 +150,7 @@ The row can also act as a media object component with the `:media` modifier.
   </div>
   <div class="column">
     <div>
-      <p class="font font-weight:medium color:black font-height:0">Jin Park</p>
+      <h6 class="font-weight:medium color:black font-height:0 margin-bottom:none">Jin Park</h6>
       <span class="font-size:tiny font-height:0">@zapcss</span>
     </div>
   </div>

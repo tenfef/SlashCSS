@@ -34,13 +34,13 @@ MODULE
 @import "module/tab.component";
 @import "module/table.component";
 @import "module/notice.component";
+@import "module/markup.component";
 
 /******************************
 SINGLE
 ******************************/
 
 @import "single/button.component";
-@import "single/font.component";
 @import "single/image.component";
 @import "single/label.component";
 @import "single/line.component";
@@ -70,3 +70,4 @@ UTILITY
 @import "utility/width.component";
 @import "utility/height.component";
 @import "utility/elevate.component";
+@import "utility/font.component";

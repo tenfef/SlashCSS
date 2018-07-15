@@ -82,16 +82,16 @@ theme = "SlashGo"
     url = "/module/table/"
     weight = -100
 
+  [[menu.module]]
+    name = "Markup"
+    url = "/module/markup/"
+    weight = -100
+
 
 
   [[menu.single]]
     name = "Button"
     url = "/single/button/"
-    weight = -100
-
-  [[menu.single]]
-    name = "Font"
-    url = "/single/font/"
     weight = -100
 
   [[menu.single]]
@@ -213,4 +213,9 @@ theme = "SlashGo"
   [[menu.utility]]
     name = "Width"
     url = "/utility/width/"
+    weight = -100
+
+  [[menu.utility]]
+    name = "Font"
+    url = "/utility/font/"
     weight = -100

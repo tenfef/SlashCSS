@@ -7,72 +7,82 @@ description = "The label component are small tag based components useful for hig
 
 ##### Basic Usage
 
-Defined with `label`.
+Defined with `label`. Labels can also be nested inside `labels`.
 
-<span class="label">Label</span>
+<div class="label">Label</div>
 
-<div class="labels">
-  <span class="label fill:secondary">Colors</span>
-  <span class="label fill:grey color:black">YES</span>
-</div>
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
+{{% codeblock key="language" definition="html" margin="top" %}}
 ```html
-<span class="label">Label</span>
+<div class="label">Label</div>
 ```
 {{% /codeblock %}}
 
+##### Label Groups
 
-##### Colors
+Labels can be joined to form a multi-label pill with the `labels` component.
 
-All standard color modifiers are available to change background colors.
-
-<span class="label -red">Label</span>
-<span class="label -orange">Label</span>
-<span class="label -yellow">Label</span>
-<span class="label -green">Label</span>
-<span class="label -blue">Label</span>
-<span class="label -purple">Label</span>
-<span class="label -black">Label</span>
-<span class="label -grey">Label</span>
-<span class="label -white">Label</span>
-
-<span class="label -shade-5">Label</span>
-<span class="label -shade-4">Label</span>
-<span class="label -shade-3">Label</span>
-<span class="label -shade-2">Label</span>
-<span class="label -shade-1">Label</span>
-
-<div class="u-fill-black" style="display: inline-block">
-  <span class="label -shine-5">Label</span>
-  <span class="label -shine-4">Label</span>
-  <span class="label -shine-3">Label</span>
-  <span class="label -shine-2">Label</span>
-  <span class="label -shine-1">Label</span>
+<div class="labels">
+  <div class="label">Colors</div>
+  <div class="label fill:grey-light-3 color:black">YES</div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
+{{% codeblock key="language" definition="html" margin="top" %}}
 ```html
-<span class="label -red">Label</span>
-<span class="label -orange">Label</span>
-<span class="label -yellow">Label</span>
-<span class="label -green">Label</span>
-<span class="label -blue">Label</span>
-<span class="label -purple">Label</span>
-<span class="label -black">Label</span>
-<span class="label -grey">Label</span>
-<span class="label -white">Label</span>
+<div class="labels">
+  <div class="label">Colors</div>
+  <div class="label fill:grey-light-3 color:black">YES</div>
+</div>
+```
+{{% /codeblock %}}
 
-<span class="label -shade-5">Label</span>
-<span class="label -shade-4">Label</span>
-<span class="label -shade-3">Label</span>
-<span class="label -shade-2">Label</span>
-<span class="label -shade-1">Label</span>
+##### Colorful Labels
 
-<span class="label -shine-5">Label</span>
-<span class="label -shine-4">Label</span>
-<span class="label -shine-3">Label</span>
-<span class="label -shine-2">Label</span>
-<span class="label -shine-1">Label</span>
+You can change the background color of your labels with the `fill` component.
+
+<div class="label fill:red">Button</div>
+<div class="label fill:pink">Button</div>
+<div class="label fill:violet">Button</div>
+<div class="label fill:purple">Button</div>
+<div class="label fill:navy">Button</div>
+<div class="label fill:blue">Button</div>
+<div class="label fill:teal">Button</div>
+<div class="label fill:green">Button</div>
+<div class="label fill:lime">Button</div>
+<div class="label fill:yellow">Button</div>
+<div class="label fill:orange">Button</div>
+<div class="label fill:brown">Button</div>
+<div class="label fill:grey">Button</div>
+<div class="label fill:grey-light-4 color:black">Button</div>
+<div class="label fill:black">Button</div>
+
+{{% codeblock key="language" definition="html" margin="top" %}}
+```html
+<div class="label fill:red">Button</div>
+<div class="label fill:pink">Button</div>
+<div class="label fill:violet">Button</div>
+<div class="label fill:purple">Button</div>
+<div class="label fill:navy">Button</div>
+<div class="label fill:blue">Button</div>
+<div class="label fill:teal">Button</div>
+<div class="label fill:green">Button</div>
+<div class="label fill:lime">Button</div>
+<div class="label fill:yellow">Button</div>
+<div class="label fill:orange">Button</div>
+<div class="label fill:brown">Button</div>
+<div class="label fill:grey">Button</div>
+<div class="label fill:grey-light-4 color:black">Button</div>
+<div class="label fill:black">Button</div>
+```
+{{% /codeblock %}}
+
+##### Local Variables
+
+You can override styling using the following local variables.
+
+{{% codeblock key="language" definition="css" margin="bottom" %}}
+```css
+:root {
+  --label-radius: 3px;
+}
 ```
 {{% /codeblock %}}

@@ -325,7 +325,7 @@ $button-sizes: 5 !default;
 
 The following modifiers are available.
 
-<table class="table width:100% table:pile">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>
@@ -386,7 +386,7 @@ The following modifiers are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>button-direction</code>
+      <code>buttons-direction</code>
     </td>
     <td data-label="Attributes">
       <code>:down</code>
