@@ -2,7 +2,7 @@
 MARGIN
 ************************************************************/
 
-$margins: 10 !default;
+$margins: 5 !default;
 
 .margin {
 
@@ -51,12 +51,6 @@ $margins: 10 !default;
       }
       $margins: $margins - 1;
     }
-    @while $margins >= 5 {
-      &\:#{$margins} {
-        margin-top: #{$margins}vh !important;
-      }
-      $margins: $margins - 1;
-    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {
@@ -69,12 +63,6 @@ $margins: 10 !default;
           @while $margins >= 0 {
             &\:#{$margins} {
               margin-top: var(--u#{$margins}) !important;
-            }
-            $margins: $margins - 1;
-          }
-          @while $margins >= 5 {
-            &\:#{$margins} {
-              margin-top: #{$margins}vh !important;
             }
             $margins: $margins - 1;
           }
@@ -150,12 +138,6 @@ $margins: 10 !default;
             }
             $margins: $margins - 1;
           }
-          @while $margins >= 5 {
-            &\:#{$margins} {
-              margin-bottom: #{$margins}vh !important;
-            }
-            $margins: $margins - 1;
-          }
         }
       }
     }
@@ -186,84 +168,6 @@ $margins: 10 !default;
           @while $margins >= 0 {
             &\:#{$margins} {
               margin-left: var(--u#{$margins}) !important;
-            }
-            $margins: $margins - 1;
-          }
-        }
-      }
-    }
-  }
-
-  &-x {
-    &\:none {
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-    }
-    &\:auto {
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-    @while $margins >= 0 {
-      &\:#{$margins} {
-        margin-left: var(--u#{$margins}) !important;
-        margin-right: var(--u#{$margins}) !important;
-      }
-      $margins: $margins - 1;
-    }
-    @each $key, $value in $screens {
-      &\@#{$key} {
-        @media (min-width: $value) {
-          &\:none {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-          }
-          &\:auto {
-            margin-left: auto !important;
-            margin-right: auto !important;
-          }
-          @while $margins >= 0 {
-            &\:#{$margins} {
-              margin-left: var(--u#{$margins}) !important;
-              margin-right: var(--u#{$margins}) !important;
-            }
-            $margins: $margins - 1;
-          }
-        }
-      }
-    }
-  }
-
-  &-y {
-    &\:none {
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-    }
-    &\:auto {
-      margin-top: auto !important;
-      margin-bottom: auto !important;
-    }
-    @while $margins >= 0 {
-      &\:#{$margins} {
-        margin-top: var(--u#{$margins}) !important;
-        margin-bottom: var(--u#{$margins}) !important;
-      }
-      $margins: $margins - 1;
-    }
-    @each $key, $value in $screens {
-      &\@#{$key} {
-        @media (min-width: $value) {
-          &\:none {
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-          }
-          &\:auto {
-            margin-top: auto !important;
-            margin-bottom: auto !important;
-          }
-          @while $margins >= 0 {
-            &\:#{$margins} {
-              margin-top: var(--u#{$margins}) !important;
-              margin-bottom: var(--u#{$margins}) !important;
             }
             $margins: $margins - 1;
           }

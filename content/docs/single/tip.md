@@ -23,21 +23,21 @@ The tip component is defined by adding a data attribute `tip` with content.
 
 ##### Tooltip Positioning
 
-Tooltips can be positioned by defining its direction with the data attribute `tip-direction`.
+Tooltips can be positioned by defining its position with the data attribute `tip-position`.
 
 <button class="button button-style:outline button-grow:1 tip" tip="Just a simple tooltip">
   Top Tooltip
 </button>
 
-<button class="button button-style:outline button-grow:1 tip tip-direction:left" tip="Just a simple tooltip">
+<button class="button button-style:outline button-grow:1 tip tip-position:left" tip="Just a simple tooltip">
   Left Tooltip
 </button>
 
-<button class="button button-style:outline button-grow:1 tip tip-direction:right" tip="Just a simple tooltip">
+<button class="button button-style:outline button-grow:1 tip tip-position:right" tip="Just a simple tooltip">
   Right Tooltip
 </button>
 
-<button class="button button-style:outline button-grow:1 tip tip-direction:bottom" tip="Just a simple tooltip">
+<button class="button button-style:outline button-grow:1 tip tip-position:bottom" tip="Just a simple tooltip">
   Bottom Tooltip
 </button>
 
@@ -49,15 +49,15 @@ Tooltips can be positioned by defining its direction with the data attribute `ti
   Top Tooltip
 </button>
 
-<button class="tip tip-direction:left" tip="Just a simple tooltip">
+<button class="tip tip-position:left" tip="Just a simple tooltip">
   Left Tooltip
 </button>
 
-<button class="tip tip-direction:right" tip="Just a simple tooltip">
+<button class="tip tip-position:right" tip="Just a simple tooltip">
   Right Tooltip
 </button>
 
-<button class="tip tip-direction:bottom" tip="Just a simple tooltip">
+<button class="tip tip-position:bottom" tip="Just a simple tooltip">
   Bottom Tooltip
 </button>
 ```
@@ -98,7 +98,7 @@ The following modifiers are available.
   </thead>
   <tr>
     <td data-label="Properties">
-      <code>tip-direction</code>
+      <code>tip-position</code>
     </td>
     <td data-label="Attributes">
       <code>:right</code> <code>:bottom</code> <code>:left</code>
@@ -107,7 +107,7 @@ The following modifiers are available.
       No
     </td>
     <td class="row:reverse">
-      Set direction of tip
+      Set position of tip
     </td>
   </tr>
 </table>

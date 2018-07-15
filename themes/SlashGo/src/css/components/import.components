@@ -49,7 +49,7 @@ SINGLE
 /******************************
 UTILITY
 ******************************/
-//
+
 @import "utility/display.component";
 @import "utility/flex.component";
 @import "utility/position.component";

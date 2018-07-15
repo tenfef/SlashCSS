@@ -52,6 +52,7 @@ ALIGN
   ******************************/
 
   &-content {
+    align-content: stretch;
     &\:top {
       align-content: flex-start !important;
     }
@@ -88,6 +89,7 @@ ALIGN
     }
     @each $key, $value in $screens {
       &\@#{$key} {
+        align-content: stretch;
         @media (min-width : #{$value}) {
           &\:top {
             align-content: flex-start !important;
@@ -133,6 +135,7 @@ ALIGN
   ******************************/
 
   &-items {
+    align-items: stretch !important;
     &\:top {
       align-items: flex-start !important;
     }
@@ -142,24 +145,10 @@ ALIGN
     &\:bottom {
       align-items: flex-end !important;
     }
-    &\:left {
-      justify-items: flex-start !important;
-    }
-    &\:right {
-      justify-items: flex-end !important;
-    }
-    &\:center {
-      justify-items: center !important;
-    }
-    &\:stretch {
-      align-items: stretch !important;
-    }
-    &\:baseline {
-      align-items: baseline !important;
-    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
+          align-items: stretch !important;
           &\:top {
             align-items: flex-start !important;
           }
@@ -169,20 +158,38 @@ ALIGN
           &\:bottom {
             align-items: flex-end !important;
           }
-          &\:left {
-            justify-items: start !important;
+        }
+      }
+    }
+  }
+
+  /******************************
+  SELF
+  ******************************/
+
+  &-self {
+    align-self: auto !important;
+    &\:top {
+      align-self: flex-start !important;
+    }
+    &\:middle {
+      align-self: center !important;
+    }
+    &\:bottom {
+      align-self: flex-end !important;
+    }
+    @each $key, $value in $screens {
+      &\@#{$key} {
+        @media (min-width : #{$value}) {
+          align-self: auto !important;
+          &\:top {
+            align-self: flex-start !important;
           }
-          &\:right {
-            justify-items: end !important;
+          &\:middle {
+            align-self: center !important;
           }
-          &\:center {
-            justify-items: center !important;
-          }
-          &\:stretch {
-            align-items: stretch !important;
-          }
-          &\:baseline {
-            align-items: baseline !important;
+          &\:bottom {
+            align-self: flex-end !important;
           }
         }
       }

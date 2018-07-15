@@ -46,7 +46,8 @@ ROOT
   UNITS
   ******************************/
 
-  @for $i from 0 through 100{
+  --u0: .5rem;
+  @for $i from 1 through 100{
     --u#{$i}: calc(#{$unit} * #{$i});
   }
 }

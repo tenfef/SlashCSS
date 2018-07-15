@@ -89,46 +89,6 @@ $border-widths: 5 !default;
       }
     }
   }
-  &-x {
-    border-left: var(--border-border) !important;
-    border-right: var(--border-border) !important;
-    &\:none {
-      border-left: 0 !important;
-      border-right: 0 !important;
-    }
-    @each $key, $value in $screens {
-      &\@#{$key} {
-        @media (min-width : #{$value}) {
-          border-left: var(--border-border) !important;
-          border-right: var(--border-border) !important;
-          &\:none {
-            border-left: 0 !important;
-            border-right: 0 !important;
-          }
-        }
-      }
-    }
-  }
-  &-y {
-    border-top: var(--border-border) !important;
-    border-bottom: var(--border-border) !important;
-    &\:none {
-      border-top: 0 !important;
-      border-bottom: 0 !important;
-    }
-    @each $key, $value in $screens {
-      &\@#{$key} {
-        @media (min-width : #{$value}) {
-          border-top: var(--border-border) !important;
-          border-bottom: var(--border-border) !important;
-          &\:none {
-            border-top: 0 !important;
-            border-bottom: 0 !important;
-          }
-        }
-      }
-    }
-  }
 
   /******************************
   CORNERS
@@ -283,7 +243,7 @@ $border-widths: 5 !default;
 
   &-width {
     @while $border-widths > 0 {
-      &\:#{$border-widths} {
+      &\:.#{$border-widths} {
         border-width: $border-widths * 1px  !important;
       }
       $border-widths: $border-widths - 1;

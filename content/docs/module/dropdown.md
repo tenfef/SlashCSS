@@ -64,13 +64,12 @@ var dropdown = new Dropdown();
 
 {{% /codeblock %}}
 
-##### Direction & Alignment
+##### Dropdown Position
 
-By default the dropdown menu is aligned to the bottom left of its parent container. To override direction and alignment assign the following modifiers:
-
+By default the dropdown menu is aligned to the bottom left of its parent container. To override position and alignment assign the following modifiers:
 
 <div>
-  <div class="dropdown dropdown-direction:center margin-bottom:2 js-dropdown">
+  <div class="dropdown dropdown-position:center margin-bottom:2 js-dropdown">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Center Menu</span>
     </a>
@@ -94,7 +93,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-direction:left margin-bottom:2 js-dropdown">
+  <div class="dropdown dropdown-position:right margin-bottom:2 js-dropdown">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Right Menu</span>
     </a>
@@ -118,9 +117,9 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-direction:top-left margin-bottom:2 js-dropdown">
+  <div class="dropdown dropdown-position:top-right margin-bottom:2 js-dropdown">
     <a class="dropdown/toggle" title="Menu">
-      <span class="button button-style:outline button-grow:1">Top Left Menu</span>
+      <span class="button button-style:outline button-grow:1">Top Right Menu</span>
     </a>
     <div class="dropdown/content elevate">
       <div class="dropdown/body">
@@ -142,7 +141,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-direction:top-center margin-bottom:2 js-dropdown">
+  <div class="dropdown dropdown-position:top-center margin-bottom:2 js-dropdown">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Top Center Menu</span>
     </a>
@@ -167,7 +166,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 
 {{% codeblock key="initializing" definition="html" margin="bottom" %}}
 ```html
-<div class="dropdown dropdown-direction:center">
+<div class="dropdown dropdown-position:center">
   <a class="dropdown/toggle">
     ...
   </a>
@@ -176,7 +175,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
   </div>
 </div>
 
-<div class="dropdown dropdown-direction:left">
+<div class="dropdown dropdown-position:left">
   <a class="dropdown/toggle">
     ...
   </a>
@@ -185,7 +184,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
   </div>
 </div>
 
-<div class="dropdown dropdown-direction:top-left">
+<div class="dropdown dropdown-position:top-left">
   <a class="dropdown/toggle">
     ...
   </a>
@@ -194,7 +193,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
   </ul>
 </div>
 
-<div class="dropdown dropdown-direction:top-center">
+<div class="dropdown dropdown-position:top-center">
   <a class="dropdown/toggle">
     ...
   </a>
@@ -262,7 +261,7 @@ The following modifiers are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>dropdown-direction</code>
+      <code>dropdown-position</code>
     </td>
     <td data-label="Attributes">
       <code>:center</code> <code>:left</code> <code>:top</code>
@@ -272,7 +271,7 @@ The following modifiers are available.
       No
     </td>
     <td class="row:reverse">
-      Define dropdown position and fade in direction
+      Define dropdown position and fade in position
     </td>
   </tr>
 </table>

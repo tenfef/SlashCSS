@@ -7,29 +7,51 @@ description = "The align component sets the alignment of content in various ways
 
 ##### Text Alignment
 
-The basic `align` property controls text alignment and vertical alignment.
+The basic `align` property controls text alignment.
 
-<div class="margin-bottom:2">
-  <h6 class="align:left">Left Aligned</h6>
-  <h6 class="align:center">Center Aligned</h6>
-  <h6 class="align:right">Right Aligned</h6>
-</div>
-
-<div class="font-size:h1 fill:grey-l4 color:white margin-bottom:2 padding:2">
-  <span class="image image-size:2 display:inline-block fill:blue color:white align:top"></span>
- <span class="image image-size:2 display:inline-block fill:blue color:white align:middle"></span>
- <span class="image image-size:2 display:inline-block fill:blue color:white align:bottom"></span>
+<div class="margin-bottom:2 fill:grey-l4">
+  <div class="align:left">Left Aligned</div>
+  <div class="align:center">Center Aligned</div>
+  <div class="align:right">Right Aligned</div>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<h6 class="align:left">Left Aligned</h6>
-<h6 class="align:center">Center Aligned</h6>
-<h6 class="align:right">Right Aligned</h6>
+<div class="align:left">Left</div>
+<div class="align:center">Center</div>
+<div class="align:right">Right</div>
+```
+{{% /codeblock %}}
 
-<span class="align:top"></span>
-<span class="align:middle"></span>
-<span class="align:bottom"></span>
+##### Vertical Alignment
+
+Vertical alignment can be controlled with `top` `middle` `bottom` modifiers.
+
+<div class="row row-gutter:2">
+  <div class="column font-size:h3 margin-bottom:2">
+    <div class="fill:grey-l4">
+      <div class="image image-size:2 display:inline-block fill:grey-l2 color:white align:top"></div>
+    </div>
+  </div>
+
+  <div class="column font-size:h3 margin-bottom:2">
+    <div class="fill:grey-l4">
+      <div class="image image-size:2 display:inline-block fill:grey-l2 color:white align:middle"></div>
+    </div>
+  </div>
+
+  <div class="column font-size:h3 margin-bottom:2">
+    <div class="fill:grey-l4">
+      <div class="image image-size:2 display:inline-block fill:grey-l2 color:white align:bottom"></div>
+    </div>
+  </div>
+</div>
+
+{{% codeblock key="language" definition="html" margin="bottom" %}}
+```html
+<div class="align:top"></div>
+<div class="align:middle"></div>
+<div class="align:bottom"></div>
 ```
 {{% /codeblock %}}
 
@@ -37,17 +59,17 @@ The basic `align` property controls text alignment and vertical alignment.
 
 Responsive suffixes can be applied to all alignment properties.
 
-<div class="margin-bottom:2">
-  <h6 class="align:left">Left</h6>
-  <h6 class="align@md:center">Center Medium</h6>
-  <h6 class="align@lg:right">Large Right</h6>
+<div class="margin-bottom:2 fill:grey-l4">
+  <div class="align:left">Left</div>
+  <div class="align@md:center">Center</div>
+  <div class="align@lg:right">Large</div>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<h6 class="align:left">Left</h6>
-<h6 class="align@md:center">Center Medium</h6>
-<h6 class="align@lg:right">Large Right</h6>
+<div class="align:left">Left</div>
+<div class="align@md:center">Center</div>
+<div class="align@lg:right">Large</div>
 ```
 {{% /codeblock %}}
 
@@ -55,98 +77,466 @@ Responsive suffixes can be applied to all alignment properties.
 
 The `align-items` property specifies the default alignment for items inside the flexible container.
 
-<div class="row">
-  <div class="column fill:grey-l4">
-    <div class="height:10 display:flex align-items:top">
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center"></div>
+<div class="row row-gutter:2 margin-bottom:2">
+  <div class="column:3">
+    <div class="display:flex height:10 fill:grey-l4 align-items:top">
+      <div class="padding:2 color:white fill:grey-l2"></div>
+    </div>
+  </div>
+  <div class="column:3">
+    <div class="display:flex height:10 fill:grey-l4 align-items:middle">
+      <div class="padding:2 color:white fill:grey-l2"></div>
+    </div>
+  </div>
+  <div class="column:3">
+    <div class="display:flex height:10 fill:grey-l4 align-items:bottom">
+      <div class="padding:2 color:white fill:grey-l2"></div>
+    </div>
+  </div>
+  <div class="column:3">
+    <div class="display:flex height:10 fill:grey-l4 align-items:baseline">
+      <div class="column:4 align:center color:white fill:grey-l2">&nbsp;</div>
+      <div class="column:4 padding-y:2 align:center color:white fill:grey-l2">&nbsp;</div>
+      <div class="column:4 align:center color:white fill:grey-l2">&nbsp;</div>
     </div>
   </div>
 </div>
 
+{{% codeblock key="language" definition="html" margin="bottom" %}}
+```html
+<div class="align-items:top">
+  ...
+</div>
+<div class="align-items:middle">
+  ...
+</div>
+<div class="align-items:bottom">
+  ...
+</div>
+<div class="align-items:baseline">
+  ...
+</div>
+```
+{{% /codeblock %}}
+
+
 ##### Content Alignment
 
-The `align-content` property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+The `align-content` property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines. The align content property also controls justification of flexible content.
 
-<div class="row">
-  <div class="column">
-    <div class="float:left display:flex flex-wrap width:20% height:30 fill:grey-l4">
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center">1</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center">2</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center">3</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center">4</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center">5</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center">6</div>
+<div class="row row-gutter:2 margin-bottom:2">
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:top">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
     </div>
-    <div class="float:left display:flex flex-wrap width:20% height:30 align-content:middle fill:grey-l4">
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">1</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">2</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">3</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">4</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">5</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">6</div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:middle">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
     </div>
-    <div class="float:left display:flex flex-wrap width:20% height:30 align-content:bottom fill:grey-l4">
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">1</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">2</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">3</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">4</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">5</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">6</div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:bottom">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
     </div>
-    <div class="float:left display:flex flex-wrap width:20% height:30 align-content-y:between fill:grey-l4">
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">1</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">2</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">3</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">4</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">5</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">6</div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content-y:between">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
     </div>
-    <div class="float:left display:flex flex-wrap width:20% height:30 align-content-y:around fill:grey-l4">
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">1</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">2</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">3</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">4</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">5</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">6</div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content-y:around">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
     </div>
-    <div class="float:left display:flex flex-wrap width:20% height:30 align-content-y:even fill:grey-l4">
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">1</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">2</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">3</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">4</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">5</div>
-      <div class="image-size:5 fill:grey-d1 color:white display:flex align-item:middle align-content:center flex-item">6</div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:left">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:center">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:right">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content-x:between">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column margin-bottom:2" style="width: 20%;">
+    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content-x:around">
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
+      <div class="column:4 padding:1">
+        <div class="fill:grey-l2">
+          &nbsp;
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-##### Content Alignment
 
-The `align-content` property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
-
-<div class="float:left width:10% height:30 flex-start">
-  <div class="image-size:5 fill:black flex-item">1</div>
-  <div class="image-size:5 fill:black flex-item">2</div>
-  <div class="image-size:5 fill:black flex-item">3</div>
-  <div class="image-size:5 fill:black flex-item">4</div>
-  <div class="image-size:5 fill:black flex-item">5</div>
-  <div class="image-size:5 fill:black flex-item">6</div>
+{{% codeblock key="language" definition="html" margin="bottom" %}}
+```html
+<div class="align-content:top">
+  ...
+</div>
+<div class="align-content:middle">
+  ...
+</div>
+<div class="align-content:bottom">
+  ...
+</div>
+<div class="align-content-y:between">
+  ...
+</div>
+<div class="align-content-y:around">
+  ...
+</div>
+<div class="align-content:left">
+  ...
+</div>
+<div class="align-content:center">
+  ...
+</div>
+<div class="align-content:right">
+  ...
+</div>
+<div class="align-content-x:between">
+  ...
+</div>
+<div class="align-content-x:around">
+  ...
 </div>
 
-<div class="float:left width:10% height:30 flex-end">
-  <div class="image-size:5 fill:black flex-item">1</div>
-  <div class="image-size:5 fill:black flex-item">2</div>
-  <div class="image-size:5 fill:black flex-item">3</div>
-  <div class="image-size:5 fill:black flex-item">4</div>
-  <div class="image-size:5 fill:black flex-item">5</div>
-  <div class="image-size:5 fill:black flex-item">6</div>
-</div>
+```
+{{% /codeblock %}}
 
-<div class="float:left width:10% height:30 center">
-  <div class="image-size:5 fill:black flex-item">1</div>
-  <div class="image-size:5 fill:black flex-item">2</div>
-  <div class="image-size:5 fill:black flex-item">3</div>
-  <div class="image-size:5 fill:black flex-item">4</div>
-  <div class="image-size:5 fill:black flex-item">5</div>
-  <div class="image-size:5 fill:black flex-item">6</div>
-</div>
+
+##### Options
+
+The following modifiers are available.
+
+<table class="table width:100% table:pile table@sm:unpile">
+  <thead>
+    <tr>
+      <th>
+        Property
+      </th>
+      <th>
+        Modifier
+      </th>
+      <th>
+        Responsive
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tr>
+    <td data-label="Properties">
+      <code>align</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:top</code> <code>:middle</code> <code>:bottom</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set vertical aligment
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+    </td>
+    <td data-label="Attributes">
+      <code>:left</code> <code>:center</code> <code>:right</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set text alignment
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>align-content</code><span class="color:orange">&#42;</span>
+    </td>
+    <td data-label="Attributes">
+      <code>:top</code> <code>:middle</code> <code>:bottom</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set flexible content alignment
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+    </td>
+    <td data-label="Attributes">
+      <code>:left</code> <code>:center</code> <code>:right</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Justify flexible content
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>align-content-x</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:between</code> <code>:around</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set content distribution
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>align-content-y</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:between</code> <code>:around</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set content distribution
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>align-items</code><span class="color:orange">&#42;</span>
+    </td>
+    <td data-label="Attributes">
+      <code>:top</code> <code>:middle</code> <code>:bottom</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set alignement of flexible items
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>align-self</code><span class="color:orange">&#42;</span>
+    </td>
+    <td data-label="Attributes">
+      <code>:top</code> <code>:middle</code> <code>:bottom</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set independent alignment
+    </td>
+  </tr>
+</table>
+<p class="margin-top:0 font-size:tiny color:orange">
+  &#42; These properties have a default values set when used without modifiers.
+</p>

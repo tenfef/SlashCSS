@@ -53,10 +53,10 @@ TIP
   }
 
   /******************************
-  DIRECTION
+  POSITION
   ******************************/
 
-  &-direction {
+  &-position {
     &\:right {
       &:before {
         left:100%;

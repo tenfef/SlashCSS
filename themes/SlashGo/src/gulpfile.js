@@ -21,16 +21,16 @@ gulp.watch - watch files and folders for changes
 gulp.task('css', function () {
   console.log('gulp css started')
   var plugins = [
-    // cssnext({ browsers: ["last 2 versions"] }),
+    cssnext({ browsers: ["last 2 versions"] }),
     mqpacker(),
     cssnano({ autoprefixer: false })
   ];
   return gulp.src('css/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
+    // .pipe(autoprefixer({
+    //   browsers: ['last 2 versions'],
+    //   cascade: false
+    // }))
     .pipe(postcss(plugins))
     .pipe(gulp.dest('../static/assets/css'))
 });

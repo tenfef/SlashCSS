@@ -12,7 +12,7 @@ The `column` component works alongside the row component and grows automatically
 <!-- 12 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -22,7 +22,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -32,7 +32,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -42,7 +42,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -52,7 +52,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -62,7 +62,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -81,7 +81,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -91,7 +91,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -101,7 +101,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -111,7 +111,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -121,7 +121,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -135,7 +135,7 @@ The `column` component works alongside the row component and grows automatically
 <!-- 10 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -145,7 +145,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -155,7 +155,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -165,7 +165,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -175,7 +175,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -194,7 +194,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -204,7 +204,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -214,7 +214,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -224,7 +224,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -238,7 +238,7 @@ The `column` component works alongside the row component and grows automatically
 <!-- 8 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -248,7 +248,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -258,7 +258,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -268,7 +268,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -287,7 +287,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -297,7 +297,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -307,7 +307,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -321,7 +321,7 @@ The `column` component works alongside the row component and grows automatically
 <!-- 6 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -331,7 +331,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -341,7 +341,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -360,7 +360,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -370,7 +370,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -384,7 +384,7 @@ The `column` component works alongside the row component and grows automatically
 <!-- 4 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -394,7 +394,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -413,7 +413,7 @@ The `column` component works alongside the row component and grows automatically
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -427,7 +427,7 @@ The `column` component works alongside the row component and grows automatically
 <!-- 2 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -480,7 +480,7 @@ By default columns grow in width to fill negative space however specific column 
     </div>
   </div>
   <div class="column:8">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -493,7 +493,7 @@ By default columns grow in width to fill negative space however specific column 
     </div>
   </div>
   <div class="column:12 column@sm:6">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -516,36 +516,6 @@ By default columns grow in width to fill negative space however specific column 
   </div>
   <div class="column:12 column@sm:6">
     ...
-  </div>
-</div>
-```
-{{% /codeblock %}}
-
-##### Push & Pull
-
-You can push grid items with the `column-push` property. Standard media query suffixes can be applied.
-
-<div class="row margin-bottom:2 align:center color:white">
-  <div class="column:6 column-push:2 column-push@sm:6">
-    <div class="padding:1 fill:blue">
-      Push
-    </div>
-  </div>
-  <div class="column:6 column-pull:2 column-pull@sm:12">
-    <div class="padding:1 fill:blue-light-1">
-      Pull
-    </div>
-  </div>
-</div>
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<div class="row">
-  <div class="column:6 column-push:2 column-push@sm:6">
-    Push
-  </div>
-  <div class="column:6 column-pull:2 column-pull@sm:12">
-    Pull
   </div>
 </div>
 ```
@@ -590,34 +560,6 @@ $columns: 12 !default;
     </td>
     <td class="row:reverse">
       Widths based on 12 columns
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-      <code>row-push</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
-    </td>
-    <td data-label="Responsive">
-      Yes
-    </td>
-    <td class="row:reverse">
-      Push column right
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-      <code>row-pull</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
-    </td>
-    <td data-label="Responsive">
-      Yes
-    </td>
-    <td class="row:reverse">
-      Pull column left
     </td>
   </tr>
 </table>

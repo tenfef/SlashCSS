@@ -24,8 +24,8 @@ DROPDOWN
       opacity: 1;
       margin-top: 10px;
     }
-    &.dropdown-direction {
-      &\:top, &\:top-left, &\:top-center {
+    &.dropdown-position {
+      &\:top, &\:top-right, &\:top-center {
         .dropdown\/content {
           margin-top: auto;
           margin-bottom: 10px;
@@ -35,27 +35,22 @@ DROPDOWN
   }
 
   /******************************
-  DIRECTION
+  POSITION
   ******************************/
 
-  &-direction {
+  &-position {
     &\:center {
       .dropdown\/content {
         left: 50%;
         transform: translateX(-50%);
       }
     }
-    &\:left {
+    &\:right {
       .dropdown\/content {
         right: 0;
       }
     }
     &\:top {
-      .dropdown\/arrow {
-        &:before {
-          transform: translateY(-11px) rotate(45deg);
-        }
-    	}
       .dropdown\/content {
         top: auto;
         bottom: calc(100% + 0);
@@ -64,11 +59,6 @@ DROPDOWN
         }
       }
       &-center {
-        .dropdown\/arrow {
-          &:before {
-            transform: translateY(-11px) rotate(45deg);
-          }
-      	}
         .dropdown\/content {
           top: auto;
           bottom: calc(100% + 0);
@@ -79,7 +69,7 @@ DROPDOWN
           }
         }
       }
-      &-left {
+      &-right {
         .dropdown\/content {
           top: auto;
           right: 0;
