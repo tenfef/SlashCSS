@@ -14,8 +14,8 @@ FORM
   --form-field-radius: .4rem;
   --form-field-padding: 1.5rem;
 
-  --form-disabled-fill: var(--grey-light-5);
-  --form-disabled-color: var(--grey-dark-1);
+  --form-disabled-fill: var(--grey-l5);
+  --form-disabled-color: var(--grey-d1);
   --form-disabled-opacity: 1;
 
   --form-success-border-color: var(--green);
@@ -60,7 +60,7 @@ FORM
             margin: 0;
             padding: 0;
             font-size: 1.2rem;
-            color: var(--grey-dark-1);
+            color: var(--grey-d1);
             z-index: 1;
           }
         }
@@ -331,7 +331,7 @@ input {
     transition: var(--transition);
 
     &:focus {
-      border-color: var(--grey-light-2);
+      border-color: var(--grey-l2);
     }
     &:disabled {
       background: var(--form-disabled-fill);
@@ -389,7 +389,7 @@ textarea {
   transition: var(--transition);
 
   &:focus {
-    border-color: var(--grey-light-2);
+    border-color: var(--grey-l2);
   }
   &:disabled {
     background: var(--form-disabled-fill);

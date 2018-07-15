@@ -23,14 +23,14 @@ Labels can be joined to form a multi-label pill with the `labels` component.
 
 <div class="labels">
   <div class="label">Colors</div>
-  <div class="label fill:grey-light-3 color:black">YES</div>
+  <div class="label fill:grey-l3 color:black">YES</div>
 </div>
 
 {{% codeblock key="language" definition="html" margin="top" %}}
 ```html
 <div class="labels">
   <div class="label">Colors</div>
-  <div class="label fill:grey-light-3 color:black">YES</div>
+  <div class="label fill:grey-l3 color:black">YES</div>
 </div>
 ```
 {{% /codeblock %}}
@@ -52,7 +52,7 @@ You can change the background color of your labels with the `fill` component.
 <div class="label fill:orange">Button</div>
 <div class="label fill:brown">Button</div>
 <div class="label fill:grey">Button</div>
-<div class="label fill:grey-light-4 color:black">Button</div>
+<div class="label fill:grey-l4 color:black">Button</div>
 <div class="label fill:black">Button</div>
 
 {{% codeblock key="language" definition="html" margin="top" %}}
@@ -70,7 +70,7 @@ You can change the background color of your labels with the `fill` component.
 <div class="label fill:orange">Button</div>
 <div class="label fill:brown">Button</div>
 <div class="label fill:grey">Button</div>
-<div class="label fill:grey-light-4 color:black">Button</div>
+<div class="label fill:grey-l4 color:black">Button</div>
 <div class="label fill:black">Button</div>
 ```
 {{% /codeblock %}}

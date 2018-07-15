@@ -217,10 +217,10 @@ You can override styling using the following local variables.
   --dropdown-body-shadow: 0px 0px 0px 1px var(--border-color);
 
   --dropdown-item-padding: var(--u1) var(--u1);
-  --dropdown-item-color: var(--grey-dark-1);
-  --dropdown-item-hover-color: var(--grey-dark-2);
-  --dropdown-item-hover-fill: var(--grey-light-5);
-  --dropdown-item-active-fill: var(--grey-light-4);
+  --dropdown-item-color: var(--grey-d1);
+  --dropdown-item-hover-color: var(--grey-d2);
+  --dropdown-item-hover-fill: var(--grey-l5);
+  --dropdown-item-active-fill: var(--grey-l4);
 }
 ```
 {{% /codeblock %}}

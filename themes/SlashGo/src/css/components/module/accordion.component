@@ -7,7 +7,7 @@ ACCORDION
   --accordion-header-padding: var(--u1) var(--u2);
   --accordion-body-padding: var(--u2);
   --accordion-transition: var(--transition);
-  --accordion-arrow-fill: var(--grey-dark-1);
+  --accordion-arrow-fill: var(--grey-d1);
 }
 
 .accordion {

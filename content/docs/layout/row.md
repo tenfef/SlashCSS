@@ -17,7 +17,7 @@ The `row` component works alongside the column component and applies a horizonta
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -31,7 +31,7 @@ The `row` component works alongside the column component and applies a horizonta
 <!-- 6 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -76,7 +76,7 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
 
 <div class="row row-gutter:1 margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -86,7 +86,7 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -99,7 +99,7 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
 
 <div class="row row-gutter:5 margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>
@@ -109,7 +109,7 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       &nbsp;
     </div>
   </div>

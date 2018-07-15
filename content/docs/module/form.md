@@ -476,8 +476,8 @@ You can override styling using the following local variables.
   --form-field-radius: 4px;
   --form-field-padding: 1.5rem;
 
-  --form-disabled-fill: var(--grey-light-5);
-  --form-disabled-color: var(--grey-dark-1);
+  --form-disabled-fill: var(--grey-l5);
+  --form-disabled-color: var(--grey-d1);
   --form-disabled-opacity: 1;
 
   --form-success-border-color: var(--green);

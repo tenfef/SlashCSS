@@ -68,11 +68,11 @@ You can override styling using the following local variables.
 :root {
   --menu-height: var(--u6);
   --menu-border: var(--border);
-  --menu-color: var(--grey-dark-2);
+  --menu-color: var(--grey-d2);
   --menu-mobile-radius: var(--radius);
   --menu-mobile-shadow: 0px 5px 5px 0px rgba(0,60,200,0.1);;
-  --menu-item-hover-fill: var(--grey-light-5);
-  --menu-item-active-fill: var(--grey-light-4);
+  --menu-item-hover-fill: var(--grey-l5);
+  --menu-item-active-fill: var(--grey-l4);
 }
 ```
 {{% /codeblock %}}

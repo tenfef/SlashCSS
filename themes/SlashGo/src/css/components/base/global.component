@@ -3,11 +3,11 @@ GLOBAL
 ************************************************************/
 
 :root {
-  --primary-color: var(--navy-light-1);
+  --primary-color: var(--navy-l1);
 	--secondary-color: var(--orange);
-	--background-color: var(--grey-light-5);
-	--default-color: var(--grey-dark-2);
-  --border-color: var(--grey-light-4);
+	--background-color: var(--grey-l5);
+	--default-color: var(--grey-d2);
+  --border-color: var(--grey-l4);
   --label-radius: 3px;
 }
 
@@ -106,7 +106,7 @@ blockquote {
 	margin-top: var(--u5);
 	margin-bottom: var(--u5);
 	padding: var(--u4) var(--u5);
-	background: var(--blue-light-4);
+	background: var(--blue-l4);
 	box-shadow: inset 4px 0px 0px 0px var(--primary-color);
 	p {
 		margin: 0;

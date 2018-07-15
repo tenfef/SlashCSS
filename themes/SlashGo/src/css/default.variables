@@ -95,16 +95,16 @@ $mono-colors: (
 @function generate-color-tones ($key, $value) {
   $map: (
     $key: (
-      #{$key}-light-1: mix(white, $value, 20%),
-      #{$key}-light-2: mix(white, $value, 40%),
-      #{$key}-light-3: mix(white, $value, 60%),
-      #{$key}-light-4: mix(white, $value, 85%),
-      #{$key}-light-5: mix(white, $value, 95%),
-      #{$key}-dark-1: mix(black, $value, 20%),
-      #{$key}-dark-2: mix(black, $value, 35%),
-      #{$key}-dark-3: mix(black, $value, 50%),
-      #{$key}-dark-4: mix(black, $value, 65%),
-      #{$key}-dark-5: mix(black, $value, 75%)
+      #{$key}-l1: mix(white, $value, 20%),
+      #{$key}-l2: mix(white, $value, 40%),
+      #{$key}-l3: mix(white, $value, 60%),
+      #{$key}-l4: mix(white, $value, 85%),
+      #{$key}-l5: mix(white, $value, 95%),
+      #{$key}-d1: mix(black, $value, 20%),
+      #{$key}-d2: mix(black, $value, 35%),
+      #{$key}-d3: mix(black, $value, 50%),
+      #{$key}-d4: mix(black, $value, 65%),
+      #{$key}-d5: mix(black, $value, 75%)
     )
   );
   @return $map;

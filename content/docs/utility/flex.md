@@ -39,7 +39,7 @@ The `row-direction` property can be applied to control the direction of your col
 
 <div class="row row-direction:down row-gutter:1 margin-bottom:2 align:center color:white">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       1
     </div>
   </div>
@@ -52,7 +52,7 @@ The `row-direction` property can be applied to control the direction of your col
 
 <div class="row row-direction:down row-direction@sm:right row-gutter:2 margin-bottom:2 align:center color:white">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       1
     </div>
   </div>
@@ -70,7 +70,7 @@ The `row-direction` property can be applied to control the direction of your col
 
 <div class="row row-direction:down row-direction@sm:reverse row-gutter:2 margin-bottom:2 align:center color:white">
   <div class="column">
-    <div class="padding:1 fill:blue-light-2">
+    <div class="padding:1 fill:blue-l2">
       1
     </div>
   </div>

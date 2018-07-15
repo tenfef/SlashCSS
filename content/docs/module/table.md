@@ -19,7 +19,7 @@ The table component is defined with the `table` class. By default the table widt
   </thead>
   <tbody>
     <tr>
-      <td class="hover hover-fill:grey-light-4 hover-color:grey-dark-2">Hover me</td>
+      <td class="hover hover-fill:grey-l4 hover-color:grey-d2">Hover me</td>
       <td class="hover hover hover-color:red">Hover me</td>
       <td>Cell</td>
     </tr>
@@ -49,7 +49,7 @@ The table component is defined with the `table` class. By default the table widt
   </thead>
   <tbody>
     <tr>
-      <td class="hover hover-fill:grey-light-4 hover-color:grey-dark-2">Hover me</td>
+      <td class="hover hover-fill:grey-l4 hover-color:grey-d2">Hover me</td>
       <td class="hover hover hover-color:red">Hover me</td>
       <td>Cell</td>
     </tr>
