@@ -7,9 +7,6 @@ DISPLAY
   &\:none {
     display: none !important;
   }
-  &\:block {
-    display: block !important;
-  }
   &\:inline-block {
     display: inline-block !important;
   }

@@ -6,7 +6,7 @@ $distribute-gutters: 5 !default;
 
 .distribute {
 
-  &-right {
+  &-x {
     @while $distribute-gutters > 0 {
       &\:#{$distribute-gutters} > * + * {
         margin-left: $distribute-gutters * 1rem !important;
@@ -26,7 +26,7 @@ $distribute-gutters: 5 !default;
       }
     }
   }
-  &-down {
+  &-y {
     @while $distribute-gutters > 0 {
       &\:#{$distribute-gutters} > * + * {
         margin-top: $distribute-gutters * 1rem !important;

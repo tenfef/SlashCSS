@@ -1,5 +1,5 @@
 +++
-title = "distribute"
+title = "Distribute"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The distribute component takes advantage of the Sam Pickering's Labotomized Owl to vertically or horizontally distribute child elements."
@@ -7,33 +7,73 @@ description = "The distribute component takes advantage of the Sam Pickering's L
 
 ##### Basic Usage
 
-Defined with `u-spread` and specifying direction. You can distribute child elements horiontally or vertically with `x` and `y` extensions. Standard gap ranges apply.
+Defined with `distribute`. You can distribute child elements horiontally or vertically with `x` and `y` suffix. You can also apply responsive suffixes.
 
-<div class="u-spread-x-2 margin-bottom:2">
-	<div class="s-thumb u-fill-shade-2 u-border-radius"></div>
-	<div class="s-thumb u-fill-shade-2 u-border-radius"></div>
-	<div class="s-thumb u-fill-shade-2 u-border-radius"></div>
+<div class="distribute-x:5 margin-bottom:2">
+	<div class="display:inline-block image-size:3 fill:grey-l3"></div>
+	<div class="display:inline-block image-size:3 fill:grey-l3"></div>
+	<div class="display:inline-block image-size:3 fill:grey-l3"></div>
+</div>
+<div class="distribute-y:1 margin-bottom:2 margin-right:2">
+	<div class="image-size:3 fill:grey-l3"></div>
+	<div class="image-size:3 fill:grey-l3"></div>
+	<div class="image-size:3 fill:grey-l3"></div>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-spread-x-2">
+<div class="distribute-x:5">
+	...
+</div>
+<div class="distribute-y:1">
 	...
 </div>
 ```
 {{% /codeblock %}}
 
-##### Responsive Spreads
+##### Local Variables
 
-To apply responsive spreads add standard device specific extensions.
+You can override styling using the following local variables.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<div class="u-spread-x-md-2">
-	...
-</div>
-<div class="u-spread-x-lg-2">
-	...
-</div>
+{{% codeblock key="language" definition="css" margin="bottom" %}}
+```css
+$distribute-gutters: 5 !default;
 ```
 {{% /codeblock %}}
+
+##### Options
+
+The following modifiers are available.
+
+<table class="table width:100% table:pile table@sm:unpile">
+  <thead>
+    <tr>
+      <th>
+        Property
+      </th>
+      <th>
+        Modifier
+      </th>
+      <th>
+        Responsive
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tr>
+    <td data-label="Properties">
+      <code>distribute-[axis]</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:1</code> ... <code>:5</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Distribute child elements horizontally or vertically
+    </td>
+  </tr>
+</table>

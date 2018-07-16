@@ -39,11 +39,12 @@ Buttons comes in various sizes, use standard size modifiers to transform its siz
 <button class="button button-size:5">Button</button>
 ```
 {{% /codeblock %}}
+
 ##### Growing Buttons
 
 Buttons can vary in width.
 
-<div class="distribute-down:1 margin-bottom:2">
+<div class="distribute-y:1 margin-bottom:2">
   <button class="button">Default</button><br>
   <button class="button button-grow:1">Grow 1</button><br>
   <button class="button button-grow:2">Grow 2</button><br>

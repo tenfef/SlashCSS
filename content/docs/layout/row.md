@@ -146,7 +146,7 @@ The row can also act as a media object component with the `:media` modifier.
 
 <div class="row:media row-gutter:1 align-item:middle margin-bottom:2">
   <div class="column">
-    <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="image image-shape:round image-size:5 fill:primary">
+    <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="image border-radius:round image-size:5 fill:primary">
   </div>
   <div class="column">
     <div>

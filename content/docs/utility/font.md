@@ -2,32 +2,34 @@
 title = "Font"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
-description = "The font component provides for text styling for headings or general text."
+description = "The font component provides useful ways of styling text."
 +++
 
-##### Basic Usage
+##### Font Sizes
 
-Apply class `font` to any heading element to apply styling. There are 8 size variants to choose from. You can apply to existing header elements or manually apply font size class names, this can also be device specific with responsive extensions.
+The `font-size` property has 9 sizes.
 
-<span class="font font-size:micro -gap-2">Micro</span>
-<p class="font body -gap-2">Body</p>
-<p class="font font-size:h6 -gap-2">H6 Typography</p>
-<p class="font h4 -h5-md -gap-2">H5 Typography</p>
-<h4 class="font gap-2">H4 Typography</h4>
-<h3 class="font gap-2">H3 Typography</h3>
-<h2 class="font gap-2">H2 Typography</h2>
-<h1 class="font gap-2">H1 Typography</h1>
+<p class="font-size:h1 font-height:0">H1 Typography</p>
+<p class="font-size:h2 font-height:0">h2 Typography</p>
+<p class="font-size:h3 font-height:0">H3 Typography</p>
+<p class="font-size:h4 font-height:0">H4 Typography</p>
+<p class="font-size:h5 font-height:0">H5 Typography</p>
+<p class="font-size:h6 font-height:0">H6 Typography</p>
+<p class="font-size:body font-height:0">Body</p>
+<p class="font-size:tiny font-height:0">Tiny</p>
+<p class="font-size:micro font-height:0">Micro</p>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<span class="font -micro">Micro</span>
-<p class="font -body">Body</p>
-<p class="font -h6">H6 Typography</p>
-<p class="font -h4 -h5-md">H5 Typography</p>
-<h4 class="font">H4 Typography</h4>
-<h3 class="font">H3 Typography</h3>
-<h2 class="font">H2 Typography</h2>
-<h1 class="font">H1 Typography</h1>
+<p class="font-size:h1">H1 Typography</p>
+<p class="font-size:h2">h2 Typography</p>
+<p class="font-size:h3">H3 Typography</p>
+<p class="font-size:h4">H4 Typography</p>
+<p class="font-size:h5">H5 Typography</p>
+<p class="font-size:h6">H6 Typography</p>
+<p class="font-size:body">Body</p>
+<p class="font-size:tiny">Tiny</p>
+<p class="font-size:micro">Micro</p>
 ```
 {{% /codeblock %}}
 
@@ -35,101 +37,176 @@ Apply class `font` to any heading element to apply styling. There are 8 size var
 
 For different weights use standard weight modifiers.
 
-<h3 class="font -gap-3 font-weight:light">Light Typography</h3>
-<h3 class="font -gap-3 font-weight:regular">Regular Typography</h3>
-<h3 class="font -gap-3 font-weight:medium">Medium Typography</h3>
-<h3 class="font -gap-3 font-weight:bold">Bold Typography</h3>
+<h3 class="font-weight:light font-height:4 margin:none">Light Typography</h3>
+<h3 class="font-weight:regular font-height:4 margin:none">Regular Typography</h3>
+<h3 class="font-weight:medium font-height:4 margin:none">Medium Typography</h3>
+<h3 class="font-weight:bold font-height:4 margin:none">Bold Typography</h3>
+<h3 class="font-weight:black font-height:4 margin:none margin-bottom:4">Black Typography</h3>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<h3 class="font -light">Light Typography</h3>
-<h3 class="font -regular">Regular Typography</h3>
-<h3 class="font -medium">Medium Typography</h3>
-<h3 class="font -bold">Bold Typography</h3>
+<h3 class="font-weight:light">Light Typography</h3>
+<h3 class="font-weight:regular">Regular Typography</h3>
+<h3 class="font-weight:medium">Medium Typography</h3>
+<h3 class="font-weight:bold">Bold Typography</h3>
+<h3 class="font-weight:black">Black Typography</h3>
 ```
 {{% /codeblock %}}
 
+##### Line Height
 
+You can apply unitless line height with the `font-height` property.
 
-
-
-##### Ruled Headers
-
-Headers can have a line underneath with the `-rule` modifier.
-
-<h3 class="font font:underline -gap-4">Ruled Heading</h3>
+<h6 class="font-height:0 fill:grey-l4 margin:none margin-bottom:1">Line Height 1</h6>
+<h6 class="font-height:1 fill:grey-l4 margin:none margin-bottom:1">Line Height 1.1</h6>
+<h6 class="font-height:2 fill:grey-l4 margin:none margin-bottom:1">Line Height 1.2</h6>
+<h6 class="font-height:3 fill:grey-l4 margin:none margin-bottom:1">Line Height 1.3</h6>
+<h6 class="font-height:4 fill:grey-l4 margin:none margin-bottom:1">Line Height 1.4</h6>
+<h6 class="font-height:5 fill:grey-l4 margin:none margin-bottom:4">Line Height 1.5</h6>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<h3 class="font -rule -gap-4">Ruled Heading</h3>
+<h6 class="font-height:0">Line Height 1</h6>
+<h6 class="font-height:1">Line Height 1.1</h6>
+<h6 class="font-height:2">Line Height 1.2</h6>
+<h6 class="font-height:3">Line Height 1.3</h6>
+<h6 class="font-height:4">Line Height 1.4</h6>
+<h6 class="font-height:5">Line Height 1.5</h6>
 ```
 {{% /codeblock %}}
 
-##### Line Heights
+##### Font Transform
 
-You can override the default unitless line height with the following modifiers.
+You can transform capitalization of your text with the `font-transform` property.
 
-<h5 class="font font-leading:0 font-align:right">Line Height</h5>
-<h5 class="font font-leading:1">Line Height</h5>
-<h5 class="font font-leading:2">Line Height</h5>
-<h5 class="font font-leading:3">Line Height</h5>
-<h5 class="font font-leading:4">Line Height</h5>
-<h5 class="font font-leading:5">Line Height</h5>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<h5 class="font font-line-height:0 font-align:right">Line Height</h5>
-<h5 class="font font-line-height:1">Line Height</h5>
-<h5 class="font font-line-height:2">Line Height</h5>
-<h5 class="font font-line-height:3">Line Height</h5>
-<h5 class="font font-line-height:4">Line Height</h5>
-<h5 class="font font-line-height:5">Line Height</h5>
+<h6 class="font-transform:none">No Transform</h6>
+<h6 class="font-transform:upper">Uppercase</h6>
+<h6 class="fonttranform:lower">Lowercase</h6>
 ```
 {{% /codeblock %}}
 
+##### Local Variables
 
-##### Custom Transformations
+You can override styling using the following local variables.
 
-There are custom transformations that can be applied to further modifer how headings are displayed.
-
-<h5 class="font -block">Block</h5>
-<h5 class="font -reset">Reset</h5>
-<h5 class="font -inherit">Inherit</h5>
-<h5 class="font -link">Link</h5>
-<h5 class="font -hover">Hover</h5>
-<h5 class="font -decorate">Decorate</h5>
-<h5 class="font -pointer">Pointer</h5>
-<h5 class="font font-transform:upper">Uppercase</h5>
-<h5 class="font -condense">Condensed</h5>
-<h5 class="font -expand">Expand</h5>
-<h5 class="font -inline -gap-2">Inline</h5>
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<h5 class="font -block">Block</h5>
-<h5 class="font -reset">Reset</h5>
-<h5 class="font -inherit">Inherit</h5>
-<h5 class="font -link">Link</h5>
-<h5 class="font -hover">Hover</h5>
-<h5 class="font -decorate">Decorate</h5>
-<h5 class="font -pointer">Pointer</h5>
-<h5 class="font -upper">Uppercase</h5>
-<h5 class="font -condense">Condensed</h5>
-<h5 class="font -expand">Expand</h5>
-<h5 class="font -inline">Inline</h5>
+{{% codeblock key="language" definition="css" margin="bottom" %}}
+```css
+$font-heights: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Colors
+##### Options
 
-You can apply color with standard color modifiers (including all shade and product colors).
+The following modifiers are available.
 
-<h5 class="font -red">Color</h5>
-<h5 class="font -orange">Color</h5>
-<h5 class="font -yellow">Color</h5>
-<h5 class="font -green">Color</h5>
-<h5 class="font -blue">Color</h5>
-<h5 class="font -purple">Color</h5>
-<h5 class="font -black">Color</h5>
-<h5 class="font -grey">Color</h5>
-<h5 class="font -white">Color</h5>
+<table class="table width:100% table:pile table@sm:unpile">
+  <thead>
+    <tr>
+      <th>
+        Property
+      </th>
+      <th>
+        Modifier
+      </th>
+      <th>
+        Responsive
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tr>
+    <td data-label="Properties">
+      <code>font-size</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:h1</code><br>
+      <code>:h2</code><br>
+      <code>:h3</code><br>
+      <code>:h4</code><br>
+      <code>:h5</code><br>
+      <code>:h6</code><br>
+      <code>:body</code><br>
+      <code>:tiny</code><br>
+      <code>:micro</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set font size
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>font-size</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:h1</code><br>
+      <code>:h2</code><br>
+      <code>:h3</code><br>
+      <code>:h4</code><br>
+      <code>:h5</code><br>
+      <code>:h6</code><br>
+      <code>:body</code><br>
+      <code>:tiny</code><br>
+      <code>:micro</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set font size
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>font-weight</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:light</code><br>
+      <code>:regular</code><br>
+      <code>:medium</code><br>
+      <code>:bold</code><br>
+      <code>:black</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set font weight
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>font-height</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:1</code> ... <code>:5</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set line height
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>font-transform</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:none</code> <code>:upper</code> <code>:lower</code>
+    </td>
+    <td data-label="Responsive">
+      No
+    </td>
+    <td class="row:reverse">
+      Set text transform
+    </td>
+  </tr>
+</table>
