@@ -6,68 +6,68 @@ IMPORT COMPONENTS
 BASE
 ******************************/
 
-@import "base/root.component";
-@import "base/reset.component";
-@import "base/global.component";
+@import "base/root.base";
+@import "base/reset.base";
+@import "base/global.base";
 
 /******************************
 LAYOUT
 ******************************/
 
-@import "layout/row.component";
-@import "layout/column.component";
-@import "layout/grid.component";
-@import "layout/wrap.component";
+@import "layout/row.layout";
+@import "layout/column.layout";
+@import "layout/grid.layout";
+@import "layout/wrap.layout";
 
 /******************************
 MODULE
 ******************************/
 
-@import "module/accordion.component";
-@import "module/card.component";
-@import "module/crumb.component";
-@import "module/dropdown.component";
-@import "module/form.component";
-@import "module/list.component";
-@import "module/menu.component";
-@import "module/slidemenu.component";
-@import "module/tab.component";
-@import "module/table.component";
-@import "module/notice.component";
-@import "module/markup.component";
+@import "module/accordion.module";
+@import "module/card.module";
+@import "module/crumb.module";
+@import "module/dropdown.module";
+@import "module/form.module";
+@import "module/list.module";
+@import "module/menu.module";
+@import "module/slidemenu.module";
+@import "module/tab.module";
+@import "module/table.module";
+@import "module/notice.module";
+@import "module/markup.module";
 
 /******************************
 SINGLE
 ******************************/
 
-@import "single/button.component";
-@import "single/image.component";
-@import "single/label.component";
-@import "single/line.component";
-@import "single/tip.component";
+@import "single/button.single";
+@import "single/image.single";
+@import "single/label.single";
+@import "single/line.single";
+@import "single/tip.single";
 
 /******************************
 UTILITY
 ******************************/
 
-@import "utility/display.component";
-@import "utility/flex.component";
-@import "utility/position.component";
-@import "utility/color.component";
-@import "utility/fill.component";
-@import "utility/align.component";
-@import "utility/border.component";
-@import "utility/opacity.component";
-@import "utility/float.component";
-@import "utility/margin.component";
-@import "utility/padding.component";
-@import "utility/distribute.component";
-@import "utility/clear.component";
-@import "utility/hover.component";
-@import "utility/max.component";
-@import "utility/min.component";
-@import "utility/overflow.component";
-@import "utility/width.component";
-@import "utility/height.component";
-@import "utility/elevate.component";
-@import "utility/font.component";
+@import "utility/display.utility";
+@import "utility/flex.utility";
+@import "utility/position.utility";
+@import "utility/color.utility";
+@import "utility/fill.utility";
+@import "utility/align.utility";
+@import "utility/border.utility";
+@import "utility/opacity.utility";
+@import "utility/float.utility";
+@import "utility/margin.utility";
+@import "utility/padding.utility";
+@import "utility/distribute.utility";
+@import "utility/clear.utility";
+@import "utility/hover.utility";
+@import "utility/max.utility";
+@import "utility/min.utility";
+@import "utility/overflow.utility";
+@import "utility/width.utility";
+@import "utility/height.utility";
+@import "utility/elevate.utility";
+@import "utility/font.utility";
