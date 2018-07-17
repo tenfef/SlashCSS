@@ -2,7 +2,8 @@
 PADDING
 ************************************************************/
 
-$paddings: 10 !default;
+$paddings-from: 0 !default;
+$paddings-to: 20 !default;
 
 .padding {
 
@@ -13,11 +14,10 @@ $paddings: 10 !default;
     padding: auto !important;
   }
 
-  @while $paddings >= 0 {
-    &\:#{$paddings} {
-      padding: var(--u#{$paddings}) !important;
+  @for $i from $paddings-from through $paddings-to {
+    &\:#{$i} {
+      padding: var(--u#{$i}) !important;
     }
-    $paddings: $paddings - 1;
   }
   @each $key, $value in $screens {
     &\@#{$key} {
@@ -28,11 +28,10 @@ $paddings: 10 !default;
         &\:auto {
           padding: auto !important;
         }
-        @while $paddings >= 0 {
-          &\:#{$paddings} {
-            padding: var(--u#{$paddings}) !important;
+        @for $i from $paddings-from through $paddings-to {
+          &\:#{$i} {
+            padding: var(--u#{$i}) !important;
           }
-          $paddings: $paddings - 1;
         }
       }
     }
@@ -45,17 +44,11 @@ $paddings: 10 !default;
     &\:auto {
       padding-top: auto !important;
     }
-    @while $paddings >= 0 {
-      &\:#{$paddings} {
-        padding-top: var(--u#{$paddings}) !important;
+    @for $i from $paddings-from through $paddings-to {
+      &\:#{$i} {
+        padding-top: var(--u#{$i}) !important;
       }
-      $paddings: $paddings - 1;
-    }
-    @while $paddings >= 5  {
-      &\:#{$paddings}0 {
-        padding-top: #{$paddings}vh !important;
-      }
-      $paddings: $paddings - 1;
+
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -66,17 +59,10 @@ $paddings: 10 !default;
           &\:auto {
             padding-top: auto !important;
           }
-          @while $paddings >= 0 {
-            &\:#{$paddings} {
-              padding-top: var(--u#{$paddings}) !important;
+          @for $i from $paddings-from through $paddings-to {
+            &\:#{$i} {
+              padding-top: var(--u#{$i}) !important;
             }
-            $paddings: $paddings - 1;
-          }
-          @while $paddings >= 5  {
-            &\:#{$paddings}vh {
-              padding-top: #{$paddings}vh !important;
-            }
-            $paddings: $paddings - 1;
           }
         }
       }
@@ -90,11 +76,10 @@ $paddings: 10 !default;
     &\:auto {
       padding-right: auto !important;
     }
-    @while $paddings >= 0 {
-      &\:#{$paddings} {
-        padding-right: var(--u#{$paddings}) !important;
+    @for $i from $paddings-from through $paddings-to {
+      &\:#{$i} {
+        padding-right: var(--u#{$i}) !important;
       }
-      $paddings: $paddings - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -105,11 +90,10 @@ $paddings: 10 !default;
           &\:auto {
             padding-right: auto !important;
           }
-          @while $paddings >= 0 {
-            &\:#{$paddings} {
-              padding-right: var(--u#{$paddings}) !important;
+          @for $i from $paddings-from through $paddings-to {
+            &\:#{$i} {
+              padding-right: var(--u#{$i}) !important;
             }
-            $paddings: $paddings - 1;
           }
         }
       }
@@ -123,17 +107,11 @@ $paddings: 10 !default;
     &\:auto {
       padding-bottom: auto !important;
     }
-    @while $paddings >= 0 {
-      &\:#{$paddings} {
-        padding-bottom: var(--u#{$paddings}) !important;
+    @for $i from $paddings-from through $paddings-to {
+      &\:#{$i} {
+        padding-bottom: var(--u#{$i}) !important;
       }
-      $paddings: $paddings - 1;
-    }
-    @while $paddings >= 5  {
-      &\:#{$paddings}0 {
-        padding-bottom: #{$paddings}vh !important;
-      }
-      $paddings: $paddings - 1;
+
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -144,17 +122,10 @@ $paddings: 10 !default;
           &\:auto {
             padding-bottom: auto !important;
           }
-          @while $paddings >= 0 {
-            &\:#{$paddings} {
-              padding-bottom: var(--u#{$paddings}) !important;
+          @for $i from $paddings-from through $paddings-to {
+            &\:#{$i} {
+              padding-bottom: var(--u#{$i}) !important;
             }
-            $paddings: $paddings - 1;
-          }
-          @while $paddings >= 5  {
-            &\:#{$paddings}vh {
-              padding-bottom: #{$paddings}vh !important;
-            }
-            $paddings: $paddings - 1;
           }
         }
       }
@@ -168,11 +139,10 @@ $paddings: 10 !default;
     &\:auto {
       padding-left: auto !important;
     }
-    @while $paddings >= 0 {
-      &\:#{$paddings} {
-        padding-left: var(--u#{$paddings}) !important;
+    @for $i from $paddings-from through $paddings-to {
+      &\:#{$i} {
+        padding-left: var(--u#{$i}) !important;
       }
-      $paddings: $paddings - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -183,11 +153,10 @@ $paddings: 10 !default;
           &\:auto {
             padding-left: auto !important;
           }
-          @while $paddings >= 0 {
-            &\:#{$paddings} {
-              padding-left: var(--u#{$paddings}) !important;
+          @for $i from $paddings-from through $paddings-to {
+            &\:#{$i} {
+              padding-left: var(--u#{$i}) !important;
             }
-            $paddings: $paddings - 1;
           }
         }
       }
@@ -203,12 +172,11 @@ $paddings: 10 !default;
       padding-left: auto !important;
       padding-right: auto !important;
     }
-    @while $paddings >= 0 {
-      &\:#{$paddings} {
-        padding-left: var(--u#{$paddings}) !important;
-        padding-right: var(--u#{$paddings}) !important;
+    @for $i from $paddings-from through $paddings-to {
+      &\:#{$i} {
+        padding-left: var(--u#{$i}) !important;
+        padding-right: var(--u#{$i}) !important;
       }
-      $paddings: $paddings - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -221,12 +189,11 @@ $paddings: 10 !default;
             padding-left: auto !important;
             padding-right: auto !important;
           }
-          @while $paddings >= 0 {
-            &\:#{$paddings} {
-              padding-left: var(--u#{$paddings}) !important;
-              padding-right: var(--u#{$paddings}) !important;
+          @for $i from $paddings-from through $paddings-to {
+            &\:#{$i} {
+              padding-left: var(--u#{$i}) !important;
+              padding-right: var(--u#{$i}) !important;
             }
-            $paddings: $paddings - 1;
           }
         }
       }
@@ -242,19 +209,11 @@ $paddings: 10 !default;
       padding-top: auto !important;
       padding-bottom: auto !important;
     }
-    @while $paddings >= 0 {
-      &\:#{$paddings} {
-        padding-top: var(--u#{$paddings}) !important;
-        padding-bottom: var(--u#{$paddings}) !important;
+    @for $i from $paddings-from through $paddings-to {
+      &\:#{$i} {
+        padding-top: var(--u#{$i}) !important;
+        padding-bottom: var(--u#{$i}) !important;
       }
-      $paddings: $paddings - 1;
-    }
-    @while $paddings >= 5  {
-      &\:#{$paddings}vh {
-        padding-top: #{$paddings}vh !important;
-        padding-bottom: #{$paddings}vh !important;
-      }
-      $paddings: $paddings - 1;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -267,19 +226,11 @@ $paddings: 10 !default;
             padding-top: auto !important;
             padding-bottom: auto !important;
           }
-          @while $paddings >= 0 {
-            &\:#{$paddings} {
-              padding-top: var(--u#{$paddings}) !important;
-              padding-bottom: var(--u#{$paddings}) !important;
+          @for $i from $paddings-from through $paddings-to {
+            &\:#{$i} {
+              padding-top: var(--u#{$i}) !important;
+              padding-bottom: var(--u#{$i}) !important;
             }
-            $paddings: $paddings - 1;
-          }
-          @while $paddings >= 5 {
-            &\:#{$paddings}vh {
-              padding-top: #{$paddings}vh !important;
-              padding-bottom: #{$paddings}vh !important;
-            }
-            $paddings: $paddings - 1;
           }
         }
       }

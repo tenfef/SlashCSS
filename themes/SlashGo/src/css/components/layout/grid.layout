@@ -39,7 +39,7 @@ $grid-gutters: 5 !default;
   ******************************/
 
   &-gutter {
-    @while $grid-gutters >= 0 {
+    @while $grid-gutters > 0 {
       &\:#{$grid-gutters} {
         grid-column-gap: var(--u#{$grid-gutters});
         grid-row-gap: var(--u#{$grid-gutters});
@@ -47,7 +47,7 @@ $grid-gutters: 5 !default;
       $grid-gutters: $grid-gutters - 1;
     }
     &-row {
-      @while $grid-gutters >= 0 {
+      @while $grid-gutters > 0 {
         &\:#{$grid-gutters} {
           grid-row-gap: var(--u#{$grid-gutters});
         }
@@ -67,7 +67,7 @@ $grid-gutters: 5 !default;
       }
     }
     &-column {
-      @while $grid-gutters >= 0 {
+      @while $grid-gutters > 0 {
         &\:#{$grid-gutters} {
           grid-column-gap: var(--u#{$grid-gutters});
         }
@@ -89,7 +89,7 @@ $grid-gutters: 5 !default;
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
-          @while $grid-gutters >= 0 {
+          @while $grid-gutters > 0 {
             &\:#{$grid-gutters} {
               grid-column-gap: var(--u#{$grid-gutters});
               grid-row-gap: var(--u#{$grid-gutters});

@@ -1,10 +1,10 @@
 /************************************************************
-IMAGE
+MEDIA
 ************************************************************/
 
-$image-levels: 11 !default;
+$media-levels: 11 !default;
 
-.image {
+.media {
   display: block;
   width: auto;
   max-width: 100%;
@@ -17,22 +17,22 @@ $image-levels: 11 !default;
   ******************************/
 
   &-size {
-    @while $image-levels > 1 {
-      &\:#{$image-levels} {
-        width: var(--u#{$image-levels});
-        height: var(--u#{$image-levels});
+    @while $media-levels > 1 {
+      &\:#{$media-levels} {
+        width: var(--u#{$media-levels});
+        height: var(--u#{$media-levels});
       }
-      $image-levels: $image-levels - 1;
+      $media-levels: $media-levels - 1;
     }
     @each $screen, $size in $screens {
       &-#{$screen} {
         @media (min-width : #{$size}) {
-          @while $image-levels > 1 {
-            &\:#{$image-levels} {
-              width: var(--u#{$image-levels});
-              height: var(--u#{$image-levels});
+          @while $media-levels > 1 {
+            &\:#{$media-levels} {
+              width: var(--u#{$media-levels});
+              height: var(--u#{$media-levels});
             }
-            $image-levels: $image-levels - 1;
+            $media-levels: $media-levels - 1;
           }
         }
       }

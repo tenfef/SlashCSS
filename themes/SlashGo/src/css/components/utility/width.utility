@@ -16,7 +16,7 @@ $widths: 10 !default;
       width: var(--u#{$widths}) !important;
     }
     &\:#{$widths}0 {
-      width: var(--u#{$widths}0) !important;
+      width: var(--u#{$widths}) !important;
     }
     &\:#{$widths}0\% {
       width: calc(#{$widths} * 10%) !important;
@@ -37,7 +37,7 @@ $widths: 10 !default;
             width: var(--u#{$widths}) !important;
           }
           &\:#{$widths}0 {
-            width: var(--u#{$widths}0) !important;
+            width: var(--u#{$widths}) !important;
           }
           &\:#{$widths}0\% {
             width: calc(#{$widths} * 10%) !important;

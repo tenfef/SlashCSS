@@ -11,8 +11,8 @@ $min-levels: 10 !default;
       min-width: 100% !important;
     }
     @while $min-levels > 0 {
-      &\:#{$min-levels}0 {
-        min-width: var(--u#{$min-levels}0) !important;
+      &\:#{$min-levels} {
+        min-width: var(--u#{$min-levels}) !important;
       }
       $min-levels: $min-levels - 1;
     }
@@ -27,8 +27,8 @@ $min-levels: 10 !default;
       }
     }
     @while $min-levels > 0 {
-      &\:#{$min-levels}0 {
-        min-height: var(--u#{$min-levels}0) !important;
+      &\:#{$min-levels} {
+        min-height: var(--u#{$min-levels}) !important;
       }
       $min-levels: $min-levels - 1;
     }
@@ -42,8 +42,8 @@ $min-levels: 10 !default;
             min-width: 100% !important;
           }
           @while $min-levels > 0 {
-            &\:#{$min-levels}0 {
-              min-width: var(--u#{$min-levels}0) !important;
+            &\:#{$min-levels} {
+              min-width: var(--u#{$min-levels}) !important;
             }
             $min-levels: $min-levels - 1;
           }
@@ -57,8 +57,8 @@ $min-levels: 10 !default;
             min-height: 100% !important;
           }
           @while $min-levels > 0 {
-            &\:#{$min-levels}0 {
-              min-height: var(--u#{$min-levels}0) !important;
+            &\:#{$min-levels} {
+              min-height: var(--u#{$min-levels}) !important;
             }
             $min-levels: $min-levels - 1;
           }

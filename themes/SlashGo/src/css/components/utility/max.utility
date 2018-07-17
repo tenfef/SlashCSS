@@ -11,8 +11,8 @@ $max-levels: 10 !default;
       max-width: 100% !important;
     }
     @while $max-levels > 0 {
-      &\:#{$max-levels}0 {
-        max-width: var(--u#{$max-levels}0) !important;
+      &\:#{$max-levels} {
+        max-width: var(--u#{$max-levels}) !important;
       }
       $max-levels: $max-levels - 1;
     }
@@ -27,8 +27,8 @@ $max-levels: 10 !default;
       }
     }
     @while $max-levels > 0 {
-      &\:#{$max-levels}0 {
-        max-height: var(--u#{$max-levels}0) !important;
+      &\:#{$max-levels} {
+        max-height: var(--u#{$max-levels}) !important;
       }
       $max-levels: $max-levels - 1;
     }
@@ -42,8 +42,8 @@ $max-levels: 10 !default;
             max-width: 100% !important;
           }
           @while $max-levels > 0 {
-            &\:#{$max-levels}0 {
-              max-width: var(--u#{$max-levels}0) !important;
+            &\:#{$max-levels} {
+              max-width: var(--u#{$max-levels}) !important;
             }
             $max-levels: $max-levels - 1;
           }
@@ -57,8 +57,8 @@ $max-levels: 10 !default;
             max-height: 100% !important;
           }
           @while $max-levels > 0 {
-            &\:#{$max-levels}0 {
-              max-height: var(--u#{$max-levels}0) !important;
+            &\:#{$max-levels} {
+              max-height: var(--u#{$max-levels}) !important;
             }
             $max-levels: $max-levels - 1;
           }

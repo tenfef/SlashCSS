@@ -19,7 +19,7 @@ $heights: 10 !default;
       height: var(--u#{$heights}) !important;
     }
     &\:#{$heights}0 {
-      height: var(--u#{$heights}0) !important;
+      height: var(--u#{$heights}) !important;
     }
     &\:#{$heights}0\% {
       height: calc(#{$heights} * 10%) !important;
@@ -43,7 +43,7 @@ $heights: 10 !default;
             height: var(--u#{$heights}) !important;
           }
           &\:#{$heights}0 {
-            height: var(--u#{$heights}0) !important;
+            height: var(--u#{$heights}) !important;
           }
           &\:#{$heights}0\% {
             height: calc(#{$heights} * 10%) !important;

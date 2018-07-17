@@ -46,8 +46,18 @@ ROOT
   UNITS
   ******************************/
 
-  --u0: .5rem;
-  @for $i from 1 through 100{
-    --u#{$i}: calc(#{$unit} * #{$i});
+  --unit: .25rem;
+  @for $i from 0 through 20 {
+    @if $i <= 4 {
+      --u#{$i}: calc(#{$unit} * #{$i});
+    } @else if $i <= 8 {
+      --u#{$i}: calc(#{$unit} * (#{$i} * 2 ));
+    } @else if $i <= 12 {
+      --u#{$i}: calc(#{$unit} * (#{$i} * 4 ));
+    } @else if $i <= 16 {
+      --u#{$i}: calc(#{$unit} * (#{$i} * 8 ));
+    } @else if $i <= 20 {
+      --u#{$i}: calc(#{$unit} * (#{$i} * 16 ));
+    }
   }
 }
