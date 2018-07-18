@@ -41,15 +41,15 @@ $grid-gutters: 5 !default;
   &-gutter {
     @while $grid-gutters > 0 {
       &\:#{$grid-gutters} {
-        grid-column-gap: var(--u#{$grid-gutters});
-        grid-row-gap: var(--u#{$grid-gutters});
+        grid-column-gap: $grid-gutters * 1rem;
+        grid-row-gap: $grid-gutters * 1rem;
       }
       $grid-gutters: $grid-gutters - 1;
     }
     &-row {
       @while $grid-gutters > 0 {
         &\:#{$grid-gutters} {
-          grid-row-gap: var(--u#{$grid-gutters});
+          grid-row-gap: $grid-gutters * 1rem;
         }
         $grid-gutters: $grid-gutters - 1;
       }
@@ -58,7 +58,7 @@ $grid-gutters: 5 !default;
           @media (min-width : #{$value}) {
             @while $grid-gutters > 0 {
               &\:#{$grid-gutters} {
-                grid-row-gap: var(--u#{$grid-gutters});
+                grid-row-gap: $grid-gutters * 1rem;
               }
               $grid-gutters: $grid-gutters - 1;
             }
@@ -69,7 +69,7 @@ $grid-gutters: 5 !default;
     &-column {
       @while $grid-gutters > 0 {
         &\:#{$grid-gutters} {
-          grid-column-gap: var(--u#{$grid-gutters});
+          grid-column-gap: $grid-gutters * 1rem;
         }
         $grid-gutters: $grid-gutters - 1;
       }
@@ -78,7 +78,7 @@ $grid-gutters: 5 !default;
           @media (min-width : #{$value}) {
             @while $grid-gutters > 0 {
               &\:#{$grid-gutters} {
-                grid-column-gap: var(--u#{$grid-gutters});
+                grid-column-gap: $grid-gutters * 1rem;
               }
               $grid-gutters: $grid-gutters - 1;
             }
@@ -91,8 +91,8 @@ $grid-gutters: 5 !default;
         @media (min-width : #{$value}) {
           @while $grid-gutters > 0 {
             &\:#{$grid-gutters} {
-              grid-column-gap: var(--u#{$grid-gutters});
-              grid-row-gap: var(--u#{$grid-gutters});
+              grid-column-gap: $grid-gutters * 1rem;
+              grid-row-gap: $grid-gutters * 1rem;
             }
             $grid-gutters: $grid-gutters - 1;
           }

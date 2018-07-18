@@ -27,11 +27,10 @@ gulp.task('css', function () {
   ];
   return gulp.src('css/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
     .pipe(postcss(plugins))
+    .pipe(autoprefixer({
+      browsers: ['last 1 versions']
+    }))
     .pipe(gulp.dest('../static/assets/css'))
 });
 

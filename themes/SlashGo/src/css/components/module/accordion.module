@@ -4,8 +4,8 @@ ACCORDION
 
 :root {
   --accordion-fill: var(--white);
-  --accordion-header-padding: var(--u1) var(--u2);
-  --accordion-body-padding: var(--u2);
+  --accordion-header-padding: var(--u2) var(--u4);
+  --accordion-body-padding: var(--u4);
   --accordion-transition: var(--transition);
   --accordion-arrow-fill: var(--grey-d1);
 }
@@ -74,7 +74,7 @@ ACCORDION
     top: 0;
     right: 0;
     bottom: 0;
-    width: 4rem;
+    width: 3rem;
     transition: var(--accordion-transition);
     transform-origin: center center;
     &:before {

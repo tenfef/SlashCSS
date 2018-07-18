@@ -33,11 +33,11 @@ $row-gutters: 5 !default;
 	&-gutter {
 		@while $row-gutters > 0 {
 			&\:#{$row-gutters} {
-				margin-left: calc(var(--u#{$row-gutters}) * -1 / 2);
-				margin-right: calc(var(--u#{$row-gutters}) * -1 / 2);
+				margin-left: $row-gutters * -1rem / 2;
+				margin-right: $row-gutters * -1rem / 2;
 				& > [class^=column] {
-					padding-left: calc(var(--u#{$row-gutters}) * 1 / 2);
-					padding-right: calc(var(--u#{$row-gutters}) * 1 / 2);
+					padding-left: $row-gutters * 1rem / 2;
+					padding-right: $row-gutters * 1rem / 2;
 				}
 			}
 			$row-gutters: $row-gutters - 1;
@@ -47,11 +47,11 @@ $row-gutters: 5 !default;
 				@media (min-width : #{$value}) {
 					@while $row-gutters > 0 {
 						&\:#{$row-gutters} {
-							margin-left: calc(var(--u#{$row-gutters}) * -1 / 2);
-							margin-right: calc(var(--u#{$row-gutters}) * -1 / 2);
+							margin-left: $row-gutters * -1rem / 2;
+							margin-right: $row-gutters * -1rem / 2;
 							& > [class^=column] {
-								padding-left: calc(var(--u#{$row-gutters}) * 1 / 2);
-								padding-right: calc(var(--u#{$row-gutters}) * 1 / 2);
+								padding-left: $row-gutters * 1rem / 2;
+								padding-right: $row-gutters * 1rem / 2;
 							}
 						}
 						$row-gutters: $row-gutters - 1;

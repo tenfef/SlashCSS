@@ -468,13 +468,13 @@ You can override styling using the following local variables.
   --form-label-weight: var(--medium);
   --form-label-size: var(--tiny);
 
-  --form-field-height: var(--u5);
+  --form-field-height: var(--u9);
   --form-field-border: var(--border);
   --form-field-fill: var(--white);
   --form-field-checkbox-fill: var(--blue);
   --form-field-color: var(--black);
-  --form-field-radius: 4px;
-  --form-field-padding: 1.5rem;
+  --form-field-radius: .25rem;
+  --form-field-padding-left: 1rem;
 
   --form-disabled-fill: var(--grey-l5);
   --form-disabled-color: var(--grey-d1);
@@ -491,7 +491,7 @@ You can override styling using the following local variables.
 
 The following modifiers are available.
 
-<table class="table width:100% table:pile">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>

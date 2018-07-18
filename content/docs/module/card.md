@@ -13,12 +13,12 @@ The card module contains header, content and footer child elements. You can also
   <div class="column:12 column@sm:6">
     <div class="card elevate border:none margin-bottom:2">
       <div class="card/header padding:none">
-        <img src="https://i.imgur.com/Ig4qpjc.jpg" class="image">
+        <img src="https://i.imgur.com/Ig4qpjc.jpg" class="media">
       </div>
       <div class="card/content border-bottom">
-        <div class="row:media row-gutter:1 margin-bottom:2">
-          <div class="column">
-            <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="image border-radius:round image-size:5 fill:primary">
+        <div class="row:media margin-bottom:2">
+          <div class="column margin-right:2">
+            <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:2 fill:primary">
           </div>
           <div class="column display:flex align-item:middle">
             <div>

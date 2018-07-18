@@ -8,12 +8,12 @@ description = "The image component formats images provides useful preset sizes."
 ##### Basic Usage
 
 <div class="margin-bottom:2 max-width:20">
-  <img src="http://via.placeholder.com/500x500" class="image">
+  <img src="http://via.placeholder.com/500x500" class="media">
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<img src="http://via.placeholder.com/500x500" class="image">
+<img src="http://via.placeholder.com/500x500" class="media">
 ```
 {{% /codeblock %}}
 
@@ -23,22 +23,22 @@ description = "The image component formats images provides useful preset sizes."
 Various corner styles can be applied with the `border-radius` component property.
 
 <div class="margin-bottom:2 max-width:10">
-  <img src="http://via.placeholder.com/500x500" class="image">
+  <img src="http://via.placeholder.com/500x500" class="media">
 </div>
 
 <div class="margin-bottom:2 max-width:10">
-  <img src="http://via.placeholder.com/500x500" class="image border-radius">
+  <img src="http://via.placeholder.com/500x500" class="media border-radius">
 </div>
 
 <div class="margin-bottom:2 max-width:10">
-  <img src="http://via.placeholder.com/500x500" class="image border-radius:round">
+  <img src="http://via.placeholder.com/500x500" class="media border-radius:round">
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<img src="http://via.placeholder.com/500x500" class="image">
-<img src="http://via.placeholder.com/500x500" class="image border-radius">
-<img src="http://via.placeholder.com/500x500" class="image border-radius:round">
+<img src="http://via.placeholder.com/500x500" class="media">
+<img src="http://via.placeholder.com/500x500" class="media border-radius">
+<img src="http://via.placeholder.com/500x500" class="media border-radius:round">
 ```
 {{% /codeblock %}}
 
@@ -46,16 +46,16 @@ Various corner styles can be applied with the `border-radius` component property
 
 The `image` component by default inherits the display block property however you can override this to be any type with the `display` component.
 
-<img src="http://via.placeholder.com/1200x200" class="image width:100% margin-bottom:2">
-<img src="http://via.placeholder.com/200x200" class="image display:inline-block">
-<img src="http://via.placeholder.com/200x200" class="image display:inline-block">
+<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:2">
+<img src="http://via.placeholder.com/200x200" class="media display:inline-block">
+<img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<img src="http://via.placeholder.com/1200x200" class="image width:100% margin-bottom:2">
-<img src="http://via.placeholder.com/200x200" class="image display:inline-block">
-<img src="http://via.placeholder.com/200x200" class="image display:inline-block">
+<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:2">
+<img src="http://via.placeholder.com/200x200" class="media display:inline-block">
+<img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 ```
 {{% /codeblock %}}
 
@@ -63,27 +63,27 @@ The `image` component by default inherits the display block property however you
 
 The `image-size` property provides useful preset sizes for things like thumbnails and profile pictures.
 
-<img src="http://via.placeholder.com/200x200" class="image image-size:2 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="image image-size:3 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="image image-size:4 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="image image-size:5 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="image image-size:6 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="image image-size:7 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="image image-size:8 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="image image-size:9 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="image image-size:10 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:2 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:3 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:4 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:5 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:6 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:7 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:8 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:9 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:10 margin-bottom:1">
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<img src="http://via.placeholder.com/200x200" class="image image-size:2">
-<img src="http://via.placeholder.com/200x200" class="image image-size:3">
-<img src="http://via.placeholder.com/200x200" class="image image-size:4">
-<img src="http://via.placeholder.com/200x200" class="image image-size:5">
-<img src="http://via.placeholder.com/200x200" class="image image-size:6">
-<img src="http://via.placeholder.com/200x200" class="image image-size:7">
-<img src="http://via.placeholder.com/200x200" class="image image-size:8">
-<img src="http://via.placeholder.com/200x200" class="image image-size:9">
-<img src="http://via.placeholder.com/200x200" class="image image-size:10">
+<img src="http://via.placeholder.com/200x200" class="media media-size:2">
+<img src="http://via.placeholder.com/200x200" class="media media-size:3">
+<img src="http://via.placeholder.com/200x200" class="media media-size:4">
+<img src="http://via.placeholder.com/200x200" class="media media-size:5">
+<img src="http://via.placeholder.com/200x200" class="media media-size:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:7">
+<img src="http://via.placeholder.com/200x200" class="media media-size:8">
+<img src="http://via.placeholder.com/200x200" class="media media-size:9">
+<img src="http://via.placeholder.com/200x200" class="media media-size:10">
 ```
 {{% /codeblock %}}
 

@@ -30,9 +30,9 @@ $screens: (
 
 // font size map
 $html-sizes: (
-  $sm: 100%,
-  $md: 100%,
-  $lg: 100%
+  $sm: 87.5%,  // 14px
+  $md: 93.75%, // 15px
+  $lg: 100%    // 16px
 ) !default;
 
 /******************************
@@ -117,3 +117,29 @@ $mono-colors: (
 }
 
 $colors: map-merge($colors, $mono-colors);
+
+/******************************
+UNITS
+******************************/
+
+$units: (
+  u0: 0,
+  u1: 0.25rem,
+  u2: 0.5rem,
+  u3: 0.75rem,
+  u4: 1rem,
+  u5: 1.25rem,
+  u6: 1.5rem,
+  u7: 2rem,
+  u8: 2.5rem,
+  u9: 3rem,
+  u10: 3.5rem,
+  u11: 4rem,
+  u12: 6rem,
+  u13: 8rem,
+  u14: 10rem,
+  u15: 12rem,
+  u16: 20rem,
+  u17: 28rem,
+  u18: 36rem
+) !default;

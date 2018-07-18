@@ -9,42 +9,91 @@ description = "The margin component adds margin to any object or container."
 
 Defind with `u-margin`. There are 10 basic levels of margin based on standard grid rhythm that can be applied. Additionally, you can also add `-auto` to allow for auto margin layout or `-none` to remove margin.
 
+<div class="margin:auto">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:0">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:1">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:2">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:3">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:4">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:5">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:6">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:7">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:8">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:9">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+<div class="margin:10">
+  <div class="padding:2 fill:red">
+  </div>
+</div>
+
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-margin-auto">
+<div class="margin:auto">
   ...
 </div>
-<div class="u-margin-0">
+<div class="margin:0">
   ...
 </div>
-<div class="u-margin-1">
+<div class="margin:1">
   ...
 </div>
-<div class="u-margin-2">
+<div class="margin:2">
   ...
 </div>
-<div class="u-margin-3">
+<div class="margin:3">
   ...
 </div>
-<div class="u-margin-4">
+<div class="margin:4">
   ...
 </div>
-<div class="u-margin-5">
+<div class="margin:5">
   ...
 </div>
-<div class="u-margin-6">
+<div class="margin:6">
   ...
 </div>
-<div class="u-margin-7">
+<div class="margin:7">
   ...
 </div>
-<div class="u-margin-8">
+<div class="margin:8">
   ...
 </div>
-<div class="u-margin-9">
+<div class="margin:9">
   ...
 </div>
-<div class="u-margin-10">
+<div class="margin:10">
   ...
 </div>
 ```
@@ -56,22 +105,22 @@ Margin can be applied to `top` `right` `bottom` `left`. It can also be applied t
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-margin-top-1">
+<div class="margin-top-1">
   ...
 </div>
-<div class="u-margin-right-2">
+<div class="margin-right-2">
   ...
 </div>
 <div class="margin-bottom:3">
   ...
 </div>
-<div class="u-margin-left-4">
+<div class="margin-left-4">
   ...
 </div>
-<div class="u-margin-x-5">
+<div class="margin:x-5">
   ...
 </div>
-<div class="u-margin-y-6">
+<div class="margin:y-6">
   ...
 </div>
 ```
@@ -83,10 +132,10 @@ To apply responsive margins add device specific extensions
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-margin-top-sm-1">
+<div class="margin-top-sm-1">
   ...
 </div>
-<div class="u-margin-right-md-5">
+<div class="margin-right-md-5">
   ...
 </div>
 ```
@@ -98,10 +147,10 @@ The margin component also supports viewport based margins that range from 1 to 2
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-margin-top-10vh">
+<div class="margin-top-10vh">
   ...
 </div>
-<div class="u-margin-right-md-5vh">
+<div class="margin-right-md-5vh">
   ...
 </div>
 ```

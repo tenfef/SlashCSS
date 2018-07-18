@@ -17,7 +17,7 @@ $button-sizes: 5 !default;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: calc(3 * var(--u1) + var(--u2));
+  height: var(--u9);
   margin-right: var(--u1);
   padding: 0 1em;
   outline: none;
@@ -98,7 +98,7 @@ $button-sizes: 5 !default;
   &-size {
     @while $button-sizes > 0 {
       &\:#{$button-sizes} {
-        height: calc(#{$button-sizes} * 1rem + 2rem);
+        height: calc(var(--u#{$button-sizes + 6}) );
       }
       $button-sizes: $button-sizes - 1;
     }

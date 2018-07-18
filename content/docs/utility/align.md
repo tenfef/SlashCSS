@@ -30,19 +30,19 @@ Vertical alignment can be controlled with `top` `middle` `bottom` modifiers.
 <div class="row row-gutter:2">
   <div class="column font-size:h3 margin-bottom:2">
     <div class="fill:grey-l4">
-      <div class="image image-size:2 display:inline-block fill:grey-l2 color:white align:top"></div>
+      <div class="media media-size:2 display:inline-block fill:grey-l2 color:white align:top"></div>
     </div>
   </div>
 
   <div class="column font-size:h3 margin-bottom:2">
     <div class="fill:grey-l4">
-      <div class="image image-size:2 display:inline-block fill:grey-l2 color:white align:middle"></div>
+      <div class="media media-size:2 display:inline-block fill:grey-l2 color:white align:middle"></div>
     </div>
   </div>
 
   <div class="column font-size:h3 margin-bottom:2">
     <div class="fill:grey-l4">
-      <div class="image image-size:2 display:inline-block fill:grey-l2 color:white align:bottom"></div>
+      <div class="media media-size:2 display:inline-block fill:grey-l2 color:white align:bottom"></div>
     </div>
   </div>
 </div>

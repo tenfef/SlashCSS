@@ -16,7 +16,7 @@ Sometimes your grid layout might quite fit in a row or column based structure. T
     </div>
   </div>
   <div class="grid/item">
-    <div class="padding:1 fill:blue-light-4">
+    <div class="padding:1 fill:blue-l4">
       &nbsp;
     </div>
   </div>
@@ -26,7 +26,7 @@ Sometimes your grid layout might quite fit in a row or column based structure. T
     </div>
   </div>
   <div class="grid/item">
-    <div class="padding:1 fill:blue-light-4">
+    <div class="padding:1 fill:blue-l4">
       &nbsp;
     </div>
   </div>
@@ -36,7 +36,7 @@ Sometimes your grid layout might quite fit in a row or column based structure. T
     </div>
   </div>
   <div class="grid/item">
-    <div class="padding:1 fill:blue-light-4">
+    <div class="padding:1 fill:blue-l4">
       &nbsp;
     </div>
   </div>
@@ -79,7 +79,7 @@ You can apply gutter to your grid layout with the `grid-gutter` property. Standa
     </div>
   </div>
   <div class="grid/item">
-    <div class="padding:1 fill:blue-light-4">
+    <div class="padding:1 fill:blue-l4">
       &nbsp;
     </div>
   </div>
@@ -89,7 +89,7 @@ You can apply gutter to your grid layout with the `grid-gutter` property. Standa
     </div>
   </div>
   <div class="grid/item">
-    <div class="padding:1 fill:blue-light-4">
+    <div class="padding:1 fill:blue-l4">
       &nbsp;
     </div>
   </div>
@@ -99,7 +99,7 @@ You can apply gutter to your grid layout with the `grid-gutter` property. Standa
     </div>
   </div>
   <div class="grid/item">
-    <div class="padding:1 fill:blue-light-4">
+    <div class="padding:1 fill:blue-l4">
       &nbsp;
     </div>
   </div>

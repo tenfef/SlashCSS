@@ -6,13 +6,13 @@ FORM
   --form-label-weight: var(--medium);
   --form-label-size: var(--tiny);
 
-  --form-field-height: var(--u5);
+  --form-field-height: var(--u9);
   --form-field-border: var(--border);
   --form-field-fill: var(--white);
   --form-field-checkbox-fill: var(--blue);
   --form-field-color: var(--black);
-  --form-field-radius: .4rem;
-  --form-field-padding: 1.5rem;
+  --form-field-radius: .25rem;
+  --form-field-padding-left: 1rem;
 
   --form-disabled-fill: var(--grey-l5);
   --form-disabled-color: var(--grey-d1);
@@ -32,7 +32,7 @@ FORM
   &\/item {
     position: relative;
     display: block;
-    margin-bottom: var(--u2);
+    margin-bottom: var(--u5);
     &:last-child {
       margin-bottom: 0;
     }
@@ -45,21 +45,21 @@ FORM
       &\:slide {
         position: relative;
         input:not([type=submit]) {
-          min-height: 6.5rem;
-          padding: 2.5rem 0 1rem 2rem;
+          min-height: 4rem;
+          padding: 1.75rem 0 1rem var(--form-field-padding-left);
 
           &:placeholder-shown + label {
-            top: 2.5rem;
-            left: var(--u2);
+            top: 1.5rem;
+            left: 1rem;
             font-size: var(--body);
           }
           & + label, &:focus + label {
             position: absolute;
-            top: 1rem;
-            left: var(--u1);
+            top: .5rem;
+            left: .5rem;
             margin: 0;
             padding: 0;
-            font-size: 1.2rem;
+            font-size: .75rem;
             color: var(--grey-d1);
             z-index: 1;
           }
@@ -106,7 +106,7 @@ FORM
         }
         .form\/text {
           right: auto;
-          left: var(--u2);
+          left: var(--form-field-padding-left);
         }
       }
       &\:right {
@@ -134,7 +134,7 @@ FORM
     position: absolute;
     top: 0;
     left: auto;
-    right: var(--u2);
+    right: var(--u5);
     height: 100%;
     align-items: center;
     font-weight: var(--regular);
@@ -159,12 +159,12 @@ FORM
   &\/checkbox {
     display: block;
     position: relative;
-    padding-left: var(--u3);
+    padding-left: var(--u7);
     cursor: pointer;
     padding-bottom: 0 !important;
     font-size: var(--tiny) !important;
     font-weight: var(--regular) !important;
-    line-height: var(--u2) !important;
+    line-height: 1.25rem !important;
 
     input:not([type="submit"]) {
       display: none;
@@ -191,8 +191,8 @@ FORM
       position: absolute;
       top: 0;
       left: 0;
-      height: var(--u2);
-      width: var(--u2);
+      height: var(--u5);
+      width: var(--u5);
       border-radius: var(--form-field-radius);
       border: var(--border);
       background: white;
@@ -201,12 +201,12 @@ FORM
         content: '';
         display: none;
         position: absolute;
-        left: .6rem;
-        top: .2rem;
-        width: .6rem;
-        height: 1rem;
+        left: .4rem;
+        top: .05rem;
+        width: .40rem;
+        height: .75rem;
         border: solid white;
-        border-width: 0 .2rem .2rem 0;
+        border-width: 0 .15rem .15rem 0;
         transform: rotate(45deg);
       }
     }
@@ -215,12 +215,12 @@ FORM
   &\/radio {
     display: block;
     position: relative;
-    padding-left: var(--u3);
+    padding-left: var(--u7);
     cursor: pointer;
     padding-bottom: 0 !important;
-    font-size: 1.5rem !important;
+    font-size: var(--tiny) !important;
     font-weight: var(--regular) !important;
-    line-height: var(--u2) !important;
+    line-height: var(--u5) !important;
 
     input {
       display: none;
@@ -245,8 +245,8 @@ FORM
       position: absolute;
       top: 0;
       left: 0;
-      height: var(--u2);
-      width: var(--u2);
+      height: var(--u5);
+      width: var(--u5);
       padding: 4px;
       border-radius: 100px;
       border: var(--border);
@@ -254,8 +254,8 @@ FORM
       &:after {
         content: '';
         display: none;
-        width: 1rem;
-        height: 1rem;
+        width: .65rem;
+        height: .65rem;
         border-radius: 100px;
       }
     }
@@ -271,12 +271,12 @@ FORM
     &:after {
       content: '\f107';
       position: absolute;
-      top: 1.5rem;
-      right: 2rem;
+      top: .85rem;
+      right: 1.25rem;
       display: block;
       font-family: 'Font Awesome 5 Pro';
       font-style: normal;
-      font-size: 1.8rem;
+      font-size: 1.25rem;
       font-variant: normal;
       text-rendering: auto;
       line-height: 1;
@@ -319,7 +319,7 @@ input {
     width: 100%;
     max-width: 300px;
     height: var(--form-field-height);
-    padding-left: var(--form-field-padding);
+    padding-left: var(--form-field-padding-left);
     background: var(--form-field-fill);
     color: var(--form-field-color);
     font-family: var(--font-family);
@@ -402,7 +402,7 @@ select {
   display: inline-block;
   width: 100%;
   height: var(--form-field-height);
-  padding-left: var(--form-field-padding);
+  padding-left: var(--form-field-padding-left);
   outline: 0;
   border: var(--border);
   border-radius: var(--form-field-radius);

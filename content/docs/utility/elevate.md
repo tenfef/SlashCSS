@@ -15,7 +15,7 @@ The `elevate` component can be applied to any type of component.
 <div class="padding:2 fill:white border-radius elevate margin-bottom:4">
 	<div class="row:media row-gutter:1">
 		<div class="column">
-			<img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="image border-radius:round image-size:5 fill:primary elevate">
+			<img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:5 fill:primary elevate">
 		</div>
 		<div class="column display:flex align-item:middle">
 			<div>
@@ -36,7 +36,7 @@ The `elevate` component can be applied to any type of component.
 <div class="padding:2 fill:white border-radius elevate margin-bottom:4">
 	<div class="row:media row-gutter:1">
 		<div class="column">
-			<img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="image border-radius:round image-size:5 fill:primary elevate">
+			<img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:5 fill:primary elevate">
 		</div>
 		<div class="column display:flex align-item:middle">
 			<div>

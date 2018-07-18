@@ -46,13 +46,7 @@ ROOT
   UNITS
   ******************************/
 
-  @for $i from 0 through 4 {
-    --u#{$i}: calc(#{$unit} * #{$i});
-  }
-  @for $i from 1 through 4 {
-    --u#{($i + 4)}: calc(#{$unit} * (#{$i} * 2 ) + 1);
-  }
-  @for $i from 1 through 4 {
-    --u#{($i + 8)}: calc(#{$unit} * (#{$i} * 4 ) + 3);
+  @each $key, $value in $units {
+    --#{$key}: #{$value};
   }
 }

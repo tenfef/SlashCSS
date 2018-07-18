@@ -35,7 +35,7 @@ $max-width: 1600px !default;
 
 The following modifiers are available.
 
-<table class="table width:100% table:pile">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>

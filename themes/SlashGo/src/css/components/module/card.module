@@ -5,9 +5,9 @@ CARD
 :root {
 	--card-bg: var(--white);
 	--card-radius: var(--radius);
-	--card-header-padding: var(--u2);
-	--card-content-padding: var(--u2);
-	--card-footer-padding: var(--u1);
+	--card-header-padding: var(--u6);
+	--card-content-padding: var(--u6);
+	--card-footer-padding: var(--u6);
 }
 
 .card {

@@ -56,19 +56,19 @@ You can apply positional borders.
 
 You can apply various corner styles with the `border-radius` property. Positional corner styles are also available.
 
-<div class="display:inline-block image-size:5 border-radius padding:3 fill:grey-l2 margin-bottom:2">
+<div class="display:inline-block media-size:5 border-radius padding:3 fill:grey-l2 margin-bottom:2">
 </div>
 
-<div class="display:inline-block image-size:5 border-radius:round padding:3 fill:grey-l2 margin-bottom:2">
+<div class="display:inline-block media-size:5 border-radius:round padding:3 fill:grey-l2 margin-bottom:2">
 </div>
 
-<div class="display:inline-block image-size:5 border-radius:sharp padding:3 fill:grey-l2 margin-bottom:2">
+<div class="display:inline-block media-size:5 border-radius:sharp padding:3 fill:grey-l2 margin-bottom:2">
 </div>
 
-<div class="display:inline-block image-size:5 border-radius-left:round padding:3 fill:grey-l2 margin-bottom:2">
+<div class="display:inline-block media-size:5 border-radius-left:round padding:3 fill:grey-l2 margin-bottom:2">
 </div>
 
-<div class="display:inline-block image-size:5 border-radius-right:round padding:3 fill:grey-l2 margin-bottom:2">
+<div class="display:inline-block media-size:5 border-radius-right:round padding:3 fill:grey-l2 margin-bottom:2">
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}

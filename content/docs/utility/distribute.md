@@ -10,14 +10,14 @@ description = "The distribute component takes advantage of the Sam Pickering's L
 Defined with `distribute`. You can distribute child elements horiontally or vertically with `x` and `y` suffix. You can also apply responsive suffixes.
 
 <div class="distribute-x:5 margin-bottom:2">
-	<div class="display:inline-block image-size:3 fill:grey-l3"></div>
-	<div class="display:inline-block image-size:3 fill:grey-l3"></div>
-	<div class="display:inline-block image-size:3 fill:grey-l3"></div>
+	<div class="display:inline-block media-size:3 fill:grey-l3"></div>
+	<div class="display:inline-block media-size:3 fill:grey-l3"></div>
+	<div class="display:inline-block media-size:3 fill:grey-l3"></div>
 </div>
 <div class="distribute-y:1 margin-bottom:2 margin-right:2">
-	<div class="image-size:3 fill:grey-l3"></div>
-	<div class="image-size:3 fill:grey-l3"></div>
-	<div class="image-size:3 fill:grey-l3"></div>
+	<div class="media-size:3 fill:grey-l3"></div>
+	<div class="media-size:3 fill:grey-l3"></div>
+	<div class="media-size:3 fill:grey-l3"></div>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
