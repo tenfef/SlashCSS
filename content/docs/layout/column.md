@@ -12,63 +12,51 @@ The `column` component works alongside the row component and grows automatically
 <!-- 12 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -76,58 +64,47 @@ The `column` component works alongside the row component and grows automatically
 <!-- 11 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -135,53 +112,43 @@ The `column` component works alongside the row component and grows automatically
 <!-- 10 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -189,48 +156,39 @@ The `column` component works alongside the row component and grows automatically
 <!-- 9 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -238,43 +196,35 @@ The `column` component works alongside the row component and grows automatically
 <!-- 8 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -282,38 +232,31 @@ The `column` component works alongside the row component and grows automatically
 <!-- 7 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -321,33 +264,27 @@ The `column` component works alongside the row component and grows automatically
 <!-- 6 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -355,28 +292,23 @@ The `column` component works alongside the row component and grows automatically
 <!-- 5 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -384,23 +316,19 @@ The `column` component works alongside the row component and grows automatically
 <!-- 4 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -408,18 +336,15 @@ The `column` component works alongside the row component and grows automatically
 <!-- 3 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -427,13 +352,11 @@ The `column` component works alongside the row component and grows automatically
 <!-- 2 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -441,8 +364,7 @@ The `column` component works alongside the row component and grows automatically
 <!-- 1 Columns -->
 <div class="row margin-bottom:2">
   <div class="column">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
 </div>
@@ -475,26 +397,22 @@ By default columns grow in width to fill negative space however specific column 
 
 <div class="row margin-bottom:2">
   <div class="column:4">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column:8">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
 </div>
 
 <div class="row margin-bottom:2">
   <div class="column:12 column@sm:6">
-    <div class="padding:1 fill:blue">
-      &nbsp;
+    <div class="padding-top:5 fill:blue">
     </div>
   </div>
   <div class="column:12 column@sm:6">
-    <div class="padding:1 fill:blue-l2">
-      &nbsp;
+    <div class="padding-top:5 fill:blue-l2">
     </div>
   </div>
 </div>
