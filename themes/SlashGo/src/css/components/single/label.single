@@ -11,18 +11,18 @@ LABEL
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
-  margin-left: .25rem;
+  bottom: 1px;
   margin-right: .25rem;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
   padding-top: .1rem;
-  height: 1.8rem;
+  height: 1.25rem;
   border-radius: var(--label-radius);
   background: var(--primary-color);
   vertical-align: middle;
   font-family: var(--font-family);
   font-size: 9px;
-  font-weight: var(--heavy);
+  font-weight: var(--bold);
   line-height: 1;
   color: white;
   text-transform: uppercase;
@@ -33,11 +33,12 @@ LABEL
   position: relative;
   display: inline-flex;
   vertical-align: middle;
-  margin-left: .25rem;
+  bottom: 1px;
   margin-right: .25rem;
   border-radius: var(--label-radius);
   overflow: hidden;
   .label {
+    bottom: 0;
     margin-left: 0;
     margin-right: 0;
     border-radius: 0;

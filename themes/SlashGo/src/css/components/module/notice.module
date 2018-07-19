@@ -27,7 +27,7 @@ NOTICE
   ******************************/
 
   &\/content {
-    padding: var(--u1);
+    padding: var(--u3);
   }
 	&\/close {
 		display: flex;
@@ -35,7 +35,7 @@ NOTICE
 		justify-content: center;
 		position: absolute;
 		top: 50%;
-		right: 0;
+		right: var(--u3);
 		width: var(--u4);
 		height: var(--u4);
 		color: white;
@@ -45,8 +45,8 @@ NOTICE
 		span {
 			display: block;
 			position: relative;
-			width: 16px;
-			height: 3px;
+			width: 15px;
+			height: 2px;
 			background: transparent;
 
 			&:before {
@@ -54,8 +54,8 @@ NOTICE
 				position: absolute;
 				bottom: 0;
 				content: '';
-				width: 16px;
-				height: 3px;
+				width: 15px;
+				height: 2px;
 				background: var(--white);
 				border-radius: 20px;
 				transform: rotate(-45deg);
@@ -67,7 +67,7 @@ NOTICE
 				top: 0;
 				content: '';
 				width: 16px;
-				height: 3px;
+				height: 2px;
 				background: var(--white);
 				border-radius: 20px;
 				transform: rotate(45deg);

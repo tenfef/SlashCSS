@@ -7,7 +7,7 @@ DROPDOWN
   --dropdown-body-radius: var(--radius);
   --dropdown-body-shadow: 0px 0px 0px 1px var(--border-color);
 
-  --dropdown-item-padding: var(--u1) var(--u1);
+  --dropdown-item-padding: .5rem;
   --dropdown-item-color: var(--grey-d1);
   --dropdown-item-hover-color: var(--grey-d2);
   --dropdown-item-hover-fill: var(--grey-l5);

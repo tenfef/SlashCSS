@@ -11,8 +11,8 @@ Defined with the class `notice` initialized with javascript. The `notice/close` 
 
 <div class="notice is-active">
   <div class="notice/content">
-    <span class="label fill:navy margin-right:1">NEW</span>
-    Sample Notification
+    <span class="label fill:orange margin-right:1">NEW</span>
+    <span class="font-size:body">Sample Notification</span>
   </div>
 
   <div class="notice/close">
@@ -24,8 +24,8 @@ Defined with the class `notice` initialized with javascript. The `notice/close` 
 ```html
 <div class="notice is-active">
   <div class="notice/content">
-    <span class="label fill:navy margin-right:1">NEW</span>
-    Sample Notification
+    <span class="label fill:blue margin-right:1">NEW</span>
+    <span class="font-size:body">Sample Notification</span>
   </div>
 
   <div class="notice/close">
@@ -48,8 +48,8 @@ You can change the background color using the `fill` component.
 
 <div class="notice fill:red margin-bottom:1 is-active">
   <div class="notice/content">
-    <span class="label fill:navy margin-right:1">NEW</span>
-    Sample Notification
+    <span class="label fill:blue margin-right:1">NEW</span>
+    <span class="font-size:body">Sample Notification</span>
   </div>
 
   <div class="notice/close">
@@ -59,8 +59,8 @@ You can change the background color using the `fill` component.
 
 <div class="notice fill:blue margin-bottom:1 is-active">
   <div class="notice/content">
-    <span class="label fill:navy margin-right:1">NEW</span>
-    Sample Notification
+    <span class="label fill:blue margin-right:1">NEW</span>
+    <span class="font-size:body">Sample Notification</span>
   </div>
 
   <div class="notice/close">
@@ -70,8 +70,8 @@ You can change the background color using the `fill` component.
 
 <div class="notice fill:orange margin-bottom:1 is-active">
   <div class="notice/content">
-    <span class="label fill:navy margin-right:1">NEW</span>
-    Sample Notification
+    <span class="label fill:blue margin-right:1">NEW</span>
+    <span class="font-size:body">Sample Notification</span>
   </div>
 
   <div class="notice/close">
@@ -127,8 +127,8 @@ You can apply differently shaped corners to buttons with the `border` component.
 
 <div class="notice border-radius:sharp is-active">
   <div class="notice/content">
-    <span class="label fill:navy margin-right:1">NEW</span>
-    Sample Notification
+    <span class="label fill:blue margin-right:1">NEW</span>
+    <span class="font-size:body">Sample Notification</span>
   </div>
 
   <div class="notice/close">
@@ -138,8 +138,8 @@ You can apply differently shaped corners to buttons with the `border` component.
 
 <div class="notice border-radius:round is-active">
   <div class="notice/content">
-    <span class="label fill:navy margin-right:1">NEW</span>
-    Sample Notification
+    <span class="label fill:blue margin-right:1">NEW</span>
+    <span class="font-size:body">Sample Notification</span>
   </div>
 
   <div class="notice/close">

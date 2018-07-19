@@ -220,7 +220,7 @@ FORM
     padding-bottom: 0 !important;
     font-size: var(--tiny) !important;
     font-weight: var(--regular) !important;
-    line-height: var(--u5) !important;
+    line-height: 1.75 !important;
 
     input {
       display: none;
@@ -242,20 +242,23 @@ FORM
       }
     }
     &-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
       top: 0;
       left: 0;
-      height: var(--u5);
       width: var(--u5);
-      padding: 4px;
+      height: var(--u5);
       border-radius: 100px;
       border: var(--border);
       background: white;
       &:after {
+        position: absolute;
         content: '';
         display: none;
-        width: .65rem;
-        height: .65rem;
+        width: .75rem;
+        height: .75rem;
         border-radius: 100px;
       }
     }
@@ -274,7 +277,7 @@ FORM
       top: .85rem;
       right: 1.25rem;
       display: block;
-      font-family: 'Font Awesome 5 Pro';
+      font-family: 'Font Awesome 5 Free';
       font-style: normal;
       font-size: 1.25rem;
       font-variant: normal;
@@ -303,7 +306,7 @@ label {
   font-size: var(--form-label-size);
   font-weight: var(--form-label-weight);
   color: var(--black);
-  line-height: 1;
+  line-height: 1.55;
   transition: var(--transition);
 }
 
@@ -377,7 +380,7 @@ textarea {
   width: 100%;
   max-width: 500px;
   min-height: var(--u15);
-  padding: var(--u1);
+  padding: var(--u4);
   background: white;
   border: var(--form-field-border);
   border-radius: var(--form-field-radius);

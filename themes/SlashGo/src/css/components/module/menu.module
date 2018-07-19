@@ -3,11 +3,12 @@ MENU
 ************************************************************/
 
 :root {
-  --menu-height: var(--u6);
+  --menu-height: var(--u10);
   --menu-border: var(--border);
   --menu-color: var(--grey-d2);
   --menu-mobile-radius: var(--radius);
-  --menu-mobile-shadow: 0px 5px 5px 0px rgba(0,60,200,0.1);;
+  --menu-mobile-shadow: 0px 5px 5px 0px rgba(0,60,200,0.1);
+  --menu-item-padding-x: var(--u4);
   --menu-item-hover-fill: var(--grey-l5);
   --menu-item-active-fill: var(--grey-l4);
 }
@@ -28,7 +29,7 @@ MENU
 
   &\/content {
     display: flex;
-    margin:0;
+    margin: 0;
     padding: 0;
     &:first-child {
       flex-grow: 1;
@@ -48,9 +49,9 @@ MENU
     align-items: center;
     margin: 0;
     padding: 0;
-    padding-left: var(--u2);
-    padding-right: var(--u2);
-    transition: all .2s ease;
+    padding-left: var(--menu-item-padding-x);
+    padding-right: var(--menu-item-padding-x);
+    transition: var(--transition);
     color: var(--menu-color);
     text-decoration: none;
     &:hover {

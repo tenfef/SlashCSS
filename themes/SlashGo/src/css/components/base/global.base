@@ -14,6 +14,7 @@ GLOBAL
 html {
 	width: 100%;
 	height: 100%;
+  font-size: 87.5%;
 	@each $key, $value in $html-sizes {
 		@media (min-width : $key) {
 			font-size: $value;

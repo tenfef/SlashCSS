@@ -28,7 +28,7 @@ $list-gutters: 5 !default;
     @while $list-gutters > 0 {
       &\:#{$list-gutters} {
         .list\/item {
-          margin-bottom: var(--u#{$list-gutters});
+          margin-bottom: $list-gutters * 1rem / 2;
           &:last-child {
             margin-bottom: 0;
           }
@@ -52,7 +52,7 @@ $list-gutters: 5 !default;
         @while $list-gutters > 0 {
           &\:#{$list-gutters} {
             .list\/item {
-              margin-right: var(--u#{$list-gutters});
+              margin-right: $list-gutters * 1rem / 2;
               &:last-child {
                 margin-right: 0;
               }
