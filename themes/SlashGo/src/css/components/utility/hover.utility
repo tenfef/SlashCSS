@@ -4,7 +4,7 @@ HOVER
 
 .hover {
 
-  cursor: pointer;
+  cursor: pointer !important;
   transition: var(--transition) !important;
 
   &\:underline {

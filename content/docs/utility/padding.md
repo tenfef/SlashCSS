@@ -9,39 +9,78 @@ description = "The padding component adds padding to any object or container."
 
 Defind with `u-padding`. There are 11 basic levels of padding based on standard grid rhythm that can be applied. Additionally, you can also add `-none` to remove padding.
 
+<div class="padding-top:0 fill:blue">
+</div>
+<div class="padding-top:1 fill:blue-l3">
+</div>
+<div class="padding-top:2 fill:blue">
+</div>
+<div class="padding-top:3 fill:blue-l3">
+</div>
+<div class="padding-top:4 fill:blue">
+</div>
+<div class="padding-top:5 fill:blue-l3">
+</div>
+<div class="padding-top:6 fill:blue">
+</div>
+<div class="padding-top:7 fill:blue-l3">
+</div>
+<div class="padding-top:8 fill:blue">
+</div>
+<div class="padding-top:9 fill:blue-l3">
+</div>
+<div class="padding-top:10 fill:blue">
+</div>
+<div class="padding-top:11 fill:blue-l3">
+</div>
+<div class="padding-top:12 fill:blue">
+</div>
+<div class="padding-top:13 fill:blue-l3">
+</div>
+<div class="padding-top:14 fill:blue">
+</div>
+<div class="padding-top:15 fill:blue-l3">
+</div>
+<div class="padding-top:16 fill:blue">
+</div>
+<div class="padding-top:17 fill:blue-l3">
+</div>
+<div class="padding-top:18 fill:blue">
+</div>
+
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-padding-0">
+<div class="padding:0">
   ...
 </div>
-<div class="u-padding-1">
+<div class="padding:1">
   ...
 </div>
-<div class="u-padding-2">
+<div class="padding:2">
   ...
 </div>
-<div class="u-padding-3">
+<div class="padding:3">
   ...
 </div>
-<div class="u-padding-4">
+<div class="padding:4">
   ...
 </div>
-<div class="u-padding-5">
+<div class="padding:5">
   ...
 </div>
-<div class="u-padding-6">
+<div class="padding:6">
   ...
 </div>
-<div class="u-padding-7">
+<div class="padding:7">
   ...
 </div>
-<div class="u-padding-8">
+<div class="padding:8">
   ...
 </div>
-<div class="u-padding-9">
+<div class="padding:9">
   ...
 </div>
-<div class="u-padding-10">
+<div class="padding:10">
   ...
 </div>
 ```
@@ -53,22 +92,22 @@ Margin can be applied to `top` `right` `bottom` `left`. It can also be applied t
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-padding-top-1">
+<div class="padding-top-1">
   ...
 </div>
-<div class="u-padding-right-2">
+<div class="padding-right-2">
   ...
 </div>
-<div class="u-padding-bottom-3">
+<div class="padding-bottom-3">
   ...
 </div>
-<div class="u-padding-left-4">
+<div class="padding-left-4">
   ...
 </div>
-<div class="u-padding-x-5">
+<div class="padding-x-5">
   ...
 </div>
-<div class="u-padding-y-6">
+<div class="padding-y-6">
   ...
 </div>
 ```
@@ -80,10 +119,10 @@ To apply responsive paddings add device specific extensions
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-padding-top-sm-1">
+<div class="padding-top-sm-1">
   ...
 </div>
-<div class="u-padding-right-md-5">
+<div class="padding-right-md-5">
   ...
 </div>
 ```
@@ -95,10 +134,10 @@ The padding component also supports viewport based paddings that range from 1 to
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="u-padding-top-10vh">
+<div class="padding-top-10vh">
   ...
 </div>
-<div class="u-padding-right-md-5vh">
+<div class="padding-right-md-5vh">
   ...
 </div>
 ```

@@ -3,7 +3,7 @@ CLEAR
 ************************************************************/
 
 .clear {
-  clear: both;
+  clear: both !important;
   &-fix {
     &:after {
       content: "";
