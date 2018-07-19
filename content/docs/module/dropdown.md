@@ -1,5 +1,5 @@
 +++
-title = "Dropdown DONE"
+title = "Dropdown"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined content."

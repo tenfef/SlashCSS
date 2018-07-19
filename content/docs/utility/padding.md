@@ -7,7 +7,7 @@ description = "The padding component adds padding to any object or container."
 
 ##### Basic Usage
 
-Defind with `padding`. There are 15 levels of padding which are based on the standard unit chart.
+Defind with `padding`. There are 16 levels of padding which are based on the standard unit chart.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
@@ -27,9 +27,6 @@ Defind with `padding`. There are 15 levels of padding which are based on the sta
 <div class="padding:13"></div>
 <div class="padding:14"></div>
 <div class="padding:15"></div>
-<div class="padding:16"></div>
-<div class="padding:17"></div>
-<div class="padding:18"></div>
 ```
 {{% /codeblock %}}
 

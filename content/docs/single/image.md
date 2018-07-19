@@ -1,13 +1,13 @@
 +++
-title = "Image"
+title = "Media"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
-description = "The image component formats images provides useful preset sizes."
+description = "The media component formats images provides useful preset sizes."
 +++
 
 ##### Basic Usage
 
-<div class="margin-bottom:2 max-width:20">
+<div class="margin-bottom:6 max-width:14">
   <img src="http://via.placeholder.com/500x500" class="media">
 </div>
 
@@ -22,15 +22,15 @@ description = "The image component formats images provides useful preset sizes."
 
 Various corner styles can be applied with the `border-radius` component property.
 
-<div class="margin-bottom:2 max-width:10">
+<div class="margin-bottom:6 max-width:10">
   <img src="http://via.placeholder.com/500x500" class="media">
 </div>
 
-<div class="margin-bottom:2 max-width:10">
+<div class="margin-bottom:6 max-width:10">
   <img src="http://via.placeholder.com/500x500" class="media border-radius">
 </div>
 
-<div class="margin-bottom:2 max-width:10">
+<div class="margin-bottom:6 max-width:10">
   <img src="http://via.placeholder.com/500x500" class="media border-radius:round">
 </div>
 
@@ -46,14 +46,14 @@ Various corner styles can be applied with the `border-radius` component property
 
 The `image` component by default inherits the display block property however you can override this to be any type with the `display` component.
 
-<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:2">
+<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:6">
 <img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 <img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:2">
+<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:6">
 <img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 <img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 ```
@@ -63,15 +63,10 @@ The `image` component by default inherits the display block property however you
 
 The `image-size` property provides useful preset sizes for things like thumbnails and profile pictures.
 
-<img src="http://via.placeholder.com/200x200" class="media media-size:2 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="media media-size:3 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="media media-size:4 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="media media-size:5 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="media media-size:6 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="media media-size:7 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="media media-size:8 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="media media-size:9 margin-bottom:1">
-<img src="http://via.placeholder.com/200x200" class="media media-size:10 margin-bottom:1">
+<img src="http://via.placeholder.com/200x200" class="media media-size:2 margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:3 margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:4 margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:5 margin-bottom:6">
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
@@ -79,11 +74,6 @@ The `image-size` property provides useful preset sizes for things like thumbnail
 <img src="http://via.placeholder.com/200x200" class="media media-size:3">
 <img src="http://via.placeholder.com/200x200" class="media media-size:4">
 <img src="http://via.placeholder.com/200x200" class="media media-size:5">
-<img src="http://via.placeholder.com/200x200" class="media media-size:6">
-<img src="http://via.placeholder.com/200x200" class="media media-size:7">
-<img src="http://via.placeholder.com/200x200" class="media media-size:8">
-<img src="http://via.placeholder.com/200x200" class="media media-size:9">
-<img src="http://via.placeholder.com/200x200" class="media media-size:10">
 ```
 {{% /codeblock %}}
 
@@ -93,7 +83,7 @@ You can override styling using the following local variables.
 
 {{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$image-levels: 11 !default;
+$media-levels: 5 !default;
 ```
 {{% /codeblock %}}
 
@@ -120,7 +110,21 @@ The following modifiers are available.
   </thead>
   <tr>
     <td data-label="Properties">
-      <code>image-size</code>
+      <code>media</code>
+    </td>
+    <td data-label="Attributes">
+
+    </td>
+    <td data-label="Responsive">
+      No
+    </td>
+    <td class="row:reverse">
+      Set default media properties
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>media-size</code>
     </td>
     <td data-label="Attributes">
       <code>:2</code> ... <code>:10</code>

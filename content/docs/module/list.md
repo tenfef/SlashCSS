@@ -1,5 +1,5 @@
 +++
-title = "List DONE"
+title = "List"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The list module is used to present any list of content horizontally or vertically."

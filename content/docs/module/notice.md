@@ -1,5 +1,5 @@
 +++
-title = "Notice DONE"
+title = "Notice"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The notice component is useful for visually displaying temporary content or information."

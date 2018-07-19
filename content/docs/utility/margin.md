@@ -7,7 +7,7 @@ description = "The margin component adds margin to any object or container."
 
 ##### Basic Usage
 
-Defind with `margin`. There are 15 levels of margin which are based on the standard unit chart.
+Defind with `margin`. There are 16 levels of margin which are based on the standard unit chart.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
@@ -27,9 +27,6 @@ Defind with `margin`. There are 15 levels of margin which are based on the stand
 <div class="margin:13"></div>
 <div class="margin:14"></div>
 <div class="margin:15"></div>
-<div class="margin:16"></div>
-<div class="margin:17"></div>
-<div class="margin:18"></div>
 ```
 {{% /codeblock %}}
 

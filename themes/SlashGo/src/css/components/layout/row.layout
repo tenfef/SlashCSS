@@ -17,6 +17,7 @@ $row-gutters: 5 !default;
 
 	&\:media {
 		display: inline-flex;
+		vertical-align: middle;
 		& > [class^=column] {
 			display: flex;
 			flex-grow: 0;

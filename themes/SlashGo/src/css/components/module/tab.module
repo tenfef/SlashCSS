@@ -5,7 +5,8 @@ TAB
 :root {
   --tab-bg: var(--white);
   --tab-radius: var(--radius);
-  --tab-item-padding: var(--u1) var(--u2);
+  --tab-item-padding: var(--u3) var(--u4);
+  --tab-content-padding: var(--u4);
 }
 
 .tab {
@@ -49,7 +50,7 @@ TAB
   }
 
   &\/content {
-    padding: var(--u2);
+    padding: var(--tab-content-padding);
     background: var(--tab-bg);
     box-shadow: inset 0px 0px 0px 1px var(--border-color);
     .tab\/item {

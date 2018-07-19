@@ -1,5 +1,5 @@
 +++
-title = "Menu DONE"
+title = "Menu"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The nav component provides you with a standard responsive navigation bar."

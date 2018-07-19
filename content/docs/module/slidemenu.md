@@ -1,5 +1,5 @@
 +++
-title = "Slidemenu DONE"
+title = "Slidemenu"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "Slide panel navigation for mobile."

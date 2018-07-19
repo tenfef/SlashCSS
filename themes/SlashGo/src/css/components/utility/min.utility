@@ -2,7 +2,7 @@
 MIN
 ************************************************************/
 
-$min-levels: 10 !default;
+$min-levels: 18 !default;
 
 .min {
 
@@ -20,11 +20,6 @@ $min-levels: 10 !default;
   &-height {
     &\:100\% {
       min-height: 100% !important;
-    }
-    @for $i from 1 through 10 {
-      &\:#{$i}0 {
-        min-height: $i * 10rem !important;
-      }
     }
     @while $min-levels > 0 {
       &\:#{$min-levels} {

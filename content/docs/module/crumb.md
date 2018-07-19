@@ -1,5 +1,5 @@
 +++
-title = "Crumb DONE"
+title = "Crumb"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The crumb component provides visual information of the current page location in context to the overall parent hierarchy."

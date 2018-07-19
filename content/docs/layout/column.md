@@ -1,5 +1,5 @@
 +++
-title = "Column DONE"
+title = "Column"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The basics of using the column component to vertically structure layout."

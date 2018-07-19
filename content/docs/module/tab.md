@@ -1,5 +1,5 @@
 +++
-title = "Tab DONE"
+title = "Tab"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "Tab is a javascript component that allows for hiding and showing of content using tabs to navigate."
@@ -9,7 +9,7 @@ description = "Tab is a javascript component that allows for hiding and showing 
 
 Defined with class `tab` and initialied with Javascript, Tab requires the header and content items to have atleast one `is-active` state.
 
-<div class="tab margin-bottom:2">
+<div class="tab margin-bottom:7">
   <div class="tab/header">
     <a href="#panel1" class="tab/item is-active">
       Tab 1

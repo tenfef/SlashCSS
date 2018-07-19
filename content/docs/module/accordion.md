@@ -1,5 +1,5 @@
 +++
-title = "Accordion DONE"
+title = "Accordion"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "Accordions are useful when you want to hide and show large content."

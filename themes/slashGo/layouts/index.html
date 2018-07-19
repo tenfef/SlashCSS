@@ -1,10 +1,8 @@
 {{ partial "head" . }}
-{{ partial "blocks/menus/menu-slide" . }}
+
 
 {{.Content}}
 <div class="js-header js-header:home">
-  {{ partial "blocks/notices/notice-main" . }}
-  {{ partial "blocks/header" . }}
 </div>
 
 <!-- Modal structure -->
@@ -317,8 +315,6 @@
 </section>
 
 
-{{ partial "blocks/cta" . }}
-{{ partial "blocks/footer" . }}
 
 <!-- Scripts -->
 <script src="{{ .Site.BaseURL }}assets/scripts/main.js"></script>

@@ -1,8 +1,8 @@
-/******************************
+/************************************************************
 WIDTH
-******************************/
+************************************************************/
 
-$widths: 10 !default;
+$widths: 18 !default;
 
 .width {
   &\:100\% {
@@ -14,12 +14,6 @@ $widths: 10 !default;
   @while $widths > 0 {
     &\:#{$widths} {
       width: var(--u#{$widths}) !important;
-    }
-    &\:#{$widths}0 {
-      width: var(--u#{$widths}) !important;
-    }
-    &\:#{$widths}0\% {
-      width: calc(#{$widths} * 10%) !important;
     }
     $widths: $widths - 1;
   }
@@ -35,12 +29,6 @@ $widths: 10 !default;
         @while $widths > 0 {
           &\:#{$widths} {
             width: var(--u#{$widths}) !important;
-          }
-          &\:#{$widths}0 {
-            width: var(--u#{$widths}) !important;
-          }
-          &\:#{$widths}0\% {
-            width: calc(#{$widths} * 10%) !important;
           }
           $widths: $widths - 1;
         }

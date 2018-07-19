@@ -1,5 +1,5 @@
 +++
-title = "Wrap DONE"
+title = "Wrap"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The wrap component is a standard center aligning content container with a set maximum width."

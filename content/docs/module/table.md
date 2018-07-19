@@ -1,5 +1,5 @@
 +++
-title = "Table DONE"
+title = "Table"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The table module is useful for displaying grid based data and content."

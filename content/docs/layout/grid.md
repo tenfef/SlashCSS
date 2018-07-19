@@ -1,5 +1,5 @@
 +++
-title = "Grid DONE"
+title = "Grid"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "The basics of using the grid component to structure layout."

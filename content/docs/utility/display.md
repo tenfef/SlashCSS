@@ -76,6 +76,6 @@ The following modifiers are available.
     </td>
   </tr>
 </table>
-<p class="margin-top:0 font-size:tiny color:orange">
+<p class="margin-top:2 font-size:tiny color:orange">
   &#42; These properties have a default values set when used without modifiers.
 </p>
