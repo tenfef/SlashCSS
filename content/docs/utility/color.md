@@ -9,21 +9,21 @@ description = "The color components applies colors to text elements."
 
 Defined with `color` all base colors are available.
 
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red">Red</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:pink">Pink</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:violet">Violet</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:purple">Purple</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:navy">Bavy</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:blue">Blue</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:teal">Teal</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:green">Green</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:lime">Lime</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:yellow">Yellow</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:orange">Orange</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:brown">Brown</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:grey">Grey</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:white fill:black display:inline-block">White</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:4 color:black">Black</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red">Red</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:pink">Pink</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:violet">Violet</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:purple">Purple</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:navy">Bavy</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:blue">Blue</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:teal">Teal</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:green">Green</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:lime">Lime</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:yellow">Yellow</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:orange">Orange</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:brown">Brown</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:grey">Grey</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:white fill:black display:inline-block">White</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:4 color:black">Black</h6>
 
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
@@ -50,17 +50,17 @@ Defined with `color` all base colors are available.
 
 Each base color has 5 light and 5 dark tones available. These can be applied with the color modifier plus `-l` or `-d` suffix. Tonal variants are not available for white and black.
 
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-l5">Red Light 5</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-l4">Red Light 4</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-l3">Red Light 3</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-l2">Red Light 2</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-l1">Red Light 1</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red">Red</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-d1">Red Dark 1</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-d2">Red Dark 2</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-d3">Red Dark 3</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:1 color:red-d4">Red Dark 4</h6>
-<h6 class="font-height:0 font-weight:medium margin:none margin-bottom:4 color:red-d5">Red Dark 5</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-l5">Red Light 5</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-l4">Red Light 4</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-l3">Red Light 3</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-l2">Red Light 2</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-l1">Red Light 1</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red">Red</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-d1">Red Dark 1</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-d2">Red Dark 2</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-d3">Red Dark 3</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:1 color:red-d4">Red Dark 4</h6>
+<h6 class="font-height:0 font-weight:medium margin:0 margin-bottom:4 color:red-d5">Red Dark 5</h6>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html

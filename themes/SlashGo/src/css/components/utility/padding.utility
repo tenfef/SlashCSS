@@ -41,6 +41,12 @@ $paddings: 15 !default;
       }
       $paddings: $paddings - 1;
     }
+    @while $paddings >= 5 {
+      &\:#{$paddings}vh {
+        padding-top: #{$paddings}vh !important;
+      }
+      $paddings: $paddings - 1;
+    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {
@@ -53,6 +59,12 @@ $paddings: 15 !default;
             }
             $paddings: $paddings - 1;
           }
+          @while $paddings >= 5 {
+            &\:#{$paddings}vh {
+              padding-top: #{$paddings}vh !important;
+            }
+            $paddings: $paddings - 1;
+          }
         }
       }
     }
@@ -62,6 +74,7 @@ $paddings: 15 !default;
     &\:auto {
       padding-right: auto !important;
     }
+
     @while $paddings >= 0 {
       &\:#{$paddings} {
         padding-right: var(--u#{$paddings}) !important;
@@ -96,7 +109,7 @@ $paddings: 15 !default;
       $paddings: $paddings - 1;
     }
     @while $paddings >= 5 {
-      &\:#{$paddings} {
+      &\:#{$paddings}vh {
         padding-bottom: #{$paddings}vh !important;
       }
       $paddings: $paddings - 1;
@@ -113,6 +126,12 @@ $paddings: 15 !default;
           @while $paddings >= 0 {
             &\:#{$paddings} {
               padding-bottom: var(--u#{$paddings}) !important;
+            }
+            $paddings: $paddings - 1;
+          }
+          @while $paddings >= 5 {
+            &\:#{$paddings}vh {
+              padding-bottom: #{$paddings}vh !important;
             }
             $paddings: $paddings - 1;
           }
@@ -192,7 +211,7 @@ $paddings: 15 !default;
       $paddings: $paddings - 1;
     }
     @while $paddings >= 5 {
-      &\:#{$paddings} {
+      &\:#{$paddings}vh {
         padding-top: #{$paddings}vh !important;
         padding-bottom: #{$paddings}vh !important;
       }

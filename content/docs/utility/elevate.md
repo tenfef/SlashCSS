@@ -19,7 +19,7 @@ The `elevate` component can be applied to any type of component.
 		</div>
 		<div class="column display:flex align-item:middle">
 			<div>
-				<p class="margin:none font-weight:medium color:black font-height:0">Jin Park</p>
+				<p class="margin:0 font-weight:medium color:black font-height:0">Jin Park</p>
 				<span class="font-size:tiny font-height:0">@zapcss</span>
 			</div>
 		</div>
@@ -40,7 +40,7 @@ The `elevate` component can be applied to any type of component.
 		</div>
 		<div class="column display:flex align-item:middle">
 			<div>
-				<p class="margin:none font-weight:medium color:black font-height:0">Jin Park</p>
+				<p class="margin:0 font-weight:medium color:black font-height:0">Jin Park</p>
 				<span class="font-size:tiny font-height:0">@zapcss</span>
 			</div>
 		</div>

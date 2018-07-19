@@ -30,7 +30,7 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
           </label>
         </div>
       </div>
-      <div class="card/footer padding:none">
+      <div class="card/footer padding:0">
         <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
           Sign in
         </a>
@@ -62,7 +62,7 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
         </label>
       </div>
     </div>
-    <div class="card/footer padding:none">
+    <div class="card/footer padding:0">
       <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
         Sign in
       </a>
@@ -97,7 +97,7 @@ Form items can be modified to enable sliding labels with `form/item-style:slide`
           </label>
         </div>
       </div>
-      <div class="card/footer padding:none">
+      <div class="card/footer padding:0">
         <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
           Sign in
         </a>
@@ -128,7 +128,7 @@ Form items can be modified to enable sliding labels with `form/item-style:slide`
         </label>
       </div>
     </div>
-    <div class="card/footer padding:none">
+    <div class="card/footer padding:0">
       <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
         Sign in
       </a>

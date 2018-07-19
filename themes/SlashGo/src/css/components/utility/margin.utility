@@ -95,12 +95,6 @@ $margins: 15 !default;
       }
       $margins: $margins - 1;
     }
-    @while $margins >= 5 {
-      &\:#{$margins} {
-        margin-bottom: #{$margins}vh !important;
-      }
-      $margins: $margins - 1;
-    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {

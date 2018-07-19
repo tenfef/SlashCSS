@@ -282,7 +282,7 @@ Use the `fill` component to apply different color your buttons.
 <button class="button elevate fill:black margin-bottom:2">Button</button>
 
 <button class="button fill:white elevate button-grow:5 border-radius:round color:grey-d1 margin-bottom:2">Button</button>
-<button class="button fill:blue-l1 elevate button-grow:5 border-radius:round margin-bottom:2">Button</button>
+<button class="button fill:blue elevate button-grow:5 border-radius:round margin-bottom:2">Button</button>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html

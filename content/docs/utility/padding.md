@@ -7,82 +7,29 @@ description = "The padding component adds padding to any object or container."
 
 ##### Basic Usage
 
-Defind with `u-padding`. There are 11 basic levels of padding based on standard grid rhythm that can be applied. Additionally, you can also add `-none` to remove padding.
-
-<div class="padding-top:0 fill:blue">
-</div>
-<div class="padding-top:1 fill:blue-l3">
-</div>
-<div class="padding-top:2 fill:blue">
-</div>
-<div class="padding-top:3 fill:blue-l3">
-</div>
-<div class="padding-top:4 fill:blue">
-</div>
-<div class="padding-top:5 fill:blue-l3">
-</div>
-<div class="padding-top:6 fill:blue">
-</div>
-<div class="padding-top:7 fill:blue-l3">
-</div>
-<div class="padding-top:8 fill:blue">
-</div>
-<div class="padding-top:9 fill:blue-l3">
-</div>
-<div class="padding-top:10 fill:blue">
-</div>
-<div class="padding-top:11 fill:blue-l3">
-</div>
-<div class="padding-top:12 fill:blue">
-</div>
-<div class="padding-top:13 fill:blue-l3">
-</div>
-<div class="padding-top:14 fill:blue">
-</div>
-<div class="padding-top:15 fill:blue-l3">
-</div>
-<div class="padding-top:16 fill:blue">
-</div>
-<div class="padding-top:17 fill:blue-l3">
-</div>
-<div class="padding-top:18 fill:blue">
-</div>
+Defind with `padding`. There are 15 levels of padding which are based on the standard unit chart.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="padding:0">
-  ...
-</div>
-<div class="padding:1">
-  ...
-</div>
-<div class="padding:2">
-  ...
-</div>
-<div class="padding:3">
-  ...
-</div>
-<div class="padding:4">
-  ...
-</div>
-<div class="padding:5">
-  ...
-</div>
-<div class="padding:6">
-  ...
-</div>
-<div class="padding:7">
-  ...
-</div>
-<div class="padding:8">
-  ...
-</div>
-<div class="padding:9">
-  ...
-</div>
-<div class="padding:10">
-  ...
-</div>
+<div class="padding:0"></div>
+<div class="padding:1"></div>
+<div class="padding:2"></div>
+<div class="padding:3"></div>
+<div class="padding:4"></div>
+<div class="padding:5"></div>
+<div class="padding:6"></div>
+<div class="padding:7"></div>
+<div class="padding:8"></div>
+<div class="padding:9"></div>
+<div class="padding:10"></div>
+<div class="padding:11"></div>
+<div class="padding:12"></div>
+<div class="padding:13"></div>
+<div class="padding:14"></div>
+<div class="padding:15"></div>
+<div class="padding:16"></div>
+<div class="padding:17"></div>
+<div class="padding:18"></div>
 ```
 {{% /codeblock %}}
 
@@ -92,37 +39,25 @@ Margin can be applied to `top` `right` `bottom` `left`. It can also be applied t
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="padding-top-1">
-  ...
-</div>
-<div class="padding-right-2">
-  ...
-</div>
-<div class="padding-bottom-3">
-  ...
-</div>
-<div class="padding-left-4">
-  ...
-</div>
-<div class="padding-x-5">
-  ...
-</div>
-<div class="padding-y-6">
-  ...
-</div>
+<div class="padding-top:0"></div>
+<div class="padding-right:1"></div>
+<div class="padding-bottom:2"></div>
+<div class="padding-left:3"></div>
+<div class="padding-x:4"></div>
+<div class="padding-y:5"></div>
 ```
 {{% /codeblock %}}
 
 ##### Responsive Padding
 
-To apply responsive paddings add device specific extensions
+To apply responsive paddings add responsive suffixes
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="padding-top-sm-1">
+<div class="padding@sm:2">
   ...
 </div>
-<div class="padding-right-md-5">
+<div class="padding-y@lg:5">
   ...
 </div>
 ```
@@ -130,15 +65,92 @@ To apply responsive paddings add device specific extensions
 
 ##### Viewport Padding
 
-The padding component also supports viewport based paddings that range from 1 to 20 vh/vw respectively.
+Unlike the margin component, the padding component also supports viewport height based paddings.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="padding-top-10vh">
+<div class="padding-top:10vh">
   ...
 </div>
-<div class="padding-right-md-5vh">
+<div class="padding-right@md:5vh">
   ...
 </div>
 ```
 {{% /codeblock %}}
+
+##### Local Variables
+
+You can override styling using the following local variables.
+
+{{% codeblock key="language" definition="css" margin="bottom" %}}
+```css
+$margins: 15 !default;
+```
+{{% /codeblock %}}
+
+##### Options
+
+The following modifiers are available.
+
+<table class="table width:100% table:pile table@sm:unpile">
+  <thead>
+    <tr>
+      <th>
+        Property
+      </th>
+      <th>
+        Modifier
+      </th>
+      <th>
+        Responsive
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tr>
+    <td data-label="Properties">
+      <code>padding</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:0</code> ... <code>:15</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set padding
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>padding-[direction]</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:0</code> ... <code>:15</code><br>
+      <code>:5vh</code> ... <code>:15vh</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set directional padding
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>padding-[x/y]</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:0</code> ... <code>:15</code><br>
+      <code>:5vh</code> ... <code>:15vh</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set horizontal or vertical padding
+    </td>
+  </tr>
+</table>

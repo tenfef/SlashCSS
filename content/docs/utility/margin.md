@@ -7,151 +7,114 @@ description = "The margin component adds margin to any object or container."
 
 ##### Basic Usage
 
-Defind with `u-margin`. There are 10 basic levels of margin based on standard grid rhythm that can be applied. Additionally, you can also add `-auto` to allow for auto margin layout or `-none` to remove margin.
-
-<div class="margin:auto">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:0">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:1">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:2">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:3">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:4">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:5">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:6">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:7">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:8">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:9">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
-<div class="margin:10">
-  <div class="padding:2 fill:red">
-  </div>
-</div>
+Defind with `margin`. There are 15 levels of margin which are based on the standard unit chart.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="margin:auto">
-  ...
-</div>
-<div class="margin:0">
-  ...
-</div>
-<div class="margin:1">
-  ...
-</div>
-<div class="margin:2">
-  ...
-</div>
-<div class="margin:3">
-  ...
-</div>
-<div class="margin:4">
-  ...
-</div>
-<div class="margin:5">
-  ...
-</div>
-<div class="margin:6">
-  ...
-</div>
-<div class="margin:7">
-  ...
-</div>
-<div class="margin:8">
-  ...
-</div>
-<div class="margin:9">
-  ...
-</div>
-<div class="margin:10">
+<div class="margin:0"></div>
+<div class="margin:1"></div>
+<div class="margin:2"></div>
+<div class="margin:3"></div>
+<div class="margin:4"></div>
+<div class="margin:5"></div>
+<div class="margin:6"></div>
+<div class="margin:7"></div>
+<div class="margin:8"></div>
+<div class="margin:9"></div>
+<div class="margin:10"></div>
+<div class="margin:11"></div>
+<div class="margin:12"></div>
+<div class="margin:13"></div>
+<div class="margin:14"></div>
+<div class="margin:15"></div>
+<div class="margin:16"></div>
+<div class="margin:17"></div>
+<div class="margin:18"></div>
+```
+{{% /codeblock %}}
+
+##### Directional Margin
+
+Margin can be applied to `top` `right` `bottom` `left`.
+
+{{% codeblock key="language" definition="html" margin="bottom" %}}
+```html
+<div class="margin-top:0"></div>
+<div class="margin-right:1"></div>
+<div class="margin-bottom:2"></div>
+<div class="margin-left:3"></div>
+```
+{{% /codeblock %}}
+
+##### Responsive Margin
+
+To apply responsive margins add responsive suffixes
+
+{{% codeblock key="language" definition="html" margin="bottom" %}}
+```html
+<div class="margin@sm:2">
   ...
 </div>
 ```
 {{% /codeblock %}}
 
-##### Directional Margins
+##### Local Variables
 
-Margin can be applied to `top` `right` `bottom` `left`. It can also be applied to only the horizontal and vertical axis.
+You can override styling using the following local variables.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<div class="margin-top-1">
-  ...
-</div>
-<div class="margin-right-2">
-  ...
-</div>
-<div class="margin-bottom:3">
-  ...
-</div>
-<div class="margin-left-4">
-  ...
-</div>
-<div class="margin:x-5">
-  ...
-</div>
-<div class="margin:y-6">
-  ...
-</div>
+{{% codeblock key="language" definition="css" margin="bottom" %}}
+```css
+$margins: 15 !default;
 ```
 {{% /codeblock %}}
 
-##### Responsive Margins
+##### Options
 
-To apply responsive margins add device specific extensions
+The following modifiers are available.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<div class="margin-top-sm-1">
-  ...
-</div>
-<div class="margin-right-md-5">
-  ...
-</div>
-```
-{{% /codeblock %}}
-
-##### Viewport Margins
-
-The margin component also supports viewport based margins that range from 1 to 20 vh/vw respectively.
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<div class="margin-top-10vh">
-  ...
-</div>
-<div class="margin-right-md-5vh">
-  ...
-</div>
-```
-{{% /codeblock %}}
+<table class="table width:100% table:pile table@sm:unpile">
+  <thead>
+    <tr>
+      <th>
+        Property
+      </th>
+      <th>
+        Modifier
+      </th>
+      <th>
+        Responsive
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tr>
+    <td data-label="Properties">
+      <code>margin</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:0</code> ... <code>:15</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set margin
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>margin-[direction]</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:0</code> ... <code>:15</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set directional margin
+    </td>
+  </tr>
+</table>

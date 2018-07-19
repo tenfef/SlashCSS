@@ -12,7 +12,7 @@ The card module contains header, content and footer child elements. You can also
 <div class="row row-gutter:2 margin-bottom:2 margin-top:4">
   <div class="column:12 column@sm:6">
     <div class="card elevate border:none margin-bottom:2">
-      <div class="card/header padding:none">
+      <div class="card/header padding:0">
         <img src="https://i.imgur.com/Ig4qpjc.jpg" class="media">
       </div>
       <div class="card/content border-bottom">
@@ -22,7 +22,7 @@ The card module contains header, content and footer child elements. You can also
           </div>
           <div class="column display:flex align-item:middle">
             <div>
-              <p class="margin:none font-weight:medium color:black font-height:0">Jin Park</p>
+              <p class="margin:0 font-weight:medium color:black font-height:0">Jin Park</p>
               <span class="font-size:tiny font-height:0">@zapcss</span>
             </div>
           </div>
@@ -31,7 +31,7 @@ The card module contains header, content and footer child elements. You can also
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@zapcss</a>. <a href="#">#css</a> <a href="#">#responsive</a>
         </p>
       </div>
-      <div class="card/footer padding:none">
+      <div class="card/footer padding:0">
         <a href="#" class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
           Send Message
         </a>
@@ -62,7 +62,7 @@ The card module contains header, content and footer child elements. You can also
   <div class="card/content">
     ...
   </div>
-  <div class="card/footer padding:none">
+  <div class="card/footer padding:0">
     <a href="#" class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
       Send Message
     </a>
