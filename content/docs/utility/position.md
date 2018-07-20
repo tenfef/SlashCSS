@@ -1,33 +1,48 @@
 +++
-title = "Overflow"
+title = "Position"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
-description = "The overflow component manipulates the overflow visibility of a given element."
+description = "The position component manipulates the positin property of a given element."
 +++
 
 ##### Basic Usage
 
-Defined with `overflow`, you can apply basic or horizontal and vertical or overflow visibility modifiers. Responsive suffixes are available.
+Defined with `position`. Responsive suffixes are available for this component.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<h3 class="overflow:visible">
+<h3 class="position">
 	...
 </h3>
-<h3 class="overflow:hidden">
+<h3 class="position:absolute">
 	...
 </h3>
-<h3 class="overflow-x:visible">
+<h3 class="position:fixed">
+	...
+</h3>
+<h3 class="position:relative">
 ...
 </h3>
-<h3 class="overflow-y:visible">
-...
+```
+{{% /codeblock %}}
+
+##### Postioning Element
+
+You can position elements to the edge inside containers with the positional suffixes.
+
+{{% codeblock key="language" definition="html" margin="bottom" %}}
+```html
+<h3 class="position-top">
+	...
 </h3>
-<h3 class="overflow-x@md:visible">
-...
+<h3 class="position-right">
+	...
 </h3>
-<h3 class="overflow-y@lg:hidden">
-...
+<h3 class="position-bottom">
+	...
+</h3>
+<h3 class="position-left">
+	...
 </h3>
 ```
 {{% /codeblock %}}
@@ -55,30 +70,33 @@ The following modifiers are available.
   </thead>
   <tr>
     <td data-label="Properties">
-      <code>overflow</code>
+      <code>position</code><span class="color:orange">&#42;</span>
     </td>
     <td data-label="Attributes">
-      <code>:visible</code> <code>:hidden</code>
+      <code>:absolute</code> <code>:fixed</code> <code>:relative</code>
     </td>
     <td data-label="Responsive">
       Yes
     </td>
     <td class="row:reverse">
-      Set overflow visibility
+      Set position property
     </td>
   </tr>
 	<tr>
     <td data-label="Properties">
-      <code>overflow-[x or y]</code>
+      <code>position-[direction]</code>
     </td>
     <td data-label="Attributes">
-      <code>:visible</code> <code>:hidden</code>
+
     </td>
     <td data-label="Responsive">
       Yes
     </td>
     <td class="row:reverse">
-      Set overflow visibility of horizontal and vertical
+      Set edge position
     </td>
   </tr>
 </table>
+<p class="margin-top:2 font-size:tiny color:orange">
+  &#42; These properties have a default values set when used without modifiers.
+</p>

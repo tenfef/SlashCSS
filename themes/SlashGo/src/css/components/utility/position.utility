@@ -3,10 +3,7 @@ POSITION
 ************************************************************/
 
 .position {
-
-  &\:static {
-    position: static !important;
-  }
+  position: static !important;
   &\:absolute {
     position: absolute !important;
   }
@@ -31,9 +28,7 @@ POSITION
   @each $key, $value in $screens {
     &-#{$key} {
       @media (min-width : #{$value}) {
-        &\:static {
-          position: static !important;
-        }
+        position: static !important;
         &\:absolute {
           position: absolute !important;
         }
