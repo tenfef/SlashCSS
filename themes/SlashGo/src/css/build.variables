@@ -59,8 +59,8 @@ $font-sizes: (
   h5: 1.25rem,
   h6: 1.125rem,
   body: 16px,
-  tiny: 0.8125rem,
-  micro: 0.75rem
+  tiny: 14px,
+  micro: 13px
 ) !default;
 
 /******************************

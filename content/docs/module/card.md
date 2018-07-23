@@ -17,7 +17,7 @@ The card module contains header, content and footer child elements. You can also
       </div>
       <div class="card/content border-bottom">
         <div class="row:media align-item:middle margin-bottom:6">
-          <div class="column margin-right:2">
+          <div class="column margin-right:3">
             <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:2 fill:primary">
           </div>
           <div class="column">
@@ -32,7 +32,7 @@ The card module contains header, content and footer child elements. You can also
         </p>
       </div>
       <div class="card/footer padding:0">
-        <a href="#" class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
+        <a href="#" class="button button-size:4 button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
           Send Message
         </a>
       </div>
@@ -41,13 +41,11 @@ The card module contains header, content and footer child elements. You can also
   <div class="column:12 column@sm:6">
     <div class="card border-style:radius margin-bottom:6">
       <div class="card/content">
-        <h6 class="font font-weight:medium margin-bottom:6">Step 1 of 2</h6>
+        <h6 class="font font-weight:bold margin-bottom:6">Step 1 of 2</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@zapcss</a>. <a href="#">#css</a> <a href="#">#responsive</a></p>
-        <div>
-        <a href="#" class="button button-size:2 button-grow:1 fill:blue elevate font-weight:medium">
+        <a href="#" class="button button-size:3 button-grow:1 fill:blue elevate font-weight:medium">
           Get Started
         </a>
-        </div>
       </div>
     </div>
   </div>
