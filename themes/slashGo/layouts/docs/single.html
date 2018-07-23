@@ -1,81 +1,18 @@
 {{ partial "head" . }}
 
-<main class="grid grid:docs">
-	<aside class="grid/aside">
-		<header class="grid/header grid/header:logo">
-			<div class="grid/content">
-				<h5 class="font color:white">SLASH<span class="font-weight:light">CSS</span></h5>
+<section class="wrap markup">
+	<div class="row align-content:center padding-y:15vh">
+		<div class="column:12 column@md:8 column@lg:7">
+			<h1 class="font-weight:bold margin:0 margin-bottom:6 color:orange">{{ .Title }}</h1>
+			<h2 class="font-size:h4 font-weight:regular margin:0">{{ .Description }}</h2>
+			<div class="padding-y:10">
+				<span class="line fill:grey-l3"></span>
 			</div>
-		</header>
-		<nav class="grid/nav">
-			<div class="grid/content">
-				<ul class="list list-gutter:0 font-size:tiny margin-bottom:4">
-					{{ range .Site.Menus.layout }}
-						<li class="list/item">
-							<a class="color:white opacity:5 hover-opacity:10" href="/docs/{{ .URL }}" title="{{ .Name }}">
-								{{ .Name }}
-							</a>
-						</li>
-			    {{ end }}
-				</ul>
-
-				<ul class="list list-gutter:0 font-size:tiny margin-bottom:4">
-					{{ range .Site.Menus.module }}
-						<li class="list/item">
-							<a class="color:white opacity:5 hover-opacity:10" href="/docs/{{ .URL }}" title="{{ .Name }}">
-								{{ .Name }}
-							</a>
-						</li>
-			    {{ end }}
-				</ul>
-
-				<ul class="list list-gutter:0 font-size:tiny margin-bottom:4">
-					{{ range .Site.Menus.single }}
-						<li class="list/item">
-							<a class="color:white opacity:5 hover-opacity:10" href="/docs/{{ .URL }}" title="{{ .Name }}">
-								{{ .Name }}
-							</a>
-						</li>
-			    {{ end }}
-				</ul>
-
-				<ul class="list list-gutter:0 font-size:tiny margin-bottom:4">
-					{{ range .Site.Menus.utility }}
-						<li class="list/item">
-							<a class="color:white opacity:5 hover-opacity:10" href="/docs/{{ .URL }}" title="{{ .Name }}">
-								{{ .Name }}
-							</a>
-						</li>
-			    {{ end }}
-				</ul>
-			</div>
-
-		</nav>
-
-	</aside>
-	<section class="grid/main">
-
-		<nav class="grid/search">
-			<form class="form form:docs-search">
-				<input type="text" class="form/input:fluid">
-			</form>
-		</nav>
-
-		<header class="fill:background padding:8 padding-y:5vh">
-			<h1 class="font font-weight:light font-size:h2 margin-bottom:1 color:primary">
-				{{ .Title }}
-			</h1>
-			<h2 class="font font-weight:regular font-size:h6 margin-bottom:2">
-				{{ .Description }}
-			</h2>
-		</header>
-
-		<article class="grid/article markup fill:white">
-			<div class="column:7">
+			<div>
 				{{ .Content }}
 			</div>
-		</article>
-	</section>
-</main>
+		</div>
+	</div>
+</section>
 
 {{ partial "foot" . }}

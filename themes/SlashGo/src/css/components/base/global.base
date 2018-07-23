@@ -5,8 +5,8 @@ GLOBAL
 :root {
   --primary-color: var(--navy-l1);
 	--secondary-color: var(--orange);
-	--background-color: var(--grey-l5);
-	--default-color: var(--grey-d2);
+	--background-color: var(--white);
+	--default-color: var(--grey-d4);
   --border-color: var(--grey-l4);
   --label-radius: 3px;
 }

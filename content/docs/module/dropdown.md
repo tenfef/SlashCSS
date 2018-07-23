@@ -228,7 +228,7 @@ You can override styling using the following local variables.
 
 The following modifiers are available.
 
-<table class="table width:100% table:pile">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>
@@ -278,7 +278,7 @@ The following modifiers are available.
 
 ##### JS Settings
 
-<table class="table width:100% ">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>

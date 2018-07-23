@@ -147,7 +147,7 @@ TABLE
       }
       &\:unpile {
         @media (min-width : #{$value}) {
-          background-color: transparent;
+          background-color: var(--white);
         	border: var(--table-border);
           border-radius: var(--radius);
 

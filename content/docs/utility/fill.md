@@ -9,7 +9,7 @@ description = "The fill component manipulates the background property of a given
 
 Defined with `fill`. All standard and tonal color are available. Each base color has 5 levels of light and dark tonal colors e.g. `fill:red-l5`, `fill:red-l4` etc. Tonal variants are not available for white and black.
 
-<div class="row row-gutter:2">
+<div class="row row-gutter:2 margin-top:10">
   <section class="column:3 margin-bottom:7">
     <div class="padding:3 fill:red-l5">
 
