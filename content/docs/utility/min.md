@@ -5,7 +5,7 @@ draft = false
 description = "The min component provides min width or min height properties."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defind with `min-width` and `min-height`. There are 18 levels of min-height which are based on the standard unit chart.
 
@@ -51,7 +51,7 @@ Defind with `min-width` and `min-height`. There are 18 levels of min-height whic
 ```
 {{% /codeblock %}}
 
-##### Fluid Modifiers
+### Fluid Modifiers
 
 Widths and heights can be fluid.
 
@@ -62,7 +62,7 @@ Widths and heights can be fluid.
 ```
 {{% /codeblock %}}
 
-##### Responsive Properties
+### Responsive Properties
 
 To apply responsive min-heights add responsive suffixes
 
@@ -73,7 +73,7 @@ To apply responsive min-heights add responsive suffixes
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -83,7 +83,7 @@ $min-levels: 18 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

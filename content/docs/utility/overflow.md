@@ -5,7 +5,7 @@ draft = false
 description = "The overflow component manipulates the overflow visibility of a given element."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `overflow`, you can apply basic or horizontal and vertical or overflow visibility modifiers. Responsive suffixes are available.
 
@@ -32,7 +32,7 @@ Defined with `overflow`, you can apply basic or horizontal and vertical or overf
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

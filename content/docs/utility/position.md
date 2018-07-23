@@ -5,7 +5,7 @@ draft = false
 description = "The position component manipulates the positin property of a given element."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `position`. Responsive suffixes are available for this component.
 
@@ -26,7 +26,7 @@ Defined with `position`. Responsive suffixes are available for this component.
 ```
 {{% /codeblock %}}
 
-##### Postioning Element
+### Postioning Element
 
 You can position elements to the edge inside containers with the positional suffixes.
 
@@ -47,7 +47,7 @@ You can position elements to the edge inside containers with the positional suff
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

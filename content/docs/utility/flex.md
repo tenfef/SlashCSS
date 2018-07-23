@@ -5,7 +5,7 @@ draft = false
 description = "The flex component provide flexbox properties"
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `flex` can accept `:1` or `:none` modifiers.
 
@@ -22,7 +22,7 @@ Defined with `flex` can accept `:1` or `:none` modifiers.
 
 
 
-##### Flex Direction
+### Flex Direction
 
 Defined with `flex-direction` can accept `:row`, `:column` or `reverse`. Responsive suffixes are also available.
 
@@ -40,7 +40,7 @@ Defined with `flex-direction` can accept `:row`, `:column` or `reverse`. Respons
 ```
 {{% /codeblock %}}
 
-##### Flex Wrap
+### Flex Wrap
 
 You can define the `flex-wrap` to enable or disable flexible content wrapping.
 
@@ -56,7 +56,7 @@ You can define the `flex-wrap` to enable or disable flexible content wrapping.
 ```
 {{% /codeblock %}}
 
-##### Flex Order
+### Flex Order
 
 You can define the `flex-order` to reorder your flex columns. Responsive suffixes are also available.
 
@@ -72,7 +72,7 @@ You can define the `flex-order` to reorder your flex columns. Responsive suffixe
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

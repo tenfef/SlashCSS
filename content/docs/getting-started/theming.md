@@ -5,7 +5,7 @@ draft = false
 description = "Extend existing components or create new ones to suit your need."
 +++
 
-##### Customization
+### Customization
 
 ZapCSS is designed to fit naturally into any project environment. There are many ways of overriding and theming your project, the following are various ways you can extend, customize or override variables to suit your needs.
 

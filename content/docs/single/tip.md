@@ -5,7 +5,7 @@ draft = false
 description = "The tip component adds tooltip functionality to any given element using pseudo elements."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The tip component is defined by adding a data attribute `tip` with content.
 
@@ -21,7 +21,7 @@ The tip component is defined by adding a data attribute `tip` with content.
 ```
 {{% /codeblock %}}
 
-##### Tooltip Positioning
+### Tooltip Positioning
 
 Tooltips can be positioned by defining its position with the data attribute `tip-position`.
 
@@ -63,7 +63,7 @@ Tooltips can be positioned by defining its position with the data attribute `tip
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -75,7 +75,7 @@ You can override styling using the following local variables.
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

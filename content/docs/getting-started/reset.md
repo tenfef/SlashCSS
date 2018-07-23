@@ -5,7 +5,7 @@ draft = false
 description = "ZapCSS uses Eric Meyer's method to apply global reset to reduce browser inconsistencies."
 +++
 
-##### Eric Meyer's Reset
+### Eric Meyer's Reset
 
 The goal of a reset stylesheet is to reduce browser inconsistencies for things such as default line heights, margins, box sizing and font sizes etc. Eric Meyer's reset method is built into ZapCSS For more detail please refer to <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer's CSS reset</a>.
 

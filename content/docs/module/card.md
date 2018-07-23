@@ -2,27 +2,27 @@
 title = "Card"
 date = "2018-04-11T09:16:45+12:00"
 draft = false
-description = "The card component is a simple card based container that holds various types of information."
+description = "The card component is a simple card based container that holds various types of information. You can combine various style utilities to change its appearance."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The card module contains header, content and footer child elements. You can also apply `elevate` component to modify the look.
 
-<div class="row row-gutter:2 margin-bottom:6 margin-top:4">
+<div class="row row-gutter:2 margin-bottom:4 margin-top:10">
   <div class="column:12 column@sm:6">
     <div class="card elevate border:none margin-bottom:6">
       <div class="card/header padding:0">
         <img src="https://i.imgur.com/Ig4qpjc.jpg" class="media">
       </div>
       <div class="card/content border-bottom">
-        <div class="row:media margin-bottom:6">
+        <div class="row:media align-item:middle margin-bottom:6">
           <div class="column margin-right:2">
             <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:2 fill:primary">
           </div>
-          <div class="column display:flex align-item:middle">
+          <div class="column">
             <div>
-              <p class="margin:0 font-weight:medium color:black font-height:0">Jin Park</p>
+              <h6 class="margin:0 font-weight:bold color:black font-height:0">Jin Park</h6>
               <span class="font-size:tiny font-height:0">@zapcss</span>
             </div>
           </div>
@@ -77,7 +77,7 @@ The card module contains header, content and footer child elements. You can also
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 

@@ -5,7 +5,7 @@ draft = false
 description = "The font component provides useful ways of styling text."
 +++
 
-##### Font Sizes
+### Font Sizes
 
 The `font-size` property has 9 sizes.
 
@@ -33,7 +33,7 @@ The `font-size` property has 9 sizes.
 ```
 {{% /codeblock %}}
 
-##### Weights
+### Weights
 
 For different weights use standard weight modifiers.
 
@@ -53,7 +53,7 @@ For different weights use standard weight modifiers.
 ```
 {{% /codeblock %}}
 
-##### Line Height
+### Line Height
 
 You can apply unitless line height with the `font-height` property.
 
@@ -75,7 +75,7 @@ You can apply unitless line height with the `font-height` property.
 ```
 {{% /codeblock %}}
 
-##### Font Transform
+### Font Transform
 
 You can transform capitalization of your text with the `font-transform` property.
 
@@ -88,7 +88,7 @@ You can transform capitalization of your text with the `font-transform` property
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -98,7 +98,7 @@ $font-heights: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

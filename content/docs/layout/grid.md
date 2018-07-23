@@ -5,7 +5,7 @@ draft = false
 description = "The basics of using the grid component to structure layout."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Sometimes your grid layout might quite fit in a row or column based structure. The `grid` component provides a way to build evenly distributed content in both directions.
 
@@ -68,7 +68,7 @@ Sometimes your grid layout might quite fit in a row or column based structure. T
 ```
 {{% /codeblock %}}
 
-##### Grid Gutters
+### Grid Gutters
 
 You can apply gutter to your grid layout with the `grid-gutter` property. Standard media query suffixes can be applied. You can also assign row or column based gutters seperately with the `row` `column` suffixes.
 
@@ -130,7 +130,7 @@ You can apply gutter to your grid layout with the `grid-gutter` property. Standa
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -141,7 +141,7 @@ $grid-gutters: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

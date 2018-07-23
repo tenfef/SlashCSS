@@ -5,7 +5,7 @@ draft = false
 description = "The padding component adds padding to any object or container."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defind with `padding`. There are 16 levels of padding which are based on the standard unit chart.
 
@@ -30,7 +30,7 @@ Defind with `padding`. There are 16 levels of padding which are based on the sta
 ```
 {{% /codeblock %}}
 
-##### Directional Padding
+### Directional Padding
 
 Margin can be applied to `top` `right` `bottom` `left`. It can also be applied to only the horizontal and vertical axis.
 
@@ -45,7 +45,7 @@ Margin can be applied to `top` `right` `bottom` `left`. It can also be applied t
 ```
 {{% /codeblock %}}
 
-##### Responsive Padding
+### Responsive Padding
 
 To apply responsive paddings add responsive suffixes
 
@@ -60,7 +60,7 @@ To apply responsive paddings add responsive suffixes
 ```
 {{% /codeblock %}}
 
-##### Viewport Padding
+### Viewport Padding
 
 Unlike the margin component, the padding component also supports viewport height based paddings.
 
@@ -75,7 +75,7 @@ Unlike the margin component, the padding component also supports viewport height
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -85,7 +85,7 @@ $margins: 15 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

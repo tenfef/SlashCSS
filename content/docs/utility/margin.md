@@ -5,7 +5,7 @@ draft = false
 description = "The margin component adds margin to any object or container."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defind with `margin`. There are 16 levels of margin which are based on the standard unit chart.
 
@@ -30,7 +30,7 @@ Defind with `margin`. There are 16 levels of margin which are based on the stand
 ```
 {{% /codeblock %}}
 
-##### Directional Margin
+### Directional Margin
 
 Margin can be applied to `top` `right` `bottom` `left`.
 
@@ -43,7 +43,7 @@ Margin can be applied to `top` `right` `bottom` `left`.
 ```
 {{% /codeblock %}}
 
-##### Responsive Margin
+### Responsive Margin
 
 To apply responsive margins add responsive suffixes
 
@@ -55,7 +55,7 @@ To apply responsive margins add responsive suffixes
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -65,7 +65,7 @@ $margins: 15 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

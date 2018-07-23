@@ -5,7 +5,7 @@ draft = false
 description = "Slide panel navigation for mobile."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `slidemenu` and initialized with javascript. Slidemenu is a fixed element and must belong outside of all containers.
 
@@ -30,7 +30,7 @@ Defined with `slidemenu` and initialized with javascript. Slidemenu is a fixed e
   {{% /codeblock %}}
 {{% /codeblock %}}
 
-##### Slide Direction
+### Slide Direction
 
 You can change the direction of the slide with the `slide-direction` property.
 
@@ -47,7 +47,7 @@ You can change the direction of the slide with the `slide-direction` property.
   ```
 {{% /codeblock %}}
 
-##### JS Settings
+### JS Settings
 
 <table class="table width:100% ">
   <thead>

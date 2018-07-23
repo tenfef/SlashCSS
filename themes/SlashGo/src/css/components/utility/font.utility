@@ -55,7 +55,7 @@ $font-heights: 5 !default;
   ******************************/
 
   &-height {
-		@while $font-heights > 0 {
+		@while $font-heights >= 0 {
       &\:#{$font-heights} {
         line-height: $font-heights / 5 + 1 !important;
       }
@@ -64,7 +64,7 @@ $font-heights: 5 !default;
     @each $screen, $size in $screens {
       &-#{$screen} {
         @media (min-width : #{$size}) {
-          @while $font-heights > 0 {
+          @while $font-heights >= 0 {
             &\:#{$font-heights} {
               line-height: $font-heights / 5 + 1 !important;
             }

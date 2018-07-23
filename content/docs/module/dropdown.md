@@ -5,7 +5,7 @@ draft = false
 description = "A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined content."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The dropdown component is defined with the `dropdown` class and is initialized with javascript. You can enable hover toggle with the `:hover` modifier.
 
@@ -64,7 +64,7 @@ var dropdown = new Dropdown();
 
 {{% /codeblock %}}
 
-##### Dropdown Position
+### Dropdown Position
 
 By default the dropdown menu is aligned to the bottom left of its parent container. To override position and alignment assign the following modifiers:
 
@@ -204,7 +204,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -224,7 +224,7 @@ You can override styling using the following local variables.
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 
@@ -276,7 +276,7 @@ The following modifiers are available.
   </tr>
 </table>
 
-##### JS Settings
+### JS Settings
 
 <table class="table width:100% table:pile table@sm:unpile">
   <thead>

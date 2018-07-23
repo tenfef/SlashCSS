@@ -6,13 +6,13 @@ description = "Indepth guide into how component names are used and defined."
 +++
 
 
-##### Naming Rules
+### Naming Rules
 
 All component names are hyphen based and are namespaced with the first letter of the category it belongs in, e.g. `l-component-name`, `m-product-list`, `s-button`. This helps you to easily identify it's position in the specificity tree.
 
 ensures every CSS is carefully accounted for by prefixing each class with the letter of class category it belongs under, if its a grid we write `.grid` for "Layout Grid", and if its a button then `.s-button` for "Single Button".
 
-##### Defining Child Elements
+### Defining Child Elements
 
 ZapCSS borrows the method from BEM methodology for defining child elements. Child elements are prefixed with the namespace and component name followed by double underscore and element suffix.
 
@@ -38,7 +38,7 @@ ZapCSS borrows the method from BEM methodology for defining child elements. Chil
 ```
 {{% /codeblock %}}
 
-##### Taxonomy of Common Elements
+### Taxonomy of Common Elements
 
 For consistency and simplicity ZapCSS introduces a handful of element names that are commonly used to define child elements. For general containers, there are three common element name to define child group, `__header` `__content` `__footer`. Multiple child elements that look and behave the same way are usually with the `__item` child element.
 
@@ -75,7 +75,7 @@ For consistency and simplicity ZapCSS introduces a handful of element names that
 ```
 {{% /codeblock %}}
 
-##### Defining Modifiers
+### Defining Modifiers
 
 Unlike child elements, all modifiers begin with a hyphen and do not require any prefixes.
 
@@ -101,7 +101,7 @@ Unlike child elements, all modifiers begin with a hyphen and do not require any 
 ```
 {{% /codeblock %}}
 
-##### States & Javascript
+### States & Javascript
 
 All state based class names are prefixed with `is` and all javascript component hooks are prefixed with `js`.
 
@@ -118,7 +118,7 @@ All state based class names are prefixed with `is` and all javascript component 
 ```
 {{% /codeblock %}}
 
-##### General Rules
+### General Rules
 
 You can nest components within components regardless of its namespace however avoid mixing component classes on a single HTML element. This encourages your component markup to be modular and helps to avoid conflicts. The only exception to this rule are utilitiy classes.
 

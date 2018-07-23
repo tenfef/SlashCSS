@@ -5,7 +5,7 @@ draft = false
 description = "The wrap component is a standard center aligning content container with a set maximum width."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The wrap layout definitions has float clearing properties built in.
 
@@ -17,7 +17,7 @@ The wrap layout definitions has float clearing properties built in.
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -31,7 +31,7 @@ $max-width: 1600px !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

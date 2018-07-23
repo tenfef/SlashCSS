@@ -5,7 +5,7 @@ draft = false
 description = "Tab is a javascript component that allows for hiding and showing of content using tabs to navigate."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with class `tab` and initialied with Javascript, Tab requires the header and content items to have atleast one `is-active` state.
 
@@ -79,7 +79,7 @@ Defined with class `tab` and initialied with Javascript, Tab requires the header
   {{% /codeblock %}}
 {{% /codeblock %}}
 
-##### Tab Position
+### Tab Position
 
 You can change the position of the header tabs with the `tab-position` property.
 
@@ -99,7 +99,7 @@ You can change the position of the header tabs with the `tab-position` property.
 ```
 {{% /codeblock %}}
 
-##### Tab Reset
+### Tab Reset
 
 If you need to remove default styling and require the tab for its functional aspect only, apply the `:reset` modifier.
 
@@ -111,7 +111,7 @@ If you need to remove default styling and require the tab for its functional asp
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 
@@ -163,7 +163,7 @@ The following modifiers are available.
 </table>
 
 
-##### JS Settings
+### JS Settings
 
 <table class="table width:100% table:pile table@sm:unpile">
   <thead>

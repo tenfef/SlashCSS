@@ -5,7 +5,7 @@ draft = false
 description = "The label component are small tag based components useful for highlighting taxonomic data."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `label`. Labels can also be nested inside `labels`.
 
@@ -17,7 +17,7 @@ Defined with `label`. Labels can also be nested inside `labels`.
 ```
 {{% /codeblock %}}
 
-##### Label Groups
+### Label Groups
 
 Labels can be joined to form a multi-label pill with the `labels` component.
 
@@ -35,7 +35,7 @@ Labels can be joined to form a multi-label pill with the `labels` component.
 ```
 {{% /codeblock %}}
 
-##### Colorful Labels
+### Colorful Labels
 
 You can change the background color of your labels with the `fill` component.
 
@@ -75,7 +75,7 @@ You can change the background color of your labels with the `fill` component.
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 

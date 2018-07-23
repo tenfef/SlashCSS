@@ -5,7 +5,7 @@ draft = false
 description = "The hover component provides easy way to apply hover states to an object or container."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defind with `hover`. The default hover class provides pointer cursor and transition to the applied element
 
@@ -21,7 +21,7 @@ Defind with `hover`. The default hover class provides pointer cursor and transit
 ```
 {{% /codeblock %}}
 
-##### Hover Fill
+### Hover Fill
 
 Apply hover fills with `hover-fill` property. All base and tonal colors are available.
 
@@ -37,7 +37,7 @@ Apply hover fills with `hover-fill` property. All base and tonal colors are avai
 ```
 {{% /codeblock %}}
 
-##### Hover Color
+### Hover Color
 
 Apply hover colors with `hover-color` property. All base and tonal colors are available.
 
@@ -53,7 +53,7 @@ Apply hover colors with `hover-color` property. All base and tonal colors are av
 ```
 {{% /codeblock %}}
 
-##### Hover Opacity
+### Hover Opacity
 
 Apply hover opacities with `hover-opacity` property.
 
@@ -69,7 +69,7 @@ Apply hover opacities with `hover-opacity` property.
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

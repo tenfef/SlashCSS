@@ -29,7 +29,7 @@ buttonTwo:
   link: "https://github.com/atjinsu/zap-css"
 ---
 
-##### Fergus Font Family
+### Fergus Font Family
 
 Theinhardt, designed by François Rappo is the official Fergus brand typeface. It is named after Ferdinand Theinhardt, a punchcutter and type designer whose visionary approach significantly shaped modern typography. Theinhardt offers a fluent design in a wide range of weights.
 
@@ -44,7 +44,7 @@ Theinhardt, designed by François Rappo is the official Fergus brand typeface. I
   </h3>
 </div>
 
-##### Message Accents
+### Message Accents
 
 It is recommended to apply accents to using various primary accent colors.
 
@@ -60,7 +60,7 @@ It is recommended to apply accents to using various primary accent colors.
   </h1>
 </div>
 
-##### Softbreak Rules
+### Softbreak Rules
 
 In order to achieve a well balanced content block. Apply the following triangle rules to determine where to insert soft returns.
 

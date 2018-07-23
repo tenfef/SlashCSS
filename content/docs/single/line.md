@@ -5,7 +5,7 @@ draft = false
 description = "The line component is similar to the hr element and is used as content dividers."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The Single line `line` creates a soft horizontal rules that divide sections.
 
@@ -18,7 +18,7 @@ The Single line `line` creates a soft horizontal rules that divide sections.
 {{% /codeblock %}}
 
 
-##### Line Colors
+### Line Colors
 
 You can change the color of the line with the `fill` component
 
@@ -58,7 +58,7 @@ You can change the color of the line with the `fill` component
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 

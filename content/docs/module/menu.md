@@ -5,7 +5,7 @@ draft = false
 description = "The nav component provides you with a standard responsive navigation bar."
 +++
 
-##### Basic Navigation
+### Basic Navigation
 
 The `menu` component is built using flex and is useful for building menu bars.
 
@@ -59,7 +59,7 @@ The `menu` component is built using flex and is useful for building menu bars.
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 

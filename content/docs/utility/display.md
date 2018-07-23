@@ -5,7 +5,7 @@ draft = false
 description = "The display component controls the display property of your element."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with the `display` property, modify your display behavior of an element. You can also apply responsive suffixes.
 
@@ -35,7 +35,7 @@ Defined with the `display` property, modify your display behavior of an element.
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

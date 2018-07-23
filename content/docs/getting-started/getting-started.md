@@ -6,14 +6,14 @@ description = "Geting started is easy, here's a quick start guide to help kickst
 +++
 
 
-##### The Quick Way
+### The Quick Way
 
 There are two ways you can get started. The quickest way is to include the production ready CSS and Javascript files into your project. This will provide your project with all the basic component and give your stylesheet access to global and local CSS variables.
 
 1. Download or clone **<a href="https://github.com/zapFramework/zapCSS">repository</a>**.
 2. Include the CSS and JS files found in the dist folder.
 
-##### Recommended Way
+### Recommended Way
 
 To take full advantage of this framework and its customization options, include the src file as part of your project build process. This is the recommended way if your project requires complex customization or component extensions.
 
@@ -28,11 +28,11 @@ ZapCSS utilizes a combination of Gulp, SCSS and PostCSS to build the project. At
 
 Refer to `gulpfile.js` for a detailed view of how each of these assets are processed. Feel free to customise the gulpfile to suit your project.
 
-##### Browser Support
+### Browser Support
 
 **ZapCSS supports the latest, stable releases of all major browsers and platforms**. On Windows, we support Internet Explorer 11 / Microsoft Edge. By default PostCSS's cssnext plugin converts your CSS custom properties to support IE11, however you can disable cssnext to retain native css variables.
 
-##### Importance of Green CSS
+### Importance of Green CSS
 
 The life of any project lives on after its inception. Like most things, your project will eventually need to evolve and grow. In order to perform maintanence and style updates without incurring unnecessary debt your CSS should be kept well organized, modular and minimal.
 

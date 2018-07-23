@@ -5,7 +5,7 @@ draft = false
 description = "The Border component applies borders and corner radius properties to block elements."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `border`. Default border color settings are applied.
 
@@ -20,7 +20,7 @@ Defined with `border`. Default border color settings are applied.
 ```
 {{% /codeblock %}}
 
-##### Positional Borders
+### Positional Borders
 
 You can apply positional borders.
 
@@ -52,7 +52,7 @@ You can apply positional borders.
 ```
 {{% /codeblock %}}
 
-##### Corner Properties
+### Corner Properties
 
 You can apply various corner styles with the `border-radius` property. Positional corner styles are also available.
 
@@ -91,7 +91,7 @@ You can apply various corner styles with the `border-radius` property. Positiona
 ```
 {{% /codeblock %}}
 
-##### Border Colors & Widths
+### Border Colors & Widths
 
 You can change the color and width of your border with the `border-color` and `border-width` property.
 
@@ -113,7 +113,7 @@ You can change the color and width of your border with the `border-color` and `b
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

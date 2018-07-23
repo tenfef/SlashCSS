@@ -5,7 +5,7 @@ draft = false
 description = "A simple component for adding box shadow universally across any element"
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The `elevate` component can be applied to any type of component.
 

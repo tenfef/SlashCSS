@@ -5,7 +5,7 @@ draft = false
 description = "An indepth guide how component responsiveness are handled."
 +++
 
-##### Mobile First Design
+### Mobile First Design
 
 All components are designed with a mobile-first CSS approach. For larger screens there are 4 responsive breakpoints extensions that can be accessed, `sm` `md` `lg` `xl`.
 
@@ -20,7 +20,7 @@ $xl: 1600px !default;
 ```
 {{% /codeblock %}}
 
-##### Responsive Modifiers
+### Responsive Modifiers
 
 Device specific modifiers for components that support responsiveness can be applied by adding device extensions to the modifiers.
 

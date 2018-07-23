@@ -5,7 +5,7 @@ draft = false
 description = "Beautifully packaged scalable design patterns and modern CSS architecture."
 +++
 
-##### Introduction
+### Introduction
 
 ZapCSS is an object oriented CSS framework built using scalable design patterns and modern CSS architecture. In order to ensure consistent and accurate project design implementation the principals introduced in this framework are designed to be simple, semantic and quickly understood by both designers and developers.
 

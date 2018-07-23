@@ -5,7 +5,7 @@ draft = false
 description = "The list module is used to present any list of content horizontally or vertically."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The list module `list` is useful for any type of list content that runs horizontally and vertically.
 
@@ -19,7 +19,7 @@ The list module `list` is useful for any type of list content that runs horizont
 ```
 {{% /codeblock %}}
 
-##### List Gutters
+### List Gutters
 
 You can use the `list-gutter` property to control the gutter between list items. You can make your list run horizontally with the `list-direction:right` modifier.
 
@@ -134,7 +134,7 @@ You can use the `list-gutter` property to control the gutter between list items.
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -144,7 +144,7 @@ $list-gutters: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

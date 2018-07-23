@@ -5,7 +5,7 @@ draft = false
 description = "The notice component is useful for visually displaying temporary content or information."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with the class `notice` initialized with javascript. The `notice/close` is required.
 
@@ -42,7 +42,7 @@ var notice = new Notice();
 
 {{% /codeblock %}}
 
-##### Colors
+### Colors
 
 You can change the background color using the `fill` component.
 
@@ -98,7 +98,7 @@ You can change the background color using the `fill` component.
 ```
 {{% /codeblock %}}
 
-##### Alignment
+### Alignment
 
 Alignment can be modified with the `align` component.
 
@@ -121,7 +121,7 @@ Alignment can be modified with the `align` component.
 ```
 {{% /codeblock %}}
 
-##### Shapes
+### Shapes
 
 You can apply differently shaped corners to buttons with the `border` component.
 
@@ -158,7 +158,7 @@ You can apply differently shaped corners to buttons with the `border` component.
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -168,7 +168,7 @@ You can override styling using the following local variables.
 ```
 {{% /codeblock %}}
 
-##### JS Settings
+### JS Settings
 
 <table class="table width:100% ">
   <thead>

@@ -5,7 +5,7 @@ draft = false
 description = "Accordions are useful when you want to hide and show large content."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow` child element. Styling is minimum to allow for easier style overrides.
 
@@ -84,7 +84,7 @@ var accordion = new Accordion();
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -100,7 +100,7 @@ You can override styling using the following local variables.
 ```
 {{% /codeblock %}}
 
-##### JS Settings
+### JS Settings
 
 <table class="table width:100% ">
   <thead>

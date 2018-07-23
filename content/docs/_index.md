@@ -5,7 +5,7 @@ draft: false
 layout: docs
 ---
 
-##### Basic Usage
+### Basic Usage
 
 This website is owned by Fergus Software Limited. These terms and conditions govern your access to and use of all FergusSoftware Limited owned and operated websites, software programs, and any mobile applications made available by Fergus Software Limited for download.
 

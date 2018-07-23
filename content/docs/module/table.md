@@ -5,7 +5,7 @@ draft = false
 description = "The table module is useful for displaying grid based data and content."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The table component is defined with the `table` class. By default the table width will only be as wide to fit the content. To make the table span the full width assign the `width:100%` component. Table rows or table cells can have hover states using the `hover` component.
 
@@ -68,7 +68,7 @@ The table component is defined with the `table` class. By default the table widt
 ```
 {{% /codeblock %}}
 
-##### Responsive Tables
+### Responsive Tables
 
 Tables can be responsive with the `table:pile` modifier. Header labels can be applied by adding the attribute `data-label` to the `<td>` cell. Additionally, you can apply the `elevate` component to change the style of your table.
 
@@ -126,7 +126,7 @@ Tables can be responsive with the `table:pile` modifier. Header labels can be ap
 ```
 {{% /codeblock %}}
 
-##### Local Root Variables
+### Local Root Variables
 
 You can override styling using the following local root variables.
 
@@ -138,7 +138,7 @@ You can override styling using the following local root variables.
 ```
 {{% /codeblock %}}
 
-##### Settings
+### Settings
 
 The following settings are available.
 

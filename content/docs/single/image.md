@@ -5,7 +5,7 @@ draft = false
 description = "The media component formats images provides useful preset sizes."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 <div class="margin-bottom:6 max-width:14">
   <img src="http://via.placeholder.com/500x500" class="media">
@@ -18,7 +18,7 @@ description = "The media component formats images provides useful preset sizes."
 {{% /codeblock %}}
 
 
-##### Corner Shapes
+### Corner Shapes
 
 Various corner styles can be applied with the `border-radius` component property.
 
@@ -42,7 +42,7 @@ Various corner styles can be applied with the `border-radius` component property
 ```
 {{% /codeblock %}}
 
-##### Inline Images
+### Inline Images
 
 The `image` component by default inherits the display block property however you can override this to be any type with the `display` component.
 
@@ -59,7 +59,7 @@ The `image` component by default inherits the display block property however you
 ```
 {{% /codeblock %}}
 
-##### Preset Sizes
+### Preset Sizes
 
 The `image-size` property provides useful preset sizes for things like thumbnails and profile pictures.
 
@@ -77,7 +77,7 @@ The `image-size` property provides useful preset sizes for things like thumbnail
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -87,7 +87,7 @@ $media-levels: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

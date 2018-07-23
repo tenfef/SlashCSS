@@ -5,12 +5,12 @@ draft = false
 description = "The markup component formats general paragraph and heading elements for readability."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 By default all element styles are reset, this is ideal for achieving visual consistency however not ideal for post or article content. The markup module formats and styles basic paragraph, bullet/numbered lists and heading elements for readability.
 
-###### H6 Typography
-##### H5 Typography
+#### H6 Typography
+### H5 Typography
 #### H4 Typography
 ### H3 Typography
 ## H2 Typography
@@ -26,8 +26,8 @@ By default all element styles are reset, this is ideal for achieving visual cons
 
 {{% codeblock key="language" definition="markdown" margin="top" %}}
 ```markdown
-###### H6 Typography
-##### H5 Typography
+#### H6 Typography
+### H5 Typography
 #### H4 Typography
 ### H3 Typography
 ## H2 Typography

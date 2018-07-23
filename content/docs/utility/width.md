@@ -5,7 +5,7 @@ draft = false
 description = "The width component adds width to any object or container."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defind with `width`. There are 18 levels of width which are based on the standard unit chart.
 
@@ -32,7 +32,7 @@ Defind with `width`. There are 18 levels of width which are based on the standar
 ```
 {{% /codeblock %}}
 
-##### Extra Modifiers
+### Extra Modifiers
 
 Full widths and default settings are also available.
 
@@ -43,7 +43,7 @@ Full widths and default settings are also available.
 ```
 {{% /codeblock %}}
 
-##### Responsive Margin
+### Responsive Margin
 
 To apply responsive widthss add responsive suffixes
 
@@ -55,7 +55,7 @@ To apply responsive widthss add responsive suffixes
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -65,7 +65,7 @@ $widths: 18 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

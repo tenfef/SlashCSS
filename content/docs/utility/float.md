@@ -5,7 +5,7 @@ draft = false
 description = "The float component forces float of any given element."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `float` and direction.
 
@@ -45,7 +45,7 @@ Defined with `float` and direction.
 ```
 {{% /codeblock %}}
 
-##### Responsive Floats
+### Responsive Floats
 
 You can assign responsive floats by adding responsive suffixes.
 
@@ -63,7 +63,7 @@ You can assign responsive floats by adding responsive suffixes.
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

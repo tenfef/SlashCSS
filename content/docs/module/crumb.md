@@ -5,7 +5,7 @@ draft = false
 description = "The crumb component provides visual information of the current page location in context to the overall parent hierarchy."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 <div class="crumb margin-bottom:2">
   <a href="#" class="crumb/item">Breadcrumb</a>
@@ -27,7 +27,7 @@ description = "The crumb component provides visual information of the current pa
 ```
 {{% /codeblock %}}
 
-##### Local Root Variables
+### Local Root Variables
 
 You can override styling using the following local root variables.
 

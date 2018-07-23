@@ -5,7 +5,7 @@ draft = false
 description = "The clear component applies basic clear properties to block elements"
 +++
 
-##### Clear
+### Clear
 
 Defined with `clear`. Provides a simple way of apply clear both.
 
@@ -30,7 +30,7 @@ Defined with `clear`. Provides a simple way of apply clear both.
 ```
 {{% /codeblock %}}
 
-##### Clearfix
+### Clearfix
 
 Defined with `clear-fix`. Provides a simple way of apply clearfixes to block elements that contain floating elements.
 

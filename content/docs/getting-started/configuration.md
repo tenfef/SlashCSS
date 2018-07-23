@@ -6,7 +6,7 @@ description = "Start your next project the right way."
 +++
 
 
-##### Setup your Project
+### Setup your Project
 
 The `default.variables` file contains all the base setting variables that is used to compile and generate the component properties.
 
@@ -27,7 +27,7 @@ $border: 1px solid var(--border-color) !default;
 ```
 
 
-##### Global Custom Properties
+### Global Custom Properties
 
 Common global variables are converted to CSS custom properties and are accessible in post processed state. To view all global custom properties that are available refer to `b-root.component`.
 
@@ -50,7 +50,7 @@ Common global variables are converted to CSS custom properties and are accessibl
 {{% /codeblock %}}
 
 
-##### Local Custom Properties
+### Local Custom Properties
 
 In addition to global custom properties, components feature local custom properties that are namespaced with the component name. This enables local component variable overrides.
 

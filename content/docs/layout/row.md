@@ -5,7 +5,7 @@ draft = false
 description = "The basics of using the column component to horizontally structure layout."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 The `row` component works alongside the column component and applies a horizontal sectioning based on the flex system.
 
@@ -70,7 +70,7 @@ The `row` component works alongside the column component and applies a horizonta
 ```
 {{% /codeblock %}}
 
-##### Row Gutters
+### Row Gutters
 
 You can apply gutter to your columns with the `row-gutter` property. Standard media query suffixes can be applied.
 
@@ -140,7 +140,7 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
 ```
 {{% /codeblock %}}
 
-##### Row Media
+### Row Media
 
 The row can also act as a media object component with the `:media` modifier.
 
@@ -169,7 +169,7 @@ The row can also act as a media object component with the `:media` modifier.
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -179,7 +179,7 @@ $row-gutters: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

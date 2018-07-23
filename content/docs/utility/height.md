@@ -5,7 +5,7 @@ draft = false
 description = "The height component adds height to any object or container."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defind with `height`. There are 18 levels of height which are based on the standard unit chart.
 
@@ -32,7 +32,7 @@ Defind with `height`. There are 18 levels of height which are based on the stand
 ```
 {{% /codeblock %}}
 
-##### Extra Modifiers
+### Extra Modifiers
 
 Full heights and default settings are also available.
 
@@ -43,7 +43,7 @@ Full heights and default settings are also available.
 ```
 {{% /codeblock %}}
 
-##### Responsive Margin
+### Responsive Margin
 
 To apply responsive heightss add responsive suffixes
 
@@ -55,7 +55,7 @@ To apply responsive heightss add responsive suffixes
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -65,7 +65,7 @@ $heights: 18 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

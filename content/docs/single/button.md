@@ -4,7 +4,7 @@ date = "2018-04-11T09:16:45+12:00"
 draft = false
 description = "Colorful and juicy button component in all shapes and sizes."
 +++
-##### Basic Button
+### Basic Button
 
 A standard button
 
@@ -18,7 +18,7 @@ A standard button
 ```
 {{% /codeblock %}}
 
-##### Sizes
+### Sizes
 
 Buttons comes in various sizes, use standard size modifiers to transform its size.
 
@@ -40,7 +40,7 @@ Buttons comes in various sizes, use standard size modifiers to transform its siz
 ```
 {{% /codeblock %}}
 
-##### Growing Buttons
+### Growing Buttons
 
 Buttons can vary in width.
 
@@ -66,7 +66,7 @@ Buttons can vary in width.
 ```
 {{% /codeblock %}}
 
-##### Shapes
+### Shapes
 
 You can apply different corners with the `border` component.
 
@@ -84,7 +84,7 @@ You can apply different corners with the `border` component.
 ```
 {{% /codeblock %}}
 
-##### Icon Buttons
+### Icon Buttons
 
 Buttons can contain icons.
 
@@ -106,7 +106,7 @@ Buttons can contain icons.
 ```
 {{% /codeblock %}}
 
-##### Styles
+### Styles
 
 There are 4 different styles of buttons, default, outline and button-style:physicald.
 
@@ -126,7 +126,7 @@ There are 4 different styles of buttons, default, outline and button-style:physi
 ```
 {{% /codeblock %}}
 
-##### Button Weights
+### Button Weights
 
 Buttons can have different font weights with the font component.
 
@@ -145,7 +145,7 @@ Buttons can have different font weights with the font component.
 {{% /codeblock %}}
 
 
-##### Button Groups
+### Button Groups
 
 Buttons can be joined to form several buttons. Buttons can be down with `button-direction`.
 
@@ -213,7 +213,7 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 ```
 {{% /codeblock %}}
 
-##### Colors
+### Colors
 
 Use the `fill` component to apply different color your buttons.
 
@@ -304,7 +304,7 @@ Use the `fill` component to apply different color your buttons.
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -322,7 +322,7 @@ $button-sizes: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

@@ -5,7 +5,7 @@ draft = false
 description = "The max component provides max width or max height properties."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defind with `max-width` and `max-height`. There are 18 levels of max-height which are based on the standard unit chart.
 
@@ -51,7 +51,7 @@ Defind with `max-width` and `max-height`. There are 18 levels of max-height whic
 ```
 {{% /codeblock %}}
 
-##### Fluid Modifiers
+### Fluid Modifiers
 
 Widths and heights can be fluid.
 
@@ -62,7 +62,7 @@ Widths and heights can be fluid.
 ```
 {{% /codeblock %}}
 
-##### Responsive Properties
+### Responsive Properties
 
 To apply responsive max-heights add responsive suffixes
 
@@ -73,7 +73,7 @@ To apply responsive max-heights add responsive suffixes
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -83,7 +83,7 @@ $max-levels: 18 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

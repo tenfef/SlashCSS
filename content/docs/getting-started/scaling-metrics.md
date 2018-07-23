@@ -6,7 +6,7 @@ description = "An indepth guide into common scale modifiers."
 +++
 
 
-##### Scaling Metrics
+### Scaling Metrics
 
 There are various types of predefined scaling modifiers available. In most cases there are 5 levels of scaling modifiers available for each type of scale, however there are certain exceptions that provide more levels of scale such as the margin or padding utilities.
 
@@ -26,7 +26,7 @@ There are various types of predefined scaling modifiers available. In most cases
 ...
 ```
 
-##### Sizing and Spacing Metrics
+### Sizing and Spacing Metrics
 
 There are two main types of scaling metrics available, the `size` and `gap` metrics. Any modifiers that transform the size of a given element are defined with the `-size` syntax followed by the level. Any modifiers that apply spacing between elements are defined with the `-gap` syntax followed by the level. In general, gap transforms in only 1 direction whereas size transforms in both horizontal and vertical directions simultaneously.
 
@@ -46,7 +46,7 @@ There are two main types of scaling metrics available, the `size` and `gap` metr
 ```
 {{% /codeblock %}}
 
-##### Grid Rhythm Variables
+### Grid Rhythm Variables
 
 Grid rhythms are short and useful variables that provide rem based units. By default grid rhythms scale up in increments of 1 rem. By utilising grid rhythm variables, component padding and spacing can be tightly controlled and kept consistent.
 
@@ -77,7 +77,7 @@ By default font-size for the global HTML property are set to 62.5% which makes 1
 ```
 {{% /codeblock %}}
 
-##### Font Sizing
+### Font Sizing
 
 There are a total of 8 font sizes that are accessible and used to style font sizes across all the components.
 
@@ -94,6 +94,6 @@ There are a total of 8 font sizes that are accessible and used to style font siz
 ```
 {{% /codeblock %}}
 
-##### Other Scaling Metrics
+### Other Scaling Metrics
 
 There are other common scaling metrics available such as the color scales `shade` and `shines`, and `grow` for buttons. Refer to the component documentation for more detail on these modifiers.

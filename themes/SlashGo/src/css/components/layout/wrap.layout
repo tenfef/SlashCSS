@@ -14,8 +14,8 @@ $max-width: 1600px !default;
   width: 100%;
   max-width: var(--max-width);
   margin: auto;
-  padding-left: var(--u2);
-  padding-right: var(--u2);
+  padding-left: var(--u6);
+  padding-right: var(--u6);
   @media (min-width: $sm) {
     padding-left: var(--u8);
     padding-right: var(--u8);
@@ -43,8 +43,8 @@ $max-width: 1600px !default;
           padding: 0;
         }
         &\:unflush {
-          padding-left: var(--u2);
-          padding-right: var(--u2);
+          padding-left: var(--u6);
+          padding-right: var(--u6);
           @media (min-width: $sm) {
             padding-left: var(--u8);
             padding-right: var(--u8);

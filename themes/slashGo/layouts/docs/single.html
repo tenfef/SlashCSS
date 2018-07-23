@@ -1,14 +1,14 @@
 {{ partial "head" . }}
 
-<section class="wrap markup">
+<section class="wrap">
 	<div class="row align-content:center padding-y:15vh">
-		<div class="column:12 column@md:8 column@lg:7">
-			<h1 class="font-weight:bold margin:0 margin-bottom:6 color:orange">{{ .Title }}</h1>
-			<h2 class="font-size:h4 font-weight:regular margin:0">{{ .Description }}</h2>
-			<div class="padding-y:10">
-				<span class="line fill:grey-l3"></span>
+		<div class="column:12 column@sm:10 column@md:8 column@lg:7">
+			<h1 class="font-size:h1 font-weight:heavy margin-bottom:4 color:ohrange">{{ .Title }}</h1>
+			<h2 class="font-size:h4 font-weight:regular font-height:2">{{ .Description }}</h2>
+			<div class="padding-y:12">
+				<span class="line fill:grey-l4"></span>
 			</div>
-			<div>
+			<div class="markup markup:doc">
 				{{ .Content }}
 			</div>
 		</div>

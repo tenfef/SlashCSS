@@ -11,7 +11,7 @@ Site: slashcss.com
 ************************************************************/
 
 @import "build.variables";
-
+@import "../fonts/system.font";
 /************************************************************
 2. COMPONENTS
 ************************************************************/
@@ -33,67 +33,11 @@ Site: slashcss.com
 4. EXTENSIONS
 ************************************************************/
 
-.grid {
-  &\:docs {
-    background-color: var(--black);
-    display: grid;
-    grid-template-columns: 100% auto;
-    min-height: 100vh;
-    @media (min-width: $sm) {
-      grid-template-columns: 35% auto;
-    }
-    .grid\/aside {
-      display: none;
-      flex-direction: column;
-      @media (min-width: $sm) {
-        display: flex;
-      }
-    }
-
-    .grid\/header {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      background-color: #191E37;
-      height: 65px;
-      .grid\/content {
-        width: 300px;
-        padding-left: var(--u3);
-      }
-    }
-    .grid\/nav {
-      display: flex;
-      justify-content: flex-end;
-
-      .grid\/content {
-        width: 300px;
-        padding: var(--u3);
-      }
-    }
-    .grid\/main {
-      background: var(--background-color);
-    }
-    .grid\/article {
-      padding: var(--u2);
-      @media (min-width: $sm) {
-        padding: var(--u8);
-      }
-    }
-  }
-}
-
-.form {
-  &\:docs-search {
-    position: relative;
-    height: 65px;
-    input:not([type=submit]) {
-      max-width: 100%;
-      height: 100%;
-      border-radius: 0;
-      border-left: 0;
-      border-top: 0;
-      border-right: 0;
-      padding-left: var(--u3);
+.markup {
+  &\:doc {
+    h3 {
+      font-size: var(--h6);
+      font-weight: 900;
     }
   }
 }

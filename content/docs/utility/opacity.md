@@ -5,7 +5,7 @@ draft = false
 description = "The opacity component manipulates the opacity property of a given element."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `opacity`, there are 9 fade options available.
 
@@ -36,7 +36,7 @@ Defined with `opacity`, there are 9 fade options available.
 ```
 {{% /codeblock %}}
 
-##### Opacity Value Chart
+### Opacity Value Chart
 
 {{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
@@ -75,7 +75,7 @@ Defined with `opacity`, there are 9 fade options available.
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

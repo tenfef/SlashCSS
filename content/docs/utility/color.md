@@ -5,7 +5,7 @@ draft = false
 description = "The color components applies colors to text elements."
 +++
 
-##### Basic Colors
+### Basic Colors
 
 Defined with `color` all base colors are available.
 
@@ -46,7 +46,7 @@ Defined with `color` all base colors are available.
 ```
 {{% /codeblock %}}
 
-##### Tonal Colors
+### Tonal Colors
 
 Each base color has 5 light and 5 dark tones available. These can be applied with the color modifier plus `-l` or `-d` suffix. Tonal variants are not available for white and black.
 
@@ -78,7 +78,7 @@ Each base color has 5 light and 5 dark tones available. These can be applied wit
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

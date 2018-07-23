@@ -5,7 +5,7 @@ draft = false
 description = "The align component sets the alignment of content in various ways."
 +++
 
-##### Text Alignment
+### Text Alignment
 
 The basic `align` property controls text alignment.
 
@@ -23,7 +23,7 @@ The basic `align` property controls text alignment.
 ```
 {{% /codeblock %}}
 
-##### Vertical Alignment
+### Vertical Alignment
 
 Vertical alignment can be controlled with `top` `middle` `bottom` modifiers.
 
@@ -54,7 +54,7 @@ Vertical alignment can be controlled with `top` `middle` `bottom` modifiers.
 ```
 {{% /codeblock %}}
 
-##### Responsive Alignments
+### Responsive Alignments
 
 Responsive suffixes can be applied to all alignment properties.
 
@@ -72,7 +72,7 @@ Responsive suffixes can be applied to all alignment properties.
 ```
 {{% /codeblock %}}
 
-##### Item Alignment
+### Item Alignment
 
 The `align-items` property specifies the default alignment for items inside the flexible container.
 
@@ -119,7 +119,7 @@ The `align-items` property specifies the default alignment for items inside the 
 {{% /codeblock %}}
 
 
-##### Content Alignment
+### Content Alignment
 
 The `align-content` property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines. The align content property also controls justification of flexible content.
 
@@ -401,7 +401,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
 {{% /codeblock %}}
 
 
-##### Options
+### Options
 
 The following modifiers are available.
 

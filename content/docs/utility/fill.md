@@ -5,7 +5,7 @@ draft = false
 description = "The fill component manipulates the background property of a given element."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `fill`. All standard and tonal color are available. Each base color has 5 levels of light and dark tonal colors e.g. `fill:red-l5`, `fill:red-l4` etc. Tonal variants are not available for white and black.
 
@@ -490,7 +490,7 @@ Defined with `fill`. All standard and tonal color are available. Each base color
 {{% /codeblock %}}
 
 
-##### Background Size
+### Background Size
 
 The `fill-size` property controls the background size.
 
@@ -502,7 +502,7 @@ The `fill-size` property controls the background size.
 {{% /codeblock %}}
 
 
-##### Background Position
+### Background Position
 
 The `fill-position` property controls the background position.
 
@@ -527,7 +527,7 @@ The `fill-position` property controls the background position.
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

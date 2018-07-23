@@ -5,7 +5,7 @@ draft = false
 description = "The form component provides styling for standard forms."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `form` form fields are grouped with the `form/item` child element. Form labels can have a required asterisk with the `:required` modifier.
 
@@ -72,7 +72,7 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
 ```
 {{% /codeblock %}}
 
-##### Sliding labels
+### Sliding labels
 
 Form items can be modified to enable sliding labels with `form/item-style:slide`.
 
@@ -138,7 +138,7 @@ Form items can be modified to enable sliding labels with `form/item-style:slide`
 ```
 {{% /codeblock %}}
 
-##### Disabled Fields
+### Disabled Fields
 
 The disabled attribute disables clickable state.
 
@@ -222,7 +222,7 @@ The disabled attribute disables clickable state.
 ```
 {{% /codeblock %}}
 
-##### Multi-Column Fields
+### Multi-Column Fields
 
 Here is an example of a Company Information form in multi-column format. For multi-column layout utilise row and column components.
 
@@ -318,7 +318,7 @@ Here is an example of a Company Information form in multi-column format. For mul
   </div>
 </div>
 
-##### Form States
+### Form States
 
 Form input fields can have states for various types of highlighting.
 
@@ -373,7 +373,7 @@ Form input fields can have states for various types of highlighting.
 {{% /codeblock %}}
 
 
-##### Special Fields
+### Special Fields
 
 Standard text fields can have icons on the left and right.
 
@@ -458,7 +458,7 @@ Standard text fields can have icons on the left and right.
 {{% /codeblock %}}
 
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -487,7 +487,7 @@ You can override styling using the following local variables.
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 

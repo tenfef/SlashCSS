@@ -5,7 +5,7 @@ draft = false
 description = "The distribute component takes advantage of the Sam Pickering's Labotomized Owl to vertically or horizontally distribute child elements."
 +++
 
-##### Basic Usage
+### Basic Usage
 
 Defined with `distribute`. You can distribute child elements horiontally or vertically with `x` and `y` suffix. You can also apply responsive suffixes.
 
@@ -31,7 +31,7 @@ Defined with `distribute`. You can distribute child elements horiontally or vert
 ```
 {{% /codeblock %}}
 
-##### Local Variables
+### Local Variables
 
 You can override styling using the following local variables.
 
@@ -41,7 +41,7 @@ $distribute-gutters: 5 !default;
 ```
 {{% /codeblock %}}
 
-##### Options
+### Options
 
 The following modifiers are available.
 
