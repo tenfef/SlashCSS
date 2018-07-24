@@ -449,6 +449,10 @@ $columns: 12 !default;
 ```
 {{% /codeblock %}}
 
+### Options
+
+The following modifiers are available.
+
 <table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
