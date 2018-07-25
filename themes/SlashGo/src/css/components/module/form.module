@@ -202,9 +202,9 @@ FORM
         content: '';
         display: none;
         position: absolute;
-        left: .4rem;
-        top: .05rem;
-        width: .40rem;
+        left: .40rem;
+        top: .07rem;
+        width: .4rem;
         height: .75rem;
         border: solid white;
         border-width: 0 .15rem .15rem 0;

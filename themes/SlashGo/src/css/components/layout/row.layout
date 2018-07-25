@@ -2,7 +2,7 @@
 GRID
 ************************************************************/
 
-$row-gutters: 5 !default;
+$row-gutters: 8 !default;
 
 .row {
 

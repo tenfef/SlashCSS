@@ -4,9 +4,6 @@ MARKUP
 
 .markup {
   h1,h2,h3,h4,h5,h6 {
-    color: var(--black);
-  	font-weight: var(--bold);
-    line-height: 1.25;
   	&:first-child {
   		margin-top: 0;
   	}
@@ -23,15 +20,15 @@ MARKUP
   	margin-bottom: var(--u6);
   }
   h3 {
-  	margin-top: var(--u12);
+  	margin-top: var(--u11);
   	margin-bottom: var(--u6);
   }
   h4 {
-  	margin-top: var(--u12);
+  	margin-top: var(--u11);
   	margin-bottom: var(--u6);
   }
   h5 {
-  	margin-top: var(--u12);
+  	margin-top: var(--u11);
   	margin-bottom: var(--u4);
   }
   h6 {

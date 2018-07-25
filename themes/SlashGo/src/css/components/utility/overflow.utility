@@ -27,7 +27,7 @@ OVERFLOW
     }
   }
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width: $value) {
         &\:visible {
           overflow: visible !important;

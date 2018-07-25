@@ -16,7 +16,7 @@ $font-heights: 5 !default;
         font-size: var(--#{$font-size}) !important;
       }
       @each $screen, $size in $screens {
-        &-#{$screen} {
+        &\@#{$screen} {
           @media (min-width : #{$size}) {
             &\:#{$font-size} {
               font-size: var(--#{$font-size}) !important;
@@ -38,7 +38,7 @@ $font-heights: 5 !default;
       }
     }
     @each $screen, $size in $screens {
-      &-#{$screen} {
+      &\@#{$screen} {
         @media (min-width : #{$size}) {
           @each $key, $value in $font-weights {
             &\:#{$key} {
@@ -62,7 +62,7 @@ $font-heights: 5 !default;
       $font-heights: $font-heights - 1;
     }
     @each $screen, $size in $screens {
-      &-#{$screen} {
+      &\@#{$screen} {
         @media (min-width : #{$size}) {
           @while $font-heights >= 0 {
             &\:#{$font-heights} {

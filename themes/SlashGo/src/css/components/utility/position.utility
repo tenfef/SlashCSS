@@ -26,7 +26,7 @@ POSITION
     left: 0 !important;
   }
   @each $key, $value in $screens {
-    &-#{$key} {
+    &\@#{$key} {
       @media (min-width : #{$value}) {
         position: static !important;
         &\:absolute {

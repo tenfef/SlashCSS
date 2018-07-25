@@ -77,8 +77,8 @@ SLIDEMENU
   &\/header {
     display: flex;
     align-items: center;
-    height: var(--u6);
-    padding-left: var(--u2);
+    height: var(--u11);
+    padding-left: var(--u6);
   }
 
   &\/close {
@@ -89,8 +89,8 @@ SLIDEMENU
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--u6);
-    height: var(--u6);
+    width: var(--u10);
+    height: var(--u10);
     cursor: pointer;
     &:before, &:after {
       position: absolute;

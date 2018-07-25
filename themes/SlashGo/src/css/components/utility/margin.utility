@@ -41,6 +41,12 @@ $margins: 15 !default;
       }
       $margins: $margins - 1;
     }
+    @while $margins >= 5 {
+      &\:#{$margins}vh {
+        margin-top: #{$margins}vh !important;
+      }
+      $margins: $margins - 1;
+    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {
@@ -50,6 +56,12 @@ $margins: 15 !default;
           @while $margins >= 0 {
             &\:#{$margins} {
               margin-top: var(--u#{$margins}) !important;
+            }
+            $margins: $margins - 1;
+          }
+          @while $margins >= 5 {
+            &\:#{$margins}vh {
+              margin-top: #{$margins}vh !important;
             }
             $margins: $margins - 1;
           }
@@ -95,6 +107,12 @@ $margins: 15 !default;
       }
       $margins: $margins - 1;
     }
+    @while $margins >= 5 {
+      &\:#{$margins}vh {
+        margin-bottom: #{$margins}vh !important;
+      }
+      $margins: $margins - 1;
+    }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {
@@ -104,6 +122,12 @@ $margins: 15 !default;
           @while $margins >= 0 {
             &\:#{$margins} {
               margin-bottom: var(--u#{$margins}) !important;
+            }
+            $margins: $margins - 1;
+          }
+          @while $margins >= 5 {
+            &\:#{$margins}vh {
+              margin-bottom: #{$margins}vh !important;
             }
             $margins: $margins - 1;
           }

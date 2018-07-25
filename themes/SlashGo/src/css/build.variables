@@ -90,17 +90,17 @@ $tonal-colors: (
 $mono-colors: (
   white: #ffffff,
   black: #000000
-);
+) !default;
 
 @function generate-color-tones ($key, $value) {
   $map: (
     $key: (
       #{$key}-l1: mix(white, $value, 20%),
-      #{$key}-l2: mix(white, $value, 40%),
+      #{$key}-l2: mix(white, $value, 30%),
       #{$key}-l3: mix(white, $value, 60%),
       #{$key}-l4: mix(white, $value, 85%),
       #{$key}-l5: mix(white, $value, 95%),
-      #{$key}-d1: mix(black, $value, 20%),
+      #{$key}-d1: mix(black, $value, 15%),
       #{$key}-d2: mix(black, $value, 35%),
       #{$key}-d3: mix(black, $value, 50%),
       #{$key}-d4: mix(black, $value, 65%),

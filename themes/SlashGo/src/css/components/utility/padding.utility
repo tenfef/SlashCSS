@@ -232,7 +232,7 @@ $paddings: 15 !default;
             $paddings: $paddings - 1;
           }
           @while $paddings >= 5 {
-            &\:#{$paddings} {
+            &\:#{$paddings}vh {
               padding-top: #{$paddings}vh !important;
               padding-bottom: #{$paddings}vh !important;
             }
