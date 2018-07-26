@@ -8,6 +8,7 @@ FORM
 
   --form-field-height: var(--u9);
   --form-field-border: var(--border);
+  --form-field-fill: var(--white);
   --form-field-checkbox-fill: var(--blue);
   --form-field-color: var(--black);
   --form-field-radius: .25rem;
@@ -62,6 +63,7 @@ FORM
             font-size: .75rem;
             color: var(--grey-l1);
             z-index: 1;
+            pointer-events: none;
           }
         }
       }
@@ -324,7 +326,7 @@ input {
     max-width: 300px;
     height: var(--form-field-height);
     padding-left: var(--form-field-padding-left);
-    background: transparent;
+    background: var(--form-field-fill);
     color: var(--form-field-color);
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -333,7 +335,6 @@ input {
     outline: 0;
     appearance: none;
     transition: var(--transition);
-    z-index: 2;
 
     &:focus {
       border-color: var(--grey-l2);
