@@ -52,6 +52,7 @@ $font-weights: (
 ) !default;
 
 $font-sizes: (
+  hero: 3.75rem,
   h1: 3.125rem,
   h2: 2.25rem,
   h3: 1.75rem,

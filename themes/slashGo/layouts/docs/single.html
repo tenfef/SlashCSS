@@ -1,17 +1,102 @@
 {{ partial "head" . }}
 
+<nav class="menu menu:doc elevate" role="menu">
+	<div class="menu/content">
+		<a href="#" class="menu/item is-active">
+			A
+		</a>
+		<a href="#" class="menu/item">
+			B
+		</a>
+		<a href="#" class="menu/item">
+			C
+		</a>
+	</div>
+	<div class="menu/content">
+		<a href="#" class="menu/item">
+			D
+		</a>
+		<a href="#" class="menu/item">
+			E
+		</a>
+	</div>
+</nav>
+
+<div class="padding-y:5 fill:grey-l5 align:center">
+	<div class="wrap">
+		<ul class="list list-gutter:5 list-direction:right display:inline-flex flex-wrap max-width:1000px">
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Sta
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+			<li class="list/item padding-y:2">
+				Getting Started
+			</li>
+
+		</ul>
+
+	</div>
+
+</div>
+
 <section class="wrap">
-	<div class="row align-content:center padding-y:15vh">
-		<div class="column:12 column@sm:10 column@md:8 column@lg:7">
-			<h1 class="font-size:h1 font-weight:heavy margin-bottom:4 color:red font-transform:upper">{{ .Title }}</h1>
-			<h2 class="font-size:h5 font-weight:regular font-height:2">{{ .Description }}</h2>
-			<div class="padding-y:11">
+	<div class="row row-gutter@sm:4 padding-top:10vh">
+
+		<div class="column:12 column@sm:8">
+			<h1 class="font-size:hero font-weight:bold margin-bottom:4">{{ .Title }}</h1>
+			<h2 class="font-size:h4 font-weight:regular font-height:2 margin-bottom:12">{{ .Description }}</h2>
+			<div class="padding-bottom:10">
 				<span class="line fill:grey-l4"></span>
 			</div>
 			<div class="markup markup:doc">
 				{{ .Content }}
 			</div>
 		</div>
+
+		<div class="column:12 column@sm:4">
+			<div class="markup markup:doc">
+				hellow hahahah
+				<div class="padding:5 width:100% fill:red">
+					gfwgwgse
+				</div>
+			</div>
+		</div>
+
 	</div>
 </section>
 
