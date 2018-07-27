@@ -48,13 +48,26 @@ FORM
           min-height: 4rem;
           padding: 1.75rem 0 1rem var(--form-field-padding-left);
 
-          &:placeholder-shown + label {
+          &:placeholder-shown ~ label {
+            position: absolute;
             top: 1.25rem;
             left: 1rem;
             font-size: var(--body);
             color: var(--grey-d1);
+            pointer-events: none;
           }
-          & + label, &:focus + label {
+          &:not(:placeholder-shown) ~ label {
+            position: absolute;
+            top: .25rem;
+            left: .5rem;
+            margin: 0;
+            padding: 0;
+            font-size: .75rem;
+            color: var(--grey-l1);
+            z-index: 1;
+            pointer-events: none;
+          }
+          & + label, &:focus ~ label {
             position: absolute;
             top: .25rem;
             left: .5rem;

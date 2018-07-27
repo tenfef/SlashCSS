@@ -151,10 +151,10 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 
 <div class="margin-bottom:6">
   <div class="buttons border-radius:round">
-    <button class="button button-size:2 fill:pink button-style:outline">1</button>
-    <button class="button button-size:2 fill:violet button-style:outline">2</button>
-    <button class="button button-size:2 fill:purple button-style:outline">3</button>
-    <button class="button button-size:2 fill:navy button-style:outline">4</button>
+    <button class="button button-size:2 f2 button-style:outline">1</button>
+    <button class="button button-size:2 fi2et button-style:outline">2</button>
+    <button class="button button-size:2 f2ple button-style:outline">3</button>
+    <button class="button button-size:2 f2avy button-style:outline">4</button>
   </div>
 </div>
 
