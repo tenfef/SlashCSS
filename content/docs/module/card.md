@@ -16,11 +16,11 @@ The card module contains header, content and footer child elements. You can also
         <img src="https://i.imgur.com/Ig4qpjc.jpg" class="media">
       </div>
       <div class="card/content border-bottom">
-        <div class="row:media align-item:middle margin-bottom:6">
-          <div class="column margin-right:3">
+        <div class="flag flag-gutter:1 margin-bottom:6">
+          <div class="flag/item">
             <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:2 fill:primary">
           </div>
-          <div class="column">
+          <div class="flag/item">
             <div>
               <h6 class="margin:0 font-weight:bold color:black font-height:0">Jin Park</h6>
               <span class="font-size:tiny font-height:0">@zapcss</span>

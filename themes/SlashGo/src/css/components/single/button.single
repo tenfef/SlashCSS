@@ -96,11 +96,10 @@ $button-sizes: 5 !default;
   ******************************/
 
   &-size {
-    @while $button-sizes > 0 {
-      &\:#{$button-sizes} {
-        height: calc(var(--u#{$button-sizes + 6}) );
+    @each $size, $i in $sizes {
+      &\:#{$size} {
+        height: calc(var(--u#{$i + 6}) );
       }
-      $button-sizes: $button-sizes - 1;
     }
   }
 

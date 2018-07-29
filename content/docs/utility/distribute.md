@@ -1,6 +1,7 @@
 +++
 title = "Distribute"
 date = "2018-04-11T09:16:45+12:00"
+family = "Utility"
 draft = false
 description = "The distribute component takes advantage of the Sam Pickering's Labotomized Owl to vertically or horizontally distribute child elements."
 +++

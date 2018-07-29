@@ -63,17 +63,19 @@ The `image` component by default inherits the display block property however you
 
 The `image-size` property provides useful preset sizes for things like thumbnails and profile pictures.
 
-<img src="http://via.placeholder.com/200x200" class="media media-size:2 margin-bottom:6">
-<img src="http://via.placeholder.com/200x200" class="media media-size:3 margin-bottom:6">
-<img src="http://via.placeholder.com/200x200" class="media media-size:4 margin-bottom:6">
-<img src="http://via.placeholder.com/200x200" class="media media-size:5 margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:xs margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:sm margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:md margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:lg margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:xl margin-bottom:6">
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<img src="http://via.placeholder.com/200x200" class="media media-size:2">
-<img src="http://via.placeholder.com/200x200" class="media media-size:3">
-<img src="http://via.placeholder.com/200x200" class="media media-size:4">
-<img src="http://via.placeholder.com/200x200" class="media media-size:5">
+<img src="http://via.placeholder.com/200x200" class="media media-size:xs">
+<img src="http://via.placeholder.com/200x200" class="media media-size:sm">
+<img src="http://via.placeholder.com/200x200" class="media media-size:md">
+<img src="http://via.placeholder.com/200x200" class="media media-size:lg">
+<img src="http://via.placeholder.com/200x200" class="media media-size:xl">
 ```
 {{% /codeblock %}}
 

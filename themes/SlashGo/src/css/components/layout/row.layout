@@ -12,33 +12,17 @@ $row-gutters: 8 !default;
 	flex-wrap: wrap;
 
 	/******************************
-  MEDIA
-  ******************************/
-
-	&\:media {
-		display: inline-flex;
-		vertical-align: middle;
-		& > [class^=column] {
-			display: flex;
-			flex-grow: 0;
-		  flex-basis: auto;
-			align-items: center;
-			width: auto;
-		}
-	}
-
-	/******************************
   GUTTER
   ******************************/
 
 	&-gutter {
 		@while $row-gutters > 0 {
 			&\:#{$row-gutters} {
-				margin-left: $row-gutters * -1rem / 2;
-				margin-right: $row-gutters * -1rem / 2;
+				margin-left: var(--u-#{$row-gutters});
+				margin-right: var(--u-#{$row-gutters});
 				& > [class^=column] {
-					padding-left: $row-gutters * 1rem / 2;
-					padding-right: $row-gutters * 1rem / 2;
+					padding-left: var(--u#{$row-gutters});
+					padding-right: var(--u#{$row-gutters});
 				}
 			}
 			$row-gutters: $row-gutters - 1;

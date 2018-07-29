@@ -1,105 +1,71 @@
 {{ partial "head" . }}
-<main class="grid grid:docs">
-	<aside class="grid/aside">
-		<header class="grid/header grid/header:logo">
-			<div class="grid/content">
-				<h5 class="font color:white">SLASH<span class="font-weight:light">CSS</span></h5>
+
+<nav class="menu menu:doc elevate" role="menu">
+	<div class="menu/content">
+		<a href="#" class="menu/item is-active">
+			A
+		</a>
+		<a href="#" class="menu/item">
+			B
+		</a>
+		<a href="#" class="menu/item">
+			C
+		</a>
+	</div>
+	<div class="menu/content">
+		<a href="#" class="menu/item">
+			D
+		</a>
+		<a href="#" class="menu/item">
+			E
+		</a>
+	</div>
+</nav>
+
+<div class="padding-y:5 fill:grey-l5 align:center">
+	<div class="wrap">
+		<ul class="list list-gutter:5 list-direction:right display:inline-flex align-content:center flex-wrap max-width:1000px">
+			{{ if eq .Params.family "Utility"  }}
+				{{ range .Site.Menus.utility }}
+					<li class="list/item">
+						<a class="color:default-color hover-color:primary padding-y:2" href="/docs/{{ .URL }}" title="{{ .Name }}">
+							{{ .Name }}
+						</a>
+					</li>
+				{{ end }}
+			{{ else }}
+
+			{{ end }}
+		</ul>
+
+	</div>
+
+</div>
+
+<section class="wrap">
+	<div class="row row-gutter@sm:4 padding-top:10vh">
+
+		<div class="column:12 column@sm:8">
+			<h1 class="font-size:hero font-weight:bold margin-bottom:4">{{ .Title }}</h1>
+			<h2 class="font-size:h4 font-weight:regular font-height:2 margin-bottom:12">{{ .Description }}</h2>
+			<div class="padding-bottom:10">
+				<span class="line fill:grey-l4"></span>
 			</div>
-		</header>
-		<nav class="grid/nav">
-			<div class="grid/content">
-				<ul class="list list-gutter:0 font-size:tiny margin-bottom:3">
-					{{ range .Site.Menus.layout }}
-						<li class="list/item">
-							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
-								{{ .Name }}
-							</a>
-						</li>
-			    {{ end }}
-				</ul>
-
-				<ul class="list list-gutter:0 font-size:tiny margin-bottom:3">
-					{{ range .Site.Menus.module }}
-						<li class="list/item">
-							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
-								{{ .Name }}
-							</a>
-						</li>
-			    {{ end }}
-				</ul>
-
-				<ul class="list list-gutter:0 font-size:tiny margin-bottom:3">
-					{{ range .Site.Menus.single }}
-						<li class="list/item">
-							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
-								{{ .Name }}
-							</a>
-						</li>
-			    {{ end }}
-				</ul>
-
-				<ul class="list list-gutter:0 font-size:tiny margin-bottom:3">
-					{{ range .Site.Menus.utility }}
-						<li class="list/item">
-							<a class="color:default-color hover-color:primary" href="/docs/{{ .URL }}" title="{{ .Name }}">
-								{{ .Name }}
-							</a>
-						</li>
-			    {{ end }}
-				</ul>
+			<div class="markup markup:doc">
+				{{ .Content }}
 			</div>
+		</div>
 
-		</nav>
-
-	</aside>
-	<section class="grid/main">
-		<nav class="grid/search">
-			<form class="form form:docs-search">
-				<input type="text" class="form/input:fluid">
-			</form>
-		</nav>
-		<header class="fill:white padding:5 padding-y:5vh">
-			<div class="wrap wrap:docs-content">
-				<h1 class="font font-weight:regular font-size:h2 margin-bottom:1">
-					Disputes and Fraud
-				</h1>
-				<h2 class="font font-weight:regular font-size:h6 margin-bottom:4">
-					Learn what disputes are, how the process works, and how to prevent them from happening.
-				</h2>
-				<div class="labels margin-right:2">
-					<div class="label fill:background-active color:black">
-						<span class="font-size:tiny font-weight:regular padding-x:0 font-transform:none">Colors</span>
-					</div>
-					<div class="label fill:green">
-						<span class="font-size:tiny font-weight:regular padding-x:0 font-transform:none">Yes</span>
-					</div>
-				</div>
-
-				<div class="labels margin-right:2">
-					<div class="label fill:background-active color:black">
-						<span class="font-size:tiny font-weight:regular padding-x:0 font-transform:none">Colors</span>
-					</div>
-					<div class="label fill:green">
-						<span class="font-size:tiny font-weight:regular padding-x:0 font-transform:none">Yes</span>
-					</div>
-				</div>
-
-				<div class="labels margin-right:2">
-					<div class="label fill:background-active color:black">
-						<span class="font-size:tiny font-weight:regular padding-x:0 font-transform:none">Colors</span>
-					</div>
-					<div class="label fill:green">
-						<span class="font-size:tiny font-weight:regular padding-x:0 font-transform:none">Yes</span>
-					</div>
+		<div class="column:12 column@sm:4">
+			<div class="markup markup:doc">
+				hellow hahahah
+				<div class="padding:5 width:100% fill:red">
+					gfwgwgse
 				</div>
 			</div>
-		</header>
-		<article class="grid/article">
-			{{ .Content }}
-		</article>
-	</section>
-</main>
+		</div>
 
-
+	</div>
+</section>
 
 {{ partial "foot" . }}

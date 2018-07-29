@@ -1,6 +1,7 @@
 +++
 title = "Align"
 date = "2018-04-11T09:16:45+12:00"
+family = "Utility"
 draft = false
 description = "The align component sets the alignment of content in various ways."
 +++

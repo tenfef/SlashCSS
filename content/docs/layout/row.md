@@ -140,35 +140,6 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
 ```
 {{% /codeblock %}}
 
-### Row Media
-
-The row can also act as a media object component with the `:media` modifier.
-
-<div class="row:media row-gutter:1 align-item:middle margin-bottom:2">
-  <div class="column">
-    <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:5 fill:primary">
-  </div>
-  <div class="column">
-    <div>
-      <h6 class="font-weight:medium color:black font-height:0 margin-bottom:none">Jin Park</h6>
-      <span class="font-size:tiny font-height:0">@zapcss</span>
-    </div>
-  </div>
-</div>
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<div class="row:media">
-  <div class="column">
-    Image Left
-  </div>
-  <div class="column display:flex align-item:middle">
-    Text Right
-  </div>
-</div>
-```
-{{% /codeblock %}}
-
 ### Local Variables
 
 You can override styling using the following local variables.

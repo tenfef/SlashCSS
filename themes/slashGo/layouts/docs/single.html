@@ -1,15 +1,33 @@
 {{ partial "head" . }}
 
-<nav class="menu menu:doc elevate" role="menu">
+<nav class="menu menu:docs height:12 elevate" role="menu">
 	<div class="menu/content">
-		<a href="#" class="menu/item is-active">
-			A
+		<a href="/" class="menu/item hover-fill:none padding-x:7">
+			<div class="flag flag-gutter:2">
+				<div class="flag/item">
+					<img src="/assets/images/logo.svg" class="media media-size:md">
+				</div>
+				<!-- <div class="flag/item font-size:h5 font-weight:bold color:black">
+					SlashCSS
+				</div> -->
+			</div>
 		</a>
-		<a href="#" class="menu/item">
-			B
+	</div>
+	<div class="menu/content menu/content:center">
+		<a href="/Getting Started" class="menu/item margin-left:2 margin-right:2 font-weight:bold color:black is-active">
+			Getting Started
 		</a>
-		<a href="#" class="menu/item">
-			C
+		<a href="#" class="menu/item margin-left:2 margin-right:2 font-weight:bold color:black">
+			Layout
+		</a>
+		<a href="#" class="menu/item margin-left:2 margin-right:2 font-weight:bold color:black">
+			Module
+		</a>
+		<a href="#" class="menu/item margin-left:2 margin-right:2 font-weight:bold color:black">
+			Single
+		</a>
+		<a href="#" class="menu/item margin-left:2 margin-right:2 font-weight:bold color:black">
+			Utility
 		</a>
 	</div>
 	<div class="menu/content">
@@ -24,50 +42,18 @@
 
 <div class="padding-y:5 fill:grey-l5 align:center">
 	<div class="wrap">
-		<ul class="list list-gutter:5 list-direction:right display:inline-flex flex-wrap max-width:1000px">
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Sta
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
-			<li class="list/item padding-y:2">
-				Getting Started
-			</li>
+		<ul class="list list-gutter:1 list-direction:right display:inline-flex align-content:center flex-wrap max-width:1000px">
+			{{ if eq .Params.family "Utility"  }}
+				{{ range .Site.Menus.utility }}
+					<li class="list/item">
+						<a class="color:default-color hover-color:primary margin-top:1 margin-bottom:1 padding-y:2 button button-style:outline" href="/docs/{{ .URL }}" title="{{ .Name }}">
+							{{ .Name }}
+						</a>
+					</li>
+				{{ end }}
+			{{ else }}
 
+			{{ end }}
 		</ul>
 
 	</div>

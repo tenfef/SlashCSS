@@ -1,6 +1,7 @@
 +++
 title = "Opacity"
 date = "2018-04-11T09:16:45+12:00"
+family = "Utility"
 draft = false
 description = "The opacity component manipulates the opacity property of a given element."
 +++

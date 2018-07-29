@@ -1,6 +1,7 @@
 +++
 title = "Float"
 date = "2018-04-11T09:16:45+12:00"
+family = "Utility"
 draft = false
 description = "The float component forces float of any given element."
 +++

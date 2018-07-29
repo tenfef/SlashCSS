@@ -2,8 +2,6 @@
 MEDIA
 ************************************************************/
 
-$media-levels: 5 !default;
-
 .media {
   display: block;
   width: auto;
@@ -17,22 +15,20 @@ $media-levels: 5 !default;
   ******************************/
 
   &-size {
-    @while $media-levels > 0 {
-      &\:#{$media-levels} {
-        width: $media-levels + 1rem;
-        height: $media-levels + 1rem;
+    @each $size, $i in $sizes {
+      &\:#{$size} {
+        width: ($i + 2rem) / 2;
+        height: ($i + 2rem) / 2;
       }
-      $media-levels: $media-levels - 1;
     }
     @each $screen, $size in $screens {
-      &-#{$screen} {
+      &\@#{$screen} {
         @media (min-width : #{$size}) {
-          @while $media-levels > 0 {
-            &\:#{$media-levels} {
-              width: $media-levels + 1rem;
-              height: $media-levels + 1rem;
+          @each $size, $i in $sizes {
+            &\:#{$size} {
+              width: ($i + 2rem) / 2;
+              height: ($i + 2rem) / 2;
             }
-            $media-levels: $media-levels - 1;
           }
         }
       }

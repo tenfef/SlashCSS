@@ -23,20 +23,20 @@ A standard button
 Buttons comes in various sizes, use standard size modifiers to transform its size.
 
 <div class="margin-bottom:6">
-  <button class="button button-size:1">Button</button>
-  <button class="button button-size:2">Button</button>
-  <button class="button button-size:3">Button</button>
-  <button class="button button-size:4">Button</button>
-  <button class="button button-size:5">Button</button>
+  <button class="button button-size:xs">Button</button>
+  <button class="button button-size:sm">Button</button>
+  <button class="button button-size:md">Button</button>
+  <button class="button button-size:lg">Button</button>
+  <button class="button button-size:xl">Button</button>
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button button-size:1">Button</button>
-<button class="button button-size:2">Button</button>
-<button class="button button-size:3">Button</button>
-<button class="button button-size:4">Button</button>
-<button class="button button-size:5">Button</button>
+<button class="button button-size:xs">Button</button>
+<button class="button button-size:sm">Button</button>
+<button class="button button-size:md">Button</button>
+<button class="button button-size:lg">Button</button>
+<button class="button button-size:xl">Button</button>
 ```
 {{% /codeblock %}}
 

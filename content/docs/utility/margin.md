@@ -1,6 +1,7 @@
 +++
 title = "Margin"
 date = "2018-04-11T09:16:45+12:00"
+family = "Utility"
 draft = false
 description = "The margin component adds margin to any object or container."
 +++
@@ -12,21 +13,21 @@ Defind with `margin`. There are 16 levels of margin which are based on the stand
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="margin:0"></div>
-<div class="margin:1"></div>
-<div class="margin:2"></div>
-<div class="margin:3"></div>
-<div class="margin:4"></div>
-<div class="margin:5"></div>
-<div class="margin:6"></div>
-<div class="margin:7"></div>
-<div class="margin:8"></div>
-<div class="margin:9"></div>
-<div class="margin:10"></div>
-<div class="margin:11"></div>
-<div class="margin:12"></div>
-<div class="margin:13"></div>
-<div class="margin:14"></div>
-<div class="margin:15"></div>
+<div class="margin:u1"></div>
+<div class="margin:u2"></div>
+<div class="margin:u3"></div>
+<div class="margin:u4"></div>
+<div class="margin:u5"></div>
+<div class="margin:u6"></div>
+<div class="margin:u7"></div>
+<div class="margin:u8"></div>
+<div class="margin:u9"></div>
+<div class="margin:u10"></div>
+<div class="margin:u11"></div>
+<div class="margin:u12"></div>
+<div class="margin:u13"></div>
+<div class="margin:u14"></div>
+<div class="margin:u15"></div>
 ```
 {{% /codeblock %}}
 
@@ -37,9 +38,9 @@ Margin can be applied to `top` `right` `bottom` `left`.
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="margin-top:0"></div>
-<div class="margin-right:1"></div>
-<div class="margin-bottom:2"></div>
-<div class="margin-left:3"></div>
+<div class="margin-right:u1"></div>
+<div class="margin-bottom:u2"></div>
+<div class="margin-left:u3"></div>
 ```
 {{% /codeblock %}}
 
@@ -49,7 +50,7 @@ To apply responsive margins add responsive suffixes
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="margin@sm:2">
+<div class="margin@sm:u2">
   ...
 </div>
 ```
@@ -91,7 +92,7 @@ The following modifiers are available.
       <code>margin</code>
     </td>
     <td data-label="Attributes">
-      <code>:0</code> ... <code>:15</code>
+      <code>:0</code> <code>:u1</code> ... <code>:u15</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -105,7 +106,7 @@ The following modifiers are available.
       <code>margin-[direction]</code>
     </td>
     <td data-label="Attributes">
-      <code>:0</code> ... <code>:15</code>
+      <code>:0</code> <code>:u1</code> ... <code>:u15</code>
     </td>
     <td data-label="Responsive">
       Yes

@@ -2,7 +2,7 @@
 FONT
 ************************************************************/
 
-$font-heights: 5 !default;
+$font-heights: 6 !default;
 
 .font {
 
@@ -55,18 +55,24 @@ $font-heights: 5 !default;
   ******************************/
 
   &-height {
-		@while $font-heights >= 0 {
-      &\:#{$font-heights} {
-        line-height: $font-heights / 5 + 1 !important;
+    &\:1 {
+      line-height: 1 !important;
+    }
+		@while $font-heights > 0 {
+      &\:1\.#{$font-heights} {
+        line-height: calc((#{$font-heights} / 10) + 1) !important;
       }
       $font-heights: $font-heights - 1;
     }
     @each $screen, $size in $screens {
       &\@#{$screen} {
         @media (min-width : #{$size}) {
-          @while $font-heights >= 0 {
-            &\:#{$font-heights} {
-              line-height: $font-heights / 5 + 1 !important;
+          &\:1 {
+            line-height: 1 !important;
+          }
+          @while $font-heights > 0 {
+            &\:1\.#{$font-heights} {
+              line-height: calc((#{$font-heights} / 10) + 1) !important;
             }
             $font-heights: $font-heights - 1;
           }

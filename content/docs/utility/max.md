@@ -1,6 +1,7 @@
 +++
 title = "Max"
 date = "2018-04-11T09:16:45+12:00"
+family = "Utility"
 draft = false
 description = "The max component provides max width or max height properties."
 +++

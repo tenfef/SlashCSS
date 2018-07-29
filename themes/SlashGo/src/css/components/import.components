@@ -35,6 +35,7 @@ MODULE
 @import "module/table.module";
 @import "module/notice.module";
 @import "module/markup.module";
+@import "module/flag.module";
 
 /******************************
 SINGLE
