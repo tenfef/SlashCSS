@@ -1,9 +1,28 @@
 baseURL= "/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "SlashGo"
 
 [menu]
+
+  [[menu.gettingStarted]]
+    name = "Wrap"
+    url = "/getting-started/wrap/"
+    weight = -100
+
+  [[menu.gettingStarted]]
+    name = "Grid"
+    url = "/getting-started/grid/"
+    weight = -100
+
+  [[menu.gettingStarted]]
+    name = "Row"
+    url = "/getting-started/row/"
+    weight = -100
+
+  [[menu.gettingStarted]]
+    name = "Column"
+    url = "/getting-started/column/"
+    weight = -100
 
   [[menu.layout]]
     name = "Wrap"
@@ -13,6 +32,11 @@ theme = "SlashGo"
   [[menu.layout]]
     name = "Grid"
     url = "/layout/grid/"
+    weight = -100
+
+  [[menu.layout]]
+    name = "Flag"
+    url = "/layout/flag/"
     weight = -100
 
   [[menu.layout]]

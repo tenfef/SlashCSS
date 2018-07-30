@@ -1,0 +1,37 @@
+/************************************************************
+FLAG
+************************************************************/
+
+$flag-gutters: 5 !default;
+
+.flag {
+
+  display: inline-flex;
+  vertical-align: middle;
+
+  &\/item {
+    display: flex;
+    flex-grow: 0;
+    flex-basis: auto;
+    align-items: center;
+    width: auto;
+  }
+
+  /******************************
+  GUTTER
+  ******************************/
+
+	&-gutter {
+		@while $flag-gutters > 0 {
+      &\:u#{$flag-gutters * 2} {
+        .flag\/item {
+          margin-right: var(--u#{$flag-gutters * 2});
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+			}
+			$flag-gutters: $flag-gutters - 1;
+		}
+	}
+}

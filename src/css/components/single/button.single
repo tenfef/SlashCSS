@@ -1,0 +1,449 @@
+/************************************************************
+BUTTON
+************************************************************/
+
+$button-sizes: 5 !default;
+
+:root {
+  --button-outline-weight: 1px;
+  --button-radius: var(--radius);
+  --button-font-family: var(--font-family);
+  --button-font-size: var(--micro);
+  --button-font-weight: var(--medium);
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--u9);
+  margin-right: var(--u1);
+  padding: 0 1rem;
+  padding-bottom: .1rem;
+  outline: none;
+  border: none;
+  border-radius: var(--button-radius);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  white-space: nowrap;
+  transition: var(--transition);
+  overflow: hidden;
+  cursor: pointer;
+  background: linear-gradient(to bottom, var(--grey-l1) 0%, var(--grey-d1) 100%);
+  box-shadow: inset 0 -2px 0 0 rgba(0,0,0,.1);
+  &:hover {
+    text-decoration: none;
+    background: linear-gradient(to bottom, var(--grey-l2) 0%, var(--grey-d1) 100%);
+  }
+  &:active {
+    text-decoration: none;
+    background: linear-gradient(to bottom, var(--grey-l1) 0%, var(--grey-d1) 100%);
+  }
+
+  &.elevate {
+    box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2), 0px 5px 9px 0px var(--grey-l2) !important;
+    &:hover {
+      box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2), 0px 6px 10px 0px var(--grey-l1) !important;
+      transform: translateY(-3px);
+    }
+    &:active {
+      box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2) !important;
+      transform: translateY(0);
+    }
+  }
+
+  &.fill {
+    @each $key, $value in $colors {
+      &\:#{$key} {
+        @if $key == white {
+          color: var(--grey-d1);
+          background: linear-gradient(to bottom, var(--white) 0%, var(--grey-l3) 100%) !important;
+        } @else if $key == black {
+          background: linear-gradient(to bottom, var(--grey-d2) 0%, var(--grey-d5) 100%) !important;
+          &:hover {
+            background: linear-gradient(to bottom, var(--grey-d1) 0%, var(--grey-d5) 100%) !important;
+          }
+          &:active {
+            background: linear-gradient(to bottom, var(--grey-d2) 0%, var(--grey-d5) 100%) !important;
+          }
+        } @else {
+          background: linear-gradient(to bottom, var(--#{$key}-l1) 0%, var(--#{$key}-d1) 100%) !important;
+          &:hover {
+            background: linear-gradient(to bottom, var(--#{$key}-l2) 0%, var(--#{$key}-d1) 100%) !important;
+          }
+          &:active {
+            background: linear-gradient(to bottom, var(--#{$key}-l1) 0%, var(--#{$key}-d1) 100%) !important;
+          }
+        }
+      }
+    }
+  }
+
+  // pseudo
+  &:last-child {
+    margin-right: 0;
+  }
+
+  /******************************
+  SIZES
+  ******************************/
+
+  &-size {
+    @each $size, $i in $sizes {
+      &\:#{$size} {
+        height: var(--u#{$i + 6});
+      }
+    }
+  }
+
+  /******************************
+  GROW
+  ******************************/
+
+  &-grow {
+    @while $button-sizes > 0 {
+      &\:u#{$button-sizes * 3} {
+        padding-left: var(--u#{$button-sizes * 3});
+        padding-right: var(--u#{$button-sizes * 3});
+      }
+      @each $key, $value in $screens {
+        &\@#{$key} {
+          @media (min-width: $value) {
+            &\:u#{$button-sizes * 3} {
+              padding-left: var(--u#{$button-sizes * 3});
+              padding-right: var(--u#{$button-sizes * 3});
+            }
+          }
+        }
+      }
+      $button-sizes: $button-sizes - 1;
+    }
+  }
+
+  /******************************
+  STYLE
+  ******************************/
+
+  &-style {
+    &\:flat {
+      padding-bottom: .1rem;
+      box-shadow: none;
+      background: var(--grey);
+      &:hover {
+        transform: translateY(0);
+        box-shadow: none;
+        background: var(--grey-d1);
+      }
+      &:active {
+        box-shadow: none;
+        background: var(--grey-d2);
+      }
+      &.fill {
+        @each $key, $value in $colors {
+          &\:#{$key} {
+            @if $key == white {
+              background: var(--white) !important;
+              color: var(--grey-d1);
+              &:hover {
+                background: var(--grey-l4) !important;
+              }
+              &:active {
+                background: var(--grey-l3) !important;
+              }
+            } @else if $key == black {
+              background: var(--black) !important;
+              color: var(--white);
+              &:hover {
+                background: var(--grey-d4) !important;
+              }
+              &:active {
+                background: var(--black) !important;
+              }
+            } @else {
+              background: var(--#{$key}) !important;
+              &:hover {
+                background: var(--#{$key}-l1) !important;
+              }
+              &:active {
+                background: var(--#{$key}) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &\:outline {
+      padding-bottom: .1rem;
+      box-shadow: none;
+      box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--grey-l4);
+      background: transparent;
+      color: var(--grey-d1);
+      &:hover {
+        box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--grey-l2);
+        background: var(--grey-l5);
+        transform: translateY(0);
+        z-index: 2;
+      }
+      &:active {
+        box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--grey-l2);
+        background: var(--grey-l4);
+      }
+      &.fill {
+        @each $key, $value in $colors {
+          &\:#{$key} {
+            @if $key == white {
+              background: transparent !important;
+              box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--white);
+              color: var(--white);
+              &:hover {
+                background: var(--white) !important;
+                color: var(--black);
+              }
+              &:active {
+                background: var(--white) !important;
+              }
+            } @else if $key == black {
+              background: transparent !important;
+              box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--black);
+              color: var(--black);
+              &:hover {
+                background: var(--black) !important;
+                color: var(--white);
+              }
+              &:active {
+                background: var(--black) !important;
+              }
+            } @else {
+              background: transparent !important;
+              box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key});
+              color: var(--#{$key});
+              &:hover {
+                background: var(--#{$key}-l1) !important;
+                color: var(--white);
+              }
+              &:active {
+                background: var(--#{$key}) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/************************************************************
+BUTTON(S)
+************************************************************/
+
+.buttons {
+  display: inline-flex;
+  overflow: hidden;
+
+  &.border-radius {
+    &\:round {
+      & > .button {
+
+        &.button-style\:outline {
+
+          border-radius: 0;
+
+          &:first-child {
+            border-top-left-radius: 500px;
+            border-bottom-left-radius: 500px;
+          }
+          &:last-child {
+            border-top-right-radius: 500px;
+            border-bottom-right-radius: 500px;
+          }
+        }
+
+      }
+      &.buttons-direction\:down {
+        & > .button {
+
+          &.button-style\:outline {
+
+            border-radius: 0;
+
+            &:first-child {
+              border-top-left-radius: 500px;
+              border-top-right-radius: 500px;
+            }
+            &:last-child {
+              border-bottom-left-radius: 500px;
+              border-bottom-right-radius: 500px;
+            }
+            &:not(:first-child) {
+              margin: 0;
+              margin-top: calc(-1 * var(--button-outline-weight));
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  & > .button {
+    flex: 1;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    background: var(--grey);
+    &:hover {
+      transform: translateY(0);
+      box-shadow: none;
+      background: var(--grey-d1);
+    }
+    &:active {
+      box-shadow: none;
+      background: var(--grey-d2);
+    }
+
+    &.fill {
+      @each $key, $value in $colors {
+        &\:#{$key} {
+            @if $key == white {
+                background: var(--white) !important;
+                color: var(--grey-d1);
+                &:hover {
+                  background: var(--grey-l4) !important;
+                }
+                &:active {
+                  background: var(--white) !important;
+                }
+            } @else if $key == black {
+                background: var(--black) !important;
+                color: var(--white);
+                &:hover {
+                  background: var(--grey-d4) !important;
+                }
+                &:active {
+                  background: var(--black) !important;
+                }
+            } @else {
+            background: var(--#{$key}) !important;
+                &:hover {
+                  background: var(--#{$key}-l1) !important;
+                }
+                &:active {
+                  background: var(--#{$key}) !important;
+                }
+            }
+        }
+      }
+    }
+
+    &.button-style\:outline {
+
+      background: transparent;
+      box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--grey);
+
+      &:hover {
+        background: var(--grey) !important;
+        color: var(--white);
+      }
+      &:active {
+        background: var(--grey) !important;
+      }
+
+      &:first-child {
+        border-top-left-radius: var(--button-radius);
+        border-bottom-left-radius: var(--button-radius);
+      }
+      &:last-child {
+        border-top-right-radius: var(--button-radius);
+        border-bottom-right-radius: var(--button-radius);
+      }
+      &:not(:first-child) {
+        margin-left: calc(-1 * var(--button-outline-weight));
+      }
+      &.fill {
+        @each $key, $value in $colors {
+          &\:#{$key} {
+            @if $key == white {
+              background: transparent !important;
+              box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--white);
+              color: var(--white);
+              &:hover {
+                background: var(--white) !important;
+                color: var(--black);
+              }
+              &:active {
+                background: var(--white) !important;
+              }
+            } @else if $key == black {
+              background: transparent !important;
+              box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--black);
+              color: var(--black);
+              &:hover {
+                background: var(--black) !important;
+                color: var(--white);
+              }
+              &:active {
+                background: var(--black) !important;
+              }
+            } @else {
+              background: transparent !important;
+              box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key});
+              color: var(--#{$key});
+              &:hover {
+                background: var(--#{$key}-l1) !important;
+                color: var(--white);
+              }
+              &:active {
+                background: var(--#{$key}) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /******************************
+  DIRECTION
+  ******************************/
+
+  &-direction {
+    &\:down {
+      flex-direction: column;
+      & > .button {
+        &.border-radius\:outline {
+          &:first-child {
+            border-radius: 0;
+            border-top-left-radius: var(--button-radius);
+            border-top-right-radius: var(--button-radius);
+          }
+          &:last-child {
+            border-radius: 0;
+            border-bottom-left-radius: var(--button-radius);
+            border-bottom-right-radius: var(--button-radius);
+          }
+          &:not(:first-child) {
+            margin: 0;
+            margin-top: calc(-1 * var(--button-outline-weight));
+          }
+        }
+      }
+    }
+    @each $key, $value in $screens {
+      &\@#{$key} {
+        @media (min-width: $value) {
+          &\:down {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

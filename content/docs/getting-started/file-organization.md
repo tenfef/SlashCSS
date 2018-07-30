@@ -1,6 +1,7 @@
 +++
 title = "File Organization"
 date = "2018-04-11T09:16:45+12:00"
+family = "Getting Started"
 draft = false
 description = "An introduction to the 5 categories of component structure."
 +++

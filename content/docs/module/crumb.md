@@ -1,13 +1,14 @@
 +++
 title = "Crumb"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "The crumb component provides visual information of the current page location in context to the overall parent hierarchy."
 +++
 
 ### Basic Usage
 
-<div class="crumb margin-bottom:2">
+<div class="crumb margin-bottom:u2">
   <a href="#" class="crumb/item">Breadcrumb</a>
   <span class="crumb/trail">/</span>
   <a href="#" class="crumb/item">Breadcrumb</a>

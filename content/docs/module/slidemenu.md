@@ -1,6 +1,7 @@
 +++
 title = "Slidemenu"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "Slide panel navigation for mobile."
 +++
@@ -49,7 +50,7 @@ You can change the direction of the slide with the `slide-direction` property.
 
 ### JS Settings
 
-<table class="table width:100% ">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>

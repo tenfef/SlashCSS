@@ -1,6 +1,7 @@
 +++
 title = "Form"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "The form component provides styling for standard forms."
 +++
@@ -235,7 +236,7 @@ Here is an example of a Company Information form in multi-column format. For mul
           Company Information
         </h5>
         <div class="form/item">
-          <div class="row row-gutter:1 margin-bottom:3">
+          <div class="row row-gutter:u4 margin-bottom:3">
             <div class="column:12 column@sm:6">
               <label class="form/label:fluid">Company</label>
               <input type="text" placeholder="Company" class="max-width:100%">
@@ -252,7 +253,7 @@ Here is an example of a Company Information form in multi-column format. For mul
           <input type="text" placeholder="Central" class="max-width:100%">
           <span class="form/help">Help message example</span>
         </div>
-        <div class="row row-gutter:1 margin-bottom:2">
+        <div class="row row-gutter:u4 margin-bottom:u2">
           <div class="column:12 column@sm:6">
             <div class="form/item">
               <label>City</label>
@@ -266,7 +267,7 @@ Here is an example of a Company Information form in multi-column format. For mul
             </div>
           </div>
         </div>
-        <div class="row row-gutter:1 margin-bottom:4">
+        <div class="row row-gutter:u4 margin-bottom:4">
           <div class="column:12 column@sm:6">
             <div class="form/item">
               <label>Zip</label>

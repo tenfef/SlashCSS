@@ -1,6 +1,7 @@
 +++
 title = "Row"
 date = "2018-04-11T09:16:45+12:00"
+family = "Layout"
 draft = false
 description = "The basics of using the column component to horizontally structure layout."
 +++
@@ -10,33 +11,33 @@ description = "The basics of using the column component to horizontally structur
 The `row` component works alongside the column component and applies a horizontal sectioning based on the flex system.
 
 <!-- 6 Columns -->
-<div class="row margin-bottom:2">
+<div class="row margin-bottom:u2">
   <div class="column">
-    <div class="padding:1 fill:blue">
+    <div class="padding:u4 fill:blue">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
+    <div class="padding:u4 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
+    <div class="padding:u4 fill:blue">
       &nbsp;
     </div>
   </div>
 </div>
 
 <!-- 6 Columns -->
-<div class="row margin-bottom:2">
+<div class="row margin-bottom:u2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
+    <div class="padding:u4 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
+    <div class="padding:u4 fill:blue">
       &nbsp;
     </div>
   </div>
@@ -74,47 +75,47 @@ The `row` component works alongside the column component and applies a horizonta
 
 You can apply gutter to your columns with the `row-gutter` property. Standard media query suffixes can be applied.
 
-<div class="row row-gutter:1 margin-bottom:2">
+<div class="row row-gutter:u4 margin-bottom:u2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
+    <div class="padding:u4 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
+    <div class="padding:u4 fill:blue">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
+    <div class="padding:u4 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
+    <div class="padding:u4 fill:blue">
       &nbsp;
     </div>
   </div>
 </div>
 
-<div class="row row-gutter:5 margin-bottom:2">
+<div class="row row-gutter:u8 margin-bottom:u2">
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
+    <div class="padding:u4 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
+    <div class="padding:u4 fill:blue">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue-l2">
+    <div class="padding:u4 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:1 fill:blue">
+    <div class="padding:u4 fill:blue">
       &nbsp;
     </div>
   </div>
@@ -122,7 +123,7 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="row row-gutter:1">
+<div class="row row-gutter:u4">
   ...
 </div>
 <div class="row row-gutter:2">
@@ -134,7 +135,7 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
 <div class="row row-gutter:4">
   ...
 </div>
-<div class="row row-gutter:5">
+<div class="row row-gutter:u8">
   ...
 </div>
 ```

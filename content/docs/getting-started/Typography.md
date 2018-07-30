@@ -1,33 +1,10 @@
----
-title: "Typography"
-date: 2018-04-11T09:16:45+12:00
-draft: false
-
-layout: "docs"
-
-description: "The official typography guide to the Fergus brand."
-
-includeLabel: false
-labelText: "GENERAL"
-labelColor: "blue"
-lastUpdated: "10/04/18"
-parent: "Brand"
-family: "Brand Guideline"
-sizeMetric: true
-spaceMetric: true
-responsive: true
-
-buttonOne:
-  include: true
-  icon: "fas fa-star"
-  text: "Changelog"
-  link: "https://github.com/atjinsu/zap-css/commits/master"
-buttonTwo:
-  include: true
-  icon: "fas fa-external-link-alt"
-  text: "View Source"
-  link: "https://github.com/atjinsu/zap-css"
----
++++
+title = "Typography"
+date = 2018-04-11T09:16:45+12:00
+family = "Getting Started"
+draft = false
+description = "The basics of using the column component to vertically structure layout."
++++
 
 ### Fergus Font Family
 
@@ -64,7 +41,7 @@ It is recommended to apply accents to using various primary accent colors.
 
 In order to achieve a well balanced content block. Apply the following triangle rules to determine where to insert soft returns.
 
-<article class="card margin-bottom:2">
+<article class="card margin-bottom:u2">
   <div class="card/content">
     <div class="row">
       <div class="item -span-sm-8 -span-md-7">
@@ -74,7 +51,7 @@ In order to achieve a well balanced content block. Apply the following triangle 
   </div>
 </article>
 
-<article class="card margin-bottom:2">
+<article class="card margin-bottom:u2">
   <div class="card/content">
     <div class="row -center">
       <div class="item -span-sm-8 -span-md-7">
@@ -84,7 +61,7 @@ In order to achieve a well balanced content block. Apply the following triangle 
   </div>
 </article>
 
-<article class="card margin-bottom:2">
+<article class="card margin-bottom:u2">
   <div class="card/content">
     <div class="row -right">
       <div class="item -span-sm-8 -span-md-7">

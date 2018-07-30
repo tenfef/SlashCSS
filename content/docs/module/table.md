@@ -1,6 +1,7 @@
 +++
 title = "Table"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "The table module is useful for displaying grid based data and content."
 +++
@@ -9,7 +10,7 @@ description = "The table module is useful for displaying grid based data and con
 
 The table component is defined with the `table` class. By default the table width will only be as wide to fit the content. To make the table span the full width assign the `width:100%` component. Table rows or table cells can have hover states using the `hover` component.
 
-<table class="table width:100% margin-bottom:2">
+<table class="table width:100% margin-bottom:u2">
   <thead>
     <tr>
       <th>Head</th>
@@ -72,7 +73,7 @@ The table component is defined with the `table` class. By default the table widt
 
 Tables can be responsive with the `table:pile` modifier. Header labels can be applied by adding the attribute `data-label` to the `<td>` cell. Additionally, you can apply the `elevate` component to change the style of your table.
 
-<table class="table width:100% elevate table:pile table@sm:unpile margin-bottom:2">
+<table class="table width:100% elevate table:pile table@sm:unpile margin-bottom:u2">
   <thead>
     <tr>
       <th>Head 1</th>

@@ -1,6 +1,7 @@
 +++
 title = "Menu"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "The nav component provides you with a standard responsive navigation bar."
 +++
@@ -9,7 +10,7 @@ description = "The nav component provides you with a standard responsive navigat
 
 The `menu` component is built using flex and is useful for building menu bars.
 
-<div class="fill:blue padding:2 margin-bottom:2">
+<div class="fill:blue padding:2 margin-bottom:u2">
   <nav class="menu" role="menu">
     <div class="menu/content">
       <a href="#" class="menu/item is-active">

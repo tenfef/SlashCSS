@@ -1,6 +1,7 @@
 +++
 title = "List"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "The list module is used to present any list of content horizontally or vertically."
 +++
@@ -23,7 +24,7 @@ The list module `list` is useful for any type of list content that runs horizont
 
 You can use the `list-gutter` property to control the gutter between list items. You can make your list run horizontally with the `list-direction:right` modifier.
 
-<ul class="list list-gutter:1 margin-bottom:2">
+<ul class="list list-gutter:1 margin-bottom:u2">
   <li class="list/item">
     <div class="padding:2 border-style:radius fill:red">
     </div>
@@ -38,7 +39,7 @@ You can use the `list-gutter` property to control the gutter between list items.
   </li>
 </ul>
 
-<ul class="list list-gutter:2 list-direction:right margin-bottom:2">
+<ul class="list list-gutter:2 list-direction:right margin-bottom:u2">
   <li class="list/item">
     <div class="padding:2 border-style:radius fill:blue">
     </div>
@@ -53,7 +54,7 @@ You can use the `list-gutter` property to control the gutter between list items.
   </li>
 </ul>
 
-<ul class="list list-gutter:3 list-direction:right margin-bottom:2">
+<ul class="list list-gutter:3 list-direction:right margin-bottom:u2">
   <li class="list/item">
     <div class="padding:2 border-style:radius fill:blue">
     </div>
@@ -68,7 +69,7 @@ You can use the `list-gutter` property to control the gutter between list items.
   </li>
 </ul>
 
-<ul class="list list-gutter:4 list-direction:right margin-bottom:2">
+<ul class="list list-gutter:4 list-direction:right margin-bottom:u2">
   <li class="list/item">
     <div class="padding:2 border-style:radius fill:blue">
     </div>
@@ -83,7 +84,7 @@ You can use the `list-gutter` property to control the gutter between list items.
   </li>
 </ul>
 
-<ul class="list list-gutter:5 list-direction:right margin-bottom:2">
+<ul class="list list-gutter:5 list-direction:right margin-bottom:u2">
   <li class="list/item">
     <div class="padding:2 border-style:radius fill:blue">
     </div>

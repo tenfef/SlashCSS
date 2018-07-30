@@ -1,6 +1,7 @@
 +++
 title = "Tab"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "Tab is a javascript component that allows for hiding and showing of content using tabs to navigate."
 +++
@@ -23,19 +24,19 @@ Defined with class `tab` and initialied with Javascript, Tab requires the header
   </div>
   <div class="tab/content">
     <div id="panel1" class="tab/item is-active">
-      <h5 class="font margin-bottom:2">Tab 1 Content</h5>
+      <h5 class="font margin-bottom:u2">Tab 1 Content</h5>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae dui quis tellus tincidunt tempor sed sit amet eros. Phasellus in ipsum eu leo dignissim feugiat vitae vitae nunc. Pellentesque dignissim nibh sed arcu scelerisque dignissim eget rhoncus orci. Pellentesque finibus imperdiet mi, ac volutpat neque suscipit ac. Quisque faucibus sodales magna ac pretium. Curabitur enim felis, efficitur condimentum sagittis eget, aliquet sit amet diam. Ut sed pharetra nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin diam nibh, feugiat ut elit imperdiet, porttitor euismod libero. Aliquam erat volutpat. Maecenas et mauris dignissim enim dictum tristique tristique a purus. Proin vel magna eget libero feugiat ultrices. Phasellus aliquet et nisi ac molestie. Proin congue nisl ac dolor volutpat cursus. Aenean rutrum libero eu diam tempor, id luctus urna dictum.
       </p>
     </div>
     <div id="panel2" class="tab/item">
-      <h5 class="font margin-bottom:2">Tab 2 Content</h5>
+      <h5 class="font margin-bottom:u2">Tab 2 Content</h5>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae dui quis tellus tincidunt tempor sed sit amet eros. Phasellus in ipsum eu leo dignissim feugiat vitae vitae nunc. Pellentesque dignissim nibh sed arcu scelerisque dignissim eget rhoncus orci. Pellentesque finibus imperdiet mi, ac volutpat neque suscipit ac.
       </p>
     </div>
     <div id="panel3" class="tab/item">
-      <h5 class="font margin-bottom:2">Tab 3 Content</h5>
+      <h5 class="font margin-bottom:u2">Tab 3 Content</h5>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae dui quis tellus tincidunt tempor sed sit amet eros. Phasellus in ipsum eu leo dignissim feugiat vitae vitae nunc. Pellentesque dignissim nibh sed arcu scelerisque dignissim eget rhoncus orci. Pellentesque finibus imperdiet mi, ac volutpat neque suscipit ac. Quisque faucibus sodales magna ac pretium. Curabitur enim felis, efficitur condimentum sagittis eget, aliquet sit amet diam. Ut sed pharetra nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin diam nibh, feugiat ut elit imperdiet, porttitor euismod libero.
       </p>

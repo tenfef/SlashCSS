@@ -1,6 +1,7 @@
 +++
 title = "Notice"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "The notice component is useful for visually displaying temporary content or information."
 +++
@@ -102,7 +103,7 @@ You can change the background color using the `fill` component.
 
 Alignment can be modified with the `align` component.
 
-<div class="notice align-content:center margin-bottom:2 is-active">
+<div class="notice align-content:center margin-bottom:u2 is-active">
   <div class="notice/content">
     <span class="label -middle -white u-margin-right-1">NEW</span>
     Sample Notification

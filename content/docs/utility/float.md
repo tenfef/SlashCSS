@@ -10,21 +10,21 @@ description = "The float component forces float of any given element."
 
 Defined with `float` and direction.
 
-<div class="row margin-bottom:2">
+<div class="row margin-bottom:u2">
   <div class="column:12">
     <div class="width:10 height:10 float:left">
       <img src="https://placeimg.com/500/500/people">
     </div>
   </div>
 </div>
-<div class="row margin-bottom:2">
+<div class="row margin-bottom:u2">
   <div class="column:12">
     <div class="width:10 height:10 float:right">
       <img src="https://placeimg.com/500/500/people">
     </div>
   </div>
 </div>
-<div class="row margin-bottom:2">
+<div class="row margin-bottom:u2">
   <div class="column:12">
     <div class="width:10 height:10 float:none">
       <img src="https://placeimg.com/500/500/people">

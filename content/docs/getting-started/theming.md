@@ -1,6 +1,7 @@
 +++
 title = "Theming"
 date = "2018-04-11T09:16:45+12:00"
+family = "Getting Started"
 draft = false
 description = "Extend existing components or create new ones to suit your need."
 +++
@@ -22,7 +23,7 @@ root
     ├── zap.scss
     └── your-custom-css.scss // imported into zap.scss
 ```
-<div class="margin-bottom:2"></div>
+<div class="margin-bottom:u2"></div>
 
 As your project grows it is recommended that you organize your future components based on the framework's file category structure:
 

@@ -1,6 +1,7 @@
 +++
 title = "Dropdown"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined content."
 +++
@@ -9,7 +10,7 @@ description = "A dropdown menu is a toggleable menu that allows the user to choo
 
 The dropdown component is defined with the `dropdown` class and is initialized with javascript. You can enable hover toggle with the `:hover` modifier.
 
-<div class="dropdown dropdown:hover margin-bottom:2">
+<div class="dropdown dropdown:hover margin-bottom:u2">
   <div class="dropdown/toggle" title="Menu">
     <a class="button button-style:outline button-grow:1">Toggle Menu</a>
   </div>
@@ -69,7 +70,7 @@ var dropdown = new Dropdown();
 By default the dropdown menu is aligned to the bottom left of its parent container. To override position and alignment assign the following modifiers:
 
 <div>
-  <div class="dropdown dropdown-position:center margin-bottom:2 js-dropdown">
+  <div class="dropdown dropdown-position:center margin-bottom:u2 js-dropdown">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Center Menu</span>
     </a>
@@ -93,7 +94,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-position:right margin-bottom:2 js-dropdown">
+  <div class="dropdown dropdown-position:right margin-bottom:u2 js-dropdown">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Right Menu</span>
     </a>
@@ -117,7 +118,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-position:top-right margin-bottom:2 js-dropdown">
+  <div class="dropdown dropdown-position:top-right margin-bottom:u2 js-dropdown">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Top Right Menu</span>
     </a>
@@ -141,7 +142,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-position:top-center margin-bottom:2 js-dropdown">
+  <div class="dropdown dropdown-position:top-center margin-bottom:u2 js-dropdown">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Top Center Menu</span>
     </a>

@@ -10,11 +10,11 @@ description = "The clear component applies basic clear properties to block eleme
 
 Defined with `clear`. Provides a simple way of apply clear both.
 
-<div class="float:left column:6 padding:5 fill:grey-l4 margin-bottom:2">
+<div class="float:left column:6 padding:5 fill:grey-l4 margin-bottom:u2">
 
 </div>
 
-<div class="clear fill:grey-l5 margin-bottom:2">
+<div class="clear fill:grey-l5 margin-bottom:u2">
   <div class="column:12 padding:5 fill:grey-l3">
 
   </div>
@@ -35,7 +35,7 @@ Defined with `clear`. Provides a simple way of apply clear both.
 
 Defined with `clear-fix`. Provides a simple way of apply clearfixes to block elements that contain floating elements.
 
-<div class="clear-fix fill:grey-l5 margin-bottom:2">
+<div class="clear-fix fill:grey-l5 margin-bottom:u2">
   <div class="float:left column:6 padding:5 fill:grey-l3">
 
   </div>

@@ -1,6 +1,7 @@
 +++
 title = "Line"
 date = "2018-04-11T09:16:45+12:00"
+family = "Single"
 draft = false
 description = "The line component is similar to the hr element and is used as content dividers."
 +++
@@ -22,39 +23,39 @@ The Single line `line` creates a soft horizontal rules that divide sections.
 
 You can change the color of the line with the `fill` component
 
-<div class="line fill:red margin-bottom:2"></div>
-<div class="line fill:pink margin-bottom:2"></div>
-<div class="line fill:violet margin-bottom:2"></div>
-<div class="line fill:purple margin-bottom:2"></div>
-<div class="line fill:navy margin-bottom:2"></div>
-<div class="line fill:blue margin-bottom:2"></div>
-<div class="line fill:teal margin-bottom:2"></div>
-<div class="line fill:green margin-bottom:2"></div>
-<div class="line fill:lime margin-bottom:2"></div>
-<div class="line fill:yellow margin-bottom:2"></div>
-<div class="line fill:orange margin-bottom:2"></div>
-<div class="line fill:brown margin-bottom:2"></div>
-<div class="line fill:grey margin-bottom:2"></div>
-<div class="line fill:white margin-bottom:2"></div>
+<div class="line fill:red margin-bottom:u2"></div>
+<div class="line fill:pink margin-bottom:u2"></div>
+<div class="line fill:violet margin-bottom:u2"></div>
+<div class="line fill:purple margin-bottom:u2"></div>
+<div class="line fill:navy margin-bottom:u2"></div>
+<div class="line fill:blue margin-bottom:u2"></div>
+<div class="line fill:teal margin-bottom:u2"></div>
+<div class="line fill:green margin-bottom:u2"></div>
+<div class="line fill:lime margin-bottom:u2"></div>
+<div class="line fill:yellow margin-bottom:u2"></div>
+<div class="line fill:orange margin-bottom:u2"></div>
+<div class="line fill:brown margin-bottom:u2"></div>
+<div class="line fill:grey margin-bottom:u2"></div>
+<div class="line fill:white margin-bottom:u2"></div>
 <div class="line fill:black margin-bottom:6"></div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="line fill:red margin-bottom:2"></div>
-<div class="line fill:pink margin-bottom:2"></div>
-<div class="line fill:violet margin-bottom:2"></div>
-<div class="line fill:purple margin-bottom:2"></div>
-<div class="line fill:navy margin-bottom:2"></div>
-<div class="line fill:blue margin-bottom:2"></div>
-<div class="line fill:teal margin-bottom:2"></div>
-<div class="line fill:green margin-bottom:2"></div>
-<div class="line fill:lime margin-bottom:2"></div>
-<div class="line fill:yellow margin-bottom:2"></div>
-<div class="line fill:orange margin-bottom:2"></div>
-<div class="line fill:brown margin-bottom:2"></div>
-<div class="line fill:grey margin-bottom:2"></div>
-<div class="line fill:white margin-bottom:2"></div>
-<div class="line fill:black margin-bottom:2"></div>
+<div class="line fill:red margin-bottom:u2"></div>
+<div class="line fill:pink margin-bottom:u2"></div>
+<div class="line fill:violet margin-bottom:u2"></div>
+<div class="line fill:purple margin-bottom:u2"></div>
+<div class="line fill:navy margin-bottom:u2"></div>
+<div class="line fill:blue margin-bottom:u2"></div>
+<div class="line fill:teal margin-bottom:u2"></div>
+<div class="line fill:green margin-bottom:u2"></div>
+<div class="line fill:lime margin-bottom:u2"></div>
+<div class="line fill:yellow margin-bottom:u2"></div>
+<div class="line fill:orange margin-bottom:u2"></div>
+<div class="line fill:brown margin-bottom:u2"></div>
+<div class="line fill:grey margin-bottom:u2"></div>
+<div class="line fill:white margin-bottom:u2"></div>
+<div class="line fill:black margin-bottom:u2"></div>
 ```
 {{% /codeblock %}}
 

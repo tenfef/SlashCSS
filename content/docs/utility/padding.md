@@ -13,7 +13,7 @@ Defind with `padding`. There are 16 levels of padding which are based on the sta
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="padding:0"></div>
-<div class="padding:1"></div>
+<div class="padding:u4"></div>
 <div class="padding:2"></div>
 <div class="padding:3"></div>
 <div class="padding:4"></div>
@@ -22,12 +22,12 @@ Defind with `padding`. There are 16 levels of padding which are based on the sta
 <div class="padding:7"></div>
 <div class="padding:8"></div>
 <div class="padding:9"></div>
-<div class="padding:10"></div>
-<div class="padding:11"></div>
-<div class="padding:12"></div>
-<div class="padding:13"></div>
-<div class="padding:14"></div>
-<div class="padding:15"></div>
+<div class="padding:u40"></div>
+<div class="padding:u41"></div>
+<div class="padding:u42"></div>
+<div class="padding:u43"></div>
+<div class="padding:u44"></div>
+<div class="padding:u45"></div>
 ```
 {{% /codeblock %}}
 

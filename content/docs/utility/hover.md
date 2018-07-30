@@ -10,9 +10,9 @@ description = "The hover component provides easy way to apply hover states to an
 
 Defind with `hover`. The default hover class provides pointer cursor and transition to the applied element
 
-<span class="padding:1 hover margin-bottom:6">Hover me</span>
-<span class="padding:1 hover hover:underline margin-bottom:6">Hover me</span>
-<span class="padding:1 hover hover:elevate margin-bottom:6">Hover me</span>
+<span class="padding:u4 hover margin-bottom:6">Hover me</span>
+<span class="padding:u4 hover hover:underline margin-bottom:6">Hover me</span>
+<span class="padding:u4 hover hover:elevate margin-bottom:6">Hover me</span>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html

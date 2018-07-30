@@ -1,6 +1,7 @@
 +++
 title = "Accordion"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "Accordions are useful when you want to hide and show large content."
 +++
@@ -9,7 +10,7 @@ description = "Accordions are useful when you want to hide and show large conten
 
 Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow` child element. Styling is minimum to allow for easier style overrides.
 
-<div class="accordion margin-bottom:2">
+<div class="accordion margin-bottom:u2">
   <div class="accordion/item">
     <a class="accordion/header">
       Panel 1

@@ -1,6 +1,7 @@
 +++
 title = "Flag"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "The markup component formats general paragraph and heading elements for readability."
 +++

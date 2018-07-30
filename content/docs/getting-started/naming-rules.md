@@ -1,6 +1,7 @@
 +++
 title = "Naming Rules"
 date = "2018-04-11T09:16:45+12:00"
+family = "Getting Started"
 draft = false
 description = "Indepth guide into how component names are used and defined."
 +++

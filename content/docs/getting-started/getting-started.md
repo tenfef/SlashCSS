@@ -1,6 +1,7 @@
 +++
 title = "Getting Started"
 date = "2018-04-11T09:16:45+12:00"
+family = "Getting Started"
 draft = false
 description = "Geting started is easy, here's a quick start guide to help kickstart your project."
 +++

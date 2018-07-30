@@ -1,6 +1,7 @@
 +++
 title = "Reset"
 date = "2018-04-11T09:16:45+12:00"
+family = "Getting Started"
 draft = false
 description = "ZapCSS uses Eric Meyer's method to apply global reset to reduce browser inconsistencies."
 +++

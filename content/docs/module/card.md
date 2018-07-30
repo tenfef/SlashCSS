@@ -1,6 +1,7 @@
 +++
 title = "Card"
 date = "2018-04-11T09:16:45+12:00"
+family = "Module"
 draft = false
 description = "The card component is a simple card based container that holds various types of information. You can combine various style utilities to change its appearance."
 +++

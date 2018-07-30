@@ -1,6 +1,7 @@
 +++
 title = "Media"
 date = "2018-04-11T09:16:45+12:00"
+family = "Single"
 draft = false
 description = "The media component formats images provides useful preset sizes."
 +++
