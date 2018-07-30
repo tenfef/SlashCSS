@@ -61,7 +61,7 @@ MENU
       background-color: var(--menu-item-active-fill);
     }
     &.is-active {
-      box-shadow: inset 0px -2px 0px 0px var(--primary-color);
+      box-shadow: inset 0px -2px 0px 0px var(--black);
     }
   }
 }
