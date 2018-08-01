@@ -10,10 +10,10 @@ description = "The card component is a simple card based container that holds va
 
 The card module contains header, content and footer child elements. You can also apply `elevate` component to modify the look.
 
-<div class="row row-gutter:2 margin-bottom:4 margin-top:10">
+<div class="row row-gutter:2 margin-bottom:u4 margin-top:10">
   <div class="column:12 column@sm:6">
     <div class="card elevate border:none margin-bottom:6">
-      <div class="card/header padding:0">
+      <div class="card/header padding:u0">
         <img src="https://i.imgur.com/Ig4qpjc.jpg" class="media">
       </div>
       <div class="card/content border-bottom">
@@ -32,7 +32,7 @@ The card module contains header, content and footer child elements. You can also
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@zapcss</a>. <a href="#">#css</a> <a href="#">#responsive</a>
         </p>
       </div>
-      <div class="card/footer padding:0">
+      <div class="card/footer padding:u0">
         <a href="#" class="button button-size:4 button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
           Send Message
         </a>
@@ -61,7 +61,7 @@ The card module contains header, content and footer child elements. You can also
   <div class="card/content">
     ...
   </div>
-  <div class="card/footer padding:0">
+  <div class="card/footer padding:u0">
     <a href="#" class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
       Send Message
     </a>

@@ -43,7 +43,7 @@ SINGLE
 
 @import "single/button.single";
 @import "single/media.single";
-@import "single/label.single";
+@import "single/pill.single";
 @import "single/line.single";
 @import "single/tip.single";
 

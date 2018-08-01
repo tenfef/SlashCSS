@@ -12,7 +12,7 @@ Defind with `padding`. There are 16 levels of padding which are based on the sta
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="padding:0"></div>
+<div class="padding:u0"></div>
 <div class="padding:u4"></div>
 <div class="padding:2"></div>
 <div class="padding:3"></div>

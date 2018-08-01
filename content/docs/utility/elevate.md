@@ -31,7 +31,7 @@ The `elevate` component can be applied to any type of component.
 <button class="button fill:white elevate button-grow:5 border-radius:round color:grey-d1 margin-bottom:u2">Button</button>
 <button class="button fill:blue elevate button-grow:5 border-radius:round margin-bottom:u2">Button</button>
 
-<div class="padding:4 fill:white border-radius elevate margin-bottom:4">
+<div class="padding:4 fill:white border-radius elevate margin-bottom:u4">
 	<div class="flag flag-gutter:1">
 		<div class="flag/item">
 			<img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:5 fill:primary elevate">

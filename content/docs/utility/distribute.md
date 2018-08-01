@@ -15,7 +15,7 @@ Defined with `distribute`. You can distribute child elements horiontally or vert
 	<div class="display:inline-block media-size:3 fill:grey-l3"></div>
 	<div class="display:inline-block media-size:3 fill:grey-l3"></div>
 </div>
-<div class="distribute-y:1 margin-bottom:u2 margin-right:2">
+<div class="distribute-y:1 margin-bottom:u2 margin-right:u4">
 	<div class="media-size:3 fill:grey-l3"></div>
 	<div class="media-size:3 fill:grey-l3"></div>
 	<div class="media-size:3 fill:grey-l3"></div>

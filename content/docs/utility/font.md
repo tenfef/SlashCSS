@@ -42,7 +42,7 @@ For different weights use standard weight modifiers.
 <h3 class="font-weight:regular font-height:1.4 margin:0">Regular Typography</h3>
 <h3 class="font-weight:medium font-height:1.4 margin:0">Medium Typography</h3>
 <h3 class="font-weight:bold font-height:1.4 margin:0">Bold Typography</h3>
-<h3 class="font-weight:black font-height:1.4 margin:0 margin-bottom:4">Black Typography</h3>
+<h3 class="font-weight:black font-height:1.4 margin:0 margin-bottom:u4">Black Typography</h3>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
@@ -58,12 +58,12 @@ For different weights use standard weight modifiers.
 
 You can apply unitless line height with the `font-height` property.
 
-<h6 class="font-height:1 fill:grey-l4 margin:0 margin-bottom:1">Line Height 1</h6>
-<h6 class="font-height:1.1 fill:grey-l4 margin:0 margin-bottom:1">Line Height 1.1</h6>
-<h6 class="font-height:1.2 fill:grey-l4 margin:0 margin-bottom:1">Line Height 1.2</h6>
-<h6 class="font-height:1.3 fill:grey-l4 margin:0 margin-bottom:1">Line Height 1.3</h6>
-<h6 class="font-height:1.4 fill:grey-l4 margin:0 margin-bottom:1">Line Height 1.4</h6>
-<h6 class="font-height:1.5 fill:grey-l4 margin:0 margin-bottom:4">Line Height 1.5</h6>
+<h6 class="font-height:1 fill:grey-l4 margin:0 margin-bottom:u2">Line Height 1</h6>
+<h6 class="font-height:1.1 fill:grey-l4 margin:0 margin-bottom:u2">Line Height 1.1</h6>
+<h6 class="font-height:1.2 fill:grey-l4 margin:0 margin-bottom:u2">Line Height 1.2</h6>
+<h6 class="font-height:1.3 fill:grey-l4 margin:0 margin-bottom:u2">Line Height 1.3</h6>
+<h6 class="font-height:1.4 fill:grey-l4 margin:0 margin-bottom:u2">Line Height 1.4</h6>
+<h6 class="font-height:1.5 fill:grey-l4 margin:0 margin-bottom:u4">Line Height 1.5</h6>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html

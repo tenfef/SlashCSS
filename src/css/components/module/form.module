@@ -41,46 +41,6 @@ FORM
       display: table !important;
       clear: both !important;
     }
-    &-style {
-      &\:slide {
-        position: relative;
-        input:not([type=submit]) {
-          min-height: 4rem;
-          padding: 1.75rem 0 1rem var(--form-field-padding-left);
-
-          &:placeholder-shown ~ label {
-            position: absolute;
-            top: 1.25rem;
-            left: 1rem;
-            font-size: var(--body);
-            color: var(--grey-d1);
-            pointer-events: none;
-          }
-          &:not(:placeholder-shown) ~ label {
-            position: absolute;
-            top: .25rem;
-            left: .5rem;
-            margin: 0;
-            padding: 0;
-            font-size: .75rem;
-            color: var(--grey-l1);
-            z-index: 1;
-            pointer-events: none;
-          }
-          & + label, &:focus ~ label {
-            position: absolute;
-            top: .25rem;
-            left: .5rem;
-            margin: 0;
-            padding: 0;
-            font-size: .75rem;
-            color: var(--grey-l1);
-            z-index: 1;
-            pointer-events: none;
-          }
-        }
-      }
-    }
   }
 
   &\/label {
@@ -94,66 +54,6 @@ FORM
         color: var(--red);
       }
     }
-  }
-
-  &\/special {
-    position: relative;
-    input:not([type=submit]) {
-      &:focus {
-        & ~ .form\/icon {
-          color: var(--form-field-checkbox-fill);
-        }
-        & ~ .form\/text {
-          color: var(--form-field-checkbox-fill);
-        }
-      }
-    }
-    &-content {
-      &\:left {
-        input:not([type=submit]) {
-          padding-left: var(--form-field-height);
-        }
-        .form\/icon {
-          &:nth-of-type(2) {
-            left: auto;
-            right: 0;
-          }
-        }
-        .form\/text {
-          right: auto;
-          left: var(--form-field-padding-left);
-        }
-      }
-      &\:right {
-        input:not([type=submit]) {
-          padding-right: var(--form-field-height);
-        }
-      }
-    }
-  }
-
-  &\/icon {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: var(--form-field-height);
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
-  }
-
-  &\/text {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: var(--u5);
-    height: 100%;
-    align-items: center;
-    font-weight: var(--regular);
-    transition: var(--transition);
   }
 
   &\/help {
@@ -170,8 +70,78 @@ FORM
       color: var(--form-warning-border-color);
     }
   }
+}
 
-  &\/checkbox {
+.field {
+  &\:slide {
+    position: relative;
+    input {
+      min-height: 4rem;
+      padding: 1.75rem 0 1rem var(--form-field-padding-left);
+
+      &:placeholder-shown ~ label {
+        position: absolute;
+        top: 1.25rem;
+        left: 1rem;
+        font-size: var(--body);
+        color: var(--grey-d1);
+        pointer-events: none;
+      }
+      &:not(:placeholder-shown) ~ label {
+        position: absolute;
+        top: .25rem;
+        left: .5rem;
+        margin: 0;
+        padding: 0;
+        font-size: .75rem;
+        color: var(--grey);
+        z-index: 1;
+        pointer-events: none;
+      }
+      & + label, &:focus ~ label {
+        position: absolute;
+        top: .25rem;
+        left: .5rem;
+        margin: 0;
+        padding: 0;
+        font-size: .75rem;
+        color: var(--grey);
+        z-index: 1;
+        pointer-events: none;
+      }
+    }
+  }
+  &\:slide-select {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+
+    select {
+      min-height: 4rem;
+    }
+
+    &:after {
+      content: '\f107';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1.25rem;
+      display: block;
+      font-family: 'Font Awesome 5 Free';
+      font-style: normal;
+      font-size: 1.25rem;
+      font-variant: normal;
+      text-rendering: auto;
+      font-weight: bold;
+      line-height: 1;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      color: var(--black);
+      pointer-events: none;
+    }
+  }
+
+  &\:checkbox {
     display: block;
     position: relative;
     padding-left: var(--u7);
@@ -181,9 +151,9 @@ FORM
     font-weight: var(--regular) !important;
     line-height: 1.25rem !important;
 
-    input:not([type="submit"]) {
+    input {
       display: none;
-      &:checked ~ .form\/checkbox-indicator {
+      &:checked ~ .field\/indicator {
         background: var(--form-field-checkbox-fill);
         border-color: var(--form-field-checkbox-fill);
         &:after {
@@ -191,7 +161,7 @@ FORM
         }
       }
       &:disabled {
-        & ~ .form\/checkbox-indicator {
+        & ~ .field\/indicator {
           background: var(--form-disabled-fill);
           border-color: var(--border-color);
           opacity: var(--form-disabled-opacity);
@@ -202,7 +172,7 @@ FORM
         }
       }
     }
-    &-indicator {
+    .field\/indicator {
       position: absolute;
       top: 0;
       left: 0;
@@ -227,7 +197,8 @@ FORM
     }
   }
 
-  &\/radio {
+
+  &\:radio {
     display: block;
     position: relative;
     padding-left: var(--u7);
@@ -235,18 +206,18 @@ FORM
     padding-bottom: 0 !important;
     font-size: var(--tiny) !important;
     font-weight: var(--regular) !important;
-    line-height: 1.75 !important;
+    line-height: 1.5 !important;
 
     input {
       display: none;
-      &:checked ~ .form\/radio-indicator {
+      &:checked ~ .field\/indicator {
         &:after {
           display: block;
           background: var(--form-field-checkbox-fill);
         }
       }
       &:disabled {
-        & ~ .form\/radio-indicator {
+        & ~ .field\/indicator {
           background: var(--form-disabled-fill);
           opacity: var(--form-disabled-opacity);
           pointer-events: none;
@@ -256,7 +227,7 @@ FORM
         }
       }
     }
-    &-indicator {
+    .field\/indicator {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -279,17 +250,16 @@ FORM
     }
   }
 
-  &\/select {
+  &\:select {
     position: relative;
-    clear: both;
-    float: left;
     width: 100%;
     max-width: 300px;
 
     &:after {
       content: '\f107';
       position: absolute;
-      top: .85rem;
+      top: 50%;
+      transform: translateY(-50%);
       right: 1.25rem;
       display: block;
       font-family: 'Font Awesome 5 Free';
@@ -306,7 +276,42 @@ FORM
     }
   }
 
-  &\/file {
+  &\:icons {
+    position: relative;
+    input {
+      &:focus {
+        & ~ .field\/icon {
+          color: var(--form-field-checkbox-fill);
+        }
+        & ~ .field\/text {
+          color: var(--form-field-checkbox-fill);
+        }
+      }
+    }
+    .field\/icon {
+      display: flex;
+      position: absolute;
+      top: 0;
+      width: var(--form-field-height);
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+    .field\/text {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: var(--u5);
+      height: 100%;
+      align-items: center;
+      font-weight: var(--regular);
+      transition: var(--transition);
+    }
+  }
+
+  &\:file {
     cursor: pointer;
   }
 }

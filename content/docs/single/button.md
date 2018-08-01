@@ -100,7 +100,7 @@ Buttons can contain icons.
 ```html
 <button class="button button-grow:1 button-style:outline font-size:body font-transform:none">
   <div class="button/icon">
-    <i class="fas fa-cloud-upload-alt margin-right:1"></i>
+    <i class="fas fa-cloud-upload-alt margin-right:u2"></i>
   </div>
   Upload File
 </button>

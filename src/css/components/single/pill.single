@@ -1,12 +1,12 @@
 /************************************************************
-LABEL
+PILL
 ************************************************************/
 
 :root {
-  --label-radius: 3px;
+  --pill-radius: 3px;
 }
 
-.label {
+.pill {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -17,7 +17,7 @@ LABEL
   padding-right: .5rem;
   padding-top: .1rem;
   height: 1.25rem;
-  border-radius: var(--label-radius);
+  border-radius: var(--pill-radius);
   background: var(--primary-color);
   vertical-align: middle;
   font-family: var(--font-family);
@@ -29,15 +29,15 @@ LABEL
   white-space: nowrap;
 }
 
-.labels {
+.pills {
   position: relative;
   display: inline-flex;
   vertical-align: middle;
   bottom: 1px;
   margin-right: .25rem;
-  border-radius: var(--label-radius);
+  border-radius: var(--pill-radius);
   overflow: hidden;
-  .label {
+  .pill {
     bottom: 0;
     margin-left: 0;
     margin-right: 0;

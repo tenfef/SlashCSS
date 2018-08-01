@@ -10,13 +10,13 @@ description = "The form component provides styling for standard forms."
 
 Defined with `form` form fields are grouped with the `form/item` child element. Form labels can have a required asterisk with the `:required` modifier.
 
-<div class="max-width:40 padding-y:3">
+<div class="max-width:400px padding-y:u6">
   <div class="card elevate">
     <form class="form">
       <div class="card/content">
-        <h5 class="font font-weight:medium margin-bottom:3 align:center">Basic Form</h5>
+        <h5 class="font font-weight:medium margin-bottom:u4 align:center">Basic Form</h5>
         <div class="form/item">
-          <label class="form/label:required">Email</label>
+          <label class="label:required">Email</label>
           <input placeholder=" " class="max-width:100%">
         </div>
         <div class="form/item">
@@ -24,14 +24,14 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
           <input type="password" placeholder=" " class="max-width:100%">
         </div>
         <div class="form/item">
-          <label class="form/checkbox">
+          <label class="field:checkbox">
             I agree to the <a href="#">Terms and Conditions</a>
             <input type="checkbox"/>
-            <div class="form/checkbox-indicator"></div>
+            <div class="field/indicator"></div>
           </label>
         </div>
       </div>
-      <div class="card/footer padding:0">
+      <div class="card/footer padding:u0">
         <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
           Sign in
         </a>
@@ -46,9 +46,9 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
 <div class="card elevate">
   <form class="form">
     <div class="card/content">
-      <h5 class="font font-weight:medium margin-bottom:3 align:center">Basic Form</h5>
+      <h5 class="font font-weight:medium margin-bottom:u4 align:center">Basic Form</h5>
       <div class="form/item">
-        <label class="form/label:required">Email</label>
+        <label class="label:required">Email</label>
         <input placeholder=" " class="max-width:100%">
       </div>
       <div class="form/item">
@@ -56,14 +56,14 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
         <input type="password" placeholder=" " class="max-width:100%">
       </div>
       <div class="form/item">
-        <label class="form/checkbox">
+        <label class="field:checkbox">
           I agree to the <a href="#">Terms and Conditions</a>
           <input type="checkbox"/>
-          <div class="form/checkbox-indicator"></div>
+          <div class="field/indicator"></div>
         </label>
       </div>
     </div>
-    <div class="card/footer padding:0">
+    <div class="card/footer padding:u0">
       <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
         Sign in
       </a>
@@ -75,30 +75,43 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
 
 ### Sliding labels
 
-Form items can be modified to enable sliding labels with `form/item-style:slide`.
+Form items can be modified to enable sliding labels with `form/item:slide`.
 
-<div class="max-width:40 padding-y:3">
+<div class="max-width:400px padding-y:u6">
   <div class="card elevate">
     <form class="form">
       <div class="card/content">
-        <h5 class="font font-weight:medium margin-bottom:3 align:center">Sliding Label</h5>
-        <div class="form/item form/item-style:slide">
-          <input placeholder=" " class="max-width:100%">
-          <label>Email</label>
-        </div>
-        <div class="form/item form/item-style:slide">
-          <input type="password" placeholder=" " class="max-width:100%">
-          <label>Password</label>
+        <h5 class="font font-weight:medium margin-bottom:u4 align:center">Sliding Label</h5>
+        <div class="form/item">
+          <div class="field:slide">
+            <input placeholder=" " class="max-width:100%">
+            <label>Email</label>
+          </div>
         </div>
         <div class="form/item">
-          <label class="form/checkbox">
+          <div class="field:slide">
+            <input type="password" placeholder=" " class="max-width:100%">
+            <label>Password</label>
+          </div>
+        </div>
+        <div class="form/item">
+          <div class="field:slide-select max-width:100%" label="What's your favourite ice cream?">
+            <select>
+              <option>How did you find us?</option>
+              <option>Vanilla</option>
+              <option>Strawberry</option>
+            </select>
+          </div>
+        </div>
+        <div class="form/item">
+          <label class="field:checkbox">
             I agree to the <a href="#">Terms and Conditions</a>
             <input type="checkbox"/>
-            <div class="form/checkbox-indicator"></div>
+            <div class="field/indicator"></div>
           </label>
         </div>
       </div>
-      <div class="card/footer padding:0">
+      <div class="card/footer padding:u0">
         <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
           Sign in
         </a>
@@ -112,24 +125,29 @@ Form items can be modified to enable sliding labels with `form/item-style:slide`
 <div class="card elevate">
   <form class="form">
     <div class="card/content">
-      <h5 class="font font-weight:medium margin-bottom:3 align:center">Sliding Label</h5>
-      <div class="form/item form/item-style:slide">
-        <input placeholder=" " class="max-width:100%">
-        <label>Email</label>
-      </div>
-      <div class="form/item form/item-style:slide">
-        <input type="password" placeholder=" " class="max-width:100%">
-        <label>Password</label>
+      <h5 class="font font-weight:medium margin-bottom:u4 align:center">Sliding Label</h5>
+      <div class="form/item">
+        <div class="field:slide">
+          <input placeholder=" " class="max-width:100%">
+          <label>Email</label>
+        </div>
+
       </div>
       <div class="form/item">
-        <label class="form/checkbox">
+        <div class="field:slide">
+          <input type="password" placeholder=" " class="max-width:100%">
+          <label>Password</label>
+        </div>
+      </div>
+      <div class="form/item">
+        <label class="field:checkbox">
           I agree to the <a href="#">Terms and Conditions</a>
           <input type="checkbox"/>
-          <div class="form/checkbox-indicator"></div>
+          <div class="field/indicator"></div>
         </label>
       </div>
     </div>
-    <div class="card/footer padding:0">
+    <div class="card/footer padding:u0">
       <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
         Sign in
       </a>
@@ -143,7 +161,7 @@ Form items can be modified to enable sliding labels with `form/item-style:slide`
 
 The disabled attribute disables clickable state.
 
-<div class="max-width:40 padding-y:3">
+<div class="max-width:400px padding-y:u6">
   <div class="card">
     <div class="card/content">
       <form class="form">
@@ -156,25 +174,24 @@ The disabled attribute disables clickable state.
           <input type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
         </div>
         <div class="form/item">
-          <label class="form/checkbox -checkbox">Disabled
+          <label class="field:checkbox">Disabled
             <input type="checkbox" disabled="disabled" checked="checked"/>
-            <div class="form/checkbox-indicator"></div>
+            <div class="field/indicator"></div>
           </label>
         </div>
         <div class="form/item">
-          <label class="form/radio">Disabled & checked
+          <label class="field:radio">Disabled & checked
             <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
-            <div class="form/radio-indicator"></div>
+            <div class="field/indicator"></div>
           </label>
         </div>
         <div class="form/item">
-          <div class="form/subitem">
+          <div class="field:select">
             <select disabled="disabled" class="max-width:100%">
               <option>Disabled</option>
               <option>Option</option>
               <option>Option</option>
             </select>
-            <div class="form/arrow"></div>
           </div>
         </div>
       </form>
@@ -196,25 +213,24 @@ The disabled attribute disables clickable state.
         <input type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
       </div>
       <div class="form/item">
-        <label class="form/checkbox -checkbox">Disabled
+        <label class="field:checkbox -checkbox">Disabled
           <input type="checkbox" disabled="disabled" checked="checked"/>
-          <div class="form/checkbox-indicator"></div>
+          <div class="field/indicator"></div>
         </label>
       </div>
       <div class="form/item">
-        <label class="form/radio">Disabled & checked
+        <label class="field:radio">Disabled & checked
           <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
-          <div class="form/radio-indicator"></div>
+          <div class="field/indicator"></div>
         </label>
       </div>
       <div class="form/item">
-        <div class="form/subitem">
+        <div class="field:select">
           <select disabled="disabled" class="max-width:100%">
             <option>Disabled</option>
             <option>Option</option>
             <option>Option</option>
           </select>
-          <div class="form/arrow"></div>
         </div>
       </div>
     </form>
@@ -227,58 +243,58 @@ The disabled attribute disables clickable state.
 
 Here is an example of a Company Information form in multi-column format. For multi-column layout utilise row and column components.
 
-<div class="max-width:80 padding-y:3">
+<div class="max-width:80 padding-y:u6">
 
   <div class="card elevate">
     <div class="card/content">
       <form class="form">
-        <h5 class="font margin-bottom:3 font-weight:medium font:underline">
+        <h5 class="font margin-bottom:u4 font-weight:medium font:underline">
           Company Information
         </h5>
         <div class="form/item">
-          <div class="row row-gutter:u4 margin-bottom:3">
-            <div class="column:12 column@sm:6">
-              <label class="form/label:fluid">Company</label>
+          <div class="row row-gutter:u4 margin-bottom:u4">
+            <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
+              <label>Company</label>
               <input type="text" placeholder="Company" class="max-width:100%">
             </div>
-            <div class="column:12 column@sm:6">
+            <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
               <label class="">Title</label>
               <input type="text" placeholder="Digital Designer" value="Digital Designer" disabled="disabled" class="max-width:100%">
             </div>
           </div>
         </div>
-        <div class="form/item margin-bottom:4">
-          <label class="form/label:fluid">Address</label>
-          <input type="text" placeholder="Level 5, Graham St" class="max-width:100% margin-bottom:1">
+        <div class="form/item margin-bottom:u4">
+          <label>Address</label>
+          <input type="text" placeholder="Level 5, Graham St" class="max-width:100% margin-bottom:u2">
           <input type="text" placeholder="Central" class="max-width:100%">
           <span class="form/help">Help message example</span>
         </div>
         <div class="row row-gutter:u4 margin-bottom:u2">
-          <div class="column:12 column@sm:6">
+          <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
             <div class="form/item">
               <label>City</label>
               <input placeholder="City" class="max-width:100%">
             </div>
           </div>
-          <div class="column:12 column@sm:6">
+          <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
             <div class="form/item">
               <label>State</label>
               <input id="website" type="Website" placeholder="State" class="max-width:100%">
             </div>
           </div>
         </div>
-        <div class="row row-gutter:u4 margin-bottom:4">
-          <div class="column:12 column@sm:6">
+        <div class="row row-gutter:u4 margin-bottom:u4">
+          <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
             <div class="form/item">
               <label>Zip</label>
               <input placeholder="City" class="max-width:100%">
             </div>
           </div>
-          <div class="column:12 column@sm:6">
+          <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
             <div class="form/item">
               <label for="text">Country</label>
-              <div class="form/select">
-                <select class="form/select:fluid">
+              <div class="field:select">
+                <select>
                   <option>USA</option>
                   <option>New Zealand</option>
                   <option>Australia</option>
@@ -287,30 +303,30 @@ Here is an example of a Company Information form in multi-column format. For mul
             </div>
           </div>
         </div>
-        <div class="form/item margin-bottom:3">
+        <div class="form/item margin-bottom:u4">
           <label>Country</label>
           <textarea class="max-width:100%"></textarea>
         </div>
-        <div class="form/item margin-bottom:3">
-          <label class="form/radio float:left margin-right:2">First radio
+        <div class="form/item margin-bottom:u4">
+          <label class="field:radio float:left margin-right:u4">First radio
             <input type="radio" name="radio1" checked="checked"/>
-            <div class="form/radio-indicator"></div>
+            <div class="field/indicator"></div>
           </label>
-          <label class="form/radio float:left">Second radio
+          <label class="field:radio float:left">Second radio
             <input type="radio" name="radio1"/>
-            <div class="form/radio-indicator"></div>
+            <div class="field/indicator"></div>
           </label>
         </div>
         <div class="form/item">
           <label>Attach CSV</label>
-          <label class="form/file button button-grow:1 button-style:outline font-size:body font-transform:none">
-            <i class="fas fa-cloud-upload-alt margin-right:1"></i>
+          <label class="form/file button button-grow:u3 button-style:outline font-size:body font-transform:none">
+            <i class="fas fa-cloud-upload-alt margin-right:u2"></i>
             Upload File
             <input type="file" placeholder="City" class="max-width:100%">
           </label>
         </div>
         <div class="form/item">
-          <button type="submit" class="button button-grow:2 button-size:3 button-style:flat fill:blue float:right">
+          <button type="submit" class="button button-grow:u6 button-size:3 button-style:flat fill:blue float:right">
             Save
           </button>
         </div>
@@ -323,12 +339,12 @@ Here is an example of a Company Information form in multi-column format. For mul
 
 Form input fields can have states for various types of highlighting.
 
-<div class="max-width:40 padding-y:3">
+<div class="max-width:400px padding-y:u6">
   <div class="card elevate">
     <div class="card/content">
       <form class="form">
         <div class="form/item">
-          <label class="form/label:fluid">Name</label>
+          <label>Name</label>
           <input type="text" placeholder="Text input" class="max-width:100% is-alert">
           <span class="form/help is-alert">Check spelling</span>
         </div>
@@ -353,7 +369,7 @@ Form input fields can have states for various types of highlighting.
   <div class="card/content">
     <form class="form">
       <div class="form/item">
-        <label class="form/label:fluid">Name</label>
+        <label>Name</label>
         <input type="text" placeholder="Text input" class="max-width:100% is-alert">
         <span class="form/help is-alert">Check spelling</span>
       </div>
@@ -378,38 +394,38 @@ Form input fields can have states for various types of highlighting.
 
 Standard text fields can have icons on the left and right.
 
-<div class="max-width:60 padding-y:3">
+<div class="max-width:400px padding-y:u6">
   <div class="card elevate">
     <div class="card/content">
       <form class="form">
         <div class="form/item">
-          <div class="form/special form/special-content:left form/special-content:right">
-            <input type="text" placeholder="Username" value="zapcss" class="max-width:100%">
-            <span class="form/icon">
+          <div class="field:icons">
+            <input type="text" placeholder="Username" value="zapcss" class="max-width:100% padding-left:u10">
+            <div class="field/icon position-left">
               <i class="far fa-user"></i>
-            </span>
-            <span class="form/icon">
+            </div>
+            <div class="field/icon position-right">
               <i class="fas fa-check color:green"></i>
-            </span>
+            </div>
           </div>
         </div>
         <div class="form/item">
-          <div class="form/special form/special-content:left form/special-content:right">
-            <input type="text" placeholder="Email" value="zap@" class="max-width:100%">
-            <span class="form/icon">
+          <div class="field:icons">
+            <input type="text" placeholder="Email" value="zap@" class="max-width:100% padding-left:u10">
+            <div class="field/icon position-left">
               <i class="far fa-envelope"></i>
-            </span>
-            <span class="form/icon">
+            </div>
+            <div class="field/icon position-right">
               <i class="fas fa-times color:red"></i>
-            </span>
+            </div>
           </div>
         </div>
         <div class="form/item">
-          <div class="form/special form/special-content:right">
-            <input type="text" placeholder="Email" value="docs" class="max-width:100%">
-            <span class="form/text">
-              .zapcss.com
-            </span>
+          <div class="field:icons">
+            <input type="text" placeholder="Email" value="docs" class="max-width:100% padding-right:u12">
+            <div class="field/text">
+              .com
+            </div>
           </div>
         </div>
       </form>
@@ -472,7 +488,7 @@ You can override styling using the following local variables.
   --form-field-height: var(--u9);
   --form-field-border: var(--border);
   --form-field-fill: var(--white);
-  --form-field-checkbox-fill: var(--blue);
+  --form-field-fill: var(--blue);
   --form-field-color: var(--black);
   --form-field-radius: .25rem;
   --form-field-padding-left: 1rem;

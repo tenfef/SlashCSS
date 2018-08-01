@@ -51,7 +51,7 @@ root/
     │
     └── zap.scss
 ```
-<div class="margin-bottom:4"></div>
+<div class="margin-bottom:u4"></div>
 
 **SCSS Variables & Sass Maps**
 
@@ -78,7 +78,7 @@ $font-weights: (
 ```
 {{% /codeblock %}}
 
-<div class="margin-bottom:4"></div>
+<div class="margin-bottom:u4"></div>
 
 **Overriding Custom Properties**
 

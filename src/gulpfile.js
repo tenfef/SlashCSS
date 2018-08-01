@@ -38,15 +38,8 @@ gulp.task('css', function () {
 gulp.task('js', function () {
   console.log('gulp js started')
   return gulp.src(['vendors/jquery/jquery-3.3.1.min.js',
-                   'vendors/parsley/parsley.min.js',
-                   'vendors/headroom/headroom.min.js',
-                   'vendors/imagesloaded/imagesloaded.pkgd.min.js',
-                   'vendors/iziModal/js/iziModal.min.js',
-                   'vendors/slick/slick.min.js',
-                   'vendors/stickr/jquery.stickr.min.js',
                    'vendors/prism/prism.js',
                    'vendors/scrollreveal/scrollreveal.min.js',
-                   'vendors/typed/typed.min.js',
                    'js/components/tab.js',
                    'js/components/accordion.js',
                    'js/components/dropdown.js',
