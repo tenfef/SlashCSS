@@ -152,7 +152,7 @@ FORM
     padding-bottom: 0 !important;
     font-size: var(--tiny) !important;
     font-weight: var(--regular) !important;
-    line-height: 1.25rem !important;
+    line-height: 1.5 !important;
 
     input {
       display: none;
