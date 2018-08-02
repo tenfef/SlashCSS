@@ -43,17 +43,20 @@ FORM
     }
   }
   &\/help {
+    padding-top: var(--u1);
     font-size: var(--micro);
     color: var(--default-color);
-    // States
-    &.is-success {
-      color: var(--form-success-border-color);
-    }
-    &.is-alert {
-      color: var(--form-alert-border-color);
-    }
-    &.is-warning {
-      color: var(--form-warning-border-color);
+    &-item {
+      // States
+      &.is-success {
+        color: var(--form-success-border-color);
+      }
+      &.is-alert {
+        color: var(--form-alert-border-color);
+      }
+      &.is-warning {
+        color: var(--form-warning-border-color);
+      }
     }
   }
 }
@@ -69,8 +72,10 @@ FORM
         position: absolute;
         top: 1.25rem;
         left: 1rem;
+        margin: 0;
+        padding: 0;
         font-size: var(--body);
-        color: var(--grey-d1);
+        color: var(--grey-d2);
         pointer-events: none;
       }
       &:not(:placeholder-shown) ~ label {
@@ -80,7 +85,7 @@ FORM
         margin: 0;
         padding: 0;
         font-size: .75rem;
-        color: var(--grey);
+        color: var(--grey-d1);
         z-index: 1;
         pointer-events: none;
       }
@@ -91,9 +96,20 @@ FORM
         margin: 0;
         padding: 0;
         font-size: .75rem;
-        color: var(--grey);
+        color: var(--grey-d1);
         z-index: 1;
         pointer-events: none;
+      }
+
+      /* states */
+      &.is-success:not(:placeholder-shown) ~ label {
+        color: var(--form-success-border-color);
+      }
+      &.is-alert:not(:placeholder-shown) ~ label {
+        color: var(--form-alert-border-color);
+      }
+      &.is-warning:not(:placeholder-shown) ~ label {
+        color: var(--form-warning-border-color);
       }
     }
   }
@@ -109,7 +125,7 @@ FORM
     &:after {
       content: '\f107';
       position: absolute;
-      top: 50%;
+      top: 2rem;
       transform: translateY(-50%);
       right: 1.25rem;
       display: block;
@@ -130,6 +146,7 @@ FORM
   &\:checkbox {
     display: block;
     position: relative;
+    padding: 0;
     padding-left: var(--u7);
     cursor: pointer;
     padding-bottom: 0 !important;
@@ -187,6 +204,7 @@ FORM
   &\:radio {
     display: block;
     position: relative;
+    padding: 0;
     padding-left: var(--u7);
     cursor: pointer;
     padding-bottom: 0 !important;
@@ -244,7 +262,7 @@ FORM
     &:after {
       content: '\f107';
       position: absolute;
-      top: 50%;
+      top: 1.55rem;
       transform: translateY(-50%);
       right: 1.25rem;
       display: block;
@@ -314,7 +332,7 @@ label {
   font-size: var(--form-label-size);
   font-weight: var(--form-label-weight);
   color: var(--black);
-  line-height: 1;
+  line-height: 1.55;
   transition: var(--transition);
 }
 
@@ -418,6 +436,17 @@ textarea {
     opacity: var(--form-disabled-opacity);
     pointer-events: none;
   }
+
+  /* states */
+  &.is-success {
+    border-color: var(--form-success-border-color);
+  }
+  &.is-alert {
+    border-color: var(--form-alert-border-color);
+  }
+  &.is-warning {
+    border-color: var(--form-warning-border-color);
+  }
 }
 
 select {
@@ -448,6 +477,17 @@ select {
     ~ .form\/arrow {
       border-color: var(--form-disabled-fill);
     }
+  }
+
+  /* states */
+  &.is-success {
+    border-color: var(--form-success-border-color);
+  }
+  &.is-alert {
+    border-color: var(--form-alert-border-color);
+  }
+  &.is-warning {
+    border-color: var(--form-warning-border-color);
   }
 }
 select::-ms-expand {
