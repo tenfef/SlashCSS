@@ -10,7 +10,7 @@ description = "The Border component applies borders and corner radius properties
 
 Defined with `border`. Default border color settings are applied.
 
-<div class="border border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:6">
+<div class="border border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
@@ -25,16 +25,16 @@ Defined with `border`. Default border color settings are applied.
 
 You can apply positional borders.
 
-<div class="border-top border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:6">
+<div class="border-top border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
-<div class="border-right border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:6">
+<div class="border-right border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
-<div class="border-bottom border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:6">
+<div class="border-bottom border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
-<div class="border-left border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:6">
+<div class="border-left border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
@@ -57,19 +57,19 @@ You can apply positional borders.
 
 You can apply various corner styles with the `border-radius` property. Positional corner styles are also available.
 
-<div class="display:inline-block media-size:5 border-radius padding:6 fill:grey-l2 margin-bottom:6">
+<div class="display:inline-block media-size:5 border-radius padding:6 fill:grey-l2 margin-bottom:u6">
 </div>
 
-<div class="display:inline-block media-size:5 border-radius:round padding:6 fill:grey-l2 margin-bottom:6">
+<div class="display:inline-block media-size:5 border-radius:round padding:6 fill:grey-l2 margin-bottom:u6">
 </div>
 
-<div class="display:inline-block media-size:5 border-radius:sharp padding:6 fill:grey-l2 margin-bottom:6">
+<div class="display:inline-block media-size:5 border-radius:sharp padding:6 fill:grey-l2 margin-bottom:u6">
 </div>
 
-<div class="display:inline-block media-size:5 border-radius-left:round padding:6 fill:grey-l2 margin-bottom:6">
+<div class="display:inline-block media-size:5 border-radius-left:round padding:6 fill:grey-l2 margin-bottom:u6">
 </div>
 
-<div class="display:inline-block media-size:5 border-radius-right:round padding:6 fill:grey-l2 margin-bottom:6">
+<div class="display:inline-block media-size:5 border-radius-right:round padding:6 fill:grey-l2 margin-bottom:u6">
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
@@ -96,10 +96,10 @@ You can apply various corner styles with the `border-radius` property. Positiona
 
 You can change the color and width of your border with the `border-color` and `border-width` property.
 
-<div class="border border-color:purple padding:6 fill:grey-l5 margin-bottom:6">
+<div class="border border-color:purple padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
-<div class="border-left border-color:orange border-width:5 border-radius elevate padding:6 fill:grey-l5 margin-bottom:6">
+<div class="border-left border-color:orange border-width:5 border-radius elevate padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}

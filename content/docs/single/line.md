@@ -37,7 +37,7 @@ You can change the color of the line with the `fill` component
 <div class="line fill:brown margin-bottom:u2"></div>
 <div class="line fill:grey margin-bottom:u2"></div>
 <div class="line fill:white margin-bottom:u2"></div>
-<div class="line fill:black margin-bottom:6"></div>
+<div class="line fill:black margin-bottom:u6"></div>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html

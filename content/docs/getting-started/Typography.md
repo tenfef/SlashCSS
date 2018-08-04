@@ -14,7 +14,7 @@ Theinhardt, designed by François Rappo is the official Fergus brand typeface. I
   <h1 class="font -gap-3">
     Theinhardt
   </h1>
-  <h3 class="font margin-bottom:6">
+  <h3 class="font margin-bottom:u6">
     abcdefghijklmnopqrstuvwxyz<br />
     ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
     0123456789

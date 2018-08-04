@@ -8,7 +8,7 @@ description = "The media component formats images provides useful preset sizes."
 
 ### Basic Usage
 
-<div class="margin-bottom:6 max-width:14">
+<div class="margin-bottom:u6 max-width:14">
   <img src="http://via.placeholder.com/500x500" class="media">
 </div>
 
@@ -23,15 +23,15 @@ description = "The media component formats images provides useful preset sizes."
 
 Various corner styles can be applied with the `border-radius` component property.
 
-<div class="margin-bottom:6 max-width:10">
+<div class="margin-bottom:u6 max-width:10">
   <img src="http://via.placeholder.com/500x500" class="media">
 </div>
 
-<div class="margin-bottom:6 max-width:10">
+<div class="margin-bottom:u6 max-width:10">
   <img src="http://via.placeholder.com/500x500" class="media border-radius">
 </div>
 
-<div class="margin-bottom:6 max-width:10">
+<div class="margin-bottom:u6 max-width:10">
   <img src="http://via.placeholder.com/500x500" class="media border-radius:round">
 </div>
 
@@ -47,14 +47,14 @@ Various corner styles can be applied with the `border-radius` component property
 
 The `image` component by default inherits the display block property however you can override this to be any type with the `display` component.
 
-<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:6">
+<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:u6">
 <img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 <img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:6">
+<img src="http://via.placeholder.com/1200x200" class="media width:100% margin-bottom:u6">
 <img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 <img src="http://via.placeholder.com/200x200" class="media display:inline-block">
 ```
@@ -64,11 +64,11 @@ The `image` component by default inherits the display block property however you
 
 The `image-size` property provides useful preset sizes for things like thumbnails and profile pictures.
 
-<img src="http://via.placeholder.com/200x200" class="media media-size:xs margin-bottom:6">
-<img src="http://via.placeholder.com/200x200" class="media media-size:sm margin-bottom:6">
-<img src="http://via.placeholder.com/200x200" class="media media-size:md margin-bottom:6">
-<img src="http://via.placeholder.com/200x200" class="media media-size:lg margin-bottom:6">
-<img src="http://via.placeholder.com/200x200" class="media media-size:xl margin-bottom:6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:xs margin-bottom:u6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:sm margin-bottom:u6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:md margin-bottom:u6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:lg margin-bottom:u6">
+<img src="http://via.placeholder.com/200x200" class="media media-size:xl margin-bottom:u6">
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html

@@ -12,12 +12,12 @@ The card module contains header, content and footer child elements. You can also
 
 <div class="row row-gutter:2 margin-bottom:u4 margin-top:10">
   <div class="column:12 column@sm:6">
-    <div class="card elevate border:none margin-bottom:6">
+    <div class="card elevate border:none margin-bottom:u6">
       <div class="card/header padding:u0">
         <img src="https://i.imgur.com/Ig4qpjc.jpg" class="media">
       </div>
       <div class="card/content border-bottom">
-        <div class="flag flag-gutter:1 margin-bottom:6">
+        <div class="flag flag-gutter:1 margin-bottom:u6">
           <div class="flag/item">
             <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:2 fill:primary">
           </div>
@@ -40,9 +40,9 @@ The card module contains header, content and footer child elements. You can also
     </div>
   </div>
   <div class="column:12 column@sm:6">
-    <div class="card border-style:radius margin-bottom:6">
+    <div class="card border-style:radius margin-bottom:u6">
       <div class="card/content">
-        <h6 class="font font-weight:bold margin-bottom:6">Step 1 of 2</h6>
+        <h6 class="font font-weight:bold margin-bottom:u6">Step 1 of 2</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@zapcss</a>. <a href="#">#css</a> <a href="#">#responsive</a></p>
         <a href="#" class="button button-size:3 button-grow:1 fill:blue elevate font-weight:medium">
           Get Started

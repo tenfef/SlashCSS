@@ -19,7 +19,7 @@ Defined with `opacity`, there are 9 fade options available.
 <h3 class="margin:0 opacity:7">Opacity 7</h3>
 <h3 class="margin:0 opacity:8">Opacity 8</h3>
 <h3 class="margin:0 opacity:8">Opacity 9</h3>
-<h3 class="margin:0 margin-bottom:6 opacity:10">Opacity 10</h3>
+<h3 class="margin:0 margin-bottom:u6 opacity:10">Opacity 10</h3>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html

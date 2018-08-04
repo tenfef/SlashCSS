@@ -10,7 +10,7 @@ description = "The align component sets the alignment of content in various ways
 
 The basic `align` property controls text alignment.
 
-<div class="margin-bottom:6 fill:grey-l4">
+<div class="margin-bottom:u6 fill:grey-l4">
   <div class="align:left">Left Aligned</div>
   <div class="align:center">Center Aligned</div>
   <div class="align:right">Right Aligned</div>
@@ -29,19 +29,19 @@ The basic `align` property controls text alignment.
 Vertical alignment can be controlled with `top` `middle` `bottom` modifiers.
 
 <div class="row row-gutter:2">
-  <div class="column font-size:h1 margin-bottom:6">
+  <div class="column font-size:h1 margin-bottom:u6">
     <div class="fill:grey-l4">
       <div class="media media-size:2 display:inline-block fill:grey-l2 color:white align:top"></div>
     </div>
   </div>
 
-  <div class="column font-size:h1 margin-bottom:6">
+  <div class="column font-size:h1 margin-bottom:u6">
     <div class="fill:grey-l4">
       <div class="media media-size:2 display:inline-block fill:grey-l2 color:white align:middle"></div>
     </div>
   </div>
 
-  <div class="column font-size:h1 margin-bottom:6">
+  <div class="column font-size:h1 margin-bottom:u6">
     <div class="fill:grey-l4">
       <div class="media media-size:2 display:inline-block fill:grey-l2 color:white align:bottom"></div>
     </div>
@@ -59,7 +59,7 @@ Vertical alignment can be controlled with `top` `middle` `bottom` modifiers.
 
 Responsive suffixes can be applied to all alignment properties.
 
-<div class="margin-bottom:6 fill:grey-l4">
+<div class="margin-bottom:u6 fill:grey-l4">
   <div class="align:left">Left</div>
   <div class="align@md:center">Center</div>
   <div class="align@lg:right">Large</div>
@@ -77,7 +77,7 @@ Responsive suffixes can be applied to all alignment properties.
 
 The `align-items` property specifies the default alignment for items inside the flexible container.
 
-<div class="row row-gutter:2 margin-bottom:6">
+<div class="row row-gutter:2 margin-bottom:u6">
   <div class="column:3">
     <div class="display:flex height:10 fill:grey-l4 align-items:top">
       <div class="padding:2 color:white fill:grey-l2"></div>
@@ -124,7 +124,7 @@ The `align-items` property specifies the default alignment for items inside the 
 
 The `align-content` property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines. The align content property also controls justification of flexible content.
 
-<div class="row row-gutter:2 margin-bottom:6">
+<div class="row row-gutter:2 margin-bottom:u6">
   <div class="column" style="width: 20%;">
     <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:top">
       <div class="column:4 padding:u4">

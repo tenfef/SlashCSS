@@ -10,9 +10,9 @@ description = "The hover component provides easy way to apply hover states to an
 
 Defind with `hover`. The default hover class provides pointer cursor and transition to the applied element
 
-<span class="padding:u4 hover margin-bottom:6">Hover me</span>
-<span class="padding:u4 hover hover:underline margin-bottom:6">Hover me</span>
-<span class="padding:u4 hover hover:elevate margin-bottom:6">Hover me</span>
+<span class="padding:u4 hover margin-bottom:u6">Hover me</span>
+<span class="padding:u4 hover hover:underline margin-bottom:u6">Hover me</span>
+<span class="padding:u4 hover hover:elevate margin-bottom:u6">Hover me</span>
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
@@ -26,7 +26,7 @@ Defind with `hover`. The default hover class provides pointer cursor and transit
 
 Apply hover fills with `hover-fill` property. All base and tonal colors are available.
 
-<div class="display:inline-flex padding:2 border margin-bottom:6 hover hover-fill:grey-l4">
+<div class="display:inline-flex padding:2 border margin-bottom:u6 hover hover-fill:grey-l4">
   Hover Fill
 </div>
 
@@ -42,7 +42,7 @@ Apply hover fills with `hover-fill` property. All base and tonal colors are avai
 
 Apply hover colors with `hover-color` property. All base and tonal colors are available.
 
-<p class="margin-bottom:6 color:grey hover hover-color:grey-d4">
+<p class="margin-bottom:u6 color:grey hover hover-color:grey-d4">
   Hover Color
 </p>
 
@@ -58,7 +58,7 @@ Apply hover colors with `hover-color` property. All base and tonal colors are av
 
 Apply hover opacities with `hover-opacity` property.
 
-<p class="margin-bottom:6 color:grey hover hover-opacity:5">
+<p class="margin-bottom:u6 color:grey hover hover-opacity:5">
   Hover Opacity
 </p>
 
