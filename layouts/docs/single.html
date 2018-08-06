@@ -1,11 +1,13 @@
 {{ partial "head" . }}
 
-<nav class="menu menu:docs height:u11 height@sm:u12 elevate" role="menu">
+<nav class="menu menu:docs height:auto elevate fill:grey-d3" role="menu">
 	<div class="menu/content column:3">
-		<a href="/" class="menu/item hover-fill:none padding-x:u6 padding-x@sm:u8">
+		<a href="/" class="menu/item hover-fill:none padding-x:u6 padding-x@sm:u4">
 			<div class="flag flag-gutter:2">
 				<div class="flag/item">
-					<img src="/assets/images/logo.svg" class="media media-size:xs">
+					<svg width="135px" height="135px" viewBox="0 0 135 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" class="media media-size:xs">
+					  <path d="M28.671321,15.7681329 L75.2397781,3.29015247 C87.2957518,0.0597640638 92.0038897,0.143624341 97.0429694,1.31979074 C102.082049,2.49595714 106.467909,5.02813483 110.006039,8.80402267 C113.544169,12.5799105 115.970863,16.6153474 119.201252,28.671321 L131.679232,75.2397781 C134.909621,87.2957518 134.82576,92.0038897 133.649594,97.0429694 C132.473427,102.082049 129.94125,106.467909 126.165362,110.006039 C122.389474,113.544169 118.354037,115.970863 106.298064,119.201252 L59.7296064,131.679232 C47.6736328,134.909621 42.9654949,134.82576 37.9264152,133.649594 C32.8873355,132.473427 28.5014751,129.94125 24.9633452,126.165362 C21.4252154,122.389474 18.9985213,118.354037 15.7681329,106.298064 L3.29015247,59.7296064 C0.0597640638,47.6736328 0.143624341,42.9654949 1.31979074,37.9264152 C2.49595714,32.8873355 5.02813483,28.5014751 8.80402267,24.9633452 C12.5799105,21.4252154 16.6153474,18.9985213 28.671321,15.7681329 Z M61.828125,100.070312 L81.828125,31.6328125 L73,31.6328125 L53,100.070312 L61.828125,100.070312 Z"></path>
+					</svg>
 				</div>
 				<!-- <div class="flag/item font-size:h5 font-weight:bold color:black">
 					SlashCSS
@@ -14,30 +16,30 @@
 		</a>
 	</div>
 	<div class="menu/content column:6 align-content:center display:none display@sm:flex">
-		<a href="/docs/getting-started/wrap/" class="menu/item padding-x:u6 font-weight:bold color:black is-active">
+		<a href="/docs/getting-started/wrap/" class="menu/item font-size:tiny padding-x:u6 padding-y:u4 font-weight:regular color:white hover-fill:grey-d4 is-active">
 			Getting Started
 		</a>
-		<a href="/docs/layout/column/" class="menu/item padding-x:u6 font-weight:bold color:black">
+		<a href="/docs/layout/column/" class="menu/item font-size:tiny padding-x:u6 padding-y:u4 font-weight:regular color:white hover-fill:grey-d4">
 			Layout
 		</a>
-		<a href="/docs/module/accordion" class="menu/item padding-x:u6 font-weight:bold color:black">
+		<a href="/docs/module/accordion" class="menu/item font-size:tiny padding-x:u6 padding-y:u4 font-weight:regular color:white hover-fill:grey-d4">
 			Module
 		</a>
-		<a href="/docs/single/button" class="menu/item padding-x:u6 font-weight:bold color:black">
+		<a href="/docs/single/button" class="menu/item font-size:tiny padding-x:u6 padding-y:u4 font-weight:regular color:white hover-fill:grey-d4">
 			Single
 		</a>
-		<a href="/docs/utility/align" class="menu/item padding-x:u6 font-weight:bold color:black">
+		<a href="/docs/utility/align" class="menu/item font-size:tiny padding-x:u6 padding-y:u4 font-weight:regular color:white hover-fill:grey-d4">
 			Utility
 		</a>
 	</div>
 	<div class="menu/content align-content:right column:3 padding-x:u4 display:none display@sm:flex">
-		<a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-fill:none hover-color:grey">
+		<a href="#" class="menu/item padding-x:u2 color:white hover-fill:none">
 			<i class="fab fa-github font-size:h5"></i>
 		</a>
-		<a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-fill:none hover-color:grey">
+		<a href="#" class="menu/item padding-x:u2 color:white hover-fill:none">
 			<i class="fab fa-twitter font-size:h5"></i>
 		</a>
-		<a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-fill:none hover-color:grey">
+		<a href="#" class="menu/item padding-x:u2 color:white hover-fill:none">
 			<i class="fab fa-slack font-size:h5"></i>
 		</a>
 	</div>
@@ -63,7 +65,7 @@
 
 <div class="display:none display@sm:block padding-y:u4 fill:grey-l5 align:center">
 	<div class="wrap">
-		<ul class="list list-gutter:u2 list-direction:right display:inline-flex align-content:center flex-wrap max-width:1000px">
+		<ul class="list list-gutter:u2 list-direction:right display:inline-flex align-content:center flex-wrap">
 			{{ if eq .Params.family "Getting Started"  }}
 				{{ range .Site.Menus.gettingStarted }}
 					<li class="list/item">
@@ -120,7 +122,7 @@
 </div>
 
 <section class="wrap">
-	<div class="row row-gutter@sm:u8 padding-top:10vh">
+	<div class="row row-gutter@sm:u14 padding-top:10vh">
 
 		<div class="column:12 column@sm:8">
 			<h1 class="font-size:hero font-weight:bold margin-bottom:u8">{{ .Title }}</h1>
