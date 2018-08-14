@@ -85,7 +85,7 @@ $font-heights: 6 !default;
   TRANSFORM
   ******************************/
 
-  &-transform {
+  &-case {
     &\:none {
       text-transform: none !important;
     }
