@@ -241,7 +241,7 @@ $border-widths: 5 !default;
 
   &-width {
     @while $border-widths > 0 {
-      &\:#{$border-widths} {
+      &\:#{$border-widths}px {
         border-width: $border-widths * 1px  !important;
       }
       $border-widths: $border-widths - 1;

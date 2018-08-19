@@ -3,12 +3,14 @@ MEDIA
 ************************************************************/
 
 .media {
-  display: block;
+  display: flex;
   width: auto;
   max-width: 100%;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
 
   /******************************
   SIZE
@@ -17,8 +19,8 @@ MEDIA
   &-size {
     @each $size, $i in $sizes {
       &\:#{$size} {
-        width: $i + 1rem;
-        height: $i + 1rem;
+        width: $i * 0.76 + 1rem;
+        height: $i * 0.76 + 1rem;
       }
     }
     @each $screen, $size in $screens {
@@ -26,8 +28,8 @@ MEDIA
         @media (min-width : #{$size}) {
           @each $size, $i in $sizes {
             &\:#{$size} {
-              width: $i + 1rem;
-              height: $i + 1rem;
+              width: $i * 0.76 + 1rem;
+              height: $i * 0.76 + 1rem;
             }
           }
         }

@@ -12,20 +12,20 @@ WRAP
   width: 100%;
   max-width: var(--wrap-width);
   margin: auto;
-  padding-left: var(--u6);
-  padding-right: var(--u6);
+  padding-left: var(--u8);
+  padding-right: var(--u8);
 
   @media (min-width: $sm) {
     padding-left: var(--u10);
     padding-right: var(--u10);
   }
   @media (min-width: $md) {
-    padding-left: var(--u14);
-    padding-right: var(--u14);
+    padding-left: var(--u12);
+    padding-right: var(--u12);
   }
   @media (min-width: $lg) {
-    padding-left: var(--u20);
-    padding-right: var(--u20);
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /******************************

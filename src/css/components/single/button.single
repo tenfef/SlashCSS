@@ -6,7 +6,7 @@ $button-sizes: 5 !default;
 
 :root {
   --button-outline-weight: 1px;
-  --button-radius: var(--radius);
+  --button-radius: 5px;
   --button-font-family: var(--font-family);
   --button-font-size: var(--micro);
   --button-font-weight: var(--medium);
@@ -181,7 +181,7 @@ $button-sizes: 5 !default;
     }
 
     &\:outline {
-      padding-bottom: .1rem;
+      padding-bottom: 0;
       box-shadow: none;
       box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--grey-l4);
       background: transparent;
