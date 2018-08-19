@@ -8,13 +8,10 @@ $flag-gutters: 5 !default;
 
   display: inline-flex;
   vertical-align: middle;
+  align-items: center;
 
   &\/item {
-    display: flex;
-    flex-grow: 0;
-    flex-basis: auto;
-    align-items: center;
-    width: auto;
+    
   }
 
   /******************************

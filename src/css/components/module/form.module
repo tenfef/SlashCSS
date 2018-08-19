@@ -68,6 +68,7 @@ FORM
       min-height: 4rem;
       padding: 1.75rem 0 1rem var(--form-field-padding-left);
 
+
       &:placeholder-shown ~ label {
         position: absolute;
         top: 1.25rem;
@@ -89,7 +90,7 @@ FORM
         z-index: 1;
         pointer-events: none;
       }
-      & + label, &:focus ~ label {
+      & ~ label, &:focus ~ label {
         position: absolute;
         top: .25rem;
         left: .5rem;
@@ -99,6 +100,19 @@ FORM
         color: var(--grey-d1);
         z-index: 1;
         pointer-events: none;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          /* IE10+ CSS styles go here */
+          position: absolute;
+          top: .25rem;
+          left: .5rem;
+          margin: 0;
+          padding: 0;
+          font-size: 13px;
+          color: var(--grey-d1);
+          z-index: 1;
+          pointer-events: none;
+        }
       }
 
       /* states */
@@ -392,7 +406,7 @@ input {
     }
   }
   &[type="password"] {
-    font-size: var(--h4);
+    font-size: 22px;
   }
   &[type="file"] {
     display: none;
