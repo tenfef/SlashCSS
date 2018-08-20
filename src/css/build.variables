@@ -6,7 +6,7 @@ DEFAULT VARIABLES
 DEFAULT
 ******************************/
 
-$radius: 10px !default;
+$radius: 8px !default;
 $border: 1px solid var(--border-color) !default;
 $transition: all .2s !default;
 $shadow: 0 3px 6px 2px rgba(0,60,200,0.10);

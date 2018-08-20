@@ -3,7 +3,7 @@ FLEX
 ************************************************************/
 
 .flex {
-
+  display: flex !important;
   &\:1 {
     flex: 1 !important;
   }
@@ -23,6 +23,7 @@ FLEX
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
+          display: flex !important;
           &\:row {
             flex-direction: row !important;
           }
