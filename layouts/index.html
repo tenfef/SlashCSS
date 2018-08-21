@@ -199,51 +199,67 @@
 		</div>
 	</div>
 
-
 	<div class="row row-gutter:u14 padding-bottom:u10">
 		<div class="column:12 column@sm:8">
 			<article class="card elevate margin-bottom:u4">
 				<div class="card/content padding:u4">
-					<div class="flag flag-gutter:u6">
-						<div class="flag/item">
-							<div class="media media-size:sm border-radius:round fill:orange-l4"><span class="color:orange font-size:h5"><i class="fas fa-bolt"></i></span></div>
+					<div class="row">
+						<div class="column">
+							<div class="flag flag-gutter:u6">
+								<div class="flag/item">
+									<div class="media media-size:sm border-radius:round fill:orange-l4"><span class="color:orange font-size:h5"><i class="fas fa-bolt"></i></span></div>
+								</div>
+								<div class="flag/item">
+									<p class="font-weight:medium margin:u0">Enable prerendering with Netlify</p>
+									<p class="font-size:tiny">Allow crawlers used by search engines and social networks.</p>
+								</div>
+							</div>
 						</div>
-						<div class="flag/item">
-							<p class="font-weight:medium margin:u0">Enable prerendering with Netlify</p>
-							<p class="font-size:tiny">Allow crawlers used by search engines and social networks.</p>
+						<div class="column display:flex align-items:middle align-content:right">
+							<label class="field:toggle">
+								<input type="checkbox"/>
+								<div class="field/indicator"></div>
+							</label>
 						</div>
 					</div>
 				</div>
 			</article>
 
-			<article class="card elevate display:flex padding:u0 flex-direction:row margin-bottom:u4">
-				<div class="card/content fill:teal color:white padding:u4 display:flex align-items:middle align-content:center font-size:tiny font-weight:medium">
-					Deploy
-				</div>
+			<article class="card elevate margin-bottom:u4">
+				<div class="card/content padding:u0">
 
-				<div class="card/content padding:u4 padding-right:u0 width:100% display:flex align-content-x:between">
-					<div class="flag flag-gutter:u6">
-						<div class="flag/item">
-							<p class="font-weight:medium margin:u0">Continuous Deployment</p>
-							<p class="font-size:tiny">Settings for Continuous Deployment from a Git repository</p>
+
+					<div class="row">
+						<div class="column flex:none width:100px fill:teal color:white padding:u4 display:flex align-items:middle align-content:center font-size:tiny font-weight:medium">
+							Deploy
 						</div>
-					</div>
-				</div>
+						<div class="column padding:u4 display:flex align-items:middle align-content:left">
+							<div>
+								<p class="font-weight:medium margin:u0">Continuous Deployment</p>
+								<p class="font-size:tiny">Settings for Continuous Deployment from a Git repository</p>
+							</div>
+						</div>
+						<div class="column display:flex align-items:middle align-content:right padding-right:u4">
+							<a href="#" class="display:block button-style:flat button button-size:sm fill:white">
+								Edit Settings
+							</a>
+						</div>
 
-				<div class="card/content display:flex align-items:middle padding:u4 align-content:center">
-					<a href="#" class="display:block button-style:outline button button-size:sm border-radius:sharp fill:pink">
-						Edit Settings
-					</a>
+					</div>
 				</div>
 			</article>
 
-			<article class="card display:flex elevate">
+			<article class="card elevate">
 				<div class="card/content border-left border-color:blue border-width:5px padding:u4 padding-left:u6">
-					<p class="font-weight:medium margin:u0">Build hooks</p>
-					<p class="font-size:tiny">Build hooks give you a unique URL you can use to trigger a build.</p>
-				</div>
-				<div class="card/content padding:u4 padding-right:u6 display:flex flex:1 align-items:middle align-content:right">
-					<a href="#" class="font-weight:medium">Learn more <i class="fas fa-angle-right margin-left:u2"></i></a>
+					<div class="row">
+						<div class="column">
+							<p class="font-weight:medium margin:u0">Build hooks</p>
+							<p class="font-size:tiny">Build hooks give you a unique URL you can use to trigger a build.</p>
+						</div>
+						<div class="column flex align-items:middle align-content:right">
+							<a href="#" class="font-weight:medium">Edit Build Hooks <i class="fas fa-angle-right margin-left:u2"></i></a>
+						</div>
+					</div>
 				</div>
 			</article>
 
@@ -490,9 +506,7 @@
 							<h5 class="font-weight:medium">My Courses</h5>
 						</div>
 						<div class="column align:right">
-							<a href="#" class="display:block button-style:outline button button-size:sm border-radius:sharp fill:pink">
-								Edit Settings
-							</a>
+
 						</div>
 					</div>
 				</div>

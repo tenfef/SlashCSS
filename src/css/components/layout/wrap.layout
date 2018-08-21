@@ -12,12 +12,12 @@ WRAP
   width: 100%;
   max-width: var(--wrap-width);
   margin: auto;
-  padding-left: var(--u8);
-  padding-right: var(--u8);
+  padding-left: var(--u4);
+  padding-right: var(--u4);
 
   @media (min-width: $sm) {
-    padding-left: var(--u10);
-    padding-right: var(--u10);
+    padding-left: var(--u8);
+    padding-right: var(--u8);
   }
   @media (min-width: $md) {
     padding-left: var(--u12);
