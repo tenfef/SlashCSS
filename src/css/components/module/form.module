@@ -336,7 +336,9 @@ FORM
 
   &\:icons {
     position: relative;
-    input {
+    input:not([type="submit"]) {
+      padding-left: var(--form-field-height);
+      padding-right: var(--form-field-height);
       &:focus {
         & ~ .field\/icon {
           color: var(--form-field-checkbox-fill);
