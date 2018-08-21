@@ -1,11 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <title>SlashCSS | {{ .Title }}</title>
   <!-- Page Meta -->
   <meta charset="utf-8" />
   <meta name="description" content="LOREMMETA">
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff"/>
 
   <!-- Social Media Open Graph -->
   <meta property="og:title" content="{{ if .Params.meta_title }}{{ .Params.meta_title }}{{else}}{{ .Title }}{{end}}" />
@@ -26,6 +27,9 @@
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="apple-touch-icon" sizes="180x180" href="/iPhone-6-Plus.png">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
 
   <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">

@@ -1,6 +1,6 @@
 {{ partial "head" . }}
 
-<nav class="menu menu:docs height:auto" role="menu">
+<nav class="menu menu:docs height:auto">
 	<div class="menu/content column:3">
 		<a href="/" class="menu/item hover-fill:none padding-x:u6 padding-x@sm:u4 padding-y:u4">
 			<div class="flag flag-gutter:u4">
@@ -17,15 +17,15 @@
 	</div>
 
 	<div class="menu/content justify-content:right column:3 padding-x:u4 display:none display@sm:flex">
-		<a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-color:grey hover-fill:none">
+		<a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-color:grey hover-fill:none" name="Github">
 			<i class="fab fa-github font-size:h5"></i>
 		</a>
-		<a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-color:grey hover-fill:none">
+		<a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-color:grey hover-fill:none" name="Twitter">
 			<i class="fab fa-twitter font-size:h5"></i>
 		</a>
-		<a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-color:grey hover-fill:none">
+		<!-- <a href="#" class="menu/item padding-x:u2 color:grey-l3 hover-color:grey hover-fill:none">
 			<i class="fab fa-slack font-size:h5"></i>
-		</a>
+		</a> -->
 	</div>
 	<div class="menu/content padding-x:u4 display:flex display@sm:none">
 		<a class="menu/item padding-x:u2 color:black hover hover-fill:none hover-color:black js-hamburger">
@@ -58,12 +58,12 @@
     <div class="column:12 column@sm:4 padding-right@sm:u10 padding-right@lg:u12">
       <article class="card elevate margin-bottom:u10 margin-bottom@sm:u0">
         <div class="card/header padding:u0">
-          <img src="/assets/images/scenery.jpg" class="media width:100%">
+          <img src="/assets/images/scenery.jpg" class="media width:100%" alt="Scenery">
         </div>
         <div class="card/content">
           <div class="flag flag-gutter:u4 margin-bottom:u4">
             <div class="flag/item">
-              <img src="/assets/images/jin.jpg" class="media media-size:md border-radius:round">
+              <img src="/assets/images/jin.jpg" class="media media-size:md border-radius:round" alt="Jin Su Park">
             </div>
             <div class="flag/item font-height:1">
 							<h6>Jin Su Park</h6>
@@ -120,31 +120,31 @@
 
       <nav class="menu menu:docs border elevate height:auto margin-top:u4 margin-bottom:u10 margin-bottom@sm:u0">
         <div class="menu/content flex-wrap">
-      		<a href="/docs/getting-started/wrap/" class="menu/item flex:1 font-size:tiny font-weight:regular">
+      		<a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-bold"></i>
       		</a>
-      		<a href="/docs/layout/column/" class="menu/item flex:1 font-size:tiny font-weight:regular">
+      		<a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-italic"></i>
       		</a>
-      		<a href="/docs/module/accordion" class="menu/item flex:1 font-size:tiny font-weight:regular">
+      		<a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-underline"></i>
       		</a>
-      		<a href="/docs/single/button" class="menu/item flex:1 font-size:tiny font-weight:regular">
+      		<a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-align-left"></i>
       		</a>
-      		<a href="/docs/utility/align" class="menu/item flex:1 font-size:tiny font-weight:regular">
+      		<a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-align-center"></i>
       		</a>
-          <a href="/docs/utility/align" class="menu/item flex:1 font-size:tiny font-weight:regular">
+          <a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-align-right"></i>
       		</a>
-          <a href="/docs/utility/align" class="menu/item flex:1 font-size:tiny font-weight:regular">
+          <a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-list-ul"></i>
       		</a>
-          <a href="/docs/utility/align" class="menu/item flex:1 font-size:tiny font-weight:regular">
+          <a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-list-ol"></i>
       		</a>
-          <a href="/docs/utility/align" class="menu/item flex:1 font-size:tiny font-weight:regular">
+          <a class="menu/item flex:1 font-size:tiny font-weight:regular" name="Menu">
             <i class="fas fa-image"></i>
       		</a>
       	</div>
@@ -341,7 +341,7 @@
 		      <div class="card/content">
 						<div class="flag flag-gutter:u4 margin-bottom:u6">
 	            <div class="flag/item">
-	              <img src="/assets/images/sarah.jpg" class="media media-size:md border-radius:round">
+	              <img src="/assets/images/sarah.jpg" class="media media-size:md border-radius:round" alt="Sarah">
 	            </div>
 	            <div class="flag/item font-height:1.5">
 								<h6 class="font-size:body font-weight:regular margin-bottom:u1 color:brown-l2">Welcome back, Sarah<br>
@@ -457,7 +457,7 @@
 						<div class="card/content border-top border-color:brown border-width:5px">
 							<div class="flag flag-gutter:u4 margin-bottom:u6">
 								<div class="flag/item">
-									<img src="/assets/images/air-nz.png" class="media media-size:md color:white border-radius:round">
+									<img src="/assets/images/air-nz.png" class="media media-size:md color:white border-radius:round" alt="Air New Zealand">
 								</div>
 								<div class="flag/item">
 									<p class="font-size:h6 font-weight:medium font-height:1.2">Air New Zealand<br><span class="font-size:tiny font-weight:regular">NZ2495</span>
@@ -493,7 +493,7 @@
 
 							<h1 class="margin-bottom:u2">Gate 19</h1>
 
-							<img src="/assets/images/barcode.png" class="media">
+							<img src="/assets/images/barcode.png" class="media" alt="Barcode">
 
 						</div>
 					</article>
@@ -521,7 +521,7 @@
 						<div class="column">
 							<div class="flag flag-gutter:u4">
 								<div class="flag/item">
-									<img src="/assets/images/sarah.jpg" class="media media-size:md border-radius:round">
+									<img src="/assets/images/sarah.jpg" class="media media-size:md border-radius:round" alt="Sarah">
 								</div>
 								<div class="flag/item font-height:1.5">
 									<h6 class="font-size:body font-weight:regular margin-bottom:u1">Sarah submitted Assignment<br>
@@ -540,7 +540,7 @@
 						<div class="column">
 							<div class="flag flag-gutter:u4">
 								<div class="flag/item">
-									<img src="/assets/images/superman.jpg" class="media media-size:md border-radius:round">
+									<img src="/assets/images/superman.jpg" class="media media-size:md border-radius:round" alt="Superman">
 								</div>
 								<div class="flag/item font-height:1.5">
 									<h6 class="font-size:body font-weight:regular margin-bottom:u1">Superman finished Module<br>
@@ -565,8 +565,5 @@
 
 </section>
 
-<!-- Scripts -->
-<script src="{{ .Site.BaseURL }}assets/scripts/main.js"></script>
 
-</body>
-</html>
+{{ partial "foot" . }}
