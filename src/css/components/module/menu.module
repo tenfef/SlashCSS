@@ -45,15 +45,12 @@ MENU
   }
 
   &\/item {
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
     margin: 0;
     padding: var(--menu-item-padding-y) var(--menu-item-padding-x);
     transition: var(--transition);
     color: var(--menu-color);
     text-decoration: none;
+    text-align: center;
     &:hover {
       background-color: var(--menu-item-hover-fill);
     }

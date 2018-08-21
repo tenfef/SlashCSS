@@ -56,37 +56,17 @@ ALIGN
     &\:top {
       align-content: flex-start !important;
     }
-    &\:middle {
+    &\:center {
       align-content: center !important;
     }
     &\:bottom {
       align-content: flex-end !important;
     }
-    &-y {
-      &\:between {
-        align-content: space-between !important;
-      }
-      &\:around {
-        align-content: space-around !important;
-      }
+    &\:between {
+      align-content: space-between !important;
     }
-
-    &\:left {
-      justify-content: flex-start !important;
-    }
-    &\:right {
-      justify-content: flex-end !important;
-    }
-    &\:center {
-      justify-content: center !important;
-    }
-    &-x {
-      &\:between {
-        justify-content: space-between !important;
-      }
-      &\:around {
-        justify-content: space-around !important;
-      }
+    &\:around {
+      align-content: space-around !important;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
@@ -95,37 +75,17 @@ ALIGN
           &\:top {
             align-content: flex-start !important;
           }
-          &\:middle {
+          &\:center {
             align-content: center !important;
           }
           &\:bottom {
             align-content: flex-end !important;
           }
-          &-y {
-            &\:between {
-              align-content: space-between !important;
-            }
-            &\:around {
-              align-content: space-around !important;
-            }
+          &\:between {
+            align-content: space-between !important;
           }
-
-          &\:left {
-            justify-content: flex-start !important;
-          }
-          &\:right {
-            justify-content: flex-end !important;
-          }
-          &\:center {
-            justify-content: center !important;
-          }
-          &-x {
-            &\:between {
-              justify-content: space-between !important;
-            }
-            &\:around {
-              justify-content: space-around !important;
-            }
+          &\:around {
+            align-content: space-around !important;
           }
         }
       }
@@ -141,7 +101,7 @@ ALIGN
     &\:top {
       align-items: flex-start !important;
     }
-    &\:middle {
+    &\:center {
       align-items: center !important;
     }
     &\:bottom {
@@ -154,7 +114,7 @@ ALIGN
           &\:top {
             align-items: flex-start !important;
           }
-          &\:middle {
+          &\:center {
             align-items: center !important;
           }
           &\:bottom {
@@ -192,6 +152,52 @@ ALIGN
           }
           &\:bottom {
             align-self: flex-end !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.justify {
+  text-align: justify !important;
+  &-content {
+    &\:left {
+      justify-content: flex-start !important;
+    }
+    &\:right {
+      justify-content: flex-end !important;
+    }
+    &\:center {
+      justify-content: center !important;
+    }
+    &\:between {
+      justify-content: space-between !important;
+    }
+    &\:around {
+      justify-content: space-around !important;
+    }
+  }
+  @each $key, $value in $screens {
+    &\@#{$key} {
+      @media (min-width : #{$value}) {
+        text-align: justify !important;
+        &-content {
+          &\:left {
+            justify-content: flex-start !important;
+          }
+          &\:right {
+            justify-content: flex-end !important;
+          }
+          &\:center {
+            justify-content: center !important;
+          }
+          &\:between {
+            justify-content: space-between !important;
+          }
+          &\:around {
+            justify-content: space-around !important;
           }
         }
       }

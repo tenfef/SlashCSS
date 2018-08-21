@@ -14,10 +14,11 @@ BASE
 LAYOUT
 ******************************/
 
+@import "layout/wrap.layout";
 @import "layout/row.layout";
 @import "layout/column.layout";
 @import "layout/grid.layout";
-@import "layout/wrap.layout";
+@import "layout/flex.layout";
 @import "layout/flag.layout";
 
 /******************************
@@ -52,7 +53,6 @@ UTILITY
 ******************************/
 
 @import "utility/display.utility";
-@import "utility/flex.utility";
 @import "utility/position.utility";
 @import "utility/color.utility";
 @import "utility/fill.utility";

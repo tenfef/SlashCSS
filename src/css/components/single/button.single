@@ -152,10 +152,10 @@ $button-sizes: 5 !default;
               background: var(--white) !important;
               color: var(--grey-d1);
               &:hover {
-                background: var(--grey-l4) !important;
+                background: var(--grey-l5) !important;
               }
               &:active {
-                background: var(--grey-l3) !important;
+                background: var(--grey-l4) !important;
               }
             } @else if $key == black {
               background: var(--black) !important;

@@ -14,7 +14,6 @@ $grid-gutters: 5 !default;
 
 	@while $columns > 0 {
 		&\:#{$columns} {
-      display: grid;
       grid-template-columns: repeat($columns, 1fr);
 		}
 		$columns: $columns - 1;
@@ -24,7 +23,6 @@ $grid-gutters: 5 !default;
       @media (min-width : #{$value}) {
         @while $columns > 0 {
       		&\:#{$columns} {
-            display: grid;
             grid-template-columns: repeat($columns, 1fr);
       		}
       		$columns: $columns - 1;

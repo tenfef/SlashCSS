@@ -3,35 +3,47 @@ FLEX
 ************************************************************/
 
 .flex {
-  display: flex !important;
+  display: flex;
   &\:1 {
-    flex: 1 !important;
+    flex: 1;
   }
   &\:none {
-    flex: none !important;
+    flex: none;
+  }
+  @each $key, $value in $screens {
+    &\@#{$key} {
+      @media (min-width : #{$value}) {
+        display: flex;
+        &\:1 {
+          flex: 1;
+        }
+        &\:none {
+          flex: none;
+        }
+      }
+    }
   }
   &-direction {
     &\:row {
-      flex-direction: row !important;
+      flex-direction: row;
     }
     &\:column {
-      flex-direction: column !important;
+      flex-direction: column;
     }
     &\:reverse {
-			flex-direction: row-reverse !important;
+			flex-direction: row-reverse;
 		}
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
-          display: flex !important;
           &\:row {
-            flex-direction: row !important;
+            flex-direction: row;
           }
           &\:column {
-            flex-direction: column !important;
+            flex-direction: column;
           }
           &\:reverse {
-      			flex-direction: row-reverse !important;
+      			flex-direction: row-reverse;
       		}
         }
       }
@@ -66,7 +78,7 @@ FLEX
 	&-order {
 		@while $columns > 0 {
 			&\:#{$columns} {
-				order: $columns !important;
+				order: $columns;
 			}
 			$columns: $columns - 1;
 		}
@@ -75,7 +87,7 @@ FLEX
 				@media (min-width : #{$value}) {
 					@while $columns > 0 {
 						&\:#{$columns} {
-							order: $columns !important;
+							order: $columns;
 						}
 						$columns: $columns - 1;
 					}
