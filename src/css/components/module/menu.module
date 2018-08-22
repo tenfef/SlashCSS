@@ -45,6 +45,9 @@ MENU
   }
 
   &\/item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: var(--menu-item-padding-y) var(--menu-item-padding-x);
     transition: var(--transition);

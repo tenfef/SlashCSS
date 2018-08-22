@@ -178,12 +178,10 @@ ALIGN
     &\:around {
       justify-content: space-around !important;
     }
-  }
-  @each $key, $value in $screens {
-    &\@#{$key} {
-      @media (min-width : #{$value}) {
-        text-align: justify !important;
-        &-content {
+    @each $key, $value in $screens {
+      &\@#{$key} {
+        @media (min-width : #{$value}) {
+          text-align: justify !important;
           &\:left {
             justify-content: flex-start !important;
           }

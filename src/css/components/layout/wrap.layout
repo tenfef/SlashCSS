@@ -3,7 +3,7 @@ WRAP
 ************************************************************/
 
 :root {
-  --wrap-width: 1500px;
+  --wrap-width: 1600px;
 }
 
 .wrap {
@@ -20,12 +20,12 @@ WRAP
     padding-right: var(--u8);
   }
   @media (min-width: $md) {
-    padding-left: var(--u12);
-    padding-right: var(--u12);
+    padding-left: var(--u10);
+    padding-right: var(--u10);
   }
   @media (min-width: $lg) {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: var(--u12);
+    padding-right: var(--u12);
   }
 
   /******************************
@@ -42,8 +42,9 @@ WRAP
           padding: 0;
         }
         &\:unflush {
-          padding-left: var(--u6);
-          padding-right: var(--u6);
+          padding-left: var(--u4);
+          padding-right: var(--u4);
+
           @media (min-width: $sm) {
             padding-left: var(--u8);
             padding-right: var(--u8);
