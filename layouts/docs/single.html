@@ -15,7 +15,7 @@
 			</div>
 		</a>
 	</div>
-	<div class="menu/content column:6 align-content:center display:none display@sm:flex">
+	<div class="menu/content column:6 justify-content:center display:none display@sm:flex">
 		<a href="/docs/getting-started/wrap/" class="menu/item font-size:tiny padding-x:u6 padding-y:u4 font-weight:regular color:white hover-fill:grey-d4 is-active">
 			Getting Started
 		</a>
@@ -32,7 +32,7 @@
 			Utility
 		</a>
 	</div>
-	<div class="menu/content align-content:right column:3 padding-x:u4 display:none display@sm:flex">
+	<div class="menu/content justify-content:right column:3 padding-x:u4 display:none display@sm:flex">
 		<a href="#" class="menu/item padding-x:u2 color:white hover-fill:none">
 			<i class="fab fa-github font-size:h5"></i>
 		</a>
@@ -65,7 +65,7 @@
 
 <div class="display:none display@sm:block padding-y:u4 fill:grey-l5 align:center">
 	<div class="wrap">
-		<ul class="list list-gutter:u2 list-direction:right display:inline-flex align-content:center flex-wrap">
+		<ul class="list list-gutter:u2 list-direction:right display:inline-flex justify-content:center flex-wrap">
 			{{ if eq .Params.family "Getting Started"  }}
 				{{ range .Site.Menus.gettingStarted }}
 					<li class="list/item">
