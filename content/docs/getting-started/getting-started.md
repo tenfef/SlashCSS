@@ -6,6 +6,30 @@ draft = false
 description = "Geting started is easy, here's a quick start guide to help kickstart your project."
 +++
 
+# Introduction
+
+
+
+# Getting started
+
+Installation
+Quick ways
+
+recommended ways
+
+# Configuration
+
+sass > css VARIABLES
+theming
+Extending
+
+# Fundamentals
+
+Mobile First
+Naming Rules
+File Organization
+
+# Unit Chart
 
 
 

@@ -1,7 +1,7 @@
 /*
 Title: SlashCSS
 Version: 0.1.0
-Updated: 2018-05-28
+Updated: 2018-08-23
 Author: Jin Su Park
 Site: slashcss.com
 */
@@ -12,6 +12,7 @@ Site: slashcss.com
 
 @import "build.variables";
 @import "../fonts/system.font";
+
 /************************************************************
 2. COMPONENTS
 ************************************************************/
@@ -21,6 +22,7 @@ Site: slashcss.com
 /************************************************************
 2. OVERRIDE VARIABLES
 ************************************************************/
+
 
 
 /************************************************************
@@ -36,8 +38,56 @@ Site: slashcss.com
 .markup {
   &\:doc {
     h3 {
-      font-size: var(--h6);
+      font-size: var(--h5);
       font-weight: 700;
+    }
+  }
+}
+
+.grid {
+  &\:doc {
+    grid-template-columns: 320px auto;
+    grid-template-areas:
+    "nav content";
+    min-height: 100%;
+
+    .grid\/nav {
+      grid-area: nav;
+    }
+    .grid\/main {
+      grid-area: content;
+    }
+  }
+}
+
+.accordion {
+  &\:doc {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    .accordion\/item {
+      border: 0;
+      &.is-active {
+        .accordion\/header {
+          box-shadow: inset 3px 0px 0px 0px var(--yellow);
+          background: var(--brown-l2);
+        }
+      }
+    }
+    .accordion\/header {
+      padding-left: var(--u6);
+      font-weight: var(--bold);
+      font-size: var(--tiny);
+      color: white;
+    }
+    .accordion\/body {
+      padding: var(--u2);
+    }
+    .accordion\/arrow {
+      border: 0;
+      &:before {
+        border-top-color: white;
+      }
     }
   }
 }
