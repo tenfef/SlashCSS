@@ -7,6 +7,18 @@ description = "Geting started is easy, here's a quick start guide to help kickst
 +++
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ### The Quick Way
 
 There are two ways you can get started. The quickest way is to include the production ready CSS and Javascript files into your project. This will provide your project with all the basic component and give your stylesheet access to global and local CSS variables.
