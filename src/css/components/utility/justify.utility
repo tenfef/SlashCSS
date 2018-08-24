@@ -1,0 +1,48 @@
+/************************************************************
+JUSTIFY
+************************************************************/
+
+.justify {
+
+  text-align: justify !important;
+
+  &-content {
+    &\:left {
+      justify-content: flex-start !important;
+    }
+    &\:right {
+      justify-content: flex-end !important;
+    }
+    &\:center {
+      justify-content: center !important;
+    }
+    &\:between {
+      justify-content: space-between !important;
+    }
+    &\:around {
+      justify-content: space-around !important;
+    }
+    @each $key, $value in $screens {
+      &\@#{$key} {
+        @media (min-width : #{$value}) {
+          text-align: justify !important;
+          &\:left {
+            justify-content: flex-start !important;
+          }
+          &\:right {
+            justify-content: flex-end !important;
+          }
+          &\:center {
+            justify-content: center !important;
+          }
+          &\:between {
+            justify-content: space-between !important;
+          }
+          &\:around {
+            justify-content: space-around !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,320 @@
+/************************************************************
+CHECKBOX
+************************************************************/
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding: 0;
+  padding-left: var(--u7);
+  cursor: pointer;
+  padding-bottom: 0 !important;
+  font-size: var(--tiny) !important;
+  font-weight: var(--regular) !important;
+  line-height: 1.5 !important;
+
+  input {
+    display: none;
+    &:checked ~ .checkbox\/indicator {
+      background: var(--form-field-checkbox-fill);
+      border-color: var(--form-field-checkbox-fill);
+      &:after {
+        display: block;
+      }
+    }
+    &:disabled {
+      & ~ .checkbox\/indicator {
+        background: var(--form-disabled-fill);
+        border-color: var(--border-color);
+        opacity: var(--form-disabled-opacity);
+        pointer-events: none;
+        &:after {
+          border-color: var(--black);
+        }
+      }
+    }
+  }
+  .checkbox\/indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--u5);
+    width: var(--u5);
+    border-radius: var(--form-field-radius);
+    border: var(--border);
+    background: white;
+
+    &:after {
+      content: '';
+      display: none;
+      position: absolute;
+      left: .40rem;
+      top: .07rem;
+      width: .4rem;
+      height: .75rem;
+      border: solid white;
+      border-width: 0 .15rem .15rem 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.field {
+  &\:slide {
+    position: relative;
+    input {
+      min-height: 4rem;
+      padding: 1.75rem 0 1rem var(--form-field-padding-left);
+
+      &:placeholder-shown ~ label {
+        position: absolute;
+        top: 1.25rem;
+        left: 1rem;
+        margin: 0;
+        padding: 0;
+        font-size: var(--body);
+        color: var(--grey-d2);
+        pointer-events: none;
+      }
+      &:not(:placeholder-shown) ~ label {
+        position: absolute;
+        top: .25rem;
+        left: .5rem;
+        margin: 0;
+        padding: 0;
+        font-size: .75rem;
+        color: var(--grey-d1);
+        z-index: 1;
+        pointer-events: none;
+      }
+      & ~ label, &:focus ~ label {
+        position: absolute;
+        top: .25rem;
+        left: .5rem;
+        margin: 0;
+        padding: 0;
+        font-size: .75rem;
+        color: var(--grey-d1);
+        z-index: 1;
+        pointer-events: none;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          /* IE10+ CSS styles go here */
+          position: absolute;
+          top: .25rem;
+          left: .5rem;
+          margin: 0;
+          padding: 0;
+          font-size: 13px;
+          color: var(--grey-d1);
+          z-index: 1;
+          pointer-events: none;
+        }
+      }
+
+      /* states */
+      &.is-success:not(:placeholder-shown) ~ label {
+        color: var(--form-success-border-color);
+      }
+      &.is-alert:not(:placeholder-shown) ~ label {
+        color: var(--form-alert-border-color);
+      }
+      &.is-warning:not(:placeholder-shown) ~ label {
+        color: var(--form-warning-border-color);
+      }
+    }
+  }
+  &\:slide-select {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+
+    select {
+      min-height: 4rem;
+    }
+
+    &:after {
+      content: '\f107';
+      position: absolute;
+      top: 2rem;
+      transform: translateY(-50%);
+      right: 1.25rem;
+      display: block;
+      font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Pro';
+      font-style: normal;
+      font-size: 1.25rem;
+      font-variant: normal;
+      text-rendering: auto;
+      font-weight: bold;
+      line-height: 1;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      color: var(--black);
+      pointer-events: none;
+    }
+  }
+
+
+
+  &\:toggle {
+    display: inline-block;
+    position: relative;
+    width: 56px;
+    height: 28px;
+
+    .field\/indicator {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: var(--grey-l4);
+      transition: .4s;
+      border-radius: 100px;
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 4px;
+        bottom: 4px;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 100px;
+        transition: .2s;
+      }
+    }
+
+    input {
+      display:none;
+    }
+    input:checked + .field\/indicator {
+      background-color: var(--lime);
+    }
+    input:checked + .field\/indicator:before {
+      transform: translateX(28px);
+    }
+  }
+
+
+  &\:radio {
+    display: block;
+    position: relative;
+    padding: 0;
+    padding-left: var(--u7);
+    cursor: pointer;
+    padding-bottom: 0 !important;
+    font-size: var(--tiny) !important;
+    font-weight: var(--regular) !important;
+    line-height: 1.5 !important;
+
+    input {
+      display: none;
+      &:checked ~ .field\/indicator {
+        &:after {
+          display: block;
+          background: var(--form-field-checkbox-fill);
+        }
+      }
+      &:disabled {
+        & ~ .field\/indicator {
+          background: var(--form-disabled-fill);
+          opacity: var(--form-disabled-opacity);
+          pointer-events: none;
+          &:after {
+            background: black;
+          }
+        }
+      }
+    }
+    .field\/indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--u5);
+      height: var(--u5);
+      border-radius: 100px;
+      border: var(--border);
+      background: white;
+      &:after {
+        position: absolute;
+        content: '';
+        display: none;
+        width: .75rem;
+        height: .75rem;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  &\:select {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+
+    &:after {
+      content: '\f107';
+      position: absolute;
+      top: 1.55rem;
+      transform: translateY(-50%);
+      right: 1.25rem;
+      display: block;
+      font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Pro';
+      font-style: normal;
+      font-size: 1.25rem;
+      font-variant: normal;
+      text-rendering: auto;
+      font-weight: bold;
+      line-height: 1;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      color: var(--black);
+      pointer-events: none;
+    }
+  }
+
+  &\:icons {
+    position: relative;
+    input:not([type="submit"]) {
+      padding-left: var(--form-field-height);
+      padding-right: var(--form-field-height);
+      &:focus {
+        & ~ .field\/icon {
+          color: var(--form-field-checkbox-fill);
+        }
+        & ~ .field\/text {
+          color: var(--form-field-checkbox-fill);
+        }
+      }
+    }
+    .field\/icon {
+      display: flex;
+      position: absolute;
+      top: 0;
+      width: var(--form-field-height);
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+    .field\/text {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: var(--u5);
+      height: 100%;
+      align-items: center;
+      font-weight: var(--regular);
+      transition: var(--transition);
+    }
+  }
+
+  &\:file {
+    cursor: pointer;
+  }
+}

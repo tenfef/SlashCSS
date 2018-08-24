@@ -47,6 +47,8 @@ SINGLE
 @import "single/pill.single";
 @import "single/line.single";
 @import "single/tip.single";
+@import "single/switch.single";
+@import "single/checkbox.single";
 
 /******************************
 UTILITY
@@ -57,6 +59,7 @@ UTILITY
 @import "utility/color.utility";
 @import "utility/fill.utility";
 @import "utility/align.utility";
+@import "utility/justify.utility";
 @import "utility/border.utility";
 @import "utility/opacity.utility";
 @import "utility/float.utility";
