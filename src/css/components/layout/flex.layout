@@ -4,16 +4,25 @@ FLEX
 
 .flex {
   display: flex;
+  &\:inline {
+    display: inline-flex;
+  }
+
   &\:1 {
     flex: 1;
   }
   &\:none {
     flex: none;
   }
+
   @each $key, $value in $screens {
     &\@#{$key} {
       @media (min-width : #{$value}) {
         display: flex;
+        &\:inline {
+          display: inline-flex;
+        }
+
         &\:1 {
           flex: 1;
         }

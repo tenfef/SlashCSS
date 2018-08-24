@@ -79,22 +79,22 @@ The `align-items` property specifies the default alignment for items inside the 
 
 <div class="row row-gutter:2 margin-bottom:u6">
   <div class="column:3">
-    <div class="display:flex height:10 fill:grey-l4 align-items:top">
+    <div class="flex height:10 fill:grey-l4 align-items:top">
       <div class="padding:2 color:white fill:grey-l2"></div>
     </div>
   </div>
   <div class="column:3">
-    <div class="display:flex height:10 fill:grey-l4 align-items:middle">
+    <div class="flex height:10 fill:grey-l4 align-items:middle">
       <div class="padding:2 color:white fill:grey-l2"></div>
     </div>
   </div>
   <div class="column:3">
-    <div class="display:flex height:10 fill:grey-l4 align-items:bottom">
+    <div class="flex height:10 fill:grey-l4 align-items:bottom">
       <div class="padding:2 color:white fill:grey-l2"></div>
     </div>
   </div>
   <div class="column:3">
-    <div class="display:flex height:10 fill:grey-l4 align-items:baseline">
+    <div class="flex height:10 fill:grey-l4 align-items:baseline">
       <div class="column:4 align:center color:white fill:grey-l2">&nbsp;</div>
       <div class="column:4 padding-y:2 align:center color:white fill:grey-l2">&nbsp;</div>
       <div class="column:4 align:center color:white fill:grey-l2">&nbsp;</div>
@@ -126,7 +126,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
 
 <div class="row row-gutter:2 margin-bottom:u6">
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:top">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content:top">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -160,7 +160,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:middle">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content:middle">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -194,7 +194,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:bottom">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content:bottom">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -228,7 +228,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content-y:between">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content-y:between">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -262,7 +262,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content-y:around">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content-y:around">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -296,7 +296,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:left">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content:left">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -310,7 +310,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:center">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content:center">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -324,7 +324,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content:right">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content:right">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -338,7 +338,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content-x:between">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content-x:between">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -352,7 +352,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="display:flex flex-wrap height:20 fill:grey-l4 align-content-x:around">
+    <div class="flex flex-wrap height:20 fill:grey-l4 align-content-x:around">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;

@@ -17,7 +17,7 @@ The `elevate` component can be applied to any type of component.
 		<div class="column">
 			<img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:2 fill:primary elevate">
 		</div>
-		<div class="column display:flex align-item:middle">
+		<div class="column flex align-item:middle">
 			<div>
 				<p class="margin:0 font-weight:medium color:black font-height:1">Jin Park</p>
 				<span class="font-size:tiny font-height:0">@zapcss</span>

@@ -8,6 +8,20 @@ $grid-gutters: 5 !default;
 
   display: grid;
 
+  &\:inline-grid {
+    display: inline-grid;
+  }
+  @each $key, $value in $screens {
+    &\@#{$key} {
+      @media (min-width : #{$value}) {
+        display: grid;
+        &\:inline-grid {
+          display: inline-grid;
+        }
+      }
+    }
+  }
+
   /******************************
   COLUMN
   ******************************/

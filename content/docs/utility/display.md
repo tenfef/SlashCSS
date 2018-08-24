@@ -21,7 +21,7 @@ Defined with the `display` property, modify your display behavior of an element.
 <div class="display:inline-block">
   Inline Block
 </div>
-<div class="display:flex">
+<div class="flex">
   Flex
 </div>
 <div class="display:inline-flex">

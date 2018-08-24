@@ -10,18 +10,6 @@ DISPLAY
   &\:inline-block {
     display: inline-block !important;
   }
-  &\:flex {
-    display: flex !important;
-  }
-  &\:inline-flex {
-    display: inline-flex !important;
-  }
-  &\:grid {
-    display: grid !important;
-  }
-  &\:inline-grid {
-    display: inline-grid !important;
-  }
   @each $key, $value in $screens {
     &\@#{$key} {
       @media (min-width : #{$value}) {
@@ -29,23 +17,8 @@ DISPLAY
         &\:none {
           display: none !important;
         }
-        &\:block {
-          display: block !important;
-        }
         &\:inline-block {
           display: inline-block !important;
-        }
-        &\:flex {
-          display: flex !important;
-        }
-        &\:inline-flex {
-          display: inline-flex !important;
-        }
-        &\:grid {
-          display: grid !important;
-        }
-        &\:inline-grid {
-          display: inline-grid !important;
         }
       }
     }
