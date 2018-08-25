@@ -154,7 +154,7 @@ INPUT
     }
   }
 
-  &\:toggle {
+  &\:switch {
     display: inline-block;
     position: relative;
     width: 56px;

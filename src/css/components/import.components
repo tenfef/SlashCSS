@@ -47,8 +47,7 @@ SINGLE
 @import "single/pill.single";
 @import "single/line.single";
 @import "single/tip.single";
-@import "single/switch.single";
-@import "single/checkbox.single";
+@import "single/input.single";
 
 /******************************
 UTILITY
