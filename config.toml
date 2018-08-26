@@ -4,6 +4,11 @@ title = "My New Hugo Site"
 
 [menu]
 
+  [[menu.intro]]
+    name = "What is SlashCSS?"
+    url = "/getting-started/what-is-slashcss/"
+    weight = -50
+
   [[menu.start]]
     name = "Installation"
     url = "/getting-started/installation/"
@@ -13,6 +18,11 @@ title = "My New Hugo Site"
     name = "Configuration"
     url = "/getting-started/configuration/"
     weight = -80
+
+  [[menu.start]]
+    name = "Unit Chart"
+    url = "/getting-started/unit-chart/"
+    weight = -60
 
   [[menu.start]]
     name = "Fundamentals"
@@ -25,9 +35,9 @@ title = "My New Hugo Site"
     weight = -60
 
   [[menu.start]]
-    name = "About Slash"
-    url = "/getting-started/introduction/"
-    weight = -50
+    name = "Colors"
+    url = "/getting-started/colors/"
+    weight = -60
 
 
   [[menu.layout]]

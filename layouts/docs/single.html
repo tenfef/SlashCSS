@@ -89,6 +89,17 @@
 		</div>
 		<div class="column:12 column@sm:3 fill:grey-l5 padding-x:u8 padding-y:6vh">
 
+			<h6 class="font-size:body margin-bottom:u4">Introduction</h6>
+			<div class="list margin-bottom:u8">
+
+				{{ range .Site.Menus.intro }}
+
+					<a class="list/item font-size:body font-height:1.6 opacity:6 hover-opacity:10 color:black" href="/docs/{{ .URL }}" title="{{ .Name }}">
+						{{ .Name }}
+					</a>
+
+				{{ end }}
+			</div>
 
 			<h6 class="font-size:body margin-bottom:u4">Getting Started</h6>
 			<div class="list margin-bottom:u8">
@@ -127,7 +138,6 @@
 			<h6 class="font-size:body margin-bottom:u4">Single</h6>
 			<div class="list margin-bottom:u8">
 				{{ range .Site.Menus.single }}
-
 					<a class="list/item font-size:body font-height:1.6 opacity:6 hover-opacity:10 color:black" href="/docs/{{ .URL }}" title="{{ .Name }}">
 						{{ .Name }}
 					</a>
