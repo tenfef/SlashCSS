@@ -133,7 +133,7 @@ $button-sizes: 5 !default;
 
   &-style {
     &\:flat {
-      padding-bottom: .1rem;
+      padding-bottom: 0;
       box-shadow: none;
       background: var(--grey);
       &:hover {

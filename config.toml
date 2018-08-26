@@ -4,25 +4,31 @@ title = "My New Hugo Site"
 
 [menu]
 
-  [[menu.gettingStarted]]
-    name = "Wrap"
-    url = "/getting-started/wrap/"
-    weight = -100
+  [[menu.start]]
+    name = "Installation"
+    url = "/getting-started/installation/"
+    weight = -90
 
-  [[menu.gettingStarted]]
-    name = "Grid"
-    url = "/getting-started/grid/"
-    weight = -100
+  [[menu.start]]
+    name = "Configuration"
+    url = "/getting-started/configuration/"
+    weight = -80
 
-  [[menu.gettingStarted]]
-    name = "Row"
-    url = "/getting-started/row/"
-    weight = -100
+  [[menu.start]]
+    name = "Fundamentals"
+    url = "/getting-started/fundamentals/"
+    weight = -70
 
-  [[menu.gettingStarted]]
-    name = "Column"
-    url = "/getting-started/column/"
-    weight = -100
+  [[menu.start]]
+    name = "Unit Chart"
+    url = "/getting-started/unit-chart/"
+    weight = -60
+
+  [[menu.start]]
+    name = "About Slash"
+    url = "/getting-started/introduction/"
+    weight = -50
+
 
   [[menu.layout]]
     name = "Wrap"

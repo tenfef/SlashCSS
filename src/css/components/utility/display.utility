@@ -10,6 +10,12 @@ DISPLAY
   &\:inline-block {
     display: inline-block !important;
   }
+  &\:flex {
+    display: flex !important;
+  }
+  &\:grid {
+    display: grid !important;
+  }
   @each $key, $value in $screens {
     &\@#{$key} {
       @media (min-width : $value) {
@@ -19,6 +25,12 @@ DISPLAY
         }
         &\:inline-block {
           display: inline-block !important;
+        }
+        &\:flex {
+          display: flex !important;
+        }
+        &\:grid {
+          display: grid !important;
         }
       }
     }

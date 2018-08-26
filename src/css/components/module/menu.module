@@ -9,7 +9,7 @@ MENU
   --menu-mobile-radius: var(--radius);
   --menu-mobile-shadow: 0px 5px 5px 0px rgba(0,60,200,0.1);
   --menu-item-padding-x: var(--u6);
-  --menu-item-padding-y: var(--u6);
+  --menu-item-padding-y: var(--u4);
   --menu-item-hover-fill: var(--grey-l5);
   --menu-item-active-fill: var(--grey-l5);
 }
@@ -19,7 +19,6 @@ MENU
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: var(--menu-height);
   margin:0;
   padding: 0;
   background: white;

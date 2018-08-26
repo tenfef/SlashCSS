@@ -12,81 +12,52 @@ Site: slashcss.com
 
 @import "build.variables";
 @import "../fonts/system.font";
+// these are your fonts or SCSS build variables
+// include SCSS overrides before the build variables
 
 /************************************************************
 2. COMPONENTS
 ************************************************************/
 
 @import "components/import.components";
+// include custom components here
 
 /************************************************************
-2. OVERRIDE VARIABLES
+2. ROOT VARIABLES
 ************************************************************/
 
-
+// override component CSS variables here
 
 /************************************************************
 3. THIRD PARTY
 ************************************************************/
 
 @import "../vendors/prism/prism.scss";
+// include any other 3rd party css libraries here
 
 /************************************************************
-4. EXTENSIONS
+4. CUSTOM CSS
 ************************************************************/
+
+// this is where you can write your own CSS
 
 .markup {
   &\:doc {
     h3 {
-      font-size: var(--h5);
-      font-weight: 700;
-    }
-  }
-}
-
-.grid {
-  &\:doc {
-    grid-template-columns: 350px auto;
-    grid-template-areas:
-    "nav content";
-    min-height: 100%;
-
-    .grid\/nav {
-      grid-area: nav;
-    }
-    .grid\/main {
-      grid-area: content;
-    }
-  }
-}
-
-.accordion {
-  &\:doc {
-    background: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    .accordion\/item {
-      border: 0;
-      &.is-active {
-        .accordion\/header {
-          box-shadow: inset 3px 0px 0px 0px var(--yellow);
-          background: var(--brown-l2);
-        }
+      position: relative;
+      margin-left: 30px;
+      @media (min-width: $sm) {
+        margin-left: 0;
       }
-    }
-    .accordion\/header {
-      padding-left: var(--u6);
-      font-weight: var(--bold);
-      font-size: var(--tiny);
-      color: white;
-    }
-    .accordion\/body {
-      padding: var(--u2);
-    }
-    .accordion\/arrow {
-      border: 0;
       &:before {
-        border-top-color: white;
+        content: "#";
+        color: var(--green);
+        position: absolute;
+        left: -1em;
+        margin-top: 0em;
+        font-size: 1.2em;
+        line-height: 1;
+        font-weight: 700;
       }
     }
   }
