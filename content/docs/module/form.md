@@ -24,10 +24,10 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
           <input type="password" placeholder=" " class="max-width:100%">
         </div>
         <div class="form/item">
-          <label class="field:checkbox">
+          <label class="input:checkbox">
             I agree to the <a href="#">Terms and Conditions</a>
             <input type="checkbox"/>
-            <div class="field/indicator"></div>
+            <div class="input/symbol"></div>
           </label>
         </div>
       </div>
@@ -56,10 +56,10 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
         <input type="password" placeholder=" " class="max-width:100%">
       </div>
       <div class="form/item">
-        <label class="field:checkbox">
+        <label class="input:checkbox">
           I agree to the <a href="#">Terms and Conditions</a>
           <input type="checkbox"/>
-          <div class="field/indicator"></div>
+          <div class="input/symbol"></div>
         </label>
       </div>
     </div>
@@ -83,19 +83,19 @@ Form items can be modified to enable sliding labels with `form/item:slide`.
       <div class="card/content">
         <h5 class="font font-weight:medium margin-bottom:u4 align:center">Sliding Label</h5>
         <div class="form/item">
-          <div class="field:slide">
+          <div class="input:slide">
             <input placeholder=" " class="max-width:100%">
             <label>Email</label>
           </div>
         </div>
         <div class="form/item">
-          <div class="field:slide">
+          <div class="input:slide">
             <input type="password" placeholder=" " class="max-width:100%">
             <label>Password</label>
           </div>
         </div>
         <div class="form/item">
-          <div class="field:slide-select max-width:100%" label="What's your favourite ice cream?">
+          <div class="input:slide-select max-width:100%" label="What's your favourite ice cream?">
             <select>
               <option>How did you find us?</option>
               <option>Vanilla</option>
@@ -104,10 +104,10 @@ Form items can be modified to enable sliding labels with `form/item:slide`.
           </div>
         </div>
         <div class="form/item">
-          <label class="field:checkbox">
+          <label class="input:checkbox">
             I agree to the <a href="#">Terms and Conditions</a>
             <input type="checkbox"/>
-            <div class="field/indicator"></div>
+            <div class="input/symbol"></div>
           </label>
         </div>
       </div>
@@ -127,23 +127,23 @@ Form items can be modified to enable sliding labels with `form/item:slide`.
     <div class="card/content">
       <h5 class="font font-weight:medium margin-bottom:u4 align:center">Sliding Label</h5>
       <div class="form/item">
-        <div class="field:slide">
+        <div class="input:slide">
           <input placeholder=" " class="max-width:100%">
           <label>Email</label>
         </div>
 
       </div>
       <div class="form/item">
-        <div class="field:slide">
+        <div class="input:slide">
           <input type="password" placeholder=" " class="max-width:100%">
           <label>Password</label>
         </div>
       </div>
       <div class="form/item">
-        <label class="field:checkbox">
+        <label class="input:checkbox">
           I agree to the <a href="#">Terms and Conditions</a>
           <input type="checkbox"/>
-          <div class="field/indicator"></div>
+          <div class="input/symbol"></div>
         </label>
       </div>
     </div>
@@ -174,19 +174,19 @@ The disabled attribute disables clickable state.
           <input type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
         </div>
         <div class="form/item">
-          <label class="field:checkbox">Disabled
+          <label class="input:checkbox">Disabled
             <input type="checkbox" disabled="disabled" checked="checked"/>
-            <div class="field/indicator"></div>
+            <div class="input/symbol"></div>
           </label>
         </div>
         <div class="form/item">
-          <label class="field:radio">Disabled & checked
+          <label class="input:radio">Disabled & checked
             <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
-            <div class="field/indicator"></div>
+            <div class="input/symbol"></div>
           </label>
         </div>
         <div class="form/item">
-          <div class="field:select">
+          <div class="input:select">
             <select disabled="disabled" class="max-width:100%">
               <option>Disabled</option>
               <option>Option</option>
@@ -213,19 +213,19 @@ The disabled attribute disables clickable state.
         <input type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
       </div>
       <div class="form/item">
-        <label class="field:checkbox -checkbox">Disabled
+        <label class="input:checkbox -checkbox">Disabled
           <input type="checkbox" disabled="disabled" checked="checked"/>
-          <div class="field/indicator"></div>
+          <div class="input/symbol"></div>
         </label>
       </div>
       <div class="form/item">
-        <label class="field:radio">Disabled & checked
+        <label class="input:radio">Disabled & checked
           <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
-          <div class="field/indicator"></div>
+          <div class="input/symbol"></div>
         </label>
       </div>
       <div class="form/item">
-        <div class="field:select">
+        <div class="input:select">
           <select disabled="disabled" class="max-width:100%">
             <option>Disabled</option>
             <option>Option</option>
@@ -267,7 +267,7 @@ Here is an example of a Company Information form in multi-column format. For mul
           <label>Address</label>
           <input type="text" placeholder="Level 5, Graham St" class="max-width:100% margin-bottom:u2">
           <input type="text" placeholder="Central" class="max-width:100%">
-          <span class="form/help">Help message example</span>
+          <span class="form/message">Help message example</span>
         </div>
         <div class="row row-gutter:u4 margin-bottom:u2">
           <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
@@ -293,7 +293,7 @@ Here is an example of a Company Information form in multi-column format. For mul
           <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
             <div class="form/item">
               <label for="text">Country</label>
-              <div class="field:select">
+              <div class="input:select">
                 <select>
                   <option>USA</option>
                   <option>New Zealand</option>
@@ -308,18 +308,18 @@ Here is an example of a Company Information form in multi-column format. For mul
           <textarea class="max-width:100%"></textarea>
         </div>
         <div class="form/item margin-bottom:u4">
-          <label class="field:radio float:left margin-right:u4">First radio
+          <label class="input:radio float:left margin-right:u4">First radio
             <input type="radio" name="radio1" checked="checked"/>
-            <div class="field/indicator"></div>
+            <div class="input/symbol"></div>
           </label>
-          <label class="field:radio float:left">Second radio
+          <label class="input:radio float:left">Second radio
             <input type="radio" name="radio1"/>
-            <div class="field/indicator"></div>
+            <div class="input/symbol"></div>
           </label>
         </div>
         <div class="form/item">
           <label>Attach CSV</label>
-          <label class="form/file button button-grow:u3 button-style:outline font-size:body font-transform:none">
+          <label class="form/file button button-grow:u3 button-style:outline font-size:body font-case:none">
             <i class="fas fa-cloud-upload-alt margin-right:u2"></i>
             Upload File
             <input type="file" placeholder="City" class="max-width:100%">
@@ -346,17 +346,17 @@ Form input fields can have states for various types of highlighting.
         <div class="form/item">
           <label>Name</label>
           <input type="text" placeholder="Text input" class="max-width:100% is-alert">
-          <span class="form/help is-alert">Check spelling</span>
+          <span class="form/message is-alert">Check spelling</span>
         </div>
         <div class="form/item">
           <label>Username</label>
           <input type="text" placeholder="Username" value="zapcss" class="max-width:100% is-success">
-          <span class="form/help is-success">This username is available</span>
+          <span class="form/message is-success">This username is available</span>
         </div>
         <div class="form/item">
           <label>Email</label>
           <input type="text" placeholder="Email" value="zap@" class="max-width:100% is-warning">
-          <span class="form/help is-warning">Email is invalid</span>
+          <span class="form/message is-warning">Email is invalid</span>
         </div>
       </form>
     </div>
@@ -371,17 +371,17 @@ Form input fields can have states for various types of highlighting.
       <div class="form/item">
         <label>Name</label>
         <input type="text" placeholder="Text input" class="max-width:100% is-alert">
-        <span class="form/help is-alert">Check spelling</span>
+        <span class="form/message is-alert">Check spelling</span>
       </div>
       <div class="form/item">
         <label>Username</label>
         <input type="text" placeholder="Username" value="zapcss" class="max-width:100% is-success">
-        <span class="form/help is-success">This username is available</span>
+        <span class="form/message is-success">This username is available</span>
       </div>
       <div class="form/item">
         <label>Email</label>
         <input type="text" placeholder="Email" value="zap@" class="max-width:100% is-warning">
-        <span class="form/help is-warning">Email is invalid</span>
+        <span class="form/message is-warning">Email is invalid</span>
       </div>
     </form>
   </div>
@@ -399,32 +399,32 @@ Standard text fields can have icons on the left and right.
     <div class="card/content">
       <form class="form">
         <div class="form/item">
-          <div class="field:icons">
+          <div class="input:icons">
             <input type="text" placeholder="Username" value="zapcss" class="max-width:100% padding-left:u10">
-            <div class="field/icon position-left">
+            <div class="input/icon position-left">
               <i class="far fa-user"></i>
             </div>
-            <div class="field/icon position-right">
+            <div class="input/icon position-right">
               <i class="fas fa-check color:green"></i>
             </div>
           </div>
         </div>
         <div class="form/item">
-          <div class="field:icons">
+          <div class="input:icons">
             <input type="text" placeholder="Email" value="zap@" class="max-width:100% padding-left:u10">
-            <div class="field/icon position-left">
+            <div class="input/icon position-left">
               <i class="far fa-envelope"></i>
             </div>
-            <div class="field/icon position-right">
+            <div class="input/icon position-right">
               <i class="fas fa-times color:red"></i>
             </div>
           </div>
         </div>
         <div class="form/item">
-          <div class="field:icons">
-            <input type="text" placeholder="Email" value="docs" class="max-width:100% padding-right:u12">
-            <div class="field/text">
-              .com
+          <div class="input:icons">
+            <input type="text" placeholder="Email" value="docs" class="max-width:100% padding-right:u14 padding-left:u4">
+            <div class="input/text">
+              .slashcss.com
             </div>
           </div>
         </div>
@@ -441,10 +441,10 @@ Standard text fields can have icons on the left and right.
       <div class="form/item">
         <div class="form/special form/special-content:left form/special-content:right">
           <input type="text" placeholder="Username" value="zapcss" class="max-width:100%">
-          <span class="form/icon">
+          <span class="input/icon">
             <i class="far fa-user"></i>
           </span>
-          <span class="form/icon">
+          <span class="input/icon">
             <i class="fas fa-check color:green"></i>
           </span>
         </div>
@@ -452,10 +452,10 @@ Standard text fields can have icons on the left and right.
       <div class="form/item">
         <div class="form/special form/special-content:left form/special-content:right">
           <input type="text" placeholder="Email" value="zap@" class="max-width:100%">
-          <span class="form/icon">
+          <span class="input/icon">
             <i class="far fa-envelope"></i>
           </span>
-          <span class="form/icon">
+          <span class="input/icon">
             <i class="fas fa-times color:red"></i>
           </span>
         </div>
@@ -569,7 +569,7 @@ The following modifiers are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>form/help</code>
+      <code>form/message</code>
     </td>
     <td data-label="Attributes">
       <code>is-active</code> <code>is-alert</code> <code>is-warning</code>

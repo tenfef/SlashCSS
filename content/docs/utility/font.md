@@ -83,7 +83,7 @@ You can transform capitalization of your text with the `font-transform` property
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<h6 class="font-transform:none">No Transform</h6>
+<h6 class="font-case:none">No Transform</h6>
 <h6 class="font-transform:upper">Uppercase</h6>
 <h6 class="fonttranform:lower">Lowercase</h6>
 ```

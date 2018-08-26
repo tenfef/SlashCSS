@@ -90,7 +90,7 @@ You can apply different corners with the `border` component.
 Buttons can contain icons.
 
 <div class="margin-bottom:u6">
-  <button class="button button-style:outline font-size:body font-transform:none">
+  <button class="button button-style:outline font-size:body font-case:none">
     <i class="fas fa-cloud-upload-alt margin-right:3"></i>
     Upload File
   </button>
@@ -98,7 +98,7 @@ Buttons can contain icons.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button button-grow:1 button-style:outline font-size:body font-transform:none">
+<button class="button button-grow:1 button-style:outline font-size:body font-case:none">
   <div class="button/icon">
     <i class="fas fa-cloud-upload-alt margin-right:u2"></i>
   </div>

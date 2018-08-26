@@ -3,7 +3,7 @@ FORM
 ************************************************************/
 
 :root {
-  --form-label-weight: var(--medium);
+  --form-label-weight: var(--body);
   --form-label-size: var(--tiny);
 }
 
@@ -26,7 +26,19 @@ FORM
       clear: both !important;
     }
   }
-  &\/help {
+  &\/label {
+    &\:required {
+      &:after {
+        content: '*';
+        position: relative;
+        display: inline-block;
+        top: -.3rem;
+        left: .2rem;
+        color: var(--red);
+      }
+    }
+  }
+  &\/message {
     padding-top: var(--u1);
     font-size: var(--micro);
     color: var(--default-color);
@@ -41,33 +53,6 @@ FORM
       &.is-warning {
         color: var(--form-warning-border-color);
       }
-    }
-  }
-}
-
-/******************************
-LABEL
-******************************/
-
-label {
-  display: block;
-  position: relative;
-  padding-top: var(--u1);
-  padding-bottom: var(--u1);
-  font-size: var(--form-label-size);
-  font-weight: var(--form-label-weight);
-  color: var(--black);
-  line-height: 1.55;
-  transition: var(--transition);
-
-  &.required {
-    &:after {
-      content: '*';
-      position: relative;
-      display: inline-block;
-      top: -.3rem;
-      left: .2rem;
-      color: var(--red);
     }
   }
 }
