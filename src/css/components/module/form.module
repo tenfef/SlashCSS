@@ -5,22 +5,6 @@ FORM
 :root {
   --form-label-weight: var(--medium);
   --form-label-size: var(--tiny);
-
-  --form-field-height: var(--u9);
-  --form-field-border: var(--border);
-  --form-field-fill: var(--white);
-  --form-field-checkbox-fill: var(--blue);
-  --form-field-color: var(--black);
-  --form-field-radius: .25rem;
-  --form-field-padding-left: 1rem;
-
-  --form-disabled-fill: var(--grey-l5);
-  --form-disabled-color: var(--grey-d1);
-  --form-disabled-opacity: 1;
-
-  --form-success-border-color: var(--green);
-  --form-alert-border-color: var(--orange);
-  --form-warning-border-color: var(--red);
 }
 
 .form {

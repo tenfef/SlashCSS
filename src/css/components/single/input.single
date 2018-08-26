@@ -2,12 +2,28 @@
 INPUT
 ************************************************************/
 
+--input-height: var(--u9);
+--input-border: var(--border);
+--input-fill: var(--white);
+--input-checkbox-fill: var(--blue);
+--input-color: var(--black);
+--input-radius: .25rem;
+--input-padding-left: 1rem;
+
+--input-disabled-fill: var(--grey-l5);
+--input-disabled-color: var(--grey-d1);
+--input-disabled-opacity: 1;
+
+--input-success-border-color: var(--green);
+--input-alert-border-color: var(--orange);
+--input-warning-border-color: var(--red);
+
 .input {
   &\:slide {
     position: relative;
     input {
       min-height: 4rem;
-      padding: 1.75rem 0 1rem var(--form-field-padding-left);
+      padding: 1.75rem 0 1rem var(--input-padding-left);
 
       &:placeholder-shown ~ label {
         position: absolute;
@@ -57,13 +73,13 @@ INPUT
 
       /* states */
       &.is-success:not(:placeholder-shown) ~ label {
-        color: var(--form-success-border-color);
+        color: var(--input-success-border-color);
       }
       &.is-alert:not(:placeholder-shown) ~ label {
-        color: var(--form-alert-border-color);
+        color: var(--input-alert-border-color);
       }
       &.is-warning:not(:placeholder-shown) ~ label {
-        color: var(--form-warning-border-color);
+        color: var(--input-warning-border-color);
       }
     }
   }
@@ -111,17 +127,17 @@ INPUT
     input {
       display: none;
       &:checked ~ .input\/symbol {
-        background: var(--form-field-checkbox-fill);
-        border-color: var(--form-field-checkbox-fill);
+        background: var(--input-checkbox-fill);
+        border-color: var(--input-checkbox-fill);
         &:after {
           display: block;
         }
       }
       &:disabled {
         & ~ .input\/symbol {
-          background: var(--form-disabled-fill);
+          background: var(--input-disabled-fill);
           border-color: var(--border-color);
-          opacity: var(--form-disabled-opacity);
+          opacity: var(--input-disabled-opacity);
           pointer-events: none;
           &:after {
             border-color: var(--black);
@@ -135,7 +151,7 @@ INPUT
       left: 0;
       height: var(--u5);
       width: var(--u5);
-      border-radius: var(--form-field-radius);
+      border-radius: var(--input-radius);
       border: var(--border);
       background: white;
 
@@ -212,13 +228,13 @@ INPUT
       &:checked ~ .input\/symbol {
         &:after {
           display: block;
-          background: var(--form-field-checkbox-fill);
+          background: var(--input-checkbox-fill);
         }
       }
       &:disabled {
         & ~ .input\/symbol {
-          background: var(--form-disabled-fill);
-          opacity: var(--form-disabled-opacity);
+          background: var(--input-disabled-fill);
+          opacity: var(--input-disabled-opacity);
           pointer-events: none;
           &:after {
             background: black;
@@ -278,28 +294,28 @@ INPUT
   &\:icons {
     position: relative;
     input:not([type="submit"]) {
-      padding-left: var(--form-field-height);
-      padding-right: var(--form-field-height);
+      padding-left: var(--input-height);
+      padding-right: var(--input-height);
       &:focus {
-        & ~ .field\/icon {
-          color: var(--form-field-checkbox-fill);
+        & ~ .input\/icon {
+          color: var(--input-checkbox-fill);
         }
-        & ~ .field\/text {
-          color: var(--form-field-checkbox-fill);
+        & ~ .input\/text {
+          color: var(--input-checkbox-fill);
         }
       }
     }
-    .field\/icon {
+    .input\/icon {
       display: flex;
       position: absolute;
       top: 0;
-      width: var(--form-field-height);
+      width: var(--input-height);
       height: 100%;
       align-items: center;
       justify-content: center;
       transition: var(--transition);
     }
-    .field\/text {
+    .input\/text {
       display: flex;
       position: absolute;
       top: 0;
