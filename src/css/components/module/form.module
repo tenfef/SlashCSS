@@ -5,6 +5,10 @@ FORM
 :root {
   --form-label-weight: var(--body);
   --form-label-size: var(--tiny);
+
+  --form-success-color: var(--green);
+  --form-alert-color: var(--orange);
+  --form-warning-color: var(--red);
 }
 
 .form {
@@ -45,13 +49,13 @@ FORM
     &-item {
       // States
       &.is-success {
-        color: var(--form-success-border-color);
+        color: var(--form-success-color);
       }
       &.is-alert {
-        color: var(--form-alert-border-color);
+        color: var(--form-alert-color);
       }
       &.is-warning {
-        color: var(--form-warning-border-color);
+        color: var(--form-warning-color);
       }
     }
   }

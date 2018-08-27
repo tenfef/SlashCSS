@@ -12,22 +12,22 @@ INPUT
   --input-disabled-color: var(--grey-d1);
   --input-disabled-opacity: 1;
 
-  --input-success-border-color: var(--green);
-  --input-alert-border-color: var(--orange);
-  --input-warning-border-color: var(--red);
+  --input-success-color: var(--green);
+  --input-alert-color: var(--orange);
+  --input-warning-color: var(--red);
 }
 
 .input {
 
   // states
   &.is-success {
-    border-color: var(--input-success-border-color);
+    border-color: var(--input-success-color);
   }
   &.is-alert {
-    border-color: var(--input-alert-border-color);
+    border-color: var(--input-alert-color);
   }
   &.is-warning {
-    border-color: var(--input-warning-border-color);
+    border-color: var(--input-warning-color);
   }
 
   &\:slide {
@@ -43,7 +43,7 @@ INPUT
         margin: 0;
         padding: 0;
         font-size: var(--body);
-        color: var(--grey-d2);
+        color: var(--black);
         pointer-events: none;
       }
       &:not(:placeholder-shown) ~ label {
@@ -84,13 +84,23 @@ INPUT
 
       // states
       &.is-success:not(:placeholder-shown) ~ label {
-        color: var(--input-success-border-color);
+        color: var(--input-success-color);
       }
       &.is-alert:not(:placeholder-shown) ~ label {
-        color: var(--input-alert-border-color);
+        color: var(--input-alert-color);
       }
       &.is-warning:not(:placeholder-shown) ~ label {
-        color: var(--input-warning-border-color);
+        color: var(--input-warning-color);
+      }
+
+      &.is-success {
+        border-color: var(--input-success-color);
+      }
+      &.is-alert {
+        border-color: var(--input-alert-color);
+      }
+      &.is-warning {
+        border-color: var(--input-warning-color);
       }
     }
   }
@@ -101,6 +111,15 @@ INPUT
 
     select {
       min-height: 4rem;
+      &.is-success {
+        border-color: var(--input-success-color);
+      }
+      &.is-alert {
+        border-color: var(--input-alert-color);
+      }
+      &.is-warning {
+        border-color: var(--input-warning-color);
+      }
     }
 
     &:after {
@@ -302,15 +321,17 @@ INPUT
       pointer-events: none;
     }
 
-    // states
-    &.is-success {
-      border-color: var(--input-success-border-color);
-    }
-    &.is-alert {
-      border-color: var(--input-alert-border-color);
-    }
-    &.is-warning {
-      border-color: var(--input-warning-border-color);
+    select {
+      // states
+      &.is-success {
+        border-color: var(--input-success-color);
+      }
+      &.is-alert {
+        border-color: var(--input-alert-color);
+      }
+      &.is-warning {
+        border-color: var(--input-warning-color);
+      }
     }
   }
 
@@ -358,13 +379,13 @@ INPUT
   &\:textarea {
     // states
     &.is-success {
-      border-color: var(--input-success-border-color);
+      border-color: var(--input-success-color);
     }
     &.is-alert {
-      border-color: var(--input-alert-border-color);
+      border-color: var(--input-alert-color);
     }
     &.is-warning {
-      border-color: var(--input-warning-border-color);
+      border-color: var(--input-warning-color);
     }
   }
 }
