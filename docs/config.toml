@@ -20,11 +20,6 @@ title = "My New Hugo Site"
     weight = -80
 
   [[menu.start]]
-    name = "Unit Chart"
-    url = "/getting-started/unit-chart/"
-    weight = -60
-
-  [[menu.start]]
     name = "Fundamentals"
     url = "/getting-started/fundamentals/"
     weight = -70
@@ -32,11 +27,6 @@ title = "My New Hugo Site"
   [[menu.start]]
     name = "Unit Chart"
     url = "/getting-started/unit-chart/"
-    weight = -60
-
-  [[menu.start]]
-    name = "Colors"
-    url = "/getting-started/colors/"
     weight = -60
 
 
