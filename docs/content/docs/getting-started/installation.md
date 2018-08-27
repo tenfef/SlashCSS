@@ -6,20 +6,52 @@ draft = false
 description = "Quick start guide for installing your first SlashCSS project."
 +++
 
-Before getting started please note, many of the features that make Tailwind CSS great are not available using the CDN builds. To take full advantage of Tailwind's features, install Tailwind via npm.
-
-To pull in Tailwind for quick demos or just giving the framework a spin, grab the latest default configuration build via CDN:
-
 ### The Quick Way
 
-There are two ways you can get started. The quickest way is to include the production ready CSS and Javascript files into your project. This will provide your project with all the basic component and give your stylesheet access to global and local CSS variables.
+There are two ways you can get started. To pull in SlashCSS for quick test run the quickest way is to include the latest Slash CSS and JS files into your project. This will provide your project with all the basic component and give your stylesheet access to global and local CSS variables.
 
-1. Download or clone **<a href="https://github.com/zapFramework/zapCSS">repository</a>**.
-2. Include the CSS and JS files found in the dist folder.
+```html
+<link rel="stylesheet" href="https://rawgit.com/atjinsu/SlashCSS/master/static/assets/css/main.css">
+<script src="https://rawgit.com/atjinsu/SlashCSS/master/static/assets/js/main.js"></script>
+```
 
 ### Recommended Way
 
-To take full advantage of this framework and its customization options, include the src file as part of your project build process. This is the recommended way if your project requires complex customization or component extensions.
+To setup this project and take full advantage of its customization features, the recommended way is to clone the github repository and include the src build files into your project folder. **SlashCSS is built on the Sass pre-processor then converted into PostCSS using gulp** however this can be substituted for any other build tool of your choosing. Gulp is also used to further concatenate, minify and autoprefix.
+
+###### Step 1. Clone Repository
+
+Clone the SlashCSS project repository from Github.
+
+```terminal
+git clone https://github.com/atjinsu/SlashCSS.git
+```
+
+###### Step 2. Clone Repository
+```terminal
+git clone https://github.com/atjinsu/SlashCSS.git
+```
+
+###### Step 2. Clone Repository
+```terminal
+git clone https://github.com/atjinsu/SlashCSS.git
+```
+
+###### Step 2. Clone Repository
+```terminal
+git clone https://github.com/atjinsu/SlashCSS.git
+```
+
+###### Step 2. Clone Repository
+```terminal
+git clone https://github.com/atjinsu/SlashCSS.git
+```
+
+
+
+
+1. Download or clone **<a href="https://github.com/zapFramework/zapCSS">repository</a>**.
+2. Include the CSS and JS files found in the dist folder.
 
 **Build Process**
 

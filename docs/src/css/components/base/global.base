@@ -91,10 +91,7 @@ a {
 	text-decoration: none;
 	transition: var(--transition);
 }
-strong {
-	font-weight: var(--medium);
-}
-b {
+strong, b {
 	font-weight: var(--bold);
 }
 

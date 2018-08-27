@@ -24,15 +24,15 @@ MARKUP
   	margin-bottom: var(--u6);
   }
   h4 {
-  	margin-top: var(--u11);
+  	margin-top: var(--u10);
   	margin-bottom: var(--u6);
   }
   h5 {
-  	margin-top: var(--u11);
+  	margin-top: var(--u8);
   	margin-bottom: var(--u4);
   }
   h6 {
-  	margin-top: var(--u10);
+  	margin-top: var(--u6);
   	margin-bottom: var(--u4);
   }
   ol, ul {
