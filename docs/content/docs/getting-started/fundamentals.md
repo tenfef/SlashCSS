@@ -66,6 +66,23 @@ SlashCSS uses a mobile-first approach to styling this means that styles are appl
 </div>
 ```
 
+### Sizing Rules
+
+SlashCSS utilises 2 types of sizing modifier notations. `xs`,`sm`, `md`, `lg`, `xl` are general purpose size variants for components such as buttons and media sizes, these units generally modifer the size of a component in both horizontal and vertical direction. For specific rem based units for things such as heights and margins, SlashCSS provides a range of unit scales, view the unit chart to see visual representation of this scale.
+
+```html
+<button class="button button-size:xs">Button</button>
+<button class="button button-size:sm">Button</button>
+<button class="button button-size:md">Button</button>
+<button class="button button-size:lg">Button</button>
+<button class="button button-size:xl">Button</button>
+
+<div class="margin-bottom:u2"></div>
+<div class="margin-bottom:u4"></div>
+<div class="margin-bottom:u6"></div>
+...
+```
+
 ### Common Taxonomies
 
 To ensure naming simplicity and consistency many components share the same child element names. Child containers are defined with `block/content` and repeating elements are defined with `block/item`.
