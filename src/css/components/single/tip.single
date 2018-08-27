@@ -6,7 +6,7 @@ TIP
   --tip-fill: var(--grey);
 }
 
-.tip {
+.#{$prefix}tip {
   position:relative;
   overflow: visible;
 

@@ -4,7 +4,7 @@ MAX
 
 $max-levels: 10 !default;
 
-.max {
+.#{$prefix}max {
 
   &-width {
     &\:100\% {
@@ -28,7 +28,7 @@ $max-levels: 10 !default;
       $max-levels: $max-levels - 1;
     }
   }
-  
+
   @each $key, $value in $screens {
     &-width {
       &\@#{$key} {

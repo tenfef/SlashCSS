@@ -10,7 +10,7 @@ ACCORDION
   --accordion-arrow-fill: var(--grey-d1);
 }
 
-.accordion {
+.#{$prefix}accordion {
   margin: 0;
   background: var(--accordion-fill);
   border-radius: var(--radius);

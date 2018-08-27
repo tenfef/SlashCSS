@@ -6,7 +6,7 @@ WRAP
   --wrap-width: 1600px;
 }
 
-.wrap {
+.#{$prefix}wrap {
 
   position: relative;
   width: 100%;

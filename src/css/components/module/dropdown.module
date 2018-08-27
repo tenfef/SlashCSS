@@ -14,7 +14,7 @@ DROPDOWN
   --dropdown-item-active-fill: var(--grey-l4);
 }
 
-.dropdown {
+.#{$prefix}dropdown {
   display: inline-block;
   position: relative;
 

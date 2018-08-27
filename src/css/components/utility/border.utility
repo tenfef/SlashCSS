@@ -8,7 +8,7 @@ $border-widths: 5 !default;
   --border-border: var(--border);
 }
 
-.border {
+.#{$prefix}border {
 
   border: var(--border-border) !important;
 

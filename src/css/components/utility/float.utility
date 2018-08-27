@@ -2,7 +2,7 @@
 FLOAT
 ************************************************************/
 
-.float{
+.#{$prefix}float{
 
 	&\:none {
 		float: none !important;

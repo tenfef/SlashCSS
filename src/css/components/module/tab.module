@@ -9,7 +9,7 @@ TAB
   --tab-content-padding: var(--u4);
 }
 
-.tab {
+.#{$prefix}tab {
   &.is-first {
     .tab\/content {
       border-top-left-radius: 0;

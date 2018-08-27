@@ -2,7 +2,7 @@
 MEDIA
 ************************************************************/
 
-.media {
+.#{$prefix}media {
   display: flex;
   width: auto;
   max-width: 100%;

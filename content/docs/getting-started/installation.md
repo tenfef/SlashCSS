@@ -1,49 +1,14 @@
 +++
-title = "Getting Started"
+title = "Installation"
 date = "2018-04-11T09:16:45+12:00"
-family = "Getting Started"
+family = "Installation"
 draft = false
-description = "Geting started is easy, here's a quick start guide to help kickstart your project."
+description = "Quick start guide for installing your first SlashCSS project."
 +++
 
-# Introduction
+Before getting started please note, many of the features that make Tailwind CSS great are not available using the CDN builds. To take full advantage of Tailwind's features, install Tailwind via npm.
 
-
-
-# Getting started
-
-Installation
-Quick ways
-
-recommended ways
-
-# Configuration
-
-sass > css VARIABLES
-theming
-Extending
-
-# Fundamentals
-
-Mobile First
-Naming Rules
-File Organization
-
-# Unit Chart
-
-# Sketch Implementation
-
-
-
-
-
-
-
-
-
-
-
-
+To pull in Tailwind for quick demos or just giving the framework a spin, grab the latest default configuration build via CDN:
 
 ### The Quick Way
 

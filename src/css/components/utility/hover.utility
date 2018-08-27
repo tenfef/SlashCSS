@@ -2,7 +2,7 @@
 HOVER
 ************************************************************/
 
-.hover {
+.#{$prefix}hover {
 
   cursor: pointer !important;
   transition: var(--transition) !important;

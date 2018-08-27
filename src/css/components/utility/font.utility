@@ -4,7 +4,7 @@ FONT
 
 $font-heights: 6 !default;
 
-.font {
+.#{$prefix}font {
 
   /******************************
   FONT SIZES

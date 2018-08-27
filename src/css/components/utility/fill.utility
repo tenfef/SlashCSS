@@ -2,7 +2,7 @@
 FILL
 ************************************************************/
 
-.fill {
+.#{$prefix}fill {
 
   &\:none {
     background-color: transparent !important;

@@ -12,7 +12,7 @@ $button-sizes: 5 !default;
   --button-font-weight: var(--medium);
 }
 
-.button {
+.#{$prefix}button {
   position: relative;
   display: inline-flex;
   align-items: center;

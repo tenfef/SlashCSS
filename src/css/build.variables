@@ -6,6 +6,7 @@ DEFAULT VARIABLES
 DEFAULT
 ******************************/
 
+$prefix: "" !default;
 $radius: 8px !default;
 $border: 1px solid var(--border-color) !default;
 $transition: all .2s !default;

@@ -2,7 +2,7 @@
 DISPLAY
 ************************************************************/
 
-.display {
+.#{$prefix}display {
   display: block !important;
   &\:none {
     display: none !important;

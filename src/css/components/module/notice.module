@@ -6,7 +6,7 @@ NOTICE
   --notice-fill: var(--primary-color);
 }
 
-.notice {
+.#{$prefix}notice {
   display: none;
   position: relative;
   width: 100%;

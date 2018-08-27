@@ -2,7 +2,7 @@
 SLIDEMENU
 ************************************************************/
 
-.slidemenu {
+.#{$prefix}slidemenu {
   position: fixed;
   top: 0;
   right: 0;

@@ -2,7 +2,7 @@
 CLEAR
 ************************************************************/
 
-.clear {
+.#{$prefix}clear {
   clear: both !important;
   &-fix {
     &:after {

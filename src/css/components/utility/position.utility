@@ -2,7 +2,7 @@
 POSITION
 ************************************************************/
 
-.position {
+.#{$prefix}position {
   position: static !important;
   &\:absolute {
     position: absolute !important;

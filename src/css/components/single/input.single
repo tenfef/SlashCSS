@@ -17,7 +17,7 @@ INPUT
   --input-warning-color: var(--red);
 }
 
-.input {
+.#{$prefix}input {
 
   // states
   &.is-success {

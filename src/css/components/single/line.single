@@ -7,7 +7,7 @@ LINE
   --line-weight: 1px;
 }
 
-.line {
+.#{$prefix}line {
   clear: both;
   display: block;
   width: 100%;

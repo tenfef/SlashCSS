@@ -2,7 +2,7 @@
 JUSTIFY
 ************************************************************/
 
-.justify {
+.#{$prefix}justify {
 
   text-align: justify !important;
 

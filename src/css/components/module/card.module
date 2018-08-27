@@ -8,7 +8,7 @@ CARD
 	--card-content-padding: var(--u6);
 }
 
-.card {
+.#{$prefix}card {
 	display: block;
 	background-color: var(--card-bg);
 	border: var(--border);

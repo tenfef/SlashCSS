@@ -4,7 +4,7 @@ MARGIN
 
 $margins: 7 !default;
 
-.margin {
+.#{$prefix}margin {
 
   &\:auto {
     margin: auto !important;

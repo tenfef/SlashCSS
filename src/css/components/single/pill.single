@@ -6,7 +6,7 @@ PILL
   --pill-radius: 3px;
 }
 
-.pill {
+.#{$prefix}pill {
   position: relative;
   display: inline-flex;
   align-items: center;

@@ -9,7 +9,7 @@ CRUMB
   --crumb-trail-gap: 1rem;
 }
 
-.crumb {
+.#{$prefix}crumb {
   display: inline-flex;
   flex: 1;
   align-items: center;

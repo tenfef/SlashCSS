@@ -4,7 +4,7 @@ DISTRIBUTE
 
 $distribute-gutters: 5 !default;
 
-.distribute {
+.#{$prefix}distribute {
 
   &-x {
     @while $distribute-gutters > 0 {

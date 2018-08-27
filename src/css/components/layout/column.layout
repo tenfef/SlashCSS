@@ -4,7 +4,7 @@ COLUMN
 
 $columns: 12 !default;
 
-.column {
+.#{$prefix}column {
 
 	flex-grow: 1;
 

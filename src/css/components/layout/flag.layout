@@ -4,14 +4,14 @@ FLAG
 
 $flag-gutters: 5 !default;
 
-.flag {
+.#{$prefix}flag {
 
   display: inline-flex;
   vertical-align: middle;
   align-items: center;
 
   &\/item {
-    
+
   }
 
   /******************************

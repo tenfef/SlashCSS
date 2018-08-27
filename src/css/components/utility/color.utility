@@ -2,7 +2,7 @@
 COLOR
 ************************************************************/
 
-.color {
+.#{$prefix}color {
 
   @each $key, $value in $colors {
     &\:#{$key} {

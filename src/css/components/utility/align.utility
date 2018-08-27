@@ -2,7 +2,7 @@
 ALIGN
 ************************************************************/
 
-.align {
+.#{$prefix}align {
 
   &\:top {
     vertical-align: top !important;

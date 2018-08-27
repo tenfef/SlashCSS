@@ -2,7 +2,7 @@
 FLEX
 ************************************************************/
 
-.flex {
+.#{$prefix}flex {
   display: flex;
   &\:inline {
     display: inline-flex;

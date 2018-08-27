@@ -4,7 +4,7 @@ WIDTH
 
 $widths: 20 !default;
 
-.width {
+.#{$prefix}width {
   &\:100\% {
     width: 100% !important;
   }
