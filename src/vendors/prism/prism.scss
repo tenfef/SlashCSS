@@ -58,6 +58,7 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background: var(--navy-d5);
+	margin-top: var(--u4);
 	margin-bottom: var(--u4);
 }
 
