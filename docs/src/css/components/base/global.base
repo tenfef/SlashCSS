@@ -107,7 +107,7 @@ blockquote {
 	margin-top: var(--u7);
 	margin-bottom: var(--u7);
 	padding: var(--u4) var(--u7);
-	background: var(--blue-l4);
+	background: var(--grey-l4);
 	box-shadow: inset 4px 0px 0px 0px var(--primary-color);
 	p {
 		margin: 0;

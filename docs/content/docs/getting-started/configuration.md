@@ -3,72 +3,91 @@ title = "Configuration"
 date = "2018-04-11T09:16:45+12:00"
 family = "Getting Started"
 draft = false
-description = "Start your next project the right way."
+description = "A guide to configuring and customizing your SlashCSS project."
 +++
 
 
 ### Setup your Project
 
-The `default.variables` file contains all the base setting variables that is used to compile and generate the component properties.
+The `build.variables` file contains all the base setting variables that is used to compile and generate the component properties.
 
 ```scss
-$levels: 5 !default;
-$levels: 5 !default;
-$columns: 12 !default;
-$max-width: 1440px !default;
-$radius: 5px !default;
-$background: #fbfcfd !default;
-$color: #4D5871 !default;
-$links: #4D58EF !default;
-$default-columns: 12 !default;
-var(--border-color): #D4DEE8 !default;
+$prefix: "" !default;
+$radius: 8px !default;
 $border: 1px solid var(--border-color) !default;
+$transition: all .2s !default;
+$shadow: 0 3px 6px 2px rgba(0,60,200,0.10);
+$unit: 0.25rem !default;
 
 ...
 ```
 
+Scss maps global and are used to generate each of the components.
+
+```scss
+$colors: (
+  red: #FF2727,
+  pink: #FF276C,
+  violet: #D727FF,
+  purple: #8D27FF,
+  navy: #4A27FF,
+  blue: #278AFF,
+  teal: #00DEB1,
+  green: #00B26B,
+  lime: #6EDF00,
+  yellow: #FFCE00,
+  orange: #ff8a00,
+  brown: #A83C00,
+  grey: #5c789c
+) !default;
+```
 
 ### Global Custom Properties
 
-Common global variables are converted to CSS custom properties and are accessible in post processed state. To view all global custom properties that are available refer to `b-root.component`.
+Common global variables are converted to CSS custom properties and are accessible in post processed state. To view all global custom properties that are available refer to `root.base`.
 
-{{% codeblock key="language" definition="scss" margin="bottom" %}}
 ```scss
 :root {
 
-  --max-width: #{$max-width};
   --radius: #{$radius};
-  --background: #{$background};
-  --color: #{$color};
-  --links: #{$links};
-  --default-columns: #{$default-columns};
-  --border-color: #{var(--border-color)};
   --border: #{$border};
+  --transition: #{$transition};
+  --shadow: #{$shadow};
 
   ...
 }
 ```
-{{% /codeblock %}}
-
 
 ### Local Custom Properties
 
-In addition to global custom properties, components feature local custom properties that are namespaced with the component name. This enables local component variable overrides.
+In addition to global custom properties, components feature local custom properties and scss build variables.
 
-
-{{% codeblock key="language" definition="scss" margin="bottom" %}}
 ```scss
 /************************************************************
-BUTTON SINGLE
+BUTTON
 ************************************************************/
 
+$button-sizes: 5 !default;
+
 :root {
-  --button__padding: .9em 1em;
-  --button__outline-weight: 2px;
-  --button__radius: var(--radius);
-  --button__font-family: var(--font-family);
-  --button__font-weight: var(--regular);
-  --button__transition: all 0.2s ease;
+  --button-outline-weight: 1px;
+  --button-radius: 5px;
+  --button-font-family: var(--font-family);
+  --button-font-size: var(--micro);
+  --button-font-weight: var(--medium);
 }
+
 ```
-{{% /codeblock %}}
+
+### Graceful Implementation
+
+Rather than starting a new Slash project, you may need to implement this library into your existing project. To avoid conflicts you can assign a namespace during your build process.
+
+```scss
+$prefix: "nameSpace" !default;
+// would generate namespaced components .nameSpace-button .nameSpace-row etc
+```
+
+### Library Filesize
+
+The default SlashCSS library is approx 204kb and 26kb gzipped. If you require a smaller file size you can simplify your components by reducing the local size variants within each component or reducing the number of options in the maps during your build process. Doing this will reduce the overall size quite significantly.
