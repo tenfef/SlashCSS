@@ -10,7 +10,6 @@ description = "The display component controls the display property of your eleme
 
 Defined with the `display` property, modify your display behavior of an element. You can also apply responsive suffixes.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="display">
   Block
@@ -25,16 +24,12 @@ Defined with the `display` property, modify your display behavior of an element.
   Flex
 </div>
 <div class="display:inline-flex">
-  Flex
+  Inline Flex
 </div>
 <div class="display:grid">
   Grid
 </div>
-<div class="display:inline-grid">
-  Inline Grid
-</div>
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -62,12 +57,11 @@ The following modifiers are available.
       <code>display</code><span class="color:orange">&#42;</span>
     </td>
     <td data-label="Attributes">
-      <code>:none</code><br>
-      <code>:inline-block</code><br>
-      <code>:flex</code><br>
-      <code>:inline-flex</code><br>
-      <code>:grid</code><br>
-      <code>:inline-grid</code><br>
+      <code class="margin:u0">:none</code><br>
+      <code class="margin:u0">:inline-block</code><br>
+      <code class="margin:u0">:flex</code><br>
+      <code class="margin:u0">:inline-flex</code><br>
+      <code class="margin:u0">:grid</code><br>
     </td>
     <td data-label="Responsive">
       Yes

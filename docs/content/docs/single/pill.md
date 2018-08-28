@@ -36,38 +36,38 @@ Pills can be joined to form a multi-pill pill with the `pills` component.
 
 You can change the background color of your pills with the `fill` component.
 
-<div class="pill fill:red">Button</div>
-<div class="pill fill:pink">Button</div>
-<div class="pill fill:violet">Button</div>
-<div class="pill fill:purple">Button</div>
-<div class="pill fill:navy">Button</div>
-<div class="pill fill:blue">Button</div>
-<div class="pill fill:teal">Button</div>
-<div class="pill fill:green">Button</div>
-<div class="pill fill:lime">Button</div>
-<div class="pill fill:yellow">Button</div>
-<div class="pill fill:orange">Button</div>
-<div class="pill fill:brown">Button</div>
-<div class="pill fill:grey">Button</div>
-<div class="pill fill:grey-l4 color:black">Button</div>
-<div class="pill fill:black">Button</div>
+<div class="pill fill:red">Pill</div>
+<div class="pill fill:pink">Pill</div>
+<div class="pill fill:violet">Pill</div>
+<div class="pill fill:purple">Pill</div>
+<div class="pill fill:navy">Pill</div>
+<div class="pill fill:blue">Pill</div>
+<div class="pill fill:teal">Pill</div>
+<div class="pill fill:green">Pill</div>
+<div class="pill fill:lime">Pill</div>
+<div class="pill fill:yellow">Pill</div>
+<div class="pill fill:orange">Pill</div>
+<div class="pill fill:brown">Pill</div>
+<div class="pill fill:grey">Pill</div>
+<div class="pill fill:grey-l4 color:black">Pill</div>
+<div class="pill fill:black">Pill</div>
 
 ```html
-<div class="pill fill:red">Button</div>
-<div class="pill fill:pink">Button</div>
-<div class="pill fill:violet">Button</div>
-<div class="pill fill:purple">Button</div>
-<div class="pill fill:navy">Button</div>
-<div class="pill fill:blue">Button</div>
-<div class="pill fill:teal">Button</div>
-<div class="pill fill:green">Button</div>
-<div class="pill fill:lime">Button</div>
-<div class="pill fill:yellow">Button</div>
-<div class="pill fill:orange">Button</div>
-<div class="pill fill:brown">Button</div>
-<div class="pill fill:grey">Button</div>
-<div class="pill fill:grey-l4 color:black">Button</div>
-<div class="pill fill:black">Button</div>
+<div class="pill fill:red">Pill</div>
+<div class="pill fill:pink">Pill</div>
+<div class="pill fill:violet">Pill</div>
+<div class="pill fill:purple">Pill</div>
+<div class="pill fill:navy">Pill</div>
+<div class="pill fill:blue">Pill</div>
+<div class="pill fill:teal">Pill</div>
+<div class="pill fill:green">Pill</div>
+<div class="pill fill:lime">Pill</div>
+<div class="pill fill:yellow">Pill</div>
+<div class="pill fill:orange">Pill</div>
+<div class="pill fill:brown">Pill</div>
+<div class="pill fill:grey">Pill</div>
+<div class="pill fill:grey-l4 color:black">Pill</div>
+<div class="pill fill:black">Pill</div>
 ```
 
 ### Local Variables

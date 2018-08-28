@@ -20,7 +20,6 @@ Defined with `clear`. Provides a simple way of apply clear both.
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="float:left">
   Floating Element
@@ -29,7 +28,6 @@ Defined with `clear`. Provides a simple way of apply clear both.
 
 </div>
 ```
-{{% /codeblock %}}
 
 ### Clearfix
 
@@ -41,7 +39,6 @@ Defined with `clear-fix`. Provides a simple way of apply clearfixes to block ele
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="clear-fix">
   <div class="float:left">
@@ -49,4 +46,3 @@ Defined with `clear-fix`. Provides a simple way of apply clearfixes to block ele
   </div>
 </div>
 ```
-{{% /codeblock %}}

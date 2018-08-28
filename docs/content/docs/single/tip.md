@@ -14,13 +14,11 @@ The tip component is defined by adding a data attribute `tip` with content.
   Basic Tooltip
 </button>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button button-style:outline button-grow:1 tip" tip="Just a simple tooltip">
   Basic Tooltip
 </button>
 ```
-{{% /codeblock %}}
 
 ### Tooltip Positioning
 
@@ -42,9 +40,6 @@ Tooltips can be positioned by defining its position with the data attribute `tip
   Bottom Tooltip
 </button>
 
-
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="tip" tip="Just a simple tooltip">
   Top Tooltip
@@ -62,19 +57,16 @@ Tooltips can be positioned by defining its position with the data attribute `tip
   Bottom Tooltip
 </button>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 :root {
   --tip-fill: var(--grey);
 }
 ```
-{{% /codeblock %}}
 
 ### Options
 

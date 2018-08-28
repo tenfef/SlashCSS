@@ -53,13 +53,13 @@ ALIGN
 
   &-content {
     align-content: stretch;
-    &\:top {
+    &\:start {
       align-content: flex-start !important;
     }
     &\:center {
       align-content: center !important;
     }
-    &\:bottom {
+    &\:end {
       align-content: flex-end !important;
     }
     &\:between {
@@ -72,13 +72,13 @@ ALIGN
       &\@#{$key} {
         align-content: stretch;
         @media (min-width : #{$value}) {
-          &\:top {
+          &\:start {
             align-content: flex-start !important;
           }
           &\:center {
             align-content: center !important;
           }
-          &\:bottom {
+          &\:end {
             align-content: flex-end !important;
           }
           &\:between {
@@ -98,104 +98,27 @@ ALIGN
 
   &-items {
     align-items: stretch !important;
-    &\:top {
+    &\:start {
       align-items: flex-start !important;
     }
     &\:center {
       align-items: center !important;
     }
-    &\:bottom {
+    &\:end {
       align-items: flex-end !important;
     }
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width : #{$value}) {
           align-items: stretch !important;
-          &\:top {
+          &\:start {
             align-items: flex-start !important;
           }
           &\:center {
             align-items: center !important;
           }
-          &\:bottom {
+          &\:end {
             align-items: flex-end !important;
-          }
-        }
-      }
-    }
-  }
-
-  /******************************
-  SELF
-  ******************************/
-
-  &-self {
-    align-self: auto !important;
-    &\:top {
-      align-self: flex-start !important;
-    }
-    &\:middle {
-      align-self: center !important;
-    }
-    &\:bottom {
-      align-self: flex-end !important;
-    }
-    @each $key, $value in $screens {
-      &\@#{$key} {
-        @media (min-width : #{$value}) {
-          align-self: auto !important;
-          &\:top {
-            align-self: flex-start !important;
-          }
-          &\:middle {
-            align-self: center !important;
-          }
-          &\:bottom {
-            align-self: flex-end !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-.justify {
-  text-align: justify !important;
-  &-content {
-    &\:left {
-      justify-content: flex-start !important;
-    }
-    &\:right {
-      justify-content: flex-end !important;
-    }
-    &\:center {
-      justify-content: center !important;
-    }
-    &\:between {
-      justify-content: space-between !important;
-    }
-    &\:around {
-      justify-content: space-around !important;
-    }
-    @each $key, $value in $screens {
-      &\@#{$key} {
-        @media (min-width : #{$value}) {
-          text-align: justify !important;
-          &\:left {
-            justify-content: flex-start !important;
-          }
-          &\:right {
-            justify-content: flex-end !important;
-          }
-          &\:center {
-            justify-content: center !important;
-          }
-          &\:between {
-            justify-content: space-between !important;
-          }
-          &\:around {
-            justify-content: space-around !important;
           }
         }
       }

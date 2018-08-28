@@ -12,7 +12,7 @@ Defind with `margin`. There are 16 levels of margin which are based on the stand
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="margin:0"></div>
+<div class="margin:u0"></div>
 <div class="margin:u1"></div>
 <div class="margin:u2"></div>
 <div class="margin:u3"></div>

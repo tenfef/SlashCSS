@@ -13,13 +13,11 @@ Defined with `border`. Default border color settings are applied.
 <div class="border border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="border">
 
 </div>
 ```
-{{% /codeblock %}}
 
 ### Positional Borders
 
@@ -37,7 +35,6 @@ You can apply positional borders.
 <div class="border-left border-color:grey-l3 padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="border-top">
 </div>
@@ -51,7 +48,6 @@ You can apply positional borders.
 <div class="border-left">
 </div>
 ```
-{{% /codeblock %}}
 
 ### Corner Properties
 
@@ -72,7 +68,6 @@ You can apply various corner styles with the `border-radius` property. Positiona
 <div class="display:inline-block media-size:5 border-radius-right:round padding:6 fill:grey-l2 margin-bottom:u6">
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="border-radius">
   ...
@@ -90,7 +85,6 @@ You can apply various corner styles with the `border-radius` property. Positiona
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Border Colors & Widths
 
@@ -102,7 +96,6 @@ You can change the color and width of your border with the `border-color` and `b
 <div class="border-left border-color:orange border-width:5 border-radius elevate padding:6 fill:grey-l5 margin-bottom:u6">
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="border border-color:purple">
   ...
@@ -112,7 +105,6 @@ You can change the color and width of your border with the `border-color` and `b
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -210,7 +202,7 @@ The following modifiers are available.
       <code>border-width</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
+      <code>:1px</code> ... <code>:5px</code>
     </td>
     <td data-label="Responsive">
       No

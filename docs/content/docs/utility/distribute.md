@@ -10,37 +10,33 @@ description = "The distribute component takes advantage of the Sam Pickering's L
 
 Defined with `distribute`. You can distribute child elements horiontally or vertically with `x` and `y` suffix. You can also apply responsive suffixes.
 
-<div class="distribute-x:5 margin-bottom:u2">
-	<div class="display:inline-block media-size:3 fill:grey-l3"></div>
-	<div class="display:inline-block media-size:3 fill:grey-l3"></div>
-	<div class="display:inline-block media-size:3 fill:grey-l3"></div>
+<div class="distribute-x:u6 margin-bottom:u2">
+	<div class="display:inline-block media-size:md fill:grey-l3"></div>
+	<div class="display:inline-block media-size:md fill:grey-l3"></div>
+	<div class="display:inline-block media-size:md fill:grey-l3"></div>
 </div>
-<div class="distribute-y:1 margin-bottom:u2 margin-right:u4">
-	<div class="media-size:3 fill:grey-l3"></div>
-	<div class="media-size:3 fill:grey-l3"></div>
-	<div class="media-size:3 fill:grey-l3"></div>
+<div class="distribute-y:u2 margin-bottom:u2 margin-right:u4">
+	<div class="media-size:md fill:grey-l3"></div>
+	<div class="media-size:md fill:grey-l3"></div>
+	<div class="media-size:md fill:grey-l3"></div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="distribute-x:5">
+<div class="distribute-x:u6">
 	...
 </div>
-<div class="distribute-y:1">
+<div class="distribute-y:u2">
 	...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 $distribute-gutters: 5 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -68,7 +64,7 @@ The following modifiers are available.
       <code>distribute-[axis]</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
+      <code>:u2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
     </td>
     <td data-label="Responsive">
       Yes

@@ -4,12 +4,13 @@ DISTRIBUTE
 
 $distribute-gutters: 5 !default;
 
+
 .#{$prefix}distribute {
 
   &-x {
     @while $distribute-gutters > 0 {
-      &\:#{$distribute-gutters} > * + * {
-        margin-left: $distribute-gutters * 1rem !important;
+      &\:u#{$distribute-gutters * 2} > * + * {
+        margin-left: var(--u#{$distribute-gutters * 2}) !important;
       }
       $distribute-gutters: $distribute-gutters - 1;
     }
@@ -17,8 +18,8 @@ $distribute-gutters: 5 !default;
       &\@#{$key} {
         @media (min-width: $value) {
           @while $distribute-gutters > 0 {
-            &\:#{$distribute-gutters} > * + * {
-              margin-left: $distribute-gutters * 1rem !important;
+            &\:u#{$distribute-gutters * 2} > * + * {
+              margin-left: var(--u#{$distribute-gutters * 2}) !important;
             }
             $distribute-gutters: $distribute-gutters - 1;
           }
@@ -28,8 +29,8 @@ $distribute-gutters: 5 !default;
   }
   &-y {
     @while $distribute-gutters > 0 {
-      &\:#{$distribute-gutters} > * + * {
-        margin-top: $distribute-gutters * 1rem !important;
+      &\:u#{$distribute-gutters * 2} > * + * {
+        margin-top: var(--u#{$distribute-gutters * 2}) !important;
       }
       $distribute-gutters: $distribute-gutters - 1;
     }
@@ -37,8 +38,8 @@ $distribute-gutters: 5 !default;
       &\@#{$key} {
         @media (min-width: $value) {
           @while $distribute-gutters > 0 {
-            &\:#{$distribute-gutters} > * + * {
-              margin-top: $distribute-gutters * 1rem !important;
+            &\:u#{$distribute-gutters * 2} > * + * {
+              margin-top: var(--u#{$distribute-gutters * 2}) !important;
             }
             $distribute-gutters: $distribute-gutters - 1;
           }

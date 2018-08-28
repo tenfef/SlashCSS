@@ -13,6 +13,9 @@ DISPLAY
   &\:flex {
     display: flex !important;
   }
+  &\:inline-flex {
+    display: inline-flex !important;
+  }
   &\:grid {
     display: grid !important;
   }
@@ -28,6 +31,9 @@ DISPLAY
         }
         &\:flex {
           display: flex !important;
+        }
+        &\:inline-flex {
+          display: inline-flex !important;
         }
         &\:grid {
           display: grid !important;

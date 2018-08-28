@@ -4,10 +4,10 @@ title = "My New Hugo Site"
 
 [menu]
 
-  [[menu.intro]]
-    name = "What is SlashCSS?"
-    url = "/getting-started/what-is-slashcss/"
-    weight = -50
+  # [[menu.intro]]
+  #   name = "What is SlashCSS?"
+  #   url = "/getting-started/what-is-slashcss/"
+  #   weight = -50
 
   [[menu.start]]
     name = "Installation"
