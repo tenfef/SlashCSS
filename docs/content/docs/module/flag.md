@@ -8,23 +8,20 @@ description = "The markup component formats general paragraph and heading elemen
 
 ### Flag Object
 
-The flag object is similar to Nicole Sullivan's media object, however is not limited to just image and body. You can include as many child items as you like.
+The flag object is similar to Nicole Sullivan's media object, however it is flexbox based and not limited to just image and body. You can include as many child items as you like.
 
-<div class="flag flag-gutter:1">
+<div class="flag flag-gutter:u4 margin-bottom:u4">
   <div class="flag/item">
-    <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:5 fill:primary">
+    <img src="/assets/images/jin.jpg" class="media elevate border border-width:3px border-color:white media-size:md border-radius:round" alt="Jin Su Park">
   </div>
-  <div class="flag/item">
-    <div>
-      <h6 class="font-weight:medium color:black font-height:0 margin-bottom:none">Jin Park</h6>
-      <span class="font-size:tiny font-height:0">@zapcss</span>
-    </div>
+  <div class="flag/item font-height:1">
+    <h6 class="margin:u0">Jin Su Park</h6>
+    <p>@slashcss</p>
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="flag">
+<div class="flag flag-gutter:u4">
   <div class="flag/item">
     Image Left
   </div>
@@ -33,14 +30,62 @@ The flag object is similar to Nicole Sullivan's media object, however is not lim
   </div>
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$flag-gutters: 4 !default;
+$flag-gutters: 5 !default;
 ```
-{{% /codeblock %}}
+
+### Options
+
+The following modifiers are available.
+
+<table class="table width:100% table:pile table@sm:unpile">
+  <thead>
+    <tr>
+      <th>
+        Property
+      </th>
+      <th>
+        Modifier
+      </th>
+      <th>
+        Responsive
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tr>
+    <td data-label="Properties">
+      <code>flag</code>
+    </td>
+    <td data-label="Attributes">
+
+    </td>
+    <td data-label="Responsive">
+      No
+    </td>
+    <td class="row:reverse">
+      Apply flag component
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>flag-gutter</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:u2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
+    </td>
+    <td data-label="Responsive">
+      No
+    </td>
+    <td class="row:reverse">
+      Define spacing between flag item
+    </td>
+  </tr>
+</table>

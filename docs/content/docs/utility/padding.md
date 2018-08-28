@@ -78,7 +78,7 @@ Unlike the margin component, the padding component also supports viewport height
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
 {{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css

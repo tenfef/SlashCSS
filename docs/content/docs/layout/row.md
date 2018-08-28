@@ -11,19 +11,19 @@ description = "The basics of using the column component to horizontally structur
 The `row` component works alongside the column component and applies a horizontal sectioning based on the flex system.
 
 <!-- 6 Columns -->
-<div class="row margin-bottom:u2">
+<div class="row margin-bottom:u4">
   <div class="column">
-    <div class="padding:u4 fill:blue">
+    <div class="padding:u2 fill:blue">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue-l2">
+    <div class="padding:u2 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue">
+    <div class="padding:u2 fill:blue">
       &nbsp;
     </div>
   </div>
@@ -32,19 +32,17 @@ The `row` component works alongside the column component and applies a horizonta
 <!-- 6 Columns -->
 <div class="row margin-bottom:u2">
   <div class="column">
-    <div class="padding:u4 fill:blue-l2">
+    <div class="padding:u2 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue">
+    <div class="padding:u2 fill:blue">
       &nbsp;
     </div>
   </div>
 </div>
 
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="row">
   <div class="column">
@@ -66,33 +64,31 @@ The `row` component works alongside the column component and applies a horizonta
     ...
   </div>
 </div>
-
 ...
 ```
-{{% /codeblock %}}
 
 ### Row Gutters
 
 You can apply gutter to your columns with the `row-gutter` property. Standard media query suffixes can be applied.
 
-<div class="row row-gutter:u4 margin-bottom:u2">
+<div class="row row-gutter:u4 margin-bottom:u4">
   <div class="column">
-    <div class="padding:u4 fill:blue-l2">
+    <div class="padding:u2 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue">
+    <div class="padding:u2 fill:blue">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue-l2">
+    <div class="padding:u2 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue">
+    <div class="padding:u2 fill:blue">
       &nbsp;
     </div>
   </div>
@@ -100,56 +96,43 @@ You can apply gutter to your columns with the `row-gutter` property. Standard me
 
 <div class="row row-gutter:u8 margin-bottom:u2">
   <div class="column">
-    <div class="padding:u4 fill:blue-l2">
+    <div class="padding:u2 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue">
+    <div class="padding:u2 fill:blue">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue-l2">
+    <div class="padding:u2 fill:blue-l2">
       &nbsp;
     </div>
   </div>
   <div class="column">
-    <div class="padding:u4 fill:blue">
+    <div class="padding:u2 fill:blue">
       &nbsp;
     </div>
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="row row-gutter:u4">
-  ...
-</div>
-<div class="row row-gutter:2">
-  ...
-</div>
-<div class="row row-gutter:3">
-  ...
-</div>
-<div class="row row-gutter:4">
   ...
 </div>
 <div class="row row-gutter:u8">
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 $row-gutters: 5 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -177,13 +160,13 @@ The following modifiers are available.
       <code>row</code>
     </td>
     <td data-label="Attributes">
-      <code>:media</code>
+
     </td>
     <td data-label="Responsive">
       No
     </td>
     <td class="row:reverse">
-      Media object layout
+      Apply clearing row container
     </td>
   </tr>
 
@@ -192,7 +175,7 @@ The following modifiers are available.
       <code>row-gutter</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
+      <code>:u2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
     </td>
     <td data-label="Responsive">
       Yes

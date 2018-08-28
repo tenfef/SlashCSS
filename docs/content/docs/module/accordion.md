@@ -46,7 +46,6 @@ Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow`
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="accordion js-accordion">
   <div class="accordion/item">
@@ -78,18 +77,15 @@ Basic accordion markup. To disable rotating arrows, remove the `accordion/arrow`
   </div>
 </div>
 ```
-{{% /codeblock %}}
-{{% codeblock key="initializing" definition="javascript" margin="top-tight" %}}
+
 ```javascript
 var accordion = new Accordion();
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 :root {
   --accordion-fill: var(--white);
@@ -99,11 +95,10 @@ You can override styling using the following local variables.
   --accordion-arrow-fill: var(--black);
 }
 ```
-{{% /codeblock %}}
 
 ### JS Settings
 
-<table class="table width:100% ">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>

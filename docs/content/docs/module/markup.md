@@ -8,24 +8,8 @@ description = "The markup component formats general paragraph and heading elemen
 
 ### Basic Usage
 
-By default all element styles are reset, this is ideal for achieving visual consistency however not ideal for post or article content. The markup module formats and styles basic paragraph, bullet/numbered lists and heading elements for readability.
+By default all element styles are reset, this is ideal for achieving visual consistency however not ideal for article or article content where something like markdown is required. The markup module formats and styles basic paragraph, bullet/numbered lists and heading elements for optimimum readability.
 
-#### H6 Typography
-### H5 Typography
-#### H4 Typography
-### H3 Typography
-## H2 Typography
-# H1 Typography
-
-- Bullet list
-- Bullet list
-- Bullet list
-
-1. Numbered list
-2. Numbered list
-3. Numbered list
-
-{{% codeblock key="language" definition="markdown" margin="top" %}}
 ```markdown
 #### H6 Typography
 ### H5 Typography
@@ -42,4 +26,3 @@ By default all element styles are reset, this is ideal for achieving visual cons
 2. Numbered list
 3. Numbered list
 ```
-{{% /codeblock %}}

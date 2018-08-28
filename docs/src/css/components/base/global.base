@@ -149,11 +149,21 @@ label {
   position: relative;
   padding-top: var(--u1);
   padding-bottom: var(--u1);
-  font-size: var(--form-label-size);
-  font-weight: var(--form-label-weight);
+  font-size: var(--micro);
+  font-weight: var(--regular);
   color: var(--black);
   line-height: 1.55;
   transition: var(--transition);
+  &.required {
+    &:after {
+      content: '*';
+      position: relative;
+      display: inline-block;
+      top: -.3rem;
+      left: .2rem;
+      color: var(--red);
+    }
+  }
 }
 
 
@@ -186,10 +196,6 @@ input {
     color: var(--grey-d1);
     opacity: 1;
     pointer-events: none;
-  }
-
-  &[type="password"] {
-    font-size: 20px;
   }
   &[type="file"] {
     display: none;

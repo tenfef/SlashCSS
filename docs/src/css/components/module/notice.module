@@ -2,16 +2,12 @@
 NOTICE
 ************************************************************/
 
-:root {
-  --notice-fill: var(--primary-color);
-}
-
 .#{$prefix}notice {
   display: none;
   position: relative;
   width: 100%;
   align-items: center;
-  background: var(--notice-fill);
+  background: var(--grey);
   border-radius: var(--radius);
   color: white;
   opacity: 1;
@@ -34,12 +30,11 @@ NOTICE
 		align-items: center;
 		justify-content: center;
 		position: absolute;
-		top: 50%;
-		right: var(--u3);
-		width: var(--u4);
-		height: var(--u4);
+		top: 0;
+		right: 0;
+    width: 45px;
+    height: 45px;
 		color: white;
-    transform: translateY(-50%);
     cursor: pointer;
 
 		span {

@@ -3,29 +3,27 @@ title = "Card"
 date = "2018-04-11T09:16:45+12:00"
 family = "Module"
 draft = false
-description = "The card component is a simple card based container that holds various types of information. You can combine various style utilities to change its appearance."
+description = "The card component is a simple self container container."
 +++
 
 ### Basic Usage
 
 The card module contains header, content and footer child elements. You can also apply `elevate` component to modify the look.
 
-<div class="row row-gutter:2 margin-bottom:u4 margin-top:10">
+<div class="row row-gutter:u6 margin-bottom:u4 margin-top:10">
   <div class="column:12 column@sm:6">
-    <div class="card elevate border:none margin-bottom:u6">
+    <div class="card elevate margin-bottom:u6">
       <div class="card/header padding:u0">
         <img src="https://i.imgur.com/Ig4qpjc.jpg" class="media">
       </div>
       <div class="card/content border-bottom">
-        <div class="flag flag-gutter:1 margin-bottom:u6">
+        <div class="flag flag-gutter:u4 margin-bottom:u4">
           <div class="flag/item">
-            <img src="https://pbs.twimg.com/profile_images/803356024690216960/CH3i813s_400x400.jpg" class="media border-radius:round media-size:2 fill:primary">
+            <img src="/assets/images/jin.jpg" class="media elevate border border-width:3px border-color:white media-size:md border-radius:round" alt="Jin Su Park">
           </div>
-          <div class="flag/item">
-            <div>
-              <h6 class="margin:0 font-weight:bold color:black font-height:0">Jin Park</h6>
-              <span class="font-size:tiny font-height:0">@zapcss</span>
-            </div>
+          <div class="flag/item font-height:1">
+            <h6 class="margin:u0">Jin Su Park</h6>
+            <p>@slashcss</p>
           </div>
         </div>
         <p>
@@ -52,16 +50,15 @@ The card module contains header, content and footer child elements. You can also
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="card elevate border:none">
-  <div class="card/header">
+<div class="card elevate">
+  <div class="card/content">
     ...
   </div>
   <div class="card/content">
     ...
   </div>
-  <div class="card/footer padding:u0">
+  <div class="card/content padding:u0">
     <a href="#" class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
       Send Message
     </a>
@@ -74,20 +71,15 @@ The card module contains header, content and footer child elements. You can also
   </div>
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
-```css
+```scss
 :root {
 	--card-bg: var(--white);
 	--card-radius: var(--radius);
-	--card-header-padding: var(--u2);
-	--card-content-padding: var(--u2);
-	--card-footer-padding: var(--u1);
+	--card-content-padding: var(--u6);
 }
 ```
-{{% /codeblock %}}

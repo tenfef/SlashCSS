@@ -8,7 +8,7 @@ description = "The wrap component is a standard center aligning content containe
 
 ### Basic Usage
 
-The wrap layout definitions has float clearing properties built in.
+The wrap component has float clearing properties built in.
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
@@ -20,14 +20,12 @@ The wrap layout definitions has float clearing properties built in.
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
 {{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$max-width: 1600px !default;
-
 :root {
-  --max-width: #{$max-width};
+  --wrap-width: 1600px;
 }
 ```
 {{% /codeblock %}}

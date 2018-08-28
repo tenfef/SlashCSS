@@ -91,7 +91,7 @@ You can transform capitalization of your text with the `font-transform` property
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
 {{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css

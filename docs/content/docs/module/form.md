@@ -8,7 +8,7 @@ description = "The form component provides styling for standard forms."
 
 ### Basic Usage
 
-Defined with `form` form fields are grouped with the `form/item` child element. Form labels can have a required asterisk with the `:required` modifier.
+The form component acts as a structure for building out form components. Defined with `form` form fields are grouped with the `form/item` child element. Form labels can have a required asterisk with the `required` class.
 
 <div class="max-width:400px padding-y:u6">
   <div class="card elevate">
@@ -16,22 +16,22 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
       <div class="card/content">
         <h5 class="font font-weight:medium margin-bottom:u4 align:center">Basic Form</h5>
         <div class="form/item">
-          <label class="label:required">Email</label>
-          <input placeholder=" " class="max-width:100%">
+          <label class="required">Email</label>
+          <input placeholder=" " class="max-width:100%" required>
         </div>
         <div class="form/item">
-          <label>Password</label>
-          <input type="password" placeholder=" " class="max-width:100%">
+          <label class="required">Password</label>
+          <input type="password" placeholder=" " class="max-width:100%" required>
         </div>
         <div class="form/item">
           <label class="input:checkbox">
             I agree to the <a href="#">Terms and Conditions</a>
-            <input type="checkbox"/>
+            <input type="checkbox" required/>
             <div class="input/symbol"></div>
           </label>
         </div>
       </div>
-      <div class="card/footer padding:u0">
+      <div class="card/content padding:u0">
         <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
           Sign in
         </a>
@@ -41,209 +41,32 @@ Defined with `form` form fields are grouped with the `form/item` child element. 
 </div>
 
 
-{{% codeblock key="language" definition="html" margin="top" %}}
 ```html
-<div class="card elevate">
-  <form class="form">
-    <div class="card/content">
-      <h5 class="font font-weight:medium margin-bottom:u4 align:center">Basic Form</h5>
-      <div class="form/item">
-        <label class="label:required">Email</label>
-        <input placeholder=" " class="max-width:100%">
-      </div>
-      <div class="form/item">
-        <label>Password</label>
-        <input type="password" placeholder=" " class="max-width:100%">
-      </div>
-      <div class="form/item">
-        <label class="input:checkbox">
-          I agree to the <a href="#">Terms and Conditions</a>
-          <input type="checkbox"/>
-          <div class="input/symbol"></div>
-        </label>
-      </div>
-    </div>
-    <div class="card/footer padding:u0">
-      <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
-        Sign in
-      </a>
-    </div>
-  </form>
-</div>
-```
-{{% /codeblock %}}
-
-### Sliding labels
-
-Form items can be modified to enable sliding labels with `form/item:slide`.
-
-<div class="max-width:400px padding-y:u6">
-  <div class="card elevate">
-    <form class="form">
-      <div class="card/content">
-        <h5 class="font font-weight:medium margin-bottom:u4 align:center">Sliding Label</h5>
-        <div class="form/item">
-          <div class="input:slide">
-            <input placeholder=" " class="max-width:100%">
-            <label>Email</label>
-          </div>
-        </div>
-        <div class="form/item">
-          <div class="input:slide">
-            <input type="password" placeholder=" " class="max-width:100%">
-            <label>Password</label>
-          </div>
-        </div>
-        <div class="form/item">
-          <div class="input:slide-select max-width:100%" label="What's your favourite ice cream?">
-            <select>
-              <option>How did you find us?</option>
-              <option>Vanilla</option>
-              <option>Strawberry</option>
-            </select>
-          </div>
-        </div>
-        <div class="form/item">
-          <label class="input:checkbox">
-            I agree to the <a href="#">Terms and Conditions</a>
-            <input type="checkbox"/>
-            <div class="input/symbol"></div>
-          </label>
-        </div>
-      </div>
-      <div class="card/footer padding:u0">
-        <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
-          Sign in
-        </a>
-      </div>
-    </form>
+<form class="form">
+  <div class="form/item">
+    <label class="required">Email</label>
+    <input placeholder=" " class="max-width:100%" required>
   </div>
-</div>
-
-{{% codeblock key="language" definition="html" margin="top" %}}
-```html
-<div class="card elevate">
-  <form class="form">
-    <div class="card/content">
-      <h5 class="font font-weight:medium margin-bottom:u4 align:center">Sliding Label</h5>
-      <div class="form/item">
-        <div class="input:slide">
-          <input placeholder=" " class="max-width:100%">
-          <label>Email</label>
-        </div>
-
-      </div>
-      <div class="form/item">
-        <div class="input:slide">
-          <input type="password" placeholder=" " class="max-width:100%">
-          <label>Password</label>
-        </div>
-      </div>
-      <div class="form/item">
-        <label class="input:checkbox">
-          I agree to the <a href="#">Terms and Conditions</a>
-          <input type="checkbox"/>
-          <div class="input/symbol"></div>
-        </label>
-      </div>
-    </div>
-    <div class="card/footer padding:u0">
-      <a class="button button-style:flat fill:blue width:100% border-radius:sharp border-radius-bottom">
-        Sign in
-      </a>
-    </div>
-  </form>
-</div>
-```
-{{% /codeblock %}}
-
-### Disabled Fields
-
-The disabled attribute disables clickable state.
-
-<div class="max-width:400px padding-y:u6">
-  <div class="card">
-    <div class="card/content">
-      <form class="form">
-        <div class="form/item">
-          <label>Email</label>
-          <input placeholder="Email" value="jin@litmos.com" disabled="disabled" class="max-width:100%">
-        </div>
-        <div class="form/item">
-          <label>Username</label>
-          <input type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
-        </div>
-        <div class="form/item">
-          <label class="input:checkbox">Disabled
-            <input type="checkbox" disabled="disabled" checked="checked"/>
-            <div class="input/symbol"></div>
-          </label>
-        </div>
-        <div class="form/item">
-          <label class="input:radio">Disabled & checked
-            <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
-            <div class="input/symbol"></div>
-          </label>
-        </div>
-        <div class="form/item">
-          <div class="input:select">
-            <select disabled="disabled" class="max-width:100%">
-              <option>Disabled</option>
-              <option>Option</option>
-              <option>Option</option>
-            </select>
-          </div>
-        </div>
-      </form>
-    </div>
+  <div class="form/item">
+    <label>Password</label>
+    <input type="password" placeholder=" " class="max-width:100%" required>
   </div>
-</div>
-
-{{% codeblock key="language" definition="html" margin="top" %}}
-```html
-<div class="card">
-  <div class="card/content">
-    <form class="form">
-      <div class="form/item">
-        <label>Email</label>
-        <input placeholder="Email" value="jin@litmos.com" disabled="disabled" class="max-width:100%">
-      </div>
-      <div class="form/item">
-        <label>Username</label>
-        <input type="text" placeholder="atjinsu" value="@jinsu" disabled="disabled" class="max-width:100%">
-      </div>
-      <div class="form/item">
-        <label class="input:checkbox -checkbox">Disabled
-          <input type="checkbox" disabled="disabled" checked="checked"/>
-          <div class="input/symbol"></div>
-        </label>
-      </div>
-      <div class="form/item">
-        <label class="input:radio">Disabled & checked
-          <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
-          <div class="input/symbol"></div>
-        </label>
-      </div>
-      <div class="form/item">
-        <div class="input:select">
-          <select disabled="disabled" class="max-width:100%">
-            <option>Disabled</option>
-            <option>Option</option>
-            <option>Option</option>
-          </select>
-        </div>
-      </div>
-    </form>
+  <div class="form/item">
+    <label class="input:checkbox">
+      I agree to the <a href="#">Terms and Conditions</a>
+      <input type="checkbox" required/>
+      <div class="input/symbol"></div>
+    </label>
   </div>
-</div>
+</form>
 ```
-{{% /codeblock %}}
 
-### Multi-Column Fields
+
+### Multi-Column Form
 
 Here is an example of a Company Information form in multi-column format. For multi-column layout utilise row and column components.
 
-<div class="max-width:80 padding-y:u6">
+<div class="max-width:600px padding-y:u6">
 
   <div class="card elevate">
     <div class="card/content">
@@ -326,7 +149,7 @@ Here is an example of a Company Information form in multi-column format. For mul
           </label>
         </div>
         <div class="form/item">
-          <button type="submit" class="button button-grow:u6 button-size:3 button-style:flat fill:blue float:right">
+          <button type="submit" class="button button-grow:u6 button-style:flat fill:blue float:right">
             Save
           </button>
         </div>
@@ -335,250 +158,18 @@ Here is an example of a Company Information form in multi-column format. For mul
   </div>
 </div>
 
-### Form States
-
-Form input fields can have states for various types of highlighting.
-
-<div class="max-width:400px padding-y:u6">
-  <div class="card elevate">
-    <div class="card/content">
-      <form class="form">
-        <div class="form/item">
-          <label>Name</label>
-          <input type="text" placeholder="Text input" class="max-width:100% is-alert">
-          <span class="form/message is-alert">Check spelling</span>
-        </div>
-        <div class="form/item">
-          <label>Username</label>
-          <input type="text" placeholder="Username" value="zapcss" class="max-width:100% is-success">
-          <span class="form/message is-success">This username is available</span>
-        </div>
-        <div class="form/item">
-          <label>Email</label>
-          <input type="text" placeholder="Email" value="zap@" class="max-width:100% is-warning">
-          <span class="form/message is-warning">Email is invalid</span>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-{{% codeblock key="language" definition="html" margin="top" %}}
-```html
-<div class="card elevate">
-  <div class="card/content">
-    <form class="form">
-      <div class="form/item">
-        <label>Name</label>
-        <input type="text" placeholder="Text input" class="max-width:100% is-alert">
-        <span class="form/message is-alert">Check spelling</span>
-      </div>
-      <div class="form/item">
-        <label>Username</label>
-        <input type="text" placeholder="Username" value="zapcss" class="max-width:100% is-success">
-        <span class="form/message is-success">This username is available</span>
-      </div>
-      <div class="form/item">
-        <label>Email</label>
-        <input type="text" placeholder="Email" value="zap@" class="max-width:100% is-warning">
-        <span class="form/message is-warning">Email is invalid</span>
-      </div>
-    </form>
-  </div>
-</div>
-```
-{{% /codeblock %}}
-
-
-### Special Fields
-
-Standard text fields can have icons on the left and right.
-
-<div class="max-width:400px padding-y:u6">
-  <div class="card elevate">
-    <div class="card/content">
-      <form class="form">
-        <div class="form/item">
-          <div class="input:icons">
-            <input type="text" placeholder="Username" value="zapcss" class="max-width:100% padding-left:u10">
-            <div class="input/icon position-left">
-              <i class="far fa-user"></i>
-            </div>
-            <div class="input/icon position-right">
-              <i class="fas fa-check color:green"></i>
-            </div>
-          </div>
-        </div>
-        <div class="form/item">
-          <div class="input:icons">
-            <input type="text" placeholder="Email" value="zap@" class="max-width:100% padding-left:u10">
-            <div class="input/icon position-left">
-              <i class="far fa-envelope"></i>
-            </div>
-            <div class="input/icon position-right">
-              <i class="fas fa-times color:red"></i>
-            </div>
-          </div>
-        </div>
-        <div class="form/item">
-          <div class="input:icons">
-            <input type="text" placeholder="Email" value="docs" class="max-width:100% padding-right:u14 padding-left:u4">
-            <div class="input/text">
-              .slashcss.com
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-{{% codeblock key="language" definition="html" margin="top" %}}
-```html
-<div class="card elevate">
-  <div class="card/content">
-    <form class="form">
-      <div class="form/item">
-        <div class="form/special form/special-content:left form/special-content:right">
-          <input type="text" placeholder="Username" value="zapcss" class="max-width:100%">
-          <span class="input/icon">
-            <i class="far fa-user"></i>
-          </span>
-          <span class="input/icon">
-            <i class="fas fa-check color:green"></i>
-          </span>
-        </div>
-      </div>
-      <div class="form/item">
-        <div class="form/special form/special-content:left form/special-content:right">
-          <input type="text" placeholder="Email" value="zap@" class="max-width:100%">
-          <span class="input/icon">
-            <i class="far fa-envelope"></i>
-          </span>
-          <span class="input/icon">
-            <i class="fas fa-times color:red"></i>
-          </span>
-        </div>
-      </div>
-      <div class="form/item">
-        <div class="form/special form/special-content:right">
-          <input type="text" placeholder="Email" value="docs" class="max-width:100%">
-          <span class="form/text">
-            .zapcss.com
-          </span>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-```
-{{% /codeblock %}}
-
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
-```css
+```scss
 :root {
-  --form-label-weight: var(--medium);
+  --form-label-weight: var(--body);
   --form-label-size: var(--tiny);
 
-  --form-field-height: var(--u9);
-  --form-field-border: var(--border);
-  --form-field-fill: var(--white);
-  --form-field-fill: var(--blue);
-  --form-field-color: var(--black);
-  --form-field-radius: .25rem;
-  --form-field-padding-left: 1rem;
-
-  --form-disabled-fill: var(--grey-l5);
-  --form-disabled-color: var(--grey-d1);
-  --form-disabled-opacity: 1;
-
-  --form-success-border-color: var(--green);
-  --form-alert-border-color: var(--orange);
-  --form-warning-border-color: var(--red);
+  --form-success-color: var(--green);
+  --form-alert-color: var(--orange);
+  --form-warning-color: var(--red);
 }
 ```
-{{% /codeblock %}}
-
-### Options
-
-The following modifiers are available.
-
-<table class="table width:100% table:pile table@sm:unpile">
-  <thead>
-    <tr>
-      <th>
-        Property
-      </th>
-      <th>
-        Modifier
-      </th>
-      <th>
-        Responsive
-      </th>
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-  <tr>
-    <td data-label="Properties">
-      <code>form/item-style</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:slide</code>
-    </td>
-    <td data-label="Responsive">
-      No
-    </td>
-    <td class="row:reverse">
-      Enable sliding label
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-      <code>form/label</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:required</code>
-    </td>
-    <td data-label="Responsive">
-      No
-    </td>
-    <td class="row:reverse">
-      Attach required asterisk
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-      <code>form/special-content</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:left</code> <code>:right</code>
-    </td>
-    <td data-label="Responsive">
-      No
-    </td>
-    <td class="row:reverse">
-      Apply padding for icon
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
-      <code>form/message</code>
-    </td>
-    <td data-label="Attributes">
-      <code>is-active</code> <code>is-alert</code> <code>is-warning</code>
-    </td>
-    <td data-label="Responsive">
-      No
-    </td>
-    <td class="row:reverse">
-      Attach message
-    </td>
-  </tr>
-</table>

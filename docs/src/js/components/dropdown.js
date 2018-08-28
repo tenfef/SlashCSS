@@ -17,7 +17,6 @@
 			this.options = defaults
 		}
 
-		let hoverOption = this.options.hover
 		let dropdownClass = this.options.element
     let allDropdown = document.querySelectorAll(dropdownClass)
 		let toggleClass = 'dropdown\\/toggle'
@@ -28,7 +27,7 @@
 			let dropdown = allDropdown[i]
 			let toggle = dropdown.querySelector('.' + toggleClass)
 
-			if (dropdown.classList.contains('dropdown\:hover')) {
+			if (dropdown.classList.contains('hover')) {
 				/* Activate when hovering */
 				toggle.addEventListener('mouseover', function(e) {
 					activateHoverContent(this.parentNode)

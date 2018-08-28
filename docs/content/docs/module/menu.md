@@ -10,7 +10,7 @@ description = "The nav component provides you with a standard responsive navigat
 
 The `menu` component is built using flex and is useful for building menu bars.
 
-<div class="fill:blue padding:2 margin-bottom:u2">
+<div class="fill:blue padding:u4 margin-bottom:u2">
   <nav class="menu" role="menu">
     <div class="menu/content">
       <a href="#" class="menu/item is-active">
@@ -34,7 +34,6 @@ The `menu` component is built using flex and is useful for building menu bars.
   </nav>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <nav class="menu" role="menu">
   <div class="menu/content">
@@ -58,22 +57,22 @@ The `menu` component is built using flex and is useful for building menu bars.
   </div>
 </nav>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 :root {
-  --menu-height: var(--u6);
+  --menu-height: var(--u10);
   --menu-border: var(--border);
   --menu-color: var(--grey-d2);
   --menu-mobile-radius: var(--radius);
-  --menu-mobile-shadow: 0px 5px 5px 0px rgba(0,60,200,0.1);;
+  --menu-mobile-shadow: 0px 5px 5px 0px rgba(0,60,200,0.1);
+  --menu-item-padding-x: var(--u6);
+  --menu-item-padding-y: var(--u4);
   --menu-item-hover-fill: var(--grey-l5);
-  --menu-item-active-fill: var(--grey-l4);
+  --menu-item-active-fill: var(--grey-l5);
 }
+
 ```
-{{% /codeblock %}}

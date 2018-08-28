@@ -98,9 +98,8 @@ Tables can be responsive with the `table:pile` modifier. Header labels can be ap
   </tbody>
 </table>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<table class="table width:100% elevate table:pile">
+<table class="table width:100% elevate table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>Head 1</th>
@@ -125,19 +124,16 @@ Tables can be responsive with the `table:pile` modifier. Header labels can be ap
   </tbody>
 </table>
 ```
-{{% /codeblock %}}
 
 ### Local Root Variables
 
 You can override styling using the following local root variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 :root {
   --table-border: var(--border);
 }
 ```
-{{% /codeblock %}}
 
 ### Settings
 

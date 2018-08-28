@@ -12,7 +12,7 @@ Defined with the class `notice` initialized with javascript. The `notice/close` 
 
 <div class="notice is-active">
   <div class="notice/content">
-    <span class="label fill:orange margin-right:u2">NEW</span>
+    <span class="pill fill:black">NEW</span>
     <span class="font-size:body">Sample Notification</span>
   </div>
 
@@ -25,7 +25,7 @@ Defined with the class `notice` initialized with javascript. The `notice/close` 
 ```html
 <div class="notice is-active">
   <div class="notice/content">
-    <span class="label fill:blue margin-right:u2">NEW</span>
+    <span class="pill fill:orange">NEW</span>
     <span class="font-size:body">Sample Notification</span>
   </div>
 
@@ -45,22 +45,11 @@ var notice = new Notice();
 
 ### Colors
 
-You can change the background color using the `fill` component.
-
-<div class="notice fill:red margin-bottom:u2 is-active">
-  <div class="notice/content">
-    <span class="label fill:blue margin-right:u2">NEW</span>
-    <span class="font-size:body">Sample Notification</span>
-  </div>
-
-  <div class="notice/close">
-    <span></span>
-  </div>
-</div>
+You can change the background color with the `fill` component.
 
 <div class="notice fill:blue margin-bottom:u2 is-active">
   <div class="notice/content">
-    <span class="label fill:blue margin-right:u2">NEW</span>
+    <span class="pill fill:orange">NEW</span>
     <span class="font-size:body">Sample Notification</span>
   </div>
 
@@ -71,7 +60,7 @@ You can change the background color using the `fill` component.
 
 <div class="notice fill:orange margin-bottom:u2 is-active">
   <div class="notice/content">
-    <span class="label fill:blue margin-right:u2">NEW</span>
+    <span class="pill fill:white color:orange">NEW</span>
     <span class="font-size:body">Sample Notification</span>
   </div>
 
@@ -80,14 +69,18 @@ You can change the background color using the `fill` component.
   </div>
 </div>
 
+<div class="notice fill:violet margin-bottom:u2 is-active">
+  <div class="notice/content">
+    <span class="pill fill:navy">NEW</span>
+    <span class="font-size:body">Sample Notification</span>
+  </div>
 
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-```html
-<div class="notice fill:red is-active">
-  ...
+  <div class="notice/close">
+    <span></span>
+  </div>
 </div>
 
+```html
 <div class="notice fill:blue is-active">
   ...
 </div>
@@ -95,32 +88,31 @@ You can change the background color using the `fill` component.
 <div class="notice fill:orange is-active">
   ...
 </div>
-...
+
+<div class="notice fill:violet is-active">
+  ...
+</div>
 ```
-{{% /codeblock %}}
 
 ### Alignment
 
-Alignment can be modified with the `align` component.
+Alignment can be modified with the `justify` component.
 
-<div class="notice justify-content:center margin-bottom:u2 is-active">
+<div class="notice justify-content:center is-active">
   <div class="notice/content">
-    <span class="label -middle -white u-margin-right-1">NEW</span>
+    <span class="pill fill:orange">NEW</span>
     Sample Notification
   </div>
-
   <div class="notice/close">
     <span></span>
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="top-tight" %}}
 ```html
 <div class="notice justify-content:center is-active">
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Shapes
 
@@ -128,7 +120,7 @@ You can apply differently shaped corners to buttons with the `border` component.
 
 <div class="notice border-radius:sharp is-active">
   <div class="notice/content">
-    <span class="label fill:blue margin-right:u2">NEW</span>
+    <span class="pill fill:red">NEW</span>
     <span class="font-size:body">Sample Notification</span>
   </div>
 
@@ -139,7 +131,7 @@ You can apply differently shaped corners to buttons with the `border` component.
 
 <div class="notice border-radius:round is-active">
   <div class="notice/content">
-    <span class="label fill:blue margin-right:u2">NEW</span>
+    <span class="pill fill:red">NEW</span>
     <span class="font-size:body">Sample Notification</span>
   </div>
 
@@ -159,19 +151,10 @@ You can apply differently shaped corners to buttons with the `border` component.
 ```
 {{% /codeblock %}}
 
-### Local Variables
-
-You can override styling using the following local variables.
-
-{{% codeblock key="language" definition="css" margin="bottom" %}}
-```css
---notice-fill: var(--primary-color);
-```
-{{% /codeblock %}}
 
 ### JS Settings
 
-<table class="table width:100% ">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>

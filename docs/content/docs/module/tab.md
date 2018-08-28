@@ -44,8 +44,6 @@ Defined with class `tab` and initialied with Javascript, Tab requires the header
   </div>
 </div>
 
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="tab">
   <div class="tab/header">
@@ -72,19 +70,14 @@ Defined with class `tab` and initialied with Javascript, Tab requires the header
   </div>
 </div>
 ```
-
-  {{% codeblock key="initializing" definition="javascript" margin="top" %}}
-  ```javascript
-  var tab = new Tab();
-  ```
-  {{% /codeblock %}}
-{{% /codeblock %}}
+```javascript
+var tab = new Tab();
+```
 
 ### Tab Position
 
 You can change the position of the header tabs with the `tab-position` property.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="tab tab-position:left">
   ...
@@ -98,19 +91,16 @@ You can change the position of the header tabs with the `tab-position` property.
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Tab Reset
 
 If you need to remove default styling and require the tab for its functional aspect only, apply the `:reset` modifier.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="tab tab:reset">
+<div class="tab:reset">
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -152,7 +142,7 @@ The following modifiers are available.
       <code>tab-position</code>
     </td>
     <td data-label="Attributes">
-      <code>:left/code> <code>:right</code> <code>:bottom</code>
+      <code>:left</code> <code>:right</code> <code>:bottom</code>
     </td>
     <td data-label="Responsive">
       No

@@ -3,7 +3,7 @@ CRUMB
 ************************************************************/
 
 :root {
-  --crumb-link-color: var(--primary-color);
+  --crumb-link-color: var(--navy);
   --crumb-active-color: var(--default-color);
   --crumb-trail-color: var(--grey-l3);
   --crumb-trail-gap: 1rem;

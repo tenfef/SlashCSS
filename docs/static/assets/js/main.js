@@ -215,7 +215,6 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 			this.options = defaults
 		}
 
-		let hoverOption = this.options.hover
 		let dropdownClass = this.options.element
     let allDropdown = document.querySelectorAll(dropdownClass)
 		let toggleClass = 'dropdown\\/toggle'
@@ -226,7 +225,7 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 			let dropdown = allDropdown[i]
 			let toggle = dropdown.querySelector('.' + toggleClass)
 
-			if (dropdown.classList.contains('dropdown\:hover')) {
+			if (dropdown.classList.contains('hover')) {
 				/* Activate when hovering */
 				toggle.addEventListener('mouseover', function(e) {
 					activateHoverContent(this.parentNode)
@@ -460,18 +459,13 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 
 }());
 
-;(function() {
-  // Start DOM ready page initialization code
-
-  // Intialize Tab
-  var tab = new Tab();
-  // Initialize Accordion
-  var accordion = new Accordion();
-  // Initialize Dropdown
-  var dropdown = new Dropdown();
-  // Initialize Notice
-  var notice = new Notice();
-  // Initialize Slidemenu
-  var slidemenu = new Slidemenu();
-
-});
+// Intialize Tab
+var tab = new Tab();
+// Initialize Accordion
+var accordion = new Accordion();
+// Initialize Dropdown
+var dropdown = new Dropdown();
+// Initialize Notice
+var notice = new Notice();
+// Initialize Slidemenu
+var slidemenu = new Slidemenu();

@@ -50,6 +50,11 @@ title = "My New Hugo Site"
     url = "/layout/column/"
     weight = -100
 
+  [[menu.layout]]
+    name = "Flex"
+    url = "/layout/flex/"
+    weight = -100
+
 
 
   [[menu.module]]
@@ -125,8 +130,8 @@ title = "My New Hugo Site"
     weight = -100
 
   [[menu.single]]
-    name = "Image"
-    url = "/single/image/"
+    name = "Media"
+    url = "/single/media/"
     weight = -100
 
   [[menu.single]]
@@ -142,6 +147,11 @@ title = "My New Hugo Site"
   [[menu.single]]
     name = "Tip"
     url = "/single/tip/"
+    weight = -100
+
+  [[menu.single]]
+    name = "Input"
+    url = "/single/input/"
     weight = -100
 
 

@@ -16,7 +16,6 @@ description = "The crumb component provides visual information of the current pa
   <span class="crumb/item is-active">Current Page</span>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="crumb">
   <a href="#" class="crumb/item">Breadcrumb</a>
@@ -26,19 +25,16 @@ description = "The crumb component provides visual information of the current pa
   <span class="crumb/item is-active">Current Page</span>
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Root Variables
 
 You can override styling using the following local root variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 :root {
-  --crumb-link-color: var(--primary-color);
+  --crumb-link-color: var(--navy);
   --crumb-active-color: var(--default-color);
-  --crumb-trail-color: var(--grey);
+  --crumb-trail-color: var(--grey-l3);
   --crumb-trail-gap: 1rem;
 }
 ```
-{{% /codeblock %}}

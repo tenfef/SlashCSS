@@ -43,7 +43,6 @@ Sometimes your grid layout might quite fit in a row or column based structure. T
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="grid">
   <div class="grid/item">
@@ -66,7 +65,6 @@ Sometimes your grid layout might quite fit in a row or column based structure. T
   </div>
 </div>
 ```
-{{% /codeblock %}}
 
 ### Grid Gutters
 
@@ -105,7 +103,6 @@ You can apply gutter to your grid layout with the `grid-gutter` property. Standa
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="grid grid:3 grid-gutter:u8 grid-gutter-row@sm:u6">
   <div class="grid/item">
@@ -128,11 +125,10 @@ You can apply gutter to your grid layout with the `grid-gutter` property. Standa
   </div>
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
 {{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css

@@ -8,10 +8,10 @@ description = "A dropdown menu is a toggleable menu that allows the user to choo
 
 ### Basic Usage
 
-The dropdown component is defined with the `dropdown` class and is initialized with javascript. You can enable hover toggle with the `:hover` modifier.
+The dropdown component is defined with the `dropdown` class and is initialized with javascript. You can enable hover toggle with the `hover` component.
 
-<div class="dropdown dropdown:hover margin-bottom:u2">
-  <div class="dropdown/toggle" title="Menu">
+<div class="dropdown hover margin-bottom:u2">
+  <div class="dropdown/toggle">
     <a class="button button-style:outline button-grow:1">Toggle Menu</a>
   </div>
   <div class="dropdown/content">
@@ -32,9 +32,8 @@ The dropdown component is defined with the `dropdown` class and is initialized w
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="dropdown">
+<div class="dropdown hover">
   <a class="dropdown/toggle">
     Toggle Menu
   </a>
@@ -56,21 +55,16 @@ The dropdown component is defined with the `dropdown` class and is initialized w
   </div>
 </div>
 ```
-
-{{% codeblock key="initializing" definition="javascript" margin="top" %}}
 ```javascript
 var dropdown = new Dropdown();
 ```
-{{% /codeblock %}}
-
-{{% /codeblock %}}
 
 ### Dropdown Position
 
 By default the dropdown menu is aligned to the bottom left of its parent container. To override position and alignment assign the following modifiers:
 
 <div>
-  <div class="dropdown dropdown-position:center margin-bottom:u2 js-dropdown">
+  <div class="dropdown dropdown-position:center margin-bottom:u2">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Center Menu</span>
     </a>
@@ -94,7 +88,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-position:right margin-bottom:u2 js-dropdown">
+  <div class="dropdown dropdown-position:right margin-bottom:u2">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Right Menu</span>
     </a>
@@ -118,7 +112,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-position:top-right margin-bottom:u2 js-dropdown">
+  <div class="dropdown dropdown-position:top-right margin-bottom:u2">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Top Right Menu</span>
     </a>
@@ -142,7 +136,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 </div>
 
 <div>
-  <div class="dropdown dropdown-position:top-center margin-bottom:u2 js-dropdown">
+  <div class="dropdown dropdown-position:top-center margin-bottom:u2">
     <a class="dropdown/toggle" title="Menu">
       <span class="button button-style:outline button-grow:1">Top Center Menu</span>
     </a>
@@ -165,7 +159,6 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
   </div>
 </div>
 
-{{% codeblock key="initializing" definition="html" margin="bottom" %}}
 ```html
 <div class="dropdown dropdown-position:center">
   <a class="dropdown/toggle">
@@ -203,27 +196,24 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
   </ul>
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 :root {
   --dropdown-body-fill: var(--white);
   --dropdown-body-radius: var(--radius);
   --dropdown-body-shadow: 0px 0px 0px 1px var(--border-color);
 
-  --dropdown-item-padding: var(--u1) var(--u1);
+  --dropdown-item-padding: .5rem;
   --dropdown-item-color: var(--grey-d1);
   --dropdown-item-hover-color: var(--grey-d2);
   --dropdown-item-hover-fill: var(--grey-l5);
   --dropdown-item-active-fill: var(--grey-l4);
 }
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -257,7 +247,7 @@ The following modifiers are available.
       No
     </td>
     <td class="row:reverse">
-      Enable hover dropdowns
+      Enable hoverable dropdowns
     </td>
   </tr>
   <tr>
@@ -265,8 +255,7 @@ The following modifiers are available.
       <code>dropdown-position</code>
     </td>
     <td data-label="Attributes">
-      <code>:center</code> <code>:left</code> <code>:top</code>
-      <code>:top-center</code> <code>:top-left</code>
+      <code class="margin:u0">:center</code><br><code class="margin:u0">:left</code><br><code class="margin:u0">:top</code><br><code class="margin:u0">:top-center</code><br><code class="margin:u0">:top-left</code>
     </td>
     <td data-label="Responsive">
       No

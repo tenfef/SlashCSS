@@ -19,7 +19,6 @@ LAYOUT
 @import "layout/column.layout";
 @import "layout/grid.layout";
 @import "layout/flex.layout";
-@import "layout/flag.layout";
 
 /******************************
 MODULE
@@ -37,6 +36,7 @@ MODULE
 @import "module/table.module";
 @import "module/notice.module";
 @import "module/markup.module";
+@import "module/flag.module";
 
 /******************************
 SINGLE

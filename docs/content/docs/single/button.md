@@ -9,29 +9,26 @@ description = "Colorful and juicy button component in all shapes and sizes."
 
 A standard button
 
-<button class="button">Button</button>
+<button class="button fill:blue">Button</button>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button">
   Button
 </button>
 ```
-{{% /codeblock %}}
 
 ### Sizes
 
 Buttons comes in various sizes, use standard size modifiers to transform its size.
 
 <div class="margin-bottom:u6">
-  <button class="button button-size:xs">Button</button>
-  <button class="button button-size:sm">Button</button>
-  <button class="button button-size:md">Button</button>
-  <button class="button button-size:lg">Button</button>
-  <button class="button button-size:xl">Button</button>
+  <button class="button fill:red button-size:xs">Button</button>
+  <button class="button fill:pink button-size:sm">Button</button>
+  <button class="button fill:violet button-size:md">Button</button>
+  <button class="button fill:purple button-size:lg">Button</button>
+  <button class="button fill:navy button-size:xl">Button</button>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button button-size:xs">Button</button>
 <button class="button button-size:sm">Button</button>
@@ -39,7 +36,6 @@ Buttons comes in various sizes, use standard size modifiers to transform its siz
 <button class="button button-size:lg">Button</button>
 <button class="button button-size:xl">Button</button>
 ```
-{{% /codeblock %}}
 
 ### Growing Buttons
 
@@ -47,25 +43,23 @@ Buttons can vary in width.
 
 <div class="distribute-y:1 margin-bottom:u6">
   <button class="button">Default</button><br>
-  <button class="button button-grow:1">Grow 1</button><br>
-  <button class="button button-grow:2">Grow 2</button><br>
-  <button class="button button-grow:3">Grow 3</button><br>
-  <button class="button button-grow:4">Grow 4</button><br>
-  <button class="button button-grow:5">Grow 5</button><br>
-  <button class="button width:100%">Fluid</button>
+  <button class="button button-grow:u2 fill:white elevate">U2</button><br>
+  <button class="button button-grow:u4 fill:white elevate">U4</button><br>
+  <button class="button button-grow:u6 fill:white elevate">U6</button><br>
+  <button class="button button-grow:u8 fill:white elevate">U8</button><br>
+  <button class="button button-grow:u10 fill:white elevate">U10</button><br>
+  <button class="button width:100% fill:white elevate">Fluid</button>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button">Default</button>
-<button class="button button-grow:1">Grow 1</button>
-<button class="button button-grow:2">Grow 2</button>
-<button class="button button-grow:3">Grow 3</button>
-<button class="button button-grow:4">Grow 4</button>
-<button class="button button-grow:5">Grow 5</button>
+<button class="button button-grow:u2">U2</button>
+<button class="button button-grow:u4">U4</button>
+<button class="button button-grow:u6">U6</button>
+<button class="button button-grow:u8">U8</button>
+<button class="button button-grow:u10">U10</button>
 <button class="button width:100%">Fluid</button>
 ```
-{{% /codeblock %}}
 
 ### Shapes
 
@@ -77,13 +71,11 @@ You can apply different corners with the `border` component.
   <button class="button border-radius:round">Round</button>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button">Default</button>
 <button class="button border-radius:sharp">Sharp</button>
 <button class="button border-radius:round">Round</button>
 ```
-{{% /codeblock %}}
 
 ### Icon Buttons
 
@@ -91,41 +83,37 @@ Buttons can contain icons.
 
 <div class="margin-bottom:u6">
   <button class="button button-style:outline font-size:body font-case:none">
-    <i class="fas fa-cloud-upload-alt margin-right:3"></i>
+    <i class="fas fa-cloud-upload-alt margin-right:u4"></i>
     Upload File
   </button>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button button-grow:1 button-style:outline font-size:body font-case:none">
+<button class="button button-style:outline font-size:body font-case:none">
   <div class="button/icon">
     <i class="fas fa-cloud-upload-alt margin-right:u2"></i>
   </div>
   Upload File
 </button>
 ```
-{{% /codeblock %}}
 
 ### Styles
 
-There are 4 different styles of buttons, default, outline and button-style:physicald.
+There are 4 different styles of buttons, default, outline and elevated.
 
 <div class="margin-bottom:u6">
-  <button class="button button-grow:1 margin-bottom:u6">Default</button>
-  <button class="button button-grow:1 elevate margin-bottom:u6">Elevated</button>
-  <button class="button button-grow:1 button-style:outline margin-bottom:u6">Outline</button>
-  <button class="button button-grow:1 button-style:flat">Flat</button>
+  <button class="button margin-bottom:u6">Default</button>
+  <button class="button elevate margin-bottom:u6">Elevated</button>
+  <button class="button button-style:outline margin-bottom:u6">Outline</button>
+  <button class="button button-style:flat">Flat</button>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<button class="button button-grow:1">Default</button>
-<button class="button button-grow:1 elevate">Elevated</button>
-<button class="button button-grow:1 button-style:outline">Outline</button>
-<button class="button button-grow:1 button-style:flat">Flat</button>
+<button class="button">Default</button>
+<button class="button elevate">Elevated</button>
+<button class="button button-style:outline">Outline</button>
+<button class="button button-style:flat">Flat</button>
 ```
-{{% /codeblock %}}
 
 ### Button Weights
 
@@ -137,30 +125,28 @@ Buttons can have different font weights with the font component.
   <button class="button font-weight:bold">Bold</button>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button font-weight:regular">Regular</button>
 <button class="button font-weight:medium">Medium</button>
 <button class="button font-weight:bold">Bold</button>
 ```
-{{% /codeblock %}}
 
 
 ### Button Groups
 
-Buttons can be joined to form several buttons. Buttons can be down with `button-direction`.
+Buttons can be joined to form several buttons. Buttons can also be vertical.
 
 <div class="margin-bottom:u6">
   <div class="buttons border-radius:round">
-    <button class="button button-size:2 button-style:outline">1</button>
-    <button class="button button-size:2 button-style:outline">2</button>
-    <button class="button button-size:2 button-style:outline">3</button>
-    <button class="button button-size:2 button-style:outline">4</button>
+    <button class="button button-style:outline">1</button>
+    <button class="button button-style:outline">2</button>
+    <button class="button button-style:outline">3</button>
+    <button class="button button-style:outline">4</button>
   </div>
 </div>
 
 <div class="margin-bottom:u6">
-  <div class="buttons border-radius:round buttons-direction:down">
+  <div class="buttons border-radius:round buttons:stack">
     <button class="button fill:pink button-style:outline">1</button>
     <button class="button fill:violet button-style:outline">2</button>
     <button class="button fill:purple button-style:outline">3</button>
@@ -169,10 +155,10 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
 </div>
 
 <div class="margin-bottom:u6">
-  <div class="buttons border-radius:round buttons-direction:down">
-    <button class="button">1</button>
-    <button class="button">2</button>
-    <button class="button">3</button>
+  <div class="buttons border-radius:round buttons:stack">
+    <button class="button fill:green">1</button>
+    <button class="button fill:green">2</button>
+    <button class="button fill:green">3</button>
   </div>
 </div>
 
@@ -184,26 +170,25 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="buttons border-radius:round">
-  <button class="button button-size:2 fill:pink button-style:outline">1</button>
-  <button class="button button-size:2 fill:violet button-style:outline">2</button>
-  <button class="button button-size:2 fill:purple button-style:outline">3</button>
-  <button class="button button-size:2 fill:navy button-style:outline">4</button>
-</div>
-
-<div class="buttons border-radius:round buttons-direction:down">
   <button class="button fill:pink button-style:outline">1</button>
   <button class="button fill:violet button-style:outline">2</button>
   <button class="button fill:purple button-style:outline">3</button>
   <button class="button fill:navy button-style:outline">4</button>
 </div>
 
-<div class="buttons border-radius:round buttons-direction:down">
-  <button class="button">1</button>
-  <button class="button">2</button>
-  <button class="button">3</button>
+<div class="buttons border-radius:round buttons:stack">
+  <button class="button fill:pink button-style:outline">1</button>
+  <button class="button fill:violet button-style:outline">2</button>
+  <button class="button fill:purple button-style:outline">3</button>
+  <button class="button fill:navy button-style:outline">4</button>
+</div>
+
+<div class="buttons border-radius:round buttons:stack">
+  <button class="button fill:green">1</button>
+  <button class="button fill:green">2</button>
+  <button class="button fill:green">3</button>
 </div>
 
 <div class="buttons buttons-direction@md:down">
@@ -212,7 +197,6 @@ Buttons can be joined to form several buttons. Buttons can be down with `button-
   <button class="button">3</button>
 </div>
 ```
-{{% /codeblock %}}
 
 ### Colors
 
@@ -282,10 +266,9 @@ Use the `fill` component to apply different color your buttons.
 <button class="button elevate fill:white margin-bottom:u6">Button</button>
 <button class="button elevate fill:black margin-bottom:u6">Button</button>
 
-<button class="button fill:white elevate button-grow:3 border-radius:round color:grey-d1 margin-bottom:u6">Button</button>
-<button class="button fill:blue elevate button-grow:3 border-radius:round margin-bottom:u6">Button</button>
+<button class="button fill:white elevate button-grow:u10 border-radius:round color:grey-d1 margin-bottom:u6">Button</button>
+<button class="button fill:blue elevate button-grow:u10 border-radius:round margin-bottom:u6">Button</button>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <button class="button fill:red">Button</button>
 <button class="button fill:pink">Button</button>
@@ -303,25 +286,21 @@ Use the `fill` component to apply different color your buttons.
 <button class="button fill:white">Button</button>
 <button class="button fill:black">Button</button>
 ```
-{{% /codeblock %}}
-
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$button-sizes: 5 !default;
+$button-widths: 5 !default;
 
 :root {
-  --button-outline-weight: 2px;
-  --button-radius: var(--radius);
+  --button-outline-weight: 1px;
+  --button-radius: 5px;
   --button-font-family: var(--font-family);
   --button-font-size: var(--micro);
   --button-font-weight: var(--medium);
 }
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -363,7 +342,7 @@ The following modifiers are available.
       <code>button-size</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
+      <code>:xs</code> <code>:sm</code> <code>:md</code> <code>:lg</code> <code>:xl</code>
     </td>
     <td data-label="Responsive">
       No
@@ -377,7 +356,7 @@ The following modifiers are available.
       <code>button-grow</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
+      <code>:u2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -388,16 +367,16 @@ The following modifiers are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>buttons-direction</code>
+      <code>buttons</code>
     </td>
     <td data-label="Attributes">
-      <code>:down</code>
+      <code>:stack</code>
     </td>
     <td data-label="Responsive">
-      Yes
+      No
     </td>
     <td class="row:reverse">
-      Downward buttons
+      Vertically stack buttons
     </td>
   </tr>
 </table>

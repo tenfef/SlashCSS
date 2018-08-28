@@ -10,140 +10,152 @@ description = "The list module is used to present any list of content horizontal
 
 The list module `list` is useful for any type of list content that runs horizontally and vertically.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <ul class="list">
   <li class="list/item">List Item</li>
   <li class="list/item">List Item</li>
   <li class="list/item">List Item</li>
 </ul>
+
+<ul class="list:inline">
+  <li class="list/item">List Item</li>
+  <li class="list/item">List Item</li>
+  <li class="list/item">List Item</li>
+</ul>
 ```
-{{% /codeblock %}}
 
 ### List Gutters
 
 You can use the `list-gutter` property to control the gutter between list items. You can make your list run horizontally with the `list-direction:right` modifier.
 
-<ul class="list list-gutter:1 margin-bottom:u2">
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:red">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:red">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:red">
-    </div>
-  </li>
-</ul>
+<div class="row">
+  <div class="column">
 
-<ul class="list list-gutter:2 list-direction:right margin-bottom:u2">
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-</ul>
+    <ul class="list list-gutter:u2 margin:u0 margin-bottom:u2">
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+    </ul>
 
-<ul class="list list-gutter:3 list-direction:right margin-bottom:u2">
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-</ul>
+  </div>
+  <div class="column">
 
-<ul class="list list-gutter:4 list-direction:right margin-bottom:u2">
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-</ul>
+    <ul class="list list-gutter:u4 margin:u0 margin-bottom:u2">
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+    </ul>
 
-<ul class="list list-gutter:5 list-direction:right margin-bottom:u2">
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-  <li class="list/item">
-    <div class="padding:2 border-style:radius fill:blue">
-    </div>
-  </li>
-</ul>
+  </div>
+  <div class="column">
 
+    <ul class="list list-gutter:u6 margin:u0 margin-bottom:u2">
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+    </ul>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
+  </div>
+  <div class="column">
+
+    <ul class="list list-gutter:u8 margin:u0 margin-bottom:u2">
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+    </ul>
+
+  </div>
+  <div class="column">
+
+    <ul class="list list-gutter:u10 margin:u0 margin-bottom:u2">
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+      <li class="list/item">
+        <div class="padding:u4 border-radius fill:blue">
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
 ```html
-<ul class="list list-gutter:1">
-  <li class="list/item">...</li>
-  <li class="list/item">...</li>
-  <li class="list/item">...</li>
-  <li class="list/item">...</li>
-</ul>
-<ul class="list list-direction:right list-gutter:2">
-  <li class="list/item">...</li>
+<ul class="list list-gutter:u2">
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
 </ul>
-<ul class="list list-direction:right list-gutter:3">
-  <li class="list/item">...</li>
-  <li class="list/item">...</li>
-  <li class="list/item">...</li>
-  <li class="list/item">...</li>
-</ul>
-<ul class="list list-direction:right list-gutter:4">
-  <li class="list/item">...</li>
+<ul class="list list-gutter:u4">
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
 </ul>
-<ul class="list list-direction:right list-gutter:5">
+<ul class="list list-gutter:u6">
   <li class="list/item">...</li>
+  <li class="list/item">...</li>
+  <li class="list/item">...</li>
+</ul>
+<ul class="list list-gutter:u8">
+  <li class="list/item">...</li>
+  <li class="list/item">...</li>
+  <li class="list/item">...</li>
+</ul>
+<ul class="list list-gutter:u10">
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>
 </ul>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
-You can override styling using the following local variables.
+You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 $list-gutters: 5 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -171,7 +183,7 @@ The following modifiers are available.
       <code>list-gutter</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
+      <code>:u2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
     </td>
     <td data-label="Responsive">
       No

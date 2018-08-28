@@ -10,43 +10,38 @@ description = "Slide panel navigation for mobile."
 
 Defined with `slidemenu` and initialized with javascript. Slidemenu is a fixed element and must belong outside of all containers.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-  ```html
-  <aside class="slidemenu">
-    <div class="slidemenu/overlay">
+```html
+<aside class="slidemenu">
+  <div class="slidemenu/overlay">
+
+  </div>
+  <div class="slidemenu/content">
+    <div class="slidemenu/close">
 
     </div>
-    <div class="slidemenu/content">
-      <div class="slidemenu/close">
+    ...
+  </div>
+</aside>
+```
 
-      </div>
-      ...
-    </div>
-  </aside>
-  ```
-  {{% codeblock key="initializing" definition="javascript" margin="top" %}}
-  ```javascript
-    var slidemenu = new Slidemenu();
-  ```
-  {{% /codeblock %}}
-{{% /codeblock %}}
+```javascript
+  var slidemenu = new Slidemenu();
+```
 
 ### Slide Direction
 
 You can change the direction of the slide with the `slide-direction` property.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
-  ```html
-  <aside class="slidemenu slide-direction:right js-slidemenu">
-    <div class="slidemenu/overlay">
+```html
+<aside class="slidemenu slide-direction:right">
+  <div class="slidemenu/overlay">
 
-    </div>
-    <div class="slidemenu/content">
-      ...
-    </div>
-  </aside>
-  ```
-{{% /codeblock %}}
+  </div>
+  <div class="slidemenu/content">
+    ...
+  </div>
+</aside>
+```
 
 ### JS Settings
 
