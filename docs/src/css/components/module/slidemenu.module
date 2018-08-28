@@ -98,7 +98,7 @@ SLIDEMENU
       content: '';
       width: 17px;
       height: 3px;
-      background: var(--primary-color);
+      background: var(--black);
       border-radius: 20px;
     }
     &:before {
