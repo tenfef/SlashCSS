@@ -69,6 +69,7 @@ TABLE
     }
     td {
       display: flex;
+      flex-wrap: wrap;
       padding: var(--u3) var(--u4);
       border-bottom: var(--table-border);
       border-right: 0;

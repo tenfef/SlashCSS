@@ -8,14 +8,14 @@ $grid-gutters: 5 !default;
 
   display: grid;
 
-  &\:inline-grid {
+  &\:inline {
     display: inline-grid;
   }
   @each $key, $value in $screens {
     &\@#{$key} {
       @media (min-width : #{$value}) {
         display: grid;
-        &\:inline-grid {
+        &\:inline {
           display: inline-grid;
         }
       }

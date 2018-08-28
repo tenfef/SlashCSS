@@ -10,7 +10,7 @@ description = "The basics of using the grid component to structure layout."
 
 Sometimes your grid layout might quite fit in a row or column based structure. The `grid` component provides a way to build evenly distributed content in both directions.
 
-<div class="grid:3 margin-bottom:u2">
+<div class="grid grid:3">
   <div class="grid/item">
     <div class="padding:u4 fill:blue">
       &nbsp;
@@ -42,7 +42,6 @@ Sometimes your grid layout might quite fit in a row or column based structure. T
     </div>
   </div>
 </div>
-
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
@@ -71,9 +70,9 @@ Sometimes your grid layout might quite fit in a row or column based structure. T
 
 ### Grid Gutters
 
-You can apply gutter to your grid layout with the `grid-gutter` property. Standard media query suffixes can be applied. You can also assign row or column based gutters seperately with the `row` `column` suffixes.
+You can apply gutter to your grid layout with the `grid-gutter` property. Standard media query notations can be applied. You can also assign row or column based gutters seperately with the `row` `column` suffixes.
 
-<div class="grid:3 grid-gutter:2 grid-gutter-row@sm:3 margin-bottom:u2">
+<div class="grid grid:3 grid-gutter:u8 grid-gutter-row@sm:u6">
   <div class="grid/item">
     <div class="padding:u4 fill:blue">
       &nbsp;
@@ -108,7 +107,7 @@ You can apply gutter to your grid layout with the `grid-gutter` property. Standa
 
 {{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="grid:3 grid-gutter:2 grid-gutter-row@sm:3">
+<div class="grid grid:3 grid-gutter:u8 grid-gutter-row@sm:u6">
   <div class="grid/item">
     ...
   </div>
@@ -146,7 +145,7 @@ $grid-gutters: 5 !default;
 
 The following modifiers are available.
 
-<table class="table width:100% table:pile">
+<table class="table width:100% table:pile table@sm:unpile">
   <thead>
     <tr>
       <th>
@@ -168,7 +167,7 @@ The following modifiers are available.
       <code>grid</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:12</code>
+      <code>:2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -183,7 +182,7 @@ The following modifiers are available.
       <code>grid-gutter</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:12</code>
+      <code>:2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -198,7 +197,7 @@ The following modifiers are available.
       <code>grid-gutter-row</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:12</code>
+      <code>:2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -213,7 +212,7 @@ The following modifiers are available.
       <code>grid-gutter-column</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:12</code>
+      <code>:2</code> <code>:u4</code> <code>:u6</code> <code>:u8</code> <code>:u10</code>
     </td>
     <td data-label="Responsive">
       Yes

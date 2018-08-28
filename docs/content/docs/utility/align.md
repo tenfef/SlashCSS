@@ -310,7 +310,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
     </div>
   </div>
   <div class="column" style="width: 20%;">
-    <div class="flex flex-wrap height:20 fill:grey-l4 align-content:center">
+    <div class="flex flex-wrap height:20 fill:grey-l4 justify-content:center">
       <div class="column:4 padding:u4">
         <div class="fill:grey-l2">
           &nbsp;
@@ -386,7 +386,7 @@ The `align-content` property modifies the behavior of the flex-wrap property. It
 <div class="align-content:left">
   ...
 </div>
-<div class="align-content:center">
+<div class="justify-content:center">
   ...
 </div>
 <div class="align-content:right">

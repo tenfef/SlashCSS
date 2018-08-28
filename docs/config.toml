@@ -41,11 +41,6 @@ title = "My New Hugo Site"
     weight = -100
 
   [[menu.layout]]
-    name = "Flag"
-    url = "/layout/flag/"
-    weight = -100
-
-  [[menu.layout]]
     name = "Row"
     url = "/layout/row/"
     weight = -100
@@ -90,6 +85,11 @@ title = "My New Hugo Site"
   [[menu.module]]
     name = "Menu"
     url = "/module/menu/"
+    weight = -100
+
+  [[menu.module]]
+    name = "Flag"
+    url = "/module/flag/"
     weight = -100
 
   [[menu.module]]

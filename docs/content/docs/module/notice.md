@@ -103,7 +103,7 @@ You can change the background color using the `fill` component.
 
 Alignment can be modified with the `align` component.
 
-<div class="notice align-content:center margin-bottom:u2 is-active">
+<div class="notice justify-content:center margin-bottom:u2 is-active">
   <div class="notice/content">
     <span class="label -middle -white u-margin-right-1">NEW</span>
     Sample Notification
@@ -116,7 +116,7 @@ Alignment can be modified with the `align` component.
 
 {{% codeblock key="language" definition="html" margin="top-tight" %}}
 ```html
-<div class="notice align-content:center is-active">
+<div class="notice justify-content:center is-active">
   ...
 </div>
 ```
