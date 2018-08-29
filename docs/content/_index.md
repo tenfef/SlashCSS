@@ -1,3 +1,3 @@
 +++
-title = "Smart software for growing trade businesses"
+title = "A clear and efficient CSS framework designed to enhance your design and development workflow."
 +++
