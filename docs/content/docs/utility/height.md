@@ -8,9 +8,8 @@ description = "The height component adds height to any object or container."
 
 ### Basic Usage
 
-Defind with `height`. There are 18 levels of height which are based on the standard unit chart.
+Defind with `height`. There are 20 levels of height which are based on the standard unit chart.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="height:1"></div>
 <div class="height:2"></div>
@@ -30,41 +29,36 @@ Defind with `height`. There are 18 levels of height which are based on the stand
 <div class="height:16"></div>
 <div class="height:17"></div>
 <div class="height:18"></div>
+<div class="height:20"></div>
+<div class="height:20"></div>
 ```
-{{% /codeblock %}}
 
 ### Extra Modifiers
 
 Full heights and default settings are also available.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="height:100%"></div>
 <div class="height:auto"></div>
 ```
-{{% /codeblock %}}
 
 ### Responsive Margin
 
 To apply responsive heightss add responsive suffixes
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="height@sm:10">
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$heights: 18 !default;
+$heights: 20 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -92,7 +86,7 @@ The following modifiers are available.
       <code>height</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:18</code><br>
+      <code>:1</code> ... <code>:20</code><br>
       <code>:100%</code> <code>:auto</code>
     </td>
     <td data-label="Responsive">

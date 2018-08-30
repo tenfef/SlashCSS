@@ -16,11 +16,10 @@ The `font-size` property has 9 sizes.
 <p class="font-size:h4 font-height:1">H4 Typography</p>
 <p class="font-size:h5 font-height:1">H5 Typography</p>
 <p class="font-size:h6 font-height:1">H6 Typography</p>
-<p class="font-size:body font-height:0">Body</p>
-<p class="font-size:tiny font-height:0">Tiny</p>
-<p class="font-size:micro font-height:0">Micro</p>
+<p class="font-size:body font-height:1">Body</p>
+<p class="font-size:tiny font-height:1">Tiny</p>
+<p class="font-size:micro font-height:1">Micro</p>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <p class="font-size:h1">H1 Typography</p>
 <p class="font-size:h2">h2 Typography</p>
@@ -32,7 +31,6 @@ The `font-size` property has 9 sizes.
 <p class="font-size:tiny">Tiny</p>
 <p class="font-size:micro">Micro</p>
 ```
-{{% /codeblock %}}
 
 ### Weights
 
@@ -42,17 +40,14 @@ For different weights use standard weight modifiers.
 <h3 class="font-weight:regular font-height:1.4 margin:u0">Regular Typography</h3>
 <h3 class="font-weight:medium font-height:1.4 margin:u0">Medium Typography</h3>
 <h3 class="font-weight:bold font-height:1.4 margin:u0">Bold Typography</h3>
-<h3 class="font-weight:black font-height:1.4 margin:u0 margin-bottom:u4">Black Typography</h3>
+<h3 class="font-weight:black font-height:1.4 margin:u0">Black Typography</h3>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <h3 class="font-weight:light">Light Typography</h3>
 <h3 class="font-weight:regular">Regular Typography</h3>
 <h3 class="font-weight:medium">Medium Typography</h3>
 <h3 class="font-weight:bold">Bold Typography</h3>
-<h3 class="font-weight:black">Black Typography</h3>
 ```
-{{% /codeblock %}}
 
 ### Line Height
 
@@ -64,8 +59,8 @@ You can apply unitless line height with the `font-height` property.
 <h6 class="font-height:1.3 fill:grey-l4 margin:u0 margin-bottom:u2">Line Height 1.3</h6>
 <h6 class="font-height:1.4 fill:grey-l4 margin:u0 margin-bottom:u2">Line Height 1.4</h6>
 <h6 class="font-height:1.5 fill:grey-l4 margin:u0 margin-bottom:u4">Line Height 1.5</h6>
+<h6 class="font-height:1.6 fill:grey-l4 margin:u0 margin-bottom:u4">Line Height 1.6</h6>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <h6 class="font-height:1">Line Height 1</h6>
 <h6 class="font-height:1.1">Line Height 1.1</h6>
@@ -73,31 +68,26 @@ You can apply unitless line height with the `font-height` property.
 <h6 class="font-height:1.3">Line Height 1.3</h6>
 <h6 class="font-height:1.4">Line Height 1.4</h6>
 <h6 class="font-height:1.5">Line Height 1.5</h6>
+<h6 class="font-height:1.6">Line Height 1.5</h6>
 ```
-{{% /codeblock %}}
 
 ### Font Transform
 
-You can transform capitalization of your text with the `font-transform` property.
+You can transform capitalization of your text with the `font-case` property.
 
-
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <h6 class="font-case:none">No Transform</h6>
-<h6 class="font-transform:upper">Uppercase</h6>
-<h6 class="fonttranform:lower">Lowercase</h6>
+<h6 class="font-case:upper">Uppercase</h6>
+<h6 class="font-case:lower">Lowercase</h6>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$font-heights: 5 !default;
+$font-heights: 6 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -144,36 +134,13 @@ The following modifiers are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>font-size</code>
-    </td>
-    <td data-label="Attributes">
-      <code>:h1</code><br>
-      <code>:h2</code><br>
-      <code>:h3</code><br>
-      <code>:h4</code><br>
-      <code>:h5</code><br>
-      <code>:h6</code><br>
-      <code>:body</code><br>
-      <code>:tiny</code><br>
-      <code>:micro</code>
-    </td>
-    <td data-label="Responsive">
-      Yes
-    </td>
-    <td class="row:reverse">
-      Set font size
-    </td>
-  </tr>
-  <tr>
-    <td data-label="Properties">
       <code>font-weight</code>
     </td>
     <td data-label="Attributes">
       <code>:light</code><br>
       <code>:regular</code><br>
       <code>:medium</code><br>
-      <code>:bold</code><br>
-      <code>:black</code>
+      <code>:bold</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -187,7 +154,7 @@ The following modifiers are available.
       <code>font-height</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:5</code>
+      <code>:1</code> ... <code>:6</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -198,7 +165,7 @@ The following modifiers are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>font-transform</code>
+      <code>font-case</code>
     </td>
     <td data-label="Attributes">
       <code>:none</code> <code>:upper</code> <code>:lower</code>

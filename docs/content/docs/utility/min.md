@@ -8,81 +8,57 @@ description = "The min component provides min width or min height properties."
 
 ### Basic Usage
 
-Defind with `min-width` and `min-height`. There are 18 levels of min-height which are based on the standard unit chart.
+Defind with `min-width` and `min-height`.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="min-width:1"></div>
-<div class="min-width:2"></div>
-<div class="min-width:3"></div>
-<div class="min-width:4"></div>
-<div class="min-width:5"></div>
-<div class="min-width:6"></div>
-<div class="min-width:7"></div>
-<div class="min-width:8"></div>
-<div class="min-width:9"></div>
-<div class="min-width:10"></div>
-<div class="min-width:11"></div>
-<div class="min-width:12"></div>
-<div class="min-width:13"></div>
-<div class="min-width:14"></div>
-<div class="min-width:15"></div>
-<div class="min-width:16"></div>
-<div class="min-width:17"></div>
-<div class="min-width:18"></div>
+<div class="min-width:100px"></div>
+<div class="min-width:200px"></div>
+<div class="min-width:300px"></div>
+<div class="min-width:400px"></div>
+<div class="min-width:500px"></div>
+<div class="min-width:600px"></div>
+<div class="min-width:700px"></div>
+<div class="min-width:800px"></div>
+<div class="min-width:900px"></div>
+<div class="min-width:1000px"></div>
 
-<div class="min-height:1"></div>
-<div class="min-height:2"></div>
-<div class="min-height:3"></div>
-<div class="min-height:4"></div>
-<div class="min-height:5"></div>
-<div class="min-height:6"></div>
-<div class="min-height:7"></div>
-<div class="min-height:8"></div>
-<div class="min-height:9"></div>
-<div class="min-height:10"></div>
-<div class="min-height:11"></div>
-<div class="min-height:12"></div>
-<div class="min-height:13"></div>
-<div class="min-height:14"></div>
-<div class="min-height:15"></div>
-<div class="min-height:16"></div>
-<div class="min-height:17"></div>
-<div class="min-height:18"></div>
+<div class="min-height:100px"></div>
+<div class="min-height:200px"></div>
+<div class="min-height:300px"></div>
+<div class="min-height:400px"></div>
+<div class="min-height:500px"></div>
+<div class="min-height:600px"></div>
+<div class="min-height:700px"></div>
+<div class="min-height:800px"></div>
+<div class="min-height:900px"></div>
+<div class="min-height:1000px"></div>
 ```
-{{% /codeblock %}}
 
 ### Fluid Modifiers
 
 Widths and heights can be fluid.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="min-width:100%"></div>
 <div class="min-height:100%"></div>
 ```
-{{% /codeblock %}}
 
 ### Responsive Properties
 
-To apply responsive min-heights add responsive suffixes
+To apply responsiveness add media query suffixes
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="min-height@md:1"></div>
-<div class="min-height@lg:4"></div>
+<div class="min-width@md:500px"></div>
+<div class="min-width@lg:400px"></div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$min-levels: 18 !default;
+$min-levels: 10 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -110,7 +86,17 @@ The following modifiers are available.
       <code>min-width</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:18</code> <code>100%</code>
+      <code class="margin:u0">:100px</code><br />
+      <code class="margin:u0">:200px</code><br />
+      <code class="margin:u0">:300px</code><br />
+      <code class="margin:u0">:400px</code><br />
+      <code class="margin:u0">:500px</code><br />
+      <code class="margin:u0">:600px</code><br />
+      <code class="margin:u0">:700px</code><br />
+      <code class="margin:u0">:800px</code><br />
+      <code class="margin:u0">:900px</code><br />
+      <code class="margin:u0">:1000px</code><br />
+      <code class="margin:u0">:100%</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -124,7 +110,19 @@ The following modifiers are available.
       <code>min-height</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:18</code> <code>100%</code>
+      <td data-label="Attributes">
+        <code class="margin:u0">:100px</code><br />
+        <code class="margin:u0">:200px</code><br />
+        <code class="margin:u0">:300px</code><br />
+        <code class="margin:u0">:400px</code><br />
+        <code class="margin:u0">:500px</code><br />
+        <code class="margin:u0">:600px</code><br />
+        <code class="margin:u0">:700px</code><br />
+        <code class="margin:u0">:800px</code><br />
+        <code class="margin:u0">:900px</code><br />
+        <code class="margin:u0">:1000px</code><br />
+        <code class="margin:u0">:100%</code>
+      </td>
     </td>
     <td data-label="Responsive">
       Yes

@@ -32,7 +32,6 @@ Defined with `float` and direction.
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="float:left">
   ...
@@ -44,13 +43,11 @@ Defined with `float` and direction.
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Responsive Floats
 
 You can assign responsive floats by adding responsive suffixes.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="float@sm:left">
   ...
@@ -62,7 +59,6 @@ You can assign responsive floats by adding responsive suffixes.
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Options
 

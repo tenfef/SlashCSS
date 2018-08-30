@@ -8,81 +8,57 @@ description = "The max component provides max width or max height properties."
 
 ### Basic Usage
 
-Defind with `max-width` and `max-height`. There are 18 levels of max-height which are based on the standard unit chart.
+Defind with `max-width` and `max-height`.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="max-width:1"></div>
-<div class="max-width:2"></div>
-<div class="max-width:3"></div>
-<div class="max-width:4"></div>
-<div class="max-width:5"></div>
-<div class="max-width:6"></div>
-<div class="max-width:7"></div>
-<div class="max-width:8"></div>
-<div class="max-width:9"></div>
-<div class="max-width:10"></div>
-<div class="max-width:11"></div>
-<div class="max-width:12"></div>
-<div class="max-width:13"></div>
-<div class="max-width:14"></div>
-<div class="max-width:15"></div>
-<div class="max-width:16"></div>
-<div class="max-width:17"></div>
-<div class="max-width:18"></div>
+<div class="max-width:100px"></div>
+<div class="max-width:200px"></div>
+<div class="max-width:300px"></div>
+<div class="max-width:400px"></div>
+<div class="max-width:500px"></div>
+<div class="max-width:600px"></div>
+<div class="max-width:700px"></div>
+<div class="max-width:800px"></div>
+<div class="max-width:900px"></div>
+<div class="max-width:1000px"></div>
 
-<div class="max-height:1"></div>
-<div class="max-height:2"></div>
-<div class="max-height:3"></div>
-<div class="max-height:4"></div>
-<div class="max-height:5"></div>
-<div class="max-height:6"></div>
-<div class="max-height:7"></div>
-<div class="max-height:8"></div>
-<div class="max-height:9"></div>
-<div class="max-height:10"></div>
-<div class="max-height:11"></div>
-<div class="max-height:12"></div>
-<div class="max-height:13"></div>
-<div class="max-height:14"></div>
-<div class="max-height:15"></div>
-<div class="max-height:16"></div>
-<div class="max-height:17"></div>
-<div class="max-height:18"></div>
+<div class="max-height:100px"></div>
+<div class="max-height:200px"></div>
+<div class="max-height:300px"></div>
+<div class="max-height:400px"></div>
+<div class="max-height:500px"></div>
+<div class="max-height:600px"></div>
+<div class="max-height:700px"></div>
+<div class="max-height:800px"></div>
+<div class="max-height:900px"></div>
+<div class="max-height:1000px"></div>
 ```
-{{% /codeblock %}}
 
 ### Fluid Modifiers
 
 Widths and heights can be fluid.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="max-width:100%"></div>
 <div class="max-height:100%"></div>
 ```
-{{% /codeblock %}}
 
 ### Responsive Properties
 
-To apply responsive max-heights add responsive suffixes
+To apply responsiveness add media query suffixes
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="max-height@md:1"></div>
-<div class="max-height@lg:4"></div>
+<div class="max-width@md:500px"></div>
+<div class="max-width@lg:400px"></div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$max-levels: 18 !default;
+$max-levels: 10 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -110,7 +86,17 @@ The following modifiers are available.
       <code>max-width</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:18</code> <code>100%</code>
+      <code class="margin:u0">:100px</code><br />
+      <code class="margin:u0">:200px</code><br />
+      <code class="margin:u0">:300px</code><br />
+      <code class="margin:u0">:400px</code><br />
+      <code class="margin:u0">:500px</code><br />
+      <code class="margin:u0">:600px</code><br />
+      <code class="margin:u0">:700px</code><br />
+      <code class="margin:u0">:800px</code><br />
+      <code class="margin:u0">:900px</code><br />
+      <code class="margin:u0">:1000px</code><br />
+      <code class="margin:u0">:100%</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -124,7 +110,19 @@ The following modifiers are available.
       <code>max-height</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:18</code> <code>100%</code>
+      <td data-label="Attributes">
+        <code class="margin:u0">:100px</code><br />
+        <code class="margin:u0">:200px</code><br />
+        <code class="margin:u0">:300px</code><br />
+        <code class="margin:u0">:400px</code><br />
+        <code class="margin:u0">:500px</code><br />
+        <code class="margin:u0">:600px</code><br />
+        <code class="margin:u0">:700px</code><br />
+        <code class="margin:u0">:800px</code><br />
+        <code class="margin:u0">:900px</code><br />
+        <code class="margin:u0">:1000px</code><br />
+        <code class="margin:u0">:100%</code>
+      </td>
     </td>
     <td data-label="Responsive">
       Yes

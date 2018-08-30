@@ -8,63 +8,46 @@ description = "The margin component adds margin to any object or container."
 
 ### Basic Usage
 
-Defind with `margin`. There are 16 levels of margin which are based on the standard unit chart.
+Defind with `margin`. There are 14 levels of margin which are based on the standard unit chart.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="margin:u0"></div>
-<div class="margin:u1"></div>
 <div class="margin:u2"></div>
-<div class="margin:u3"></div>
 <div class="margin:u4"></div>
-<div class="margin:u5"></div>
 <div class="margin:u6"></div>
-<div class="margin:u7"></div>
-<div class="margin:u8"></div>
-<div class="margin:u9"></div>
 <div class="margin:u10"></div>
-<div class="margin:u11"></div>
 <div class="margin:u12"></div>
-<div class="margin:u13"></div>
 <div class="margin:u14"></div>
-<div class="margin:u15"></div>
 ```
-{{% /codeblock %}}
 
 ### Directional Margin
 
 Margin can be applied to `top` `right` `bottom` `left`.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="margin-top:0"></div>
-<div class="margin-right:u1"></div>
-<div class="margin-bottom:u2"></div>
-<div class="margin-left:u3"></div>
+<div class="margin-top:u0"></div>
+<div class="margin-right:u2"></div>
+<div class="margin-bottom:u4"></div>
+<div class="margin-left:u6"></div>
 ```
-{{% /codeblock %}}
 
 ### Responsive Margin
 
 To apply responsive margins add responsive suffixes
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="margin@sm:u2">
+<div class="margin:u0 margin@sm:u2">
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 $margins: 15 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -92,27 +75,64 @@ The following modifiers are available.
       <code>margin</code>
     </td>
     <td data-label="Attributes">
-      <code>:0</code> <code>:u1</code> ... <code>:u15</code>
+      <code class="margin:u0">:auto</code><br />
+      <code class="margin:u0">:u0</code><br />
+      <code class="margin:u0">:u2</code><br />
+      <code class="margin:u0">:u4</code><br />
+      <code class="margin:u0">:u6</code><br />
+      <code class="margin:u0">:u8</code><br />
+      <code class="margin:u0">:u10</code><br />
+      <code class="margin:u0">:u12</code><br />
+      <code class="margin:u0">:u14</code><br />
     </td>
     <td data-label="Responsive">
       Yes
     </td>
     <td class="row:reverse">
-      Set margin
+      Set unit based margin
     </td>
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>margin-[direction]</code>
-    </td>
+      <code class="margin:u0">margin-[direction]</code><br />
+        </td>
     <td data-label="Attributes">
-      <code>:0</code> <code>:u1</code> ... <code>:u15</code>
+      <code class="margin:u0">:auto</code><br />
+      <code class="margin:u0">:u0</code><br />
+      <code class="margin:u0">:u2</code><br />
+      <code class="margin:u0">:u4</code><br />
+      <code class="margin:u0">:u6</code><br />
+      <code class="margin:u0">:u8</code><br />
+      <code class="margin:u0">:u10</code><br />
+      <code class="margin:u0">:u12</code><br />
+      <code>:u14</code>
     </td>
     <td data-label="Responsive">
       Yes
     </td>
     <td class="row:reverse">
       Set directional margin
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code class="margin:u0">margin-[direction]</code><br />
+    </td>
+    <td data-label="Attributes">
+      <code class="margin:u0">:5vh</code><br />
+      <code class="margin:u0">:6vh</code><br />
+      <code class="margin:u0">:7vh</code><br />
+      <code class="margin:u0">:8vh</code><br />
+      <code class="margin:u0">:9vh</code><br />
+      <code class="margin:u0">:10vh</code><br />
+      <code class="margin:u0">:11vh</code><br />
+      <code>:12vh</code>
+    </td>
+    <td data-label="Responsive">
+      Yes
+    </td>
+    <td class="row:reverse">
+      Set viewport based directional margin
     </td>
   </tr>
 </table>

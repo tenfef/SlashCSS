@@ -21,7 +21,6 @@ Defined with `opacity`, there are 9 fade options available.
 <h3 class="margin:u0 opacity:8">Opacity 9</h3>
 <h3 class="margin:u0 margin-bottom:u6 opacity:10">Opacity 10</h3>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <h3 class="opacity:0">Opacity 0</h3>
 <h3 class="opacity:1">Opacity 1</h3>
@@ -35,11 +34,9 @@ Defined with `opacity`, there are 9 fade options available.
 <h3 class="opacity:9">Opacity 9</h3>
 <h3 class="opacity:10">Opacity 10</h3>
 ```
-{{% /codeblock %}}
 
 ### Opacity Value Chart
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 .opacity {
 	&-0 {
@@ -74,7 +71,6 @@ Defined with `opacity`, there are 9 fade options available.
 	}
 }
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -102,7 +98,7 @@ The following modifiers are available.
       <code>opacity</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:10</code>
+      <code>:0</code> ... <code>:10</code>
     </td>
     <td data-label="Responsive">
       No

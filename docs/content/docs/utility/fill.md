@@ -468,46 +468,34 @@ Defined with `fill`. All standard and tonal color are available. Each base color
   </section>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
+<div class="fill:red-l5"></div>
+<div class="fill:red-l4"></div>
+<div class="fill:red-l3"></div>
+<div class="fill:red-l2"></div>
+<div class="fill:red-l1"></div>
 <div class="fill:red"></div>
-<div class="fill:pink"></div>
-<div class="fill:violet"></div>
-<div class="fill:purple"></div>
-<div class="fill:navy"></div>
-<div class="fill:blue"></div>
-<div class="fill:teal"></div>
-<div class="fill:green"></div>
-<div class="fill:lime"></div>
-<div class="fill:yellow"></div>
-<div class="fill:orange"></div>
-<div class="fill:brown"></div>
-<div class="fill:grey"></div>
-
-<div class="fill:white"></div>
-<div class="fill:black"></div>
-<div class="fill:none"></div>
+<div class="fill:red-d1"></div>
+<div class="fill:red-d2"></div>
+<div class="fill:red-d3"></div>
+<div class="fill:red-d4"></div>
+<div class="fill:red-d5"></div>
 ```
-{{% /codeblock %}}
-
 
 ### Background Size
 
 The `fill-size` property controls the background size.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="fill-size:cover"></div>
 <div class="fill-size:contain"></div>
 ```
-{{% /codeblock %}}
 
 
 ### Background Position
 
 The `fill-position` property controls the background position.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="fill-position:top"></div>
 <div class="fill-position:right"></div>
@@ -526,7 +514,6 @@ The `fill-position` property controls the background position.
 <div class="fill-position:center-center"></div>
 <div class="fill-position:center-bottom"></div>
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -556,8 +543,8 @@ The following modifiers are available.
     <td data-label="Attributes">
       <code>:none</code><br>
       <code>:[base color]</code><br>
-      <code>:-l[level]</code><br>
-      <code>:-d[level]</code>
+      <code>:-l[1 - 5]</code><br>
+      <code>:-d[1 - 5]</code>
     </td>
     <td data-label="Responsive">
       No
