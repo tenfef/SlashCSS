@@ -26,7 +26,7 @@ The list module `list` is useful for any type of list content that runs horizont
 
 ### List Gutters
 
-You can use the `list-gutter` property to control the gutter between list items. You can make your list run horizontally with the `list-direction:right` modifier.
+You can use the `list-gutter` property to control the gutter between list items. You can make your list run horizontally with the `list:inline` modifier.
 
 <div class="row">
   <div class="column">

@@ -10,22 +10,6 @@ OVERFLOW
   &\:hidden {
     overflow: hidden !important;
   }
-  &-x {
-    &\:visible {
-      overflow-x: visible !important;
-    }
-    &\:hidden {
-      overflow-x: hidden !important;
-    }
-  }
-  &-y {
-    &\:visible {
-      overflow-y: visible !important;
-    }
-    &\:hidden {
-      overflow-y: hidden !important;
-    }
-  }
   @each $key, $value in $screens {
     &\@#{$key} {
       @media (min-width: $value) {
@@ -35,7 +19,19 @@ OVERFLOW
         &\:hidden {
           overflow: hidden !important;
         }
-        &-x {
+      }
+    }
+  }
+  &-x {
+    &\:visible {
+      overflow-x: visible !important;
+    }
+    &\:hidden {
+      overflow-x: hidden !important;
+    }
+    @each $key, $value in $screens {
+      &\@#{$key} {
+        @media (min-width: $value) {
           &\:visible {
             overflow-x: visible !important;
           }
@@ -43,12 +39,24 @@ OVERFLOW
             overflow-x: hidden !important;
           }
         }
-        &-y {
+      }
+    }
+  }
+  &-y {
+    &\:visible {
+      overflow-y: visible !important;
+    }
+    &\:hidden {
+      overflow-y: hidden !important;
+    }
+    @each $key, $value in $screens {
+      &\@#{$key} {
+        @media (min-width: $value) {
           &\:visible {
-            overflow-y: visible !important;
+            overflow-Y: visible !important;
           }
           &\:hidden {
-            overflow-y: hidden !important;
+            overflow-Y: hidden !important;
           }
         }
       }

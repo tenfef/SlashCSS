@@ -142,7 +142,7 @@ Here is an example of a Company Information form in multi-column format. For mul
         </div>
         <div class="form/item">
           <label>Attach CSV</label>
-          <label class="form/file button button-grow:u3 button-style:outline font-size:body font-case:none">
+          <label class="form/file button button-grow:u4 button-style:outline font-size:body font-case:none">
             <i class="fas fa-cloud-upload-alt margin-right:u2"></i>
             Upload File
             <input type="file" placeholder="City" class="max-width:100%">
