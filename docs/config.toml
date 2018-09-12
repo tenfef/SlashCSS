@@ -196,11 +196,6 @@ title = "My New Hugo Site"
     weight = -100
 
   [[menu.utility]]
-    name = "Flex"
-    url = "/utility/flex/"
-    weight = -100
-
-  [[menu.utility]]
     name = "Float"
     url = "/utility/float/"
     weight = -100
