@@ -12,21 +12,21 @@ Defined with `float` and direction.
 
 <div class="row margin-bottom:u2">
   <div class="column:12">
-    <div class="width:10 height:10 float:left">
+    <div class="width:100px height:10 float:left">
       <img src="https://placeimg.com/500/500/people">
     </div>
   </div>
 </div>
 <div class="row margin-bottom:u2">
   <div class="column:12">
-    <div class="width:10 height:10 float:right">
+    <div class="width:100px height:10 float:right">
       <img src="https://placeimg.com/500/500/people">
     </div>
   </div>
 </div>
 <div class="row margin-bottom:u2">
   <div class="column:12">
-    <div class="width:10 height:10 float:none">
+    <div class="width:100px height:10 float:none">
       <img src="https://placeimg.com/500/500/people">
     </div>
   </div>
