@@ -10,7 +10,6 @@ description = "The overflow component manipulates the overflow visibility of a g
 
 Defined with `overflow`, you can apply basic or horizontal and vertical or overflow visibility modifiers. Responsive suffixes are available.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <h3 class="overflow:visible">
 	...
@@ -21,7 +20,7 @@ Defined with `overflow`, you can apply basic or horizontal and vertical or overf
 <h3 class="overflow-x:visible">
 ...
 </h3>
-<h3 class="overflow-y:visible">
+<h3 class="overflow-y:hidden">
 ...
 </h3>
 <h3 class="overflow-x@md:visible">
@@ -31,7 +30,6 @@ Defined with `overflow`, you can apply basic or horizontal and vertical or overf
 ...
 </h3>
 ```
-{{% /codeblock %}}
 
 ### Options
 

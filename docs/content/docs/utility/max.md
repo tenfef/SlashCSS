@@ -110,19 +110,17 @@ The following modifiers are available.
       <code>max-height</code>
     </td>
     <td data-label="Attributes">
-      <td data-label="Attributes">
-        <code class="margin:u0">:100px</code><br />
-        <code class="margin:u0">:200px</code><br />
-        <code class="margin:u0">:300px</code><br />
-        <code class="margin:u0">:400px</code><br />
-        <code class="margin:u0">:500px</code><br />
-        <code class="margin:u0">:600px</code><br />
-        <code class="margin:u0">:700px</code><br />
-        <code class="margin:u0">:800px</code><br />
-        <code class="margin:u0">:900px</code><br />
-        <code class="margin:u0">:1000px</code><br />
-        <code class="margin:u0">:100%</code>
-      </td>
+      <code class="margin:u0">:100px</code><br />
+      <code class="margin:u0">:200px</code><br />
+      <code class="margin:u0">:300px</code><br />
+      <code class="margin:u0">:400px</code><br />
+      <code class="margin:u0">:500px</code><br />
+      <code class="margin:u0">:600px</code><br />
+      <code class="margin:u0">:700px</code><br />
+      <code class="margin:u0">:800px</code><br />
+      <code class="margin:u0">:900px</code><br />
+      <code class="margin:u0">:1000px</code><br />
+      <code class="margin:u0">:100%</code>
     </td>
     <td data-label="Responsive">
       Yes

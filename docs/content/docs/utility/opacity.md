@@ -10,29 +10,29 @@ description = "The opacity component manipulates the opacity property of a given
 
 Defined with `opacity`, there are 9 fade options available.
 
-<h3 class="margin:u0 opacity:1">Opacity 1</h3>
-<h3 class="margin:u0 opacity:2">Opacity 2</h3>
-<h3 class="margin:u0 opacity:3">Opacity 3</h3>
-<h3 class="margin:u0 opacity:4">Opacity 4</h3>
-<h3 class="margin:u0 opacity:5">Opacity 5</h3>
-<h3 class="margin:u0 opacity:6">Opacity 6</h3>
-<h3 class="margin:u0 opacity:7">Opacity 7</h3>
-<h3 class="margin:u0 opacity:8">Opacity 8</h3>
-<h3 class="margin:u0 opacity:8">Opacity 9</h3>
-<h3 class="margin:u0 margin-bottom:u6 opacity:10">Opacity 10</h3>
+<h5 class="margin:u0 opacity:1">Opacity 1</h5>
+<h5 class="margin:u0 opacity:2">Opacity 2</h5>
+<h5 class="margin:u0 opacity:3">Opacity 3</h5>
+<h5 class="margin:u0 opacity:4">Opacity 4</h5>
+<h5 class="margin:u0 opacity:5">Opacity 5</h5>
+<h5 class="margin:u0 opacity:6">Opacity 6</h5>
+<h5 class="margin:u0 opacity:7">Opacity 7</h5>
+<h5 class="margin:u0 opacity:8">Opacity 8</h5>
+<h5 class="margin:u0 opacity:8">Opacity 9</h5>
+<h5 class="margin:u0 margin-bottom:u6 opacity:10">Opacity 10</h5>
 
 ```html
-<h3 class="opacity:0">Opacity 0</h3>
-<h3 class="opacity:1">Opacity 1</h3>
-<h3 class="opacity:2">Opacity 2</h3>
-<h3 class="opacity:3">Opacity 3</h3>
-<h3 class="opacity:4">Opacity 4</h3>
-<h3 class="opacity:5">Opacity 5</h3>
-<h3 class="opacity:6">Opacity 6</h3>
-<h3 class="opacity:7">Opacity 7</h3>
-<h3 class="opacity:8">Opacity 8</h3>
-<h3 class="opacity:9">Opacity 9</h3>
-<h3 class="opacity:10">Opacity 10</h3>
+<h5 class="opacity:0">Opacity 0</h5>
+<h5 class="opacity:1">Opacity 1</h5>
+<h5 class="opacity:2">Opacity 2</h5>
+<h5 class="opacity:3">Opacity 3</h5>
+<h5 class="opacity:4">Opacity 4</h5>
+<h5 class="opacity:5">Opacity 5</h5>
+<h5 class="opacity:6">Opacity 6</h5>
+<h5 class="opacity:7">Opacity 7</h5>
+<h5 class="opacity:8">Opacity 8</h5>
+<h5 class="opacity:9">Opacity 9</h5>
+<h5 class="opacity:10">Opacity 10</h5>
 ```
 
 ### Opacity Value Chart

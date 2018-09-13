@@ -8,13 +8,14 @@ description = "The margin component adds margin to any object or container."
 
 ### Basic Usage
 
-Defind with `margin`. There are 14 levels of margin which are based on the standard unit chart.
+Defind with `margin`. There are 8 levels of margin which step up in increments of 2 unit.
 
 ```html
 <div class="margin:u0"></div>
 <div class="margin:u2"></div>
 <div class="margin:u4"></div>
 <div class="margin:u6"></div>
+<div class="margin:u8"></div>
 <div class="margin:u10"></div>
 <div class="margin:u12"></div>
 <div class="margin:u14"></div>
@@ -116,7 +117,7 @@ The following modifiers are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code class="margin:u0">margin-[direction]</code><br />
+      <code class="margin:u0">margin-[top bottom]</code>
     </td>
     <td data-label="Attributes">
       <code class="margin:u0">:5vh</code><br />
@@ -126,7 +127,7 @@ The following modifiers are available.
       <code class="margin:u0">:9vh</code><br />
       <code class="margin:u0">:10vh</code><br />
       <code class="margin:u0">:11vh</code><br />
-      <code>:12vh</code>
+      <code class="margin:u0">:12vh</code>
     </td>
     <td data-label="Responsive">
       Yes

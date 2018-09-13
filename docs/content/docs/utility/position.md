@@ -10,7 +10,6 @@ description = "The position component manipulates the positin property of a give
 
 Defined with `position`. Responsive suffixes are available for this component.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <h3 class="position">
 	...
@@ -25,13 +24,11 @@ Defined with `position`. Responsive suffixes are available for this component.
 ...
 </h3>
 ```
-{{% /codeblock %}}
 
 ### Postioning Element
 
 You can position elements to the edge inside containers with the positional suffixes.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <h3 class="position-top">
 	...
@@ -46,7 +43,6 @@ You can position elements to the edge inside containers with the positional suff
 	...
 </h3>
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -98,6 +94,7 @@ The following modifiers are available.
     </td>
   </tr>
 </table>
+
 <p class="margin-top:2 font-size:tiny color:orange">
   &#42; These properties have a default values set when used without modifiers.
 </p>

@@ -10,81 +10,74 @@ description = "The padding component adds padding to any object or container."
 
 Defind with `padding`. There are 16 levels of padding which are based on the standard unit chart.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="padding:u0"></div>
+<div class="padding:u2"></div>
 <div class="padding:u4"></div>
-<div class="padding:2"></div>
-<div class="padding:3"></div>
-<div class="padding:4"></div>
-<div class="padding:5"></div>
-<div class="padding:6"></div>
-<div class="padding:7"></div>
-<div class="padding:8"></div>
-<div class="padding:9"></div>
-<div class="padding:u40"></div>
-<div class="padding:u41"></div>
-<div class="padding:u42"></div>
-<div class="padding:u43"></div>
-<div class="padding:u44"></div>
-<div class="padding:u45"></div>
+<div class="padding:u6"></div>
+<div class="padding:u8"></div>
+<div class="padding:u10"></div>
+<div class="padding:u12"></div>
+<div class="padding:u14"></div>
 ```
-{{% /codeblock %}}
 
 ### Directional Padding
 
-Margin can be applied to `top` `right` `bottom` `left`. It can also be applied to only the horizontal and vertical axis.
+Padding can be applied to `top` `right` `bottom` `left`.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="padding-top:0"></div>
-<div class="padding-right:1"></div>
-<div class="padding-bottom:2"></div>
-<div class="padding-left:3"></div>
-<div class="padding-x:4"></div>
-<div class="padding-y:5"></div>
+<div class="padding-top:u0"></div>
+<div class="padding-right:u2"></div>
+<div class="padding-bottom:u4"></div>
+<div class="padding-left:u6"></div>
 ```
-{{% /codeblock %}}
 
 ### Responsive Padding
 
-To apply responsive paddings add responsive suffixes
+To apply responsive margins add responsive suffixes
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="padding@sm:2">
-  ...
-</div>
-<div class="padding-y@lg:5">
+<div class="padding:u0 padding@sm:u2">
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Viewport Padding
 
-Unlike the margin component, the padding component also supports viewport height based paddings.
+The padding component also supports viewport height based paddings.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="padding-top:10vh">
   ...
 </div>
-<div class="padding-right@md:5vh">
+<div class="padding-bottom@md:6vh">
+  ...
+</div>
+<div class="padding-y@md:5vh">
   ...
 </div>
 ```
-{{% /codeblock %}}
+
+### Horizontal & Vertical Padding
+
+To apply padding in both left and right or top and bottom directions use x and y respectively.
+
+```html
+<div class="padding-x:u10">
+  ...
+</div>
+<div class="padding-y@md:u6">
+  ...
+</div>
+```
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$margins: 15 !default;
+$paddings: 7 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -112,22 +105,37 @@ The following modifiers are available.
       <code>padding</code>
     </td>
     <td data-label="Attributes">
-      <code>:0</code> ... <code>:15</code>
+      <code class="margin:u0">:auto</code><br />
+      <code class="margin:u0">:u0</code><br />
+      <code class="margin:u0">:u2</code><br />
+      <code class="margin:u0">:u4</code><br />
+      <code class="margin:u0">:u6</code><br />
+      <code class="margin:u0">:u8</code><br />
+      <code class="margin:u0">:u10</code><br />
+      <code class="margin:u0">:u12</code><br />
+      <code class="margin:u0">:u14</code>
     </td>
     <td data-label="Responsive">
       Yes
     </td>
     <td>
-      Set padding
+      Set unit based padding
     </td>
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>padding-[direction]</code>
-    </td>
+      <code class="margin:u0">padding-[direction]</code><br />
+        </td>
     <td data-label="Attributes">
-      <code>:0</code> ... <code>:15</code><br>
-      <code>:5vh</code> ... <code>:15vh</code>
+      <code class="margin:u0">:auto</code><br />
+      <code class="margin:u0">:u0</code><br />
+      <code class="margin:u0">:u2</code><br />
+      <code class="margin:u0">:u4</code><br />
+      <code class="margin:u0">:u6</code><br />
+      <code class="margin:u0">:u8</code><br />
+      <code class="margin:u0">:u10</code><br />
+      <code class="margin:u0">:u12</code><br />
+      <code class="margin:u0">:u14</code>
     </td>
     <td data-label="Responsive">
       Yes
@@ -138,17 +146,23 @@ The following modifiers are available.
   </tr>
   <tr>
     <td data-label="Properties">
-      <code>padding-[x/y]</code>
+      <code class="margin:u0">padding-[top bottom]</code>
     </td>
     <td data-label="Attributes">
-      <code>:0</code> ... <code>:15</code><br>
-      <code>:5vh</code> ... <code>:15vh</code>
+      <code class="margin:u0">:5vh</code><br />
+      <code class="margin:u0">:6vh</code><br />
+      <code class="margin:u0">:7vh</code><br />
+      <code class="margin:u0">:8vh</code><br />
+      <code class="margin:u0">:9vh</code><br />
+      <code class="margin:u0">:10vh</code><br />
+      <code class="margin:u0">:11vh</code><br />
+      <code class="margin:u0">:12vh</code>
     </td>
     <td data-label="Responsive">
       Yes
     </td>
     <td>
-      Set horizontal or vertical padding
+      Set viewport based directional padding
     </td>
   </tr>
 </table>
