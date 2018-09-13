@@ -38,7 +38,6 @@ The table component is defined with the `table` class. By default the table widt
 </table>
 
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <table class="table width:100%">
   <thead>
@@ -67,7 +66,6 @@ The table component is defined with the `table` class. By default the table widt
   </tbody>
 </table>
 ```
-{{% /codeblock %}}
 
 ### Responsive Tables
 

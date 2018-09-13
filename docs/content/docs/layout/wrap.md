@@ -10,25 +10,21 @@ description = "The wrap component is a standard center aligning content containe
 
 The wrap component has float clearing properties built in.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="wrap">
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 :root {
   --wrap-width: 1600px;
 }
 ```
-{{% /codeblock %}}
 
 ### Options
 

@@ -57,7 +57,6 @@ root/
 
 Core theme settings can be set using Sass variables and Sass maps, these are an essential part of the build process. Refer to the `default.variables` file for a full list of variables and maps. Note, these are **variable defaults** meaning, they can be overwritten. Import your custom variables before `default.variables` to take advantage of this feature.
 
-{{% codeblock key="language" definition="scss" margin="bottom" %}}
 ```scss
 $levels: 5 !default;
 $levels: 5 !default;
@@ -76,7 +75,6 @@ $font-weights: (
 ) !default;
 ...
 ```
-{{% /codeblock %}}
 
 <div class="margin-bottom:u4"></div>
 
@@ -84,7 +82,6 @@ $font-weights: (
 
 During the build process, global and local component specific custom properties are generated. You can redeclare these root properties override its setting. Refer to the `b-root.component` for all available global custom properties.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 :root {
 	/* global custom property */
@@ -99,6 +96,5 @@ During the build process, global and local component specific custom properties 
 	--button__transition: all 0.2s ease;
 }
 ```
-{{% /codeblock %}}
 
 Depending on the complexity you can follow one or all of these methods to customize your project.

@@ -232,7 +232,6 @@ Standard text fields can have icons.
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="top" %}}
 ```html
 <div class="input:icons">
   <input type="text" placeholder="Username" value="SlashCSS" class="max-width:100% padding-left:u10">
@@ -261,4 +260,3 @@ Standard text fields can have icons.
   </div>
 </div>
 ```
-{{% /codeblock %}}

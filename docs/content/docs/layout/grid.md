@@ -130,12 +130,10 @@ You can apply gutter to your grid layout with the `grid-gutter` property. Standa
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
 $grid-gutters: 5 !default;
 
 ```
-{{% /codeblock %}}
 
 ### Options
 

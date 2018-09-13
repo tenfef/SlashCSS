@@ -21,7 +21,6 @@ Defined with the class `notice` initialized with javascript. The `notice/close` 
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="notice is-active">
   <div class="notice/content">
@@ -35,13 +34,9 @@ Defined with the class `notice` initialized with javascript. The `notice/close` 
 </div>
 ```
 
-{{% codeblock key="initializing" definition="javascript" margin="top" %}}
 ```javascript
 var notice = new Notice();
 ```
-{{% /codeblock %}}
-
-{{% /codeblock %}}
 
 ### Colors
 
@@ -140,7 +135,6 @@ You can apply differently shaped corners to buttons with the `border` component.
   </div>
 </div>
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="notice border-radius:sharp is-active">
   ...
@@ -149,7 +143,6 @@ You can apply differently shaped corners to buttons with the `border` component.
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 
 ### JS Settings
