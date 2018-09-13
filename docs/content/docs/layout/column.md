@@ -486,7 +486,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Widths based on 12 columns
     </td>
   </tr>

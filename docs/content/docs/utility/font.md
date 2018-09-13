@@ -10,6 +10,7 @@ description = "The font component provides useful ways of styling text."
 
 The `font-size` property has 9 sizes.
 
+<p class="font-size:hero font-height:1">Hero Typography</p>
 <p class="font-size:h1 font-height:1">H1 Typography</p>
 <p class="font-size:h2 font-height:1">h2 Typography</p>
 <p class="font-size:h3 font-height:1">H3 Typography</p>
@@ -21,6 +22,7 @@ The `font-size` property has 9 sizes.
 <p class="font-size:micro font-height:1">Micro</p>
 
 ```html
+<p class="font-size:hero">Hero Typography</p>
 <p class="font-size:h1">H1 Typography</p>
 <p class="font-size:h2">h2 Typography</p>
 <p class="font-size:h3">H3 Typography</p>
@@ -40,7 +42,6 @@ For different weights use standard weight modifiers.
 <h3 class="font-weight:regular font-height:1.4 margin:u0">Regular Typography</h3>
 <h3 class="font-weight:medium font-height:1.4 margin:u0">Medium Typography</h3>
 <h3 class="font-weight:bold font-height:1.4 margin:u0">Bold Typography</h3>
-<h3 class="font-weight:black font-height:1.4 margin:u0">Black Typography</h3>
 
 ```html
 <h3 class="font-weight:light">Light Typography</h3>
@@ -115,6 +116,7 @@ The following modifiers are available.
       <code>font-size</code>
     </td>
     <td data-label="Attributes">
+      <code>:hero</code><br>
       <code>:h1</code><br>
       <code>:h2</code><br>
       <code>:h3</code><br>
@@ -128,7 +130,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set font size
     </td>
   </tr>
@@ -145,7 +147,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set font weight
     </td>
   </tr>
@@ -159,7 +161,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set line height
     </td>
   </tr>
@@ -173,7 +175,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set text transform
     </td>
   </tr>

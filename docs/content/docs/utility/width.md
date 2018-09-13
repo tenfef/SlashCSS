@@ -8,63 +8,57 @@ description = "The width component adds width to any object or container."
 
 ### Basic Usage
 
-Defind with `width`. There are 18 levels of width which are based on the standard unit chart.
+Defind with `width`. There are 20 levels of unit based widths available.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="width:1"></div>
-<div class="width:2"></div>
-<div class="width:3"></div>
-<div class="width:4"></div>
-<div class="width:5"></div>
-<div class="width:6"></div>
-<div class="width:7"></div>
-<div class="width:8"></div>
-<div class="width:9"></div>
-<div class="width:10"></div>
-<div class="width:11"></div>
-<div class="width:12"></div>
-<div class="width:13"></div>
-<div class="width:14"></div>
-<div class="width:15"></div>
-<div class="width:16"></div>
-<div class="width:17"></div>
-<div class="width:18"></div>
+<div class="width:u1"></div>
+<div class="width:u2"></div>
+<div class="width:u3"></div>
+<div class="width:u4"></div>
+<div class="width:u5"></div>
+<div class="width:u6"></div>
+<div class="width:u7"></div>
+<div class="width:u8"></div>
+<div class="width:u9"></div>
+<div class="width:u10"></div>
+<div class="width:u11"></div>
+<div class="width:u12"></div>
+<div class="width:u13"></div>
+<div class="width:u14"></div>
+<div class="width:u15"></div>
+<div class="width:u16"></div>
+<div class="width:u17"></div>
+<div class="width:u18"></div>
+<div class="width:u19"></div>
+<div class="width:u20"></div>
 ```
-{{% /codeblock %}}
 
 ### Extra Modifiers
 
 Full widths and default settings are also available.
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
 <div class="width:100%"></div>
 <div class="width:auto"></div>
 ```
-{{% /codeblock %}}
 
 ### Responsive Margin
 
-To apply responsive widthss add responsive suffixes
+To apply responsive widths add responsive suffixes
 
-{{% codeblock key="language" definition="html" margin="bottom" %}}
 ```html
-<div class="width@sm:10">
+<div class="width:u8 width@sm:u10">
   ...
 </div>
 ```
-{{% /codeblock %}}
 
 ### Local Variables
 
 You can override this component using the following local variables.
 
-{{% codeblock key="language" definition="css" margin="bottom" %}}
 ```css
-$widths: 18 !default;
+$widths: 20 !default;
 ```
-{{% /codeblock %}}
 
 ### Options
 
@@ -92,13 +86,13 @@ The following modifiers are available.
       <code>width</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:18</code><br>
+      <code>:u1</code> ... <code>:u20</code><br>
       <code>:100%</code> <code>:auto</code>
     </td>
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set width
     </td>
   </tr>

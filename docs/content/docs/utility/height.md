@@ -8,29 +8,29 @@ description = "The height component adds height to any object or container."
 
 ### Basic Usage
 
-Defind with `height`. There are 20 levels of height which are based on the standard unit chart.
+Defind with `height`. There are 20 levels of unit based heights available.
 
 ```html
-<div class="height:1"></div>
-<div class="height:2"></div>
-<div class="height:3"></div>
-<div class="height:4"></div>
-<div class="height:5"></div>
-<div class="height:6"></div>
-<div class="height:7"></div>
-<div class="height:8"></div>
-<div class="height:9"></div>
-<div class="height:10"></div>
-<div class="height:11"></div>
-<div class="height:12"></div>
-<div class="height:13"></div>
-<div class="height:14"></div>
-<div class="height:15"></div>
-<div class="height:16"></div>
-<div class="height:17"></div>
-<div class="height:18"></div>
-<div class="height:20"></div>
-<div class="height:20"></div>
+<div class="height:u1"></div>
+<div class="height:u2"></div>
+<div class="height:u3"></div>
+<div class="height:u4"></div>
+<div class="height:u5"></div>
+<div class="height:u6"></div>
+<div class="height:u7"></div>
+<div class="height:u8"></div>
+<div class="height:u9"></div>
+<div class="height:u10"></div>
+<div class="height:u11"></div>
+<div class="height:u12"></div>
+<div class="height:u13"></div>
+<div class="height:u14"></div>
+<div class="height:u15"></div>
+<div class="height:u16"></div>
+<div class="height:u17"></div>
+<div class="height:u18"></div>
+<div class="height:u19"></div>
+<div class="height:u20"></div>
 ```
 
 ### Extra Modifiers
@@ -44,10 +44,10 @@ Full heights and default settings are also available.
 
 ### Responsive Margin
 
-To apply responsive heightss add responsive suffixes
+To apply responsive heights add responsive suffixes
 
 ```html
-<div class="height@sm:10">
+<div class="height:u8 height@sm:u10">
   ...
 </div>
 ```
@@ -86,13 +86,13 @@ The following modifiers are available.
       <code>height</code>
     </td>
     <td data-label="Attributes">
-      <code>:1</code> ... <code>:20</code><br>
+      <code>:u1</code> ... <code>:u20</code><br>
       <code>:100%</code> <code>:auto</code>
     </td>
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set height
     </td>
   </tr>

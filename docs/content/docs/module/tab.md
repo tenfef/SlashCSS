@@ -133,7 +133,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Reset the default tab styling
     </td>
   </tr>
@@ -147,7 +147,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set the position of tab header items
     </td>
   </tr>

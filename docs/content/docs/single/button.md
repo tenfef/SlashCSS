@@ -333,7 +333,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Outline or flat style buttons
     </td>
   </tr>
@@ -347,7 +347,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set button size
     </td>
   </tr>
@@ -361,7 +361,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set horizontal padding
     </td>
   </tr>
@@ -375,7 +375,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Vertically stack buttons
     </td>
   </tr>

@@ -61,7 +61,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply or remove default padding
     </td>
   </tr>

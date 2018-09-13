@@ -69,7 +69,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Distribute child elements horizontally or vertically
     </td>
   </tr>

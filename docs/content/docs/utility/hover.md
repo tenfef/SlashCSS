@@ -93,7 +93,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set hover states
     </td>
   </tr>
@@ -107,7 +107,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set hover fill
     </td>
   </tr>
@@ -121,7 +121,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set hover colors
     </td>
   </tr>
@@ -135,7 +135,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set hover opacity
     </td>
   </tr>

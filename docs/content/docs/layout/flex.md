@@ -108,7 +108,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply flex display and grow properties
     </td>
   </tr>
@@ -122,7 +122,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply flex direction properties
     </td>
   </tr>
@@ -136,7 +136,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply flex wrap properties
     </td>
   </tr>
@@ -150,7 +150,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply order properties
     </td>
   </tr>

@@ -101,7 +101,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set default media properties
     </td>
   </tr>
@@ -115,7 +115,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set image size
     </td>
   </tr>

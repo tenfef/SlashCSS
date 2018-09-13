@@ -246,7 +246,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Enable hoverable dropdowns
     </td>
   </tr>
@@ -260,7 +260,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Define dropdown position and fade in position
     </td>
   </tr>

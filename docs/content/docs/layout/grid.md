@@ -168,7 +168,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set grid column template
     </td>
   </tr>
@@ -183,7 +183,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set gutter widths
     </td>
   </tr>
@@ -198,7 +198,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set gutter heights
     </td>
   </tr>
@@ -213,7 +213,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set gutter widths
     </td>
   </tr>

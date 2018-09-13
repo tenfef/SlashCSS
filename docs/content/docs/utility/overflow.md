@@ -64,7 +64,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set overflow visibility
     </td>
   </tr>
@@ -78,7 +78,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set overflow visibility of horizontal and vertical
     </td>
   </tr>

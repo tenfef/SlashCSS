@@ -10,25 +10,19 @@ description = "The float component forces float of any given element."
 
 Defined with `float` and direction.
 
-<div class="row margin-bottom:u2">
+<div class="row margin-bottom:u4">
   <div class="column:12">
-    <div class="width:100px height:10 float:left">
-      <img src="https://placeimg.com/500/500/people">
-    </div>
+    <img src="https://placeimg.com/200/200/people" class="media media-size:xl float:left">
   </div>
 </div>
-<div class="row margin-bottom:u2">
+<div class="row margin-bottom:u4">
   <div class="column:12">
-    <div class="width:100px height:10 float:right">
-      <img src="https://placeimg.com/500/500/people">
-    </div>
+    <img src="https://placeimg.com/200/200/people" class="media media-size:xl float:right">
   </div>
 </div>
-<div class="row margin-bottom:u2">
+<div class="row margin-bottom:u4">
   <div class="column:12">
-    <div class="width:100px height:10 float:none">
-      <img src="https://placeimg.com/500/500/people">
-    </div>
+    <img src="https://placeimg.com/200/200/people" class="media media-size:xl float:none">
   </div>
 </div>
 
@@ -91,7 +85,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Define float
     </td>
   </tr>

@@ -106,7 +106,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Apply defined color
     </td>
   </tr>
@@ -120,7 +120,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Apply light or dark tonal variants
     </td>
   </tr>

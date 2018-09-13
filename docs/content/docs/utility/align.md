@@ -129,7 +129,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set vertical aligment
     </td>
   </tr>
@@ -142,7 +142,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set text alignment
     </td>
   </tr>
@@ -156,7 +156,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set flexible content alignment
     </td>
   </tr>
@@ -170,7 +170,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Set alignement of flexible items
     </td>
   </tr>

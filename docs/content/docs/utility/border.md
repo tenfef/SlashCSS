@@ -137,7 +137,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply or remove border
     </td>
   </tr>
@@ -151,7 +151,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply or remove directional border
     </td>
   </tr>
@@ -165,7 +165,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply various corner styles
     </td>
   </tr>
@@ -179,7 +179,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Apply positional corner styles
     </td>
   </tr>
@@ -193,7 +193,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Control border color
     </td>
   </tr>
@@ -207,7 +207,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Control border width
     </td>
   </tr>

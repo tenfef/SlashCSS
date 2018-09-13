@@ -549,7 +549,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Define background color
     </td>
   </tr>
@@ -563,7 +563,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Define background size
     </td>
   </tr>
@@ -577,7 +577,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Define background position
     </td>
   </tr>

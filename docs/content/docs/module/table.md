@@ -166,7 +166,7 @@ The following settings are available.
     <td data-label="Responsive">
       Yes
     </td>
-    <td class="row:reverse">
+    <td>
       Enable/disable responsiveness
     </td>
   </tr>

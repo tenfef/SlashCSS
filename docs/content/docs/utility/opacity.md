@@ -103,7 +103,7 @@ The following modifiers are available.
     <td data-label="Responsive">
       No
     </td>
-    <td class="row:reverse">
+    <td>
       Set opacity level
     </td>
   </tr>
