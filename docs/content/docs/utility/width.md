@@ -35,9 +35,18 @@ Defind with `width`. There are 20 levels of unit based widths available.
 
 ### Extra Modifiers
 
-Full widths and default settings are also available.
+Percentage based widths and default settings are also available.
 
 ```html
+<div class="width:10%"></div>
+<div class="width:20%"></div>
+<div class="width:30%"></div>
+<div class="width:40%"></div>
+<div class="width:50%"></div>
+<div class="width:60%"></div>
+<div class="width:70%"></div>
+<div class="width:80%"></div>
+<div class="width:90%"></div>
 <div class="width:100%"></div>
 <div class="width:auto"></div>
 ```
@@ -87,7 +96,8 @@ The following modifiers are available.
     </td>
     <td data-label="Attributes">
       <code>:u1</code> ... <code>:u20</code><br>
-      <code>:100%</code> <code>:auto</code>
+      <code>:10%</code> ... <code>:100%</code><br />
+      <code>:auto</code>
     </td>
     <td data-label="Responsive">
       Yes

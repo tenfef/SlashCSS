@@ -5,11 +5,13 @@ WIDTH
 $widths: 20 !default;
 
 .#{$prefix}width {
-  &\:100\% {
-    width: 100% !important;
-  }
   &\:auto {
     width: auto !important;
+  }
+  @for $i from 1 through 10 {
+    &\:#{$i}0\% {
+      width: #{$i}0% !important;
+    }
   }
   @while $widths > 0 {
     &\:u#{$widths} {
@@ -20,11 +22,13 @@ $widths: 20 !default;
   @each $key, $value in $screens {
     &\@#{$key} {
       @media (min-width: #{$value}) {
-        &\:100\%  {
-          width: 100% !important;
-        }
         &\:auto {
           width: auto !important;
+        }
+        @for $i from 1 through 10 {
+          &\:#{$i}0\% {
+            width: #{$i}0% !important;
+          }
         }
         @while $widths > 0 {
           &\:u#{$widths} {

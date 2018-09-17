@@ -35,9 +35,18 @@ Defind with `height`. There are 20 levels of unit based heights available.
 
 ### Extra Modifiers
 
-Full heights and default settings are also available.
+Percentage based heights and default settings are also available.
 
 ```html
+<div class="height:10%"></div>
+<div class="height:20%"></div>
+<div class="height:30%"></div>
+<div class="height:40%"></div>
+<div class="height:50%"></div>
+<div class="height:60%"></div>
+<div class="height:70%"></div>
+<div class="height:80%"></div>
+<div class="height:90%"></div>
 <div class="height:100%"></div>
 <div class="height:auto"></div>
 ```
@@ -87,7 +96,8 @@ The following modifiers are available.
     </td>
     <td data-label="Attributes">
       <code>:u1</code> ... <code>:u20</code><br>
-      <code>:100%</code> <code>:auto</code>
+      <code>:10%</code> ... <code>:100%</code><br />
+      <code>:auto</code>
     </td>
     <td data-label="Responsive">
       Yes
