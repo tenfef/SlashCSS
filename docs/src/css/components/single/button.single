@@ -266,7 +266,7 @@ BUTTON(S)
         }
 
       }
-      &.buttons\:stack {
+      &.buttons\:pile {
         & > .button {
 
           &.button-style\:outline {
@@ -413,7 +413,7 @@ BUTTON(S)
   DIRECTION
   ******************************/
 
-  &\:stack {
+  &\:pile {
     flex-direction: column;
     & > .button {
       &.border-radius\:outline {

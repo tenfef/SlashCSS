@@ -146,7 +146,7 @@ Buttons can be joined to form several buttons. Buttons can also be vertical.
 </div>
 
 <div class="margin-bottom:u6">
-  <div class="buttons border-radius:round buttons:stack">
+  <div class="buttons border-radius:round buttons:pile">
     <button class="button button-color:pink button-style:outline">1</button>
     <button class="button button-color:violet button-style:outline">2</button>
     <button class="button button-color:purple button-style:outline">3</button>
@@ -155,7 +155,7 @@ Buttons can be joined to form several buttons. Buttons can also be vertical.
 </div>
 
 <div class="margin-bottom:u6">
-  <div class="buttons border-radius:round buttons:stack">
+  <div class="buttons border-radius:round buttons:pile">
     <button class="button button-color:green">1</button>
     <button class="button button-color:green">2</button>
     <button class="button button-color:green">3</button>
@@ -178,20 +178,20 @@ Buttons can be joined to form several buttons. Buttons can also be vertical.
   <button class="button button-color:navy button-style:outline">4</button>
 </div>
 
-<div class="buttons border-radius:round buttons:stack">
+<div class="buttons border-radius:round buttons:pile">
   <button class="button button-color:pink button-style:outline">1</button>
   <button class="button button-color:violet button-style:outline">2</button>
   <button class="button button-color:purple button-style:outline">3</button>
   <button class="button button-color:navy button-style:outline">4</button>
 </div>
 
-<div class="buttons border-radius:round buttons:stack">
+<div class="buttons border-radius:round buttons:pile">
   <button class="button button-color:green">1</button>
   <button class="button button-color:green">2</button>
   <button class="button button-color:green">3</button>
 </div>
 
-<div class="buttons buttons-direction@md:down">
+<div class="buttons">
   <button class="button">1</button>
   <button class="button">2</button>
   <button class="button">3</button>
