@@ -52,22 +52,22 @@ $button-widths: 5 !default;
       &\:#{$key} {
         @if $key == white {
           color: var(--black);
-          background: linear-gradient(to bottom, var(--white) 0%, var(--grey-l3) 100%) !important;
+          background: linear-gradient(to bottom, var(--white) 0%, var(--grey-l3) 100%);
         } @else if $key == black {
-          background: linear-gradient(to bottom, var(--grey-d2) 0%, var(--grey-d5) 100%) !important;
+          background: linear-gradient(to bottom, var(--grey-d2) 0%, var(--grey-d5) 100%);
           &:hover {
-            background: linear-gradient(to bottom, var(--grey-d1) 0%, var(--grey-d5) 100%) !important;
+            background: linear-gradient(to bottom, var(--grey-d1) 0%, var(--grey-d5) 100%);
           }
           &:active {
-            background: linear-gradient(to bottom, var(--grey-d2) 0%, var(--grey-d5) 100%) !important;
+            background: linear-gradient(to bottom, var(--grey-d2) 0%, var(--grey-d5) 100%);
           }
         } @else {
-          background: linear-gradient(to bottom, var(--#{$key}-l1) 0%, var(--#{$key}-d1) 100%) !important;
+          background: linear-gradient(to bottom, var(--#{$key}-l1) 0%, var(--#{$key}-d1) 100%);
           &:hover {
-            background: linear-gradient(to bottom, var(--#{$key}-l2) 0%, var(--#{$key}-d1) 100%) !important;
+            background: linear-gradient(to bottom, var(--#{$key}-l2) 0%, var(--#{$key}-d1) 100%);
           }
           &:active {
-            background: linear-gradient(to bottom, var(--#{$key}-l1) 0%, var(--#{$key}-d1) 100%) !important;
+            background: linear-gradient(to bottom, var(--#{$key}-l1) 0%, var(--#{$key}-d1) 100%);
           }
         }
       }
@@ -121,13 +121,13 @@ $button-widths: 5 !default;
 
   &-style {
     &\:elevate {
-      box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2), 0px 5px 9px 0px var(--grey-l2) !important;
+      box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2), 0px 5px 9px 0px var(--grey-l2);
       &:hover {
-        box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2), 0px 6px 10px 0px var(--grey-l1) !important;
+        box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2), 0px 6px 10px 0px var(--grey-l1);
         transform: translateY(-3px);
       }
       &:active {
-        box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2) !important;
+        box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2);
         transform: translateY(0);
       }
     }
@@ -148,30 +148,30 @@ $button-widths: 5 !default;
         @each $key, $value in $colors {
           &\:#{$key} {
             @if $key == white {
-              background: var(--white) !important;
+              background: var(--white);
               color: var(--black);
               &:hover {
-                background: var(--grey-l5) !important;
+                background: var(--grey-l5);
               }
               &:active {
-                background: var(--grey-l4) !important;
+                background: var(--grey-l4);
               }
             } @else if $key == black {
-              background: var(--black) !important;
+              background: var(--black);
               color: var(--white);
               &:hover {
-                background: var(--grey-d4) !important;
+                background: var(--grey-d4);
               }
               &:active {
-                background: var(--black) !important;
+                background: var(--black);
               }
             } @else {
-              background: var(--#{$key}) !important;
+              background: var(--#{$key});
               &:hover {
-                background: var(--#{$key}-l1) !important;
+                background: var(--#{$key}-l1);
               }
               &:active {
-                background: var(--#{$key}) !important;
+                background: var(--#{$key});
               }
             }
           }
@@ -199,37 +199,37 @@ $button-widths: 5 !default;
         @each $key, $value in $colors {
           &\:#{$key} {
             @if $key == white {
-              background: transparent !important;
+              background: transparent;
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--white);
               color: var(--white);
               &:hover {
-                background: var(--white) !important;
+                background: var(--white);
                 color: var(--black);
               }
               &:active {
-                background: var(--white) !important;
+                background: var(--white);
               }
             } @else if $key == black {
-              background: transparent !important;
+              background: transparent;
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--black);
               color: var(--black);
               &:hover {
-                background: var(--black) !important;
+                background: var(--black);
                 color: var(--white);
               }
               &:active {
-                background: var(--black) !important;
+                background: var(--black);
               }
             } @else {
-              background: transparent !important;
+              background: transparent;
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key});
               color: var(--#{$key});
               &:hover {
-                background: var(--#{$key}-l1) !important;
+                background: var(--#{$key}-l1);
                 color: var(--white);
               }
               &:active {
-                background: var(--#{$key}) !important;
+                background: var(--#{$key});
               }
             }
           }
@@ -312,30 +312,30 @@ BUTTON(S)
       @each $key, $value in $colors {
         &\:#{$key} {
             @if $key == white {
-                background: var(--white) !important;
+                background: var(--white);
                 color: var(--grey-d1);
                 &:hover {
-                  background: var(--grey-l4) !important;
+                  background: var(--grey-l4);
                 }
                 &:active {
-                  background: var(--white) !important;
+                  background: var(--white);
                 }
             } @else if $key == black {
-                background: var(--black) !important;
+                background: var(--black);
                 color: var(--white);
                 &:hover {
-                  background: var(--grey-d4) !important;
+                  background: var(--grey-d4);
                 }
                 &:active {
-                  background: var(--black) !important;
+                  background: var(--black);
                 }
             } @else {
-            background: var(--#{$key}) !important;
+            background: var(--#{$key});
                 &:hover {
-                  background: var(--#{$key}-l1) !important;
+                  background: var(--#{$key}-l1);
                 }
                 &:active {
-                  background: var(--#{$key}) !important;
+                  background: var(--#{$key});
                 }
             }
         }
@@ -348,11 +348,11 @@ BUTTON(S)
       box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--primary-l4);
 
       &:hover {
-        background: var(--primary-l5) !important;
+        background: var(--primary-l5);
         color: var(--primary-d1);
       }
       &:active {
-        background: var(--primary-l4) !important;
+        background: var(--primary-l4);
       }
 
       &:first-child {
@@ -370,37 +370,37 @@ BUTTON(S)
         @each $key, $value in $colors {
           &\:#{$key} {
             @if $key == white {
-              background: transparent !important;
+              background: transparent;
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--white);
               color: var(--white);
               &:hover {
-                background: var(--white) !important;
+                background: var(--white);
                 color: var(--black);
               }
               &:active {
-                background: var(--white) !important;
+                background: var(--white);
               }
             } @else if $key == black {
-              background: transparent !important;
+              background: transparent;
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--black);
               color: var(--black);
               &:hover {
-                background: var(--black) !important;
+                background: var(--black);
                 color: var(--white);
               }
               &:active {
-                background: var(--black) !important;
+                background: var(--black);
               }
             } @else {
-              background: transparent !important;
+              background: transparent;
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key});
               color: var(--#{$key});
               &:hover {
-                background: var(--#{$key}-l1) !important;
+                background: var(--#{$key}-l1);
                 color: var(--white);
               }
               &:active {
-                background: var(--#{$key}) !important;
+                background: var(--#{$key});
               }
             }
           }
