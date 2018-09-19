@@ -340,7 +340,7 @@ The following modifiers are available.
       <code>buttons</code>
     </td>
     <td data-label="Attributes">
-      <code>:stack</code>
+      <code>:pile</code>
     </td>
     <td data-label="Responsive">
       No
