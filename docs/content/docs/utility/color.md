@@ -8,7 +8,7 @@ description = "The color components applies colors to text elements."
 
 ### Basic Colors
 
-Defined with `color` all base colors are available.
+Defined with `color`, the following base colors are available.
 
 <h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u2 color:red">Red</h6>
 <h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u2 color:pink">Pink</h6>
@@ -24,7 +24,11 @@ Defined with `color` all base colors are available.
 <h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u2 color:brown">Brown</h6>
 <h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u2 color:grey">Grey</h6>
 <h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u2 color:white fill:black display:inline-block">White</h6>
-<h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u4 color:black">Black</h6>
+<h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u2 color:black">Black</h6>
+<h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u2 color:primary">Primary</h6>
+<h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u2 color:secondary">Secondary</h6>
+<h6 class="font-height:0 font-weight:medium margin:u0 margin-bottom:u4 color:tertiary">Tertiary</h6>
+
 
 
 ```html
@@ -43,6 +47,9 @@ Defined with `color` all base colors are available.
 <h6 class="color:grey">Grey</h6>
 <h6 class="color:white">White</h6>
 <h6 class="color:black">Black</h6>
+<h6 class="color:primary">Primary</h6>
+<h6 class="color:secondary">Secondary</h6>
+<h6 class="color:tertiary">Tertiary</h6>
 ```
 
 ### Tonal Colors

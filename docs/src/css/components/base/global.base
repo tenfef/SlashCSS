@@ -3,8 +3,6 @@ GLOBAL
 ************************************************************/
 
 :root {
-  --primary-color: var(--navy-l1);
-	--secondary-color: var(--orange);
 	--background-color: var(--white);
 	--default-color: var(--grey-d4);
   --border-color: var(--grey-l4);
@@ -44,11 +42,11 @@ body {
 	box-sizing: inherit;
 }
 ::selection {
-  background: var(--primary-color);
+  background: var(--primary);
 	color: white;
 }
 ::-moz-selection {
-	background: var(--primary-color);
+	background: var(--primary);
 	color: white;
 }
 
@@ -87,7 +85,7 @@ p {
 }
 a {
   cursor: pointer;
-	color: var(--primary-color);
+	color: var(--primary);
 	text-decoration: none;
 	transition: var(--transition);
 }
@@ -108,7 +106,7 @@ blockquote {
 	margin-bottom: var(--u7);
 	padding: var(--u4) var(--u7);
 	background: var(--grey-l4);
-	box-shadow: inset 4px 0px 0px 0px var(--primary-color);
+	box-shadow: inset 4px 0px 0px 0px var(--primary);
 	p {
 		margin: 0;
 		font-size: var(--font-size);

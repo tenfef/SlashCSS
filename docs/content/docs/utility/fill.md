@@ -466,6 +466,111 @@ Defined with `fill`. All standard and tonal color are available. Each base color
 
     </div>
   </section>
+  <section class="column:3 margin-bottom:u8">
+    <div class="padding:u4 fill:primary-l5">
+
+    </div>
+    <div class="padding:u4 fill:primary-l4">
+
+    </div>
+    <div class="padding:u4 fill:primary-l3">
+
+    </div>
+    <div class="padding:u4 fill:primary-l2">
+
+    </div>
+    <div class="padding:u4 fill:primary-l1">
+
+    </div>
+    <div class="padding:u4 fill:primary">
+
+    </div>
+    <div class="padding:u4 fill:primary-d1">
+
+    </div>
+    <div class="padding:u4 fill:primary-d2">
+
+    </div>
+    <div class="padding:u4 fill:primary-d3">
+
+    </div>
+    <div class="padding:u4 fill:primary-d4">
+
+    </div>
+    <div class="padding:u4 fill:primary-d5">
+
+    </div>
+  </section>
+  <section class="column:3 margin-bottom:u8">
+    <div class="padding:u4 fill:secondary-l5">
+
+    </div>
+    <div class="padding:u4 fill:secondary-l4">
+
+    </div>
+    <div class="padding:u4 fill:secondary-l3">
+
+    </div>
+    <div class="padding:u4 fill:secondary-l2">
+
+    </div>
+    <div class="padding:u4 fill:secondary-l1">
+
+    </div>
+    <div class="padding:u4 fill:secondary">
+
+    </div>
+    <div class="padding:u4 fill:secondary-d1">
+
+    </div>
+    <div class="padding:u4 fill:secondary-d2">
+
+    </div>
+    <div class="padding:u4 fill:secondary-d3">
+
+    </div>
+    <div class="padding:u4 fill:secondary-d4">
+
+    </div>
+    <div class="padding:u4 fill:secondary-d5">
+
+    </div>
+  </section>
+  <section class="column:3 margin-bottom:u8">
+    <div class="padding:u4 fill:tertiary-l5">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-l4">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-l3">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-l2">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-l1">
+
+    </div>
+    <div class="padding:u4 fill:tertiary">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-d1">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-d2">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-d3">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-d4">
+
+    </div>
+    <div class="padding:u4 fill:tertiary-d5">
+
+    </div>
+  </section>
 </div>
 
 ```html

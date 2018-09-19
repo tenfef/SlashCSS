@@ -81,7 +81,11 @@ $colors: (
   yellow: #FFCE00,
   orange: #ff8a00,
   brown: #A83C00,
-  grey: #5c789c
+  grey: #5c789c,
+
+  primary: #0036d0,
+  secondary: #ff5600,
+  tertiary: #ffdd24
 ) !default;
 
 $tonal-colors: (
@@ -90,7 +94,7 @@ $tonal-colors: (
 
 $mono-colors: (
   white: #ffffff,
-  black: #000000
+  black: #000000,
 ) !default;
 
 @function generate-color-tones ($key, $value) {
