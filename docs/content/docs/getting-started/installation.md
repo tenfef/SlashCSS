@@ -50,7 +50,7 @@ src/js/main.js
 
 SlashCSS was designed to be useful for a wide range of developers. Although the quick way allows for quick project setup, it's potential really shines once the proper configuration requirements are met. If you're not familiar with this style of project setup or need further assistance contact me through [twitter](https://twitter.com/SlashCSS/) or email and I'd be happy to help!
 
-<a href="mailto:made@slashcss.com" class="button button-style:outline font-size:body font-case:none color:black">
+<a href="mailto:made@slashcss.com" class="button button-style:outline font-size:body font-case:none color:grey">
   <i class="fas fa-envelope margin-right:u2"></i>
   Get in touch
 </a>

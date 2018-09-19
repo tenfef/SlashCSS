@@ -9,7 +9,7 @@ description = "Colorful and juicy button component in all shapes and sizes."
 
 A standard button
 
-<button class="button fill:blue">Button</button>
+<button class="button button-color:blue">Button</button>
 
 ```html
 <button class="button">
@@ -22,11 +22,11 @@ A standard button
 Buttons comes in various sizes, use standard size modifiers to transform its size.
 
 <div class="margin-bottom:u6">
-  <button class="button fill:red button-size:xs">Button</button>
-  <button class="button fill:pink button-size:sm">Button</button>
-  <button class="button fill:violet button-size:md">Button</button>
-  <button class="button fill:purple button-size:lg">Button</button>
-  <button class="button fill:navy button-size:xl">Button</button>
+  <button class="button button-color:red button-size:xs">Button</button>
+  <button class="button button-color:pink button-size:sm">Button</button>
+  <button class="button button-color:violet button-size:md">Button</button>
+  <button class="button button-color:purple button-size:lg">Button</button>
+  <button class="button button-color:navy button-size:xl">Button</button>
 </div>
 
 ```html
@@ -41,14 +41,14 @@ Buttons comes in various sizes, use standard size modifiers to transform its siz
 
 Buttons can vary in width.
 
-<div class="distribute-y:1 margin-bottom:u6">
+<div class="distribute-y:u4 margin-bottom:u6">
   <button class="button">Default</button><br>
-  <button class="button button-grow:u2 fill:white elevate">U2</button><br>
-  <button class="button button-grow:u4 fill:white elevate">U4</button><br>
-  <button class="button button-grow:u6 fill:white elevate">U6</button><br>
-  <button class="button button-grow:u8 fill:white elevate">U8</button><br>
-  <button class="button button-grow:u10 fill:white elevate">U10</button><br>
-  <button class="button width:100% fill:white elevate">Fluid</button>
+  <button class="button button-grow:u2 button-color:white button-style:elevate">U2</button><br>
+  <button class="button button-grow:u4 button-color:white button-style:elevate">U4</button><br>
+  <button class="button button-grow:u6 button-color:white button-style:elevate">U6</button><br>
+  <button class="button button-grow:u8 button-color:white button-style:elevate">U8</button><br>
+  <button class="button button-grow:u10 button-color:white button-style:elevate">U10</button><br>
+  <button class="button width:100% button-color:white button-style:elevate">Fluid</button>
 </div>
 
 ```html
@@ -103,14 +103,14 @@ There are 4 different styles of buttons, default, outline and elevated.
 
 <div class="margin-bottom:u6">
   <button class="button margin-bottom:u6">Default</button>
-  <button class="button elevate margin-bottom:u6">Elevated</button>
+  <button class="button button-style:elevate margin-bottom:u6">Elevated</button>
   <button class="button button-style:outline margin-bottom:u6">Outline</button>
   <button class="button button-style:flat">Flat</button>
 </div>
 
 ```html
 <button class="button">Default</button>
-<button class="button elevate">Elevated</button>
+<button class="button button-style:elevate">Elevated</button>
 <button class="button button-style:outline">Outline</button>
 <button class="button button-style:flat">Flat</button>
 ```
@@ -147,18 +147,18 @@ Buttons can be joined to form several buttons. Buttons can also be vertical.
 
 <div class="margin-bottom:u6">
   <div class="buttons border-radius:round buttons:stack">
-    <button class="button fill:pink button-style:outline">1</button>
-    <button class="button fill:violet button-style:outline">2</button>
-    <button class="button fill:purple button-style:outline">3</button>
-    <button class="button fill:navy button-style:outline">4</button>
+    <button class="button button-color:pink button-style:outline">1</button>
+    <button class="button button-color:violet button-style:outline">2</button>
+    <button class="button button-color:purple button-style:outline">3</button>
+    <button class="button button-color:navy button-style:outline">4</button>
   </div>
 </div>
 
 <div class="margin-bottom:u6">
   <div class="buttons border-radius:round buttons:stack">
-    <button class="button fill:green">1</button>
-    <button class="button fill:green">2</button>
-    <button class="button fill:green">3</button>
+    <button class="button button-color:green">1</button>
+    <button class="button button-color:green">2</button>
+    <button class="button button-color:green">3</button>
   </div>
 </div>
 
@@ -172,23 +172,23 @@ Buttons can be joined to form several buttons. Buttons can also be vertical.
 
 ```html
 <div class="buttons border-radius:round">
-  <button class="button fill:pink button-style:outline">1</button>
-  <button class="button fill:violet button-style:outline">2</button>
-  <button class="button fill:purple button-style:outline">3</button>
-  <button class="button fill:navy button-style:outline">4</button>
+  <button class="button button-color:pink button-style:outline">1</button>
+  <button class="button button-color:violet button-style:outline">2</button>
+  <button class="button button-color:purple button-style:outline">3</button>
+  <button class="button button-color:navy button-style:outline">4</button>
 </div>
 
 <div class="buttons border-radius:round buttons:stack">
-  <button class="button fill:pink button-style:outline">1</button>
-  <button class="button fill:violet button-style:outline">2</button>
-  <button class="button fill:purple button-style:outline">3</button>
-  <button class="button fill:navy button-style:outline">4</button>
+  <button class="button button-color:pink button-style:outline">1</button>
+  <button class="button button-color:violet button-style:outline">2</button>
+  <button class="button button-color:purple button-style:outline">3</button>
+  <button class="button button-color:navy button-style:outline">4</button>
 </div>
 
 <div class="buttons border-radius:round buttons:stack">
-  <button class="button fill:green">1</button>
-  <button class="button fill:green">2</button>
-  <button class="button fill:green">3</button>
+  <button class="button button-color:green">1</button>
+  <button class="button button-color:green">2</button>
+  <button class="button button-color:green">3</button>
 </div>
 
 <div class="buttons buttons-direction@md:down">
@@ -200,91 +200,47 @@ Buttons can be joined to form several buttons. Buttons can also be vertical.
 
 ### Colors
 
-Use the `fill` component to apply different color your buttons.
+Use `button-color` to apply different color your buttons. Tonal colors are not available.
 
-<button class="button button-style:outline fill:red margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:pink margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:violet margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:purple margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:navy margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:blue margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:teal margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:green margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:lime margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:yellow margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:orange margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:brown margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:grey margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:white margin-bottom:u6">Button</button>
-<button class="button button-style:outline fill:black margin-bottom:u6">Button</button>
-
-<button class="button button-style:flat fill:red margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:pink margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:violet margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:purple margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:navy margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:blue margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:teal margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:green margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:lime margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:yellow margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:orange margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:brown margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:grey margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:white margin-bottom:u6">Button</button>
-<button class="button button-style:flat fill:black margin-bottom:u6">Button</button>
-
-<button class="button fill:red margin-bottom:u6">Button</button>
-<button class="button fill:pink margin-bottom:u6">Button</button>
-<button class="button fill:violet margin-bottom:u6">Button</button>
-<button class="button fill:purple margin-bottom:u6">Button</button>
-<button class="button fill:navy margin-bottom:u6">Button</button>
-<button class="button fill:blue margin-bottom:u6">Button</button>
-<button class="button fill:teal margin-bottom:u6">Button</button>
-<button class="button fill:green margin-bottom:u6">Button</button>
-<button class="button fill:lime margin-bottom:u6">Button</button>
-<button class="button fill:yellow margin-bottom:u6">Button</button>
-<button class="button fill:orange margin-bottom:u6">Button</button>
-<button class="button fill:brown margin-bottom:u6">Button</button>
-<button class="button fill:grey margin-bottom:u6">Button</button>
-<button class="button fill:white margin-bottom:u6">Button</button>
-<button class="button fill:black margin-bottom:u6">Button</button>
-
-<button class="button elevate fill:red margin-bottom:u6">Button</button>
-<button class="button elevate fill:pink margin-bottom:u6">Button</button>
-<button class="button elevate fill:violet margin-bottom:u6">Button</button>
-<button class="button elevate fill:purple margin-bottom:u6">Button</button>
-<button class="button elevate fill:navy margin-bottom:u6">Button</button>
-<button class="button elevate fill:blue margin-bottom:u6">Button</button>
-<button class="button elevate fill:teal margin-bottom:u6">Button</button>
-<button class="button elevate fill:green margin-bottom:u6">Button</button>
-<button class="button elevate fill:lime margin-bottom:u6">Button</button>
-<button class="button elevate fill:yellow margin-bottom:u6">Button</button>
-<button class="button elevate fill:orange margin-bottom:u6">Button</button>
-<button class="button elevate fill:brown margin-bottom:u6">Button</button>
-<button class="button elevate fill:grey margin-bottom:u6">Button</button>
-<button class="button elevate fill:white margin-bottom:u6">Button</button>
-<button class="button elevate fill:black margin-bottom:u6">Button</button>
-
-<button class="button fill:white elevate button-grow:u10 border-radius:round color:grey-d1 margin-bottom:u6">Button</button>
-<button class="button fill:blue elevate button-grow:u10 border-radius:round margin-bottom:u6">Button</button>
+<button class="button button-color:red margin-bottom:u6">Button</button>
+<button class="button button-color:pink margin-bottom:u6">Button</button>
+<button class="button button-color:violet margin-bottom:u6">Button</button>
+<button class="button button-color:purple margin-bottom:u6">Button</button>
+<button class="button button-color:navy margin-bottom:u6">Button</button>
+<button class="button button-color:blue margin-bottom:u6">Button</button>
+<button class="button button-color:teal margin-bottom:u6">Button</button>
+<button class="button button-color:green margin-bottom:u6">Button</button>
+<button class="button button-color:lime margin-bottom:u6">Button</button>
+<button class="button button-color:yellow margin-bottom:u6">Button</button>
+<button class="button button-color:orange margin-bottom:u6">Button</button>
+<button class="button button-color:brown margin-bottom:u6">Button</button>
+<button class="button button-color:grey margin-bottom:u6">Button</button>
+<button class="button button-color:white margin-bottom:u6">Button</button>
+<button class="button button-color:black margin-bottom:u6">Button</button>
+<button class="button button-color:blue margin-bottom:u6">Button</button>
+<button class="button button-color:primary margin-bottom:u6">Button</button>
+<button class="button button-color:secondary margin-bottom:u6">Button</button>
+<button class="button button-color:tertiary margin-bottom:u6">Button</button>
 
 ```html
-<button class="button fill:red">Button</button>
-<button class="button fill:pink">Button</button>
-<button class="button fill:violet">Button</button>
-<button class="button fill:purple">Button</button>
-<button class="button fill:navy">Button</button>
-<button class="button fill:blue">Button</button>
-<button class="button fill:teal">Button</button>
-<button class="button fill:green">Button</button>
-<button class="button fill:lime">Button</button>
-<button class="button fill:yellow">Button</button>
-<button class="button fill:orange">Button</button>
-<button class="button fill:brown">Button</button>
-<button class="button fill:grey">Button</button>
-<button class="button fill:white">Button</button>
-<button class="button fill:black">Button</button>
+<button class="button button-color:red">Button</button>
+<button class="button button-color:pink">Button</button>
+<button class="button button-color:violet">Button</button>
+<button class="button button-color:purple">Button</button>
+<button class="button button-color:navy">Button</button>
+<button class="button button-color:blue">Button</button>
+<button class="button button-color:teal">Button</button>
+<button class="button button-color:green">Button</button>
+<button class="button button-color:lime">Button</button>
+<button class="button button-color:yellow">Button</button>
+<button class="button button-color:orange">Button</button>
+<button class="button button-color:brown">Button</button>
+<button class="button button-color:grey">Button</button>
+<button class="button button-color:white">Button</button>
+<button class="button button-color:black">Button</button>
+<button class="button button-color:primary">Button</button>
+<button class="button button-color:secondary">Button</button>
+<button class="button button-color:tertiary">Button</button>
 ```
 ### Local Variables
 
@@ -328,13 +284,27 @@ The following modifiers are available.
       <code>button-style</code>
     </td>
     <td data-label="Attributes">
-      <code>:outline</code><code>:flat</code>
+      <code>:outline</code><code>:flat</code><code>:elevate</code>
     </td>
     <td data-label="Responsive">
       No
     </td>
     <td>
-      Outline or flat style buttons
+      Set button style
+    </td>
+  </tr>
+  <tr>
+    <td data-label="Properties">
+      <code>button-color</code>
+    </td>
+    <td data-label="Attributes">
+      <code>:[base color]</code>
+    </td>
+    <td data-label="Responsive">
+      No
+    </td>
+    <td>
+      Set button color
     </td>
   </tr>
   <tr>
