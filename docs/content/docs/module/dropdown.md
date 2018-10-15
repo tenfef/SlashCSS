@@ -12,7 +12,7 @@ The dropdown component is defined with the `dropdown` class and is initialized w
 
 <div class="dropdown hover margin-bottom:u2">
   <div class="dropdown/toggle">
-    <a class="button button-style:outline button-grow:1">Toggle Menu</a>
+    <a class="button button-style:outline">Toggle Menu</a>
   </div>
   <div class="dropdown/content">
     <div class="dropdown/body">
@@ -66,7 +66,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 <div>
   <div class="dropdown dropdown-position:center margin-bottom:u2">
     <a class="dropdown/toggle" title="Menu">
-      <span class="button button-style:outline button-grow:1">Center Menu</span>
+      <span class="button button-style:outline">Center Menu</span>
     </a>
     <div class="dropdown/content elevate">
       <div class="dropdown/body">
@@ -90,7 +90,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 <div>
   <div class="dropdown dropdown-position:right margin-bottom:u2">
     <a class="dropdown/toggle" title="Menu">
-      <span class="button button-style:outline button-grow:1">Right Menu</span>
+      <span class="button button-style:outline">Right Menu</span>
     </a>
     <div class="dropdown/content elevate">
       <div class="dropdown/body">
@@ -114,7 +114,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 <div>
   <div class="dropdown dropdown-position:top-right margin-bottom:u2">
     <a class="dropdown/toggle" title="Menu">
-      <span class="button button-style:outline button-grow:1">Top Right Menu</span>
+      <span class="button button-style:outline">Top Right Menu</span>
     </a>
     <div class="dropdown/content elevate">
       <div class="dropdown/body">
@@ -138,7 +138,7 @@ By default the dropdown menu is aligned to the bottom left of its parent contain
 <div>
   <div class="dropdown dropdown-position:top-center margin-bottom:u2">
     <a class="dropdown/toggle" title="Menu">
-      <span class="button button-style:outline button-grow:1">Top Center Menu</span>
+      <span class="button button-style:outline">Top Center Menu</span>
     </a>
     <div class="dropdown/content elevate">
       <div class="dropdown/body">

@@ -7,10 +7,10 @@ JUSTIFY
   text-align: justify !important;
 
   &-content {
-    &\:left {
+    &\:start {
       justify-content: flex-start !important;
     }
-    &\:right {
+    &\:end {
       justify-content: flex-end !important;
     }
     &\:center {
@@ -26,10 +26,10 @@ JUSTIFY
       &\@#{$key} {
         @media (min-width : #{$value}) {
           text-align: justify !important;
-          &\:left {
+          &\:start {
             justify-content: flex-start !important;
           }
-          &\:right {
+          &\:end {
             justify-content: flex-end !important;
           }
           &\:center {

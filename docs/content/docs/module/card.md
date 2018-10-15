@@ -42,7 +42,7 @@ The card module contains header, content and footer child elements. You can also
       <div class="card/content">
         <h6 class="font font-weight:bold margin-bottom:u6">Step 1 of 2</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@zapcss</a>. <a href="#">#css</a> <a href="#">#responsive</a></p>
-        <a href="#" class="button button-grow:1 fill:blue elevate font-weight:medium">
+        <a href="#" class="button fill:blue elevate font-weight:medium">
           Get Started
         </a>
       </div>

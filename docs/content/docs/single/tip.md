@@ -10,12 +10,12 @@ description = "The tip component adds tooltip functionality to any given element
 
 The tip component is defined by adding a data attribute `tip` with content.
 
-<button class="button button-style:outline button-grow:1 tip" tip="Just a simple tooltip">
+<button class="button button-style:outline tip" tip="Just a simple tooltip">
   Basic Tooltip
 </button>
 
 ```html
-<button class="button button-style:outline button-grow:1 tip" tip="Just a simple tooltip">
+<button class="button button-style:outline tip" tip="Just a simple tooltip">
   Basic Tooltip
 </button>
 ```
@@ -24,19 +24,19 @@ The tip component is defined by adding a data attribute `tip` with content.
 
 Tooltips can be positioned by defining its position with the data attribute `tip-position`.
 
-<button class="button button-style:outline button-grow:1 tip" tip="Just a simple tooltip">
+<button class="button button-style:outline tip" tip="Just a simple tooltip">
   Top Tooltip
 </button>
 
-<button class="button button-style:outline button-grow:1 tip tip-position:left" tip="Just a simple tooltip">
+<button class="button button-style:outline tip tip-position:left" tip="Just a simple tooltip">
   Left Tooltip
 </button>
 
-<button class="button button-style:outline button-grow:1 tip tip-position:right" tip="Just a simple tooltip">
+<button class="button button-style:outline tip tip-position:right" tip="Just a simple tooltip">
   Right Tooltip
 </button>
 
-<button class="button button-style:outline button-grow:1 tip tip-position:bottom" tip="Just a simple tooltip">
+<button class="button button-style:outline tip tip-position:bottom" tip="Just a simple tooltip">
   Bottom Tooltip
 </button>
 

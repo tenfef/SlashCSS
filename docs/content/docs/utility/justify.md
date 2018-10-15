@@ -14,10 +14,10 @@ Justify component justifies text or deals with flexbox base justification of con
 <div class="justify">
   ...
 </div>
-<div class="justify-content:left">
+<div class="justify-content:start">
   ...
 </div>
-<div class="justify-content:right">
+<div class="justify-content:end">
   ...
 </div>
 <div class="justify-content:center">
@@ -71,8 +71,8 @@ The following modifiers are available.
       <code>justify-content</code>
     </td>
     <td data-label="Attributes">
-      <code class="margin:u0">:left</code><br>
-      <code class="margin:u0">:right</code><br>
+      <code class="margin:u0">:start</code><br>
+      <code class="margin:u0">:end</code><br>
       <code class="margin:u0">:center</code><br>
       <code class="margin:u0">:between</code><br>
       <code class="margin:u0">:around</code>
