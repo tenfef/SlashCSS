@@ -20,7 +20,7 @@ $button-widths: 5 !default;
   height: var(--u9);
   margin-right: var(--u1);
   padding: 0 1rem;
-  padding-bottom: .1rem;
+  padding-bottom: .15rem;
   outline: none;
   border: none;
   border-radius: var(--button-radius);
@@ -28,46 +28,48 @@ $button-widths: 5 !default;
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   line-height: 1;
-  text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   color: white;
   white-space: nowrap;
   transition: var(--transition);
   overflow: hidden;
   cursor: pointer;
-  background: linear-gradient(to bottom, var(--primary-l1) 0%, var(--primary-d1) 100%);
-  box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5);
+  background: var(--primary);
+
   &:hover {
-    text-decoration: none;
-    background: linear-gradient(to bottom, var(--primary-l2) 0%, var(--primary-d1) 100%);
+    background: var(--primary-d1);
   }
   &:active {
-    text-decoration: none;
-    background: linear-gradient(to bottom, var(--primary-l1) 0%, var(--primary-d1) 100%);
+    background: var(--primary-d2);
   }
-
   &.button-color {
     @each $key, $value in $colors {
       &\:#{$key} {
         @if $key == white {
+          background: var(--white);
           color: var(--black);
-          background: linear-gradient(to bottom, var(--white) 0%, var(--grey-l3) 100%);
-        } @else if $key == black {
-          background: linear-gradient(to bottom, var(--grey-d2) 0%, var(--grey-d5) 100%);
           &:hover {
-            background: linear-gradient(to bottom, var(--grey-d1) 0%, var(--grey-d5) 100%);
+            background: var(--grey-l5);
           }
           &:active {
-            background: linear-gradient(to bottom, var(--grey-d2) 0%, var(--grey-d5) 100%);
+            background: var(--grey-l4);
+          }
+        } @else if $key == black {
+          background: var(--black);
+          color: var(--white);
+          &:hover {
+            background: var(--grey-d4);
+          }
+          &:active {
+            background: var(--black);
           }
         } @else {
-          background: linear-gradient(to bottom, var(--#{$key}-l1) 0%, var(--#{$key}-d1) 100%);
+          background: var(--#{$key});
           &:hover {
-            background: linear-gradient(to bottom, var(--#{$key}-l2) 0%, var(--#{$key}-d1) 100%);
+            background: var(--#{$key}-l1);
           }
           &:active {
-            background: linear-gradient(to bottom, var(--#{$key}-l1) 0%, var(--#{$key}-d1) 100%);
+            background: var(--#{$key});
           }
         }
       }
@@ -120,65 +122,6 @@ $button-widths: 5 !default;
   ******************************/
 
   &-style {
-    &\:elevate {
-      box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2), 0px 5px 9px 0px var(--grey-l2);
-      &:hover {
-        box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2), 0px 6px 10px 0px var(--grey-l1);
-        transform: translateY(-3px);
-      }
-      &:active {
-        box-shadow: inset 0 -2px 0 0 rgba(240,240,240,.5), 0 1px 5px 0 rgba(0,0,0,0.2);
-        transform: translateY(0);
-      }
-    }
-    &\:flat {
-      padding-bottom: 0;
-      box-shadow: none;
-      background: var(--primary);
-      &:hover {
-        transform: translateY(0);
-        box-shadow: none;
-        background: var(--primary-d1);
-      }
-      &:active {
-        box-shadow: none;
-        background: var(--primary-d2);
-      }
-      &.button-color {
-        @each $key, $value in $colors {
-          &\:#{$key} {
-            @if $key == white {
-              background: var(--white);
-              color: var(--black);
-              &:hover {
-                background: var(--grey-l5);
-              }
-              &:active {
-                background: var(--grey-l4);
-              }
-            } @else if $key == black {
-              background: var(--black);
-              color: var(--white);
-              &:hover {
-                background: var(--grey-d4);
-              }
-              &:active {
-                background: var(--black);
-              }
-            } @else {
-              background: var(--#{$key});
-              &:hover {
-                background: var(--#{$key}-l1);
-              }
-              &:active {
-                background: var(--#{$key});
-              }
-            }
-          }
-        }
-      }
-    }
-
     &\:outline {
       padding-bottom: 0;
       box-shadow: none;
@@ -208,6 +151,7 @@ $button-widths: 5 !default;
               }
               &:active {
                 background: var(--white);
+                color: var(--black);
               }
             } @else if $key == black {
               background: transparent;
@@ -219,17 +163,20 @@ $button-widths: 5 !default;
               }
               &:active {
                 background: var(--black);
+                color: var(--white);
               }
             } @else {
               background: transparent;
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key});
               color: var(--#{$key});
               &:hover {
-                background: var(--#{$key}-l1);
+                background: var(--#{$key});
                 color: var(--white);
               }
               &:active {
-                background: var(--#{$key});
+                background: var(--#{$key}-d1);
+                box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key}-d1);
+                color: var(--white);
               }
             }
           }
@@ -396,11 +343,11 @@ BUTTON(S)
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key});
               color: var(--#{$key});
               &:hover {
-                background: var(--#{$key}-l1);
+                background: var(--#{$key});
                 color: var(--white);
               }
               &:active {
-                background: var(--#{$key});
+                background: var(--#{$key}-d1);
               }
             }
           }

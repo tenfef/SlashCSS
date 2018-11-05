@@ -19,7 +19,10 @@ INPUT
 
 .#{$prefix}input {
 
-  // states
+  /******************************
+  STATES
+  ******************************/
+
   &.is-success {
     border-color: var(--input-success-color);
   }
@@ -30,118 +33,21 @@ INPUT
     border-color: var(--input-warning-color);
   }
 
-  &\:slide {
-    position: relative;
-    input {
-      min-height: 4rem;
-      padding: 1.75rem 0 1rem var(--input-padding-left);
+  /******************************
+  SIZES
+  ******************************/
 
-      &:placeholder-shown ~ label {
-        position: absolute;
-        top: 1.25rem;
-        left: 1rem;
-        margin: 0;
-        padding: 0;
-        font-size: var(--body);
-        color: var(--black);
-        pointer-events: none;
-      }
-      &:not(:placeholder-shown) ~ label {
-        position: absolute;
-        top: .25rem;
-        left: .5rem;
-        margin: 0;
-        padding: 0;
-        font-size: .75rem;
-        color: var(--grey-d1);
-        z-index: 1;
-        pointer-events: none;
-      }
-      & ~ label, &:focus ~ label {
-        position: absolute;
-        top: .25rem;
-        left: .5rem;
-        margin: 0;
-        padding: 0;
-        font-size: .75rem;
-        color: var(--grey-d1);
-        z-index: 1;
-        pointer-events: none;
-
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          /* IE10+ CSS styles go here */
-          position: absolute;
-          top: .25rem;
-          left: .5rem;
-          margin: 0;
-          padding: 0;
-          font-size: 13px;
-          color: var(--grey-d1);
-          z-index: 1;
-          pointer-events: none;
-        }
-      }
-
-      // states
-      &.is-success:not(:placeholder-shown) ~ label {
-        color: var(--input-success-color);
-      }
-      &.is-alert:not(:placeholder-shown) ~ label {
-        color: var(--input-alert-color);
-      }
-      &.is-warning:not(:placeholder-shown) ~ label {
-        color: var(--input-warning-color);
-      }
-
-      &.is-success {
-        border-color: var(--input-success-color);
-      }
-      &.is-alert {
-        border-color: var(--input-alert-color);
-      }
-      &.is-warning {
-        border-color: var(--input-warning-color);
+  &-size {
+    @each $size, $i in $sizes {
+      &\:#{$size} {
+        height: var(--u#{$i + 6});
       }
     }
   }
-  &\:slide-select {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
 
-    select {
-      min-height: 4rem;
-      &.is-success {
-        border-color: var(--input-success-color);
-      }
-      &.is-alert {
-        border-color: var(--input-alert-color);
-      }
-      &.is-warning {
-        border-color: var(--input-warning-color);
-      }
-    }
-
-    &:after {
-      content: '\f107';
-      position: absolute;
-      top: 2rem;
-      transform: translateY(-50%);
-      right: 1.25rem;
-      display: block;
-      font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Pro';
-      font-style: normal;
-      font-size: 1.25rem;
-      font-variant: normal;
-      text-rendering: auto;
-      font-weight: bold;
-      line-height: 1;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      color: var(--black);
-      pointer-events: none;
-    }
-  }
+  /******************************
+  TYPES
+  ******************************/
 
   &\:checkbox {
     display: block;
@@ -189,7 +95,7 @@ INPUT
         content: '';
         display: none;
         position: absolute;
-        left: .40rem;
+        left: .35rem;
         top: .07rem;
         width: .4rem;
         height: .75rem;
