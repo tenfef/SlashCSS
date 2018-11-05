@@ -31,8 +31,8 @@ $screens: (
 
 // font size map
 $html-sizes: (
-  $sm: 93.75%,  // 14px
-  $md: 93.75%, // 15px
+  $sm: 88%,  // 14px
+  $md: 94%, // 15px
   $lg: 100%    // 16px
 ) !default;
 
