@@ -2,7 +2,7 @@
 DISTRIBUTE
 ************************************************************/
 
-$distribute-gutters: 5 !default;
+$distribute-gutters: 7 !default;
 
 
 .#{$prefix}distribute {

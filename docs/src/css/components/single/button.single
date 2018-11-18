@@ -8,7 +8,7 @@ $button-widths: 5 !default;
   --button-outline-weight: 1px;
   --button-radius: 5px;
   --button-font-family: var(--font-family);
-  --button-font-size: var(--micro);
+  --button-font-size: var(--body);
   --button-font-weight: var(--medium);
 }
 

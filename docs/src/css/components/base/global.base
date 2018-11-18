@@ -173,7 +173,6 @@ input {
   display: block;
   position: relative;
   width: 100%;
-  max-width: 300px;
   height: var(--u9);
   padding-left: 1rem;
   background: var(--white);
