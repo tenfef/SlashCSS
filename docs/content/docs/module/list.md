@@ -31,7 +31,7 @@ You can use the `list-gutter` property to control the gutter between list items.
 <div class="row">
   <div class="column">
 
-    <ul class="list list-gutter:u2 margin:u0 margin-bottom:u2">
+    <ul class="list distribute-y:u2 margin:u0 margin-bottom:u2">
       <li class="list/item">
         <div class="padding:u4 border-radius fill:blue">
         </div>
@@ -122,7 +122,7 @@ You can use the `list-gutter` property to control the gutter between list items.
 </div>
 
 ```html
-<ul class="list list-gutter:u2">
+<ul class="list distribute-y:u2">
   <li class="list/item">...</li>
   <li class="list/item">...</li>
   <li class="list/item">...</li>

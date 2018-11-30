@@ -10,7 +10,7 @@ description = "The markup component formats general paragraph and heading elemen
 
 The flag object is similar to Nicole Sullivan's media object, however it is flexbox based and not limited to just image and body. You can include as many child items as you like.
 
-<div class="flag flag-gutter:u4 margin-bottom:u4">
+<div class="flag distribute-x:u4 margin-bottom:u4">
   <div class="flag/item">
     <img src="/assets/images/jin.jpg" class="media elevate border border-width:3px border-color:white media-size:md border-radius:round" alt="Jin Su Park">
   </div>
@@ -21,7 +21,7 @@ The flag object is similar to Nicole Sullivan's media object, however it is flex
 </div>
 
 ```html
-<div class="flag flag-gutter:u4">
+<div class="flag distribute-x:u4">
   <div class="flag/item">
     Image Left
   </div>

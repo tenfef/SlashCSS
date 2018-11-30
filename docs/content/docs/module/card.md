@@ -17,7 +17,7 @@ The card module contains header, content and footer child elements. You can also
         <img src="https://i.imgur.com/Ig4qpjc.jpg" class="media">
       </div>
       <div class="card/content border-bottom">
-        <div class="flag flag-gutter:u4 margin-bottom:u4">
+        <div class="flag distribute-x:u4 margin-bottom:u4">
           <div class="flag/item">
             <img src="/assets/images/jin.jpg" class="media elevate border border-width:3px border-color:white media-size:md border-radius:round" alt="Jin Su Park">
           </div>

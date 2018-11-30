@@ -13,7 +13,7 @@ The `elevate` component can be applied to any type of component.
 <button class="button fill:white elevate button-grow:2 border-radius:round color:grey-d1 margin-bottom:u2">Button</button>
 
 <div class="padding:u4 fill:white border-radius elevate">
-	<div class="flag flag-gutter:u4">
+	<div class="flag distribute-x:u4">
 		<div class="flag/item">
 			<img src="/assets/images/jin.jpg" class="media elevate border border-width:3px border-color:white media-size:md border-radius:round" alt="Jin Su Park">
 		</div>
