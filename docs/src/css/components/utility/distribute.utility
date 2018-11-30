@@ -8,7 +8,7 @@ $distribute-gutters: 7 !default;
 .#{$prefix}distribute {
 
   &-x {
-    @while $distribute-gutters > 0 {
+    @while $distribute-gutters >= 0 {
       &\:u#{$distribute-gutters * 2} > * + * {
         margin-left: var(--u#{$distribute-gutters * 2}) !important;
       }
@@ -17,7 +17,7 @@ $distribute-gutters: 7 !default;
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {
-          @while $distribute-gutters > 0 {
+          @while $distribute-gutters >= 0 {
             &\:u#{$distribute-gutters * 2} > * + * {
               margin-left: var(--u#{$distribute-gutters * 2}) !important;
             }
@@ -28,7 +28,7 @@ $distribute-gutters: 7 !default;
     }
   }
   &-y {
-    @while $distribute-gutters > 0 {
+    @while $distribute-gutters >= 0 {
       &\:u#{$distribute-gutters * 2} > * + * {
         margin-top: var(--u#{$distribute-gutters * 2}) !important;
       }
@@ -37,7 +37,7 @@ $distribute-gutters: 7 !default;
     @each $key, $value in $screens {
       &\@#{$key} {
         @media (min-width: $value) {
-          @while $distribute-gutters > 0 {
+          @while $distribute-gutters >= 0 {
             &\:u#{$distribute-gutters * 2} > * + * {
               margin-top: var(--u#{$distribute-gutters * 2}) !important;
             }

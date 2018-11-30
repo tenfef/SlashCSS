@@ -10,16 +10,11 @@ TAB
 }
 
 .#{$prefix}tab {
-  &.is-first {
-    .tab\/content {
-      border-top-left-radius: 0;
-    }
-  }
   &\/header {
     display: flex;
     position: relative;
     margin: 0;
-    .tab\/item {
+    &-item {
       position: relative;
       padding: var(--tab-item-padding);
       border-top-left-radius: var(--tab-radius);
@@ -53,14 +48,11 @@ TAB
     padding: var(--tab-content-padding);
     background: var(--tab-bg);
     box-shadow: inset 0px 0px 0px 1px var(--border-color);
-    .tab\/item {
-      height: 0;
-      overflow: hidden;
+    &-item {
+      display: none;
       opacity: 0;
-      transition: opacity .5s .1s;
-
       &.is-active {
-        height: auto;
+        display: block;
         opacity: 1;
       }
     }
@@ -71,7 +63,7 @@ TAB
       .tab\/header {
         flex-direction: column;
         flex: none;
-        .tab\/item {
+        &-item {
           border-radius: 0;
           border-top-left-radius: var(--tab-radius);
           border-bottom-left-radius: var(--tab-radius);
@@ -94,7 +86,7 @@ TAB
       .tab\/header {
         flex-direction: column;
         flex: none;
-        .tab\/item {
+        &-item {
           border-radius: 0;
           border-top-right-radius: var(--tab-radius);
           border-bottom-right-radius: var(--tab-radius);
@@ -115,7 +107,7 @@ TAB
       display: flex;
       flex-direction: column-reverse;
       .tab\/header {
-        .tab\/item {
+        &-item {
           border-radius: 0;
           border-bottom-left-radius: var(--tab-radius);
           border-bottom-right-radius: var(--tab-radius);
@@ -136,7 +128,7 @@ TAB
 
   &\:reset {
     .tab\/header {
-      .tab\/item {
+      &-item {
         padding: 0;
         border-radius: 0;
         &.is-active {
@@ -147,7 +139,7 @@ TAB
     .tab\/content {
       box-shadow: none;
       padding: 0;
-      .tab\/item {
+      &-item {
         padding: 0;
       }
     }

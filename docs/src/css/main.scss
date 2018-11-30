@@ -7,7 +7,7 @@ Site: slashcss.com
 */
 
 /************************************************************
-1. DEFAULT VARIABLES
+1. FONTS & BUILD VARIABLES
 ************************************************************/
 
 @import "build.variables";
@@ -23,20 +23,26 @@ Site: slashcss.com
 // include custom components here
 
 /************************************************************
-2. ROOT VARIABLES
+3. ROOT VARIABLES
 ************************************************************/
 
 // override component CSS variables here
 
 /************************************************************
-3. THIRD PARTY
+4. THIRD PARTY
 ************************************************************/
 
 @import "../vendors/prism/prism.scss";
 // include any other 3rd party css libraries here
 
 /************************************************************
-4. CUSTOM CSS
+5. EXTENSIONS
+************************************************************/
+
+@import "extensions/input.extension";
+
+/************************************************************
+6. CUSTOM CSS
 ************************************************************/
 
 // this is where you can write your own CSS

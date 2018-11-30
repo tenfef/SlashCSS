@@ -19,18 +19,9 @@ DROPDOWN
   position: relative;
 
   &.is-active {
-    .dropdown\/content {
+    .dropdown\/container {
       visibility: visible;
       opacity: 1;
-      margin-top: 10px;
-    }
-    &.dropdown-position {
-      &\:top, &\:top-right, &\:top-center {
-        .dropdown\/content {
-          margin-top: auto;
-          margin-bottom: 10px;
-        }
-      }
     }
   }
 
@@ -40,43 +31,40 @@ DROPDOWN
 
   &-position {
     &\:center {
-      .dropdown\/content {
+      .dropdown\/container {
         left: 50%;
         transform: translateX(-50%);
       }
     }
     &\:right {
-      .dropdown\/content {
+      .dropdown\/container {
         right: 0;
       }
     }
     &\:top {
-      .dropdown\/content {
+      .dropdown\/container {
         top: auto;
-        bottom: calc(100% + 0);
-        &:before {
-          display: none;
-        }
+        bottom: 100%;
+        padding: 0;
+        padding-bottom: 10px;
       }
       &-center {
-        .dropdown\/content {
+        .dropdown\/container {
           top: auto;
-          bottom: calc(100% + 0);
+          bottom: 100%;
           left: 50%;
+          padding: 0;
+          padding-bottom: 10px;
           transform: translateX(-50%);
-          &:before {
-            display: none;
-          }
         }
       }
       &-right {
-        .dropdown\/content {
+        .dropdown\/container {
           top: auto;
           right: 0;
-          bottom: calc(100% + 0);
-          &:before {
-            display: none;
-          }
+          bottom: 100%;
+          padding: 0;
+          padding-bottom: 10px;
         }
       }
     }
@@ -86,46 +74,14 @@ DROPDOWN
   CHILD ELEMENTS
   ******************************/
 
-  &\/toggle {
-    cursor: pointer;
-  }
-  &\/content {
+  &\/container {
     visibility: hidden;
     position: absolute;
     top: 100%;
     margin: 0;
-    min-width: 12em;
-    padding: 0;
+    padding-top: 10px;
     transition: var(--transition);
     opacity: 0;
-    z-index: 99;
-    &:before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: -10px;
-      height: 10px;
-      width: 100%;
-    }
-  }
-  &\/body {
-    background: var(--dropdown-body-fill);
-    border-radius: var(--dropdown-body-radius);
-    box-shadow: var(--dropdown-body-shadow);
-    overflow: hidden;
-  }
-  &\/item {
-    display: block;
-    padding: var(--dropdown-item-padding);
-    color: var(--dropdown-item-color);
-    transition: var(--transition);
-    &:hover {
-      background: var(--dropdown-item-hover-fill);
-      color: var(--dropdown-item-hover-color);
-      text-decoration: none;
-    }
-    &:active {
-      background: var(--dropdown-item-active-fill);
-    }
+    z-index: 10;
   }
 }

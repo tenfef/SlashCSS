@@ -1,0 +1,137 @@
+/************************************************************
+INPUT
+************************************************************/
+
+.input {
+  &\:slide {
+    position: relative;
+
+
+
+    input {
+      height: 4rem;
+      padding: 1rem var(--input-padding-left) 0 var(--input-padding-left);
+
+      &.input-size {
+        @each $size, $i in $sizes {
+          &\:#{$size} {
+            height: var(--u#{$i + 6});
+            @if $size == xs {
+              padding: 0rem 1rem 0 5rem;
+            } @elseif $size == sm {
+              padding: 0rem 1rem 0 5rem;
+            }
+            & ~ label {
+              transform: translateY($i * 4px);
+            }
+          }
+        }
+      }
+
+      // default state
+      & ~ label {
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        margin: 0;
+        padding: 0;
+        font-size: var(--body);
+        color: var(--black);
+        pointer-events: none;
+        transform: translateY(1.2rem);
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          /* IE10+ CSS styles go here */
+          left: .5rem;
+          font-size: .75rem;
+          color: var(--grey-d1);
+          transform: translateY(4px);
+        }
+      }
+      // focus state
+      &:focus ~ label {
+        left: .5rem;
+        font-size: .75rem;
+        color: var(--grey-d1);
+        transform: translateY(4px);
+      }
+      // filled in state
+      &:not(:placeholder-shown) ~ label {
+        left: .5rem;
+        font-size: .75rem;
+        color: var(--grey-d1);
+        transform: translateY(4px);
+      }
+
+      // states
+      &.is-success:not(:placeholder-shown) ~ label {
+        color: var(--input-success-color);
+      }
+      &.is-alert:not(:placeholder-shown) ~ label {
+        color: var(--input-alert-color);
+      }
+      &.is-warning:not(:placeholder-shown) ~ label {
+        color: var(--input-warning-color);
+      }
+
+      &.is-success {
+        border-color: var(--input-success-color);
+      }
+      &.is-alert {
+        border-color: var(--input-alert-color);
+      }
+      &.is-warning {
+        border-color: var(--input-warning-color);
+      }
+    }
+  }
+  &\:slide-select {
+    position: relative;
+
+    &.input-size {
+      @each $size, $i in $sizes {
+        &\:#{$size} {
+          select {
+            height: var(--u#{$i + 6});
+          }
+          &:after {
+            width: var(--u#{$i + 6});
+            height: var(--u#{$i + 6});
+          }
+        }
+      }
+    }
+
+    select {
+      height: 4rem;
+
+      &.is-success {
+        border-color: var(--input-success-color);
+      }
+      &.is-alert {
+        border-color: var(--input-alert-color);
+      }
+      &.is-warning {
+        border-color: var(--input-warning-color);
+      }
+    }
+
+    &:after {
+      content: '\f107';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 4rem;
+      height: 4rem;
+      font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Pro';
+      font-size: 1.25rem;
+      text-rendering: auto;
+      line-height: 1;
+      color: var(--black);
+      pointer-events: none;
+    }
+  }
+}

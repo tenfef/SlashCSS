@@ -1,34 +1,42 @@
 {{ partial "head" . }}
 
-<nav class="menu menu:docs height:auto">
-	<div class="menu/content column:3">
-		<a href="/" class="menu/item hover-fill:none padding-x:u4 padding-x@sm:u4 padding-y:u4">
-			<div class="flag distribute-x:u4">
-				<div class="flag/item">
-					<svg width="135px" height="135px" viewBox="0 0 135 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000" class="media media-size:xs">
-					  <path d="M28.671321,15.7681329 L75.2397781,3.29015247 C87.2957518,0.0597640638 92.0038897,0.143624341 97.0429694,1.31979074 C102.082049,2.49595714 106.467909,5.02813483 110.006039,8.80402267 C113.544169,12.5799105 115.970863,16.6153474 119.201252,28.671321 L131.679232,75.2397781 C134.909621,87.2957518 134.82576,92.0038897 133.649594,97.0429694 C132.473427,102.082049 129.94125,106.467909 126.165362,110.006039 C122.389474,113.544169 118.354037,115.970863 106.298064,119.201252 L59.7296064,131.679232 C47.6736328,134.909621 42.9654949,134.82576 37.9264152,133.649594 C32.8873355,132.473427 28.5014751,129.94125 24.9633452,126.165362 C21.4252154,122.389474 18.9985213,118.354037 15.7681329,106.298064 L3.29015247,59.7296064 C0.0597640638,47.6736328 0.143624341,42.9654949 1.31979074,37.9264152 C2.49595714,32.8873355 5.02813483,28.5014751 8.80402267,24.9633452 C12.5799105,21.4252154 16.6153474,18.9985213 28.671321,15.7681329 Z M61.828125,100.070312 L81.828125,31.6328125 L73,31.6328125 L53,100.070312 L61.828125,100.070312 Z"></path>
-					</svg>
-				</div>
-				<div class="flag/item font-size:h5 font-weight:bold color:black">
-					SlashCSS <span class="font-weight:regular font-size:micro opacity:4 align:top">v0.1.0</span>
+<header>
+	<div class="wrap">
+
+		<div class="row">
+			<div class="column flex align-items:center padding-y:u4">
+				<a href="/" class="display hover-fill:none">
+					<div class="flag distribute-x:u4">
+						<div class="flag/item">
+							<svg width="135px" height="135px" viewBox="0 0 135 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000" class="media media-size:xs">
+								<path d="M28.671321,15.7681329 L75.2397781,3.29015247 C87.2957518,0.0597640638 92.0038897,0.143624341 97.0429694,1.31979074 C102.082049,2.49595714 106.467909,5.02813483 110.006039,8.80402267 C113.544169,12.5799105 115.970863,16.6153474 119.201252,28.671321 L131.679232,75.2397781 C134.909621,87.2957518 134.82576,92.0038897 133.649594,97.0429694 C132.473427,102.082049 129.94125,106.467909 126.165362,110.006039 C122.389474,113.544169 118.354037,115.970863 106.298064,119.201252 L59.7296064,131.679232 C47.6736328,134.909621 42.9654949,134.82576 37.9264152,133.649594 C32.8873355,132.473427 28.5014751,129.94125 24.9633452,126.165362 C21.4252154,122.389474 18.9985213,118.354037 15.7681329,106.298064 L3.29015247,59.7296064 C0.0597640638,47.6736328 0.143624341,42.9654949 1.31979074,37.9264152 C2.49595714,32.8873355 5.02813483,28.5014751 8.80402267,24.9633452 C12.5799105,21.4252154 16.6153474,18.9985213 28.671321,15.7681329 Z M61.828125,100.070312 L81.828125,31.6328125 L73,31.6328125 L53,100.070312 L61.828125,100.070312 Z"></path>
+							</svg>
+						</div>
+						<div class="flag/item font-size:h5 font-weight:bold color:black">
+							SlashCSS <span class="font-weight:regular font-size:micro opacity:4 align:top">v0.1.0</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column flex align-items:center justify-content:end">
+				<div class="flex distribute-x:u4">
+					<a href="https://github.com/atjinsu/SlashCSS/" class="display color:grey-l2 hover-color:black hover-fill:none" name="Github">
+						<i class="fab fa-github font-size:h4"></i>
+					</a>
+
+					<a href="https://slashsketch.com/" class="display color:grey-l2 hover-color:yellow hover-fill:none">
+						<i class="far fa-gem font-size:h4"></i>
+					</a>
+
+					<a href="https://twitter.com/SlashCSS/" class="display color:grey-l2 hover-color:blue hover-fill:none" name="Twitter">
+						<i class="fab fa-twitter font-size:h4"></i>
+					</a>
 				</div>
 			</div>
-		</a>
-	</div>
-	<div class="menu/content justify-content:end column:3 padding-x:u4">
-		<a href="https://github.com/atjinsu/SlashCSS/" class="menu/item padding-left:u6 padding-right:u0 color:grey-l2 hover-color:black hover-fill:none" name="Github">
-			<i class="fab fa-github font-size:h4"></i>
-		</a>
+		</div>
 
-		<a href="https://slashsketch.com/" class="menu/item padding-left:u6 padding-right:u0 color:grey-l2 hover-color:yellow hover-fill:none">
-			<i class="far fa-gem font-size:h4"></i>
-		</a>
-
-		<a href="https://twitter.com/SlashCSS/" class="menu/item padding-left:u6 padding-right:u0 color:grey-l2 hover-color:blue hover-fill:none" name="Twitter">
-			<i class="fab fa-twitter font-size:h4"></i>
-		</a>
 	</div>
-</nav>
+</header>
 
 <section class="padding-y:u6">
   <div class="wrap padding-y@sm:5vh padding-y@md:8vh padding-y@lg:10vh align:center">

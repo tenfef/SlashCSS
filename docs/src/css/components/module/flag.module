@@ -13,22 +13,4 @@ $flag-gutters: 5 !default;
   &\/item {
 
   }
-
-  /******************************
-  GUTTER
-  ******************************/
-
-	&-gutter {
-		@while $flag-gutters > 0 {
-      &\:u#{$flag-gutters * 2} {
-        .flag\/item {
-          margin-right: var(--u#{$flag-gutters * 2});
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-			}
-			$flag-gutters: $flag-gutters - 1;
-		}
-	}
 }
