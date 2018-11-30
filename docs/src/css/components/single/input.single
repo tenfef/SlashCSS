@@ -95,7 +95,7 @@ INPUT
         content: '';
         display: none;
         position: absolute;
-        left: .35rem;
+        left: .4rem;
         top: .07rem;
         width: .4rem;
         height: .75rem;

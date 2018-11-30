@@ -29,11 +29,11 @@ MARKUP
   }
   h5 {
   	margin-top: var(--u8);
-  	margin-bottom: var(--u4);
+  	margin-bottom: var(--u6);
   }
   h6 {
   	margin-top: var(--u8);
-  	margin-bottom: var(--u4);
+  	margin-bottom: var(--u6);
   }
   ol, ul {
   	margin: 0;

@@ -2,7 +2,7 @@
 FONT
 ************************************************************/
 
-$font-heights: 6 !default;
+$font-heights: 8 !default;
 
 .#{$prefix}font {
 
