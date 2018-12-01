@@ -29,6 +29,7 @@
 
 			/* add click event */
 			for (let i = 0; i < allNotice.length; i++) {
+				if (! toggle) continue;
 				toggle.addEventListener('click', function(e) {
 					e.preventDefault()
 					hide(this.parentNode)
